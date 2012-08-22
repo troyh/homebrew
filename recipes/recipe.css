@@ -1,0 +1,49 @@
+body {
+	font-family: Helvetica;
+}
+
+#header {
+	font-size:11pt;
+	margin-bottom:2em;
+}
+
+div#fermentables:before {
+	font-size: 15pt;
+	content: "Ingredients";
+}
+
+div#fermentables .total_weight:before {
+	content: "(Total: ";
+}
+
+div#fermentables .total_weight:after {
+	content: ")";
+}
+
+div#fermentables .total_weight * { 
+	display:inline;
+}
+
+tr.fermentable {
+	border: 1px solid black;
+}
+
+tr.fermentable td:nth-child(2) {
+	color:silver;
+	font-size: .8em;
+	text-align:right;
+}
+
+#hops {
+	margin:2em 0 2em 0;
+}
+
+.fermentable * {
+	display: inline;
+}
+
+.weight * {
+	display: inline;
+}
+
+
