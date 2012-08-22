@@ -28,7 +28,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 				  <xsl:value-of select="format-number(BOIL_SIZE,&quot;#.##&quot;)"/><xsl:text>L)</xsl:text></div>
 			  
 			  <div><xsl:text>Boil time: </xsl:text><xsl:value-of select="BOIL_TIME"/><xsl:text> minutes</xsl:text></div>
-			  <div><xsl:text>End of Boil BV: </xsl:text><xsl:value-of select="BOIL_TIME"/><xsl:text> minutes</xsl:text></div>
+			  <div><xsl:text>End of Boil Volume: </xsl:text><xsl:value-of select="BOIL_TIME"/><xsl:text> minutes</xsl:text></div>
 			  <div><xsl:text>Final Volume: </xsl:text><xsl:value-of select="BOIL_TIME"/><xsl:text> minutes</xsl:text></div>
 			  <div><xsl:text>Brewhouse Efficiency: </xsl:text><xsl:value-of select="EFFICIENCY"/><xsl:text>%</xsl:text></div>
 			  <div><xsl:text>OG: </xsl:text><xsl:value-of select="OG"/></div>
@@ -74,7 +74,12 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 				</xsl:when>
 				<xsl:otherwise>
 					<xsl:value-of select="format-number($kgs * 2.20462,&quot;#&quot;)"/> lbs 
-					<xsl:value-of select="format-number(($kgs * 2.20462 * 16) mod 16,&quot;#.#####&quot;)"/> oz
+					<xsl:variable name="oz" select="format-number($kgs * 2.20462 * 16,&quot;#.##&quot;) mod 16"/>
+					<xsl:choose>
+						<xsl:when test="$oz &gt; 0">
+							<xsl:value-of select="$oz"/> oz
+						</xsl:when>
+					</xsl:choose>
 				</xsl:otherwise>
 			</xsl:choose>
 			<!-- <div class="decimal"><xsl:value-of select="format-number($kgs * 2.20462,&quot;#.##&quot;)"/> lbs</div>  -->
