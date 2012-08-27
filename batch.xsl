@@ -6,7 +6,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/batch">
 	<html>
 		<head>
-			<title><xsl:value-of select="recipe/beerxml/RECIPE/NAME"/></title>
+			<title>
+				<xsl:if test="string-length(recipe/beerxml/RECIPE/NAME) = 0">No title</xsl:if>
+				<xsl:value-of select="recipe/beerxml/RECIPE/NAME"/>
+			</title>
 			<link rel="stylesheet" type="text/css" href="recipe.css" />
 		</head>
 		<body>
@@ -169,7 +172,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	</div>
 </xsl:template>
 
-<xsl:template match="MASH">
+<!-- <xsl:template match="MASH">
 	<xsl:variable name="total_grain_weight" select="sum(//FERMENTABLES/FERMENTABLE/AMOUNT)"/>
 	<h1>Mash Profile</h1>
 	<div>Name: <xsl:value-of select="NAME"/></div>
@@ -237,7 +240,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 			<xsl:value-of select="STEP_TIME"/> min
 		</td>
 	</tr>
-</xsl:template>
+</xsl:template> -->
 
 <xsl:template name="format-volume">
 	<xsl:param name="liters"/>
@@ -273,26 +276,66 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:apply-templates match="tumblr/tumblelog/posts"/>
 </xsl:template>
 
-<xsl:template name="post">
-	<div>
-		<div>Date:<xsl:value-of select="@date"/></div>
-		<xsl:apply-templates match="."/>
-	</div>
+<xsl:template match="posts">
+	<xsl:for-each select="post">
+		<xsl:sort select="@unix-timestamp"/>
+		<div>
+			<div class="logdate"><xsl:value-of select="@date"/></div>
+			<xsl:apply-templates match="*"/>
+		</div>
+	</xsl:for-each>
 </xsl:template>
 
-<xsl:template match="post[@type=&quot;photo&quot;]">
-	<div><xsl:value-of select="photo-caption"/></div>
+<xsl:template match="photo-caption">
+	<div><xsl:value-of select="." disable-output-escaping="yes"/></div>
+</xsl:template>
+
+<xsl:template match="photo-url[@max-width=&quot;250&quot;]">
 	<div>
 		<xsl:element name="img">
 			<xsl:attribute name="src">
-				<xsl:value-of select="photo-url[@max-width=&quot;500&quot;]"/>
+				<xsl:value-of select="."/>
 			</xsl:attribute>
 		</xsl:element>
 	</div>
+	<xsl:call-template name="all-photos"/>
 </xsl:template>
 
-<xsl:template match="post[@type=&quot;regular&quot;]">
-	<div><xsl:value-of select="regular-body"/></div>
+<xsl:template name="all-photos">
+	<div>All photo sizes:
+		<xsl:for-each select="../photo-url">
+			<!-- <xsl:choose>
+				<xsl:when test="position() = 1">All photos: </xsl:when>
+				<xsl:when test="position() != 1">, </xsl:when>
+			</xsl:choose> -->
+			<xsl:text> </xsl:text>
+			<xsl:element name="a">
+				<xsl:attribute name="href">
+					<xsl:value-of select="."/>
+				</xsl:attribute>
+				<xsl:value-of select="@max-width"/>
+			</xsl:element>
+		</xsl:for-each>
+	</div>
+</xsl:template>
+	
+<xsl:template match="photo-url">
+	<!-- <div>
+		<xsl:element name="a">
+			<xsl:attribute name="href">
+				<xsl:value-of select="."/>
+			</xsl:attribute>
+			<xsl:value-of select="@max-width"/>
+		</xsl:element>
+	</div> -->
+</xsl:template>
+
+<xsl:template match="regular-body">
+	<div><xsl:value-of select="." disable-output-escaping="yes"/></div>
+</xsl:template>
+
+<xsl:template match="tag">
+	<!-- <div>Tag:<xsl:value-of select="."/></div> -->
 </xsl:template>
 
 </xsl:stylesheet>
