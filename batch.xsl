@@ -11,6 +11,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 				<xsl:value-of select="recipe/beerxml/RECIPE/NAME" disable-output-escaping="yes"/>
 			</title>
 			<link rel="stylesheet" type="text/css" href="recipe.css" />
+			<script src="../../js/tumblr.js" />
 		</head>
 		<body>
 			<xsl:apply-templates select="*"/>
@@ -330,6 +331,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	</div> -->
 </xsl:template>
 
+<xsl:template match="video-player">
+	<xsl:value-of select="." disable-output-escaping="yes"/>
+</xsl:template>
+	
 <xsl:template match="regular-body">
 	<div><xsl:value-of select="." disable-output-escaping="yes"/></div>
 </xsl:template>
