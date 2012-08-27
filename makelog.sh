@@ -15,4 +15,4 @@ xsltproc --stringparam recipeurl batches/$BATCH_ID/tmp.xml combine.xsl batches/$
 rm -f batches/$BATCH_ID/tmp.xml
 
 # Make the HTML page for the batch
-xsltproc batch.xsl batches/$BATCH_ID/batch.xml
+xsltproc batch.xsl batches/$BATCH_ID/batch.xml > batches/$BATCH_ID/batch.html
