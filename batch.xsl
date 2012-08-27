@@ -331,6 +331,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	</div> -->
 </xsl:template>
 
+<xsl:template match="video-caption">
+	<xsl:value-of select="." disable-output-escaping="yes"/>
+</xsl:template>
+	
 <xsl:template match="video-player">
 	<xsl:value-of select="." disable-output-escaping="yes"/>
 </xsl:template>
