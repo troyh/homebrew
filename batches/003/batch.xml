@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<batch><recipe><beerxml url="batches/003/tmp.xml"><RECIPE>
+  <NAME>Breakfast Stout</NAME>
+  <VERSION>1</VERSION>
+  <TYPE>All Grain</TYPE>
+  <BREWER>iBrewMaster</BREWER>
+  <BATCH_SIZE>18.9271</BATCH_SIZE>
+  <BOIL_SIZE>22.0659</BOIL_SIZE>
+  <BOIL_TIME>060</BOIL_TIME>
+  <EFFICIENCY>70</EFFICIENCY>
+  <HOPS>
+    <HOP>
+      <NAME>Williamette</NAME>
+      <VERSION>1</VERSION>
+      <ALPHA>5.50</ALPHA>
+      <AMOUNT>0.0283</AMOUNT>
+      <USE>Boil</USE>
+      <TIME>060</TIME>
+      <TYPE>Aroma</TYPE>
+      <FORM>Pellet</FORM>
+      <BETA>3.50</BETA>
+      <HSI>40</HSI>
+      <ORIGIN>US</ORIGIN>
+    </HOP>
+  </HOPS>
+  <FERMENTABLES>
+    <FERMENTABLE>
+      <NAME>Pale Malt, Maris Otter</NAME>
+      <VERSION>1</VERSION>
+      <TYPE>Grain</TYPE>
+      <AMOUNT>1.8144</AMOUNT>
+      <YIELD>100</YIELD>
+      <COLOR>3.0</COLOR>
+      <ORIGIN>UK</ORIGIN>
+      <POTENTIAL>1.038</POTENTIAL>
+    </FERMENTABLE>
+    <FERMENTABLE>
+      <NAME>Oats, Flaked</NAME>
+      <VERSION>1</VERSION>
+      <TYPE>Grain</TYPE>
+      <AMOUNT>0.6804</AMOUNT>
+      <YIELD>100</YIELD>
+      <COLOR>1.0</COLOR>
+      <ORIGIN>US</ORIGIN>
+      <POTENTIAL>1.037</POTENTIAL>
+    </FERMENTABLE>
+    <FERMENTABLE>
+      <NAME>Roasted Barley</NAME>
+      <VERSION>1</VERSION>
+      <TYPE>Grain</TYPE>
+      <AMOUNT>0.2268</AMOUNT>
+      <YIELD>100</YIELD>
+      <COLOR>300.0</COLOR>
+      <ORIGIN>US</ORIGIN>
+      <POTENTIAL>1.025</POTENTIAL>
+    </FERMENTABLE>
+    <FERMENTABLE>
+      <NAME>Lactose</NAME>
+      <VERSION>1</VERSION>
+      <TYPE>Adjunct</TYPE>
+      <AMOUNT>0.4536</AMOUNT>
+      <YIELD>100</YIELD>
+      <COLOR>0.0</COLOR>
+      <ORIGIN>US</ORIGIN>
+      <POTENTIAL>1.030</POTENTIAL>
+    </FERMENTABLE>
+  </FERMENTABLES>
+  <YEASTS>
+    <YEAST>
+      <NAME>Irish Ale</NAME>
+      <VERSION>1</VERSION>
+      <TYPE>Ale</TYPE>
+      <FORM>Liquid</FORM>
+      <AMOUNT>1</AMOUNT>
+      <LABORATORY>Wyeast Labs</LABORATORY>
+      <PRODUCT_ID>1084</PRODUCT_ID>
+      <MIN_TEMPERATURE> 62.0</MIN_TEMPERATURE>
+      <MAX_TEMPERATURE> 72.0</MAX_TEMPERATURE>
+      <FLOCCULATION>Medium</FLOCCULATION>
+      <ATTENUATION>73</ATTENUATION>
+    </YEAST>
+  </YEASTS>
+  <STYLE>
+      <NAME>Specialty Beer</NAME>
+      <CATEGORY>Specialty Beer</CATEGORY>
+      <VERSION>1</VERSION>
+      <CATEGORY_NUMBER>23</CATEGORY_NUMBER>
+      <STYLE_LETTER/>
+      <STYLE_GUIDE>BJCP</STYLE_GUIDE>
+      <TYPE>Ale</TYPE>
+      <OG_MIN>0.000</OG_MIN>
+      <OG_MAX>9.999</OG_MAX>
+      <FG_MIN>0.000</FG_MIN>
+      <FG_MAX>9.999</FG_MAX>
+      <IBU_MIN>0.00</IBU_MIN>
+      <IBU_MAX>999.99</IBU_MAX>
+      <COLOR_MIN>0.0</COLOR_MIN>
+      <COLOR_MAX>100.0</COLOR_MAX>
+      <CARB_MIN>0.00</CARB_MIN>
+      <CARB_MAX>0.00</CARB_MAX>
+      <ABV_MIN>0.00</ABV_MIN>
+      <ABV_MAX>99.99</ABV_MAX>
+  </STYLE>
+  <MASH>
+    <NAME>Mash Profile</NAME>
+    <VERSION>1</VERSION>
+    <GRAIN_TEMP>21.1</GRAIN_TEMP>
+    <MASH_STEPS>
+      <MASH_STEP>
+        <NAME>Sacch&amp;#39; Rest</NAME>
+        <VERSION>1</VERSION>
+        <TYPE>INFUSION</TYPE>
+        <INFUSE_AMOUNT>8.52</INFUSE_AMOUNT>
+        <STEP_TEMP>67.8</STEP_TEMP>
+        <STEP_TIME>60</STEP_TIME>
+        <RAMP_TIME>0</RAMP_TIME>
+        <INFUSE_TEMP>76.5</INFUSE_TEMP>
+      </MASH_STEP>
+      <MASH_STEP>
+        <NAME>Mashout</NAME>
+        <VERSION>1</VERSION>
+        <TYPE>TEMPERATURE</TYPE>
+        <INFUSE_AMOUNT>0.00</INFUSE_AMOUNT>
+        <STEP_TEMP>76.7</STEP_TEMP>
+        <STEP_TIME>10</STEP_TIME>
+        <RAMP_TIME>2</RAMP_TIME>
+      </MASH_STEP>
+    </MASH_STEPS>
+    <SPARGE_TEMP>0.0</SPARGE_TEMP>
+  </MASH>
+  <NOTES>See full Northern Brewer recipe instructions.</NOTES>
+  <FERMENTATION_STAGES>2</FERMENTATION_STAGES>
+  <PRIMARY_AGE>7</PRIMARY_AGE>
+  <PRIMARY_TEMP> 20.00</PRIMARY_TEMP>
+  <SECONDARY_AGE>7</SECONDARY_AGE>
+  <SECONDARY_TEMP> 22.22</SECONDARY_TEMP>
+  <AGE>14</AGE>
+  <AGE_TEMP> 23.33</AGE_TEMP>
+  <EST_OG>1.039</EST_OG>
+  <EST_FG>1.010</EST_FG>
+  <EST_COLOR>16.3</EST_COLOR>
+  <IBU>22.43</IBU>
+  <IBU_METHOD>Tinseth</IBU_METHOD>
+  <EST_ABV>3.80</EST_ABV>
+  <CALORIES>127</CALORIES>
+</RECIPE></beerxml></recipe><log><tumblr version="1.0"><tumblelog name="geekbrewing" timezone="US/Pacific" title="Brew Log"/><posts start="0" total="12"><post id="28728887161" url="http://geekbrewing.tumblr.com/post/28728887161" url-with-slug="http://geekbrewing.tumblr.com/post/28728887161/sg-is-down-to-1-014" type="regular" date-gmt="2012-08-05 00:08:27 GMT" date="Sat, 04 Aug 2012 17:08:27" unix-timestamp="1344125307" format="html" reblog-key="Ezbxgx8b" slug="sg-is-down-to-1-014"><regular-body>&lt;p&gt;SG is down to 1.014.&lt;/p&gt;</regular-body><tag>003</tag></post><post id="28530411673" url="http://geekbrewing.tumblr.com/post/28530411673" url-with-slug="http://geekbrewing.tumblr.com/post/28530411673/gravity-dropped-a-point-to-1-017" type="regular" date-gmt="2012-08-02 03:04:48 GMT" date="Wed, 01 Aug 2012 20:04:48" unix-timestamp="1343876688" format="html" reblog-key="CI2A4Mpw" slug="gravity-dropped-a-point-to-1-017"><regular-body>&lt;p&gt;Gravity dropped a point to 1.017.&lt;/p&gt;</regular-body><tag>003</tag></post><post id="28415836175" url="http://geekbrewing.tumblr.com/post/28415836175" url-with-slug="http://geekbrewing.tumblr.com/post/28415836175/still-very-little-airlock-activity" type="regular" date-gmt="2012-07-31 16:18:14 GMT" date="Tue, 31 Jul 2012 09:18:14" unix-timestamp="1343751494" format="html" reblog-key="C69F4AM5" slug="still-very-little-airlock-activity"><regular-body>&lt;p&gt;Still very little airlock activity.&lt;/p&gt;</regular-body><tag>003</tag></post><post id="28397538535" url="http://geekbrewing.tumblr.com/post/28397538535" url-with-slug="http://geekbrewing.tumblr.com/post/28397538535/slow-activity-beginning-on-the-airlock" type="regular" date-gmt="2012-07-31 06:55:13 GMT" date="Mon, 30 Jul 2012 23:55:13" unix-timestamp="1343717713" format="html" reblog-key="Ck6q69so" slug="slow-activity-beginning-on-the-airlock"><regular-body>&lt;p&gt;Slow activity beginning on the airlock.&lt;/p&gt;</regular-body><tag>003</tag></post><post id="28384805757" url="http://geekbrewing.tumblr.com/post/28384805757" url-with-slug="http://geekbrewing.tumblr.com/post/28384805757/pitched-yeast-after-aerating-for-35-minutes-and" type="regular" date-gmt="2012-07-31 03:14:02 GMT" date="Mon, 30 Jul 2012 20:14:02" unix-timestamp="1343704442" format="html" reblog-key="cIs1IYI6" slug="pitched-yeast-after-aerating-for-35-minutes-and"><regular-body>&lt;p&gt;Pitched yeast after aerating for 35 minutes (and then waiting 30 more minutes while eating dinner). Also dropped 1&amp;#8221; stir bar in fermenter… argh!&lt;/p&gt;</regular-body><tag>003</tag></post><post id="28374050320" url="http://geekbrewing.tumblr.com/post/28374050320" url-with-slug="http://geekbrewing.tumblr.com/post/28374050320/6-hour-cold-crash-in-fridge-letting-warm-up-to" type="photo" date-gmt="2012-07-31 00:39:32 GMT" date="Mon, 30 Jul 2012 17:39:32" unix-timestamp="1343695172" format="html" reblog-key="JA8uJAbS" slug="6-hour-cold-crash-in-fridge-letting-warm-up-to" width="720" height="960"><photo-caption>&lt;p&gt;6-hour cold-crash in fridge. Letting warm up to pitch.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_m801twAaM71qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://25.media.tumblr.com/tumblr_m801twAaM71qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_m801twAaM71qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://24.media.tumblr.com/tumblr_m801twAaM71qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://25.media.tumblr.com/tumblr_m801twAaM71qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://25.media.tumblr.com/tumblr_m801twAaM71qcxyego1_75sq.jpg</photo-url><tag>003</tag></post><post id="28373686301" url="http://geekbrewing.tumblr.com/post/28373686301" url-with-slug="http://geekbrewing.tumblr.com/post/28373686301/aerating-the-wort-to-pitch-scottish-ale-yeast" type="photo" date-gmt="2012-07-31 00:34:10 GMT" date="Mon, 30 Jul 2012 17:34:10" unix-timestamp="1343694850" format="html" reblog-key="1yYLnl9z" slug="aerating-the-wort-to-pitch-scottish-ale-yeast" width="720" height="960"><photo-caption>&lt;p&gt;Aerating the wort to pitch Scottish ale yeast.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_m801kytzfU1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://25.media.tumblr.com/tumblr_m801kytzfU1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://24.media.tumblr.com/tumblr_m801kytzfU1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://24.media.tumblr.com/tumblr_m801kytzfU1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://25.media.tumblr.com/tumblr_m801kytzfU1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://25.media.tumblr.com/tumblr_m801kytzfU1qcxyego1_75sq.jpg</photo-url><tag>003</tag></post><post id="28299385628" url="http://geekbrewing.tumblr.com/post/28299385628" url-with-slug="http://geekbrewing.tumblr.com/post/28299385628/2-5-hours-into-the-starter" type="photo" date-gmt="2012-07-30 00:36:38 GMT" date="Sun, 29 Jul 2012 17:36:38" unix-timestamp="1343608598" format="html" reblog-key="nJxxfG3c" slug="2-5-hours-into-the-starter" width="720" height="960"><photo-caption>&lt;p&gt;2.5 hours into the starter.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_m7y712xdl41qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://24.media.tumblr.com/tumblr_m7y712xdl41qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_m7y712xdl41qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://25.media.tumblr.com/tumblr_m7y712xdl41qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://25.media.tumblr.com/tumblr_m7y712xdl41qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://25.media.tumblr.com/tumblr_m7y712xdl41qcxyego1_75sq.jpg</photo-url><tag>003</tag></post><post id="28290786199" url="http://geekbrewing.tumblr.com/post/28290786199" url-with-slug="http://geekbrewing.tumblr.com/post/28290786199/fermentation-is-done-at-1-018-only-58" type="regular" date-gmt="2012-07-29 22:27:46 GMT" date="Sun, 29 Jul 2012 15:27:46" unix-timestamp="1343600866" format="html" reblog-key="L2FyfxKc" slug="fermentation-is-done-at-1-018-only-58"><regular-body>&lt;p&gt;Fermentation is done at 1.018, only 58% attenuation. So I made a starter with WY1728 Scottish Ale yeast (original beer had Irish Yeast) to get the gravity down. Planning to rack half the beer to a keg and pitch the new yeast into the other half to see what happens and how they compare.&lt;/p&gt;</regular-body><tag>003</tag></post><post id="28051978948" url="http://geekbrewing.tumblr.com/post/28051978948" url-with-slug="http://geekbrewing.tumblr.com/post/28051978948" type="photo" date-gmt="2012-07-26 13:25:38 GMT" date="Thu, 26 Jul 2012 06:25:38" unix-timestamp="1343309138" format="html" reblog-key="wuOd3ra2" slug="" width="720" height="960"><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_m7rryqXE491qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://24.media.tumblr.com/tumblr_m7rryqXE491qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://24.media.tumblr.com/tumblr_m7rryqXE491qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://25.media.tumblr.com/tumblr_m7rryqXE491qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://25.media.tumblr.com/tumblr_m7rryqXE491qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://24.media.tumblr.com/tumblr_m7rryqXE491qcxyego1_75sq.jpg</photo-url><tag>003</tag></post><post id="27896926308" url="http://geekbrewing.tumblr.com/post/27896926308" url-with-slug="http://geekbrewing.tumblr.com/post/27896926308/activity-is-almost-nonexistent-bubbling-every" type="photo" date-gmt="2012-07-24 07:23:49 GMT" date="Tue, 24 Jul 2012 00:23:49" unix-timestamp="1343114629" format="html" reblog-key="mQUmGwx2" slug="activity-is-almost-nonexistent-bubbling-every" width="720" height="960"><photo-caption>&lt;p&gt;Activity is almost nonexistent. Bubbling every minute or so. Krausen has really fallen.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://24.media.tumblr.com/tumblr_m7nlvpfuGG1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://25.media.tumblr.com/tumblr_m7nlvpfuGG1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://24.media.tumblr.com/tumblr_m7nlvpfuGG1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://25.media.tumblr.com/tumblr_m7nlvpfuGG1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://24.media.tumblr.com/tumblr_m7nlvpfuGG1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://25.media.tumblr.com/tumblr_m7nlvpfuGG1qcxyego1_75sq.jpg</photo-url><tag>003</tag></post><post id="27784315980" url="http://geekbrewing.tumblr.com/post/27784315980" url-with-slug="http://geekbrewing.tumblr.com/post/27784315980" type="video" date-gmt="2012-07-22 21:13:31 GMT" date="Sun, 22 Jul 2012 14:13:31" unix-timestamp="1342991611" format="html" reblog-key="qpRtkHlN" slug="" direct-video="true"><video-source><content-type>video/quicktime</content-type><extension>mov</extension><width>360</width><height>480</height><duration>37.03</duration><revision>1</revision></video-source><video-player>&lt;span id="video_player_27784315980"&gt;[&lt;a href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" target="_blank"&gt;Flash 10&lt;/a&gt; is required to watch video.]&lt;/span&gt;&lt;script type="text/javascript"&gt;renderVideo("video_player_27784315980",'http://geekbrewing.tumblr.com/video_file/27784315980/tumblr_m7kyyjl0l01qcxyeg',400,533,'orientation=portrait\x26amp;portrait=true\x26amp;w={400}\x26amp;poster=http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7kyyjl0l01qcxyeg_r1_frame1.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7kyyjl0l01qcxyeg_r1_frame2.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7kyyjl0l01qcxyeg_r1_frame3.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7kyyjl0l01qcxyeg_r1_frame4.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7kyyjl0l01qcxyeg_r1_frame5.jpg')&lt;/script&gt;</video-player><video-player max-width="500">&lt;span id="video_player_27784315980"&gt;[&lt;a href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" target="_blank"&gt;Flash 10&lt;/a&gt; is required to watch video.]&lt;/span&gt;&lt;script type="text/javascript"&gt;renderVideo("video_player_27784315980",'http://geekbrewing.tumblr.com/video_file/27784315980/tumblr_m7kyyjl0l01qcxyeg',500,667,'orientation=portrait\x26amp;portrait=true\x26amp;w={500}\x26amp;poster=http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7kyyjl0l01qcxyeg_r1_frame1.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7kyyjl0l01qcxyeg_r1_frame2.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7kyyjl0l01qcxyeg_r1_frame3.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7kyyjl0l01qcxyeg_r1_frame4.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7kyyjl0l01qcxyeg_r1_frame5.jpg')&lt;/script&gt;</video-player><video-player max-width="250">&lt;span id="video_player_27784315980"&gt;[&lt;a href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" target="_blank"&gt;Flash 10&lt;/a&gt; is required to watch video.]&lt;/span&gt;&lt;script type="text/javascript"&gt;renderVideo("video_player_27784315980",'http://geekbrewing.tumblr.com/video_file/27784315980/tumblr_m7kyyjl0l01qcxyeg',250,333,'orientation=portrait\x26amp;portrait=true\x26amp;w={250}\x26amp;poster=http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7kyyjl0l01qcxyeg_r1_frame1.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7kyyjl0l01qcxyeg_r1_frame2.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7kyyjl0l01qcxyeg_r1_frame3.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7kyyjl0l01qcxyeg_r1_frame4.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7kyyjl0l01qcxyeg_r1_frame5.jpg')&lt;/script&gt;</video-player><tag>003</tag></post></posts></tumblr></log></batch>
