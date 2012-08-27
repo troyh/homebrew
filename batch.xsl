@@ -8,7 +8,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		<head>
 			<title>
 				<xsl:if test="string-length(recipe/beerxml/RECIPE/NAME) = 0">No title</xsl:if>
-				<xsl:value-of select="recipe/beerxml/RECIPE/NAME"/>
+				<xsl:value-of select="recipe/beerxml/RECIPE/NAME" disable-output-escaping="yes"/>
 			</title>
 			<link rel="stylesheet" type="text/css" href="recipe.css" />
 		</head>
@@ -20,7 +20,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	
 <xsl:template match="recipe/beerxml/RECIPE">
 		  <div id="header">
-			  <h1><xsl:value-of select="NAME"/></h1>
+			  <h1><xsl:value-of select="NAME" disable-output-escaping="yes"/></h1>
 			  <xsl:apply-templates select="STYLES"/>
 			  <div><xsl:text>Type: </xsl:text><xsl:value-of select="TYPE"/></div>
 		  
