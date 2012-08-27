@@ -258,7 +258,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="NOTES">
 	<div id="notes">
 		<h1>Notes</h1>
-		<div class="note"><xsl:value-of select="."/></div>
+		<div class="note"><xsl:value-of select="." disable-output-escaping="yes"/></div>
 	</div>
 </xsl:template>
 	

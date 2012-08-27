@@ -11,7 +11,12 @@ read V <<<$(xml sel -t -v "/batch/recipe/commit_sha" batches/$BATCH_ID/recipe.xm
 git show $V:"recipes/$F" > batches/$BATCH_ID/tmp.xml
 
 # Combine the Tumblr log and the recipe into on XML document
-xsltproc --stringparam recipeurl batches/$BATCH_ID/tmp.xml combine.xsl batches/$BATCH_ID/log.xml > batches/$BATCH_ID/batch.xml
+xsltproc \
+	--stringparam filename batches/$BATCH_ID/tmp.xml \
+	--stringparam recipefile "$F" \
+	--stringparam commit_sha $V \
+	combine.xsl \
+	batches/$BATCH_ID/log.xml > batches/$BATCH_ID/batch.xml
 rm -f batches/$BATCH_ID/tmp.xml
 
 # Make the HTML page for the batch

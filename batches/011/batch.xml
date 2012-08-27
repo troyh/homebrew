@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
-<batch><recipe><beerxml url="batches/011/tmp.xml"><RECIPE>
+<batch><recipe><beerxml recipefile="Fuller's ESB.xml" commit_sha="cb7e8c7789772b4f33e2751cfa92154a4c4ee0cc"><RECIPE>
 <VERSION>1</VERSION>
-<NAME>Fuller's ESB</NAME>
+<NAME>Old Fuller's ESB</NAME>
 <TYPE>All Grain</TYPE>
 <BREWER>BrewPal</BREWER>
 <BATCH_SIZE>18.927059</BATCH_SIZE>
-<BOIL_SIZE>22.258223</BOIL_SIZE>
+<BOIL_SIZE>23.251892</BOIL_SIZE>
 <BOIL_TIME>60</BOIL_TIME>
 <EFFICIENCY>75</EFFICIENCY>
-<OG>1.060</OG>
-<FG>1.014</FG>
+<OG>1.062000</OG>
+<FG>1.019000</FG>
 <FERMENTATION_STAGES>1</FERMENTATION_STAGES>
 <PRIMARY_AGE>14</PRIMARY_AGE>
 <PRIMARY_TEMP>21.000000</PRIMARY_TEMP>
@@ -20,84 +20,85 @@
 <CARBONATION_TEMP>21.111111</CARBONATION_TEMP>
 <PRIMING_SUGAR_NAME>(null)</PRIMING_SUGAR_NAME>
 <PRIMING_SUGAR_EQUIV>0.000000</PRIMING_SUGAR_EQUIV>
-<NOTES>http://www.homebrewtalk.com/f12/fullers-esb-clone-229179/
+<NOTES>&lt;p&gt;&lt;a href="http://www.homebrewtalk.com/f12/fullers-esb-clone-229179/"&gt;Homebrewtalk discussion&lt;/a&gt;&lt;/p&gt;
 
-According to http://www.byo.com/component/resource/article/2398-fuller-s-the-pride-of-london, ESB is 5.9% ABV, 35 IBUs, an SRM of 15, an OG of 1.060 and an FG of 1.014.</NOTES>
+&lt;p&gt;According to http://www.byo.com/component/resource/article/2398-fuller-s-the-pride-of-london, ESB is 5.9% ABV, 35 IBUs, an SRM of 15, an OG of 1.060 and an FG of 1.014.&lt;/p&gt;
+
+&lt;p&gt;I put the 1.5oz of dry-hop hops in the Blichmann HopRocket which was put inline between the brew kettle and the chiller to see how that affects the hop aroma.&lt;/p&gt;
+
+&lt;p&gt;I pitched a 1.2L starter because I didn't have enough time to cold-crash and decant. Not ideal. The yeast was also a 2nd generation from a previous batch of Fuller's ESB.&lt;/p&gt;
+
+&lt;p&gt;Dough-in at 161F.&lt;/p&gt;
+&lt;p&gt;Strike temp: 161F&lt;/p&gt;
+&lt;p&gt;Mash @ 154.5F &gt; 153F &gt; 151.4F &gt; 151F&lt;/p&gt;
+&lt;p&gt;Boil volume was 6.8G @ 1.052&lt;/p&gt;
+&lt;p&gt;End of boil was 5.75G @ 1.060. Was supposed to be 1.062! &gt;:-(&lt;/p&gt;
+</NOTES>
 <FERMENTABLES>
   <FERMENTABLE>
     <VERSION>1</VERSION>
-    <NAME>Optic</NAME>
+    <COLOR>4</COLOR>
     <AMOUNT>4.535923</AMOUNT>
+    <NAME>Maris Otter</NAME>
+    <YIELD>80</YIELD>
     <TYPE>Grain</TYPE>
-    <YIELD>78</YIELD>
-    <COLOR>3</COLOR>
   </FERMENTABLE>
   <FERMENTABLE>
     <VERSION>1</VERSION>
-    <TYPE>Grain</TYPE>
-    <AMOUNT>0.4252428</AMOUNT>
-    <COLOR>80</COLOR>
-    <YIELD>61</YIELD>
     <NAME>Crystal 80L</NAME>
+    <AMOUNT>0.4252428</AMOUNT>
+    <TYPE>Grain</TYPE>
+    <YIELD>61</YIELD>
+    <COLOR>80</COLOR>
   </FERMENTABLE>
   <FERMENTABLE>
     <VERSION>1</VERSION>
-    <COLOR>60</COLOR>
-    <AMOUNT>0.2267962</AMOUNT>
-    <NAME>Crystal 60L</NAME>
-    <YIELD>72</YIELD>
     <TYPE>Grain</TYPE>
+    <AMOUNT>0.2267962</AMOUNT>
+    <COLOR>60</COLOR>
+    <YIELD>72</YIELD>
+    <NAME>Crystal 60L</NAME>
   </FERMENTABLE>
 </FERMENTABLES>
 <HOPS>
   <HOP>
     <VERSION>1</VERSION>
-    <USE>Boil</USE>
-    <ALPHA>5.3</ALPHA>
-    <SUBSTITUTES>Perle, Admiral</SUBSTITUTES>
-    <FORM>Pellet</FORM>
-    <NAME>Challenger</NAME>
-    <AMOUNT>0.01417476</AMOUNT>
-    <TIME>60</TIME>
+    <USE>Aroma</USE>
+    <ALPHA>5.700000</ALPHA>
+    <SUBSTITUTES>Amarillo, Centennial, Summit</SUBSTITUTES>
+    <FORM>Leaf</FORM>
+    <NAME>Cascade</NAME>
+    <AMOUNT>0.042524</AMOUNT>
+    <TIME>0</TIME>
   </HOP>
   <HOP>
     <VERSION>1</VERSION>
-    <TIME>60</TIME>
-    <FORM>Pellet</FORM>
+    <USE>Boil</USE>
+    <ALPHA>10.700000</ALPHA>
     <SUBSTITUTES>Nugget, Fuggle, WIllamette, Admiral</SUBSTITUTES>
-    <ALPHA>10.7</ALPHA>
+    <FORM>Pellet</FORM>
     <NAME>Target</NAME>
-    <AMOUNT>0.01417476</AMOUNT>
-    <USE>Boil</USE>
+    <AMOUNT>0.021262</AMOUNT>
+    <TIME>60</TIME>
   </HOP>
   <HOP>
     <VERSION>1</VERSION>
-    <TIME>15</TIME>
-    <FORM>Pellet</FORM>
-    <SUBSTITUTES>Fuggle, Progress, First Gold</SUBSTITUTES>
+    <USE>Boil</USE>
     <ALPHA>5.8</ALPHA>
+    <SUBSTITUTES>Fuggle, Progress, First Gold</SUBSTITUTES>
+    <FORM>Pellet</FORM>
     <NAME>Goldings (Kent)</NAME>
     <AMOUNT>0.009355343</AMOUNT>
-    <USE>Boil</USE>
+    <TIME>15</TIME>
   </HOP>
   <HOP>
     <VERSION>1</VERSION>
-    <TIME>15</TIME>
-    <ALPHA>7.2</ALPHA>
+    <USE>Boil</USE>
     <FORM>Pellet</FORM>
+    <ALPHA>7.2</ALPHA>
     <NAME>Northdown</NAME>
     <AMOUNT>0.003401943</AMOUNT>
-    <USE>Boil</USE>
-  </HOP>
-  <HOP>
-    <VERSION>1</VERSION>
-    <USE>Dry Hop</USE>
-    <ALPHA>5</ALPHA>
-    <SUBSTITUTES>Fuggle, Progress, First Gold</SUBSTITUTES>
-    <FORM>Pellet</FORM>
-    <NAME>Goldings (Kent)</NAME>
-    <AMOUNT>0.002834952</AMOUNT>
-    <TIME>10080</TIME>
+    <TIME>15</TIME>
   </HOP>
 </HOPS>
 <YEASTS>
@@ -117,27 +118,27 @@ According to http://www.byo.com/component/resource/article/2398-fuller-s-the-pri
 <MISCS>
   <MISC>
     <VERSION>1</VERSION>
-    <TIME>60</TIME>
-    <AMOUNT>0.02834952</AMOUNT>
-    <NAME>Gypsum</NAME>
-    <USE>Mash</USE>
     <TYPE>Water Agent</TYPE>
+    <AMOUNT>0.02834952</AMOUNT>
+    <TIME>60</TIME>
+    <USE>Mash</USE>
+    <NAME>Gypsum</NAME>
   </MISC>
   <MISC>
     <VERSION>1</VERSION>
-    <TIME>15</TIME>
-    <AMOUNT>0.02834952</AMOUNT>
-    <NAME>Yeast nutrient</NAME>
-    <USE>Boil</USE>
     <TYPE>Other</TYPE>
+    <AMOUNT>0.02834952</AMOUNT>
+    <TIME>15</TIME>
+    <USE>Boil</USE>
+    <NAME>Yeast nutrient</NAME>
   </MISC>
   <MISC>
     <VERSION>1</VERSION>
-    <TIME>15</TIME>
-    <AMOUNT>0.02834952</AMOUNT>
-    <NAME>Irish moss</NAME>
-    <USE>Boil</USE>
     <TYPE>Fining</TYPE>
+    <AMOUNT>0.02834952</AMOUNT>
+    <TIME>15</TIME>
+    <USE>Boil</USE>
+    <NAME>Irish moss</NAME>
   </MISC>
 </MISCS>
 <MASH>
@@ -150,10 +151,10 @@ According to http://www.byo.com/component/resource/article/2398-fuller-s-the-pri
   <MASH_STEP>
     <VERSION>1</VERSION>
     <INFUSE_AMOUNT>11.35624</INFUSE_AMOUNT>
-    <TYPE>Infusion</TYPE>
-    <STEP_TIME>60</STEP_TIME>
-    <NAME>Strike</NAME>
     <STEP_TEMP>67.22222</STEP_TEMP>
+    <STEP_TIME>60</STEP_TIME>
+    <TYPE>Infusion</TYPE>
+    <NAME>Strike</NAME>
   </MASH_STEP>
 </MASH_STEPS>
 </MASH>
@@ -161,12 +162,12 @@ According to http://www.byo.com/component/resource/article/2398-fuller-s-the-pri
 </WATERS>
 <EQUIPMENT>
     <VERSION>1</VERSION>
-    <BOIL_SIZE>22.25822</BOIL_SIZE>
+    <BOIL_SIZE>23.25189</BOIL_SIZE>
     <BOIL_TIME>60</BOIL_TIME>
     <BATCH_SIZE>18.92706</BATCH_SIZE>
-    <TOP_UP_KETTLE>1.907349e-06</TOP_UP_KETTLE>
+    <TOP_UP_KETTLE>0</TOP_UP_KETTLE>
     <TOP_UP_WATER>0</TOP_UP_WATER>
-    <EVAP_RATE>12</EVAP_RATE>
+    <EVAP_RATE>17</EVAP_RATE>
     <TRUB_CHILLER_LOSS>0.946353</TRUB_CHILLER_LOSS>
 </EQUIPMENT>
 <STYLES>
@@ -181,13 +182,12 @@ According to http://www.byo.com/component/resource/article/2398-fuller-s-the-pri
     <TYPE>beer</TYPE>
     <FG_MIN>1.010</FG_MIN>
     <OG_MIN>1.048</OG_MIN>
-    <IBU_MAX>50</IBU_MAX>
     <EXAMPLES>Examples: Fullers ESB, Adnams Broadside, Shepherd Neame Bishop's Finger, Young's Ram Rod, Samuel Smith's Old Brewery Pale Ale, Bass Ale, Whitbread Pale Ale, Shepherd Neame Spitfire, Marston's Pedigree, Black Sheep Ale, Vintage Henley, Mordue Workie Ticket, Morland Old Speckled Hen, Greene King Abbot Ale, Bateman's  XXXB, Gale's Hordean Special Bitter (HSB), Ushers 1824 Particular Ale, Hopback Summer Lightning, Great Lakes Moondog Ale, Shipyard Old Thumper, Alaskan ESB, Geary's Pale Ale, Cooperstown Old Slugger, Anderson Valley Boont ESB, Avery 14'er ESB, Redhook ESB</EXAMPLES>
+    <IBU_MAX>50</IBU_MAX>
     <MATCH_QUALITY>Very good match</MATCH_QUALITY>
     <STYLE_GUIDE>BJCP</STYLE_GUIDE>
     <INGREDIENTS>Pale ale, amber, and/or crystal malts, may use a touch of black malt for color adjustment.  May use sugar adjuncts, corn or wheat.  English hops most typical, although American and European varieties are becoming more common (particularly in the paler examples).  Characterful English yeast.  "Burton" versions use medium to high sulfate water.</INGREDIENTS>
     <FG_MAX>1.016</FG_MAX>
-    <OG_MAX>1.060</OG_MAX>
     <ABV_MAX>6.2</ABV_MAX>
     <PROFILE>Aroma:
 Hop aroma moderately-high to moderately-low, and can use any variety of hops although UK hops are most traditional.  Medium to medium-high malt aroma, often with a low to moderately strong caramel component (although this character will be more subtle in paler versions). Medium-low to medium-high fruity esters.  Generally no diacetyl, although very low levels are allowed.   May have light, secondary notes of sulfur and/or alcohol in some examples (optional).
@@ -199,6 +199,7 @@ Mouthfeel:
 Medium-light to medium-full body.  Low to moderate carbonation, although bottled commercial versions will be higher.  Stronger versions may have a slight alcohol warmth but this character should not be too high.
 Impression:
 An average-strength to moderately-strong English ale. The balance may be fairly even between malt and hops to somewhat bitter.  Drinkability is a critical component of the style; emphasis is still on the bittering hop addition as opposed to the aggressive middle and late hopping seen in American ales.  A rather broad style that allows for considerable interpretation by the brewer.</PROFILE>
+    <OG_MAX>1.060</OG_MAX>
     <CARB_MIN>1.5</CARB_MIN>
     <CATEGORY>English Pale Ale</CATEGORY>
     <IBU_MIN>30</IBU_MIN>
