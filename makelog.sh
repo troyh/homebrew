@@ -1,6 +1,7 @@
 #!/bin/bash
 
 TUMBLR_SITE_NAME="geekbrewing"
+GH_PAGES_REPO="~/homebrew-pages"
 BATCH_ID=$1
 
 curl --silent "http://$TUMBLR_SITE_NAME.tumblr.com/api/read?tagged=$BATCH_ID" > batches/$BATCH_ID/log.xml
@@ -21,3 +22,12 @@ rm -f batches/$BATCH_ID/tmp.xml
 
 # Make the HTML page for the batch
 xsltproc batch.xsl batches/$BATCH_ID/batch.xml > batches/$BATCH_ID/batch.html
+# Put them in the separate gh-pages branch repo
+cp batches/$BATCH_ID/batch.html $GH_PAGES_REPO/batch/$BATCH_ID.html
+
+#
+# Make the index page
+#
+xml ls batches/ | xsltproc batchindex.xsl > batches/index.xml
+xsltproc home.xsl batches/index.xml > index.html
+
