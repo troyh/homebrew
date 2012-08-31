@@ -3,6 +3,8 @@
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+<xsl:param name="recipes_doc"/>
+
 <xsl:template match="/">
 	<html>
 		<head>
@@ -12,6 +14,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 			<h1>Homebrewing</h1>
 			<h2>Batches</h2>
 			<xsl:apply-templates select="batches"/>
+			<h2>Recipes</h2>
+			<ol><xsl:apply-templates select="document($recipes_doc)/RECIPES"/></ol>
 			<h2>Yeasts</h2>
 			<xsl:apply-templates select="//batches/batch/yeasts/yeast"/>
 		</body>
@@ -28,6 +32,12 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		</tr>
 		<xsl:apply-templates select="*"/>
 	</table>
+</xsl:template>
+
+<xsl:template match="RECIPE">
+	<li><a>
+		<xsl:attribute name="href">recipe/<xsl:value-of select="NAME"/>.html</xsl:attribute>
+		<xsl:value-of select="NAME" disable-output-escaping="yes"/></a></li>
 </xsl:template>
 
 <xsl:template match="batch">

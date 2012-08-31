@@ -29,5 +29,8 @@ cp batches/$BATCH_ID/batch.html $GH_PAGES_REPO/batch/$BATCH_ID.html
 # Make the index page
 #
 xml ls batches/ | xsltproc batchindex.xsl > batches/index.xml
-xsltproc home.xsl batches/index.xml > index.html
+ls  recipes/*.xml | while read F; do xml sel -t -m '/RECIPES/RECIPE' -c .   <(cat "$F"); done | sed -e '1i\
+<RECIPES>' -e '$a\
+</RECIPES>' > recipes.xml
+xsltproc --stringparam recipes_doc recipes.xml home.xsl batches/index.xml > index.html
 
