@@ -6,6 +6,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:param name="filename"/>
 <xsl:param name="recipefile"/>
 <xsl:param name="commit_sha"/>
+<xsl:param name="results_file"/>
 <xsl:variable name="recipe" select="document($filename)"/>
 
 <xsl:template match="/">
@@ -17,6 +18,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 				<xsl:copy-of select="$recipe/RECIPES/RECIPE"/>
 			</xsl:element>
 		</recipe>
+		<xsl:copy-of select="document($results_file)"/>
 		<log>
 			<xsl:copy-of select="."/>
 		</log>

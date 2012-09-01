@@ -1356,6 +1356,226 @@ More evident malt and hop flavors than in a special or best bitter.  Stronger ve
   </RECIPE>
 <RECIPE>
 <VERSION>1</VERSION>
+<NAME>My IPA</NAME>
+<TYPE>All Grain</TYPE>
+<BREWER>BrewPal</BREWER>
+<BATCH_SIZE>18.927059</BATCH_SIZE>
+<BOIL_SIZE>23.251892</BOIL_SIZE>
+<BOIL_TIME>60</BOIL_TIME>
+<EFFICIENCY>75</EFFICIENCY>
+<OG>0.000000</OG>
+<FG>0.000000</FG>
+<FERMENTATION_STAGES>1</FERMENTATION_STAGES>
+<PRIMARY_AGE>14</PRIMARY_AGE>
+<PRIMARY_TEMP>21.000000</PRIMARY_TEMP>
+<SECONDARY_AGE>0</SECONDARY_AGE>
+<SECONDARY_TEMP>21.000000</SECONDARY_TEMP>
+<CARBONATION>1.900000</CARBONATION>
+<FORCED_CARBONATION>1</FORCED_CARBONATION>
+<CARBONATION_TEMP>21.111111</CARBONATION_TEMP>
+<PRIMING_SUGAR_NAME>(null)</PRIMING_SUGAR_NAME>
+<PRIMING_SUGAR_EQUIV>0.000000</PRIMING_SUGAR_EQUIV>
+<NOTES/>
+<FERMENTABLES>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <NAME>2 Row Base</NAME>
+    <AMOUNT>4.535923</AMOUNT>
+    <TYPE>Grain</TYPE>
+    <YIELD>78.000000</YIELD>
+    <COLOR>1.500000</COLOR>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>50.000000</COLOR>
+    <AMOUNT>0.226796</AMOUNT>
+    <NAME>Crystal 60L</NAME>
+    <YIELD>67.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>25.000000</COLOR>
+    <AMOUNT>0.226796</AMOUNT>
+    <NAME>Victory</NAME>
+    <YIELD>74.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Grain</TYPE>
+    <AMOUNT>0.113398</AMOUNT>
+    <COLOR>140.000000</COLOR>
+    <YIELD>63.000000</YIELD>
+    <NAME>Special B</NAME>
+  </FERMENTABLE>
+</FERMENTABLES>
+<HOPS>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>60.000000</TIME>
+    <FORM>Leaf</FORM>
+    <SUBSTITUTES>Amarillo, Cascade, Columbus, Summit</SUBSTITUTES>
+    <ALPHA>10.900000</ALPHA>
+    <NAME>Centennial</NAME>
+    <AMOUNT>0.028350</AMOUNT>
+    <USE>Boil</USE>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Boil</USE>
+    <ALPHA>9.300000</ALPHA>
+    <SUBSTITUTES>Cascade, Centennial, Summit, Ahtanum</SUBSTITUTES>
+    <FORM>Pellet</FORM>
+    <NAME>Amarillo</NAME>
+    <AMOUNT>0.014175</AMOUNT>
+    <TIME>15.000000</TIME>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Boil</USE>
+    <ALPHA>6.100000</ALPHA>
+    <SUBSTITUTES>Liberty, Tettnanger, Mt. Hood, Vangaurd, Tradition</SUBSTITUTES>
+    <FORM>Pellet</FORM>
+    <NAME>Hallertauer</NAME>
+    <AMOUNT>0.028350</AMOUNT>
+    <TIME>15.000000</TIME>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>10080.000000</TIME>
+    <FORM>Leaf</FORM>
+    <SUBSTITUTES>Amarillo, Centennial, Summit</SUBSTITUTES>
+    <ALPHA>5.700000</ALPHA>
+    <NAME>Cascade</NAME>
+    <AMOUNT>0.056699</AMOUNT>
+    <USE>Dry Hop</USE>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>0</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Nugget, Columbus</SUBSTITUTES>
+    <ALPHA>16.000000</ALPHA>
+    <NAME>Warrior</NAME>
+    <AMOUNT>0.007087</AMOUNT>
+    <USE>First Wort</USE>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Aroma</USE>
+    <ALPHA>5.700000</ALPHA>
+    <SUBSTITUTES>Amarillo, Centennial, Summit</SUBSTITUTES>
+    <FORM>Leaf</FORM>
+    <NAME>Cascade</NAME>
+    <AMOUNT>0.028350</AMOUNT>
+    <TIME>0</TIME>
+  </HOP>
+</HOPS>
+<YEASTS>
+  <YEAST>
+    <VERSION>1</VERSION>
+    <ATTENUATION>78</ATTENUATION>
+    <LABORATORY>Fermentis</LABORATORY>
+    <FORM>Dry</FORM>
+    <MIN_TEMPERATURE>15</MIN_TEMPERATURE>
+    <PRODUCT_ID>US-05</PRODUCT_ID>
+    <NAME>Safale US-05</NAME>
+    <AMOUNT_IS_WEIGHT>TRUE</AMOUNT_IS_WEIGHT>
+    <AMOUNT>0.005000</AMOUNT>
+    <TYPE>Ale</TYPE>
+    <MAX_TEMPERATURE>24</MAX_TEMPERATURE>
+  </YEAST>
+</YEASTS>
+<MISCS>
+  <MISC>
+    <VERSION>1</VERSION>
+    <TIME>15.000000</TIME>
+    <AMOUNT>0.002835</AMOUNT>
+    <NAME>Yeast nutrient</NAME>
+    <USE>Boil</USE>
+    <TYPE>Other</TYPE>
+  </MISC>
+  <MISC>
+    <VERSION>1</VERSION>
+    <TIME>15.000000</TIME>
+    <AMOUNT>0.002835</AMOUNT>
+    <NAME>Whirlfloc</NAME>
+    <USE>Boil</USE>
+    <TYPE>Fining</TYPE>
+  </MISC>
+</MISCS>
+<MASH>
+<VERSION>1</VERSION>
+<NAME>Batch/Fly</NAME>
+<GRAIN_TEMP>21.111111</GRAIN_TEMP>
+<MASH_THICKNESS>3.129527</MASH_THICKNESS>
+<SPARGE_TEMP>76.666664</SPARGE_TEMP>
+<MASH_STEPS>
+  <MASH_STEP>
+    <VERSION>1</VERSION>
+    <INFUSE_AMOUNT>11.35624</INFUSE_AMOUNT>
+    <TYPE>Infusion</TYPE>
+    <STEP_TIME>60</STEP_TIME>
+    <NAME>Strike</NAME>
+    <STEP_TEMP>66.66666</STEP_TEMP>
+  </MASH_STEP>
+</MASH_STEPS>
+</MASH>
+<WATERS>
+</WATERS>
+<EQUIPMENT>
+    <VERSION>1</VERSION>
+    <BOIL_SIZE>23.25189</BOIL_SIZE>
+    <BOIL_TIME>60</BOIL_TIME>
+    <BATCH_SIZE>18.92706</BATCH_SIZE>
+    <TOP_UP_KETTLE>0</TOP_UP_KETTLE>
+    <TOP_UP_WATER>0</TOP_UP_WATER>
+    <EVAP_RATE>17</EVAP_RATE>
+    <TRUB_CHILLER_LOSS>0.946353</TRUB_CHILLER_LOSS>
+</EQUIPMENT>
+<STYLES>
+  <STYLE>
+    <VERSION>1</VERSION>
+    <COLOR_MIN>6.0</COLOR_MIN>
+    <COLOR_MAX>15.0</COLOR_MAX>
+    <STYLE_LETTER>B</STYLE_LETTER>
+    <ABV_MIN>5.5</ABV_MIN>
+    <NAME>American IPA</NAME>
+    <IS_SELECTED>0.000000</IS_SELECTED>
+    <TYPE>beer</TYPE>
+    <FG_MIN>1.010</FG_MIN>
+    <OG_MIN>1.056</OG_MIN>
+    <EXAMPLES>Bell's Two-Hearted Ale, AleSmith IPA, Russian River Blind Pig IPA, Stone IPA, Three Floyds Alpha King, Great Divide Titan IPA, Bear Republic Racer 5 IPA, Victory Hop Devil, Sierra Nevada Celebration Ale, Anderson Valley Hop Ottin',  Dogfish Head 60 Minute IPA, Founder's Centennial IPA, Anchor Liberty Ale, Harpoon IPA, Avery IPA</EXAMPLES>
+    <IBU_MAX>70</IBU_MAX>
+    <MATCH_QUALITY>Very good match</MATCH_QUALITY>
+    <STYLE_GUIDE>BJCP</STYLE_GUIDE>
+    <INGREDIENTS>Pale ale malt (well-modified and suitable for single-temperature infusion mashing); American hops; American yeast that can give a clean or slightly fruity profile. Generally all-malt, but mashed at lower temperatures for high attenuation.  Water character varies from soft to moderately sulfate.  Versions with a noticeable Rye character ("RyePA") should be entered in the Specialty category.</INGREDIENTS>
+    <FG_MAX>1.018</FG_MAX>
+    <ABV_MAX>7.5</ABV_MAX>
+    <PROFILE>Aroma:
+A prominent to intense hop aroma with a citrusy, floral, perfume-like, resinous, piney, and/or fruity character derived from American hops.  Many versions are dry hopped and can have an additional grassy aroma, although this is not required.  Some clean malty sweetness may be found in the background, but should be at a lower level than in English examples.  Fruitiness, either from esters or hops, may also be detected in some versions, although a neutral fermentation character is also acceptable.  Some alcohol may be noted.
+Appearance:
+Color ranges from medium gold to medium reddish copper; some versions can have an orange-ish tint.  Should be clear, although unfiltered dry-hopped versions may be a bit hazy.  Good head stand with white to off-white color should persist.
+Flavor:
+Hop flavor is medium to high, and should reflect an American hop character with citrusy, floral, resinous, piney or fruity aspects.  Medium-high to very high hop bitterness, although the malt backbone will support the strong hop character and provide the best balance.  Malt flavor should be low to medium, and is generally clean and malty sweet although some caramel or toasty flavors are acceptable at low levels. No diacetyl.  Low fruitiness is acceptable but not required.  The bitterness may linger into the aftertaste but should not be harsh.  Medium-dry to dry finish.  Some clean alcohol flavor can be noted in stronger versions.  Oak is inappropriate in this style.  May be slightly sulfury, but most examples do not exhibit this character.
+Mouthfeel:
+Smooth, medium-light to medium-bodied mouthfeel without hop-derived astringency, although moderate to medium-high carbonation can combine to render an overall dry sensation in the presence of malt sweetness.  Some smooth alcohol warming can and should be sensed in stronger (but not all) versions.  Body is generally less than in English counterparts.
+Impression:
+A decidedly hoppy and bitter, moderately strong American pale ale.</PROFILE>
+    <OG_MAX>1.075</OG_MAX>
+    <CARB_MIN>1.5</CARB_MIN>
+    <CATEGORY>India Pale Ale (IPA)</CATEGORY>
+    <IBU_MIN>40</IBU_MIN>
+    <CARB_MAX>2.3</CARB_MAX>
+    <CATEGORY_NUMBER>14</CATEGORY_NUMBER>
+    <NOTES>History:
+An American version of the historical English style, brewed using American ingredients and attitude.</NOTES>
+  </STYLE>
+</STYLES>
+</RECIPE>
+<RECIPE>
+<VERSION>1</VERSION>
 <NAME>Oatmeal Raisin Stout</NAME>
 <TYPE>All Grain</TYPE>
 <BREWER>BrewPal</BREWER>

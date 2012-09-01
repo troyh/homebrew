@@ -55,6 +55,16 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 </xsl:template>
 
+<xsl:template match="results">
+	<h2>Results</h2>
+	<div>
+		<div>OG: <xsl:value-of select="gravity/@og"/></div>
+		<div>FG: <xsl:value-of select="gravity/@fg"/></div>
+		<div>ABV: <xsl:value-of select="format-number((((gravity/@og - 1) * 1000) - ((gravity/@fg - 1) * 1000)) * 131 div 1000,&quot;#.##&quot;)"/>%</div>
+		<div>Apparent Attenuation: <xsl:value-of select="format-number((((gravity/@og - 1) * 1000) - ((gravity/@fg - 1) * 1000)) div ((gravity/@og - 1) * 1000) * 100,&quot;#&quot;)"/>%</div>
+	</div>
+</xsl:template>
+
 <xsl:template match="FERMENTABLES">
 	<div id="fermentables">
 		<div class="total_weight">
