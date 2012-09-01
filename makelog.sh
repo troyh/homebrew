@@ -14,16 +14,24 @@ git show $V:"recipes/$F" > batches/$BATCH_ID/tmp.xml
 # If the results.xml file doesn't exist, create an empty one
 if [ ! -f batches/$BATCH_ID/results.xml ]; then
 	cat - > batches/$BATCH_ID/results.xml <<EOF
-<results>
-	<mash
-	<efficiencies>
-		<mash></mash>
-		<brewhouse></brewhouse>
-	</efficiencies>
-	<boil volume="" sg="" time=""/>
-	<fermenter volume="" sg="1.060"/>
-	<gravity og="" fg=""/>
-</results>
+	<results>
+		<mash type="" duration="">
+			<infusion>
+				<strike volume="" temp=""/>
+			</infusion>
+			<measurement temp=""/>
+			<measurement temp=""/>
+			<measurement temp=""/>
+			<measurement temp=""/>
+		</mash>
+		<efficiencies>
+			<mash></mash>
+			<brewhouse></brewhouse>
+		</efficiencies>
+		<boil volume="" sg="" time="" end_volume=""/>
+		<gravity volume="" og="" fg=""/>
+	</results>
+
 EOF
 fi
 

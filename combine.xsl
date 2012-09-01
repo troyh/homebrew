@@ -17,6 +17,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 				<xsl:attribute name="commit_sha"><xsl:value-of select="$commit_sha"/></xsl:attribute>
 				<xsl:copy-of select="$recipe/RECIPES/RECIPE"/>
 			</xsl:element>
+			<data>
+				<xsl:apply-templates select="$recipe/RECIPES/RECIPE/FERMENTABLES"/>
+			</data>
 		</recipe>
 		<xsl:copy-of select="document($results_file)"/>
 		<log>
@@ -24,5 +27,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		</log>
 	</batch>
 </xsl:template>
+
+<xsl:template match="FERMENTABLE">
+	<ppg><xsl:value-of select="AMOUNT * 2.20462 * (YIELD div 100 * 46)"/></ppg>
+</xsl:template>
+
 
 </xsl:stylesheet>

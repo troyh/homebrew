@@ -105,7 +105,18 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		<div>FG: <xsl:value-of select="gravity/@fg"/></div>
 		<div>ABV: 
 			<xsl:call-template name="format-percent">
-				<xsl:with-param name="value" select="(((gravity/@og - 1) * 1000) - ((gravity/@fg - 1) * 1000)) * 131 div 1000"/>
+				<xsl:with-param name="value" select="(((gravity/@og - 1) * 1000) - ((gravity/@fg - 1) * 1000)) * 131 div 100000"/>
+				<xsl:with-param name="precision" select="2"/>
+			</xsl:call-template>
+		</div>
+		<div>Mash efficiency: 
+			<xsl:call-template name="format-percent">
+				<xsl:with-param name="value" select="(((boil/@sg - 1) * 1000) * (boil/@volume * 0.264172)) div sum(../recipe/data/ppg)"/>
+			</xsl:call-template>
+		</div>
+		<div>Brewhouse efficiency: 
+			<xsl:call-template name="format-percent">
+				<xsl:with-param name="value" select="(((gravity/@og - 1) * 1000) * (gravity/@volume * 0.264172)) div sum(../recipe/data/ppg)"/>
 			</xsl:call-template>
 		</div>
 		<div>Apparent Attenuation: <xsl:value-of select="format-number((((gravity/@og - 1) * 1000) - ((gravity/@fg - 1) * 1000)) div ((gravity/@og - 1) * 1000) * 100,&quot;#&quot;)"/>%</div>
@@ -318,8 +329,19 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template name="format-percent">
 	<xsl:param name="value"/>
+	<xsl:param name="precision"/>
 	<span class="percent">
-		<xsl:value-of select="format-number($value * 100,&quot;#&quot;)"/>
+		<xsl:choose>
+			<xsl:when test="$precision = 2">
+				<xsl:value-of select="format-number($value * 100,&quot;#.##&quot;)"/>
+			</xsl:when>
+			<xsl:when test="$precision = 1">
+				<xsl:value-of select="format-number($value * 100,&quot;#.#&quot;)"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="format-number($value * 100,&quot;#&quot;)"/>
+			</xsl:otherwise>
+		</xsl:choose>
 		<xsl:text>%</xsl:text>
 	</span>
 </xsl:template>
@@ -414,6 +436,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template match="tag">
 	<!-- <div>Tag:<xsl:value-of select="."/></div> -->
+</xsl:template>
+
+<xsl:template match="data">
 </xsl:template>
 
 </xsl:stylesheet>

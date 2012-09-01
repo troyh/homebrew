@@ -218,7 +218,12 @@ A decidedly hoppy and bitter, moderately strong American pale ale.</PROFILE>
 An American version of the historical English style, brewed using American ingredients and attitude.</NOTES>
   </STYLE>
 </STYLES>
-</RECIPE></beerxml></recipe><results>
+</RECIPE></beerxml><data>
+  <ppg>358.799517925649</ppg>
+  <ppg>15.4099691035664</ppg>
+  <ppg>17.0199658755808</ppg>
+  <ppg>7.244985474064801</ppg>
+</data></recipe><results>
 	<mash type="infusion" duration="60">
 		<infusion>
 			<strike volume="17.0344" temp="72.7778"/>
