@@ -58,9 +58,56 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="results">
 	<h2>Results</h2>
 	<div>
+		<div>Strike: 
+			<xsl:call-template name="format-volume">
+				<xsl:with-param name="liters" select="mash/infusion/strike/@volume"/>
+			</xsl:call-template>
+			@
+			<xsl:call-template name="format-temperature">
+				<xsl:with-param name="celsius" select="mash/infusion/strike/@temp"/>
+			</xsl:call-template>
+		</div>
+		<div>Mash: <xsl:value-of select="mash/@duration"/> minutes at
+			<xsl:call-template name="format-temperature">
+				<xsl:with-param name="celsius" select="mash/measurement/@temp[1]"/>
+			</xsl:call-template>
+			<xsl:text>, average of </xsl:text>
+			<xsl:call-template name="format-temperature">
+				<xsl:with-param name="celsius" 
+					select="sum(mash/measurement/@temp) div count(mash/measurement/@temp)"/>
+			</xsl:call-template>
+		</div>
+		<div>Boil: 
+			<xsl:call-template name="format-volume">
+				<xsl:with-param name="liters" select="boil/@volume"/>
+			</xsl:call-template>
+			for <xsl:value-of select="boil/@time"/> minutes &#8594; 
+			<xsl:call-template name="format-volume">
+				<xsl:with-param name="liters" select="boil/@end_volume"/>
+			</xsl:call-template>
+		</div>
+		<div>Evaporation rate: 
+			<xsl:call-template name="format-volume">
+				<xsl:with-param name="liters" select="(boil/@volume - boil/@end_volume) div (boil/@time div 60)"/>
+			</xsl:call-template>
+			per hour
+			(<xsl:call-template name="format-percent">
+				<xsl:with-param name="value" 
+					select="(boil/@volume - boil/@end_volume) div boil/@volume div (boil/@time div 60)"/>
+			</xsl:call-template>)
+		</div>
+		<div>Final Volume: 
+			<xsl:call-template name="format-volume">
+				<xsl:with-param name="liters" select="gravity/@volume"/>
+			</xsl:call-template>
+		</div>
 		<div>OG: <xsl:value-of select="gravity/@og"/></div>
 		<div>FG: <xsl:value-of select="gravity/@fg"/></div>
-		<div>ABV: <xsl:value-of select="format-number((((gravity/@og - 1) * 1000) - ((gravity/@fg - 1) * 1000)) * 131 div 1000,&quot;#.##&quot;)"/>%</div>
+		<div>ABV: 
+			<xsl:call-template name="format-percent">
+				<xsl:with-param name="value" select="(((gravity/@og - 1) * 1000) - ((gravity/@fg - 1) * 1000)) * 131 div 1000"/>
+			</xsl:call-template>
+		</div>
 		<div>Apparent Attenuation: <xsl:value-of select="format-number((((gravity/@og - 1) * 1000) - ((gravity/@fg - 1) * 1000)) div ((gravity/@og - 1) * 1000) * 100,&quot;#&quot;)"/>%</div>
 	</div>
 </xsl:template>
@@ -255,14 +302,26 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template name="format-volume">
 	<xsl:param name="liters"/>
-	<xsl:value-of select="format-number($liters * 0.264172,&quot;#.##&quot;)"/> gallons
-	(<xsl:value-of select="format-number($liters,&quot;#.##&quot;)"/>L)
+	<span class="volume">
+		<span class="english"><xsl:value-of select="format-number($liters * 0.264172,&quot;#.##&quot;)"/> gallons</span>
+		<span class="metric">(<xsl:value-of select="format-number($liters,&quot;#.#&quot;)"/>L)</span>
+	</span>
 </xsl:template>
 
 <xsl:template name="format-temperature">
 	<xsl:param name="celsius"/>
-	<xsl:value-of select="format-number(($celsius * 9) div 5 + 32,&quot;#&quot;)"/>&#176;F
-	(<xsl:value-of select="format-number($celsius,&quot;#&quot;)"/>&#176;C)
+	<xsl:value-of select="format-number(($celsius * 9) div 5 + 32,&quot;#&quot;)"/>
+	<xsl:text>&#176;F(</xsl:text>
+	<xsl:value-of select="format-number($celsius,&quot;#&quot;)"/>
+	<xsl:text>&#176;C)</xsl:text>
+</xsl:template>
+
+<xsl:template name="format-percent">
+	<xsl:param name="value"/>
+	<span class="percent">
+		<xsl:value-of select="format-number($value * 100,&quot;#&quot;)"/>
+		<xsl:text>%</xsl:text>
+	</span>
 </xsl:template>
 
 <xsl:template match="NOTES">

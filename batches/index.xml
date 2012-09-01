@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<batches><batch id="002"><name>Jamil&amp;#39;s Evil Twin (R)</name><type>All Grain</type><styles/><yeasts>
+      <yeast><lab>Wyeast Labs</lab><prodid>1056</prodid><name>American Ale</name></yeast>
+    </yeasts><results><og><est/><act/></og><fg><est/><act/></fg><efficiencies><mash/><brewhouse/></efficiencies></results></batch><batch id="003"><name>Breakfast Stout</name><type>All Grain</type><styles/><yeasts>
+    <yeast><lab>Wyeast Labs</lab><prodid>1084</prodid><name>Irish Ale</name></yeast>
+  </yeasts><results><og><est/><act/></og><fg><est/><act/></fg><efficiencies><mash/><brewhouse/></efficiencies></results></batch><batch id="004"><name>115th Dream Hopbursted Imperial IPA</name><type>All Grain</type><styles/><yeasts>
+      <yeast><lab>Wyeast Labs</lab><prodid>1056</prodid><name>American Ale</name></yeast>
+    </yeasts><results><og><est/><act/></og><fg><est/><act/></fg><efficiencies><mash/><brewhouse/></efficiencies></results></batch><batch id="005"><name>Imperial Stout</name><type>All Grain</type><styles/><yeasts>
+    <yeast><lab>Wyeast Labs</lab><prodid>1056</prodid><name>American Ale</name></yeast>
+  </yeasts><results><og><est/><act/></og><fg><est/><act/></fg><efficiencies><mash/><brewhouse/></efficiencies></results></batch><batch id="006"><name>Surly Furious</name><type>All Grain</type><styles>
+  <style><name>Imperial IPA</name></style>
+</styles><yeasts>
+  <yeast><lab>Wyeast</lab><prodid>1335</prodid><name>British Ale II</name></yeast>
+</yeasts><results><og><est/><act/></og><fg><est/><act/></fg><efficiencies><mash/><brewhouse/></efficiencies></results></batch><batch id="007"><name>Barley Wine</name><type>All Grain</type><styles>
+  <style><name>English Barleywine</name></style>
+</styles><yeasts>
+  <yeast><lab>Wyeast</lab><prodid>1056</prodid><name>American Ale</name></yeast>
+</yeasts><results><og><est/><act/></og><fg><est/><act/></fg><efficiencies><mash/><brewhouse/></efficiencies></results></batch><batch id="008"><name>Fuller's ESB</name><type>All Grain</type><styles>
+  <style><name>Extra Special/Strong Bitter (English Pale Ale)</name></style>
+</styles><yeasts>
+  <yeast><lab>Wyeast</lab><prodid>1968</prodid><name>London ESB Ale</name></yeast>
+</yeasts><results><og><est/><act/></og><fg><est/><act/></fg><efficiencies><mash/><brewhouse/></efficiencies></results></batch><batch id="009"><name>Punkin' Ale</name><type>All Grain</type><styles>
+  <style><name>Spice, Herb, or Vegetable Beer</name></style>
+</styles><yeasts>
+  <yeast><lab>Wyeast</lab><prodid>1056</prodid><name>American Ale</name></yeast>
+</yeasts><results><og><est/><act/></og><fg><est/><act/></fg><efficiencies><mash/><brewhouse/></efficiencies></results></batch><batch id="010"><name>Fooler's C3SB</name><type>All Grain</type><styles>
+  <style><name>Extra Special/Strong Bitter (English Pale Ale)</name></style>
+</styles><yeasts>
+  <yeast><lab>Wyeast</lab><prodid>1318</prodid><name>London Ale III</name></yeast>
+</yeasts><results><og><est/><act/></og><fg><est/><act/></fg><efficiencies><mash/><brewhouse/></efficiencies></results></batch><batch id="011"><name>Old Fuller's ESB</name><type>All Grain</type><styles>
+  <style><name>Extra Special/Strong Bitter (English Pale Ale)</name></style>
+</styles><yeasts>
+  <yeast><lab>Wyeast</lab><prodid>1968</prodid><name>London ESB Ale</name></yeast>
+</yeasts><results><og><est/><act/></og><fg><est/><act/></fg><efficiencies><mash/><brewhouse/></efficiencies></results></batch><batch id="012"><name>Special B IPA</name><type>All Grain</type><styles>
+  <style><name>American IPA</name></style>
+</styles><yeasts>
+  <yeast><lab>Fermentis</lab><prodid>US-05</prodid><name>Safale US-05</name></yeast>
+</yeasts><results><og><est/><act/></og><fg><est/><act/></fg><efficiencies><mash/><brewhouse/></efficiencies></results></batch></batches>

@@ -14,7 +14,16 @@ git show $V:"recipes/$F" > batches/$BATCH_ID/tmp.xml
 # If the results.xml file doesn't exist, create an empty one
 if [ ! -f batches/$BATCH_ID/results.xml ]; then
 	cat - > batches/$BATCH_ID/results.xml <<EOF
-	<results/>
+<results>
+	<mash
+	<efficiencies>
+		<mash></mash>
+		<brewhouse></brewhouse>
+	</efficiencies>
+	<boil volume="" sg="" time=""/>
+	<fermenter volume="" sg="1.060"/>
+	<gravity og="" fg=""/>
+</results>
 EOF
 fi
 
@@ -36,9 +45,10 @@ cp batches/$BATCH_ID/batch.html $GH_PAGES_REPO/batch/$BATCH_ID.html
 #
 # Make the index page
 #
-xml ls batches/ | xsltproc batchindex.xsl > batches/index.xml
+xml ls batches/ | xsltproc batchindex.xsl - > batches/index.xml
 ls  recipes/*.xml | while read F; do xml sel -t -m '/RECIPES/RECIPE' -c .   <(cat "$F"); done | sed -e '1i\
 <RECIPES>' -e '$a\
 </RECIPES>' > recipes.xml
 xsltproc --stringparam recipes_doc recipes.xml home.xsl batches/index.xml > index.html
 
+cp index.html $GH_PAGES_REPO/
