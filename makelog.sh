@@ -26,6 +26,7 @@ if [ ! -f batches/$BATCH_ID/results.xml ]; then
 EOF
 fi
 
+TMPFILE=$(mktemp -t brewlog)
 # Grab any keywords from log posts
 xml sel -t -m '/tumblr/posts/post' -v . -n  batches/$BATCH_ID/log.xml | 
 		tail -r | 
@@ -36,20 +37,21 @@ xml sel -t -m '/tumblr/posts/post' -v . -n  batches/$BATCH_ID/log.xml |
 				V=$(bc <<<"$V * 3.78541")
 			fi
 			echo $K $V;
-		done > xxx
+		done > $TMPFILE
 
 # Edit the results.xml with values taken from keywords in log posts
 for K in OG FG BV BG EV FV BT; do 
-	grep $K xxx |
+	grep $K $TMPFILE |
 	tail -n 1 | 
 	sed -f keywords.sed | 
 	while read X V; do 
 		xml ed --inplace --update $X -v $V batches/$BATCH_ID/results.xml; 
 	done ; 
 done
+rm -f $TMPFILE
 
 # Get filename and version of recipe for this batch
-IFS=\t read RECIPEFILE RECIPEVERSION < <(xml sel -t -m '/batch/recipe' -v filename -o \t -v commit_sha batches/$BATCH_ID/recipe.xml)
+IFS='	' read RECIPEFILE RECIPEVERSION < <(xml sel -t -m '/batch/recipe' -v filename -o '	' -v commit_sha batches/$BATCH_ID/recipe.xml)
 
 # Combine the Tumblr log and the recipe into on XML document
 xsltproc \

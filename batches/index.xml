@@ -1,11 +1,76 @@
 <?xml version="1.0"?>
 <batches><batch id="002"><name>Jamil&amp;#39;s Evil Twin (R)</name><type>All Grain</type><styles/><yeasts>
       <yeast><lab>Wyeast Labs</lab><prodid>1056</prodid><name>American Ale</name></yeast>
-    </yeasts></batch><batch id="003"><name>Breakfast Stout</name><type>All Grain</type><styles/><yeasts>
+    </yeasts><data>
+      <ppg>459.997049468</ppg>
+      <ppg>46.000719072</ppg>
+      <ppg>34.500539304</ppg>
+      <ppg>17.483518448</ppg>
+      <ppg>17.017020856</ppg>
+      <ppg>11.500179768</ppg>
+    </data><results>
+  <mash type="" duration="">
+    <infusion>
+      <strike volume="" temp=""/>
+    </infusion>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+  </mash>
+  <boil volume="" sg="" time="" end_volume=""/>
+  <gravity volume="" og="1.063" fg="1.012"/>
+</results></batch><batch id="003"><name>Breakfast Stout</name><type>All Grain</type><styles/><yeasts>
     <yeast><lab>Wyeast Labs</lab><prodid>1084</prodid><name>Irish Ale</name></yeast>
-  </yeasts></batch><batch id="004"><name>115th Dream Hopbursted Imperial IPA</name><type>All Grain</type><styles/><yeasts>
+  </yeasts><data>
+    <ppg>184.002876288</ppg>
+    <ppg>69.001078608</ppg>
+    <ppg>23.000359536</ppg>
+    <ppg>46.000719072</ppg>
+  </data><results>
+  <mash type="" duration="">
+    <infusion>
+      <strike volume="" temp=""/>
+    </infusion>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+  </mash>
+  <boil volume="" sg="" time="" end_volume=""/>
+  <gravity volume="" og="1.041" fg="1.014"/>
+</results></batch><batch id="004"><name>115th Dream Hopbursted Imperial IPA</name><type>All Grain</type><styles/><yeasts>
       <yeast><lab>Wyeast Labs</lab><prodid>1056</prodid><name>American Ale</name></yeast>
-    </yeasts></batch><batch id="005"><name/><type/><styles/><yeasts/><data/><results>
+    </yeasts><data>
+      <ppg>759.001723436</ppg>
+      <ppg>46.000719072</ppg>
+      <ppg>92.001438144</ppg>
+    </data><results>
+  <mash type="" duration="">
+    <infusion>
+      <strike volume="" temp=""/>
+    </infusion>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+  </mash>
+  <boil volume="" sg="" time="" end_volume=""/>
+  <gravity volume="" og="1.078" fg="1.006"/>
+</results></batch><batch id="005"><name>Imperial Stout</name><type>All Grain</type><styles/><yeasts>
+    <yeast><lab>Wyeast Labs</lab><prodid>1056</prodid><name>American Ale</name></yeast>
+  </yeasts><data>
+    <ppg>46.000719072</ppg>
+    <ppg>34.500539304</ppg>
+    <ppg>276.004314432</ppg>
+    <ppg>46.000719072</ppg>
+    <ppg>34.500539304</ppg>
+    <ppg>253.003954896</ppg>
+    <ppg>23.000359536</ppg>
+    <ppg>92.001438144</ppg>
+    <ppg>46.000719072</ppg>
+    <ppg>92.001438144</ppg>
+  </data><results>
   <mash type="" duration="">
     <infusion>
       <strike volume="" temp=""/>
