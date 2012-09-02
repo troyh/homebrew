@@ -21,20 +21,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		<yeasts>
 			<xsl:apply-templates select="$batchdoc/batch/recipe/beerxml/RECIPE/YEASTS"/>
 		</yeasts>
-		<results>
-			<og>
-				<est/>
-				<act/>
-			</og>
-			<fg>
-				<est/>
-				<act/>
-			</fg>
-			<efficiencies>
-				<mash></mash>
-				<brewhouse></brewhouse>
-			</efficiencies>
-		</results>
+		<xsl:copy-of select="$batchdoc/batch/recipe/data"/>
+		<xsl:copy-of select="$batchdoc/batch/results"/>
 	</batch>
 </xsl:template>
 

@@ -119,7 +119,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 				<xsl:with-param name="value" select="(((gravity/@og - 1) * 1000) * (gravity/@volume * 0.264172)) div sum(../recipe/data/ppg)"/>
 			</xsl:call-template>
 		</div>
-		<div>Apparent Attenuation: <xsl:value-of select="format-number((((gravity/@og - 1) * 1000) - ((gravity/@fg - 1) * 1000)) div ((gravity/@og - 1) * 1000) * 100,&quot;#&quot;)"/>%</div>
+		<div>Apparent Attenuation: 
+			<xsl:call-template name="format-percent">
+				<xsl:with-param name="value" select="(((gravity/@og - 1) * 1000) - ((gravity/@fg - 1) * 1000)) div ((gravity/@og - 1) * 1000)"/>
+			</xsl:call-template>
+		</div>
 	</div>
 </xsl:template>
 
@@ -332,17 +336,23 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:param name="precision"/>
 	<span class="percent">
 		<xsl:choose>
-			<xsl:when test="$precision = 2">
-				<xsl:value-of select="format-number($value * 100,&quot;#.##&quot;)"/>
-			</xsl:when>
-			<xsl:when test="$precision = 1">
-				<xsl:value-of select="format-number($value * 100,&quot;#.#&quot;)"/>
+			<xsl:when test="string(number($value)) = 'NaN'"><xsl:text> </xsl:text>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:value-of select="format-number($value * 100,&quot;#&quot;)"/>
+				<xsl:choose>
+					<xsl:when test="$precision = 2">
+						<xsl:value-of select="format-number($value * 100,&quot;#.##&quot;)"/>
+					</xsl:when>
+					<xsl:when test="$precision = 1">
+						<xsl:value-of select="format-number($value * 100,&quot;#.#&quot;)"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:value-of select="format-number($value * 100,&quot;#&quot;)"/>
+					</xsl:otherwise>
+				</xsl:choose>
+				<xsl:text>%</xsl:text>
 			</xsl:otherwise>
 		</xsl:choose>
-		<xsl:text>%</xsl:text>
 	</span>
 </xsl:template>
 

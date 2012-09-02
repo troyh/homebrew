@@ -10,8 +10,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 </xsl:template>
 
 <xsl:template match="f">
-	<xsl:variable name="batchdoc" select="document(concat('batches/',@n,'/batch.xml'))"/>
-	<batch>
+	<xsl:variable name="recipedoc" select="document(concat('recipes/',@n,'.xml'))"/>
+	<recipe>
 		<xsl:attribute name="id"><xsl:value-of select="@n"/></xsl:attribute>
 		<name><xsl:value-of select="$batchdoc/batch/recipe/beerxml/RECIPE/NAME"/></name>
 		<type><xsl:value-of select="$batchdoc/batch/recipe/beerxml/RECIPE/TYPE"/></type>
@@ -21,20 +21,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		<yeasts>
 			<xsl:apply-templates select="$batchdoc/batch/recipe/beerxml/RECIPE/YEASTS"/>
 		</yeasts>
-		<results>
-			<og>
-				<est/>
-				<act/>
-			</og>
-			<fg>
-				<est/>
-				<act/>
-			</fg>
-			<efficiencies>
-				<mash></mash>
-				<brewhouse></brewhouse>
-			</efficiencies>
-		</results>
 	</batch>
 </xsl:template>
 
