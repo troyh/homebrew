@@ -6,44 +6,59 @@ BATCH_ID=$1
 
 curl --silent "http://$TUMBLR_SITE_NAME.tumblr.com/api/read?tagged=$BATCH_ID" > batches/$BATCH_ID/log.xml
 
-# Get version of recipe 
-read F <<<$(xml sel -t -v "/batch/recipe/filename"   batches/$BATCH_ID/recipe.xml)
-read V <<<$(xml sel -t -v "/batch/recipe/commit_sha" batches/$BATCH_ID/recipe.xml)
-git show $V:"recipes/$F" > batches/$BATCH_ID/tmp.xml
-
 # If the results.xml file doesn't exist, create an empty one
 if [ ! -f batches/$BATCH_ID/results.xml ]; then
 	cat - > batches/$BATCH_ID/results.xml <<EOF
-	<results>
-		<mash type="" duration="">
-			<infusion>
-				<strike volume="" temp=""/>
-			</infusion>
-			<measurement temp=""/>
-			<measurement temp=""/>
-			<measurement temp=""/>
-			<measurement temp=""/>
-		</mash>
-		<efficiencies>
-			<mash></mash>
-			<brewhouse></brewhouse>
-		</efficiencies>
-		<boil volume="" sg="" time="" end_volume=""/>
-		<gravity volume="" og="" fg=""/>
-	</results>
+<results>
+	<mash type="" duration="">
+		<infusion>
+			<strike volume="" temp=""/>
+		</infusion>
+		<measurement temp=""/>
+		<measurement temp=""/>
+		<measurement temp=""/>
+		<measurement temp=""/>
+	</mash>
+	<boil volume="" sg="" time="" end_volume=""/>
+	<gravity volume="" og="" fg=""/>
+</results>
 
 EOF
 fi
 
+# Grab any keywords from log posts
+xml sel -t -m '/tumblr/posts/post' -v . -n  batches/$BATCH_ID/log.xml | 
+		tail -r | 
+		perl -n -e 'while (/[^\w](OG|FG|BG|BV|EV|FV|BT)=([\d\.]+)/g) { print "$1 $2\n";  }' |
+		while read K V; do
+			# Convert volume gallons to liters
+			if [[ $K == "BV" || $K == "EV" || $K == "FV" ]]; then
+				V=$(bc <<<"$V * 3.78541")
+			fi
+			echo $K $V;
+		done > xxx
+
+# Edit the results.xml with values taken from keywords in log posts
+for K in OG FG BV BG EV FV BT; do 
+	grep $K xxx |
+	tail -n 1 | 
+	sed -f keywords.sed | 
+	while read X V; do 
+		xml ed --inplace --update $X -v $V batches/$BATCH_ID/results.xml; 
+	done ; 
+done
+
+# Get filename and version of recipe for this batch
+IFS=\t read RECIPEFILE RECIPEVERSION < <(xml sel -t -m '/batch/recipe' -v filename -o \t -v commit_sha batches/$BATCH_ID/recipe.xml)
+
 # Combine the Tumblr log and the recipe into on XML document
 xsltproc \
-	--stringparam filename batches/$BATCH_ID/tmp.xml \
-	--stringparam recipefile "$F" \
-	--stringparam commit_sha $V \
+	--stringparam filename <(git show $RECIPEVERSION:"recipes/$RECIPEFILE") \
+	--stringparam recipefile "$RECIPEFILE" \
+	--stringparam commit_sha $RECIPEVERSION \
 	--stringparam results_file batches/$BATCH_ID/results.xml \
 	combine.xsl \
 	batches/$BATCH_ID/log.xml > batches/$BATCH_ID/batch.xml
-rm -f batches/$BATCH_ID/tmp.xml
 
 # Make the HTML page for the batch
 xsltproc batch.xsl batches/$BATCH_ID/batch.xml > batches/$BATCH_ID/batch.html

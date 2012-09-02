@@ -5,17 +5,61 @@
     <yeast><lab>Wyeast Labs</lab><prodid>1084</prodid><name>Irish Ale</name></yeast>
   </yeasts></batch><batch id="004"><name>115th Dream Hopbursted Imperial IPA</name><type>All Grain</type><styles/><yeasts>
       <yeast><lab>Wyeast Labs</lab><prodid>1056</prodid><name>American Ale</name></yeast>
-    </yeasts></batch><batch id="005"><name>Imperial Stout</name><type>All Grain</type><styles/><yeasts>
-    <yeast><lab>Wyeast Labs</lab><prodid>1056</prodid><name>American Ale</name></yeast>
-  </yeasts></batch><batch id="006"><name>Surly Furious</name><type>All Grain</type><styles>
+    </yeasts></batch><batch id="005"><name/><type/><styles/><yeasts/><data/><results>
+  <mash type="" duration="">
+    <infusion>
+      <strike volume="" temp=""/>
+    </infusion>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+  </mash>
+  <boil volume="24.60516" sg="1.065" time="60" end_volume=""/>
+  <gravity volume="18.92705" og="1.074" fg="1.012"/>
+</results></batch><batch id="006"><name>Surly Furious</name><type>All Grain</type><styles>
   <style><name>Imperial IPA</name></style>
 </styles><yeasts>
   <yeast><lab>Wyeast</lab><prodid>1335</prodid><name>British Ale II</name></yeast>
-</yeasts></batch><batch id="007"><name>Barley Wine</name><type>All Grain</type><styles>
+</yeasts><data>
+  <ppg>269.099697770561</ppg>
+  <ppg>110.63172936816</ppg>
+  <ppg>30.76774726784</ppg>
+  <ppg>22.60728460848</ppg>
+  <ppg>2.97909418752</ppg>
+</data><results>
+  <mash type="" duration="">
+    <infusion>
+      <strike volume="" temp=""/>
+    </infusion>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+  </mash>
+  <boil volume="24.60516" sg="1.052" time="60" end_volume="19.87340"/>
+  <gravity volume="19.87340" og="1.064" fg="1.018"/>
+</results></batch><batch id="007"><name>Barley Wine</name><type>All Grain</type><styles>
   <style><name>English Barleywine</name></style>
 </styles><yeasts>
   <yeast><lab>Wyeast</lab><prodid>1056</prodid><name>American Ale</name></yeast>
-</yeasts></batch><batch id="008"><name>Fuller's ESB</name><type>All Grain</type><styles>
+</yeasts><data>
+  <ppg>524.399354249056</ppg>
+  <ppg>24.8399721018979</ppg>
+  <ppg>16.0999819178968</ppg>
+</data><results>
+  <mash type="" duration="">
+    <infusion>
+      <strike volume="" temp=""/>
+    </infusion>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+  </mash>
+  <boil volume="28.39057" sg="1.060" time="90" end_volume="24.60516"/>
+  <gravity volume="18.92705" og="1.074" fg="1.017"/>
+</results></batch><batch id="008"><name>Fuller's ESB</name><type>All Grain</type><styles>
   <style><name>Extra Special/Strong Bitter (English Pale Ale)</name></style>
 </styles><yeasts>
   <yeast><lab>Wyeast</lab><prodid>1968</prodid><name>London ESB Ale</name></yeast>
