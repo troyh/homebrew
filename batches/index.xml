@@ -229,4 +229,28 @@
 	</efficiencies>
 	<boil volume="24.9837" sg="1.050" time="60" end_volume="20.8198"/>
 	<gravity volume="17.98071" og="1.060" fg=""/>
+</results></batch><batch id="013"><name>Oatmeal Raisin Stout</name><type>All Grain</type><styles>
+  <style><name>Oatmeal Stout</name></style>
+</styles><yeasts>
+  <yeast><lab>Wyeast</lab><prodid>1335</prodid><name>British Ale II</name></yeast>
+</yeasts><data>
+  <ppg>294.399653129824</ppg>
+  <ppg>44.849910077544</ppg>
+  <ppg>24.8399501967936</ppg>
+  <ppg>13.5699727926928</ppg>
+  <ppg>14.0299718704112</ppg>
+  <ppg>14.4899709481296</ppg>
+  <ppg>8.279983398931201</ppg>
+</data><results>
+	<mash type="" duration="">
+		<infusion>
+			<strike volume="" temp=""/>
+		</infusion>
+		<measurement temp=""/>
+		<measurement temp=""/>
+		<measurement temp=""/>
+		<measurement temp=""/>
+	</mash>
+	<boil volume="" sg="" time="" end_volume=""/>
+	<gravity volume="" og="" fg=""/>
 </results></batch></batches>
