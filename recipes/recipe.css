@@ -7,11 +7,11 @@ body {
 	margin-bottom:2em;
 }
 
-div#fermentables:before {
+/*div#fermentables:before {
 	font-size: 15pt;
 	content: "Ingredients";
 }
-
+*/
 div#fermentables .total_weight:before {
 	content: "(Total: ";
 }

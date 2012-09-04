@@ -10,8 +10,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 				<xsl:if test="string-length(recipe/beerxml/RECIPE/NAME) = 0">No title</xsl:if>
 				<xsl:value-of select="recipe/beerxml/RECIPE/NAME" disable-output-escaping="yes"/>
 			</title>
-			<link rel="stylesheet" type="text/css" href="recipe.css" />
-			<script src="../../js/tumblr.js" />
+			<link rel="stylesheet" type="text/css" href="../recipe.css" />
+			<script src="../js/tumblr.js" />
 		</head>
 		<body>
 			<xsl:apply-templates select="*"/>
@@ -26,13 +26,17 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 			  <div><xsl:text>Type: </xsl:text><xsl:value-of select="TYPE"/></div>
 		  
 			  <div>Batch size: 
-				  <xsl:value-of select="format-number(BATCH_SIZE * 0.264172,&quot;#.##&quot;)"/><xsl:text> Gallons (</xsl:text>
-				  <xsl:value-of select="format-number(BATCH_SIZE,&quot;#.##&quot;)"/><xsl:text>L)</xsl:text></div>
+				  <xsl:call-template name="format-volume">
+					  <xsl:with-param name="liters" select="BATCH_SIZE"/>
+				  </xsl:call-template>
+			  </div>
 
 			  <div>Boil Volume: 
-				  <xsl:value-of select="format-number(BOIL_SIZE * 0.264172,&quot;#.##&quot;)"/><xsl:text> Gallons (</xsl:text>
-				  <xsl:value-of select="format-number(BOIL_SIZE,&quot;#.##&quot;)"/><xsl:text>L)</xsl:text></div>
-			  
+				  <xsl:call-template name="format-volume">
+					  <xsl:with-param name="liters" select="BOIL_SIZE"/>
+				  </xsl:call-template>
+			  </div>
+
 			  <div><xsl:text>Boil time: </xsl:text><xsl:value-of select="BOIL_TIME"/><xsl:text> minutes</xsl:text></div>
 			  <div><xsl:text>Brewhouse Efficiency: </xsl:text><xsl:value-of select="EFFICIENCY"/><xsl:text>%</xsl:text></div>
 			  <xsl:variable name="CALC_OG_GU" 
@@ -233,17 +237,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 			<xsl:value-of select="NAME"/>
 		</td>
 		<td>
-			<xsl:text> [</xsl:text>
-			<xsl:value-of select="ALPHA"/>%&#945;
-			<xsl:text>] </xsl:text>
+			<xsl:value-of select="format-number(ALPHA,&quot;#.##&quot;)"/>%&#945;
 		</td>
 		<td>
 			<xsl:value-of select="FORM"/>
 		</td>
 		<td>
-			<xsl:text> [</xsl:text>
 			<xsl:value-of select="TIME"/>
-			<xsl:text> min] </xsl:text>
 		</td>
 	</tr>
 </xsl:template>
