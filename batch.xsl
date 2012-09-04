@@ -145,7 +145,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<div class="weight">
 		<div class="english">
 			<xsl:choose>
-				<xsl:when test="$kgs &lt; 2.20462">
+				<xsl:when test="$kgs &lt; 0.453592"><!-- less than 1 pound? -->
 					<xsl:value-of select="format-number(($kgs * 2.20462 * 16) mod 16,&quot;#.##&quot;)"/> oz
 				</xsl:when>
 				<xsl:otherwise>

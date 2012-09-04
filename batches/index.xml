@@ -242,15 +242,15 @@
   <ppg>14.4899709481296</ppg>
   <ppg>8.279983398931201</ppg>
 </data><results>
-	<mash type="" duration="">
-		<infusion>
-			<strike volume="" temp=""/>
-		</infusion>
-		<measurement temp=""/>
-		<measurement temp=""/>
-		<measurement temp=""/>
-		<measurement temp=""/>
-	</mash>
-	<boil volume="" sg="" time="" end_volume=""/>
-	<gravity volume="" og="" fg=""/>
+  <mash type="" duration="">
+    <infusion>
+      <strike volume="" temp=""/>
+    </infusion>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+  </mash>
+  <boil volume="27.25495" sg="1.052" time="60" end_volume="22.71246"/>
+  <gravity volume="20.81975" og="1.062" fg=""/>
 </results></batch></batches>
