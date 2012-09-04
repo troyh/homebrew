@@ -223,7 +223,7 @@ Generally between sweet and dry stouts in sweetness.  Variations exist, from fai
   <ppg>14.4899709481296</ppg>
   <ppg>8.279983398931201</ppg>
 </data></recipe><results>
-  <mash type="" duration="">
+  <mash type="" duration="60">
     <infusion>
       <strike volume="17.03434" temp="73"/>
     </infusion>
