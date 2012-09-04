@@ -30,17 +30,20 @@ TMPFILE=$(mktemp -t brewlog)
 # Grab any keywords from log posts
 xml sel -t -m '/tumblr/posts/post' -v . -n  batches/$BATCH_ID/log.xml | 
 		tail -r | 
-		perl -n -e 'while (/[^\w](OG|FG|BG|BV|EV|FV|BT)=([\d\.]+)/g) { print "$1 $2\n";  }' |
+		perl -n -e 'while (/[^\w](OG|FG|BG|BV|EV|FV|BT|ST|SV)=([\d\.]+)/g) { print "$1 $2\n";  }' |
 		while read K V; do
 			# Convert volume gallons to liters
-			if [[ $K == "BV" || $K == "EV" || $K == "FV" ]]; then
+			if [[ $K == "BV" || $K == "EV" || $K == "FV" || $K == "SV" ]]; then
 				V=$(bc <<<"$V * 3.78541")
+			elif [[ $K == "ST" ]]; then
+				# Convert temperature from F to C
+				V=$(bc <<<"($V - 32) / 1.8")
 			fi
 			echo $K $V;
 		done > $TMPFILE
 
 # Edit the results.xml with values taken from keywords in log posts
-for K in OG FG BV BG EV FV BT; do 
+for K in OG FG BV BG EV FV BT ST SV; do 
 	grep $K $TMPFILE |
 	tail -n 1 | 
 	sed -f keywords.sed | 

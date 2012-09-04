@@ -3,6 +3,8 @@
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+<xsl:key name="hops-by-use" match="HOP" use="USE"/>
+
 <xsl:template match="/batch">
 	<html>
 		<head>
@@ -219,11 +221,23 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="HOPS">
 	<div id="hops">
 		<table>
-			<xsl:apply-templates select="HOP[USE=&quot;Boil&quot;]"/>
-			<tr><td></td></tr>
-			<xsl:apply-templates select="HOP[USE=&quot;Dry Hop&quot;]"/>
+			<xsl:call-template name="display-hops"><xsl:with-param name="use" select="'Mash'"/></xsl:call-template>
+			<xsl:call-template name="display-hops"><xsl:with-param name="use" select="'First Wort'"/></xsl:call-template>
+			<xsl:call-template name="display-hops"><xsl:with-param name="use" select="'Boil'"/></xsl:call-template>
+			<xsl:call-template name="display-hops"><xsl:with-param name="use" select="'Aroma'"/></xsl:call-template>
+			<xsl:call-template name="display-hops"><xsl:with-param name="use" select="'Dry Hop'"/></xsl:call-template>
 		</table>
 	</div>
+</xsl:template>
+
+<xsl:template name="display-hops">
+	<xsl:param name="use"/>
+	<xsl:if test="count(key('hops-by-use',$use)) > 0">
+	<tr><th><xsl:value-of select="$use"/></th></tr>
+	<xsl:for-each select="key('hops-by-use',$use)">
+		<xsl:apply-templates select="."/>
+	</xsl:for-each>
+	</xsl:if>
 </xsl:template>
 
 <xsl:template match="HOP">
@@ -243,7 +257,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 			<xsl:value-of select="FORM"/>
 		</td>
 		<td>
-			<xsl:value-of select="TIME"/>
+			<xsl:if test="USE = 'Boil'">
+				<xsl:value-of select="TIME"/>
+			</xsl:if>
 		</td>
 	</tr>
 </xsl:template>
@@ -345,10 +361,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template name="format-temperature">
 	<xsl:param name="celsius"/>
-	<xsl:value-of select="format-number(($celsius * 9) div 5 + 32,&quot;#&quot;)"/>
-	<xsl:text>&#176;F(</xsl:text>
-	<xsl:value-of select="format-number($celsius,&quot;#&quot;)"/>
-	<xsl:text>&#176;C)</xsl:text>
+	<span class="temperature">
+		<span class="fahrenheit"><xsl:value-of select="format-number(($celsius * 9) div 5 + 32,&quot;#&quot;)"/></span>
+		<span class="celsius"><xsl:value-of select="format-number($celsius,&quot;#&quot;)"/></span>
+	</span>
 </xsl:template>
 
 <xsl:template name="format-percent">
