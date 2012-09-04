@@ -34,11 +34,16 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 				  <xsl:value-of select="format-number(BOIL_SIZE,&quot;#.##&quot;)"/><xsl:text>L)</xsl:text></div>
 			  
 			  <div><xsl:text>Boil time: </xsl:text><xsl:value-of select="BOIL_TIME"/><xsl:text> minutes</xsl:text></div>
-			  <div><xsl:text>End of Boil Volume: </xsl:text><xsl:value-of select="BOIL_TIME"/><xsl:text> minutes</xsl:text></div>
-			  <div><xsl:text>Final Volume: </xsl:text><xsl:value-of select="BOIL_TIME"/><xsl:text> minutes</xsl:text></div>
 			  <div><xsl:text>Brewhouse Efficiency: </xsl:text><xsl:value-of select="EFFICIENCY"/><xsl:text>%</xsl:text></div>
-			  <div><xsl:text>OG: </xsl:text><xsl:value-of select="OG"/></div>
-			  <div><xsl:text>FG: </xsl:text><xsl:value-of select="FG"/></div>
+			  <xsl:variable name="CALC_OG_GU" 
+				select="(sum(../../data/ppg) * EFFICIENCY div (BATCH_SIZE * 0.264172)) div 100"/>
+  			  <xsl:variable name="CALC_FG_GU" 
+  				select="$CALC_OG_GU - ((EFFICIENCY div 100) * $CALC_OG_GU)"/>
+			  <div><xsl:text>OG: </xsl:text>
+			  	<xsl:value-of select="format-number($CALC_OG_GU div 1000 + 1,&quot;#.###&quot;)"/>
+			  </div>
+			  <div><xsl:text>FG: </xsl:text><xsl:value-of select="format-number($CALC_FG_GU div 1000 + 1,&quot;#.###&quot;)"/></div>
+			  <div><xsl:text>ABV: </xsl:text><xsl:value-of select="format-number(($CALC_OG_GU - $CALC_FG_GU) * 131 div 1000,&quot;#.##&quot;)"/>%</div>
 		  </div>
 
 	      <div id="ingredients">
@@ -47,9 +52,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 			  <xsl:apply-templates select="YEASTS"/>
 		  </div>
 		  
-		  <div id="mashprofile">
+		  <!-- <div id="mashprofile">
 			  <xsl:apply-templates select="MASH"/>
-		  </div>
+		  </div> -->
 		  
 		  <xsl:apply-templates select="NOTES"/>
 
@@ -76,6 +81,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 				<xsl:with-param name="celsius" 
 					select="sum(mash/measurement/@temp) div count(mash/measurement/@temp)"/>
 			</xsl:call-template>
+		</div>
+		<div>
+			Potential PPG: <xsl:value-of select="format-number(sum(../recipe/data/ppg),&quot;#&quot;)"/>
+			(<xsl:value-of 
+				select="format-number(sum(../recipe/data/ppg) * ../recipe/beerxml/RECIPE/EFFICIENCY div 100,&quot;#&quot;)"/> required)
 		</div>
 		<div>Boil: 
 			<xsl:call-template name="format-volume">
@@ -130,7 +140,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="FERMENTABLES">
 	<div id="fermentables">
 		<div class="total_weight">
+			<!-- Total weight should be in decimal format -->
 			<xsl:call-template name="format-weight">
+				<xsl:with-param name="decimal_only" select="1"/>
 				<xsl:with-param name="kgs" select="sum(FERMENTABLE/AMOUNT)"/>
 			</xsl:call-template>
 		</div>
@@ -142,6 +154,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template name="format-weight">
 	<xsl:param name="kgs"/>
+	<xsl:param name="decimal_only" select="false"/>
 	<div class="weight">
 		<div class="english">
 			<xsl:choose>
@@ -149,12 +162,19 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 					<xsl:value-of select="format-number(($kgs * 2.20462 * 16) mod 16,&quot;#.##&quot;)"/> oz
 				</xsl:when>
 				<xsl:otherwise>
-					<xsl:value-of select="format-number($kgs * 2.20462,&quot;#&quot;)"/> lbs 
-					<xsl:variable name="oz" select="format-number($kgs * 2.20462 * 16,&quot;#.##&quot;) mod 16"/>
 					<xsl:choose>
-						<xsl:when test="$oz &gt; 0">
-							<xsl:value-of select="$oz"/> oz
+						<xsl:when test="$decimal_only != 0">
+							<xsl:value-of select="format-number($kgs * 2.20462,&quot;#.##&quot;)"/> lbs 
 						</xsl:when>
+						<xsl:otherwise>
+							<xsl:value-of select="format-number($kgs * 2.20462,&quot;#&quot;)"/> lbs 
+							<xsl:variable name="oz" select="format-number($kgs * 2.20462 * 16,&quot;#.##&quot;) mod 16"/>
+							<xsl:choose>
+								<xsl:when test="$oz &gt; 0">
+									<xsl:value-of select="$oz"/> oz
+								</xsl:when>
+							</xsl:choose>
+						</xsl:otherwise>
 					</xsl:choose>
 				</xsl:otherwise>
 			</xsl:choose>
@@ -370,7 +390,14 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 </xsl:template>
 
 <xsl:template match="STYLE">
-		<div class="style"><xsl:value-of select="NAME"/></div>
+	<div class="style"><xsl:value-of select="NAME"/>
+		<span class="styleid">
+			<xsl:text>(</xsl:text>
+			<xsl:value-of select="CATEGORY_NUMBER"/>
+			<xsl:value-of select="STYLE_LETTER"/>
+			<xsl:text>)</xsl:text>
+		</span>
+	</div>
 </xsl:template>
 
 <xsl:template match="log">
