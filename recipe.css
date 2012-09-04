@@ -29,6 +29,23 @@ body {
 	margin-left:.3em;
 }
 
+.temperature .celsius {
+	color:gray;
+}
+
+.temperature .fahrenheit:after {
+	content: "\0000B0F";
+}
+	
+.temperature .celsius:before {
+	margin-left:.2em;
+	content: "(";
+}
+
+.temperature .celsius:after {
+	content: "\0000B0C)";
+}
+
 /*div#fermentables:before {
 	font-size: 15pt;
 	content: "Ingredients";
@@ -64,7 +81,19 @@ tr.fermentable td:nth-child(2) {
 }
 
 #hops {
-	margin:2em 0 2em 0;
+	margin:1em 0 1em 0;
+}
+
+#hops table th {
+	font-weight:normal;
+	position:relative;
+	text-align:left;
+	color:gray;
+}
+
+tr.hop {
+	position:relative;
+	left:2em;
 }
 
 tr.hop td:nth-child(3) { /* hop AAU */
@@ -75,6 +104,10 @@ tr.hop td:nth-child(4) { /* hop form */
 	color:gray;
 	font-size:.75em;
 	margin-top:.5em;
+}
+
+tr.hop td:nth-child(5):after { /* hop boil minutes */
+	content: " min";
 }
 
 .fermentable * {
