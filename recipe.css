@@ -1,0 +1,88 @@
+body {
+	font-family: Helvetica;
+}
+
+#header {
+	font-size:11pt;
+	margin-bottom:2em;
+}
+
+#styles {
+	font-size:.9em;
+	position:relative;
+	left:1em;
+	bottom:20px;
+}
+
+#styles .styleid {
+	color:gray;
+	margin-left:.3em;
+}
+
+.volume .metric {
+	color:gray;
+	margin-left:.3em;
+}
+
+.weight .metric {
+	color:gray;
+	margin-left:.3em;
+}
+
+/*div#fermentables:before {
+	font-size: 15pt;
+	content: "Ingredients";
+}
+*/
+div#fermentables .total_weight:before {
+	content: "Grain bill: ";
+}
+
+div#fermentables .total_weight:after {
+/*	content: ")";*/
+}
+
+div#fermentables .total_weight { 
+/*	position:relative;*/
+/*	left:15em;*/
+/*	bottom:.3em;*/
+	color:gray;
+}
+
+div#fermentables .total_weight * { 
+	display:inline;
+}
+
+tr.fermentable {
+	border: 1px solid black;
+}
+
+tr.fermentable td:nth-child(2) {
+	color:silver;
+	font-size: .8em;
+	text-align:right;
+}
+
+#hops {
+	margin:2em 0 2em 0;
+}
+
+tr.hop td:nth-child(3) { /* hop AAU */
+	color:gray;
+}
+
+tr.hop td:nth-child(4) { /* hop form */
+	color:gray;
+	font-size:.75em;
+	margin-top:.5em;
+}
+
+.fermentable * {
+	display: inline;
+}
+
+.weight * {
+	display: inline;
+}
+
+
