@@ -58,10 +58,8 @@ IFS='	' read RECIPEFILE RECIPEVERSION < <(xml sel -t -m '/batch/recipe' -v filen
 
 # Combine the Tumblr log and the recipe into on XML document
 xsltproc \
-	--stringparam filename <(git show $RECIPEVERSION:"recipes/$RECIPEFILE") \
-	--stringparam recipefile "$RECIPEFILE" \
-	--stringparam commit_sha $RECIPEVERSION \
-	--stringparam results_file batches/$BATCH_ID/results.xml \
+	--stringparam recipe_file <(git show $RECIPEVERSION:"recipes/$RECIPEFILE") \
+	--stringparam batchid $BATCH_ID \
 	combine.xsl \
 	batches/$BATCH_ID/log.xml > batches/$BATCH_ID/batch.xml
 
