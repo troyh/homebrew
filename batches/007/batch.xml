@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<batch><recipe><beerxml recipefile="Barley Wine.xml" commit_sha="395b439e0483e81c1b31ee274e632a2649cf7878"><RECIPE>
+<batch id="007"><recipe><beerxml recipefile="Barley Wine.xml" commit_sha="395b439e0483e81c1b31ee274e632a2649cf7878"><RECIPE>
 <VERSION>1</VERSION>
 <NAME>Barley Wine</NAME>
 <TYPE>All Grain</TYPE>

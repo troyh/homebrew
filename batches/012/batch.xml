@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<batch><recipe><beerxml recipefile="My IPA.xml" commit_sha="75ec1ea54545bbfb67a21001b586fb4338ac0812"><RECIPE>
+<batch id="012"><recipe><beerxml recipefile="My IPA.xml" commit_sha="75ec1ea54545bbfb67a21001b586fb4338ac0812"><RECIPE>
 <VERSION>1</VERSION>
 <NAME>Special B IPA</NAME>
 <TYPE>All Grain</TYPE>

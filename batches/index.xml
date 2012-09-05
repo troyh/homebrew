@@ -133,18 +133,18 @@
   <ppg>26.3062158155122</ppg>
   <ppg>16.5599814012653</ppg>
 </data><results>
-		<mash type="infusion" duration="60">
-			<infusion>
-				<strike volume="21.65256" temp="73.3333"/>
-			</infusion>
-			<measurement temp="67.7778"/>
-			<measurement temp="67.2222"/>
-			<measurement temp="67.2222"/>
-			<measurement temp="66.6667"/>
-		</mash>
-		<boil volume="24.9837" sg="1.047" time="60" end_volume="20.8198"/>
-		<gravity volume="19.87341" og="1.056" fg="1.015"/>
-	</results></batch><batch id="009"><name>Punkin' Ale</name><type>All Grain</type><styles>
+  <mash type="infusion" duration="60">
+    <infusion>
+      <strike volume="21.65256" temp="73.3333"/>
+    </infusion>
+    <measurement temp="67.7778"/>
+    <measurement temp="67.2222"/>
+    <measurement temp="67.2222"/>
+    <measurement temp="66.6667"/>
+  </mash>
+  <boil volume="24.9837" sg="1.047" time="60" end_volume="20.8198"/>
+  <gravity volume="19.87341" og="1.056." fg="1.015"/>
+</results></batch><batch id="009"><name>Punkin' Ale</name><type>All Grain</type><styles>
   <style><name>Spice, Herb, or Vegetable Beer</name></style>
 </styles><yeasts>
   <yeast><lab>Wyeast</lab><prodid>1056</prodid><name>American Ale</name></yeast>
@@ -155,17 +155,17 @@
   <ppg>0</ppg>
   <ppg>40.9399540197947</ppg>
 </data><results>
-	<mash type="infusion" duration="60">
-		<infusion>
-			<strike volume="" temp=""/>
-		</infusion>
-		<measurement temp="65"/>
-		<measurement temp="67.2222"/>
-		<measurement temp="66.6667"/>
-		<measurement temp="66.388889"/>
-	</mash>
-	<boil volume="25.7408" sg="1.060" time="60" end_volume="20.8198"/>
-	<gravity volume="16.088" og="1.074" fg="1.003"/>
+  <mash type="infusion" duration="60">
+    <infusion>
+      <strike volume="" temp=""/>
+    </infusion>
+    <measurement temp="65"/>
+    <measurement temp="67.2222"/>
+    <measurement temp="66.6667"/>
+    <measurement temp="66.388889"/>
+  </mash>
+  <boil volume="25.7408" sg="1.060" time="60" end_volume="20.8198"/>
+  <gravity volume="16.088" og="1.074." fg="1.003"/>
 </results></batch><batch id="010"><name>Fooler's C3SB</name><type>All Grain</type><styles>
   <style><name>Extra Special/Strong Bitter (English Pale Ale)</name></style>
 </styles><yeasts>

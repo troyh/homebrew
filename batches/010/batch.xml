@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<batch><recipe><beerxml recipefile="Fuller's ESB.xml" commit_sha="cffcbbfa4563e86af9f6b5d2daa08f2fb4066f0a"><RECIPE>
+<batch id="010"><recipe><beerxml recipefile="Fuller's ESB.xml" commit_sha="cffcbbfa4563e86af9f6b5d2daa08f2fb4066f0a"><RECIPE>
 <VERSION>1</VERSION>
 <NAME>Fooler's C3SB</NAME>
 <TYPE>All Grain</TYPE>

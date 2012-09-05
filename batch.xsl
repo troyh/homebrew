@@ -50,7 +50,24 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 			  </div>
 			  <div><xsl:text>FG: </xsl:text><xsl:value-of select="format-number($CALC_FG_GU div 1000 + 1,&quot;#.###&quot;)"/></div>
 			  <div><xsl:text>ABV: </xsl:text><xsl:value-of select="format-number(($CALC_OG_GU - $CALC_FG_GU) * 131 div 1000,&quot;#.##&quot;)"/>%</div>
-		  </div>
+		
+				<!-- From http://www.mrmalty.com/pitching.php:
+		
+				(0.75 million) X (milliliters of wort) X (degrees Plato of the wort)  
+			
+				2x as much for lagers
+		
+				-->
+		
+				<div>
+					<xsl:variable name="YEAST_CELLS_REQD" select="0.75 * (BATCH_SIZE * 1000) * ($CALC_OG_GU div 4) div 1000 * ((STYLES/STYLE/CATEGORY_NUMBER &lt; 6) + 1)"/>
+						
+					Yeast starter: 
+					<xsl:value-of select="format-number($YEAST_CELLS_REQD div 2.5 * (1 div .75),&quot;#&quot;)"/>ml  (assuming 75% viability) of yeast slurry,
+					<xsl:value-of select="format-number($YEAST_CELLS_REQD,&quot;#&quot;)"/>B cells
+				</div>
+		
+			</div>
 
 	      <div id="ingredients">
 			  <xsl:apply-templates select="FERMENTABLES"/>
@@ -272,8 +289,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template match="YEAST">
 	<div class="yeast">
-		<xsl:value-of select="AMOUNT * 1000"/>
-		<xsl:text>ml </xsl:text>
+		<!-- <xsl:value-of select="AMOUNT * 1000"/>
+		<xsl:text>ml </xsl:text> -->
 		<xsl:value-of select="NAME"/>
 		(<xsl:value-of select="LABORATORY"/>
 		<xsl:text> </xsl:text>

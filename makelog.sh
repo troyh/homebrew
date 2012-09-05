@@ -69,6 +69,31 @@ xsltproc batch.xsl batches/$BATCH_ID/batch.xml > batches/$BATCH_ID/batch.html
 cp batches/$BATCH_ID/batch.html $GH_PAGES_REPO/batch/$BATCH_ID.html
 
 #
+#
+#
+for B in $(find  batches -type d -depth 1 | sed -e 's:^batches/::'); do 
+	xml sel -t -m '/batch' -v '@id' -o ' ' -m 'recipe/beerxml/RECIPE/YEASTS/YEAST' -v PRODUCT_ID batches/$B/batch.xml;
+done | 
+	awk '{print $2" "$1 }' | 
+	sort | 
+	perl -n -e '
+	chomp;
+	($yid,$bid)=split(/ /);
+	if ($lastyid != $yid) {
+		if (length($lastyid)) {
+			print "</yeast>"
+		};
+		print "<yeast id=\"$yid\">";
+	}
+	print "<batch id=\"$bid\"/>"; 
+	$lastyid=$yid;
+' | 
+sed -e '$a\
+</yeast></yeasts>' -e '1i\
+<yeasts>' |
+xml fo > yeasts.xml
+
+#
 # Make the index page
 #
 xml ls batches/ | xsltproc batchindex.xsl - > batches/index.xml
