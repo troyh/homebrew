@@ -50,16 +50,14 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 			  </div>
 			  <div><xsl:text>FG: </xsl:text><xsl:value-of select="format-number($CALC_FG_GU div 1000 + 1,&quot;#.###&quot;)"/></div>
 			  <div><xsl:text>ABV: </xsl:text><xsl:value-of select="format-number(($CALC_OG_GU - $CALC_FG_GU) * 131 div 1000,&quot;#.##&quot;)"/>%</div>
-		
-				<!-- From http://www.mrmalty.com/pitching.php:
-		
-				(0.75 million) X (milliliters of wort) X (degrees Plato of the wort)  
-			
-				2x as much for lagers
-		
-				-->
-		
 				<div>
+					<!-- From http://www.mrmalty.com/pitching.php:
+		
+					(0.75 million) X (milliliters of wort) X (degrees Plato of the wort)  
+			
+					2x as much for lagers
+		
+					-->
 					<xsl:variable name="YEAST_CELLS_REQD" select="0.75 * (BATCH_SIZE * 1000) * ($CALC_OG_GU div 4) div 1000 * ((STYLES/STYLE/CATEGORY_NUMBER &lt; 6) + 1)"/>
 						
 					Yeast starter: 
