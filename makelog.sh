@@ -30,7 +30,7 @@ TMPFILE=$(mktemp -t brewlog)
 # Grab any keywords from log posts
 xml sel -t -m '/tumblr/posts/post' -v . -n  batches/$BATCH_ID/log.xml | 
 		tail -r | 
-		perl -n -e 'while (/[^\w](OG|FG|BG|BV|EV|FV|BT|ST|SV)=([\d\.]+)/g) { print "$1 $2\n";  }' |
+		perl -n -e 'while (/[^\w](OG|FG|BG|BV|EV|FV|BT|ST|SV)=([\d+\.]*\d+)/g) { print "$1 $2\n";  }' |
 		while read K V; do
 			# Convert volume gallons to liters
 			if [[ $K == "BV" || $K == "EV" || $K == "FV" || $K == "SV" ]]; then

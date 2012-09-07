@@ -25,31 +25,61 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		  <div id="header">
 			  <h1><xsl:value-of select="NAME" disable-output-escaping="yes"/></h1>
 			  <xsl:apply-templates select="STYLES"/>
-			  <div><xsl:text>Type: </xsl:text><xsl:value-of select="TYPE"/></div>
+			  <div>
+				  <span class="headerkey"><xsl:text>Type: </xsl:text></span>
+				  <span class="headerval"><xsl:value-of select="TYPE"/></span>
+			  </div>
 		  
-			  <div>Batch size: 
-				  <xsl:call-template name="format-volume">
-					  <xsl:with-param name="liters" select="BATCH_SIZE"/>
-				  </xsl:call-template>
+			  <div>
+				  <span class="headerkey">Batch size:</span>
+				  <span class="headerval">
+					  <xsl:call-template name="format-volume">
+						  <xsl:with-param name="liters" select="BATCH_SIZE"/>
+					  </xsl:call-template>
+				  </span>
 			  </div>
 
-			  <div>Boil Volume: 
-				  <xsl:call-template name="format-volume">
-					  <xsl:with-param name="liters" select="BOIL_SIZE"/>
-				  </xsl:call-template>
+			  <div>
+				  <span class="headerkey">Boil Volume:</span>
+				  <span class="headerval">
+					  <xsl:call-template name="format-volume">
+						  <xsl:with-param name="liters" select="BOIL_SIZE"/>
+					  </xsl:call-template>
+					  </span>
 			  </div>
 
-			  <div><xsl:text>Boil time: </xsl:text><xsl:value-of select="BOIL_TIME"/><xsl:text> minutes</xsl:text></div>
-			  <div><xsl:text>Brewhouse Efficiency: </xsl:text><xsl:value-of select="EFFICIENCY"/><xsl:text>%</xsl:text></div>
+			  <div>
+				  <span class="headerkey"><xsl:text>Boil time:</xsl:text></span>
+				  <span class="headerval">
+					  <xsl:value-of select="BOIL_TIME"/><xsl:text> minutes</xsl:text>
+				  </span>
+			  </div>
+			  
+			  <div>
+				  <span class="headerkey"><xsl:text>Brewhouse Efficiency:</xsl:text></span>
+				  <span class="headerval"><xsl:value-of select="EFFICIENCY"/><xsl:text>%</xsl:text></span>
+			  </div>
+			  
 			  <xsl:variable name="CALC_OG_GU" 
 				select="(sum(../../data/ppg) * EFFICIENCY div (BATCH_SIZE * 0.264172)) div 100"/>
   			  <xsl:variable name="CALC_FG_GU" 
   				select="$CALC_OG_GU - ((EFFICIENCY div 100) * $CALC_OG_GU)"/>
-			  <div><xsl:text>OG: </xsl:text>
-			  	<xsl:value-of select="format-number($CALC_OG_GU div 1000 + 1,&quot;#.###&quot;)"/>
+
+			  <div>
+				  <span class="headerkey"><xsl:text>OG:</xsl:text></span>
+				  <span class="headerval"><xsl:value-of select="format-number($CALC_OG_GU div 1000 + 1,&quot;#.###&quot;)"/></span>
 			  </div>
-			  <div><xsl:text>FG: </xsl:text><xsl:value-of select="format-number($CALC_FG_GU div 1000 + 1,&quot;#.###&quot;)"/></div>
-			  <div><xsl:text>ABV: </xsl:text><xsl:value-of select="format-number(($CALC_OG_GU - $CALC_FG_GU) * 131 div 1000,&quot;#.##&quot;)"/>%</div>
+			  
+			  <div>
+				  <span class="headerkey"><xsl:text>FG:</xsl:text></span>
+				  <span class="headerval"><xsl:value-of select="format-number($CALC_FG_GU div 1000 + 1,&quot;#.###&quot;)"/></span>
+			  </div>
+
+			  <div>
+				  <span class="headerkey"><xsl:text>ABV:</xsl:text></span>
+				  <span class="headerval"><xsl:value-of select="format-number(($CALC_OG_GU - $CALC_FG_GU) * 131 div 1000,&quot;#.##&quot;)"/>%</span>
+			  </div>
+			  
 				<div>
 					<!-- From http://www.mrmalty.com/pitching.php:
 		
@@ -59,10 +89,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		
 					-->
 					<xsl:variable name="YEAST_CELLS_REQD" select="0.75 * (BATCH_SIZE * 1000) * ($CALC_OG_GU div 4) div 1000 * ((STYLES/STYLE/CATEGORY_NUMBER &lt; 6) + 1)"/>
-						
-					Yeast starter: 
-					<xsl:value-of select="format-number($YEAST_CELLS_REQD div 2.5 * (1 div .75),&quot;#&quot;)"/>ml  (assuming 75% viability) of yeast slurry,
-					<xsl:value-of select="format-number($YEAST_CELLS_REQD,&quot;#&quot;)"/>B cells
+					<span class="headerkey">Yeast starter:</span>
+					<span class="headerval">
+						<xsl:value-of select="format-number($YEAST_CELLS_REQD div 2.5 * (1 div .75),&quot;#&quot;)"/>ml  (assuming 75% viability) of yeast slurry,
+						<xsl:value-of select="format-number($YEAST_CELLS_REQD,&quot;#&quot;)"/>B cells
+					</span>
 				</div>
 		
 			</div>
@@ -82,78 +113,118 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 </xsl:template>
 
 <xsl:template match="results">
-	<h2>Results</h2>
-	<div>
-		<div>Strike: 
-			<xsl:call-template name="format-volume">
-				<xsl:with-param name="liters" select="mash/infusion/strike/@volume"/>
-			</xsl:call-template>
-			@
-			<xsl:call-template name="format-temperature">
-				<xsl:with-param name="celsius" select="mash/infusion/strike/@temp"/>
-			</xsl:call-template>
-		</div>
-		<div>Mash: <xsl:value-of select="mash/@duration"/> minutes at
-			<xsl:call-template name="format-temperature">
-				<xsl:with-param name="celsius" select="mash/measurement/@temp[1]"/>
-			</xsl:call-template>
-			<xsl:text>, average of </xsl:text>
-			<xsl:call-template name="format-temperature">
-				<xsl:with-param name="celsius" 
-					select="sum(mash/measurement/@temp) div count(mash/measurement/@temp)"/>
-			</xsl:call-template>
+	<div id="results">
+		<h2>Results</h2>
+		<div>
+			<span class="headerkey"><xsl:text>Strike:</xsl:text></span>
+			<span class="headerval">
+				<xsl:call-template name="format-volume">
+					<xsl:with-param name="liters" select="mash/infusion/strike/@volume"/>
+				</xsl:call-template>
+				@
+				<xsl:call-template name="format-temperature">
+					<xsl:with-param name="celsius" select="mash/infusion/strike/@temp"/>
+				</xsl:call-template>
+			</span>
 		</div>
 		<div>
-			Potential PPG: <xsl:value-of select="format-number(sum(../recipe/data/ppg),&quot;#&quot;)"/>
-			(<xsl:value-of 
-				select="format-number(sum(../recipe/data/ppg) * ../recipe/beerxml/RECIPE/EFFICIENCY div 100,&quot;#&quot;)"/> required)
+			<span class="headerkey"><xsl:text>Mash:</xsl:text></span>
+			<span class="headerval">
+				<xsl:value-of select="mash/@duration"/> minutes at
+				<xsl:call-template name="format-temperature">
+					<xsl:with-param name="celsius" select="mash/measurement/@temp[1]"/>
+				</xsl:call-template>
+				<xsl:text>, average of </xsl:text>
+				<xsl:call-template name="format-temperature">
+					<xsl:with-param name="celsius" 
+						select="sum(mash/measurement/@temp) div count(mash/measurement/@temp)"/>
+				</xsl:call-template>
+			</span>
 		</div>
-		<div>Boil: 
-			<xsl:call-template name="format-volume">
-				<xsl:with-param name="liters" select="boil/@volume"/>
-			</xsl:call-template>
-			for <xsl:value-of select="boil/@time"/> minutes &#8594; 
-			<xsl:call-template name="format-volume">
-				<xsl:with-param name="liters" select="boil/@end_volume"/>
-			</xsl:call-template>
+		<div>
+			<span class="headerkey"><xsl:text>Potential PPG:</xsl:text></span>
+			<span class="headerval">
+				<xsl:value-of select="format-number(sum(../recipe/data/ppg),&quot;#&quot;)"/>
+				(<xsl:value-of 
+					select="format-number(sum(../recipe/data/ppg) * ../recipe/beerxml/RECIPE/EFFICIENCY div 100,&quot;#&quot;)"/> required)
+			</span>
 		</div>
-		<div>Evaporation rate: 
-			<xsl:call-template name="format-volume">
-				<xsl:with-param name="liters" select="(boil/@volume - boil/@end_volume) div (boil/@time div 60)"/>
-			</xsl:call-template>
-			per hour
-			(<xsl:call-template name="format-percent">
-				<xsl:with-param name="value" 
-					select="(boil/@volume - boil/@end_volume) div boil/@volume div (boil/@time div 60)"/>
-			</xsl:call-template>)
+		<div>
+			<span class="headerkey"><xsl:text>Boil:</xsl:text></span>
+			<span class="headerval">
+				<xsl:call-template name="format-volume">
+					<xsl:with-param name="liters" select="boil/@volume"/>
+				</xsl:call-template>
+				for <xsl:value-of select="boil/@time"/> minutes &#8594; 
+				<xsl:call-template name="format-volume">
+					<xsl:with-param name="liters" select="boil/@end_volume"/>
+				</xsl:call-template>
+			</span>
 		</div>
-		<div>Final Volume: 
-			<xsl:call-template name="format-volume">
-				<xsl:with-param name="liters" select="gravity/@volume"/>
-			</xsl:call-template>
+		<div>
+			<span class="headerkey"><xsl:text>Evaporation rate:</xsl:text></span>
+			<span class="headerval">
+				<xsl:call-template name="format-volume">
+					<xsl:with-param name="liters" select="(boil/@volume - boil/@end_volume) div (boil/@time div 60)"/>
+				</xsl:call-template>
+				per hour
+				(<xsl:call-template name="format-percent">
+					<xsl:with-param name="value" 
+						select="(boil/@volume - boil/@end_volume) div boil/@volume div (boil/@time div 60)"/>
+				</xsl:call-template>)
+			</span>
 		</div>
-		<div>OG: <xsl:value-of select="gravity/@og"/></div>
-		<div>FG: <xsl:value-of select="gravity/@fg"/></div>
-		<div>ABV: 
-			<xsl:call-template name="format-percent">
-				<xsl:with-param name="value" select="(((gravity/@og - 1) * 1000) - ((gravity/@fg - 1) * 1000)) * 131 div 100000"/>
-				<xsl:with-param name="precision" select="2"/>
-			</xsl:call-template>
+		<div>
+			<span class="headerkey"><xsl:text>Final Volume:</xsl:text></span>
+			<span class="headerval">
+				<xsl:call-template name="format-volume">
+					<xsl:with-param name="liters" select="gravity/@volume"/>
+				</xsl:call-template>
+			</span>
 		</div>
-		<div>Mash efficiency: 
-			<xsl:call-template name="format-percent">
-				<xsl:with-param name="value" select="(((boil/@sg - 1) * 1000) * (boil/@volume * 0.264172)) div sum(../recipe/data/ppg)"/>
-			</xsl:call-template>
+		<div>
+			<span class="headerkey"><xsl:text>OG:</xsl:text></span>
+			<span class="headerval"><xsl:value-of select="gravity/@og"/></span>
 		</div>
-		<div>Brewhouse efficiency: 
-			<xsl:call-template name="format-percent">
-				<xsl:with-param name="value" select="(((gravity/@og - 1) * 1000) * (gravity/@volume * 0.264172)) div sum(../recipe/data/ppg)"/>
-			</xsl:call-template>
+		<div>
+			<span class="headerkey"><xsl:text>FG:</xsl:text></span>
+			<span class="headerval">
+				<xsl:if test="string-length(gravity/@fg) = 0">&#160;</xsl:if>
+				<xsl:value-of select="gravity/@fg"/>
+			</span>
 		</div>
-		<div>Apparent Attenuation: 
-			<xsl:call-template name="format-percent">
-				<xsl:with-param name="value" select="(((gravity/@og - 1) * 1000) - ((gravity/@fg - 1) * 1000)) div ((gravity/@og - 1) * 1000)"/>
-			</xsl:call-template>
+		<div>
+			<span class="headerkey"><xsl:text>ABV:</xsl:text></span> 
+			<span class="headerval">
+				<xsl:call-template name="format-percent">
+					<xsl:with-param name="value" select="(((gravity/@og - 1) * 1000) - ((gravity/@fg - 1) * 1000)) * 131 div 100000"/>
+					<xsl:with-param name="precision" select="2"/>
+				</xsl:call-template>
+			</span>
+		</div>
+		<div>
+			<span class="headerkey"><xsl:text>Mash efficiency:</xsl:text></span>
+			<span class="headerval">
+				<xsl:call-template name="format-percent">
+					<xsl:with-param name="value" select="(((boil/@sg - 1) * 1000) * (boil/@volume * 0.264172)) div sum(../recipe/data/ppg)"/>
+				</xsl:call-template>
+			</span>
+		</div>
+		<div>
+			<span class="headerkey"><xsl:text>Brewhouse efficiency:</xsl:text></span>
+			<span class="headerval">			
+				<xsl:call-template name="format-percent">
+					<xsl:with-param name="value" select="(((gravity/@og - 1) * 1000) * (gravity/@volume * 0.264172)) div sum(../recipe/data/ppg)"/>
+				</xsl:call-template>
+			</span>
+		</div>
+		<div>
+			<span class="headerkey"><xsl:text>Apparent Attenuation:</xsl:text></span>
+			<span class="headerval">
+				<xsl:call-template name="format-percent">
+					<xsl:with-param name="value" select="(((gravity/@og - 1) * 1000) - ((gravity/@fg - 1) * 1000)) div ((gravity/@og - 1) * 1000)"/>
+				</xsl:call-template>
+			</span>
 		</div>
 	</div>
 </xsl:template>
@@ -228,13 +299,20 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		</td>
 		<td>
 			<div class="name"><xsl:value-of select="NAME"/></div>
-			(<xsl:value-of select="format-number(COLOR,&quot;#.0&quot;)"/> SRM)
+			<div class="srm"><xsl:value-of select="format-number(COLOR,&quot;#&quot;)"/></div>
 		</td>
 	</tr>
 </xsl:template>
 	
 <xsl:template match="HOPS">
 	<div id="hops">
+		<div class="total_weight">
+			<!-- Total weight should be in decimal format -->
+			<xsl:call-template name="format-weight">
+				<xsl:with-param name="decimal_only" select="1"/>
+				<xsl:with-param name="kgs" select="sum(HOP/AMOUNT)"/>
+			</xsl:call-template>
+		</div>
 		<table>
 			<xsl:call-template name="display-hops"><xsl:with-param name="use" select="'Mash'"/></xsl:call-template>
 			<xsl:call-template name="display-hops"><xsl:with-param name="use" select="'First Wort'"/></xsl:call-template>
@@ -273,7 +351,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		</td>
 		<td>
 			<xsl:if test="USE = 'Boil'">
-				<xsl:value-of select="TIME"/>
+				<xsl:value-of select="TIME"/> min
 			</xsl:if>
 		</td>
 	</tr>
@@ -387,7 +465,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:param name="precision"/>
 	<span class="percent">
 		<xsl:choose>
-			<xsl:when test="string(number($value)) = 'NaN'"><xsl:text> </xsl:text>
+			<xsl:when test="string(number($value)) = 'NaN'"><xsl:text>&#160;</xsl:text>
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:choose>
@@ -432,26 +510,30 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 </xsl:template>
 
 <xsl:template match="log">
-	<h1>Brew log</h1>
-	<xsl:apply-templates match="tumblr/tumblelog/posts"/>
+	<div id="brewlog">
+		<h1>Brew log</h1>
+		<xsl:apply-templates match="tumblr/tumblelog/posts"/>
+	</div>
 </xsl:template>
 
 <xsl:template match="posts">
 	<xsl:for-each select="post">
 		<xsl:sort select="@unix-timestamp"/>
-		<div>
-			<div class="logdate"><xsl:value-of select="@date"/></div>
-			<xsl:apply-templates match="*"/>
+		<div class="post">
+			<div class="postbody">
+				<div class="logdate"><xsl:value-of select="@date"/></div>
+				<xsl:apply-templates match="*"/>
+			</div>
 		</div>
 	</xsl:for-each>
 </xsl:template>
 
 <xsl:template match="photo-caption">
-	<div><xsl:value-of select="." disable-output-escaping="yes"/></div>
+	<div class="posttext"><xsl:value-of select="." disable-output-escaping="yes"/></div>
 </xsl:template>
 
 <xsl:template match="photo-url[@max-width=&quot;250&quot;]">
-	<div>
+	<div class="photo">
 		<xsl:element name="img">
 			<xsl:attribute name="src">
 				<xsl:value-of select="."/>
@@ -462,7 +544,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 </xsl:template>
 
 <xsl:template name="all-photos">
-	<div>All photo sizes:
+	<div class="photosizeoptions">All photo sizes:
 		<xsl:for-each select="../photo-url">
 			<!-- <xsl:choose>
 				<xsl:when test="position() = 1">All photos: </xsl:when>
@@ -499,7 +581,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 </xsl:template>
 	
 <xsl:template match="regular-body">
-	<div><xsl:value-of select="." disable-output-escaping="yes"/></div>
+	<div class="posttext"><xsl:value-of select="." disable-output-escaping="yes"/></div>
 </xsl:template>
 
 <xsl:template match="tag">

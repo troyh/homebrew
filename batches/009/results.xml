@@ -10,5 +10,5 @@
     <measurement temp="66.388889"/>
   </mash>
   <boil volume="25.7408" sg="1.060" time="60" end_volume="20.8198"/>
-  <gravity volume="16.088" og="1.074." fg="1.003"/>
+  <gravity volume="16.088" og="1.074" fg="1.003"/>
 </results>
