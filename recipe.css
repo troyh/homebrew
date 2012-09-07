@@ -4,9 +4,10 @@ body {
 
 #header {
 	font-size:11pt;
-	margin-bottom:2em;
+	margin-bottom:0em;
 }
 
+#notes h1 { display:none;}
 #styles {
 	font-size:.9em;
 	position:relative;
@@ -46,14 +47,67 @@ body {
 	content: "\0000B0C)";
 }
 
+.headerkey { 
+	text-align:left;
+	float:left;
+	position:relative;
+/*	left:-100px;*/
+	width:11em;
+}
+
+.headerval {
+/*	float:left;*/
+/*	position:relative;*/
+/*	left:12em;*/
+/*	width:11em;*/
+/*	float:none;*/
+/*	border:1px solid red;*/
+}
+
+#results {
+	font-size:.9em;
+}
+
+#brewlog { margin-top:2em; }
+#brewlog h1 { display:none; }
+.post {
+	margin-left:1em;
+	margin-bottom:1em;
+}
+.posttext {
+	margin-left:1em;
+}
+.photo {
+	margin:1em 1em 0 1em;
+}
+.photosizeoptions {
+	position:relative;
+	left:-220px;
+	top:160px;
+	text-align:right;
+	font-size:.75em;
+/*	bottom:15em;*/
+/*	width:5em;*/
+	color:gray;
+/*	border-bottom: 2px solid gray;*/
+	writing-mode:tb-rl;
+	-webkit-transform:rotate(270deg);
+	-moz-transform:rotate(270deg);
+	-o-transform: rotate(270deg);
+}
+.logdate {
+	border-bottom: 1px solid gray;
+}
+
 /*div#fermentables:before {
 	font-size: 15pt;
 	content: "Ingredients";
 }
 */
 div#fermentables {
-	position:relative;
-	left:1.5em;
+/*	position:relative;*/
+/*	left:1.5em;*/
+	margin:0 0 0 2em;
 }
 div#fermentables .total_weight:before {
 /*	content: "Grain bill: ";*/
@@ -65,12 +119,12 @@ div#fermentables .total_weight:after {
 
 div#fermentables .total_weight { 
 	position:relative;
-	left:-5.5em;
-	top:5.5em;
+	left:-4em;
+	top:3.5em;
 	text-align:center;
 	font-size:.9em;
 /*	bottom:15em;*/
-	width:9em;
+	width:5em;
 	color:gray;
 	border-bottom: 2px solid gray;
 	writing-mode:tb-rl;
@@ -87,16 +141,59 @@ tr.fermentable {
 	border: 1px solid black;
 }
 
+tr.fermentable td:nth-child(1) {
+	text-align:left;
+	width:8em;
+}
+
+tr.fermentable td:nth-child(1) .metric {
+	float:right;
+/*	width:5em;*/
+}
+
 tr.fermentable td:nth-child(2) {
 	color:silver;
 	font-size: .8em;
 	text-align:right;
 }
 
-#hops {
-	margin:1em 0 1em 0;
+tr.fermentable td:nth-child(3) {
+	width:15em;
 }
 
+.fermentable .srm:after {
+	content:" SRM";
+}
+.fermentable .srm {
+	float:right;
+	position:relative;
+	left:3em;
+	color:gray;
+}
+
+#hops {
+	margin:0 0 0 2em;
+}
+
+div#hops .total_weight { 
+	position:relative;
+	left:-4em;
+	top:3.5em;
+	text-align:center;
+	font-size:.9em;
+/*	bottom:15em;*/
+	width:5em;
+	color:gray;
+	border-bottom: 2px solid gray;
+	writing-mode:tb-rl;
+	-webkit-transform:rotate(270deg);
+	-moz-transform:rotate(270deg);
+	-o-transform: rotate(270deg);
+}
+#hops table {
+/*	position: relative;
+	left:1.5em;
+*/}
 #hops table th {
 	font-weight:normal;
 	position:relative;
@@ -109,18 +206,35 @@ tr.hop {
 	left:2em;
 }
 
+tr.hop td:nth-child(1) { /* hop amount */
+	text-align:right;
+}
+
 tr.hop td:nth-child(3) { /* hop AAU */
 	color:gray;
+	text-align:right;
 }
 
 tr.hop td:nth-child(4) { /* hop form */
 	color:gray;
-	font-size:.75em;
-	margin-top:.5em;
+/*	font-size:.75em;*/
+/*	position:relative;*/
+/*	top:.2em;*/
+/*	margin-top:.5em;*/
+}
+
+tr.hop td:nth-child(5) { /* hop boil minutes */
+	float:right;
+	position:relative;
+	left:5em;
 }
 
 tr.hop td:nth-child(5):after { /* hop boil minutes */
-	content: " min";
+/*	content: " min";*/
+}
+
+#yeasts {
+	margin: 2em;
 }
 
 .fermentable * {
@@ -130,4 +244,6 @@ tr.hop td:nth-child(5):after { /* hop boil minutes */
 .weight * {
 	display: inline;
 }
+
+
 
