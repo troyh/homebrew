@@ -4,24 +4,25 @@
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template match="/dir">
-	<batches>
+	<recipes>
 		<xsl:apply-templates select="f"/>
-	</batches>
+	</recipes>
 </xsl:template>
 
 <xsl:template match="f">
-	<xsl:variable name="recipedoc" select="document(concat('recipes/',@n,'.xml'))"/>
+	<xsl:variable name="recipedoc" select="document(concat('recipes/',@n))"/>
 	<recipe>
 		<xsl:attribute name="id"><xsl:value-of select="@n"/></xsl:attribute>
-		<name><xsl:value-of select="$batchdoc/batch/recipe/beerxml/RECIPE/NAME"/></name>
-		<type><xsl:value-of select="$batchdoc/batch/recipe/beerxml/RECIPE/TYPE"/></type>
+		<xsl:attribute name="file"><xsl:value-of select="concat('recipes/',@n)"/></xsl:attribute>
+		<name><xsl:value-of select="$recipedoc/RECIPES/RECIPE/NAME"/></name>
+		<type><xsl:value-of select="$recipedoc/RECIPES/RECIPE/TYPE"/></type>
 		<styles>
-			<xsl:apply-templates select="$batchdoc/batch/recipe/beerxml/RECIPE/STYLES"/>
+			<xsl:apply-templates select="$recipedoc/RECIPE/STYLES"/>
 		</styles>
 		<yeasts>
-			<xsl:apply-templates select="$batchdoc/batch/recipe/beerxml/RECIPE/YEASTS"/>
+			<xsl:apply-templates select="$recipedoc/RECIPE/YEASTS"/>
 		</yeasts>
-	</batch>
+	</recipe>
 </xsl:template>
 
 <xsl:template match="STYLE">

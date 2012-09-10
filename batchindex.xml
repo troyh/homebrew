@@ -1,0 +1,94 @@
+<batches>
+<batch id="002">
+  <recipe>
+    <filename>Jamil's Evil Twin.xml</filename>
+    <commit_sha>193026faada1c738be47b9d519e0982482e943f0</commit_sha>
+  </recipe>
+  <description/>
+  <log/>
+</batch>
+<batch id="003">
+  <recipe>
+    <filename>Breakfast Stout.xml</filename>
+    <commit_sha>193026faada1c738be47b9d519e0982482e943f0</commit_sha>
+  </recipe>
+  <description/>
+  <log/>
+</batch>
+<batch id="004">
+  <recipe>
+    <filename>115th Dream Hopbursted IPA.xml</filename>
+    <commit_sha>193026faada1c738be47b9d519e0982482e943f0</commit_sha>
+  </recipe>
+  <description/>
+  <log/>
+</batch>
+<batch id="005">
+  <recipe>
+    <filename>Imperial Stout.xml</filename>
+    <commit_sha>193026faada1c738be47b9d519e0982482e943f0</commit_sha>
+  </recipe>
+  <description/>
+  <log/>
+</batch>
+<batch id="006">
+  <recipe>
+    <filename>Surly Furious.xml</filename>
+    <commit_sha>395b439e0483e81c1b31ee274e632a2649cf7878</commit_sha>
+  </recipe>
+  <description/>
+  <log/>
+</batch>
+<batch id="007">
+  <recipe>
+    <filename>Barley Wine.xml</filename>
+    <commit_sha>395b439e0483e81c1b31ee274e632a2649cf7878</commit_sha>
+  </recipe>
+  <description/>
+  <log/>
+</batch>
+<batch id="008">
+  <recipe>
+    <filename>Fuller's ESB.xml</filename>
+    <commit_sha>93ff0c69800d46a7d05dffdbb11efd2c92b6116e</commit_sha>
+  </recipe>
+  <description/>
+  <log/>
+</batch>
+<batch id="009">
+  <recipe>
+    <filename>Punkin' Ale.xml</filename>
+    <commit_sha>93ff0c69800d46a7d05dffdbb11efd2c92b6116e</commit_sha>
+  </recipe>
+  <description/>
+  <log/>
+</batch>
+<batch id="010">
+  <recipe>
+    <filename>Fuller's ESB.xml</filename>
+    <commit_sha>cffcbbfa4563e86af9f6b5d2daa08f2fb4066f0a</commit_sha>
+  </recipe>
+  <description>A variation of Fuller's ESB that uses Cascade hops as the dry-hop hops and two different yeasts were tried.</description>
+  <log/>
+</batch>
+<batch id="011">
+  <recipe>
+    <filename>Fuller's ESB.xml</filename>
+    <commit_sha>cb7e8c7789772b4f33e2751cfa92154a4c4ee0cc</commit_sha>
+  </recipe>
+  <description>A Fuller's ESB with Maris Otter instead of Optic malt. I also use the Blichmann HopRocket to add the "dry hop" hops.</description>
+  <log/>
+</batch>
+<batch id="012">
+  <recipe>
+    <filename>My IPA.xml</filename>
+    <commit_sha>75ec1ea54545bbfb67a21001b586fb4338ac0812</commit_sha>
+  </recipe>
+</batch>
+<batch id="013">
+  <recipe>
+    <filename>Oatmeal Raisin Stout.xml</filename>
+    <commit_sha>0d2c2cfc439383a7aa7592cdb2310d1fdf7ab407</commit_sha>
+  </recipe>
+</batch>
+</batches>

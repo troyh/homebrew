@@ -1356,6 +1356,175 @@ More evident malt and hop flavors than in a special or best bitter.  Stronger ve
   </RECIPE>
 <RECIPE>
 <VERSION>1</VERSION>
+<NAME>Jolly Roger Christmas Ale</NAME>
+<TYPE>All Grain</TYPE>
+<BREWER>BrewPal</BREWER>
+<BATCH_SIZE>20.819765</BATCH_SIZE>
+<BOIL_SIZE>29.762886</BOIL_SIZE>
+<BOIL_TIME>90</BOIL_TIME>
+<EFFICIENCY>75</EFFICIENCY>
+<OG>1.076000</OG>
+<FG>1.019000</FG>
+<FERMENTATION_STAGES>2</FERMENTATION_STAGES>
+<PRIMARY_AGE>42</PRIMARY_AGE>
+<PRIMARY_TEMP>20.000000</PRIMARY_TEMP>
+<SECONDARY_AGE>14</SECONDARY_AGE>
+<SECONDARY_TEMP>18.333334</SECONDARY_TEMP>
+<CARBONATION>-1.000000</CARBONATION>
+<FORCED_CARBONATION>0</FORCED_CARBONATION>
+<CARBONATION_TEMP>0.000000</CARBONATION_TEMP>
+<PRIMING_SUGAR_NAME>(null)</PRIMING_SUGAR_NAME>
+<PRIMING_SUGAR_EQUIV>0.000000</PRIMING_SUGAR_EQUIV>
+<NOTES>http://www.homebrewtalk.com/f78/jolly-roger-christmas-ale-150217/</NOTES>
+<FERMENTABLES>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Grain</TYPE>
+    <COLOR>1.500000</COLOR>
+    <AMOUNT>6.395653</AMOUNT>
+    <YIELD>78.000000</YIELD>
+    <NAME>2 Row Base</NAME>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Grain</TYPE>
+    <COLOR>50.000000</COLOR>
+    <AMOUNT>0.362874</AMOUNT>
+    <YIELD>72.000000</YIELD>
+    <NAME>CaraMunich</NAME>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Grain</TYPE>
+    <COLOR>75.000000</COLOR>
+    <AMOUNT>0.362874</AMOUNT>
+    <YIELD>72.000000</YIELD>
+    <NAME>Crystal 75L</NAME>
+  </FERMENTABLE>
+</FERMENTABLES>
+<HOPS>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Dry Hop</USE>
+    <ALPHA>5.500000</ALPHA>
+    <SUBSTITUTES>Amarillo, Centennial, Summit</SUBSTITUTES>
+    <FORM>Pellet</FORM>
+    <NAME>Cascade</NAME>
+    <AMOUNT>0.028350</AMOUNT>
+    <TIME>20160.000000</TIME>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Dry Hop</USE>
+    <ALPHA>13.000000</ALPHA>
+    <SUBSTITUTES>Brewers Gold, Columbus, Galena, Nugget, Northern Brewer, Eroica</SUBSTITUTES>
+    <FORM>Pellet</FORM>
+    <NAME>Chinook</NAME>
+    <AMOUNT>0.028350</AMOUNT>
+    <TIME>20160.000000</TIME>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Boil</USE>
+    <ALPHA>11.500000</ALPHA>
+    <SUBSTITUTES>Brewers Gold, Columbus, Galena, Nugget, Northern Brewer, Eroica</SUBSTITUTES>
+    <FORM>Pellet</FORM>
+    <NAME>Chinook</NAME>
+    <AMOUNT>0.049612</AMOUNT>
+    <TIME>90.000000</TIME>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Boil</USE>
+    <ALPHA>6.500000</ALPHA>
+    <SUBSTITUTES>Amarillo, Centennial, Summit</SUBSTITUTES>
+    <FORM>Pellet</FORM>
+    <NAME>Cascade</NAME>
+    <AMOUNT>0.028350</AMOUNT>
+    <TIME>30.000000</TIME>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Boil</USE>
+    <ALPHA>11.500000</ALPHA>
+    <SUBSTITUTES>Brewers Gold, Columbus, Galena, Nugget, Northern Brewer, Eroica</SUBSTITUTES>
+    <FORM>Pellet</FORM>
+    <NAME>Chinook</NAME>
+    <AMOUNT>0.022680</AMOUNT>
+    <TIME>30.000000</TIME>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Aroma</USE>
+    <ALPHA>6.500000</ALPHA>
+    <SUBSTITUTES>Amarillo, Centennial, Summit</SUBSTITUTES>
+    <FORM>Pellet</FORM>
+    <NAME>Cascade</NAME>
+    <AMOUNT>0.028350</AMOUNT>
+    <TIME>0</TIME>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Aroma</USE>
+    <ALPHA>11.500000</ALPHA>
+    <SUBSTITUTES>Brewers Gold, Columbus, Galena, Nugget, Northern Brewer, Eroica</SUBSTITUTES>
+    <FORM>Pellet</FORM>
+    <NAME>Chinook</NAME>
+    <AMOUNT>0.028350</AMOUNT>
+    <TIME>0</TIME>
+  </HOP>
+</HOPS>
+<YEASTS>
+  <YEAST>
+    <VERSION>1</VERSION>
+    <AMOUNT_IS_WEIGHT>FALSE</AMOUNT_IS_WEIGHT>
+    <LABORATORY>White Labs</LABORATORY>
+    <FORM>Liquid</FORM>
+    <MIN_TEMPERATURE>18</MIN_TEMPERATURE>
+    <PRODUCT_ID>WLP007</PRODUCT_ID>
+    <NAME>Dry English Ale</NAME>
+    <TYPE>Ale</TYPE>
+    <MAX_TEMPERATURE>21</MAX_TEMPERATURE>
+    <ATTENUATION>75</ATTENUATION>
+    <AMOUNT>0.116000</AMOUNT>
+  </YEAST>
+</YEASTS>
+<MISCS>
+</MISCS>
+<MASH>
+<VERSION>1</VERSION>
+<NAME>Batch/Fly</NAME>
+<GRAIN_TEMP>0.000000</GRAIN_TEMP>
+<MASH_THICKNESS>3.129527</MASH_THICKNESS>
+<SPARGE_TEMP>76.666664</SPARGE_TEMP>
+<MASH_STEPS>
+  <MASH_STEP>
+    <VERSION>1</VERSION>
+    <INFUSE_AMOUNT>11.35624</INFUSE_AMOUNT>
+    <TYPE>Infusion</TYPE>
+    <STEP_TIME>60</STEP_TIME>
+    <NAME>Strike</NAME>
+    <STEP_TEMP>66.66666</STEP_TEMP>
+  </MASH_STEP>
+</MASH_STEPS>
+</MASH>
+<WATERS>
+</WATERS>
+<EQUIPMENT>
+    <VERSION>1</VERSION>
+    <BOIL_SIZE>29.76289</BOIL_SIZE>
+    <BOIL_TIME>90</BOIL_TIME>
+    <BATCH_SIZE>18.92706</BATCH_SIZE>
+    <TOP_UP_KETTLE>0</TOP_UP_KETTLE>
+    <TOP_UP_WATER>-1.949327</TOP_UP_WATER>
+    <EVAP_RATE>17</EVAP_RATE>
+    <TRUB_CHILLER_LOSS>0.946353</TRUB_CHILLER_LOSS>
+</EQUIPMENT>
+<STYLES>
+</STYLES>
+</RECIPE>
+<RECIPE>
+<VERSION>1</VERSION>
 <NAME>Special B IPA</NAME>
 <TYPE>All Grain</TYPE>
 <BREWER>BrewPal</BREWER>
@@ -1792,6 +1961,181 @@ Generally between sweet and dry stouts in sweetness.  Variations exist, from fai
 </RECIPE>
 <RECIPE>
 <VERSION>1</VERSION>
+<NAME>Old Rasputin</NAME>
+<TYPE>All Grain</TYPE>
+<BREWER>BrewPal</BREWER>
+<BATCH_SIZE>18.927059</BATCH_SIZE>
+<BOIL_SIZE>23.251892</BOIL_SIZE>
+<BOIL_TIME>60</BOIL_TIME>
+<EFFICIENCY>75</EFFICIENCY>
+<OG>0.000000</OG>
+<FG>0.000000</FG>
+<FERMENTATION_STAGES>1</FERMENTATION_STAGES>
+<PRIMARY_AGE>14</PRIMARY_AGE>
+<PRIMARY_TEMP>21.000000</PRIMARY_TEMP>
+<SECONDARY_AGE>0</SECONDARY_AGE>
+<SECONDARY_TEMP>21.000000</SECONDARY_TEMP>
+<CARBONATION>2.500000</CARBONATION>
+<FORCED_CARBONATION>1</FORCED_CARBONATION>
+<CARBONATION_TEMP>21.111111</CARBONATION_TEMP>
+<PRIMING_SUGAR_NAME>(null)</PRIMING_SUGAR_NAME>
+<PRIMING_SUGAR_EQUIV>0.000000</PRIMING_SUGAR_EQUIV>
+<NOTES>http://www.homebrewtalk.com/f12/old-rasputin-clone-recipe-328790/</NOTES>
+<FERMENTABLES>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>3.000000</COLOR>
+    <NAME>Pale Ale</NAME>
+    <AMOUNT>6.078137</AMOUNT>
+    <YIELD>80.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>30.000000</COLOR>
+    <NAME>Carastan (Dark)</NAME>
+    <AMOUNT>0.453592</AMOUNT>
+    <YIELD>59.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <NAME>Crystal 120L</NAME>
+    <AMOUNT>0.453592</AMOUNT>
+    <TYPE>Grain</TYPE>
+    <YIELD>70.000000</YIELD>
+    <COLOR>120.000000</COLOR>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>500.000000</COLOR>
+    <NAME>Barley (Roasted)</NAME>
+    <AMOUNT>0.340194</AMOUNT>
+    <YIELD>59.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>50.000000</COLOR>
+    <NAME>Chocolate</NAME>
+    <AMOUNT>0.340194</AMOUNT>
+    <YIELD>72.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+</FERMENTABLES>
+<HOPS>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>60.000000</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Amarillo, Cascade, Columbus, Summit</SUBSTITUTES>
+    <ALPHA>10.000000</ALPHA>
+    <NAME>Centennial</NAME>
+    <AMOUNT>0.085049</AMOUNT>
+    <USE>Boil</USE>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>5.000000</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Amarillo, Cascade, Columbus, Summit</SUBSTITUTES>
+    <ALPHA>10.000000</ALPHA>
+    <NAME>Centennial</NAME>
+    <AMOUNT>0.028350</AMOUNT>
+    <USE>Boil</USE>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>5.000000</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Nugget, Chinook, Columbus, Bullion, Perle, Styrian Aurora</SUBSTITUTES>
+    <ALPHA>8.500000</ALPHA>
+    <NAME>Northern Brewer</NAME>
+    <AMOUNT>0.028350</AMOUNT>
+    <USE>Boil</USE>
+  </HOP>
+</HOPS>
+<YEASTS>
+  <YEAST>
+    <VERSION>1</VERSION>
+    <AMOUNT>0.128000</AMOUNT>
+    <LABORATORY>White Labs</LABORATORY>
+    <FORM>Liquid</FORM>
+    <MIN_TEMPERATURE>20</MIN_TEMPERATURE>
+    <PRODUCT_ID>WLP001</PRODUCT_ID>
+    <NAME>California Ale</NAME>
+    <AMOUNT_IS_WEIGHT>FALSE</AMOUNT_IS_WEIGHT>
+    <TYPE>Ale</TYPE>
+    <MAX_TEMPERATURE>23</MAX_TEMPERATURE>
+    <ATTENUATION>77</ATTENUATION>
+  </YEAST>
+</YEASTS>
+<MISCS>
+</MISCS>
+<MASH>
+<VERSION>1</VERSION>
+<NAME>Unknown</NAME>
+<GRAIN_TEMP>21.111111</GRAIN_TEMP>
+<MASH_THICKNESS>3.129527</MASH_THICKNESS>
+<SPARGE_TEMP>76.666664</SPARGE_TEMP>
+<MASH_STEPS>
+</MASH_STEPS>
+</MASH>
+<WATERS>
+</WATERS>
+<EQUIPMENT>
+    <VERSION>1</VERSION>
+    <BOIL_SIZE>23.25189</BOIL_SIZE>
+    <BOIL_TIME>60</BOIL_TIME>
+    <BATCH_SIZE>18.92706</BATCH_SIZE>
+    <TOP_UP_KETTLE>0</TOP_UP_KETTLE>
+    <EVAP_RATE>17</EVAP_RATE>
+    <TRUB_CHILLER_LOSS>0.946353</TRUB_CHILLER_LOSS>
+</EQUIPMENT>
+<STYLES>
+  <STYLE>
+    <VERSION>1</VERSION>
+    <COLOR_MIN>30.0</COLOR_MIN>
+    <COLOR_MAX>40.0</COLOR_MAX>
+    <STYLE_LETTER>F</STYLE_LETTER>
+    <ABV_MIN>8.0</ABV_MIN>
+    <NAME>Imperial Stout</NAME>
+    <IS_SELECTED>0.000000</IS_SELECTED>
+    <TYPE>beer</TYPE>
+    <FG_MIN>1.018</FG_MIN>
+    <OG_MIN>1.075</OG_MIN>
+    <IBU_MAX>90</IBU_MAX>
+    <EXAMPLES>Three Floyd's Dark Lord, Bell's Expedition Stout, North Coast Old Rasputin Imperial Stout, Stone Imperial Stout, Samuel Smith Imperial Stout, Scotch Irish Tsarina Katarina Imperial Stout, Thirsty Dog Siberian Night, Deschutes The Abyss, Great Divide Yeti, Southampton Russian Imperial Stout, Rogue Imperial Stout, Bear Republic Big Bear Black Stout, Great Lakes Blackout Stout, Avery The Czar, Founders Imperial Stout, Victory Storm King, Brooklyn Black Chocolate Stout</EXAMPLES>
+    <MATCH_QUALITY>Very good match</MATCH_QUALITY>
+    <STYLE_GUIDE>BJCP</STYLE_GUIDE>
+    <INGREDIENTS>Well-modified pale malt, with generous quantities of roasted malts and/or grain.  May have a complex grain bill using virtually any variety of malt.  Any type of hops may be used.  Alkaline water balances the abundance of acidic roasted grain in the grist.  American or English ale yeast.</INGREDIENTS>
+    <FG_MAX>1.030</FG_MAX>
+    <OG_MAX>1.115</OG_MAX>
+    <ABV_MAX>12.0</ABV_MAX>
+    <PROFILE>Aroma:
+Rich and complex, with variable amounts of roasted grains, maltiness, fruity esters, hops, and alcohol.  The roasted malt character can take on coffee, dark chocolate, or slightly burnt tones and can be light to moderately strong.  The malt aroma can be subtle to rich and barleywine-like, depending on the gravity and grain bill.  May optionally show a slight specialty malt character (e.g., caramel), but this should only add complexity and not dominate.  Fruity esters may be low to moderately strong, and may take on a complex, dark fruit (e.g., plums, prunes, raisins) character.  Hop aroma can be very low to quite aggressive, and may contain any hop variety.  An alcohol character may be present, but shouldn't be sharp, hot or solventy.  Aged versions may have a slight vinous or port-like quality, but shouldn't be sour.  No diacetyl.  The balance can vary with any of the aroma elements taking center stage.  Not all possible aromas described need be present; many interpretations are possible.  Aging affects the intensity, balance and smoothness of aromatics.
+Appearance:
+Color may range from very dark reddish-brown to jet black. Opaque.  Deep tan to dark brown head.  Generally has a well-formed head, although head retention may be low to moderate.  High alcohol and viscosity may be visible in "legs" when beer is swirled in a glass.
+Flavor:
+Rich, deep, complex and frequently quite intense, with variable amounts of roasted malt/grains, maltiness, fruity esters, hop bitterness and flavor, and alcohol.  Medium to aggressively high bitterness.  Medium-low to high hop flavor (any variety).  Moderate to aggressively high roasted malt/grain flavors can suggest bittersweet or unsweetened chocolate, cocoa, and/or strong coffee.  A slightly burnt grain, burnt currant or tarry character may be evident.  Fruity esters may be low to intense, and can take on a dark fruit character (raisins, plums, or prunes).  Malt backbone can be balanced and supportive to rich and barleywine-like, and may optionally show some supporting caramel, bready or toasty flavors.  Alcohol strength should be evident, but not hot, sharp, or solventy.  No diacetyl.  The palate and finish can vary from relatively dry to moderately sweet, usually with some lingering roastiness, hop bitterness and warming character.  The balance and intensity of flavors can be affected by aging, with some flavors becoming more subdued over time and some aged, vinous or port-like qualities developing.
+Mouthfeel:
+Full to very full-bodied and chewy, with a velvety, luscious texture (although the body may decline with long conditioning).  Gentle smooth warmth from alcohol should be present and noticeable.  Should not be syrupy and under-attenuated.  Carbonation may be low to moderate, depending on age and conditioning.
+Impression:
+An intensely flavored, big, dark ale. Roasty, fruity, and bittersweet, with a noticeable alcohol presence. Dark fruit flavors meld with roasty, burnt, or almost tar-like sensations.  Like a black barleywine with every dimension of flavor coming into play.</PROFILE>
+    <CARB_MIN>1.5</CARB_MIN>
+    <CATEGORY>Stout</CATEGORY>
+    <IBU_MIN>50</IBU_MIN>
+    <CARB_MAX>2.3</CARB_MAX>
+    <CATEGORY_NUMBER>13</CATEGORY_NUMBER>
+    <NOTES>History:
+Brewed to high gravity and hopping level in England for export to the Baltic States and Russia.  Said to be popular with the Russian Imperial Court.  Today is even more popular with American craft brewers, who have extended the style with unique American characteristics.
+Comments:
+Variations exist, with English and American interpretations (predictably, the American versions have more bitterness, roasted character, and finishing hops, while the English varieties reflect a more complex specialty malt character and a more forward ester profile).  The wide range of allowable characteristics allow for maximum brewer creativity.</NOTES>
+  </STYLE>
+</STYLES>
+</RECIPE>
+<RECIPE>
+<VERSION>1</VERSION>
 <NAME>Punkin' Ale</NAME>
 <TYPE>All Grain</TYPE>
 <BREWER>BrewPal</BREWER>
@@ -2161,6 +2505,158 @@ A harmonious marriage of spices, herbs and/or vegetables and beer.  The key attr
     <FG_MIN>1.010</FG_MIN>
     <OG_MIN>1.075</OG_MIN>
   </STYLE>
+</STYLES>
+</RECIPE>
+<RECIPE>
+<VERSION>1</VERSION>
+<NAME>The Czar's Revenge</NAME>
+<TYPE>All Grain</TYPE>
+<BREWER>BrewPal</BREWER>
+<BATCH_SIZE>18.927059</BATCH_SIZE>
+<BOIL_SIZE>23.251892</BOIL_SIZE>
+<BOIL_TIME>60</BOIL_TIME>
+<EFFICIENCY>75</EFFICIENCY>
+<OG>0.000000</OG>
+<FG>0.000000</FG>
+<FERMENTATION_STAGES>1</FERMENTATION_STAGES>
+<PRIMARY_AGE>14</PRIMARY_AGE>
+<PRIMARY_TEMP>19.444445</PRIMARY_TEMP>
+<SECONDARY_AGE>0</SECONDARY_AGE>
+<SECONDARY_TEMP>21.000000</SECONDARY_TEMP>
+<CARBONATION>2.250000</CARBONATION>
+<FORCED_CARBONATION>1</FORCED_CARBONATION>
+<CARBONATION_TEMP>21.111111</CARBONATION_TEMP>
+<PRIMING_SUGAR_NAME/>
+<PRIMING_SUGAR_EQUIV>0.000000</PRIMING_SUGAR_EQUIV>
+<NOTES/>
+<FERMENTABLES>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Grain</TYPE>
+    <COLOR>3.000000</COLOR>
+    <AMOUNT>8.618255</AMOUNT>
+    <YIELD>80.000000</YIELD>
+    <NAME>Pale Ale</NAME>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Grain</TYPE>
+    <COLOR>500.000000</COLOR>
+    <AMOUNT>0.680389</AMOUNT>
+    <YIELD>59.000000</YIELD>
+    <NAME>Barley (Roasted)</NAME>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Grain</TYPE>
+    <COLOR>120.000000</COLOR>
+    <AMOUNT>0.453592</AMOUNT>
+    <YIELD>63.000000</YIELD>
+    <NAME>Special B</NAME>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Grain</TYPE>
+    <COLOR>60.000000</COLOR>
+    <AMOUNT>0.226796</AMOUNT>
+    <YIELD>72.000000</YIELD>
+    <NAME>CaraMunich</NAME>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Grain</TYPE>
+    <COLOR>350.000000</COLOR>
+    <AMOUNT>0.226796</AMOUNT>
+    <YIELD>61.000000</YIELD>
+    <NAME>Chocolate</NAME>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Grain</TYPE>
+    <COLOR>200.000000</COLOR>
+    <AMOUNT>0.226796</AMOUNT>
+    <YIELD>61.000000</YIELD>
+    <NAME>Chocolate</NAME>
+  </FERMENTABLE>
+</FERMENTABLES>
+<HOPS>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Boil</USE>
+    <ALPHA>13.000000</ALPHA>
+    <SUBSTITUTES>Magnum</SUBSTITUTES>
+    <FORM>Pellet</FORM>
+    <NAME>Horizon</NAME>
+    <AMOUNT>0.042524</AMOUNT>
+    <TIME>60.000000</TIME>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Boil</USE>
+    <ALPHA>5.000000</ALPHA>
+    <SUBSTITUTES>Fuggle, Progress, First Gold</SUBSTITUTES>
+    <FORM>Pellet</FORM>
+    <NAME>Goldings (Kent)</NAME>
+    <AMOUNT>0.056699</AMOUNT>
+    <TIME>10.000000</TIME>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Boil</USE>
+    <ALPHA>5.000000</ALPHA>
+    <SUBSTITUTES>Fuggle, Progress, First Gold</SUBSTITUTES>
+    <FORM>Pellet</FORM>
+    <NAME>Goldings (Kent)</NAME>
+    <AMOUNT>0.056699</AMOUNT>
+    <TIME>1.000000</TIME>
+  </HOP>
+</HOPS>
+<YEASTS>
+  <YEAST>
+    <VERSION>1</VERSION>
+    <AMOUNT_IS_WEIGHT>FALSE</AMOUNT_IS_WEIGHT>
+    <LABORATORY>Wyeast</LABORATORY>
+    <FORM>Liquid</FORM>
+    <MIN_TEMPERATURE>16</MIN_TEMPERATURE>
+    <PRODUCT_ID>1056</PRODUCT_ID>
+    <NAME>American Ale</NAME>
+    <TYPE>Ale</TYPE>
+    <MAX_TEMPERATURE>22</MAX_TEMPERATURE>
+    <ATTENUATION>75</ATTENUATION>
+    <AMOUNT>0.500000</AMOUNT>
+  </YEAST>
+</YEASTS>
+<MISCS>
+</MISCS>
+<MASH>
+<VERSION>1</VERSION>
+<NAME>Batch/Fly</NAME>
+<GRAIN_TEMP>0.000000</GRAIN_TEMP>
+<MASH_THICKNESS>3.129527</MASH_THICKNESS>
+<SPARGE_TEMP>76.666664</SPARGE_TEMP>
+<MASH_STEPS>
+  <MASH_STEP>
+    <VERSION>1</VERSION>
+    <NAME>Strike</NAME>
+    <STEP_TIME>60</STEP_TIME>
+    <STEP_TEMP>67.77778</STEP_TEMP>
+    <TYPE>Infusion</TYPE>
+    <INFUSE_AMOUNT>11.35624</INFUSE_AMOUNT>
+  </MASH_STEP>
+</MASH_STEPS>
+</MASH>
+<WATERS>
+</WATERS>
+<EQUIPMENT>
+    <VERSION>1</VERSION>
+    <EVAP_RATE>17</EVAP_RATE>
+    <BOIL_SIZE>23.25189</BOIL_SIZE>
+    <BATCH_SIZE>18.92706</BATCH_SIZE>
+    <TOP_UP_KETTLE>0</TOP_UP_KETTLE>
+    <TRUB_CHILLER_LOSS>0.946353</TRUB_CHILLER_LOSS>
+    <BOIL_TIME>60</BOIL_TIME>
+</EQUIPMENT>
+<STYLES>
 </STYLES>
 </RECIPE>
 </RECIPES>

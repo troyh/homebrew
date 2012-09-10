@@ -3,19 +3,20 @@
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-<xsl:param name="recipes_doc"/>
-
 <xsl:template match="/">
 	<html>
 		<head>
 			<title>Homebrewing</title>
+			<link rel="stylesheet" type="text/css" href="recipe.css" />
 		</head>
 		<body>
 			<h1>Homebrewing</h1>
 			<h2>Batches</h2>
 			<xsl:apply-templates select="batches"/>
+			<h2>Recipe versions</h2>
+			<ol><xsl:apply-templates select="document('batchindex.xml')/batches"/></ol>
 			<h2>Recipes</h2>
-			<ol><xsl:apply-templates select="document($recipes_doc)/RECIPES"/></ol>
+			<ol><xsl:apply-templates select="document('recipeindex.xml')/recipes"/></ol>
 			<h2>Yeasts</h2>
 			<xsl:apply-templates select="//batches/batch/yeasts/yeast"/>
 		</body>
@@ -35,9 +36,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	</table>
 </xsl:template>
 
-<xsl:template match="RECIPE">
+<xsl:template match="recipe">
 	<li><a>
-		<xsl:attribute name="href">recipe/<xsl:value-of select="NAME"/>.html</xsl:attribute>
+		<xsl:attribute name="href"><xsl:value-of select="substring(@filename,1,string-length(@filename)-4)"/>.html</xsl:attribute>
 		<xsl:value-of select="NAME" disable-output-escaping="yes"/></a></li>
 </xsl:template>
 
