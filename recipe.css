@@ -143,7 +143,7 @@ tr.fermentable {
 
 tr.fermentable td:nth-child(1) {
 	text-align:left;
-	width:8em;
+	width:10em;
 }
 
 tr.fermentable td:nth-child(1) .metric {
