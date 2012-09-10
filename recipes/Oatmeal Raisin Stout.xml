@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RECIPES>
+<RECIPE>
+<VERSION>1</VERSION>
+<NAME>Oatmeal Raisin Stout</NAME>
+<TYPE>All Grain</TYPE>
+<BREWER>BrewPal</BREWER>
+<BATCH_SIZE>18.927059</BATCH_SIZE>
+<BOIL_SIZE>26.497881</BOIL_SIZE>
+<BOIL_TIME>90</BOIL_TIME>
+<EFFICIENCY>75</EFFICIENCY>
+<OG>0.000000</OG>
+<FG>0.000000</FG>
+<FERMENTATION_STAGES>1</FERMENTATION_STAGES>
+<PRIMARY_AGE>14</PRIMARY_AGE>
+<PRIMARY_TEMP>21.000000</PRIMARY_TEMP>
+<SECONDARY_AGE>0</SECONDARY_AGE>
+<SECONDARY_TEMP>21.000000</SECONDARY_TEMP>
+<CARBONATION>2.200000</CARBONATION>
+<FORCED_CARBONATION>0</FORCED_CARBONATION>
+<CARBONATION_TEMP>21.111111</CARBONATION_TEMP>
+<PRIMING_SUGAR_NAME>Corn Sugar</PRIMING_SUGAR_NAME>
+<PRIMING_SUGAR_EQUIV>1.000000</PRIMING_SUGAR_EQUIV>
+<NOTES>Adapted from "Brewing Better Beer", p.207.</NOTES>
+<FERMENTABLES>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <NAME>Maris Otter</NAME>
+    <AMOUNT>3.628739</AMOUNT>
+    <TYPE>Grain</TYPE>
+    <YIELD>80</YIELD>
+    <COLOR>4</COLOR>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>3.000000</COLOR>
+    <AMOUNT>0.566990</AMOUNT>
+    <NAME>Oats (Flaked)</NAME>
+    <YIELD>78.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <NAME>Crystal 80L</NAME>
+    <AMOUNT>0.340194</AMOUNT>
+    <TYPE>Grain</TYPE>
+    <YIELD>72.000000</YIELD>
+    <COLOR>80.000000</COLOR>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <NAME>Barley (Roasted)</NAME>
+    <AMOUNT>0.226796</AMOUNT>
+    <TYPE>Grain</TYPE>
+    <YIELD>59.000000</YIELD>
+    <COLOR>500.000000</COLOR>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <NAME>Chocolate</NAME>
+    <AMOUNT>0.226796</AMOUNT>
+    <TYPE>Grain</TYPE>
+    <YIELD>61.000000</YIELD>
+    <COLOR>350.000000</COLOR>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Grain</TYPE>
+    <AMOUNT>0.226796</AMOUNT>
+    <COLOR>140.000000</COLOR>
+    <YIELD>63.000000</YIELD>
+    <NAME>Special B</NAME>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Grain</TYPE>
+    <AMOUNT>0.113398</AMOUNT>
+    <COLOR>40</COLOR>
+    <YIELD>72</YIELD>
+    <NAME>Crystal 40L</NAME>
+  </FERMENTABLE>
+</FERMENTABLES>
+<HOPS>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>0</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Fuggle, Progress, First Gold</SUBSTITUTES>
+    <ALPHA>5.800000</ALPHA>
+    <NAME>Goldings (Kent)</NAME>
+    <AMOUNT>0.014175</AMOUNT>
+    <USE>First Wort</USE>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>60</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Fuggle, Progress, First Gold</SUBSTITUTES>
+    <ALPHA>5.800000</ALPHA>
+    <NAME>Goldings (Kent)</NAME>
+    <AMOUNT>0.021262</AMOUNT>
+    <USE>Boil</USE>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>30</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Fuggle, Progress, First Gold</SUBSTITUTES>
+    <ALPHA>5.800000</ALPHA>
+    <NAME>Goldings (Kent)</NAME>
+    <AMOUNT>0.017010</AMOUNT>
+    <USE>Boil</USE>
+  </HOP>
+</HOPS>
+<YEASTS>
+  <YEAST>
+    <VERSION>1</VERSION>
+    <ATTENUATION>75</ATTENUATION>
+    <LABORATORY>Wyeast</LABORATORY>
+    <FORM>Liquid</FORM>
+    <MIN_TEMPERATURE>17</MIN_TEMPERATURE>
+    <PRODUCT_ID>1335</PRODUCT_ID>
+    <NAME>British Ale II</NAME>
+    <AMOUNT_IS_WEIGHT>FALSE</AMOUNT_IS_WEIGHT>
+    <AMOUNT>0.125000</AMOUNT>
+    <TYPE>Ale</TYPE>
+    <MAX_TEMPERATURE>24</MAX_TEMPERATURE>
+  </YEAST>
+</YEASTS>
+<MISCS>
+  <MISC>
+    <VERSION>1</VERSION>
+    <TYPE>Other</TYPE>
+    <AMOUNT>0.007000</AMOUNT>
+    <TIME>15.000000</TIME>
+    <USE>Boil</USE>
+    <NAME>Yeast nutrient</NAME>
+  </MISC>
+  <MISC>
+    <VERSION>1</VERSION>
+    <TYPE>Fining</TYPE>
+    <AMOUNT>0.007087</AMOUNT>
+    <TIME>15.000000</TIME>
+    <USE>Boil</USE>
+    <NAME>Whirlfloc</NAME>
+  </MISC>
+</MISCS>
+<MASH>
+<VERSION>1</VERSION>
+<NAME>Batch/Fly</NAME>
+<GRAIN_TEMP>21.111111</GRAIN_TEMP>
+<MASH_THICKNESS>3.129527</MASH_THICKNESS>
+<SPARGE_TEMP>76.666664</SPARGE_TEMP>
+<MASH_STEPS>
+  <MASH_STEP>
+    <VERSION>1</VERSION>
+    <NAME>Strike</NAME>
+    <TYPE>Infusion</TYPE>
+    <STEP_TIME>60</STEP_TIME>
+    <INFUSE_AMOUNT>11.35624</INFUSE_AMOUNT>
+    <STEP_TEMP>67.77778</STEP_TEMP>
+  </MASH_STEP>
+</MASH_STEPS>
+</MASH>
+<WATERS>
+</WATERS>
+<EQUIPMENT>
+    <VERSION>1</VERSION>
+    <BOIL_SIZE>26.49788</BOIL_SIZE>
+    <BOIL_TIME>90</BOIL_TIME>
+    <BATCH_SIZE>19.87341</BATCH_SIZE>
+    <TOP_UP_KETTLE>1.907349e-06</TOP_UP_KETTLE>
+    <TOP_UP_WATER>-1.240439</TOP_UP_WATER>
+    <EVAP_RATE>17</EVAP_RATE>
+    <TRUB_CHILLER_LOSS>0.946353</TRUB_CHILLER_LOSS>
+</EQUIPMENT>
+<STYLES>
+  <STYLE>
+    <VERSION>1</VERSION>
+    <COLOR_MIN>22.0</COLOR_MIN>
+    <COLOR_MAX>40.0</COLOR_MAX>
+    <STYLE_LETTER>C</STYLE_LETTER>
+    <ABV_MIN>4.2</ABV_MIN>
+    <NAME>Oatmeal Stout</NAME>
+    <IS_SELECTED>1.000000</IS_SELECTED>
+    <TYPE>beer</TYPE>
+    <FG_MIN>1.010</FG_MIN>
+    <OG_MIN>1.048</OG_MIN>
+    <IBU_MAX>40</IBU_MAX>
+    <EXAMPLES>Samuel Smith Oatmeal Stout, Young's Oatmeal Stout, McAuslan Oatmeal Stout, Maclay's Oat Malt Stout, Broughton Kinmount Willie Oatmeal Stout, Anderson Valley Barney Flats Oatmeal Stout, Tröegs Oatmeal Stout, New Holland The Poet, Goose Island Oatmeal Stout, Wolaver's Oatmeal Stout</EXAMPLES>
+    <MATCH_QUALITY>Very good match</MATCH_QUALITY>
+    <STYLE_GUIDE>BJCP</STYLE_GUIDE>
+    <INGREDIENTS>Pale, caramel and dark roasted malts and grains.</INGREDIENTS>
+    <FG_MAX>1.018</FG_MAX>
+    <OG_MAX>1.065</OG_MAX>
+    <ABV_MAX>5.9</ABV_MAX>
+    <PROFILE>Aroma:
+Mild roasted grain aromas, often with a coffee-like character.  A light sweetness can imply a coffee-and-cream impression.  Fruitiness should be low to medium. Diacetyl medium-low to none.  Hop aroma low to none (UK varieties most common).  A light oatmeal aroma is optional.
+Appearance:
+Medium brown to black in color.  Thick, creamy, persistent tan- to brown-colored head.  Can be opaque (if not, it should be clear).
+Flavor:
+Medium sweet to medium dry palate, with the complexity of oats and dark roasted grains present.  Oats can add a nutty, grainy or earthy flavor.  Dark grains can combine with malt sweetness to give the impression of milk chocolate or coffee with cream.  Medium hop bitterness with the balance toward malt.  Diacetyl medium-low to none.  Hop flavor medium-low to none.
+Mouthfeel:
+Medium-full to full body, smooth, silky, sometimes an almost oily slickness from the oatmeal.  Creamy. Medium to medium-high carbonation.
+Impression:
+A very dark, full-bodied, roasty, malty ale with a complementary oatmeal flavor.</PROFILE>
+    <CARB_MIN>2.0</CARB_MIN>
+    <CATEGORY>Stout</CATEGORY>
+    <IBU_MIN>25</IBU_MIN>
+    <CARB_MAX>2.4</CARB_MAX>
+    <CATEGORY_NUMBER>13</CATEGORY_NUMBER>
+    <NOTES>History:
+An English seasonal variant of sweet stout that is usually less sweet than the original, and relies on oatmeal for body and complexity rather than lactose for body and sweetness.
+Comments:
+Generally between sweet and dry stouts in sweetness.  Variations exist, from fairly sweet to quite dry.  The level of bitterness also varies, as does the oatmeal impression.  Light use of oatmeal may give a certain silkiness of body and richness of flavor, while heavy use of oatmeal can be fairly intense in flavor with an almost oily mouthfeel.  When judging, allow for differences in interpretation.</NOTES>
+  </STYLE>
+</STYLES>
+</RECIPE>
+</RECIPES>
