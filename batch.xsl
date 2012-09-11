@@ -9,13 +9,16 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<html>
 		<head>
 			<title>
-				<xsl:if test="string-length(recipe/beerxml/RECIPE/NAME) = 0">No title</xsl:if>
-				<xsl:value-of select="recipe/beerxml/RECIPE/NAME" disable-output-escaping="yes"/>
+				<xsl:if test="string-length(/RECIPE/NAME) = 0">No title</xsl:if>
+				<xsl:value-of select="RECIPE/NAME" disable-output-escaping="yes"/>
 			</title>
 			<link rel="stylesheet" type="text/css" href="../recipe.css" />
 			<script src="../js/tumblr.js" />
 		</head>
 		<body>
+			<div id="topnav">
+				<a href="../">Home</a>
+			</div>
 			<xsl:apply-templates select="*"/>
 		</body>
 	</html>
