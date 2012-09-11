@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="recipe.xsl"?>
+<RECIPES>
+<RECIPE>
+<VERSION>1</VERSION>
+<NAME>Punkin' Ale</NAME>
+<TYPE>All Grain</TYPE>
+<BREWER>BrewPal</BREWER>
+<BATCH_SIZE>19.873411</BATCH_SIZE>
+<BOIL_SIZE>25.712408</BOIL_SIZE>
+<BOIL_TIME>60</BOIL_TIME>
+<EFFICIENCY>75</EFFICIENCY>
+<OG>1.065</OG>
+<FG>1.017</FG>
+<FERMENTATION_STAGES>1</FERMENTATION_STAGES>
+<PRIMARY_AGE>28</PRIMARY_AGE>
+<PRIMARY_TEMP>21.000000</PRIMARY_TEMP>
+<SECONDARY_AGE>0</SECONDARY_AGE>
+<SECONDARY_TEMP>21.000000</SECONDARY_TEMP>
+<CARBONATION>-1.000000</CARBONATION>
+<FORCED_CARBONATION>0</FORCED_CARBONATION>
+<CARBONATION_TEMP>0.000000</CARBONATION_TEMP>
+<PRIMING_SUGAR_NAME>(null)</PRIMING_SUGAR_NAME>
+<PRIMING_SUGAR_EQUIV>0.000000</PRIMING_SUGAR_EQUIV>
+<NOTES>From Reno_eNVy on homebrewtalk.com</NOTES>
+<FERMENTABLES>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <NAME>2 Row Base</NAME>
+    <AMOUNT>4.535923</AMOUNT>
+    <TYPE>Grain</TYPE>
+    <YIELD>78</YIELD>
+    <COLOR>1.5</COLOR>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <NAME>Crystal 60L</NAME>
+    <AMOUNT>0.4535924</AMOUNT>
+    <TYPE>Grain</TYPE>
+    <YIELD>72</YIELD>
+    <COLOR>60</COLOR>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <NAME>Victory</NAME>
+    <AMOUNT>0.4535924</AMOUNT>
+    <TYPE>Grain</TYPE>
+    <YIELD>74</YIELD>
+    <COLOR>25</COLOR>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Adjunct</TYPE>
+    <AMOUNT>1.644272</AMOUNT>
+    <COLOR>0</COLOR>
+    <YIELD>0</YIELD>
+    <NAME>Pumpkin puree</NAME>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <NAME>Sugar - Brown</NAME>
+    <AMOUNT>0.4535924</AMOUNT>
+    <TYPE>Sugar</TYPE>
+    <YIELD>89</YIELD>
+    <COLOR>40</COLOR>
+  </FERMENTABLE>
+</FERMENTABLES>
+<HOPS>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Boil</USE>
+    <ALPHA>5</ALPHA>
+    <SUBSTITUTES>Liberty, Tettnanger, Mt. Hood, Vangaurd, Tradition</SUBSTITUTES>
+    <FORM>Pellet</FORM>
+    <NAME>Hallertauer</NAME>
+    <AMOUNT>0.02834952</AMOUNT>
+    <TIME>60</TIME>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Boil</USE>
+    <ALPHA>5</ALPHA>
+    <SUBSTITUTES>Liberty, Tettnanger, Mt. Hood, Vangaurd, Tradition</SUBSTITUTES>
+    <FORM>Pellet</FORM>
+    <NAME>Hallertauer</NAME>
+    <AMOUNT>0.02834952</AMOUNT>
+    <TIME>5</TIME>
+  </HOP>
+</HOPS>
+<YEASTS>
+  <YEAST>
+    <VERSION>1</VERSION>
+    <TYPE>Ale</TYPE>
+    <LABORATORY>Wyeast</LABORATORY>
+    <FORM>Liquid</FORM>
+    <MIN_TEMPERATURE>16</MIN_TEMPERATURE>
+    <PRODUCT_ID>1056</PRODUCT_ID>
+    <NAME>American Ale</NAME>
+    <AMOUNT_IS_WEIGHT>FALSE</AMOUNT_IS_WEIGHT>
+    <MAX_TEMPERATURE>22</MAX_TEMPERATURE>
+    <AMOUNT>2</AMOUNT>
+    <ATTENUATION>75</ATTENUATION>
+  </YEAST>
+</YEASTS>
+<MISCS>
+  <MISC>
+    <VERSION>1</VERSION>
+    <TIME>15</TIME>
+    <AMOUNT>0.01</AMOUNT>
+    <NAME>Irish moss</NAME>
+    <USE>Boil</USE>
+    <TYPE>Fining</TYPE>
+  </MISC>
+  <MISC>
+    <VERSION>1</VERSION>
+    <TYPE>Spice</TYPE>
+    <AMOUNT>0.015</AMOUNT>
+    <TIME>10</TIME>
+    <USE>Boil</USE>
+    <NAME>Pumpkin Pie spice</NAME>
+  </MISC>
+</MISCS>
+<MASH>
+<VERSION>1</VERSION>
+<NAME>Batch/Fly</NAME>
+<GRAIN_TEMP>21.111111</GRAIN_TEMP>
+<MASH_THICKNESS>4.172702</MASH_THICKNESS>
+<SPARGE_TEMP>72.777779</SPARGE_TEMP>
+<MASH_STEPS>
+  <MASH_STEP>
+    <VERSION>1</VERSION>
+    <NAME>Strike</NAME>
+    <INFUSE_AMOUNT>11.35624</INFUSE_AMOUNT>
+    <STEP_TIME>60</STEP_TIME>
+    <STEP_TEMP>68.88889</STEP_TEMP>
+    <TYPE>Infusion</TYPE>
+  </MASH_STEP>
+</MASH_STEPS>
+</MASH>
+<WATERS>
+</WATERS>
+<EQUIPMENT>
+    <VERSION>1</VERSION>
+    <BOIL_SIZE>25.71241</BOIL_SIZE>
+    <BOIL_TIME>60</BOIL_TIME>
+    <BATCH_SIZE>18.92706</BATCH_SIZE>
+    <TOP_UP_KETTLE>1.907349e-06</TOP_UP_KETTLE>
+    <TOP_UP_WATER>-1.156655</TOP_UP_WATER>
+    <EVAP_RATE>17</EVAP_RATE>
+    <TRUB_CHILLER_LOSS>0.946353</TRUB_CHILLER_LOSS>
+</EQUIPMENT>
+<STYLES>
+  <STYLE>
+    <VERSION>1</VERSION>
+    <CATEGORY>Spice/Herb/Vegetable Beer</CATEGORY>
+    <NOTES>Comments:
+Overall balance is the key to presenting a well-made spice, herb or vegetable (SHV) beer.  The SHV(s) should complement the original style and not overwhelm it. The brewer should recognize that some combinations of base beer styles and SHV(s) work well together while others do not make for harmonious combinations.  THE ENTRANT MUST SPECIFY THE UNDERLYING BEER STYLE AS WELL AS THE TYPE OF SPICES, HERBS, OR VEGETABLES USED. IF THIS BEER IS BASED ON A CLASSIC STYLE (E.G., BLONDE ALE) THEN THE SPECIFIC STYLE MUST BE SPECIFIED.  CLASSIC STYLES DO NOT HAVE TO BE CITED (E.G., "PORTER" OR "WHEAT ALE" IS ACCEPTABLE).  THE TYPE OF SPICES, HERBS, OR VEGETABLES MUST ALWAYS BE SPECIFIED.  If the base beer is a classic style, the original style should come through in aroma and flavor. The individual character of SHV(s) may not always be identifiable when used in combination.  This category may also be used for chile pepper, coffee-, chocolate-, or nut-based beers (including combinations of these items).  Note that many spice-based Belgian specialties may be entered in Category 16E.  Beers that only have additional fermentables (honey, maple syrup, molasses, sugars, treacle, etc.) should be entered in the Specialty Beer category.</NOTES>
+    <NAME>Spice, Herb, or Vegetable Beer</NAME>
+    <MATCH_QUALITY>No match</MATCH_QUALITY>
+    <STYLE_LETTER>A</STYLE_LETTER>
+    <CATEGORY_NUMBER>21</CATEGORY_NUMBER>
+    <EXAMPLES>Alesmith Speedway Stout, Founders Breakfast Stout, Traquair Jacobite Ale, Rogue Chipotle Ale, Young's Double Chocolate Stout, Bell's Java Stout, Fraoch Heather Ale, Southampton Pumpkin Ale, Rogue Hazelnut Nectar, Hitachino Nest Real Ginger Ale, Breckenridge Vanilla Porter, Left Hand JuJu Ginger Beer, Dogfish Head Punkin Ale, Dogfish Head Midas Touch, Redhook Double Black Stout, Buffalo Bill's Pumpkin Ale,  BluCreek Herbal Ale, Christian Moerlein Honey Almond,  Rogue Chocolate Stout, Birrificio Baladin Nora, Cave Creek Chili Beer</EXAMPLES>
+    <STYLE_GUIDE>BJCP</STYLE_GUIDE>
+    <EXCEPTIONS>OG, FG, IBUs, SRM and ABV will vary depending on the underlying base beer.</EXCEPTIONS>
+    <PROFILE>Aroma:
+The character of the particular spices, herbs and/or vegetables (SHV) should be noticeable in the aroma; however, note that some SHV (e.g., ginger, cinnamon) have stronger aromas and are more distinctive than others (e.g., some vegetables) – allow for a range of SHV character and intensity from subtle to aggressive.  The individual character of the SHV(s) may not always be identifiable when used in combination.  The SHV character should be pleasant and supportive, not artificial and overpowering.  As with all specialty beers, a prope
+Aroma:
+r SHV beer should be a harmonious balance of the featured SHV(s) with the underlying beer style.  Aroma hops, yeast by-products and malt components of the underlying beer may not be as noticeable when SHV are present.  These components (especially hops) may also be intentionally subdued to allow the
+Aroma:
+SHV character to come through in the final presentation.  If the base beer is an ale then a non-specific fruitiness and/or other fermentation by-products such as diacetyl may be present as appropriate for warmer fermentations.  If the base beer is a lager, then overall less fermentation byproducts
+Aroma:
+would be appropriate.  Some malt aroma is preferable, especially in dark styles.  Hop aroma may be absent or balanced with SHV, depending on the style.  The SHV(s) should add an extra complexity to the beer, but not be so prominent as to unbalance the resulting presentation.
+Appearance:
+Appearance should be appropriate to the base beer being presented and will vary depending on the base beer.  For lighter-colored beers with spices, herbs or vegetables that exhibit distinctive colors, the colors may be noticeable in the beer and possibly the head.  May have some haze or be clear.  Head formation may be adversely affected by some ingredients, such as chocolate.
+Flavor:
+As with aroma, the distinctive flavor character associated with the particular SHV(s) should be noticeable, and may range in intensity from subtle to aggressive.  The individual character of the SHV(s) may not always be identifiable when used in combination.  The balance of SHV with the underlying beer is vital, and the SHV character should not be so artificial and/or overpowering as to overwhelm the beer.  Hop bitterness, flavor, malt flavors, alcohol content, and fermentation by-products, such as esters or diacetyl, should be appropriate to the base beer and be harmonious and balanced with the distinctive SHV flavors present.  Note that these components (especially hops) may be intentionally subdued to allow the SHV character to come through in the final presentation.  Some SHV(s) are inherently bitter and may result in a beer more bitter than the declared base style.
+Mouthfeel:
+Mouthfeel may vary depending on the base beer selected and as appropriate to that base beer.  Body and carbonation levels should be appropriate to the base beer style being presented.  Some SHV(s) may add additional body and/or slickness, although fermentable additions may thin out the beer.  Some SHV(s) may add a bit of astringency, although a "raw" spice character is undesirable.
+Impression:
+A harmonious marriage of spices, herbs and/or vegetables and beer.  The key attributes of the underlying style will be different with the addition of spices, herbs and/or vegetables; do not expect the base beer to taste the same as the unadulterated version.  Judge the beer based on the pleasantness and balance of the resulting combination.</PROFILE>
+    <IS_SELECTED>1</IS_SELECTED>
+    <TYPE>beer</TYPE>
+  </STYLE>
+</STYLES>
+</RECIPE>
+</RECIPES>

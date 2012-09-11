@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<versions id="2012d87a2ab3b575015fa8beedfb2a1b">
+  <version commit="93ff0c6" id="93ff0c69800d46a7d05dffdbb11efd2c92b6116e">
+    <author email="troy.hakala@gmail.com">Troy Hakala</author>
+    <date>Sun Aug 19 11:59:56 2012 -0700</date>
+    <message>Added recipes</message>
+  </version>
+  <version commit="43b9ee8" id="43b9ee86ca08019ca8f228aeeacd6e76034e1c07">
+    <author email="troy.hakala@gmail.com">Troy Hakala</author>
+    <date>Sun Aug 19 12:04:16 2012 -0700</date>
+    <message>Added stylesheet to a recipe</message>
+  </version>
+  <version commit="ba16f35" id="ba16f35f455a9c4c7563c6976d4e55fc7bb7a321">
+    <author email="troy.hakala@gmail.com">Troy Hakala</author>
+    <date>Sun Aug 19 12:05:19 2012 -0700</date>
+    <message>fixed xsl link</message>
+  </version>
+  <version commit="a17bfd1" id="a17bfd18e02f1a6d0e53058af7096147929f10b1">
+    <author email="troy.hakala@gmail.com">Troy Hakala</author>
+    <date>Sun Aug 19 12:16:51 2012 -0700</date>
+    <message>Added logs from tumblr for each batch</message>
+  </version>
+</versions>

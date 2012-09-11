@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<versions id="1ee1f5b4bd9d98bad8ababc941278307">
+  <version commit="1f3edea" id="1f3edea4251d2886507e50d1483feb886e95ef3d">
+    <author email="troy.hakala@gmail.com">Troy Hakala</author>
+    <date>Sat Aug 25 10:53:27 2012 -0700</date>
+    <message>Trying to get it all automated</message>
+  </version>
+  <version commit="0d2c2cf" id="0d2c2cfc439383a7aa7592cdb2310d1fdf7ab407">
+    <author email="troy.hakala@gmail.com">Troy Hakala</author>
+    <date>Mon Sep 3 09:59:05 2012 -0700</date>
+    <message>Switched back to 5 gallons</message>
+  </version>
+</versions>

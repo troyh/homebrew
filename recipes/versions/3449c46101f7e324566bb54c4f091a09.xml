@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<versions id="3449c46101f7e324566bb54c4f091a09">
+  <version commit="93ff0c6" id="93ff0c69800d46a7d05dffdbb11efd2c92b6116e">
+    <author email="troy.hakala@gmail.com">Troy Hakala</author>
+    <date>Sun Aug 19 11:59:56 2012 -0700</date>
+    <message>Added recipes</message>
+  </version>
+  <version commit="1f3edea" id="1f3edea4251d2886507e50d1483feb886e95ef3d">
+    <author email="troy.hakala@gmail.com">Troy Hakala</author>
+    <date>Sat Aug 25 10:53:27 2012 -0700</date>
+    <message>Trying to get it all automated</message>
+  </version>
+  <version commit="cffcbbf" id="cffcbbfa4563e86af9f6b5d2daa08f2fb4066f0a">
+    <author email="troy.hakala@gmail.com">Troy Hakala</author>
+    <date>Mon Aug 27 14:54:34 2012 -0700</date>
+    <message>Merged variation of Fuller's ESB into original to use versioning</message>
+  </version>
+  <version commit="e236b06" id="e236b06651ea31afb1a57a8d523f24db6aff57a6">
+    <author email="troy.hakala@gmail.com">Troy Hakala</author>
+    <date>Mon Aug 27 16:18:48 2012 -0700</date>
+    <message>Trying out a new version of Fuller's ESB</message>
+  </version>
+  <version commit="b826663" id="b826663488fb7c439a41103bdd5d075b49a6262d">
+    <author email="troy.hakala@gmail.com">Troy Hakala</author>
+    <date>Mon Aug 27 16:29:37 2012 -0700</date>
+    <message>Fixed OG and FG in recipe xml</message>
+  </version>
+  <version commit="f8d76d8" id="f8d76d817481586917c93851ceb22be4ff0cde5c">
+    <author email="troy.hakala@gmail.com">Troy Hakala</author>
+    <date>Mon Aug 27 16:34:26 2012 -0700</date>
+    <message>Added notes</message>
+  </version>
+  <version commit="3319bf5" id="3319bf5c4ec37427a01e3fc33f0defbb1d7e1962">
+    <author email="troy.hakala@gmail.com">Troy Hakala</author>
+    <date>Mon Aug 27 16:36:30 2012 -0700</date>
+    <message>Added HTML to Notes</message>
+  </version>
+  <version commit="7b3d6d2" id="7b3d6d29f40482c42c1dc0fcece031fd8554b654">
+    <author email="troy.hakala@gmail.com">Troy Hakala</author>
+    <date>Mon Aug 27 16:42:14 2012 -0700</date>
+    <message>Trying to put proper HTML into notes</message>
+  </version>
+  <version commit="cb7e8c7" id="cb7e8c7789772b4f33e2751cfa92154a4c4ee0cc">
+    <author email="troy.hakala@gmail.com">Troy Hakala</author>
+    <date>Mon Aug 27 16:45:21 2012 -0700</date>
+    <message>Fixing HTML</message>
+  </version>
+</versions>

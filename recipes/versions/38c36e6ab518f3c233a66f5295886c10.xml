@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<versions id="38c36e6ab518f3c233a66f5295886c10">
+  <version commit="75ec1ea" id="75ec1ea54545bbfb67a21001b586fb4338ac0812">
+    <author email="troy.hakala@gmail.com">Troy Hakala</author>
+    <date>Sat Sep 1 10:03:02 2012 -0700</date>
+    <message>Added new recipe</message>
+  </version>
+</versions>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<versions id="5828e6039c061ca094b8ed457085e90f">
+  <version commit="fa7113a" id="fa7113adc752447a8c92e4c5394f104a5d210f50">
+    <author email="troy.hakala@gmail.com">Troy Hakala</author>
+    <date>Mon Sep 10 10:38:53 2012 -0700</date>
+    <message>New recipes</message>
+  </version>
+  <version commit="fd4ff58" id="fd4ff58b382c2f2b4b964f661ba13415b06f6fe9">
+    <author email="troy.hakala@gmail.com">Troy Hakala</author>
+    <date>Mon Sep 10 14:21:06 2012 -0700</date>
+    <message>Added individual recipe pages</message>
+  </version>
+</versions>
