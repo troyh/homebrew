@@ -193,17 +193,17 @@
   <ppg>26.3062158155122</ppg>
   <ppg>16.5599814012653</ppg>
 </data><results>
-	<mash type="infusion" duration="60">
-		<infusion>
-			<strike volume="" temp="71.6667"/>
-		</infusion>
-		<measurement temp="68.055556"/>
-		<measurement temp="67.2222"/>
-		<measurement temp="66.333333"/>
-		<measurement temp="66.1111"/>
-	</mash>
-	<boil volume="25.7408" sg="1.052" time="60" end_volume="20.8198"/>
-	<gravity volume="19.619766564" og="1.060" fg=""/>
+  <mash type="infusion" duration="60">
+    <infusion>
+      <strike volume="" temp="71.6667"/>
+    </infusion>
+    <measurement temp="68.055556"/>
+    <measurement temp="67.2222"/>
+    <measurement temp="66.333333"/>
+    <measurement temp="66.1111"/>
+  </mash>
+  <boil volume="25.7408" sg="1.052" time="60" end_volume="20.8198"/>
+  <gravity volume="19.619766564" og="1.060" fg="1.015"/>
 </results></batch><batch id="012"><name>Special B IPA</name><type>All Grain</type><styles>
   <style><name>American IPA</name></style>
 </styles><yeasts>
@@ -214,21 +214,21 @@
   <ppg>17.0199658755808</ppg>
   <ppg>7.244985474064801</ppg>
 </data><results>
-	<mash type="infusion" duration="60">
-		<infusion>
-			<strike volume="17.0344" temp="72.7778"/>
-		</infusion>
-		<measurement temp="66.6667"/>
-		<measurement temp="66.1111"/>
-		<measurement temp="65.5556"/>
-		<measurement temp="65"/>
-	</mash>
-	<efficiencies>
-		<mash/>
-		<brewhouse/>
-	</efficiencies>
-	<boil volume="24.9837" sg="1.050" time="60" end_volume="20.8198"/>
-	<gravity volume="17.98071" og="1.060" fg=""/>
+  <mash type="infusion" duration="60">
+    <infusion>
+      <strike volume="17.0344" temp="72.7778"/>
+    </infusion>
+    <measurement temp="66.6667"/>
+    <measurement temp="66.1111"/>
+    <measurement temp="65.5556"/>
+    <measurement temp="65"/>
+  </mash>
+  <efficiencies>
+    <mash/>
+    <brewhouse/>
+  </efficiencies>
+  <boil volume="24.9837" sg="1.050" time="60" end_volume="20.8198"/>
+  <gravity volume="17.98071" og="1.060" fg="1.007"/>
 </results></batch><batch id="013"><name>Oatmeal Raisin Stout</name><type>All Grain</type><styles>
   <style><name>Oatmeal Stout</name></style>
 </styles><yeasts>

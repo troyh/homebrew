@@ -1,18 +1,18 @@
+<?xml version="1.0"?>
 <results>
-	<mash type="infusion" duration="60">
-		<infusion>
-			<strike volume="17.0344" temp="72.7778"/>
-		</infusion>
-		<measurement temp="66.6667"/>
-		<measurement temp="66.1111"/>
-		<measurement temp="65.5556"/>
-		<measurement temp="65"/>
-	</mash>
-	<efficiencies>
-		<mash></mash>
-		<brewhouse></brewhouse>
-	</efficiencies>
-	<boil volume="24.9837" sg="1.050" time="60" end_volume="20.8198"/>
-	<gravity volume="17.98071" og="1.060" fg=""/>
+  <mash type="infusion" duration="60">
+    <infusion>
+      <strike volume="17.0344" temp="72.7778"/>
+    </infusion>
+    <measurement temp="66.6667"/>
+    <measurement temp="66.1111"/>
+    <measurement temp="65.5556"/>
+    <measurement temp="65"/>
+  </mash>
+  <efficiencies>
+    <mash/>
+    <brewhouse/>
+  </efficiencies>
+  <boil volume="24.9837" sg="1.050" time="60" end_volume="20.8198"/>
+  <gravity volume="17.98071" og="1.060" fg="1.007"/>
 </results>
-
