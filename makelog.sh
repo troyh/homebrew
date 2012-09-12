@@ -64,8 +64,5 @@ xsltproc \
 	batches/$BATCH_ID/log.xml > batches/$BATCH_ID/batch.xml
 
 # Make the HTML page for the batch
-xsltproc batch.xsl batches/$BATCH_ID/batch.xml > batches/$BATCH_ID/batch.html
-# Put them in the separate gh-pages branch repo
-cp batches/$BATCH_ID/batch.html $GH_PAGES_REPO/batch/$BATCH_ID.html
+xsltproc batch.xsl batches/$BATCH_ID/batch.xml > $GH_PAGES_REPO/batch/$BATCH_ID.html
 
-cp index.html $GH_PAGES_REPO/
