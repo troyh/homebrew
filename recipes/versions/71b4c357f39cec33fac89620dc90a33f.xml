@@ -5,4 +5,9 @@
     <date>Sun Sep 9 23:46:42 2012 -0700</date>
     <message>New recipe</message>
   </version>
+  <version commit="ee07fbe" id="ee07fbe0f2d8167447f0092b23010ffec4b95fb7">
+    <author email="troy.hakala@gmail.com">Troy Hakala</author>
+    <date>Wed Sep 12 08:33:09 2012 -0700</date>
+    <message>Changed base malt to American 2-row and to use just one type of chocolate malt, which is all I have on hand.</message>
+  </version>
 </versions>
