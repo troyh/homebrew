@@ -10,4 +10,9 @@
     <date>Wed Sep 12 08:33:09 2012 -0700</date>
     <message>Changed base malt to American 2-row and to use just one type of chocolate malt, which is all I have on hand.</message>
   </version>
+  <version commit="475b7e9" id="475b7e91e213ecbf31833334da1e42ac8e4fcf0a">
+    <author email="troy.hakala@gmail.com">Troy Hakala</author>
+    <date>Wed Sep 12 09:21:28 2012 -0700</date>
+    <message>Reduced fermentables to bring OG down</message>
+  </version>
 </versions>
