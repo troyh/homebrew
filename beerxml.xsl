@@ -71,12 +71,12 @@ xmlns:exslt="http://exslt.org/common">
 
 			  <div>
 				  <span class="headerkey"><xsl:text>OG:</xsl:text></span>
-				  <span class="headerval"><xsl:value-of select="format-number($CALC_OG_GU div 1000 + 1,&quot;#.###&quot;)"/></span>
+				  <span class="headerval"><xsl:value-of select="format-number($CALC_OG_GU div 1000 + 1,&quot;#.000&quot;)"/></span>
 			  </div>
 			  
 			  <div>
 				  <span class="headerkey"><xsl:text>FG:</xsl:text></span>
-				  <span class="headerval"><xsl:value-of select="format-number($CALC_FG_GU div 1000 + 1,&quot;#.###&quot;)"/></span>
+				  <span class="headerval"><xsl:value-of select="format-number($CALC_FG_GU div 1000 + 1,&quot;#.000&quot;)"/></span>
 			  </div>
 
 			  <div>

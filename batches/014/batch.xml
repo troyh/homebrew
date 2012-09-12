@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<batch id="014"><recipe><beerxml recipefile="The Czar's Revenge.xml" commit_sha="ee07fbe0f2d8167447f0092b23010ffec4b95fb7"><RECIPE>
+<VERSION>1</VERSION>
+<NAME>The Czar's Revenge</NAME>
+<TYPE>All Grain</TYPE>
+<BREWER>BrewPal</BREWER>
+<BATCH_SIZE>18.927059</BATCH_SIZE>
+<BOIL_SIZE>23.251892</BOIL_SIZE>
+<BOIL_TIME>60</BOIL_TIME>
+<EFFICIENCY>75</EFFICIENCY>
+<OG>0.000000</OG>
+<FG>0.000000</FG>
+<FERMENTATION_STAGES>1</FERMENTATION_STAGES>
+<PRIMARY_AGE>14</PRIMARY_AGE>
+<PRIMARY_TEMP>19.444445</PRIMARY_TEMP>
+<SECONDARY_AGE>0</SECONDARY_AGE>
+<SECONDARY_TEMP>21.000000</SECONDARY_TEMP>
+<CARBONATION>2.250000</CARBONATION>
+<FORCED_CARBONATION>1</FORCED_CARBONATION>
+<CARBONATION_TEMP>21.111111</CARBONATION_TEMP>
+<PRIMING_SUGAR_NAME>(null)</PRIMING_SUGAR_NAME>
+<PRIMING_SUGAR_EQUIV>0.000000</PRIMING_SUGAR_EQUIV>
+<NOTES/>
+<FERMENTABLES>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>3.000000</COLOR>
+    <NAME>2 Row Base</NAME>
+    <AMOUNT>8.618255</AMOUNT>
+    <YIELD>78.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>500.000000</COLOR>
+    <AMOUNT>0.680389</AMOUNT>
+    <NAME>Barley (Roasted)</NAME>
+    <YIELD>59.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>350.000000</COLOR>
+    <NAME>Chocolate</NAME>
+    <AMOUNT>0.453592</AMOUNT>
+    <YIELD>61.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>120.000000</COLOR>
+    <AMOUNT>0.453592</AMOUNT>
+    <NAME>Special B</NAME>
+    <YIELD>63.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>60.000000</COLOR>
+    <AMOUNT>0.226796</AMOUNT>
+    <NAME>CaraMunich</NAME>
+    <YIELD>72.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+</FERMENTABLES>
+<HOPS>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Boil</USE>
+    <ALPHA>13.000000</ALPHA>
+    <SUBSTITUTES>Horizon, Newport</SUBSTITUTES>
+    <FORM>Pellet</FORM>
+    <NAME>Magnum</NAME>
+    <AMOUNT>0.042524</AMOUNT>
+    <TIME>60.000000</TIME>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>10.000000</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Fuggle, Progress, First Gold</SUBSTITUTES>
+    <ALPHA>5.000000</ALPHA>
+    <NAME>Goldings (Kent)</NAME>
+    <AMOUNT>0.056699</AMOUNT>
+    <USE>Boil</USE>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>1.000000</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Fuggle, Progress, First Gold</SUBSTITUTES>
+    <ALPHA>5.000000</ALPHA>
+    <NAME>Goldings (Kent)</NAME>
+    <AMOUNT>0.056699</AMOUNT>
+    <USE>Boil</USE>
+  </HOP>
+</HOPS>
+<YEASTS>
+  <YEAST>
+    <VERSION>1</VERSION>
+    <AMOUNT>0.500000</AMOUNT>
+    <LABORATORY>Wyeast</LABORATORY>
+    <FORM>Liquid</FORM>
+    <MIN_TEMPERATURE>16</MIN_TEMPERATURE>
+    <PRODUCT_ID>1056</PRODUCT_ID>
+    <NAME>American Ale</NAME>
+    <AMOUNT_IS_WEIGHT>FALSE</AMOUNT_IS_WEIGHT>
+    <TYPE>Ale</TYPE>
+    <MAX_TEMPERATURE>22</MAX_TEMPERATURE>
+    <ATTENUATION>75</ATTENUATION>
+  </YEAST>
+</YEASTS>
+<MISCS>
+</MISCS>
+<MASH>
+<VERSION>1</VERSION>
+<NAME>Batch/Fly</NAME>
+<GRAIN_TEMP>21.111111</GRAIN_TEMP>
+<MASH_THICKNESS>3.129527</MASH_THICKNESS>
+<SPARGE_TEMP>76.666664</SPARGE_TEMP>
+<MASH_STEPS>
+  <MASH_STEP>
+    <VERSION>1</VERSION>
+    <STEP_TEMP>67.77778</STEP_TEMP>
+    <TYPE>Infusion</TYPE>
+    <STEP_TIME>60</STEP_TIME>
+    <INFUSE_AMOUNT>11.35624</INFUSE_AMOUNT>
+    <NAME>Strike</NAME>
+  </MASH_STEP>
+</MASH_STEPS>
+</MASH>
+<WATERS>
+</WATERS>
+<EQUIPMENT>
+    <VERSION>1</VERSION>
+    <BOIL_SIZE>23.25189</BOIL_SIZE>
+    <BOIL_TIME>60</BOIL_TIME>
+    <BATCH_SIZE>18.92706</BATCH_SIZE>
+    <TOP_UP_KETTLE>0</TOP_UP_KETTLE>
+    <EVAP_RATE>17</EVAP_RATE>
+    <TRUB_CHILLER_LOSS>0.946353</TRUB_CHILLER_LOSS>
+</EQUIPMENT>
+<STYLES>
+</STYLES>
+</RECIPE></beerxml><data>
+  <ppg>681.719186891028</ppg>
+  <ppg>40.7099782114652</ppg>
+  <ppg>28.0599437408224</ppg>
+  <ppg>28.9799418962592</ppg>
+  <ppg>16.5599667978624</ppg>
+</data></recipe><results>
+	<mash type="" duration="">
+		<infusion>
+			<strike volume="" temp=""/>
+		</infusion>
+		<measurement temp=""/>
+		<measurement temp=""/>
+		<measurement temp=""/>
+		<measurement temp=""/>
+	</mash>
+	<boil volume="" sg="" time="" end_volume=""/>
+	<gravity volume="" og="" fg=""/>
+</results><log><tumblr version="1.0"><tumblelog name="geekbrewing" timezone="US/Pacific" title="Brew Log"/><posts start="0" total="2"><post id="31370949332" url="http://geekbrewing.tumblr.com/post/31370949332" url-with-slug="http://geekbrewing.tumblr.com/post/31370949332/cold-crashing-starter" type="regular" date-gmt="2012-09-12 01:02:44 GMT" date="Tue, 11 Sep 2012 18:02:44" unix-timestamp="1347411764" format="html" reblog-key="IVmDhN5U" slug="cold-crashing-starter"><regular-body>&lt;p&gt;Cold-crashing starter.&lt;/p&gt;</regular-body><tag>014</tag></post><post id="31322629828" url="http://geekbrewing.tumblr.com/post/31322629828" url-with-slug="http://geekbrewing.tumblr.com/post/31322629828/big-starter-made-and-on-the-stir-plate-for-a-big" type="photo" date-gmt="2012-09-11 05:33:56 GMT" date="Mon, 10 Sep 2012 22:33:56" unix-timestamp="1347341636" format="html" reblog-key="zic2AFVR" slug="big-starter-made-and-on-the-stir-plate-for-a-big" width="720" height="960"><photo-caption>&lt;p&gt;Big starter made and on the stir plate for a big Imperial Stout! I used most of a pack of WY1056 and saved some for use in another batch.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_ma67gkCxb41qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://24.media.tumblr.com/tumblr_ma67gkCxb41qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://24.media.tumblr.com/tumblr_ma67gkCxb41qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://24.media.tumblr.com/tumblr_ma67gkCxb41qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://25.media.tumblr.com/tumblr_ma67gkCxb41qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://24.media.tumblr.com/tumblr_ma67gkCxb41qcxyego1_75sq.jpg</photo-url><tag>014</tag></post></posts></tumblr></log></batch>
