@@ -245,5 +245,52 @@ tr.hop td:nth-child(5):after { /* hop boil minutes */
 	display: inline;
 }
 
+table#batches tr:last-child th:nth-child(2) {
+	text-align: right;
+}
 
+table#batches {
+	border-spacing: 0;
+}
 
+table#batches td { 
+	padding: 3px; 
+	width:1em;
+}
+
+table#batches th {
+	width:1em;
+	font-size:.75em;
+}
+
+table#batches td:nth-child(2) { 
+	width:20em;
+}
+
+table#batches tr:nth-child(even) {
+	background: #eee;
+}
+
+table#batches tr:nth-child(1) {
+	background: none;
+}
+
+table#batches tr:last-child {
+	background: none;
+}
+
+table#batches tr:last-child th {
+	font-size:1.1em;
+}
+
+table#batches tr td:nth-child(3) {
+	text-align: center;
+}
+
+table#batches tr td:nth-child(4) {
+	text-align: center;
+}
+
+table#batches tr td:nth-child(5) {
+	text-align: center;
+}
