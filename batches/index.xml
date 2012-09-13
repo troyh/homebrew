@@ -254,24 +254,25 @@
   <boil volume="27.25495" sg="1.052" time="60" end_volume="22.71246"/>
   <gravity volume="20.81975" og="1.062" fg=""/>
 </results></batch><batch id="014"><name>The Czar's Revenge</name><type>All Grain</type><styles>
+  <style><name>Imperial Stout</name></style>
 </styles><yeasts>
   <yeast><lab>Wyeast</lab><prodid>1056</prodid><name>American Ale</name></yeast>
 </yeasts><data>
-  <ppg>681.719186891028</ppg>
-  <ppg>40.7099782114652</ppg>
+  <ppg>538.199316439356</ppg>
+  <ppg>27.1399455853856</ppg>
   <ppg>28.0599437408224</ppg>
   <ppg>28.9799418962592</ppg>
   <ppg>16.5599667978624</ppg>
 </data><results>
-	<mash type="" duration="">
-		<infusion>
-			<strike volume="" temp=""/>
-		</infusion>
-		<measurement temp=""/>
-		<measurement temp=""/>
-		<measurement temp=""/>
-		<measurement temp=""/>
-	</mash>
-	<boil volume="" sg="" time="" end_volume=""/>
-	<gravity volume="" og="" fg=""/>
+  <mash type="" duration="60">
+    <infusion>
+      <strike volume="26.49787" temp="73"/>
+    </infusion>
+    <measurement temp="67.5"/>
+    <measurement temp="67.2222"/>
+    <measurement temp="65.5556"/>
+    <measurement temp="65.5556"/>
+  </mash>
+  <boil volume="26.87641" sg="1.073" time="90" end_volume="20.81975"/>
+  <gravity volume="18.45387" og="1.096" fg=""/>
 </results></batch></batches>

@@ -17,7 +17,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		</head>
 		<body>
 			<div id="topnav">
-				<a href="../">Home</a>
+				<a href="../index.html">Home</a>
 			</div>
 			<xsl:apply-templates select="*"/>
 		</body>

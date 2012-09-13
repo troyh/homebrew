@@ -188,15 +188,16 @@ Variations exist, with English and American interpretations (predictably, the Am
   <ppg>28.9799418962592</ppg>
   <ppg>16.5599667978624</ppg>
 </data></recipe><results>
-	<mash type="" duration="">
-		<infusion>
-			<strike volume="" temp=""/>
-		</infusion>
-		<measurement temp=""/>
-		<measurement temp=""/>
-		<measurement temp=""/>
-		<measurement temp=""/>
-	</mash>
-	<boil volume="" sg="" time="" end_volume=""/>
-	<gravity volume="" og="" fg=""/>
-</results><log><tumblr version="1.0"><tumblelog name="geekbrewing" timezone="US/Pacific" title="Brew Log"/><posts start="0" total="2"><post id="31370949332" url="http://geekbrewing.tumblr.com/post/31370949332" url-with-slug="http://geekbrewing.tumblr.com/post/31370949332/cold-crashing-starter" type="regular" date-gmt="2012-09-12 01:02:44 GMT" date="Tue, 11 Sep 2012 18:02:44" unix-timestamp="1347411764" format="html" reblog-key="IVmDhN5U" slug="cold-crashing-starter"><regular-body>&lt;p&gt;Cold-crashing starter.&lt;/p&gt;</regular-body><tag>014</tag></post><post id="31322629828" url="http://geekbrewing.tumblr.com/post/31322629828" url-with-slug="http://geekbrewing.tumblr.com/post/31322629828/big-starter-made-and-on-the-stir-plate-for-a-big" type="photo" date-gmt="2012-09-11 05:33:56 GMT" date="Mon, 10 Sep 2012 22:33:56" unix-timestamp="1347341636" format="html" reblog-key="zic2AFVR" slug="big-starter-made-and-on-the-stir-plate-for-a-big" width="720" height="960"><photo-caption>&lt;p&gt;Big starter made and on the stir plate for a big Imperial Stout! I used most of a pack of WY1056 and saved some for use in another batch.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_ma67gkCxb41qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://24.media.tumblr.com/tumblr_ma67gkCxb41qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://24.media.tumblr.com/tumblr_ma67gkCxb41qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://24.media.tumblr.com/tumblr_ma67gkCxb41qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://25.media.tumblr.com/tumblr_ma67gkCxb41qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://24.media.tumblr.com/tumblr_ma67gkCxb41qcxyego1_75sq.jpg</photo-url><tag>014</tag></post></posts></tumblr></log></batch>
+  <mash type="" duration="60">
+    <infusion>
+      <strike volume="26.49787" temp="73"/>
+    </infusion>
+    <measurement temp="67.5"/>
+    <measurement temp="67.2222"/>
+    <measurement temp="65.5556"/>
+    <measurement temp="65.5556"/>
+  </mash>
+  <boil volume="26.87641" sg="1.073" time="90" end_volume="20.81975"/>
+  <gravity volume="18.45387" og="1.096" fg=""/>
+</results><log><tumblr version="1.0"><tumblelog name="geekbrewing" timezone="US/Pacific" title="Brew Log"/><posts start="0" total="3"><post id="31434391465" url="http://geekbrewing.tumblr.com/post/31434391465" url-with-slug="http://geekbrewing.tumblr.com/post/31434391465/pitched-yeast-st-165-sv-7-bg-1-073-og-1-096" type="regular" date-gmt="2012-09-13 01:08:00 GMT" date="Wed, 12 Sep 2012 18:08:00" unix-timestamp="1347498480" format="html" reblog-key="Os0mGZKE" slug="pitched-yeast-st-165-sv-7-bg-1-073-og-1-096"><regular-body>&lt;p&gt;Pitched yeast.&lt;/p&gt;
+&lt;p&gt;ST=165 SV=7 BG=1.073 OG=1.096 FV=4.875 BV=7.1 EV=5.5 BT=90 &lt;/p&gt;</regular-body><tag>014</tag></post><post id="31370949332" url="http://geekbrewing.tumblr.com/post/31370949332" url-with-slug="http://geekbrewing.tumblr.com/post/31370949332/cold-crashing-starter" type="regular" date-gmt="2012-09-12 01:02:44 GMT" date="Tue, 11 Sep 2012 18:02:44" unix-timestamp="1347411764" format="html" reblog-key="IVmDhN5U" slug="cold-crashing-starter"><regular-body>&lt;p&gt;Cold-crashing starter.&lt;/p&gt;</regular-body><tag>014</tag></post><post id="31322629828" url="http://geekbrewing.tumblr.com/post/31322629828" url-with-slug="http://geekbrewing.tumblr.com/post/31322629828/big-starter-made-and-on-the-stir-plate-for-a-big" type="photo" date-gmt="2012-09-11 05:33:56 GMT" date="Mon, 10 Sep 2012 22:33:56" unix-timestamp="1347341636" format="html" reblog-key="zic2AFVR" slug="big-starter-made-and-on-the-stir-plate-for-a-big" width="720" height="960"><photo-caption>&lt;p&gt;Big starter made and on the stir plate for a big Imperial Stout! I used most of a pack of WY1056 and saved some for use in another batch.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_ma67gkCxb41qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://24.media.tumblr.com/tumblr_ma67gkCxb41qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://24.media.tumblr.com/tumblr_ma67gkCxb41qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://24.media.tumblr.com/tumblr_ma67gkCxb41qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://25.media.tumblr.com/tumblr_ma67gkCxb41qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://24.media.tumblr.com/tumblr_ma67gkCxb41qcxyego1_75sq.jpg</photo-url><tag>014</tag></post></posts></tumblr></log></batch>
