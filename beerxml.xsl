@@ -84,6 +84,11 @@ xmlns:exslt="http://exslt.org/common">
 				  <span class="headerval"><xsl:value-of select="format-number(($CALC_OG_GU - $CALC_FG_GU) * 131 div 1000,&quot;#.##&quot;)"/>%</span>
 			  </div>
 			  
+			  <div>
+				  <span class="headerkey"><xsl:text>ADF:</xsl:text></span>
+				  <span class="headerval"><xsl:value-of select="format-number((1 - ($CALC_FG_GU div $CALC_OG_GU)) * 100,&quot;#.##&quot;)"/>%</span>
+			  </div>
+			  
 				<div>
 					<!-- From http://www.mrmalty.com/pitching.php:
 		
@@ -219,6 +224,18 @@ xmlns:exslt="http://exslt.org/common">
 		(<xsl:value-of select="LABORATORY"/>
 		<xsl:text> </xsl:text>
 		<xsl:value-of select="PRODUCT_ID"/>)
+		<div class="temperaturerange">
+			<xsl:call-template name="format-temperature">
+				<xsl:with-param name="celsius" select="MIN_TEMPERATURE"/>
+			</xsl:call-template>
+				-
+			<xsl:call-template name="format-temperature">
+				<xsl:with-param name="celsius" select="MAX_TEMPERATURE"/>
+			</xsl:call-template>
+		</div>			
+		<div class="attenuation">
+			<xsl:value-of select="ATTENUATION"/>%
+		</div>
 	</div>
 </xsl:template>
 

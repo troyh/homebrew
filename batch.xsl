@@ -32,7 +32,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<div id="results">
 		<h2>Results</h2>
 		<div>
-			<span class="headerkey"><xsl:text>Strike:</xsl:text></span>
+			<span class="headerkey"><xsl:text>Strike:</xsl:text>
+				<span class="headercode"><xsl:text>ST</xsl:text></span>
+				<span class="headercode"><xsl:text>SV</xsl:text></span>
+			</span>
 			<span class="headerval">
 				<xsl:call-template name="format-volume">
 					<xsl:with-param name="liters" select="mash/infusion/strike/@volume"/>
@@ -66,12 +69,20 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 			</span>
 		</div>
 		<div>
-			<span class="headerkey"><xsl:text>Boil:</xsl:text></span>
+			<span class="headerkey"><xsl:text>Boil:</xsl:text>
+				<span class="headercode"><xsl:text>BV</xsl:text></span>
+				<span class="headercode"><xsl:text>BG</xsl:text></span>
+				<span class="headercode"><xsl:text>BT</xsl:text></span>
+				<span class="headercode"><xsl:text>EV</xsl:text></span>
+			</span>
 			<span class="headerval">
 				<xsl:call-template name="format-volume">
 					<xsl:with-param name="liters" select="boil/@volume"/>
 				</xsl:call-template>
-				for <xsl:value-of select="boil/@time"/> minutes &#8594; 
+				for 
+				<xsl:if test="string-length(boil/@time) = 0">____</xsl:if>
+				<xsl:value-of select="boil/@time"/> 
+				minutes &#8594; 
 				<xsl:call-template name="format-volume">
 					<xsl:with-param name="liters" select="boil/@end_volume"/>
 				</xsl:call-template>
@@ -91,7 +102,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 			</span>
 		</div>
 		<div>
-			<span class="headerkey"><xsl:text>Final Volume:</xsl:text></span>
+			<span class="headerkey"><xsl:text>Final Volume:</xsl:text>
+				<span class="headercode"><xsl:text>FV</xsl:text></span>
+			</span>
 			<span class="headerval">
 				<xsl:call-template name="format-volume">
 					<xsl:with-param name="liters" select="gravity/@volume"/>
@@ -99,11 +112,18 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 			</span>
 		</div>
 		<div>
-			<span class="headerkey"><xsl:text>OG:</xsl:text></span>
-			<span class="headerval"><xsl:value-of select="gravity/@og"/></span>
+			<span class="headerkey"><xsl:text>OG:</xsl:text>
+				<span class="headercode"><xsl:text>OG</xsl:text></span>
+			</span>
+			<span class="headerval">
+				<xsl:if test="string-length(gravity/@og) = 0">&#160;</xsl:if>
+				<xsl:value-of select="gravity/@og"/>
+			</span>
 		</div>
 		<div>
-			<span class="headerkey"><xsl:text>FG:</xsl:text></span>
+			<span class="headerkey"><xsl:text>FG:</xsl:text>
+				<span class="headercode"><xsl:text>FG</xsl:text></span>
+			</span>
 			<span class="headerval">
 				<xsl:if test="string-length(gravity/@fg) = 0">&#160;</xsl:if>
 				<xsl:value-of select="gravity/@fg"/>

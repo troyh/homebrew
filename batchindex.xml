@@ -97,4 +97,10 @@
     <commit_sha>475b7e91e213ecbf31833334da1e42ac8e4fcf0a</commit_sha>
   </recipe>
 </batch>
+<batch id="015">
+  <recipe>
+    <filename>American Pale Ale with Caramel.xml</filename>
+    <commit_sha>063b8e425e0362473062233890455585cf6ed659</commit_sha>
+  </recipe>
+</batch>
 </batches>

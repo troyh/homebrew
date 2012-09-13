@@ -275,4 +275,24 @@
   </mash>
   <boil volume="26.87641" sg="1.073" time="90" end_volume="20.81975"/>
   <gravity volume="18.45387" og="1.096" fg=""/>
+</results></batch><batch id="015"><name>American Pale Ale with Caramel</name><type>All Grain</type><styles>
+  <style><name>American Pale Ale</name></style>
+</styles><yeasts>
+  <yeast><lab>Fermentis</lab><prodid>US-05</prodid><name>Safale US-05</name></yeast>
+</yeasts><data>
+  <ppg>331.889571879122</ppg>
+  <ppg>24.8399501967936</ppg>
+  <ppg>24.8399501967936</ppg>
+</data><results>
+	<mash type="" duration="">
+		<infusion>
+			<strike volume="" temp=""/>
+		</infusion>
+		<measurement temp=""/>
+		<measurement temp=""/>
+		<measurement temp=""/>
+		<measurement temp=""/>
+	</mash>
+	<boil volume="" sg="" time="" end_volume=""/>
+	<gravity volume="" og="" fg=""/>
 </results></batch></batches>
