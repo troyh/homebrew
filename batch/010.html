@@ -1,4 +1,4 @@
-<html>
+<html xmlns:exslt="http://exslt.org/common" xmlns:math="http://exslt.org/math">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Fooler's C3SB</title>
@@ -6,6 +6,7 @@
 <script src="../js/tumblr.js"></script>
 </head>
 <body>
+<div id="topnav"><a href="../index.html">Home</a></div>
 <div id="header">
 <h1>Fooler's C3SB</h1>
 <div id="styles"><div class="style">Extra Special/Strong Bitter (English Pale Ale)<span class="styleid">(8C)</span>
@@ -17,22 +18,16 @@
 <span class="headerkey">Batch size:</span><span class="headerval"><span class="volume"><span class="english">5 gallons</span><span class="metric">(18.9L)</span></span></span>
 </div>
 <div>
-<span class="headerkey">Boil Volume:</span><span class="headerval"><span class="volume"><span class="english">6.14 gallons</span><span class="metric">(23.3L)</span></span></span>
-</div>
-<div>
-<span class="headerkey">Boil time:</span><span class="headerval">60 minutes</span>
-</div>
-<div>
-<span class="headerkey">Brewhouse Efficiency:</span><span class="headerval">75%</span>
-</div>
-<div>
-<span class="headerkey">OG:</span><span class="headerval">1.06</span>
+<span class="headerkey">OG:</span><span class="headerval">1.060</span>
 </div>
 <div>
 <span class="headerkey">FG:</span><span class="headerval">1.015</span>
 </div>
 <div>
 <span class="headerkey">ABV:</span><span class="headerval">5.92%</span>
+</div>
+<div>
+<span class="headerkey">ADF:</span><span class="headerval">75%</span>
 </div>
 <div>
 <span class="headerkey">Yeast starter:</span><span class="headerval">114ml  (assuming 75% viability) of yeast slurry,
@@ -181,9 +176,16 @@
 </tr>
 </table>
 </div>
-<div id="yeasts"><div class="yeast">London Ale III
-		(Wyeast 1318)
-	</div></div>
+<div id="yeasts"><div class="yeast">Wyeast 1318
+		(London Ale III)
+		<div class="temperaturerange">
+<span class="temperature"><span class="fahrenheit">64</span><span class="celsius">18</span></span>
+				-
+			<span class="temperature"><span class="fahrenheit">73</span><span class="celsius">23</span></span>
+</div>
+<div class="attenuation">73%
+		</div>
+</div></div>
 </div>
 <div id="notes">
 <h1>Notes</h1>
@@ -191,41 +193,70 @@
 
 According to http://www.byo.com/component/resource/article/2398-fuller-s-the-pride-of-london, ESB is 5.9% ABV, 35 IBUs, an SRM of 15, an OG of 1.060 and an FG of 1.014.</div>
 </div>
-<div id="results">
-<h2>Results</h2>
+<div id="expected">
+<h2>Expected</h2>
 <div>
-<span class="headerkey">Strike:</span><span class="headerval"><span class="volume"><span class="english">NaN gallons</span><span class="metric">(NaNL)</span></span>
+<span class="headerkey">Assumptions:</span><span class="headerval">1.5qt/lb @
+						<span class="temperature"><span class="fahrenheit">152</span></span>, grain @
+						<span class="temperature"><span class="fahrenheit">70</span></span></span>
+</div>
+<div>
+<span class="headerkey">Total gravity points:</span><span class="headerval">402
+						(301 required)
+					</span>
+</div>
+<div>
+<span class="headerkey">Strike:</span><span class="headerval"><span class="volume"><span class="english">4.29 gallons</span><span class="metric">(16.2L)</span></span>
+						@
+						<span class="temperature"><span class="fahrenheit">163</span><span class="celsius">73</span></span></span>
+</div>
+<div>
+<span class="headerkey">Sparge:</span><span class="headerval"><span class="volume"><span class="english">3.96 gallons</span><span class="metric">(15L)</span></span> @
+						<span class="temperature"><span class="fahrenheit">170</span><span class="celsius">77</span></span></span>
+</div>
+<div>
+<span class="headerkey">Boil:</span><span class="headerval"><span class="volume"><span class="english">6.63 gallons</span><span class="metric">(25.1L)</span></span> for 
+						60 minutes →
+						<span class="volume"><span class="english">5.5 gallons</span><span class="metric">(20.8L)</span></span></span>
+</div>
+<div>
+<span class="headerkey">Final volume:</span><span class="headerval"><span class="volume"><span class="english">5.25 gallons</span><span class="metric">(19.9L)</span></span></span>
+</div>
+</div>
+<div id="results">
+<h2>Actual</h2>
+<div>
+<span class="headerkey">Strike:<span class="headercode">ST</span><span class="headercode">SV</span></span><span class="headerval"><span class="english">____ gallons</span><span class="metric">(____L)</span>
 				@
-				<span class="temperature"><span class="fahrenheit">NaN</span><span class="celsius">NaN</span></span></span>
+				<span class="temperature"><span class="fahrenheit">____</span><span class="celsius">____</span></span></span>
 </div>
 <div>
 <span class="headerkey">Mash:</span><span class="headerval">60 minutes at
 				<span class="temperature"><span class="fahrenheit">154</span><span class="celsius">68</span></span>, average of <span class="temperature"><span class="fahrenheit">153</span><span class="celsius">67</span></span></span>
 </div>
 <div>
-<span class="headerkey">Potential PPG:</span><span class="headerval">402
-				(301 required)
+<span class="headerkey">Lauter:<span class="headercode">LT</span></span><span class="headerval"> minutes
+				(NaN min/G)
 			</span>
 </div>
 <div>
-<span class="headerkey">Boil:</span><span class="headerval"><span class="volume"><span class="english">6.5 gallons</span><span class="metric">(24.6L)</span></span>
-				for 60 minutes → 
-				<span class="volume"><span class="english">5.25 gallons</span><span class="metric">(19.9L)</span></span></span>
-</div>
-<div>
-<span class="headerkey">Evaporation rate:</span><span class="headerval"><span class="volume"><span class="english">1.25 gallons</span><span class="metric">(4.7L)</span></span>
-				per hour
-				(<span class="percent">19%</span>)
+<span class="headerkey">Boil:<span class="headercode">BV</span><span class="headercode">BG</span><span class="headercode">BT</span><span class="headercode">EV</span></span><span class="headerval"><span class="volume"><span class="english">6.5 gallons</span><span class="metric">(24.6L)</span></span>
+				for 
+				60 
+				minutes → 
+				<span class="volume"><span class="english">5.25 gallons</span><span class="metric">(19.9L)</span></span>,
+				<span class="volume"><span class="english">1.25 gallons</span><span class="metric">(4.7L)</span></span>
+				(<span class="percent">19%</span>) per hour
 			</span>
 </div>
 <div>
-<span class="headerkey">Final Volume:</span><span class="headerval"><span class="volume"><span class="english">5 gallons</span><span class="metric">(18.9L)</span></span></span>
+<span class="headerkey">Final Volume:<span class="headercode">FV</span></span><span class="headerval"><span class="volume"><span class="english">5 gallons</span><span class="metric">(18.9L)</span></span></span>
 </div>
 <div>
-<span class="headerkey">OG:</span><span class="headerval">1.060</span>
+<span class="headerkey">OG:<span class="headercode">OG</span></span><span class="headerval">1.060</span>
 </div>
 <div>
-<span class="headerkey">FG:</span><span class="headerval">1.005</span>
+<span class="headerkey">FG:<span class="headercode">FG</span></span><span class="headerval">1.005</span>
 </div>
 <div>
 <span class="headerkey">ABV:</span><span class="headerval"><span class="percent">7.21%</span></span>
@@ -285,6 +316,24 @@ According to http://www.byo.com/component/resource/article/2398-fuller-s-the-pri
 <div class="post"><div class="postbody">
 <div class="logdate">Thu, 06 Sep 2012 16:07:06</div>
 <div class="posttext"><p>Kegged both half-batches and chilling them in the fridge.</p></div>
+</div></div>
+<div class="post"><div class="postbody">
+<div class="logdate">Fri, 07 Sep 2012 17:21:04</div>
+<div class="posttext"><p>It&#8217;s not yet carbonated, but the left is the normal Fuller&#8217;s yeast, WY1968, and the other is WY1318.</p></div>
+<div class="photo"><img src="http://24.media.tumblr.com/tumblr_ma08z4cKO81qcxyego1_250.jpg"></div>
+<div class="photosizeoptions">All photo sizes:
+		 <a href="http://24.media.tumblr.com/tumblr_ma08z4cKO81qcxyego1_1280.jpg">1280</a> <a href="http://24.media.tumblr.com/tumblr_ma08z4cKO81qcxyego1_500.jpg">500</a> <a href="http://24.media.tumblr.com/tumblr_ma08z4cKO81qcxyego1_400.jpg">400</a> <a href="http://24.media.tumblr.com/tumblr_ma08z4cKO81qcxyego1_250.jpg">250</a> <a href="http://25.media.tumblr.com/tumblr_ma08z4cKO81qcxyego1_100.jpg">100</a> <a href="http://24.media.tumblr.com/tumblr_ma08z4cKO81qcxyego1_75sq.jpg">75</a>
+</div>
+</div></div>
+<div class="post"><div class="postbody">
+<div class="logdate">Mon, 10 Sep 2012 21:30:25</div>
+<div class="posttext"><p>The left is the WY1318 version and the right is the normal Fuller&#8217;s ESB. Both were dry-hopped with a small amount of Cascade hops. </p>
+
+<p>The WY1318 is cloudier and lighter in color. The hop aroma is very slight in both. The taste is a little fruitier than the normal Fuller&#8217;s which makes it a very different beer.</p></div>
+<div class="photo"><img src="http://25.media.tumblr.com/tumblr_ma64ipnpyU1qcxyego1_250.jpg"></div>
+<div class="photosizeoptions">All photo sizes:
+		 <a href="http://25.media.tumblr.com/tumblr_ma64ipnpyU1qcxyego1_1280.jpg">1280</a> <a href="http://24.media.tumblr.com/tumblr_ma64ipnpyU1qcxyego1_500.jpg">500</a> <a href="http://25.media.tumblr.com/tumblr_ma64ipnpyU1qcxyego1_400.jpg">400</a> <a href="http://25.media.tumblr.com/tumblr_ma64ipnpyU1qcxyego1_250.jpg">250</a> <a href="http://25.media.tumblr.com/tumblr_ma64ipnpyU1qcxyego1_100.jpg">100</a> <a href="http://25.media.tumblr.com/tumblr_ma64ipnpyU1qcxyego1_75sq.jpg">75</a>
+</div>
 </div></div>
 </div>
 </body>

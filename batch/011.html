@@ -1,4 +1,4 @@
-<html>
+<html xmlns:exslt="http://exslt.org/common" xmlns:math="http://exslt.org/math">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Old Fuller's ESB</title>
@@ -6,7 +6,8 @@
 <script src="../js/tumblr.js"></script>
 </head>
 <body>
-<div xmlns:exslt="http://exslt.org/common" id="header">
+<div id="topnav"><a href="../index.html">Home</a></div>
+<div id="header">
 <h1>Old Fuller's ESB</h1>
 <div id="styles"><div class="style">Extra Special/Strong Bitter (English Pale Ale)<span class="styleid">(8C)</span>
 </div></div>
@@ -15,15 +16,6 @@
 </div>
 <div>
 <span class="headerkey">Batch size:</span><span class="headerval"><span class="volume"><span class="english">5 gallons</span><span class="metric">(18.9L)</span></span></span>
-</div>
-<div>
-<span class="headerkey">Boil Volume:</span><span class="headerval"><span class="volume"><span class="english">6.14 gallons</span><span class="metric">(23.3L)</span></span></span>
-</div>
-<div>
-<span class="headerkey">Boil time:</span><span class="headerval">60 minutes</span>
-</div>
-<div>
-<span class="headerkey">Brewhouse Efficiency:</span><span class="headerval">75%</span>
 </div>
 <div>
 <span class="headerkey">OG:</span><span class="headerval">1.062</span>
@@ -35,12 +27,15 @@
 <span class="headerkey">ABV:</span><span class="headerval">6.06%</span>
 </div>
 <div>
+<span class="headerkey">ADF:</span><span class="headerval">75%</span>
+</div>
+<div>
 <span class="headerkey">Yeast starter:</span><span class="headerval">117ml  (assuming 75% viability) of yeast slurry,
 						219B cells
 					</span>
 </div>
 </div>
-<div xmlns:exslt="http://exslt.org/common" id="ingredients">
+<div id="ingredients">
 <div id="fermentables">
 <div class="total_weight"><div class="weight">
 <div class="english">11.44 lbs 
@@ -166,11 +161,18 @@
 </tr>
 </table>
 </div>
-<div id="yeasts"><div class="yeast">London ESB Ale
-		(Wyeast 1968)
-	</div></div>
+<div id="yeasts"><div class="yeast">Wyeast 1968
+		(London ESB Ale)
+		<div class="temperaturerange">
+<span class="temperature"><span class="fahrenheit">64</span><span class="celsius">18</span></span>
+				-
+			<span class="temperature"><span class="fahrenheit">72</span><span class="celsius">22</span></span>
 </div>
-<div xmlns:exslt="http://exslt.org/common" id="notes">
+<div class="attenuation">69%
+		</div>
+</div></div>
+</div>
+<div id="notes">
 <h1>Notes</h1>
 <div class="note"><p><a href="http://www.homebrewtalk.com/f12/fullers-esb-clone-229179/">Homebrewtalk discussion</a></p>
 
@@ -187,10 +189,40 @@
 <p>End of boil was 5.75G @ 1.060. Was supposed to be 1.062! >:-(</p>
 </div>
 </div>
-<div id="results">
-<h2>Results</h2>
+<div id="expected">
+<h2>Expected</h2>
 <div>
-<span class="headerkey">Strike:</span><span class="headerval"><span class="volume"><span class="english">NaN gallons</span><span class="metric">(NaNL)</span></span>
+<span class="headerkey">Assumptions:</span><span class="headerval">1.5qt/lb @
+						<span class="temperature"><span class="fahrenheit">152</span></span>, grain @
+						<span class="temperature"><span class="fahrenheit">70</span></span></span>
+</div>
+<div>
+<span class="headerkey">Total gravity points:</span><span class="headerval">411
+						(308 required)
+					</span>
+</div>
+<div>
+<span class="headerkey">Strike:</span><span class="headerval"><span class="volume"><span class="english">4.29 gallons</span><span class="metric">(16.2L)</span></span>
+						@
+						<span class="temperature"><span class="fahrenheit">163</span><span class="celsius">73</span></span></span>
+</div>
+<div>
+<span class="headerkey">Sparge:</span><span class="headerval"><span class="volume"><span class="english">3.96 gallons</span><span class="metric">(15L)</span></span> @
+						<span class="temperature"><span class="fahrenheit">170</span><span class="celsius">77</span></span></span>
+</div>
+<div>
+<span class="headerkey">Boil:</span><span class="headerval"><span class="volume"><span class="english">6.63 gallons</span><span class="metric">(25.1L)</span></span> for 
+						60 minutes →
+						<span class="volume"><span class="english">5.5 gallons</span><span class="metric">(20.8L)</span></span></span>
+</div>
+<div>
+<span class="headerkey">Final volume:</span><span class="headerval"><span class="volume"><span class="english">5.25 gallons</span><span class="metric">(19.9L)</span></span></span>
+</div>
+</div>
+<div id="results">
+<h2>Actual</h2>
+<div>
+<span class="headerkey">Strike:<span class="headercode">ST</span><span class="headercode">SV</span></span><span class="headerval"><span class="english">____ gallons</span><span class="metric">(____L)</span>
 				@
 				<span class="temperature"><span class="fahrenheit">161</span><span class="celsius">72</span></span></span>
 </div>
@@ -199,29 +231,28 @@
 				<span class="temperature"><span class="fahrenheit">155</span><span class="celsius">68</span></span>, average of <span class="temperature"><span class="fahrenheit">152</span><span class="celsius">67</span></span></span>
 </div>
 <div>
-<span class="headerkey">Potential PPG:</span><span class="headerval">411
-				(308 required)
+<span class="headerkey">Lauter:<span class="headercode">LT</span></span><span class="headerval"> minutes
+				(NaN min/G)
 			</span>
 </div>
 <div>
-<span class="headerkey">Boil:</span><span class="headerval"><span class="volume"><span class="english">6.8 gallons</span><span class="metric">(25.7L)</span></span>
-				for 60 minutes → 
-				<span class="volume"><span class="english">5.5 gallons</span><span class="metric">(20.8L)</span></span></span>
-</div>
-<div>
-<span class="headerkey">Evaporation rate:</span><span class="headerval"><span class="volume"><span class="english">1.3 gallons</span><span class="metric">(4.9L)</span></span>
-				per hour
-				(<span class="percent">19%</span>)
+<span class="headerkey">Boil:<span class="headercode">BV</span><span class="headercode">BG</span><span class="headercode">BT</span><span class="headercode">EV</span></span><span class="headerval"><span class="volume"><span class="english">6.8 gallons</span><span class="metric">(25.7L)</span></span>
+				for 
+				60 
+				minutes → 
+				<span class="volume"><span class="english">5.5 gallons</span><span class="metric">(20.8L)</span></span>,
+				<span class="volume"><span class="english">1.3 gallons</span><span class="metric">(4.9L)</span></span>
+				(<span class="percent">19%</span>) per hour
 			</span>
 </div>
 <div>
-<span class="headerkey">Final Volume:</span><span class="headerval"><span class="volume"><span class="english">5.18 gallons</span><span class="metric">(19.6L)</span></span></span>
+<span class="headerkey">Final Volume:<span class="headercode">FV</span></span><span class="headerval"><span class="volume"><span class="english">5.18 gallons</span><span class="metric">(19.6L)</span></span></span>
 </div>
 <div>
-<span class="headerkey">OG:</span><span class="headerval">1.060</span>
+<span class="headerkey">OG:<span class="headercode">OG</span></span><span class="headerval">1.060</span>
 </div>
 <div>
-<span class="headerkey">FG:</span><span class="headerval">1.015</span>
+<span class="headerkey">FG:<span class="headercode">FG</span></span><span class="headerval">1.015</span>
 </div>
 <div>
 <span class="headerkey">ABV:</span><span class="headerval"><span class="percent">5.9%</span></span>

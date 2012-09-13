@@ -1,4 +1,4 @@
-<html>
+<html xmlns:exslt="http://exslt.org/common" xmlns:math="http://exslt.org/math">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Barley Wine</title>
@@ -6,6 +6,7 @@
 <script src="../js/tumblr.js"></script>
 </head>
 <body>
+<div id="topnav"><a href="../index.html">Home</a></div>
 <div id="header">
 <h1>Barley Wine</h1>
 <div id="styles"><div class="style">English Barleywine<span class="styleid">(19B)</span>
@@ -17,15 +18,6 @@
 <span class="headerkey">Batch size:</span><span class="headerval"><span class="volume"><span class="english">5 gallons</span><span class="metric">(18.9L)</span></span></span>
 </div>
 <div>
-<span class="headerkey">Boil Volume:</span><span class="headerval"><span class="volume"><span class="english">6.22 gallons</span><span class="metric">(23.5L)</span></span></span>
-</div>
-<div>
-<span class="headerkey">Boil time:</span><span class="headerval">60 minutes</span>
-</div>
-<div>
-<span class="headerkey">Brewhouse Efficiency:</span><span class="headerval">70%</span>
-</div>
-<div>
 <span class="headerkey">OG:</span><span class="headerval">1.079</span>
 </div>
 <div>
@@ -33,6 +25,9 @@
 </div>
 <div>
 <span class="headerkey">ABV:</span><span class="headerval">7.26%</span>
+</div>
+<div>
+<span class="headerkey">ADF:</span><span class="headerval">70%</span>
 </div>
 <div>
 <span class="headerkey">Yeast starter:</span><span class="headerval">150ml  (assuming 75% viability) of yeast slurry,
@@ -117,7 +112,7 @@
 <td>11.8%α
 		</td>
 <td>Pellet</td>
-<td>060 min
+<td>60 min
 			</td>
 </tr>
 <tr class="hop">
@@ -137,49 +132,85 @@
 </tr>
 </table>
 </div>
-<div id="yeasts"><div class="yeast">American Ale
-		(Wyeast 1056)
-	</div></div>
+<div id="yeasts"><div class="yeast">Wyeast 1056
+		(American Ale)
+		<div class="temperaturerange">
+<span class="temperature"><span class="fahrenheit">61</span><span class="celsius">16</span></span>
+				-
+			<span class="temperature"><span class="fahrenheit">72</span><span class="celsius">22</span></span>
+</div>
+<div class="attenuation">75%
+		</div>
+</div></div>
 </div>
 <div id="notes">
 <h1>Notes</h1>
 <div class="note">See full Northern Brewer recipe instructions.</div>
 </div>
-<div id="results">
-<h2>Results</h2>
+<div id="expected">
+<h2>Expected</h2>
 <div>
-<span class="headerkey">Strike:</span><span class="headerval"><span class="volume"><span class="english">NaN gallons</span><span class="metric">(NaNL)</span></span>
+<span class="headerkey">Assumptions:</span><span class="headerval">1.5qt/lb @
+						<span class="temperature"><span class="fahrenheit">152</span></span>, grain @
+						<span class="temperature"><span class="fahrenheit">70</span></span></span>
+</div>
+<div>
+<span class="headerkey">Total gravity points:</span><span class="headerval">565
+						(396 required)
+					</span>
+</div>
+<div>
+<span class="headerkey">Strike:</span><span class="headerval"><span class="volume"><span class="english">5.81 gallons</span><span class="metric">(22L)</span></span>
+						@
+						<span class="temperature"><span class="fahrenheit">163</span><span class="celsius">73</span></span></span>
+</div>
+<div>
+<span class="headerkey">Sparge:</span><span class="headerval"><span class="volume"><span class="english">2.92 gallons</span><span class="metric">(11.1L)</span></span> @
+						<span class="temperature"><span class="fahrenheit">170</span><span class="celsius">77</span></span></span>
+</div>
+<div>
+<span class="headerkey">Boil:</span><span class="headerval"><span class="volume"><span class="english">6.63 gallons</span><span class="metric">(25.1L)</span></span> for 
+						60 minutes →
+						<span class="volume"><span class="english">5.5 gallons</span><span class="metric">(20.8L)</span></span></span>
+</div>
+<div>
+<span class="headerkey">Final volume:</span><span class="headerval"><span class="volume"><span class="english">5.25 gallons</span><span class="metric">(19.9L)</span></span></span>
+</div>
+</div>
+<div id="results">
+<h2>Actual</h2>
+<div>
+<span class="headerkey">Strike:<span class="headercode">ST</span><span class="headercode">SV</span></span><span class="headerval"><span class="english">____ gallons</span><span class="metric">(____L)</span>
 				@
-				<span class="temperature"><span class="fahrenheit">NaN</span><span class="celsius">NaN</span></span></span>
+				<span class="temperature"><span class="fahrenheit">____</span><span class="celsius">____</span></span></span>
 </div>
 <div>
 <span class="headerkey">Mash:</span><span class="headerval"> minutes at
-				<span class="temperature"><span class="fahrenheit">NaN</span><span class="celsius">NaN</span></span>, average of <span class="temperature"><span class="fahrenheit">NaN</span><span class="celsius">NaN</span></span></span>
+				<span class="temperature"><span class="fahrenheit">____</span><span class="celsius">____</span></span>, average of <span class="temperature"><span class="fahrenheit">____</span><span class="celsius">____</span></span></span>
 </div>
 <div>
-<span class="headerkey">Potential PPG:</span><span class="headerval">565
-				(396 required)
+<span class="headerkey">Lauter:<span class="headercode">LT</span></span><span class="headerval"> minutes
+				(NaN min/G)
 			</span>
 </div>
 <div>
-<span class="headerkey">Boil:</span><span class="headerval"><span class="volume"><span class="english">7.5 gallons</span><span class="metric">(28.4L)</span></span>
-				for 90 minutes → 
-				<span class="volume"><span class="english">6.5 gallons</span><span class="metric">(24.6L)</span></span></span>
-</div>
-<div>
-<span class="headerkey">Evaporation rate:</span><span class="headerval"><span class="volume"><span class="english">0.67 gallons</span><span class="metric">(2.5L)</span></span>
-				per hour
-				(<span class="percent">9%</span>)
+<span class="headerkey">Boil:<span class="headercode">BV</span><span class="headercode">BG</span><span class="headercode">BT</span><span class="headercode">EV</span></span><span class="headerval"><span class="volume"><span class="english">7.5 gallons</span><span class="metric">(28.4L)</span></span>
+				for 
+				90 
+				minutes → 
+				<span class="volume"><span class="english">6.5 gallons</span><span class="metric">(24.6L)</span></span>,
+				<span class="volume"><span class="english">0.67 gallons</span><span class="metric">(2.5L)</span></span>
+				(<span class="percent">9%</span>) per hour
 			</span>
 </div>
 <div>
-<span class="headerkey">Final Volume:</span><span class="headerval"><span class="volume"><span class="english">5 gallons</span><span class="metric">(18.9L)</span></span></span>
+<span class="headerkey">Final Volume:<span class="headercode">FV</span></span><span class="headerval"><span class="volume"><span class="english">5 gallons</span><span class="metric">(18.9L)</span></span></span>
 </div>
 <div>
-<span class="headerkey">OG:</span><span class="headerval">1.074</span>
+<span class="headerkey">OG:<span class="headercode">OG</span></span><span class="headerval">1.074</span>
 </div>
 <div>
-<span class="headerkey">FG:</span><span class="headerval">1.017</span>
+<span class="headerkey">FG:<span class="headercode">FG</span></span><span class="headerval">1.017</span>
 </div>
 <div>
 <span class="headerkey">ABV:</span><span class="headerval"><span class="percent">7.47%</span></span>
@@ -231,9 +262,9 @@
 <div class="posttext"><p>Pitched the starter. First dry yeast.</p></div>
 </div></div>
 <div class="post"><div class="postbody">
-<div class="logdate">Fri, 27 Jul 2012 07:05:32</div>video/quicktimemov36048039.541<p>9-10 hours after pitching, Bubbling on the airlock has started.</p><span id="video_player_28125654010">[<a href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" target="_blank">Flash</a> is required to watch video.]</span><script type="text/javascript" defer="defer">renderVideo("video_player_28125654010",'http://geekbrewing.tumblr.com/video_file/28125654010/tumblr_m7toh8UNZM1qcxyeg',400,533,'orientation=portrait\x26amp;portrait=true\x26amp;w={400}\x26amp;poster=http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7toh8UNZM1qcxyeg_r1_frame1.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7toh8UNZM1qcxyeg_r1_frame2.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7toh8UNZM1qcxyeg_r1_frame3.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7toh8UNZM1qcxyeg_r1_frame4.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7toh8UNZM1qcxyeg_r1_frame5.jpg')</script><span id="video_player_28125654010">[<a href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" target="_blank">Flash</a> is required to watch video.]</span><script type="text/javascript" defer="defer">renderVideo("video_player_28125654010",'http://geekbrewing.tumblr.com/video_file/28125654010/tumblr_m7toh8UNZM1qcxyeg',500,667,'orientation=portrait\x26amp;portrait=true\x26amp;w={500}\x26amp;poster=http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7toh8UNZM1qcxyeg_r1_frame1.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7toh8UNZM1qcxyeg_r1_frame2.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7toh8UNZM1qcxyeg_r1_frame3.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7toh8UNZM1qcxyeg_r1_frame4.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7toh8UNZM1qcxyeg_r1_frame5.jpg')</script><span id="video_player_28125654010">[<a href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" target="_blank">Flash</a> is required to watch video.]</span><script type="text/javascript" defer="defer">renderVideo("video_player_28125654010",'http://geekbrewing.tumblr.com/video_file/28125654010/tumblr_m7toh8UNZM1qcxyeg',250,333,'orientation=portrait\x26amp;portrait=true\x26amp;w={250}\x26amp;poster=http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7toh8UNZM1qcxyeg_r1_frame1.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7toh8UNZM1qcxyeg_r1_frame2.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7toh8UNZM1qcxyeg_r1_frame3.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7toh8UNZM1qcxyeg_r1_frame4.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7toh8UNZM1qcxyeg_r1_frame5.jpg')</script></div></div>
+<div class="logdate">Fri, 27 Jul 2012 07:05:32</div>video/quicktimemov36048039.541<p>9-10 hours after pitching, Bubbling on the airlock has started.</p><iframe src="//www.tumblr.com/video/geekbrewing/28125654010/400" id="tumblr_video_iframe_28125654010" class="tumblr_video_iframe" width="400" height="533" style="display:block;background-color:transparent;overflow:hidden;" allowTransparency="true" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><iframe src="//www.tumblr.com/video/geekbrewing/28125654010/500" id="tumblr_video_iframe_28125654010" class="tumblr_video_iframe" width="500" height="667" style="display:block;background-color:transparent;overflow:hidden;" allowTransparency="true" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><iframe src="//www.tumblr.com/video/geekbrewing/28125654010/250" id="tumblr_video_iframe_28125654010" class="tumblr_video_iframe" width="250" height="333" style="display:block;background-color:transparent;overflow:hidden;" allowTransparency="true" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></div>
 <div class="post"><div class="postbody">
-<div class="logdate">Fri, 27 Jul 2012 20:50:05</div>video/quicktimemov36048023.421<p>Lots of flocculation!</p><span id="video_player_28174699480">[<a href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" target="_blank">Flash</a> is required to watch video.]</span><script type="text/javascript" defer="defer">renderVideo("video_player_28174699480",'http://geekbrewing.tumblr.com/video_file/28174699480/tumblr_m7uqnhBDQa1qcxyeg',400,533,'orientation=portrait\x26amp;portrait=true\x26amp;w={400}\x26amp;poster=http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7uqnhBDQa1qcxyeg_r1_frame1.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7uqnhBDQa1qcxyeg_r1_frame2.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7uqnhBDQa1qcxyeg_r1_frame3.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7uqnhBDQa1qcxyeg_r1_frame4.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7uqnhBDQa1qcxyeg_r1_frame5.jpg')</script><span id="video_player_28174699480">[<a href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" target="_blank">Flash</a> is required to watch video.]</span><script type="text/javascript" defer="defer">renderVideo("video_player_28174699480",'http://geekbrewing.tumblr.com/video_file/28174699480/tumblr_m7uqnhBDQa1qcxyeg',500,667,'orientation=portrait\x26amp;portrait=true\x26amp;w={500}\x26amp;poster=http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7uqnhBDQa1qcxyeg_r1_frame1.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7uqnhBDQa1qcxyeg_r1_frame2.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7uqnhBDQa1qcxyeg_r1_frame3.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7uqnhBDQa1qcxyeg_r1_frame4.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7uqnhBDQa1qcxyeg_r1_frame5.jpg')</script><span id="video_player_28174699480">[<a href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" target="_blank">Flash</a> is required to watch video.]</span><script type="text/javascript" defer="defer">renderVideo("video_player_28174699480",'http://geekbrewing.tumblr.com/video_file/28174699480/tumblr_m7uqnhBDQa1qcxyeg',250,333,'orientation=portrait\x26amp;portrait=true\x26amp;w={250}\x26amp;poster=http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7uqnhBDQa1qcxyeg_r1_frame1.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7uqnhBDQa1qcxyeg_r1_frame2.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7uqnhBDQa1qcxyeg_r1_frame3.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7uqnhBDQa1qcxyeg_r1_frame4.jpg,http%3A%2F%2Fmedia.tumblr.com%2Ftumblr_m7uqnhBDQa1qcxyeg_r1_frame5.jpg')</script></div></div>
+<div class="logdate">Fri, 27 Jul 2012 20:50:05</div>video/quicktimemov36048023.421<p>Lots of flocculation!</p><iframe src="//www.tumblr.com/video/geekbrewing/28174699480/400" id="tumblr_video_iframe_28174699480" class="tumblr_video_iframe" width="400" height="533" style="display:block;background-color:transparent;overflow:hidden;" allowTransparency="true" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><iframe src="//www.tumblr.com/video/geekbrewing/28174699480/500" id="tumblr_video_iframe_28174699480" class="tumblr_video_iframe" width="500" height="667" style="display:block;background-color:transparent;overflow:hidden;" allowTransparency="true" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><iframe src="//www.tumblr.com/video/geekbrewing/28174699480/250" id="tumblr_video_iframe_28174699480" class="tumblr_video_iframe" width="250" height="333" style="display:block;background-color:transparent;overflow:hidden;" allowTransparency="true" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></div>
 <div class="post"><div class="postbody">
 <div class="logdate">Mon, 06 Aug 2012 23:45:11</div>
 <div class="posttext"><p>Like #006, there&#8217;s still slow activity on the airlock.</p></div>

@@ -1,4 +1,4 @@
-<html>
+<html xmlns:exslt="http://exslt.org/common" xmlns:math="http://exslt.org/math">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>The Czar's Revenge</title>
@@ -7,7 +7,7 @@
 </head>
 <body>
 <div id="topnav"><a href="../index.html">Home</a></div>
-<div xmlns:exslt="http://exslt.org/common" id="header">
+<div id="header">
 <h1>The Czar's Revenge</h1>
 <div id="styles"><div class="style">Imperial Stout<span class="styleid">(13F)</span>
 </div></div>
@@ -15,25 +15,19 @@
 <span class="headerkey">Type: </span><span class="headerval">All Grain</span>
 </div>
 <div>
-<span class="headerkey">Batch size:</span><span class="headerval"><span class="volume"><span class="english">5.25 gallons</span><span class="metric">(19.9L)</span></span></span>
+<span class="headerkey">Batch size:</span><span class="headerval"><span class="volume"><span class="english">5 gallons</span><span class="metric">(18.9L)</span></span></span>
 </div>
 <div>
-<span class="headerkey">Boil Volume:</span><span class="headerval"><span class="volume"><span class="english">6.14 gallons</span><span class="metric">(23.3L)</span></span></span>
+<span class="headerkey">OG:</span><span class="headerval">1.096</span>
 </div>
 <div>
-<span class="headerkey">Boil time:</span><span class="headerval">60 minutes</span>
+<span class="headerkey">FG:</span><span class="headerval">1.024</span>
 </div>
 <div>
-<span class="headerkey">Brewhouse Efficiency:</span><span class="headerval">75%</span>
+<span class="headerkey">ABV:</span><span class="headerval">9.42%</span>
 </div>
 <div>
-<span class="headerkey">OG:</span><span class="headerval">1.091</span>
-</div>
-<div>
-<span class="headerkey">FG:</span><span class="headerval">1.023</span>
-</div>
-<div>
-<span class="headerkey">ABV:</span><span class="headerval">8.97%</span>
+<span class="headerkey">ADF:</span><span class="headerval">75%</span>
 </div>
 <div>
 <span class="headerkey">Yeast starter:</span><span class="headerval">181ml  (assuming 75% viability) of yeast slurry,
@@ -41,7 +35,7 @@
 					</span>
 </div>
 </div>
-<div xmlns:exslt="http://exslt.org/common" id="ingredients">
+<div id="ingredients">
 <div id="fermentables">
 <div class="total_weight"><div class="weight">
 <div class="english">18.5 lbs 
@@ -163,6 +157,7 @@
 <td>10 min
 			</td>
 </tr>
+<tr><th>Aroma</th></tr>
 <tr class="hop">
 <td><div class="weight">
 <div class="english">2 oz
@@ -175,23 +170,59 @@
 <td>5%α
 		</td>
 <td>Pellet</td>
-<td>1 min
-			</td>
+<td></td>
 </tr>
 </table>
 </div>
-<div id="yeasts"><div class="yeast">American Ale
-		(Wyeast 1056)
-	</div></div>
+<div id="yeasts"><div class="yeast">Wyeast 1056
+		(American Ale)
+		<div class="temperaturerange">
+<span class="temperature"><span class="fahrenheit">61</span><span class="celsius">16</span></span>
+				-
+			<span class="temperature"><span class="fahrenheit">72</span><span class="celsius">22</span></span>
 </div>
-<div xmlns:exslt="http://exslt.org/common" id="notes">
+<div class="attenuation">75%
+		</div>
+</div></div>
+</div>
+<div id="notes">
 <h1>Notes</h1>
 <div class="note"></div>
 </div>
-<div id="results">
-<h2>Results</h2>
+<div id="expected">
+<h2>Expected</h2>
 <div>
-<span class="headerkey">Strike:</span><span class="headerval"><span class="volume"><span class="english">7 gallons</span><span class="metric">(26.5L)</span></span>
+<span class="headerkey">Assumptions:</span><span class="headerval">1.5qt/lb @
+						<span class="temperature"><span class="fahrenheit">152</span></span>, grain @
+						<span class="temperature"><span class="fahrenheit">70</span></span></span>
+</div>
+<div>
+<span class="headerkey">Total gravity points:</span><span class="headerval">639
+						(479 required)
+					</span>
+</div>
+<div>
+<span class="headerkey">Strike:</span><span class="headerval"><span class="volume"><span class="english">6.94 gallons</span><span class="metric">(26.3L)</span></span>
+						@
+						<span class="temperature"><span class="fahrenheit">163</span><span class="celsius">73</span></span></span>
+</div>
+<div>
+<span class="headerkey">Sparge:</span><span class="headerval"><span class="volume"><span class="english">2.16 gallons</span><span class="metric">(8.2L)</span></span> @
+						<span class="temperature"><span class="fahrenheit">170</span><span class="celsius">77</span></span></span>
+</div>
+<div>
+<span class="headerkey">Boil:</span><span class="headerval"><span class="volume"><span class="english">6.63 gallons</span><span class="metric">(25.1L)</span></span> for 
+						60 minutes →
+						<span class="volume"><span class="english">5.5 gallons</span><span class="metric">(20.8L)</span></span></span>
+</div>
+<div>
+<span class="headerkey">Final volume:</span><span class="headerval"><span class="volume"><span class="english">5.25 gallons</span><span class="metric">(19.9L)</span></span></span>
+</div>
+</div>
+<div id="results">
+<h2>Actual</h2>
+<div>
+<span class="headerkey">Strike:<span class="headercode">ST</span><span class="headercode">SV</span></span><span class="headerval"><span class="volume"><span class="english">7 gallons</span><span class="metric">(26.5L)</span></span>
 				@
 				<span class="temperature"><span class="fahrenheit">163</span><span class="celsius">73</span></span></span>
 </div>
@@ -200,29 +231,28 @@
 				<span class="temperature"><span class="fahrenheit">154</span><span class="celsius">68</span></span>, average of <span class="temperature"><span class="fahrenheit">152</span><span class="celsius">66</span></span></span>
 </div>
 <div>
-<span class="headerkey">Potential PPG:</span><span class="headerval">639
-				(479 required)
+<span class="headerkey">Lauter:<span class="headercode">LT</span></span><span class="headerval">37 minutes
+				(5 min/G)
 			</span>
 </div>
 <div>
-<span class="headerkey">Boil:</span><span class="headerval"><span class="volume"><span class="english">7.1 gallons</span><span class="metric">(26.9L)</span></span>
-				for 90 minutes → 
-				<span class="volume"><span class="english">5.5 gallons</span><span class="metric">(20.8L)</span></span></span>
-</div>
-<div>
-<span class="headerkey">Evaporation rate:</span><span class="headerval"><span class="volume"><span class="english">1.07 gallons</span><span class="metric">(4L)</span></span>
-				per hour
-				(<span class="percent">15%</span>)
+<span class="headerkey">Boil:<span class="headercode">BV</span><span class="headercode">BG</span><span class="headercode">BT</span><span class="headercode">EV</span></span><span class="headerval"><span class="volume"><span class="english">7.1 gallons</span><span class="metric">(26.9L)</span></span>
+				for 
+				90 
+				minutes → 
+				<span class="volume"><span class="english">5.5 gallons</span><span class="metric">(20.8L)</span></span>,
+				<span class="volume"><span class="english">1.07 gallons</span><span class="metric">(4L)</span></span>
+				(<span class="percent">15%</span>) per hour
 			</span>
 </div>
 <div>
-<span class="headerkey">Final Volume:</span><span class="headerval"><span class="volume"><span class="english">4.87 gallons</span><span class="metric">(18.5L)</span></span></span>
+<span class="headerkey">Final Volume:<span class="headercode">FV</span></span><span class="headerval"><span class="volume"><span class="english">4.87 gallons</span><span class="metric">(18.5L)</span></span></span>
 </div>
 <div>
-<span class="headerkey">OG:</span><span class="headerval">1.096</span>
+<span class="headerkey">OG:<span class="headercode">OG</span></span><span class="headerval">1.096</span>
 </div>
 <div>
-<span class="headerkey">FG:</span><span class="headerval"> </span>
+<span class="headerkey">FG:<span class="headercode">FG</span></span><span class="headerval"> </span>
 </div>
 <div>
 <span class="headerkey">ABV:</span><span class="headerval"><span class="percent"> </span></span>
@@ -255,6 +285,20 @@
 <div class="logdate">Wed, 12 Sep 2012 18:08:00</div>
 <div class="posttext"><p>Pitched yeast.</p>
 <p>ST=165 SV=7 BG=1.073 OG=1.096 FV=4.875 BV=7.1 EV=5.5 BT=90 </p></div>
+</div></div>
+<div class="post"><div class="postbody">
+<div class="logdate">Wed, 12 Sep 2012 22:18:53</div>
+<div class="posttext"><p>Fermentation activity was visible before 9pm, so that’s just a 3-hour lag time! </p>
+
+<p>I realized that I could just top-off the fermenter with 800ml to bring the OG down to 1.092. Duh! I threw in tap water, which homebrewtalk.com people said is fine. And it’s better to do now than after fermentation is complete because the oxygen in the water is beneficial for fermentation and afterwards it is bad. I did sanitize the flask before filling it with water, though.</p></div>
+</div></div>
+<div class="post"><div class="postbody">
+<div class="logdate">Thu, 13 Sep 2012 08:13:29</div>
+<div class="posttext"><p>Good thing I put a blow-off tube on!</p></div>
+<div class="photo"><img src="http://24.media.tumblr.com/tumblr_maanmhrKf01qcxyego1_250.jpg"></div>
+<div class="photosizeoptions">All photo sizes:
+		 <a href="http://25.media.tumblr.com/tumblr_maanmhrKf01qcxyego1_1280.jpg">1280</a> <a href="http://24.media.tumblr.com/tumblr_maanmhrKf01qcxyego1_500.jpg">500</a> <a href="http://25.media.tumblr.com/tumblr_maanmhrKf01qcxyego1_400.jpg">400</a> <a href="http://24.media.tumblr.com/tumblr_maanmhrKf01qcxyego1_250.jpg">250</a> <a href="http://24.media.tumblr.com/tumblr_maanmhrKf01qcxyego1_100.jpg">100</a> <a href="http://25.media.tumblr.com/tumblr_maanmhrKf01qcxyego1_75sq.jpg">75</a>
+</div>
 </div></div>
 </div>
 </body>
