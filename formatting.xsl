@@ -61,7 +61,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 </xsl:template>
 
 <xsl:template name="format-temperature">
-	<xsl:param name="celsius"/>
+	<xsl:param name="fahrenheit"/>
+	<xsl:param name="celsius" select="($fahrenheit - 32) div 1.8"/>
 	<span class="temperature">
 		<xsl:choose>
 			<xsl:when test="string($celsius) = 'NaN' or string-length($celsius) = 0">

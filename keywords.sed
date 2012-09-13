@@ -7,3 +7,4 @@ s|^FV|/results/gravity/@volume|g
 s|^BT|/results/boil/@time|g
 s|^ST|/results/mash/infusion/strike/@temp|g
 s|^SV|/results/mash/infusion/strike/@volume|g
+s|^LT|/results/sparge/@duration|g

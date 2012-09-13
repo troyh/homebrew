@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<batch id="014"><recipe><beerxml recipefile="The Czar's Revenge.xml" commit_sha="475b7e91e213ecbf31833334da1e42ac8e4fcf0a"><RECIPE>
+<batch id="014"><recipe><beerxml recipefile="The Czar's Revenge.xml" commit_sha="6c1f653b61c76c6bd9720b1f9452d82c784b3803"><RECIPE>
 <VERSION>1</VERSION>
 <NAME>The Czar's Revenge</NAME>
 <TYPE>All Grain</TYPE>
 <BREWER>BrewPal</BREWER>
-<BATCH_SIZE>19.873411</BATCH_SIZE>
+<BATCH_SIZE>18.9271</BATCH_SIZE>
 <BOIL_SIZE>23.251892</BOIL_SIZE>
 <BOIL_TIME>60</BOIL_TIME>
 <EFFICIENCY>75</EFFICIENCY>
@@ -86,13 +86,13 @@
   </HOP>
   <HOP>
     <VERSION>1</VERSION>
-    <TIME>1.000000</TIME>
+    <TIME>0</TIME>
     <FORM>Pellet</FORM>
     <SUBSTITUTES>Fuggle, Progress, First Gold</SUBSTITUTES>
     <ALPHA>5.000000</ALPHA>
     <NAME>Goldings (Kent)</NAME>
     <AMOUNT>0.056699</AMOUNT>
-    <USE>Boil</USE>
+    <USE>Aroma</USE>
   </HOP>
 </HOPS>
 <YEASTS>
@@ -197,6 +197,7 @@ Variations exist, with English and American interpretations (predictably, the Am
     <measurement temp="65.5556"/>
     <measurement temp="65.5556"/>
   </mash>
+  <sparge duration="37"/>
   <boil volume="26.87641" sg="1.073" time="90" end_volume="20.81975"/>
   <gravity volume="18.45387" og="1.096" fg=""/>
 </results><log><tumblr version="1.0"><tumblelog name="geekbrewing" timezone="US/Pacific" title="Brew Log"/><posts start="0" total="5"><post id="31463178173" url="http://geekbrewing.tumblr.com/post/31463178173" url-with-slug="http://geekbrewing.tumblr.com/post/31463178173/good-thing-i-put-a-blow-off-tube-on" type="photo" date-gmt="2012-09-13 15:13:29 GMT" date="Thu, 13 Sep 2012 08:13:29" unix-timestamp="1347549209" format="html" reblog-key="S4VkKMKD" slug="good-thing-i-put-a-blow-off-tube-on" width="1280" height="960"><photo-caption>&lt;p&gt;Good thing I put a blow-off tube on!&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_maanmhrKf01qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://24.media.tumblr.com/tumblr_maanmhrKf01qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_maanmhrKf01qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://24.media.tumblr.com/tumblr_maanmhrKf01qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://24.media.tumblr.com/tumblr_maanmhrKf01qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://25.media.tumblr.com/tumblr_maanmhrKf01qcxyego1_75sq.jpg</photo-url><tag>014</tag></post><post id="31448783760" url="http://geekbrewing.tumblr.com/post/31448783760" url-with-slug="http://geekbrewing.tumblr.com/post/31448783760/fermentation-activity-was-visible-before-9pm-so" type="regular" date-gmt="2012-09-13 05:18:53 GMT" date="Wed, 12 Sep 2012 22:18:53" unix-timestamp="1347513533" format="html" reblog-key="juJvNI59" slug="fermentation-activity-was-visible-before-9pm-so"><regular-body>&lt;p&gt;Fermentation activity was visible before 9pm, so that’s just a 3-hour lag time! &lt;/p&gt;

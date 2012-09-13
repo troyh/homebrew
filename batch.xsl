@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <xsl:stylesheet version="1.0"
-xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+xmlns:exslt="http://exslt.org/common"
+xmlns:math="http://exslt.org/math">
 
 <xsl:include href="beerxml.xsl"/>
 
@@ -19,7 +21,118 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 			<div id="topnav">
 				<a href="../index.html">Home</a>
 			</div>
-			<xsl:apply-templates select="*"/>
+			<xsl:apply-templates select="recipe/beerxml"/>
+			
+			<div id="expected">
+				<h2>Expected</h2>
+				<xsl:variable name="graintemp" select="70"/>
+				<xsl:variable name="mashtemp" select="152"/>
+				<xsl:variable name="mashthickness" select="1.5"/>
+				<xsl:variable name="mashtun_loss" select="0.946353"/>
+				<xsl:variable name="evaporation_rate" select=".17"/>
+				<xsl:variable name="kettle_loss" select="0.946353"/>
+				<xsl:variable name="trub_loss" select="0.946353"/>
+					
+				<div>
+					<span class="headerkey"><xsl:text>Assumptions:</xsl:text></span>
+					<span class="headerval">
+						<xsl:value-of select="$mashthickness"/>qt/lb @
+						<span class="temperature"><span class="fahrenheit"><xsl:value-of select="$mashtemp"/></span></span>, grain @
+						<span class="temperature"><span class="fahrenheit"><xsl:value-of select="$graintemp"/></span></span>
+					</span>
+
+				</div>
+
+				<div>
+					<span class="headerkey"><xsl:text>Total gravity points:</xsl:text></span>
+					<span class="headerval">
+						<xsl:value-of select="format-number(sum(recipe/data/ppg),&quot;#&quot;)"/>
+						(<xsl:value-of 
+							select="format-number(sum(recipe/data/ppg) * recipe/beerxml/RECIPE/EFFICIENCY div 100,&quot;#&quot;)"/> required)
+					</span>
+				</div>
+					
+				<!-- Calculate total grain weight (in kg) -->
+				<xsl:variable name="total_grain" select="sum(recipe/beerxml/RECIPE/FERMENTABLES/FERMENTABLE/AMOUNT)"/>
+				<!--
+					Mash volume:
+					1.5 quarts (1.41953 liters) per 1 lb (0.453592kg) of grain 
+				-->
+				<xsl:variable name="mashvol" select="$total_grain div 0.453592 * 1.41953"/>
+				<!--
+					Absorption loss:
+					1.2 gallons of water per 10lbs grain
+				    4.54249L of water per 4.53592kg grain
+				-->
+				<xsl:variable name="absorption_loss_vol" select="4.54249 * ($total_grain div 4.53592)"/>
+				<xsl:variable name="boil_hours" select="recipe/beerxml/RECIPE/BOIL_TIME div 60"/>
+				<xsl:variable name="boil_vol" select="(recipe/beerxml/RECIPE/BATCH_SIZE + $trub_loss + $kettle_loss) div math:power(1 - $evaporation_rate,$boil_hours)"/>
+				<xsl:variable name="evaporation_loss_vol" select="math:power($boil_vol * $evaporation_rate,$boil_hours)"/>
+				<xsl:variable name="sparge_vol" select="$boil_vol - ($mashvol - $absorption_loss_vol) + $mashtun_loss"/>
+				
+				<div>
+					<span class="headerkey"><xsl:text>Strike:</xsl:text></span>
+					<span class="headerval">
+						<xsl:call-template name="format-volume">
+							<xsl:with-param name="liters" select="$mashvol"/>
+						</xsl:call-template>
+						@
+						<xsl:call-template name="format-temperature">
+							<xsl:with-param name="fahrenheit" select="((0.2 div $mashthickness) * ($mashtemp - $graintemp)) + $mashtemp"/>
+						</xsl:call-template>
+					</span>
+				</div>
+
+				<!-- <div>
+					<span class="headerkey"><xsl:text>Mash:</xsl:text></span>
+					<span class="headerval">
+						<xsl:call-template name="format-volume">
+							<xsl:with-param name="liters" select="$absorption_loss_vol + $mashtun_loss"/>
+						</xsl:call-template> in loss leaving
+						<xsl:call-template name="format-volume">
+							<xsl:with-param name="liters" select="$mashvol - $absorption_loss_vol - $mashtun_loss"/>
+						</xsl:call-template>
+					</span>
+				</div> -->
+				
+				<div>
+					<span class="headerkey"><xsl:text>Sparge:</xsl:text></span>
+					<span class="headerval">
+						<xsl:call-template name="format-volume">
+							<xsl:with-param name="liters" select="$sparge_vol"/>
+						</xsl:call-template> @
+						<xsl:call-template name="format-temperature">
+							<xsl:with-param name="celsius" select="76.6667"/>
+						</xsl:call-template>
+					</span>
+				</div>
+				
+				<div>
+					<span class="headerkey"><xsl:text>Boil:</xsl:text></span>
+					<span class="headerval">
+						<xsl:call-template name="format-volume">
+							<xsl:with-param name="liters" select="$boil_vol"/>
+						</xsl:call-template> for 
+						<xsl:value-of select="recipe/beerxml/RECIPE/BOIL_TIME"/> minutes &#8594;
+						<xsl:call-template name="format-volume">
+							<xsl:with-param name="liters" select="$boil_vol - $evaporation_loss_vol"/>
+						</xsl:call-template>
+					</span>
+				</div>
+				
+				<div>
+					<span class="headerkey"><xsl:text>Final volume:</xsl:text></span>
+					<span class="headerval">
+						<xsl:call-template name="format-volume">
+							<xsl:with-param name="liters" select="$boil_vol - $evaporation_loss_vol - $kettle_loss"/>
+						</xsl:call-template>
+					</span>
+				</div>
+				
+			</div>
+			
+			<xsl:apply-templates select="results"/>
+			<xsl:apply-templates select="log"/>
 		</body>
 	</html>
 </xsl:template>
@@ -30,7 +143,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	
 <xsl:template match="results">
 	<div id="results">
-		<h2>Results</h2>
+		<h2>Actual</h2>
 		<div>
 			<span class="headerkey"><xsl:text>Strike:</xsl:text>
 				<span class="headercode"><xsl:text>ST</xsl:text></span>
@@ -61,11 +174,12 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 			</span>
 		</div>
 		<div>
-			<span class="headerkey"><xsl:text>Potential PPG:</xsl:text></span>
+			<span class="headerkey"><xsl:text>Lauter:</xsl:text>
+				<span class="headercode"><xsl:text>LT</xsl:text></span>
+			</span>
 			<span class="headerval">
-				<xsl:value-of select="format-number(sum(../recipe/data/ppg),&quot;#&quot;)"/>
-				(<xsl:value-of 
-					select="format-number(sum(../recipe/data/ppg) * ../recipe/beerxml/RECIPE/EFFICIENCY div 100,&quot;#&quot;)"/> required)
+				<xsl:value-of select="sparge/@duration"/> minutes
+				(<xsl:value-of select="format-number(sparge/@duration div (boil/@volume * 0.264172),&quot;#&quot;)"/> min/G)
 			</span>
 		</div>
 		<div>
@@ -85,20 +199,14 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 				minutes &#8594; 
 				<xsl:call-template name="format-volume">
 					<xsl:with-param name="liters" select="boil/@end_volume"/>
-				</xsl:call-template>
-			</span>
-		</div>
-		<div>
-			<span class="headerkey"><xsl:text>Evaporation rate:</xsl:text></span>
-			<span class="headerval">
+				</xsl:call-template>,
 				<xsl:call-template name="format-volume">
 					<xsl:with-param name="liters" select="(boil/@volume - boil/@end_volume) div (boil/@time div 60)"/>
 				</xsl:call-template>
-				per hour
 				(<xsl:call-template name="format-percent">
 					<xsl:with-param name="value" 
 						select="(boil/@volume - boil/@end_volume) div boil/@volume div (boil/@time div 60)"/>
-				</xsl:call-template>)
+				</xsl:call-template>) per hour
 			</span>
 		</div>
 		<div>

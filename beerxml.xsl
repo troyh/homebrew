@@ -36,7 +36,7 @@ xmlns:exslt="http://exslt.org/common">
 				  </span>
 			  </div>
 
-			  <div>
+			  <!-- <div>
 				  <span class="headerkey">Boil Volume:</span>
 				  <span class="headerval">
 					  <xsl:call-template name="format-volume">
@@ -55,7 +55,7 @@ xmlns:exslt="http://exslt.org/common">
 			  <div>
 				  <span class="headerkey"><xsl:text>Brewhouse Efficiency:</xsl:text></span>
 				  <span class="headerval"><xsl:value-of select="EFFICIENCY"/><xsl:text>%</xsl:text></span>
-			  </div>
+			  </div> -->
 			  
 			  <xsl:variable name="foo">	
 			  	<xsl:for-each select="FERMENTABLES/FERMENTABLE">
@@ -218,12 +218,8 @@ xmlns:exslt="http://exslt.org/common">
 
 <xsl:template match="YEAST">
 	<div class="yeast">
-		<!-- <xsl:value-of select="AMOUNT * 1000"/>
-		<xsl:text>ml </xsl:text> -->
-		<xsl:value-of select="NAME"/>
-		(<xsl:value-of select="LABORATORY"/>
-		<xsl:text> </xsl:text>
-		<xsl:value-of select="PRODUCT_ID"/>)
+		<xsl:value-of select="LABORATORY"/><xsl:text> </xsl:text><xsl:value-of select="PRODUCT_ID"/>
+		(<xsl:value-of select="NAME"/>)
 		<div class="temperaturerange">
 			<xsl:call-template name="format-temperature">
 				<xsl:with-param name="celsius" select="MIN_TEMPERATURE"/>
