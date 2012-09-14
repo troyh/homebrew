@@ -190,15 +190,18 @@ There is some overlap in color between American pale ale and American amber ale.
   <ppg>24.8399501967936</ppg>
   <ppg>24.8399501967936</ppg>
 </data></recipe><results>
-	<mash type="" duration="">
-		<infusion>
-			<strike volume="" temp=""/>
-		</infusion>
-		<measurement temp=""/>
-		<measurement temp=""/>
-		<measurement temp=""/>
-		<measurement temp=""/>
-	</mash>
-	<boil volume="" sg="" time="" end_volume=""/>
-	<gravity volume="" og="" fg=""/>
-</results><log><tumblr version="1.0"><tumblelog name="geekbrewing" timezone="US/Pacific" title="Brew Log"/><posts start="0" total="2"><post id="31434410989" url="http://geekbrewing.tumblr.com/post/31434410989" url-with-slug="http://geekbrewing.tumblr.com/post/31434410989/cold-crashing-starter" type="regular" date-gmt="2012-09-13 01:09:12 GMT" date="Wed, 12 Sep 2012 18:09:12" unix-timestamp="1347498552" format="html" reblog-key="t1qtWNL3" slug="cold-crashing-starter"><regular-body>&lt;p&gt;Cold-crashing starter.&lt;/p&gt;</regular-body><tag>015</tag></post><post id="31362435221" url="http://geekbrewing.tumblr.com/post/31362435221" url-with-slug="http://geekbrewing.tumblr.com/post/31362435221/starter-on-stir-plate-pitched-30ml-of-yeast" type="photo" date-gmt="2012-09-11 23:11:02 GMT" date="Tue, 11 Sep 2012 16:11:02" unix-timestamp="1347405062" format="html" reblog-key="XYqiVZsr" slug="starter-on-stir-plate-pitched-30ml-of-yeast" width="720" height="960"><photo-caption>&lt;p&gt;Starter on stir plate. Pitched ~30ml of yeast slurry from batch 007, washed on 8/29/12.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_ma7kcnS2PA1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://25.media.tumblr.com/tumblr_ma7kcnS2PA1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_ma7kcnS2PA1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://24.media.tumblr.com/tumblr_ma7kcnS2PA1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://24.media.tumblr.com/tumblr_ma7kcnS2PA1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://25.media.tumblr.com/tumblr_ma7kcnS2PA1qcxyego1_75sq.jpg</photo-url><tag>015</tag></post></posts></tumblr></log></batch>
+  <mash type="" duration="60">
+    <infusion>
+      <strike volume="15.14164" temp="70"/>
+    </infusion>
+    <measurement temp="65"/>
+    <measurement temp="65"/>
+    <measurement temp="63.055556"/>
+  </mash>
+  <sparge duration="27"/>
+  <boil volume="27.44422" sg="1.045" time="60" end_volume="22.71246"/>
+  <gravity volume="22.71246" og="1.052" fg=""/>
+</results><log><tumblr version="1.0"><tumblelog name="geekbrewing" timezone="US/Pacific" title="Brew Log"/><posts start="0" total="3"><post id="31551012113" url="http://geekbrewing.tumblr.com/post/31551012113" url-with-slug="http://geekbrewing.tumblr.com/post/31551012113/mashed-at-too-low-of-a-temperature-my-printout" type="regular" date-gmt="2012-09-14 23:47:00 GMT" date="Fri, 14 Sep 2012 16:47:00" unix-timestamp="1347666420" format="html" reblog-key="oLCEmlLN" slug="mashed-at-too-low-of-a-temperature-my-printout"><regular-body>&lt;p&gt;Mashed at too low of a temperature. My printout said 148ºF for the mash temp but while mashing, I checked the Brewing Classic Styles book and it was supposed to be 154º. I must&amp;#8217;ve been editing the recipe on my iPhone in Brew Pal and forgot to put it back to 154º. D&amp;#8217;oh! I guess the yeast is going to bring the FG way down.&lt;/p&gt;
+&lt;p&gt;Easy brew, but my gravity was way high at the end of the boil, 1.057. So I topped-off the boil kettle with water up to 6.8G, which should have given me a gravity of 1.052, which was my target. I only put 6G into the fermenter.&lt;/p&gt;
+&lt;p&gt;Pitched the yeast. Didn&amp;#8217;t aerate it because the carboy is so full, but maybe I&amp;#8217;ll do it later tonight.&lt;/p&gt;
+&lt;p&gt;ST=159 SV=4 LT=27 BV=7.25 BG=1.045 BT=60 EV=6 FV=6 OG=1.052&lt;/p&gt;</regular-body><tag>015</tag></post><post id="31434410989" url="http://geekbrewing.tumblr.com/post/31434410989" url-with-slug="http://geekbrewing.tumblr.com/post/31434410989/cold-crashing-starter" type="regular" date-gmt="2012-09-13 01:09:12 GMT" date="Wed, 12 Sep 2012 18:09:12" unix-timestamp="1347498552" format="html" reblog-key="t1qtWNL3" slug="cold-crashing-starter"><regular-body>&lt;p&gt;Cold-crashing starter.&lt;/p&gt;</regular-body><tag>015</tag></post><post id="31362435221" url="http://geekbrewing.tumblr.com/post/31362435221" url-with-slug="http://geekbrewing.tumblr.com/post/31362435221/starter-on-stir-plate-pitched-30ml-of-yeast" type="photo" date-gmt="2012-09-11 23:11:02 GMT" date="Tue, 11 Sep 2012 16:11:02" unix-timestamp="1347405062" format="html" reblog-key="XYqiVZsr" slug="starter-on-stir-plate-pitched-30ml-of-yeast" width="720" height="960"><photo-caption>&lt;p&gt;Starter on stir plate. Pitched ~30ml of yeast slurry from batch 007, washed on 8/29/12.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_ma7kcnS2PA1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://25.media.tumblr.com/tumblr_ma7kcnS2PA1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_ma7kcnS2PA1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://24.media.tumblr.com/tumblr_ma7kcnS2PA1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://24.media.tumblr.com/tumblr_ma7kcnS2PA1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://25.media.tumblr.com/tumblr_ma7kcnS2PA1qcxyego1_75sq.jpg</photo-url><tag>015</tag></post></posts></tumblr></log></batch>

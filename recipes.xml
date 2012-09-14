@@ -2699,7 +2699,7 @@ A harmonious marriage of spices, herbs and/or vegetables and beer.  The key attr
 <NAME>The Czar's Revenge</NAME>
 <TYPE>All Grain</TYPE>
 <BREWER>BrewPal</BREWER>
-<BATCH_SIZE>19.873411</BATCH_SIZE>
+<BATCH_SIZE>18.9271</BATCH_SIZE>
 <BOIL_SIZE>23.251892</BOIL_SIZE>
 <BOIL_TIME>60</BOIL_TIME>
 <EFFICIENCY>75</EFFICIENCY>
@@ -2781,13 +2781,13 @@ A harmonious marriage of spices, herbs and/or vegetables and beer.  The key attr
   </HOP>
   <HOP>
     <VERSION>1</VERSION>
-    <TIME>1.000000</TIME>
+    <TIME>0</TIME>
     <FORM>Pellet</FORM>
     <SUBSTITUTES>Fuggle, Progress, First Gold</SUBSTITUTES>
     <ALPHA>5.000000</ALPHA>
     <NAME>Goldings (Kent)</NAME>
     <AMOUNT>0.056699</AMOUNT>
-    <USE>Boil</USE>
+    <USE>Aroma</USE>
   </HOP>
 </HOPS>
 <YEASTS>

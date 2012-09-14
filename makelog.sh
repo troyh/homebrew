@@ -43,7 +43,7 @@ xml sel -t -m '/tumblr/posts/post' -v . -n  batches/$BATCH_ID/log.xml |
 		done > $TMPFILE
 
 # Edit the results.xml with values taken from keywords in log posts
-for K in OG FG BV BG EV FV BT ST SV; do 
+for K in OG FG BV BG EV FV BT ST SV LT; do 
 	grep $K $TMPFILE |
 	tail -n 1 | 
 	sed -f keywords.sed | 

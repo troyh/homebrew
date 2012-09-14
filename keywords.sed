@@ -4,7 +4,7 @@ s|^BG|/results/boil/@sg|g
 s|^BV|/results/boil/@volume|g
 s|^EV|/results/boil/@end_volume|g
 s|^FV|/results/gravity/@volume|g
-s|^BT|/results/boil/@time|g
+s|^BT|/results/boil/@duration|g
 s|^ST|/results/mash/infusion/strike/@temp|g
 s|^SV|/results/mash/infusion/strike/@volume|g
 s|^LT|/results/sparge/@duration|g

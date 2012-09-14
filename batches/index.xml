@@ -273,6 +273,7 @@
     <measurement temp="65.5556"/>
     <measurement temp="65.5556"/>
   </mash>
+  <sparge duration="37"/>
   <boil volume="26.87641" sg="1.073" time="90" end_volume="20.81975"/>
   <gravity volume="18.45387" og="1.096" fg=""/>
 </results></batch><batch id="015"><name>American Pale Ale with Caramel</name><type>All Grain</type><styles>
