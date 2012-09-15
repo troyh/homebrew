@@ -203,7 +203,7 @@
     <measurement temp="66.1111"/>
   </mash>
   <boil volume="25.7408" sg="1.052" time="60" end_volume="20.8198"/>
-  <gravity volume="19.619766564" og="1.060" fg="1.015"/>
+  <gravity volume="19.619766564" og="1.060" fg="1.011"/>
 </results></batch><batch id="012"><name>Special B IPA</name><type>All Grain</type><styles>
   <style><name>American IPA</name></style>
 </styles><yeasts>
@@ -285,15 +285,15 @@
   <ppg>24.8399501967936</ppg>
   <ppg>24.8399501967936</ppg>
 </data><results>
-	<mash type="" duration="">
-		<infusion>
-			<strike volume="" temp=""/>
-		</infusion>
-		<measurement temp=""/>
-		<measurement temp=""/>
-		<measurement temp=""/>
-		<measurement temp=""/>
-	</mash>
-	<boil volume="" sg="" time="" end_volume=""/>
-	<gravity volume="" og="" fg=""/>
+  <mash type="" duration="60">
+    <infusion>
+      <strike volume="15.14164" temp="70"/>
+    </infusion>
+    <measurement temp="65"/>
+    <measurement temp="65"/>
+    <measurement temp="63.055556"/>
+  </mash>
+  <sparge duration="27"/>
+  <boil volume="27.44422" sg="1.045" time="60" end_volume="22.71246"/>
+  <gravity volume="22.71246" og="1.052" fg=""/>
 </results></batch></batches>

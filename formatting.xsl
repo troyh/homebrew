@@ -46,6 +46,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template name="format-volume">
 	<xsl:param name="liters"/>
+	<xsl:param name="gravity" select="0"/>
 	<xsl:choose>
 		<xsl:when test="string($liters) = 'NaN' or string-length($liters) = 0">
 			<span class="english">____ gallons</span>
@@ -55,6 +56,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 			<span class="volume">
 				<span class="english"><xsl:value-of select="format-number($liters * 0.264172,&quot;#.##&quot;)"/> gallons</span>
 				<span class="metric">(<xsl:value-of select="format-number($liters,&quot;#.#&quot;)"/>L)</span>
+				<xsl:if test="$gravity != 0"><span class="gravity"><xsl:value-of select="format-number($gravity,&quot;0.000&quot;)"/></span></xsl:if>
 			</span>
 		</xsl:otherwise>
 	</xsl:choose>

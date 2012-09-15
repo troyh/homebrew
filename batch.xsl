@@ -13,6 +13,7 @@ xmlns:math="http://exslt.org/math">
 			<title>
 				<xsl:if test="string-length(recipe/beerxml/RECIPE/NAME) = 0">No title</xsl:if>
 				<xsl:value-of select="recipe/beerxml/RECIPE/NAME" disable-output-escaping="yes"/>
+				(<xsl:value-of select="@id" disable-output-escaping="yes"/>)
 			</title>
 			<link rel="stylesheet" type="text/css" href="../recipe.css" />
 			<script src="../js/tumblr.js" />
@@ -20,6 +21,8 @@ xmlns:math="http://exslt.org/math">
 		<body>
 			<div id="topnav">
 				<a href="../index.html">Home</a>
+				&#9002;
+				Batch <xsl:value-of select="@id"/>
 			</div>
 			<xsl:apply-templates select="recipe/beerxml"/>
 			
@@ -30,8 +33,6 @@ xmlns:math="http://exslt.org/math">
 				<xsl:variable name="mashthickness" select="1.5"/>
 				<xsl:variable name="mashtun_loss" select="0.946353"/>
 				<xsl:variable name="evaporation_rate" select=".17"/>
-				<xsl:variable name="kettle_loss" select="0.946353"/>
-				<xsl:variable name="trub_loss" select="0.946353"/>
 					
 				<div>
 					<span class="headerkey"><xsl:text>Assumptions:</xsl:text></span>
@@ -43,12 +44,15 @@ xmlns:math="http://exslt.org/math">
 
 				</div>
 
+				<xsl:variable name="total_gu" select="sum(recipe/data/ppg)"/>
+				<xsl:variable name="expected_gu" select="$total_gu * recipe/beerxml/RECIPE/EFFICIENCY div 100"/>
+
 				<div>
 					<span class="headerkey"><xsl:text>Total gravity points:</xsl:text></span>
 					<span class="headerval">
-						<xsl:value-of select="format-number(sum(recipe/data/ppg),&quot;#&quot;)"/>
+						<xsl:value-of select="format-number($total_gu,&quot;#&quot;)"/>
 						(<xsl:value-of 
-							select="format-number(sum(recipe/data/ppg) * recipe/beerxml/RECIPE/EFFICIENCY div 100,&quot;#&quot;)"/> required)
+							select="format-number($expected_gu,&quot;#&quot;)"/> required)
 					</span>
 				</div>
 					
@@ -66,9 +70,9 @@ xmlns:math="http://exslt.org/math">
 				-->
 				<xsl:variable name="absorption_loss_vol" select="4.54249 * ($total_grain div 4.53592)"/>
 				<xsl:variable name="boil_hours" select="recipe/beerxml/RECIPE/BOIL_TIME div 60"/>
-				<xsl:variable name="boil_vol" select="(recipe/beerxml/RECIPE/BATCH_SIZE + $trub_loss + $kettle_loss) div math:power(1 - $evaporation_rate,$boil_hours)"/>
+				<xsl:variable name="boil_vol" select="recipe/beerxml/RECIPE/BATCH_SIZE div math:power(1 - $evaporation_rate,$boil_hours)"/>
 				<xsl:variable name="evaporation_loss_vol" select="math:power($boil_vol * $evaporation_rate,$boil_hours)"/>
-				<xsl:variable name="sparge_vol" select="$boil_vol - ($mashvol - $absorption_loss_vol) + $mashtun_loss"/>
+				<xsl:variable name="sparge_vol" select="$boil_vol - ($mashvol - $absorption_loss_vol - $mashtun_loss)"/>
 				
 				<div>
 					<span class="headerkey"><xsl:text>Strike:</xsl:text></span>
@@ -112,19 +116,13 @@ xmlns:math="http://exslt.org/math">
 					<span class="headerval">
 						<xsl:call-template name="format-volume">
 							<xsl:with-param name="liters" select="$boil_vol"/>
-						</xsl:call-template> for 
+							<xsl:with-param name="gravity" select="$expected_gu div ($boil_vol * 0.264172) div 1000 + 1"/>
+						</xsl:call-template> 
+						for 
 						<xsl:value-of select="recipe/beerxml/RECIPE/BOIL_TIME"/> minutes &#8594;
 						<xsl:call-template name="format-volume">
 							<xsl:with-param name="liters" select="$boil_vol - $evaporation_loss_vol"/>
-						</xsl:call-template>
-					</span>
-				</div>
-				
-				<div>
-					<span class="headerkey"><xsl:text>Final volume:</xsl:text></span>
-					<span class="headerval">
-						<xsl:call-template name="format-volume">
-							<xsl:with-param name="liters" select="$boil_vol - $evaporation_loss_vol - $kettle_loss"/>
+							<xsl:with-param name="gravity" select="$expected_gu div (($boil_vol - $evaporation_loss_vol) * 0.264172) div 1000 + 1"/>
 						</xsl:call-template>
 					</span>
 				</div>
@@ -192,6 +190,7 @@ xmlns:math="http://exslt.org/math">
 			<span class="headerval">
 				<xsl:call-template name="format-volume">
 					<xsl:with-param name="liters" select="boil/@volume"/>
+					<xsl:with-param name="gravity" select="boil/@sg"/>
 				</xsl:call-template>
 				for 
 				<xsl:if test="string-length(boil/@time) = 0">____</xsl:if>
@@ -199,6 +198,7 @@ xmlns:math="http://exslt.org/math">
 				minutes &#8594; 
 				<xsl:call-template name="format-volume">
 					<xsl:with-param name="liters" select="boil/@end_volume"/>
+					<xsl:with-param name="gravity" select="(boil/@sg - 1) * 1000 * boil/@volume div boil/@end_volume div 1000 + 1"/>
 				</xsl:call-template>,
 				<xsl:call-template name="format-volume">
 					<xsl:with-param name="liters" select="(boil/@volume - boil/@end_volume) div (boil/@time div 60)"/>
@@ -216,6 +216,7 @@ xmlns:math="http://exslt.org/math">
 			<span class="headerval">
 				<xsl:call-template name="format-volume">
 					<xsl:with-param name="liters" select="gravity/@volume"/>
+					<xsl:with-param name="gravity" select="(boil/@sg - 1) * 1000 * boil/@volume div gravity/@volume div 1000 + 1"/>
 				</xsl:call-template>
 			</span>
 		</div>
