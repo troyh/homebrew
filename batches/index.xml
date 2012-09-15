@@ -294,6 +294,6 @@
     <measurement temp="63.055556"/>
   </mash>
   <sparge duration="27"/>
-  <boil volume="27.44422" sg="1.045" time="60" end_volume="22.71246"/>
-  <gravity volume="22.71246" og="1.052" fg=""/>
+  <boil volume="27.44422" sg="1.048" time="60" end_volume="23.09100"/>
+  <gravity volume="25.74078" og="1.052" fg=""/>
 </results></batch></batches>
