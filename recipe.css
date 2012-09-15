@@ -1,5 +1,5 @@
 body {
-	font-family: Helvetica;
+	font-family: Optima, Helvetica;
 }
 
 #header {
@@ -80,6 +80,24 @@ body {
 
 #results {
 	font-size:.9em;
+}
+
+.volume .gravity {
+/*	float:right;*/
+	position:relative;
+	font-size:.6em;
+	top:.7em;
+/*	right:0%;*/
+/*	width:100%;*/
+	color:#777;
+/*	border:1px solid red;*/
+/*	display:inline-block;*/
+/*	width:50%;*/
+/*	margin:0px auto;*/
+}
+
+.gravity:before {
+	content: "@";
 }
 
 #brewlog { margin-top:2em; }
