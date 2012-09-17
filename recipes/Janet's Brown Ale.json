@@ -1,0 +1,101 @@
+
+  {
+	"name":"Janet&#39;s Brown Ale",
+		"styles":,
+		"type":"Extract",
+		"batch_size":18.9271,
+		"total_ppg":570.404859992,
+		"OG":1.080,
+		"FG":1.024,
+		"ABV":7.32,
+		"ADF":70,
+		"yeast_starter_slurry":151,
+	"yeast_starter_cells":283,
+	"ingredients":{
+		"fermentables":{"total_weight":5.6246,		"list":[{
+			"amount":3.8102,
+			"pct":67.74,
+			"name":"NB Organic Light Malt Syrup",
+			"srm":4
+		}
+		,{
+			"amount":0.4536,
+			"pct":8.06,
+			"name":"NB Wheat Malt Syrup",
+			"srm":3
+		}
+		,{
+			"amount":0.5670,
+			"pct":10.08,
+			"name":"Briess Caramel 40L",
+			"srm":40
+		}
+		,{
+			"amount":0.5670,
+			"pct":10.08,
+			"name":"Briess Carapils",
+			"srm":2
+		}
+		,{
+			"amount":0.2268,
+			"pct":4.03,
+			"name":"Chocolate Malt",
+			"srm":350
+		}
+		]},
+		"hops":
+	{
+		"total_weight":0.2267,
+		"mash":[],
+		"first_wort": [],
+	    "boil":[{
+		"amount":0.0567,
+		"name": "Northern Brewer",
+		"alpha": 6.5,
+		"time":60,
+		"form":"Pellet"
+     },{
+		"amount":0.0283,
+		"name": "Northern Brewer",
+		"alpha": 8.5,
+		"time":15,
+		"form":"Pellet"
+     },{
+		"amount":0.0425,
+		"name": "Sterling",
+		"alpha": 7,
+		"time":10,
+		"form":"Pellet"
+     },{
+		"amount":0.0425,
+		"name": "Sterling",
+		"alpha": 7,
+		"time":0,
+		"form":"Pellet"
+     },{
+		"amount":0.0567,
+		"name": "Centennial",
+		"alpha": 9.7,
+		"time":7,
+		"form":"Pellet"
+     }],
+		"aroma":[],
+		"dry_hop":[]
+	}
+,
+		"yeast":
+	[
+	{
+		"lab":"White Labs",
+		"prod_id":"0001",
+		"name": "California Ale",
+		"temperature_lo": 68.0,
+		"temperature_hi": 73.0,
+		"attenuation": 77
+	}
+]
+
+	},
+"notes": "From &quot;Brewing Classic Styles&quot;"
+}
+

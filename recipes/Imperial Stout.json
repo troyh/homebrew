@@ -1,0 +1,131 @@
+
+{
+	"name":"Imperial Stout",
+		"styles":,
+		"type":"All Grain",
+		"batch_size":18.9271,
+		"total_ppg":943.014740976,
+		"OG":1.132,
+		"FG":1.040,
+		"ABV":12.11,
+		"ADF":70,
+		"yeast_starter_slurry":250,
+	"yeast_starter_cells":469,
+	"ingredients":{
+		"fermentables":{"total_weight":9.2988,		"list":[{
+			"amount":0.4536,
+			"pct":4.88,
+			"name":"Biscuit Malt",
+			"srm":23
+		}
+		,{
+			"amount":0.3402,
+			"pct":3.66,
+			"name":"Black (Patent) Malt",
+			"srm":500
+		}
+		,{
+			"amount":2.7216,
+			"pct":29.27,
+			"name":"Cara-Pils/Dextrine",
+			"srm":2
+		}
+		,{
+			"amount":0.4536,
+			"pct":4.88,
+			"name":"Caramel/Crystal Malt - 60L",
+			"srm":60
+		}
+		,{
+			"amount":0.3402,
+			"pct":3.66,
+			"name":"Chocolate Malt",
+			"srm":350
+		}
+		,{
+			"amount":2.4948,
+			"pct":26.83,
+			"name":"Pale Malt (2 Row) Bel",
+			"srm":3
+		}
+		,{
+			"amount":0.2268,
+			"pct":2.44,
+			"name":"Roasted Barley",
+			"srm":300
+		}
+		,{
+			"amount":0.9072,
+			"pct":9.76,
+			"name":"Special B Malt",
+			"srm":180
+		}
+		,{
+			"amount":0.4536,
+			"pct":4.88,
+			"name":"Wheat Malt, Bel",
+			"srm":2
+		}
+		,{
+			"amount":0.9072,
+			"pct":9.76,
+			"name":"Brown Sugar, Dark",
+			"srm":50
+		}
+		]},
+		"hops":
+	{
+		"total_weight":0.1415,
+		"mash":[],
+		"first_wort": [],
+	    "boil":[{
+		"amount":0.0283,
+		"name": "Fuggles",
+		"alpha": 4.5,
+		"time":60,
+		"form":"Pellet"
+     },{
+		"amount":0.0283,
+		"name": "Goldings, East Kent",
+		"alpha": 5,
+		"time":60,
+		"form":"Pellet"
+     },{
+		"amount":0.0283,
+		"name": "Bullion",
+		"alpha": 8,
+		"time":60,
+		"form":"Pellet"
+     },{
+		"amount":0.0283,
+		"name": "Cascade",
+		"alpha": 5.5,
+		"time":60,
+		"form":"Pellet"
+     },{
+		"amount":0.0283,
+		"name": "Mt. Hood",
+		"alpha": 6,
+		"time":60,
+		"form":"Pellet"
+     }],
+		"aroma":[],
+		"dry_hop":[]
+	}
+,
+		"yeast":
+	[
+	{
+		"lab":"Wyeast Labs",
+		"prod_id":"1056",
+		"name": "American Ale",
+		"temperature_lo":060.0,
+		"temperature_hi":072.0,
+		"attenuation": 75
+	}
+]
+
+	},
+"notes": ""
+}
+

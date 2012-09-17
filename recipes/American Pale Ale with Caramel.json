@@ -1,0 +1,92 @@
+
+{
+	"name":"American Pale Ale with Caramel",
+		"styles":[{
+			"name":"American Pale Ale",
+			"category":10,
+			"letter":"A"
+	}
+],
+		"type":"All Grain",
+		"batch_size":20.819765,
+		"total_ppg":381.569472272709,
+		"OG":1.052,
+		"FG":1.013,
+		"ABV":5.11,
+		"ADF":75,
+		"yeast_starter_slurry":108,
+	"yeast_starter_cells":203,
+	"ingredients":{
+		"fermentables":{"total_weight":4.876117000000001,		"list":[{
+			"amount":4.195729,
+			"pct":86.05,
+			"name":"2 Row Base",
+			"srm":2
+		}
+		,{
+			"amount":0.340194,
+			"pct":6.98,
+			"name":"Crystal 40L",
+			"srm":40
+		}
+		,{
+			"amount":0.340194,
+			"pct":6.98,
+			"name":"Munich (Dark)",
+			"srm":9
+		}
+		]},
+		"hops":
+	{
+		"total_weight":0.074973,
+		"mash":[],
+		"first_wort": [],
+	    "boil":[{
+		"amount":0.018711,
+		"name": "Magnum",
+		"alpha": 13.8,
+		"time":60,
+		"form":"Pellet"
+     },{
+		"amount":0.007087,
+		"name": "Centennial",
+		"alpha": 10.9,
+		"time":10,
+		"form":"Leaf"
+     },{
+		"amount":0.012000,
+		"name": "Northern Brewer",
+		"alpha": 8.6,
+		"time":10,
+		"form":"Pellet"
+     }],
+		"aroma":[{
+		"amount":0.014175,
+		"name": "Centennial",
+		"alpha": 10.9,
+		"form":"Leaf"
+     },{
+		"amount":0.023000,
+		"name": "Northern Brewer",
+		"alpha": 8.6,
+		"form":"Pellet"
+     }],
+		"dry_hop":[]
+	}
+,
+		"yeast":
+	[
+	{
+		"lab":"Fermentis",
+		"prod_id":"US-05",
+		"name": "Safale US-05",
+		"temperature_lo":15,
+		"temperature_hi":24,
+		"attenuation": 78
+	}
+]
+
+	},
+"notes": "From \"Brewing Classic Styles\", p.136"
+}
+

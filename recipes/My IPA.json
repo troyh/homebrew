@@ -1,0 +1,103 @@
+
+{
+	"name":"Special B IPA",
+		"styles":[{
+			"name":"American IPA",
+			"category":14,
+			"letter":"B"
+	}
+],
+		"type":"All Grain",
+		"batch_size":18.927059,
+		"total_ppg":398.474438378861,
+		"OG":1.060,
+		"FG":1.015,
+		"ABV":5.87,
+		"ADF":75,
+		"yeast_starter_slurry":113,
+	"yeast_starter_cells":212,
+	"ingredients":{
+		"fermentables":{"total_weight":5.102913000000001,		"list":[{
+			"amount":4.535923,
+			"pct":88.89,
+			"name":"2 Row Base",
+			"srm":2
+		}
+		,{
+			"amount":0.226796,
+			"pct":4.44,
+			"name":"Crystal 60L",
+			"srm":50
+		}
+		,{
+			"amount":0.226796,
+			"pct":4.44,
+			"name":"Victory",
+			"srm":25
+		}
+		,{
+			"amount":0.113398,
+			"pct":2.22,
+			"name":"Special B",
+			"srm":140
+		}
+		]},
+		"hops":
+	{
+		"total_weight":0.163011,
+		"mash":[],
+		"first_wort": [{
+		"amount":0.007087,
+		"name": "Warrior",
+		"alpha": 16,
+		"form":"Pellet"
+     }],
+	    "boil":[{
+		"amount":0.028350,
+		"name": "Centennial",
+		"alpha": 10.9,
+		"time":60,
+		"form":"Leaf"
+     },{
+		"amount":0.014175,
+		"name": "Amarillo",
+		"alpha": 9.3,
+		"time":15,
+		"form":"Pellet"
+     },{
+		"amount":0.028350,
+		"name": "Hallertauer",
+		"alpha": 6.1,
+		"time":15,
+		"form":"Pellet"
+     }],
+		"aroma":[{
+		"amount":0.028350,
+		"name": "Cascade",
+		"alpha": 5.7,
+		"form":"Leaf"
+     }],
+		"dry_hop":[{
+		"amount":0.056699,
+		"name": "Cascade",
+		"alpha": 5.7,
+		"form":"Leaf"
+     }]
+	}
+,
+		"yeast":
+	[
+	{
+		"lab":"Fermentis",
+		"prod_id":"US-05",
+		"name": "Safale US-05",
+		"temperature_lo":15,
+		"temperature_hi":24,
+		"attenuation": 78
+	}
+]
+
+	},
+"notes": ""
+}
+

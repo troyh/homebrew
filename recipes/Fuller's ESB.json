@@ -1,0 +1,100 @@
+
+{
+	"name":"Old Fuller's ESB",
+		"styles":[{
+			"name":"Extra Special/Strong Bitter (English Pale Ale)",
+			"category":8,
+			"letter":"C"
+	}
+],
+		"type":"All Grain",
+		"batch_size":18.927059,
+		"total_ppg":410.865702781546,
+		"OG":1.062,
+		"FG":1.015,
+		"ABV":6.06,
+		"ADF":75,
+		"yeast_starter_slurry":117,
+	"yeast_starter_cells":219,
+	"ingredients":{
+		"fermentables":{"total_weight":5.187962000000001,		"list":[{
+			"amount":4.535923,
+			"pct":87.43,
+			"name":"Maris Otter",
+			"srm":4
+		}
+		,{
+			"amount":0.4252428,
+			"pct":8.2,
+			"name":"Crystal 80L",
+			"srm":80
+		}
+		,{
+			"amount":0.2267962,
+			"pct":4.37,
+			"name":"Crystal 60L",
+			"srm":60
+		}
+		]},
+		"hops":
+	{
+		"total_weight":0.076543286,
+		"mash":[],
+		"first_wort": [],
+	    "boil":[{
+		"amount":0.021262,
+		"name": "Target",
+		"alpha": 10.7,
+		"time":60,
+		"form":"Pellet"
+     },{
+		"amount":0.009355343,
+		"name": "Goldings (Kent)",
+		"alpha": 5.8,
+		"time":15,
+		"form":"Pellet"
+     },{
+		"amount":0.003401943,
+		"name": "Northdown",
+		"alpha": 7.2,
+		"time":15,
+		"form":"Pellet"
+     }],
+		"aroma":[{
+		"amount":0.042524,
+		"name": "Cascade",
+		"alpha": 5.7,
+		"form":"Leaf"
+     }],
+		"dry_hop":[]
+	}
+,
+		"yeast":
+	[
+	{
+		"lab":"Wyeast",
+		"prod_id":"1968",
+		"name": "London ESB Ale",
+		"temperature_lo":18,
+		"temperature_hi":22,
+		"attenuation": 69
+	}
+]
+
+	},
+"notes": "<p><a href=\"http://www.homebrewtalk.com/f12/fullers-esb-clone-229179/\">Homebrewtalk discussion</a></p>
+
+<p>According to http://www.byo.com/component/resource/article/2398-fuller-s-the-pride-of-london, ESB is 5.9% ABV, 35 IBUs, an SRM of 15, an OG of 1.060 and an FG of 1.014.</p>
+
+<p>I put the 1.5oz of dry-hop hops in the Blichmann HopRocket which was put inline between the brew kettle and the chiller to see how that affects the hop aroma.</p>
+
+<p>I pitched a 1.2L starter because I didn't have enough time to cold-crash and decant. Not ideal. The yeast was also a 2nd generation from a previous batch of Fuller's ESB.</p>
+
+<p>Dough-in at 161F.</p>
+<p>Strike temp: 161F</p>
+<p>Mash @ 154.5F > 153F > 151.4F > 151F</p>
+<p>Boil volume was 6.8G @ 1.052</p>
+<p>End of boil was 5.75G @ 1.060. Was supposed to be 1.062! >:-(</p>
+"
+}
+

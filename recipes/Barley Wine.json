@@ -1,0 +1,76 @@
+
+{
+	"name":"Barley Wine",
+		"styles":[{
+			"name":"English Barleywine",
+			"category":19,
+			"letter":"B"
+	}
+],
+		"type":"All Grain",
+		"batch_size":18.927059,
+		"total_ppg":565.339308268851,
+		"OG":1.079,
+		"FG":1.024,
+		"ABV":7.26,
+		"ADF":70,
+		"yeast_starter_slurry":150,
+	"yeast_starter_cells":281,
+	"ingredients":{
+		"fermentables":{"total_weight":7.0306815,		"list":[{
+			"amount":6.463691,
+			"pct":91.94,
+			"name":"Maris Otter",
+			"srm":4
+		}
+		,{
+			"amount":0.3401943,
+			"pct":4.84,
+			"name":"Crystal 80L",
+			"srm":80
+		}
+		,{
+			"amount":0.2267962,
+			"pct":3.23,
+			"name":"Crystal 120L",
+			"srm":120
+		}
+		]},
+		"hops":
+	{
+		"total_weight":0.05669904,
+		"mash":[],
+		"first_wort": [],
+	    "boil":[{
+		"amount":0.02834952,
+		"name": "Chinook",
+		"alpha": 11.8,
+		"time":60,
+		"form":"Pellet"
+     },{
+		"amount":0.02834952,
+		"name": "Willamette",
+		"alpha": 4.9,
+		"time":15,
+		"form":"Pellet"
+     }],
+		"aroma":[],
+		"dry_hop":[]
+	}
+,
+		"yeast":
+	[
+	{
+		"lab":"Wyeast",
+		"prod_id":"1056",
+		"name": "American Ale",
+		"temperature_lo":16,
+		"temperature_hi":22,
+		"attenuation": 75
+	}
+]
+
+	},
+"notes": "See full Northern Brewer recipe instructions."
+}
+

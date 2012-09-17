@@ -31,24 +31,28 @@ xmlns:exslt="http://exslt.org/common">
 	<xsl:variable name="totppg" select="sum(exslt:node-set($foo)/ppg)"/>
 	<xsl:variable name="CALC_OG_GU" select="($totppg * EFFICIENCY div (BATCH_SIZE * 0.264172)) div 100"/>
 	<xsl:variable name="CALC_FG_GU" select="$CALC_OG_GU - ((EFFICIENCY div 100) * $CALC_OG_GU)"/>
-<xsl:text>&#09;"name":"</xsl:text><xsl:value-of select="NAME" disable-output-escaping="no"/><xsl:text>",
-</xsl:text>
-<xsl:text>&#09;"styles":</xsl:text><xsl:apply-templates select="STYLES"/><xsl:text>,
-</xsl:text>
-<xsl:text>&#09;"type":"</xsl:text><xsl:value-of select="TYPE"/><xsl:text>",
-</xsl:text>
-<xsl:text>&#09;"batch_size":</xsl:text><xsl:value-of select="BATCH_SIZE"/><xsl:text>,
-</xsl:text>
-<xsl:text>&#09;"total_ppg":</xsl:text><xsl:value-of select="$totppg"/><xsl:text>,
-</xsl:text>
-<xsl:text>&#09;"OG":</xsl:text><xsl:value-of select="format-number($CALC_OG_GU div 1000 + 1,&quot;#.000&quot;)"/><xsl:text>,
-</xsl:text>
-<xsl:text>&#09;"FG":</xsl:text><xsl:value-of select="format-number($CALC_FG_GU div 1000 + 1,&quot;#.000&quot;)"/><xsl:text>,
-</xsl:text>
-<xsl:text>&#09;"ABV":</xsl:text><xsl:value-of select="format-number(($CALC_OG_GU - $CALC_FG_GU) * 131 div 1000,&quot;#.##&quot;)"/><xsl:text>,
-</xsl:text>
-<xsl:text>&#09;"ADF":</xsl:text><xsl:value-of select="format-number((1 - ($CALC_FG_GU div $CALC_OG_GU)) * 100,&quot;#.##&quot;)"/><xsl:text>,
-</xsl:text>
+	<xsl:text>&#09;"name":"</xsl:text>
+	<xsl:call-template name="translateDoubleQuotes">
+		<xsl:with-param name="string" select="NAME"/>
+	</xsl:call-template>
+	<xsl:text>",
+	</xsl:text>
+	<xsl:text>&#09;"styles":</xsl:text><xsl:apply-templates select="STYLES"/><xsl:text>,
+	</xsl:text>
+	<xsl:text>&#09;"type":"</xsl:text><xsl:value-of select="TYPE"/><xsl:text>",
+	</xsl:text>
+	<xsl:text>&#09;"batch_size":</xsl:text><xsl:value-of select="BATCH_SIZE"/><xsl:text>,
+	</xsl:text>
+	<xsl:text>&#09;"total_ppg":</xsl:text><xsl:value-of select="$totppg"/><xsl:text>,
+	</xsl:text>
+	<xsl:text>&#09;"OG":</xsl:text><xsl:value-of select="format-number($CALC_OG_GU div 1000 + 1,&quot;#.000&quot;)"/><xsl:text>,
+	</xsl:text>
+	<xsl:text>&#09;"FG":</xsl:text><xsl:value-of select="format-number($CALC_FG_GU div 1000 + 1,&quot;#.000&quot;)"/><xsl:text>,
+	</xsl:text>
+	<xsl:text>&#09;"ABV":</xsl:text><xsl:value-of select="format-number(($CALC_OG_GU - $CALC_FG_GU) * 131 div 1000,&quot;#.##&quot;)"/><xsl:text>,
+	</xsl:text>
+	<xsl:text>&#09;"ADF":</xsl:text><xsl:value-of select="format-number((1 - ($CALC_FG_GU div $CALC_OG_GU)) * 100,&quot;#.##&quot;)"/><xsl:text>,
+	</xsl:text>
 
 	<!-- From http://www.mrmalty.com/pitching.php:
 		
@@ -150,7 +154,11 @@ xmlns:exslt="http://exslt.org/common">
 
 
 <xsl:template match="NOTES">
-	<xsl:text>"notes": "</xsl:text><xsl:call-template name="translateDoubleQuotes"><xsl:with-param name="string" select="."/></xsl:call-template><xsl:text>"</xsl:text>
+	<xsl:text>"notes": "</xsl:text>
+	<xsl:call-template name="translateDoubleQuotes">
+		<xsl:with-param name="string" select="."/>
+	</xsl:call-template>
+	<xsl:text>"</xsl:text>
 </xsl:template>
 	
 <xsl:template match="STYLES">

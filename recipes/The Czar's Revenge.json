@@ -1,0 +1,93 @@
+
+{
+	"name":"The Czar's Revenge",
+		"styles":[{
+			"name":"Imperial Stout",
+			"category":13,
+			"letter":"F"
+	}
+],
+		"type":"All Grain",
+		"batch_size":18.9271,
+		"total_ppg":638.939114459686,
+		"OG":1.096,
+		"FG":1.024,
+		"ABV":9.42,
+		"ADF":75,
+		"yeast_starter_slurry":181,
+	"yeast_starter_cells":340,
+	"ingredients":{
+		"fermentables":{"total_weight":8.391457000000001,		"list":[{
+			"amount":6.803885,
+			"pct":81.08,
+			"name":"2 Row Base",
+			"srm":3
+		}
+		,{
+			"amount":0.453592,
+			"pct":5.41,
+			"name":"Barley (Roasted)",
+			"srm":500
+		}
+		,{
+			"amount":0.453592,
+			"pct":5.41,
+			"name":"Chocolate",
+			"srm":350
+		}
+		,{
+			"amount":0.453592,
+			"pct":5.41,
+			"name":"Special B",
+			"srm":120
+		}
+		,{
+			"amount":0.226796,
+			"pct":2.7,
+			"name":"CaraMunich",
+			"srm":60
+		}
+		]},
+		"hops":
+	{
+		"total_weight":0.155922,
+		"mash":[],
+		"first_wort": [],
+	    "boil":[{
+		"amount":0.042524,
+		"name": "Magnum",
+		"alpha": 13,
+		"time":60,
+		"form":"Pellet"
+     },{
+		"amount":0.056699,
+		"name": "Goldings (Kent)",
+		"alpha": 5,
+		"time":10,
+		"form":"Pellet"
+     }],
+		"aroma":[{
+		"amount":0.056699,
+		"name": "Goldings (Kent)",
+		"alpha": 5,
+		"form":"Pellet"
+     }],
+		"dry_hop":[]
+	}
+,
+		"yeast":
+	[
+	{
+		"lab":"Wyeast",
+		"prod_id":"1056",
+		"name": "American Ale",
+		"temperature_lo":16,
+		"temperature_hi":22,
+		"attenuation": 75
+	}
+]
+
+	},
+"notes": ""
+}
+
