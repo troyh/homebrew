@@ -37,8 +37,7 @@ xmlns:exslt="http://exslt.org/common">
 	</xsl:call-template>
 	<xsl:text>",
 	</xsl:text>
-	<xsl:text>&#09;"styles":</xsl:text><xsl:apply-templates select="STYLES"/><xsl:text>,
-	</xsl:text>
+	<xsl:apply-templates select="STYLES"/><xsl:if test="count(STYLES)">,</xsl:if>
 	<xsl:text>&#09;"type":"</xsl:text><xsl:value-of select="TYPE"/><xsl:text>",
 	</xsl:text>
 	<xsl:text>&#09;"batch_size":</xsl:text><xsl:value-of select="BATCH_SIZE"/><xsl:text>,
@@ -146,8 +145,8 @@ xmlns:exslt="http://exslt.org/common">
 		"lab":"<xsl:value-of select="LABORATORY"/>",
 		"prod_id":"<xsl:value-of select="PRODUCT_ID"/>",
 		"name": "<xsl:value-of select="NAME"/>",
-		"temperature_lo":<xsl:value-of select="MIN_TEMPERATURE"/>,
-		"temperature_hi":<xsl:value-of select="MAX_TEMPERATURE"/>,
+		"temperature_lo":<xsl:value-of select="number(MIN_TEMPERATURE)"/>,
+		"temperature_hi":<xsl:value-of select="number(MAX_TEMPERATURE)"/>,
 		"attenuation": <xsl:value-of select="ATTENUATION"/>
 	}
 </xsl:template>
@@ -155,14 +154,14 @@ xmlns:exslt="http://exslt.org/common">
 
 <xsl:template match="NOTES">
 	<xsl:text>"notes": "</xsl:text>
-	<xsl:call-template name="translateDoubleQuotes">
+	<xsl:call-template name="jsonString">
 		<xsl:with-param name="string" select="."/>
 	</xsl:call-template>
 	<xsl:text>"</xsl:text>
 </xsl:template>
 	
 <xsl:template match="STYLES">
-	<xsl:text>[</xsl:text><xsl:apply-templates select="STYLE"/><xsl:text>]</xsl:text>
+	<xsl:text>"styles": [</xsl:text><xsl:apply-templates select="STYLE"/><xsl:text>]</xsl:text>
 </xsl:template>
 
 <xsl:template match="STYLE">
@@ -174,6 +173,17 @@ xmlns:exslt="http://exslt.org/common">
 </xsl:text>
 </xsl:template>
 
+<xsl:template name="jsonString">
+	<xsl:param name="string" select="''" />
+	<xsl:call-template name="translateNewlines">
+		<xsl:with-param name="string">
+			<xsl:call-template name="translateDoubleQuotes">
+				<xsl:with-param name="string" select="$string"/>
+			</xsl:call-template>
+		</xsl:with-param>
+	</xsl:call-template>
+</xsl:template>
+	
 <xsl:template name="translateDoubleQuotes">
 	<xsl:param name="string" select="''" />
 
@@ -187,4 +197,18 @@ xmlns:exslt="http://exslt.org/common">
 	</xsl:choose>
 </xsl:template>
 
+<xsl:template name="translateNewlines">
+	<xsl:param name="string" select="''" />
+
+	<xsl:choose>
+		<xsl:when test="contains($string, '&#10;')">
+			<xsl:text /><xsl:value-of select="substring-before($string, '&#10;')" />\n<xsl:call-template name="translateNewlines"><xsl:with-param name="string" select="substring-after($string, '&#10;')" /></xsl:call-template><xsl:text />
+		</xsl:when>
+		<xsl:otherwise>
+			<xsl:text /><xsl:value-of select="$string" /><xsl:text />
+		</xsl:otherwise>
+	</xsl:choose>
+</xsl:template>
+
 </xsl:stylesheet>
+

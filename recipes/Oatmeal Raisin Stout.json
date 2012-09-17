@@ -1,105 +1,115 @@
-
 {
-	"name":"Oatmeal Raisin Stout",
-		"styles":[{
-			"name":"Oatmeal Stout",
-			"category":13,
-			"letter":"C"
-	}
-],
-		"type":"All Grain",
-		"batch_size":18.927059,
-		"total_ppg":414.459412414326,
-		"OG":1.062,
-		"FG":1.016,
-		"ABV":6.11,
-		"ADF":75,
-		"yeast_starter_slurry":118,
-	"yeast_starter_cells":221,
-	"ingredients":{
-		"fermentables":{"total_weight":5.329709000000001,		"list":[{
-			"amount":3.628739,
-			"pct":68.09,
-			"name":"Maris Otter",
-			"srm":4
-		}
-		,{
-			"amount":0.566990,
-			"pct":10.64,
-			"name":"Oats (Flaked)",
-			"srm":3
-		}
-		,{
-			"amount":0.340194,
-			"pct":6.38,
-			"name":"Crystal 80L",
-			"srm":80
-		}
-		,{
-			"amount":0.226796,
-			"pct":4.26,
-			"name":"Barley (Roasted)",
-			"srm":500
-		}
-		,{
-			"amount":0.226796,
-			"pct":4.26,
-			"name":"Chocolate",
-			"srm":350
-		}
-		,{
-			"amount":0.226796,
-			"pct":4.26,
-			"name":"Special B",
-			"srm":140
-		}
-		,{
-			"amount":0.113398,
-			"pct":2.13,
-			"name":"Crystal 40L",
-			"srm":40
-		}
-		]},
-		"hops":
-	{
-		"total_weight":0.052447,
-		"mash":[],
-		"first_wort": [{
-		"amount":0.014175,
-		"name": "Goldings (Kent)",
-		"alpha": 5.8,
-		"form":"Pellet"
-     }],
-	    "boil":[{
-		"amount":0.021262,
-		"name": "Goldings (Kent)",
-		"alpha": 5.8,
-		"time":60,
-		"form":"Pellet"
-     },{
-		"amount":0.017010,
-		"name": "Goldings (Kent)",
-		"alpha": 5.8,
-		"time":30,
-		"form":"Pellet"
-     }],
-		"aroma":[],
-		"dry_hop":[]
-	}
-,
-		"yeast":
-	[
-	{
-		"lab":"Wyeast",
-		"prod_id":"1335",
-		"name": "British Ale II",
-		"temperature_lo":17,
-		"temperature_hi":24,
-		"attenuation": 75
-	}
-]
+  "type": "All Grain",
+  "notes": "Adapted from \"Brewing Better Beer\", p.207.",
+  "FG": 1.016,
+  "styles": [
+    {
+      "name": "Oatmeal Stout",
+      "letter": "C",
+      "category": 13
+    }
+  ],
+  "name": "Oatmeal Raisin Stout",
+  "ABV": 6.11,
+  "total_ppg": 414.459412414326,
+  "ingredients": {
+    "hops": {
+      "first_wort": [
+        {
+          "name": "Goldings (Kent)",
+          "alpha": 5.8,
+          "amount": 0.014175,
+          "form": "Pellet"
+        }
+      ],
+      "dry_hop": [
 
-	},
-"notes": "Adapted from \"Brewing Better Beer\", p.207."
+      ],
+      "mash": [
+
+      ],
+      "total_weight": 0.052447,
+      "boil": [
+        {
+          "name": "Goldings (Kent)",
+          "alpha": 5.8,
+          "time": 60,
+          "amount": 0.021262,
+          "form": "Pellet"
+        },
+        {
+          "name": "Goldings (Kent)",
+          "alpha": 5.8,
+          "time": 30,
+          "amount": 0.01701,
+          "form": "Pellet"
+        }
+      ],
+      "aroma": [
+
+      ]
+    },
+    "fermentables": {
+      "total_weight": 5.329709,
+      "list": [
+        {
+          "srm": 4,
+          "name": "Maris Otter",
+          "pct": 68.09,
+          "amount": 3.628739
+        },
+        {
+          "srm": 3,
+          "name": "Oats (Flaked)",
+          "pct": 10.64,
+          "amount": 0.56699
+        },
+        {
+          "srm": 80,
+          "name": "Crystal 80L",
+          "pct": 6.38,
+          "amount": 0.340194
+        },
+        {
+          "srm": 500,
+          "name": "Barley (Roasted)",
+          "pct": 4.26,
+          "amount": 0.226796
+        },
+        {
+          "srm": 350,
+          "name": "Chocolate",
+          "pct": 4.26,
+          "amount": 0.226796
+        },
+        {
+          "srm": 140,
+          "name": "Special B",
+          "pct": 4.26,
+          "amount": 0.226796
+        },
+        {
+          "srm": 40,
+          "name": "Crystal 40L",
+          "pct": 2.13,
+          "amount": 0.113398
+        }
+      ]
+    },
+    "yeast": [
+      {
+        "attenuation": 75,
+        "lab": "Wyeast",
+        "prod_id": "1335",
+        "name": "British Ale II",
+        "temperature_hi": 24,
+        "temperature_lo": 17
+      }
+    ]
+  },
+  "yeast_starter_cells": 221,
+  "ADF": 75,
+  "OG": 1.062,
+  "batch_size": 18.927059,
+  "yeast_starter_slurry": 118
 }
-

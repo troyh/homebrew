@@ -1,94 +1,105 @@
-
 {
-	"name":"Surly Furious",
-		"styles":[{
-			"name":"Imperial IPA",
-			"category":14,
-			"letter":"C"
-	}
-],
-		"type":"All Grain",
-		"batch_size":18.927099,
-		"total_ppg":436.085553202561,
-		"OG":1.061,
-		"FG":1.018,
-		"ABV":5.6,
-		"ADF":70,
-		"yeast_starter_slurry":116,
-	"yeast_starter_cells":217,
-	"ingredients":{
-		"fermentables":{"total_weight":5.615543,		"list":[{
-			"amount":3.401943,
-			"pct":60.58,
-			"name":"Pale Ale",
-			"srm":3
-		}
-		,{
-			"amount":1.4742,
-			"pct":26.25,
-			"name":"Simpsons Golden Promise",
-			"srm":2
-		}
-		,{
-			"amount":0.3992,
-			"pct":7.11,
-			"name":"Simpsons Medium",
-			"srm":55
-		}
-		,{
-			"amount":0.2858,
-			"pct":5.09,
-			"name":"Aromatic Malt",
-			"srm":26
-		}
-		,{
-			"amount":0.0544,
-			"pct":0.97,
-			"name":"Roasted Barley",
-			"srm":300
-		}
-		]},
-		"hops":
-	{
-		"total_weight":0.1205,
-		"mash":[],
-		"first_wort": [],
-	    "boil":[{
-		"amount":0.0142,
-		"name": "Amarillo Gold",
-		"alpha": 8.5,
-		"time":60,
-		"form":"Pellet"
-     },{
-		"amount":0.0496,
-		"name": "Warrior",
-		"alpha": 15,
-		"time":60,
-		"form":"Pellet"
-     },{
-		"amount":0.0567,
-		"name": "Amarillo Gold",
-		"alpha": 8.5,
-		"time":0,
-		"form":"Pellet"
-     }],
-		"aroma":[],
-		"dry_hop":[]
-	}
-,
-		"yeast":
-	[
-	{
-		"lab":"Wyeast",
-		"prod_id":"1335",
-		"name": "British Ale II",
-		"temperature_lo":63.0,
-		"temperature_hi":75.0,
-		"attenuation": 75
-	}
-]
+  "ingredients": {
+    "fermentables": {
+      "list": [
+        {
+          "pct": 60.58,
+          "amount": 3.401943,
+          "name": "Pale Ale",
+          "srm": 3
+        },
+        {
+          "pct": 26.25,
+          "amount": 1.4742,
+          "name": "Simpsons Golden Promise",
+          "srm": 2
+        },
+        {
+          "pct": 7.11,
+          "amount": 0.3992,
+          "name": "Simpsons Medium",
+          "srm": 55
+        },
+        {
+          "pct": 5.09,
+          "amount": 0.2858,
+          "name": "Aromatic Malt",
+          "srm": 26
+        },
+        {
+          "pct": 0.97,
+          "amount": 0.0544,
+          "name": "Roasted Barley",
+          "srm": 300
+        }
+      ],
+      "total_weight": 5.615543
+    },
+    "hops": {
+      "dry_hop": [
 
-	},
-"notes": "See full Northern Brewer recipe instructions."
+      ],
+      "mash": [
+
+      ],
+      "first_wort": [
+
+      ],
+      "total_weight": 0.1205,
+      "boil": [
+        {
+          "form": "Pellet",
+          "amount": 0.0142,
+          "name": "Amarillo Gold",
+          "alpha": 8.5,
+          "time": 60
+        },
+        {
+          "form": "Pellet",
+          "amount": 0.0496,
+          "name": "Warrior",
+          "alpha": 15,
+          "time": 60
+        },
+        {
+          "form": "Pellet",
+          "amount": 0.0567,
+          "name": "Amarillo Gold",
+          "alpha": 8.5,
+          "time": 0
+        }
+      ],
+      "aroma": [
+
+      ]
+    },
+    "yeast": [
+      {
+        "attenuation": 75,
+        "temperature_hi": 75,
+        "name": "British Ale II",
+        "temperature_lo": 63,
+        "prod_id": "1335",
+        "lab": "Wyeast"
+      }
+    ]
+  },
+  "ABV": 5.6,
+  "OG": 1.061,
+  "type": "All Grain",
+  "name": "Surly Furious",
+  "styles": [
+    {
+      "name": "Imperial IPA",
+      "category": 14,
+      "letter": "C"
+    }
+  ],
+  "ADF": 70,
+  "batch_size": 18.927099,
+  "yeast_starter_slurry": 116,
+  "FG": 1.018,
+  "notes": "See full Northern Brewer recipe instructions.",
+  "yeast_starter_cells": 217,
+  "total_ppg": 436.085553202561
 }
-
