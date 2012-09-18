@@ -1,5 +1,30 @@
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Signika-Light'), url(http://themes.googleusercontent.com/static/fonts/signika/v3/koFYE26bhT88HgRA8f4vbb3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Signika-Semibold'), url(http://themes.googleusercontent.com/static/fonts/signika/v3/FZa_MODmDkR9DTu5jHSnSb3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Signika'), local('Signika-Regular'), url(http://themes.googleusercontent.com/static/fonts/signika/v3/T4xaKLLiHAltM2Q6-RoODgLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Signika-Bold'), url(http://themes.googleusercontent.com/static/fonts/signika/v3/7M5kxD4eGxuhgFaIk95pBb3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+
 body {
-	font-family: Optima, Helvetica;
+	font-family: Signika, Helvetica;
 }
 
 #header {
@@ -263,6 +288,10 @@ tr.hop td:nth-child(5) { /* hop boil minutes */
 
 tr.hop td:nth-child(5):after { /* hop boil minutes */
 /*	content: " min";*/
+}
+
+#miscellaneous {
+	margin:0 0 0 2em;
 }
 
 #yeasts {

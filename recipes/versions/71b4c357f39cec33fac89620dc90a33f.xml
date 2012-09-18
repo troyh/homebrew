@@ -15,4 +15,9 @@
     <date>Wed Sep 12 09:21:28 2012 -0700</date>
     <message>Reduced fermentables to bring OG down</message>
   </version>
+  <version commit="6c1f653" id="6c1f653b61c76c6bd9720b1f9452d82c784b3803">
+    <author email="troy.hakala@gmail.com">Troy Hakala</author>
+    <date>Thu Sep 13 15:07:58 2012 -0700</date>
+    <message>Changed batch size and made a hop an aroma hop</message>
+  </version>
 </versions>

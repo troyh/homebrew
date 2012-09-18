@@ -1,0 +1,105 @@
+{
+  "ABV": 8.81,
+  "ADF": 75,
+  "total_ppg": 597.654142471698,
+  "yeast_starter_cells": 318,
+  "ingredients": {
+    "hops": {
+      "boil": [
+        {
+          "time": 60,
+          "alpha": 10,
+          "name": "Centennial",
+          "amount": 0.085049,
+          "form": "Pellet"
+        },
+        {
+          "time": 5,
+          "alpha": 10,
+          "name": "Centennial",
+          "amount": 0.02835,
+          "form": "Pellet"
+        },
+        {
+          "time": 5,
+          "alpha": 8.5,
+          "name": "Northern Brewer",
+          "amount": 0.02835,
+          "form": "Pellet"
+        }
+      ],
+      "first_wort": [
+
+      ],
+      "aroma": [
+
+      ],
+      "mash": [
+
+      ],
+      "total_weight": 0.141749,
+      "dry_hop": [
+
+      ]
+    },
+    "fermentables": {
+      "list": [
+        {
+          "srm": 3,
+          "name": "Pale Ale",
+          "amount": 6.078137,
+          "pct": 79.29
+        },
+        {
+          "srm": 30,
+          "name": "Carastan (Dark)",
+          "amount": 0.453592,
+          "pct": 5.92
+        },
+        {
+          "srm": 120,
+          "name": "Crystal 120L",
+          "amount": 0.453592,
+          "pct": 5.92
+        },
+        {
+          "srm": 500,
+          "name": "Barley (Roasted)",
+          "amount": 0.340194,
+          "pct": 4.44
+        },
+        {
+          "srm": 50,
+          "name": "Chocolate",
+          "amount": 0.340194,
+          "pct": 4.44
+        }
+      ],
+      "total_weight": 7.665709
+    },
+    "yeast": [
+      {
+        "temperature_hi": 23,
+        "prod_id": "WLP001",
+        "lab": "White Labs",
+        "attenuation": 77,
+        "temperature_lo": 20,
+        "name": "California Ale"
+      }
+    ]
+  },
+  "notes": "http://www.homebrewtalk.com/f12/old-rasputin-clone-recipe-328790/",
+  "OG": 1.09,
+  "batch_size": 18.927059,
+  "type": "All Grain",
+  "styles": [
+    {
+      "letter": "F",
+      "category": 13,
+      "name": "Imperial Stout"
+    }
+  ],
+  "name": "Old Rasputin",
+  "yeast_starter_slurry": 170,
+  "FG": 1.022
+}

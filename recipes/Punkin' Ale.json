@@ -1,0 +1,98 @@
+{
+  "ingredients": {
+    "yeast": [
+      {
+        "temperature_lo": 16,
+        "prod_id": "1056",
+        "lab": "Wyeast",
+        "attenuation": 75,
+        "temperature_hi": 22,
+        "name": "American Ale"
+      }
+    ],
+    "hops": {
+      "aroma": [
+
+      ],
+      "dry_hop": [
+
+      ],
+      "total_weight": 0.05669904,
+      "mash": [
+
+      ],
+      "boil": [
+        {
+          "alpha": 5,
+          "name": "Hallertauer",
+          "form": "Pellet",
+          "amount": 0.02834952,
+          "time": 60
+        },
+        {
+          "alpha": 5,
+          "name": "Hallertauer",
+          "form": "Pellet",
+          "amount": 0.02834952,
+          "time": 5
+        }
+      ],
+      "first_wort": [
+
+      ]
+    },
+    "fermentables": {
+      "total_weight": 7.5409722,
+      "list": [
+        {
+          "pct": 60.15,
+          "srm": 2,
+          "name": "2 Row Base",
+          "amount": 4.535923
+        },
+        {
+          "pct": 6.02,
+          "srm": 60,
+          "name": "Crystal 60L",
+          "amount": 0.4535924
+        },
+        {
+          "pct": 6.02,
+          "srm": 25,
+          "name": "Victory",
+          "amount": 0.4535924
+        },
+        {
+          "pct": 21.8,
+          "srm": 0,
+          "name": "Pumpkin puree",
+          "amount": 1.644272
+        },
+        {
+          "pct": 6.02,
+          "srm": 40,
+          "name": "Sugar - Brown",
+          "amount": 0.4535924
+        }
+      ]
+    }
+  },
+  "OG": 1.067,
+  "type": "All Grain",
+  "notes": "From Reno_eNVy on homebrewtalk.com",
+  "FG": 1.017,
+  "ABV": 6.55,
+  "batch_size": 19.873411,
+  "name": "Punkin' Ale",
+  "yeast_starter_cells": 249,
+  "styles": [
+    {
+      "category": 21,
+      "name": "Spice, Herb, or Vegetable Beer",
+      "letter": "A"
+    }
+  ],
+  "yeast_starter_slurry": 133,
+  "ADF": 75,
+  "total_ppg": 466.899396517242
+}

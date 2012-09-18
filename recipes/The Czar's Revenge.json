@@ -1,0 +1,103 @@
+{
+  "batch_size": 18.9271,
+  "notes": "",
+  "type": "All Grain",
+  "ABV": 9.42,
+  "total_ppg": 638.939114459686,
+  "yeast_starter_slurry": 181,
+  "styles": [
+    {
+      "name": "Imperial Stout",
+      "letter": "F",
+      "category": 13
+    }
+  ],
+  "name": "The Czar's Revenge",
+  "ingredients": {
+    "yeast": [
+      {
+        "temperature_hi": 22,
+        "name": "American Ale",
+        "attenuation": 75,
+        "prod_id": "1056",
+        "temperature_lo": 16,
+        "lab": "Wyeast"
+      }
+    ],
+    "hops": {
+      "mash": [
+
+      ],
+      "dry_hop": [
+
+      ],
+      "total_weight": 0.155922,
+      "first_wort": [
+
+      ],
+      "boil": [
+        {
+          "form": "Pellet",
+          "name": "Magnum",
+          "alpha": 13,
+          "amount": 0.042524,
+          "time": 60
+        },
+        {
+          "form": "Pellet",
+          "name": "Goldings (Kent)",
+          "alpha": 5,
+          "amount": 0.056699,
+          "time": 10
+        }
+      ],
+      "aroma": [
+        {
+          "form": "Pellet",
+          "name": "Goldings (Kent)",
+          "alpha": 5,
+          "amount": 0.056699
+        }
+      ]
+    },
+    "fermentables": {
+      "list": [
+        {
+          "pct": 81.08,
+          "srm": 3,
+          "name": "2 Row Base",
+          "amount": 6.803885
+        },
+        {
+          "pct": 5.41,
+          "srm": 500,
+          "name": "Barley (Roasted)",
+          "amount": 0.453592
+        },
+        {
+          "pct": 5.41,
+          "srm": 350,
+          "name": "Chocolate",
+          "amount": 0.453592
+        },
+        {
+          "pct": 5.41,
+          "srm": 120,
+          "name": "Special B",
+          "amount": 0.453592
+        },
+        {
+          "pct": 2.7,
+          "srm": 60,
+          "name": "CaraMunich",
+          "amount": 0.226796
+        }
+      ],
+      "total_weight": 8.391457
+    }
+  },
+  "ADF": 75,
+  "OG": 1.096,
+  "yeast_starter_cells": 340,
+  "FG": 1.024
+}

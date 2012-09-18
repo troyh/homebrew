@@ -1,0 +1,114 @@
+{
+  "FG": 1.015,
+  "ingredients": {
+    "yeast": [
+      {
+        "temperature_lo": 15,
+        "prod_id": "US-05",
+        "lab": "Fermentis",
+        "attenuation": 78,
+        "temperature_hi": 24,
+        "name": "Safale US-05"
+      }
+    ],
+    "fermentables": {
+      "list": [
+        {
+          "pct": 88.89,
+          "amount": 4.535923,
+          "srm": 2,
+          "name": "2 Row Base"
+        },
+        {
+          "pct": 4.44,
+          "amount": 0.226796,
+          "srm": 50,
+          "name": "Crystal 60L"
+        },
+        {
+          "pct": 4.44,
+          "amount": 0.226796,
+          "srm": 25,
+          "name": "Victory"
+        },
+        {
+          "pct": 2.22,
+          "amount": 0.113398,
+          "srm": 140,
+          "name": "Special B"
+        }
+      ],
+      "total_weight": 5.102913
+    },
+    "hops": {
+      "boil": [
+        {
+          "time": 60,
+          "amount": 0.02835,
+          "form": "Leaf",
+          "alpha": 10.9,
+          "name": "Centennial"
+        },
+        {
+          "time": 15,
+          "amount": 0.014175,
+          "form": "Pellet",
+          "alpha": 9.3,
+          "name": "Amarillo"
+        },
+        {
+          "time": 15,
+          "amount": 0.02835,
+          "form": "Pellet",
+          "alpha": 6.1,
+          "name": "Hallertauer"
+        }
+      ],
+      "first_wort": [
+        {
+          "amount": 0.007087,
+          "form": "Pellet",
+          "alpha": 16,
+          "name": "Warrior"
+        }
+      ],
+      "aroma": [
+        {
+          "amount": 0.02835,
+          "form": "Leaf",
+          "alpha": 5.7,
+          "name": "Cascade"
+        }
+      ],
+      "total_weight": 0.163011,
+      "mash": [
+
+      ],
+      "dry_hop": [
+        {
+          "amount": 0.056699,
+          "form": "Leaf",
+          "alpha": 5.7,
+          "name": "Cascade"
+        }
+      ]
+    }
+  },
+  "ABV": 5.87,
+  "styles": [
+    {
+      "category": 14,
+      "letter": "B",
+      "name": "American IPA"
+    }
+  ],
+  "total_ppg": 398.474438378861,
+  "ADF": 75,
+  "notes": "",
+  "yeast_starter_slurry": 113,
+  "type": "All Grain",
+  "OG": 1.06,
+  "batch_size": 18.927059,
+  "yeast_starter_cells": 212,
+  "name": "Special B IPA"
+}

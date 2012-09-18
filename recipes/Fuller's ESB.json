@@ -1,0 +1,98 @@
+{
+  "yeast_starter_cells": 219,
+  "ABV": 6.06,
+  "OG": 1.062,
+  "total_ppg": 410.865702781546,
+  "notes": "<p><a href=\"http://www.homebrewtalk.com/f12/fullers-esb-clone-229179/\">Homebrewtalk discussion</a></p>\n\n<p>According to http://www.byo.com/component/resource/article/2398-fuller-s-the-pride-of-london, ESB is 5.9% ABV, 35 IBUs, an SRM of 15, an OG of 1.060 and an FG of 1.014.</p>\n\n<p>I put the 1.5oz of dry-hop hops in the Blichmann HopRocket which was put inline between the brew kettle and the chiller to see how that affects the hop aroma.</p>\n\n<p>I pitched a 1.2L starter because I didn't have enough time to cold-crash and decant. Not ideal. The yeast was also a 2nd generation from a previous batch of Fuller's ESB.</p>\n\n<p>Dough-in at 161F.</p>\n<p>Strike temp: 161F</p>\n<p>Mash @ 154.5F > 153F > 151.4F > 151F</p>\n<p>Boil volume was 6.8G @ 1.052</p>\n<p>End of boil was 5.75G @ 1.060. Was supposed to be 1.062! >:-(</p>\n",
+  "type": "All Grain",
+  "ADF": 75,
+  "FG": 1.015,
+  "yeast_starter_slurry": 117,
+  "styles": [
+    {
+      "category": 8,
+      "name": "Extra Special/Strong Bitter (English Pale Ale)",
+      "letter": "C"
+    }
+  ],
+  "ingredients": {
+    "fermentables": {
+      "list": [
+        {
+          "pct": 87.43,
+          "amount": 4.535923,
+          "srm": 4,
+          "name": "Maris Otter"
+        },
+        {
+          "pct": 8.2,
+          "amount": 0.4252428,
+          "srm": 80,
+          "name": "Crystal 80L"
+        },
+        {
+          "pct": 4.37,
+          "amount": 0.2267962,
+          "srm": 60,
+          "name": "Crystal 60L"
+        }
+      ],
+      "total_weight": 5.187962
+    },
+    "yeast": [
+      {
+        "temperature_hi": 22,
+        "lab": "Wyeast",
+        "attenuation": 69,
+        "name": "London ESB Ale",
+        "temperature_lo": 18,
+        "prod_id": "1968"
+      }
+    ],
+    "hops": {
+      "aroma": [
+        {
+          "amount": 0.042524,
+          "form": "Leaf",
+          "alpha": 5.7,
+          "name": "Cascade"
+        }
+      ],
+      "dry_hop": [
+
+      ],
+      "mash": [
+
+      ],
+      "first_wort": [
+
+      ],
+      "total_weight": 0.076543286,
+      "boil": [
+        {
+          "time": 60,
+          "amount": 0.021262,
+          "form": "Pellet",
+          "alpha": 10.7,
+          "name": "Target"
+        },
+        {
+          "time": 15,
+          "amount": 0.009355343,
+          "form": "Pellet",
+          "alpha": 5.8,
+          "name": "Goldings (Kent)"
+        },
+        {
+          "time": 15,
+          "amount": 0.003401943,
+          "form": "Pellet",
+          "alpha": 7.2,
+          "name": "Northdown"
+        }
+      ]
+    }
+  },
+  "batch_size": 18.927059,
+  "name": "Old Fuller's ESB"
+}

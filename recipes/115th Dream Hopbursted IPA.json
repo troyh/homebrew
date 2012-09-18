@@ -1,0 +1,107 @@
+{
+  "yeast_starter_slurry": 238,
+  "ADF": 70,
+  "OG": 1.126,
+  "name": "115th Dream Hopbursted Imperial IPA",
+  "notes": "See full Northern Brewer recipe instructions.",
+  "FG": 1.038,
+  "ingredients": {
+    "hops": {
+      "total_weight": 0.4534,
+      "aroma": [
+
+      ],
+      "boil": [
+        {
+          "amount": 0.0567,
+          "name": "Cluster",
+          "form": "Pellet",
+          "time": 60,
+          "alpha": 7
+        },
+        {
+          "amount": 0.0567,
+          "name": "Cluster",
+          "form": "Pellet",
+          "time": 30,
+          "alpha": 7
+        },
+        {
+          "amount": 0.085,
+          "name": "Hop Burst Hop Blend",
+          "form": "Pellet",
+          "time": 15,
+          "alpha": 8.25
+        },
+        {
+          "amount": 0.085,
+          "name": "Hop Burst Hop Blend",
+          "form": "Pellet",
+          "time": 10,
+          "alpha": 8.25
+        },
+        {
+          "amount": 0.085,
+          "name": "Hop Burst Hop Blend",
+          "form": "Pellet",
+          "time": 5,
+          "alpha": 8.25
+        },
+        {
+          "amount": 0.085,
+          "name": "Hop Burst Hop Blend",
+          "form": "Pellet",
+          "time": 0,
+          "alpha": 8.25
+        }
+      ],
+      "dry_hop": [
+
+      ],
+      "first_wort": [
+
+      ],
+      "mash": [
+
+      ]
+    },
+    "fermentables": {
+      "total_weight": 8.8451,
+      "list": [
+        {
+          "amount": 7.4843,
+          "name": "Rahr 2-Row",
+          "pct": 84.62,
+          "srm": 2
+        },
+        {
+          "amount": 0.4536,
+          "name": "Briess Caramel 60L",
+          "pct": 5.13,
+          "srm": 60
+        },
+        {
+          "amount": 0.9072,
+          "name": "Corn Sugar (Dextrose)",
+          "pct": 10.26,
+          "srm": 0
+        }
+      ]
+    },
+    "yeast": [
+      {
+        "prod_id": "1056",
+        "attenuation": 75,
+        "name": "American Ale",
+        "temperature_hi": 72,
+        "lab": "Wyeast Labs",
+        "temperature_lo": 60
+      }
+    ]
+  },
+  "ABV": 11.52,
+  "yeast_starter_cells": 446,
+  "total_ppg": 897.003880652,
+  "type": "All Grain",
+  "batch_size": 18.9271
+}

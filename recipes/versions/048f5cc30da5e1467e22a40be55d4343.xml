@@ -5,4 +5,9 @@
     <date>Tue Sep 11 13:24:05 2012 -0700</date>
     <message>updated</message>
   </version>
+  <version commit="ad52241" id="ad5224174f0f7c194e62fcbeabaad4e3eac99f3e">
+    <author email="troy.hakala@gmail.com">Troy Hakala</author>
+    <date>Sat Sep 15 15:49:51 2012 -0700</date>
+    <message>Changed to hops and grains that I really used</message>
+  </version>
 </versions>
