@@ -1,0 +1,299 @@
+<?xml version="1.0"?>
+<batches><batch id="002"><name>Jamil&amp;#39;s Evil Twin (R)</name><type>All Grain</type><styles/><yeasts>
+      <yeast><lab>Wyeast Labs</lab><prodid>1056</prodid><name>American Ale</name></yeast>
+    </yeasts><data>
+      <ppg>459.997049468</ppg>
+      <ppg>46.000719072</ppg>
+      <ppg>34.500539304</ppg>
+      <ppg>17.483518448</ppg>
+      <ppg>17.017020856</ppg>
+      <ppg>11.500179768</ppg>
+    </data><results>
+  <mash type="" duration="">
+    <infusion>
+      <strike volume="" temp=""/>
+    </infusion>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+  </mash>
+  <boil volume="" sg="" time="" end_volume=""/>
+  <gravity volume="" og="1.063" fg="1.012"/>
+</results></batch><batch id="003"><name>Breakfast Stout</name><type>All Grain</type><styles/><yeasts>
+    <yeast><lab>Wyeast Labs</lab><prodid>1084</prodid><name>Irish Ale</name></yeast>
+  </yeasts><data>
+    <ppg>184.002876288</ppg>
+    <ppg>69.001078608</ppg>
+    <ppg>23.000359536</ppg>
+    <ppg>46.000719072</ppg>
+  </data><results>
+  <mash type="" duration="">
+    <infusion>
+      <strike volume="" temp=""/>
+    </infusion>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+  </mash>
+  <boil volume="" sg="" time="" end_volume=""/>
+  <gravity volume="" og="1.041" fg="1.014"/>
+</results></batch><batch id="004"><name>115th Dream Hopbursted Imperial IPA</name><type>All Grain</type><styles/><yeasts>
+      <yeast><lab>Wyeast Labs</lab><prodid>1056</prodid><name>American Ale</name></yeast>
+    </yeasts><data>
+      <ppg>759.001723436</ppg>
+      <ppg>46.000719072</ppg>
+      <ppg>92.001438144</ppg>
+    </data><results>
+  <mash type="" duration="">
+    <infusion>
+      <strike volume="" temp=""/>
+    </infusion>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+  </mash>
+  <boil volume="" sg="" time="" end_volume=""/>
+  <gravity volume="" og="1.078" fg="1.006"/>
+</results></batch><batch id="005"><name>Imperial Stout</name><type>All Grain</type><styles/><yeasts>
+    <yeast><lab>Wyeast Labs</lab><prodid>1056</prodid><name>American Ale</name></yeast>
+  </yeasts><data>
+    <ppg>46.000719072</ppg>
+    <ppg>34.500539304</ppg>
+    <ppg>276.004314432</ppg>
+    <ppg>46.000719072</ppg>
+    <ppg>34.500539304</ppg>
+    <ppg>253.003954896</ppg>
+    <ppg>23.000359536</ppg>
+    <ppg>92.001438144</ppg>
+    <ppg>46.000719072</ppg>
+    <ppg>92.001438144</ppg>
+  </data><results>
+  <mash type="" duration="">
+    <infusion>
+      <strike volume="" temp=""/>
+    </infusion>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+  </mash>
+  <boil volume="24.60516" sg="1.065" time="60" end_volume=""/>
+  <gravity volume="18.92705" og="1.074" fg="1.012"/>
+</results></batch><batch id="006"><name>Surly Furious</name><type>All Grain</type><styles>
+  <style><name>Imperial IPA</name></style>
+</styles><yeasts>
+  <yeast><lab>Wyeast</lab><prodid>1335</prodid><name>British Ale II</name></yeast>
+</yeasts><data>
+  <ppg>269.099697770561</ppg>
+  <ppg>110.63172936816</ppg>
+  <ppg>30.76774726784</ppg>
+  <ppg>22.60728460848</ppg>
+  <ppg>2.97909418752</ppg>
+</data><results>
+  <mash type="" duration="">
+    <infusion>
+      <strike volume="" temp=""/>
+    </infusion>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+  </mash>
+  <boil volume="24.60516" sg="1.052" time="60" end_volume="19.87340"/>
+  <gravity volume="19.87340" og="1.064" fg="1.018"/>
+</results></batch><batch id="007"><name>Barley Wine</name><type>All Grain</type><styles>
+  <style><name>English Barleywine</name></style>
+</styles><yeasts>
+  <yeast><lab>Wyeast</lab><prodid>1056</prodid><name>American Ale</name></yeast>
+</yeasts><data>
+  <ppg>524.399354249056</ppg>
+  <ppg>24.8399721018979</ppg>
+  <ppg>16.0999819178968</ppg>
+</data><results>
+  <mash type="" duration="">
+    <infusion>
+      <strike volume="" temp=""/>
+    </infusion>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+  </mash>
+  <boil volume="28.39057" sg="1.060" time="90" end_volume="24.60516"/>
+  <gravity volume="18.92705" og="1.074" fg="1.017"/>
+</results></batch><batch id="008"><name>Fuller's ESB</name><type>All Grain</type><styles>
+  <style><name>Extra Special/Strong Bitter (English Pale Ale)</name></style>
+</styles><yeasts>
+  <yeast><lab>Wyeast</lab><prodid>1968</prodid><name>London ESB Ale</name></yeast>
+</yeasts><data>
+  <ppg>358.799517925649</ppg>
+  <ppg>26.3062158155122</ppg>
+  <ppg>16.5599814012653</ppg>
+</data><results>
+  <mash type="infusion" duration="60">
+    <infusion>
+      <strike volume="21.65256" temp="73.3333"/>
+    </infusion>
+    <measurement temp="67.7778"/>
+    <measurement temp="67.2222"/>
+    <measurement temp="67.2222"/>
+    <measurement temp="66.6667"/>
+  </mash>
+  <boil volume="24.9837" sg="1.047" time="60" end_volume="20.8198"/>
+  <gravity volume="19.87341" og="1.056" fg="1.015"/>
+</results></batch><batch id="009"><name>Punkin' Ale</name><type>All Grain</type><styles>
+  <style><name>Spice, Herb, or Vegetable Beer</name></style>
+</styles><yeasts>
+  <yeast><lab>Wyeast</lab><prodid>1056</prodid><name>American Ale</name></yeast>
+</yeasts><data>
+  <ppg>358.799517925649</ppg>
+  <ppg>33.1199628025306</ppg>
+  <ppg>34.0399617692675</ppg>
+  <ppg>0</ppg>
+  <ppg>40.9399540197947</ppg>
+</data><results>
+  <mash type="infusion" duration="60">
+    <infusion>
+      <strike volume="" temp=""/>
+    </infusion>
+    <measurement temp="65"/>
+    <measurement temp="67.2222"/>
+    <measurement temp="66.6667"/>
+    <measurement temp="66.388889"/>
+  </mash>
+  <boil volume="25.7408" sg="1.060" time="60" end_volume="20.8198"/>
+  <gravity volume="16.088" og="1.074" fg="1.003"/>
+</results></batch><batch id="010"><name>Fooler's C3SB</name><type>All Grain</type><styles>
+  <style><name>Extra Special/Strong Bitter (English Pale Ale)</name></style>
+</styles><yeasts>
+  <yeast><lab>Wyeast</lab><prodid>1318</prodid><name>London Ale III</name></yeast>
+</yeasts><data>
+  <ppg>358.799517925649</ppg>
+  <ppg>26.3062158155122</ppg>
+  <ppg>16.5599814012653</ppg>
+</data><results>
+	<mash type="infusion" duration="60">
+		<infusion>
+			<strike volume="" temp=""/>
+		</infusion>
+		<measurement temp="67.7778"/>
+		<measurement temp="66.1111"/>
+	</mash>
+	<boil volume="24.6052" sg="1.045" time="60" end_volume="19.87341"/>
+	<gravity volume="18.9271" og="1.060" fg="1.005"/>
+</results></batch><batch id="011"><name>Old Fuller's ESB</name><type>All Grain</type><styles>
+  <style><name>Extra Special/Strong Bitter (English Pale Ale)</name></style>
+</styles><yeasts>
+  <yeast><lab>Wyeast</lab><prodid>1968</prodid><name>London ESB Ale</name></yeast>
+</yeasts><data>
+  <ppg>367.999505564768</ppg>
+  <ppg>26.3062158155122</ppg>
+  <ppg>16.5599814012653</ppg>
+</data><results>
+  <mash type="infusion" duration="60">
+    <infusion>
+      <strike volume="" temp="71.6667"/>
+    </infusion>
+    <measurement temp="68.055556"/>
+    <measurement temp="67.2222"/>
+    <measurement temp="66.333333"/>
+    <measurement temp="66.1111"/>
+  </mash>
+  <boil volume="25.7408" sg="1.052" time="60" end_volume="20.8198"/>
+  <gravity volume="19.619766564" og="1.060" fg="1.011"/>
+</results></batch><batch id="012"><name>Special B IPA</name><type>All Grain</type><styles>
+  <style><name>American IPA</name></style>
+</styles><yeasts>
+  <yeast><lab>Fermentis</lab><prodid>US-05</prodid><name>Safale US-05</name></yeast>
+</yeasts><data>
+  <ppg>358.799517925649</ppg>
+  <ppg>15.4099691035664</ppg>
+  <ppg>17.0199658755808</ppg>
+  <ppg>7.244985474064801</ppg>
+</data><results>
+  <mash type="infusion" duration="60">
+    <infusion>
+      <strike volume="17.0344" temp="72.7778"/>
+    </infusion>
+    <measurement temp="66.6667"/>
+    <measurement temp="66.1111"/>
+    <measurement temp="65.5556"/>
+    <measurement temp="65"/>
+  </mash>
+  <efficiencies>
+    <mash/>
+    <brewhouse/>
+  </efficiencies>
+  <boil volume="24.9837" sg="1.050" time="60" end_volume="20.8198"/>
+  <gravity volume="17.98071" og="1.060" fg="1.007"/>
+</results></batch><batch id="013"><name>Oatmeal Raisin Stout</name><type>All Grain</type><styles>
+  <style><name>Oatmeal Stout</name></style>
+</styles><yeasts>
+  <yeast><lab>Wyeast</lab><prodid>1335</prodid><name>British Ale II</name></yeast>
+</yeasts><data>
+  <ppg>294.399653129824</ppg>
+  <ppg>44.849910077544</ppg>
+  <ppg>24.8399501967936</ppg>
+  <ppg>13.5699727926928</ppg>
+  <ppg>14.0299718704112</ppg>
+  <ppg>14.4899709481296</ppg>
+  <ppg>8.279983398931201</ppg>
+</data><results>
+  <mash type="" duration="60">
+    <infusion>
+      <strike volume="17.03434" temp="73"/>
+    </infusion>
+    <measurement temp="67.7778"/>
+    <measurement temp="67.2222"/>
+    <measurement temp="66.388889"/>
+    <measurement temp="65.833333"/>
+  </mash>
+  <boil volume="27.25495" sg="1.052" time="60" end_volume="22.71246"/>
+  <gravity volume="20.81975" og="1.062" fg=""/>
+</results></batch><batch id="014"><name>The Czar's Revenge</name><type>All Grain</type><styles>
+  <style><name>Imperial Stout</name></style>
+</styles><yeasts>
+  <yeast><lab>Wyeast</lab><prodid>1056</prodid><name>American Ale</name></yeast>
+</yeasts><data>
+  <ppg>538.199316439356</ppg>
+  <ppg>27.1399455853856</ppg>
+  <ppg>28.0599437408224</ppg>
+  <ppg>28.9799418962592</ppg>
+  <ppg>16.5599667978624</ppg>
+</data><results>
+  <mash type="" duration="60">
+    <infusion>
+      <strike volume="26.49787" temp="73"/>
+    </infusion>
+    <measurement temp="67.5"/>
+    <measurement temp="67.2222"/>
+    <measurement temp="65.5556"/>
+    <measurement temp="65.5556"/>
+  </mash>
+  <sparge duration="37"/>
+  <boil volume="26.87641" sg="1.073" time="90" end_volume="20.81975"/>
+  <gravity volume="18.45387" og="1.096" fg=""/>
+</results></batch><batch id="015"><name>American Pale Ale with Caramel</name><type>All Grain</type><styles>
+  <style><name>American Pale Ale</name></style>
+</styles><yeasts>
+  <yeast><lab>Fermentis</lab><prodid>US-05</prodid><name>Safale US-05</name></yeast>
+</yeasts><data>
+  <ppg>331.889571879122</ppg>
+  <ppg>24.8399501967936</ppg>
+  <ppg>24.8399501967936</ppg>
+</data><results>
+  <mash type="" duration="60">
+    <infusion>
+      <strike volume="15.14164" temp="70"/>
+    </infusion>
+    <measurement temp="65"/>
+    <measurement temp="65"/>
+    <measurement temp="63.055556"/>
+  </mash>
+  <sparge duration="27"/>
+  <boil volume="27.44422" sg="1.048" time="60" end_volume="23.09100"/>
+  <gravity volume="25.74078" og="1.052" fg=""/>
+</results></batch></batches>

@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<batch id="013"><recipe><beerxml recipefile="Oatmeal Raisin Stout.xml" commit_sha="0d2c2cfc439383a7aa7592cdb2310d1fdf7ab407"><RECIPE>
+<VERSION>1</VERSION>
+<NAME>Oatmeal Raisin Stout</NAME>
+<TYPE>All Grain</TYPE>
+<BREWER>BrewPal</BREWER>
+<BATCH_SIZE>18.927059</BATCH_SIZE>
+<BOIL_SIZE>26.497881</BOIL_SIZE>
+<BOIL_TIME>90</BOIL_TIME>
+<EFFICIENCY>75</EFFICIENCY>
+<OG>0.000000</OG>
+<FG>0.000000</FG>
+<FERMENTATION_STAGES>1</FERMENTATION_STAGES>
+<PRIMARY_AGE>14</PRIMARY_AGE>
+<PRIMARY_TEMP>21.000000</PRIMARY_TEMP>
+<SECONDARY_AGE>0</SECONDARY_AGE>
+<SECONDARY_TEMP>21.000000</SECONDARY_TEMP>
+<CARBONATION>2.200000</CARBONATION>
+<FORCED_CARBONATION>0</FORCED_CARBONATION>
+<CARBONATION_TEMP>21.111111</CARBONATION_TEMP>
+<PRIMING_SUGAR_NAME>Corn Sugar</PRIMING_SUGAR_NAME>
+<PRIMING_SUGAR_EQUIV>1.000000</PRIMING_SUGAR_EQUIV>
+<NOTES>Adapted from "Brewing Better Beer", p.207.</NOTES>
+<FERMENTABLES>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <NAME>Maris Otter</NAME>
+    <AMOUNT>3.628739</AMOUNT>
+    <TYPE>Grain</TYPE>
+    <YIELD>80</YIELD>
+    <COLOR>4</COLOR>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>3.000000</COLOR>
+    <AMOUNT>0.566990</AMOUNT>
+    <NAME>Oats (Flaked)</NAME>
+    <YIELD>78.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <NAME>Crystal 80L</NAME>
+    <AMOUNT>0.340194</AMOUNT>
+    <TYPE>Grain</TYPE>
+    <YIELD>72.000000</YIELD>
+    <COLOR>80.000000</COLOR>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <NAME>Barley (Roasted)</NAME>
+    <AMOUNT>0.226796</AMOUNT>
+    <TYPE>Grain</TYPE>
+    <YIELD>59.000000</YIELD>
+    <COLOR>500.000000</COLOR>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <NAME>Chocolate</NAME>
+    <AMOUNT>0.226796</AMOUNT>
+    <TYPE>Grain</TYPE>
+    <YIELD>61.000000</YIELD>
+    <COLOR>350.000000</COLOR>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Grain</TYPE>
+    <AMOUNT>0.226796</AMOUNT>
+    <COLOR>140.000000</COLOR>
+    <YIELD>63.000000</YIELD>
+    <NAME>Special B</NAME>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Grain</TYPE>
+    <AMOUNT>0.113398</AMOUNT>
+    <COLOR>40</COLOR>
+    <YIELD>72</YIELD>
+    <NAME>Crystal 40L</NAME>
+  </FERMENTABLE>
+</FERMENTABLES>
+<HOPS>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>0</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Fuggle, Progress, First Gold</SUBSTITUTES>
+    <ALPHA>5.800000</ALPHA>
+    <NAME>Goldings (Kent)</NAME>
+    <AMOUNT>0.014175</AMOUNT>
+    <USE>First Wort</USE>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>60</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Fuggle, Progress, First Gold</SUBSTITUTES>
+    <ALPHA>5.800000</ALPHA>
+    <NAME>Goldings (Kent)</NAME>
+    <AMOUNT>0.021262</AMOUNT>
+    <USE>Boil</USE>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>30</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Fuggle, Progress, First Gold</SUBSTITUTES>
+    <ALPHA>5.800000</ALPHA>
+    <NAME>Goldings (Kent)</NAME>
+    <AMOUNT>0.017010</AMOUNT>
+    <USE>Boil</USE>
+  </HOP>
+</HOPS>
+<YEASTS>
+  <YEAST>
+    <VERSION>1</VERSION>
+    <ATTENUATION>75</ATTENUATION>
+    <LABORATORY>Wyeast</LABORATORY>
+    <FORM>Liquid</FORM>
+    <MIN_TEMPERATURE>17</MIN_TEMPERATURE>
+    <PRODUCT_ID>1335</PRODUCT_ID>
+    <NAME>British Ale II</NAME>
+    <AMOUNT_IS_WEIGHT>FALSE</AMOUNT_IS_WEIGHT>
+    <AMOUNT>0.125000</AMOUNT>
+    <TYPE>Ale</TYPE>
+    <MAX_TEMPERATURE>24</MAX_TEMPERATURE>
+  </YEAST>
+</YEASTS>
+<MISCS>
+  <MISC>
+    <VERSION>1</VERSION>
+    <TYPE>Other</TYPE>
+    <AMOUNT>0.007000</AMOUNT>
+    <TIME>15.000000</TIME>
+    <USE>Boil</USE>
+    <NAME>Yeast nutrient</NAME>
+  </MISC>
+  <MISC>
+    <VERSION>1</VERSION>
+    <TYPE>Fining</TYPE>
+    <AMOUNT>0.007087</AMOUNT>
+    <TIME>15.000000</TIME>
+    <USE>Boil</USE>
+    <NAME>Whirlfloc</NAME>
+  </MISC>
+</MISCS>
+<MASH>
+<VERSION>1</VERSION>
+<NAME>Batch/Fly</NAME>
+<GRAIN_TEMP>21.111111</GRAIN_TEMP>
+<MASH_THICKNESS>3.129527</MASH_THICKNESS>
+<SPARGE_TEMP>76.666664</SPARGE_TEMP>
+<MASH_STEPS>
+  <MASH_STEP>
+    <VERSION>1</VERSION>
+    <NAME>Strike</NAME>
+    <TYPE>Infusion</TYPE>
+    <STEP_TIME>60</STEP_TIME>
+    <INFUSE_AMOUNT>11.35624</INFUSE_AMOUNT>
+    <STEP_TEMP>67.77778</STEP_TEMP>
+  </MASH_STEP>
+</MASH_STEPS>
+</MASH>
+<WATERS>
+</WATERS>
+<EQUIPMENT>
+    <VERSION>1</VERSION>
+    <BOIL_SIZE>26.49788</BOIL_SIZE>
+    <BOIL_TIME>90</BOIL_TIME>
+    <BATCH_SIZE>19.87341</BATCH_SIZE>
+    <TOP_UP_KETTLE>1.907349e-06</TOP_UP_KETTLE>
+    <TOP_UP_WATER>-1.240439</TOP_UP_WATER>
+    <EVAP_RATE>17</EVAP_RATE>
+    <TRUB_CHILLER_LOSS>0.946353</TRUB_CHILLER_LOSS>
+</EQUIPMENT>
+<STYLES>
+  <STYLE>
+    <VERSION>1</VERSION>
+    <COLOR_MIN>22.0</COLOR_MIN>
+    <COLOR_MAX>40.0</COLOR_MAX>
+    <STYLE_LETTER>C</STYLE_LETTER>
+    <ABV_MIN>4.2</ABV_MIN>
+    <NAME>Oatmeal Stout</NAME>
+    <IS_SELECTED>1.000000</IS_SELECTED>
+    <TYPE>beer</TYPE>
+    <FG_MIN>1.010</FG_MIN>
+    <OG_MIN>1.048</OG_MIN>
+    <IBU_MAX>40</IBU_MAX>
+    <EXAMPLES>Samuel Smith Oatmeal Stout, Young's Oatmeal Stout, McAuslan Oatmeal Stout, Maclay's Oat Malt Stout, Broughton Kinmount Willie Oatmeal Stout, Anderson Valley Barney Flats Oatmeal Stout, Tröegs Oatmeal Stout, New Holland The Poet, Goose Island Oatmeal Stout, Wolaver's Oatmeal Stout</EXAMPLES>
+    <MATCH_QUALITY>Very good match</MATCH_QUALITY>
+    <STYLE_GUIDE>BJCP</STYLE_GUIDE>
+    <INGREDIENTS>Pale, caramel and dark roasted malts and grains.</INGREDIENTS>
+    <FG_MAX>1.018</FG_MAX>
+    <OG_MAX>1.065</OG_MAX>
+    <ABV_MAX>5.9</ABV_MAX>
+    <PROFILE>Aroma:
+Mild roasted grain aromas, often with a coffee-like character.  A light sweetness can imply a coffee-and-cream impression.  Fruitiness should be low to medium. Diacetyl medium-low to none.  Hop aroma low to none (UK varieties most common).  A light oatmeal aroma is optional.
+Appearance:
+Medium brown to black in color.  Thick, creamy, persistent tan- to brown-colored head.  Can be opaque (if not, it should be clear).
+Flavor:
+Medium sweet to medium dry palate, with the complexity of oats and dark roasted grains present.  Oats can add a nutty, grainy or earthy flavor.  Dark grains can combine with malt sweetness to give the impression of milk chocolate or coffee with cream.  Medium hop bitterness with the balance toward malt.  Diacetyl medium-low to none.  Hop flavor medium-low to none.
+Mouthfeel:
+Medium-full to full body, smooth, silky, sometimes an almost oily slickness from the oatmeal.  Creamy. Medium to medium-high carbonation.
+Impression:
+A very dark, full-bodied, roasty, malty ale with a complementary oatmeal flavor.</PROFILE>
+    <CARB_MIN>2.0</CARB_MIN>
+    <CATEGORY>Stout</CATEGORY>
+    <IBU_MIN>25</IBU_MIN>
+    <CARB_MAX>2.4</CARB_MAX>
+    <CATEGORY_NUMBER>13</CATEGORY_NUMBER>
+    <NOTES>History:
+An English seasonal variant of sweet stout that is usually less sweet than the original, and relies on oatmeal for body and complexity rather than lactose for body and sweetness.
+Comments:
+Generally between sweet and dry stouts in sweetness.  Variations exist, from fairly sweet to quite dry.  The level of bitterness also varies, as does the oatmeal impression.  Light use of oatmeal may give a certain silkiness of body and richness of flavor, while heavy use of oatmeal can be fairly intense in flavor with an almost oily mouthfeel.  When judging, allow for differences in interpretation.</NOTES>
+  </STYLE>
+</STYLES>
+</RECIPE></beerxml><data>
+  <ppg>294.399653129824</ppg>
+  <ppg>44.849910077544</ppg>
+  <ppg>24.8399501967936</ppg>
+  <ppg>13.5699727926928</ppg>
+  <ppg>14.0299718704112</ppg>
+  <ppg>14.4899709481296</ppg>
+  <ppg>8.279983398931201</ppg>
+</data></recipe><results>
+  <mash type="" duration="60">
+    <infusion>
+      <strike volume="17.03434" temp="73"/>
+    </infusion>
+    <measurement temp="67.7778"/>
+    <measurement temp="67.2222"/>
+    <measurement temp="66.388889"/>
+    <measurement temp="65.833333"/>
+  </mash>
+  <boil volume="27.25495" sg="1.052" time="60" end_volume="22.71246"/>
+  <gravity volume="20.81975" og="1.062" fg=""/>
+</results><log><tumblr version="1.0"><tumblelog name="geekbrewing" timezone="US/Pacific" title="Brew Log"/><posts start="0" total="6"><post id="31107889890" url="http://geekbrewing.tumblr.com/post/31107889890" url-with-slug="http://geekbrewing.tumblr.com/post/31107889890/changed-the-airlock-again" type="regular" date-gmt="2012-09-08 05:39:06 GMT" date="Fri, 07 Sep 2012 22:39:06" unix-timestamp="1347082746" format="html" reblog-key="nUuBoPYF" slug="changed-the-airlock-again"><regular-body>&lt;p&gt;Changed the airlock again!&lt;/p&gt;</regular-body><tag>013</tag></post><post id="30921811943" url="http://geekbrewing.tumblr.com/post/30921811943" url-with-slug="http://geekbrewing.tumblr.com/post/30921811943/needed-a-blow-off-tube-gotta-clean-up-a-mess-on" type="photo" date-gmt="2012-09-05 06:11:33 GMT" date="Tue, 04 Sep 2012 23:11:33" unix-timestamp="1346825493" format="html" reblog-key="QwYiNUNk" slug="needed-a-blow-off-tube-gotta-clean-up-a-mess-on" width="720" height="960"><photo-caption>&lt;p&gt;Needed a blow-off tube! Gotta clean up a mess on the floor.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://24.media.tumblr.com/tumblr_m9v579E3JM1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://25.media.tumblr.com/tumblr_m9v579E3JM1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_m9v579E3JM1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://25.media.tumblr.com/tumblr_m9v579E3JM1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://25.media.tumblr.com/tumblr_m9v579E3JM1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://25.media.tumblr.com/tumblr_m9v579E3JM1qcxyego1_75sq.jpg</photo-url><tag>013</tag></post><post id="30866125125" url="http://geekbrewing.tumblr.com/post/30866125125" url-with-slug="http://geekbrewing.tumblr.com/post/30866125125/12-hours-after-pitching-good-airlock-activity-and" type="photo" date-gmt="2012-09-04 12:31:30 GMT" date="Tue, 04 Sep 2012 05:31:30" unix-timestamp="1346761890" format="html" reblog-key="0WpO8qpo" slug="12-hours-after-pitching-good-airlock-activity-and" width="720" height="960"><photo-caption>&lt;p&gt;12 hours after pitching, good airlock activity and thick krausen.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_m9ts4ixnwq1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://25.media.tumblr.com/tumblr_m9ts4ixnwq1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_m9ts4ixnwq1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://25.media.tumblr.com/tumblr_m9ts4ixnwq1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://24.media.tumblr.com/tumblr_m9ts4ixnwq1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://24.media.tumblr.com/tumblr_m9ts4ixnwq1qcxyego1_75sq.jpg</photo-url><tag>013</tag></post><post id="30851163646" url="http://geekbrewing.tumblr.com/post/30851163646" url-with-slug="http://geekbrewing.tumblr.com/post/30851163646/mash-temperatures-154-153-151-5-150-5" type="regular" date-gmt="2012-09-04 05:52:00 GMT" date="Mon, 03 Sep 2012 22:52:00" unix-timestamp="1346737920" format="html" reblog-key="qjThnDxU" slug="mash-temperatures-154-153-151-5-150-5"><regular-body>&lt;p&gt;Mash temperatures: 154º &amp;gt; 153º &amp;gt; 151.5º &amp;gt; 150.5º&lt;/p&gt;
+&lt;p&gt;I added the dark grains (Roasted Barley, Chocolate and Special B) at vorlauf rather than mash them for an hour, per Gordon Strong&amp;#8217;s suggestion. I sparged for 50 minutes with 169º water and collected 7.2 gallons at 1.052. &lt;/p&gt;
+&lt;p&gt;The first wort hops went in while heating to a boil because I wanted to use a hop bag rather than just throw the into the kettle and have to filter them out. The temperature was 176º when they went in.&lt;/p&gt;
+&lt;p&gt;Pitched yeast and aerated. Forgot yeast nutrient and whirlfloc in the boil so going without this batch.&lt;/p&gt;
+&lt;p&gt;SV=4.5 ST=164 BV=7.2 BG=1.052 BT=60 EV=6 FV=5.5 OG=1.062 &lt;/p&gt;</regular-body><tag>013</tag></post><post id="30782624286" url="http://geekbrewing.tumblr.com/post/30782624286" url-with-slug="http://geekbrewing.tumblr.com/post/30782624286/cold-crashing-starter-for-brew-day-tomorrow" type="photo" date-gmt="2012-09-03 05:41:29 GMT" date="Sun, 02 Sep 2012 22:41:29" unix-timestamp="1346650889" format="html" reblog-key="Oky5worM" slug="cold-crashing-starter-for-brew-day-tomorrow" width="720" height="960"><photo-caption>&lt;p&gt;Cold-crashing starter for brew day tomorrow.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_m9reh5mdrT1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://24.media.tumblr.com/tumblr_m9reh5mdrT1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_m9reh5mdrT1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://25.media.tumblr.com/tumblr_m9reh5mdrT1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://24.media.tumblr.com/tumblr_m9reh5mdrT1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://25.media.tumblr.com/tumblr_m9reh5mdrT1qcxyego1_75sq.jpg</photo-url><tag>013</tag></post><post id="30690006451" url="http://geekbrewing.tumblr.com/post/30690006451" url-with-slug="http://geekbrewing.tumblr.com/post/30690006451/made-1-5l-starter-and-put-on-stir-plate-yeast-was" type="photo" date-gmt="2012-09-02 00:34:32 GMT" date="Sat, 01 Sep 2012 17:34:32" unix-timestamp="1346546072" format="html" reblog-key="FL7yqp0Z" slug="made-1-5l-starter-and-put-on-stir-plate-yeast-was" width="720" height="960"><photo-caption>&lt;p&gt;Made 1.5L starter and put on stir plate. Yeast was from batch 006. I pitched a lot of yeast slurry and it&amp;#8217;s over 2&amp;#160;L.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_m9p5lkkovw1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://24.media.tumblr.com/tumblr_m9p5lkkovw1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_m9p5lkkovw1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://24.media.tumblr.com/tumblr_m9p5lkkovw1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://25.media.tumblr.com/tumblr_m9p5lkkovw1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://25.media.tumblr.com/tumblr_m9p5lkkovw1qcxyego1_75sq.jpg</photo-url><tag>013</tag></post></posts></tumblr></log></batch>

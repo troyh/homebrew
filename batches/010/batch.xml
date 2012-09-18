@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<batch id="010"><recipe><beerxml recipefile="Fuller's ESB.xml" commit_sha="cffcbbfa4563e86af9f6b5d2daa08f2fb4066f0a"><RECIPE>
+<VERSION>1</VERSION>
+<NAME>Fooler's C3SB</NAME>
+<TYPE>All Grain</TYPE>
+<BREWER>BrewPal</BREWER>
+<BATCH_SIZE>18.927059</BATCH_SIZE>
+<BOIL_SIZE>23.251892</BOIL_SIZE>
+<BOIL_TIME>60</BOIL_TIME>
+<EFFICIENCY>75</EFFICIENCY>
+<OG>1.060</OG>
+<FG>1.015</FG>
+<FERMENTATION_STAGES>1</FERMENTATION_STAGES>
+<PRIMARY_AGE>14</PRIMARY_AGE>
+<PRIMARY_TEMP>21.000000</PRIMARY_TEMP>
+<SECONDARY_AGE>0</SECONDARY_AGE>
+<SECONDARY_TEMP>21.000000</SECONDARY_TEMP>
+<CARBONATION>1.900000</CARBONATION>
+<FORCED_CARBONATION>1</FORCED_CARBONATION>
+<CARBONATION_TEMP>21.111111</CARBONATION_TEMP>
+<PRIMING_SUGAR_NAME>(null)</PRIMING_SUGAR_NAME>
+<PRIMING_SUGAR_EQUIV>0.000000</PRIMING_SUGAR_EQUIV>
+<NOTES>http://www.homebrewtalk.com/f12/fullers-esb-clone-229179/
+
+According to http://www.byo.com/component/resource/article/2398-fuller-s-the-pride-of-london, ESB is 5.9% ABV, 35 IBUs, an SRM of 15, an OG of 1.060 and an FG of 1.014.</NOTES>
+<FERMENTABLES>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>3</COLOR>
+    <AMOUNT>4.535923</AMOUNT>
+    <NAME>Optic</NAME>
+    <YIELD>78</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <NAME>Crystal 80L</NAME>
+    <AMOUNT>0.4252428</AMOUNT>
+    <TYPE>Grain</TYPE>
+    <YIELD>61</YIELD>
+    <COLOR>80</COLOR>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Grain</TYPE>
+    <AMOUNT>0.2267962</AMOUNT>
+    <COLOR>60</COLOR>
+    <YIELD>72</YIELD>
+    <NAME>Crystal 60L</NAME>
+  </FERMENTABLE>
+</FERMENTABLES>
+<HOPS>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>60</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Perle, Admiral</SUBSTITUTES>
+    <ALPHA>5.3</ALPHA>
+    <NAME>Challenger</NAME>
+    <AMOUNT>0.01417476</AMOUNT>
+    <USE>Boil</USE>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Boil</USE>
+    <ALPHA>10.7</ALPHA>
+    <SUBSTITUTES>Nugget, Fuggle, WIllamette, Admiral</SUBSTITUTES>
+    <FORM>Pellet</FORM>
+    <NAME>Target</NAME>
+    <AMOUNT>0.01417476</AMOUNT>
+    <TIME>60</TIME>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Boil</USE>
+    <ALPHA>5.8</ALPHA>
+    <SUBSTITUTES>Fuggle, Progress, First Gold</SUBSTITUTES>
+    <FORM>Pellet</FORM>
+    <NAME>Goldings (Kent)</NAME>
+    <AMOUNT>0.009355343</AMOUNT>
+    <TIME>15</TIME>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Boil</USE>
+    <FORM>Pellet</FORM>
+    <ALPHA>7.2</ALPHA>
+    <NAME>Northdown</NAME>
+    <AMOUNT>0.003401943</AMOUNT>
+    <TIME>15</TIME>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Dry Hop</USE>
+    <ALPHA>8</ALPHA>
+    <SUBSTITUTES>Amarillo, Centennial, Summit</SUBSTITUTES>
+    <FORM>Leaf</FORM>
+    <NAME>Cascade</NAME>
+    <AMOUNT>0.007087381</AMOUNT>
+    <TIME>10080</TIME>
+  </HOP>
+</HOPS>
+<YEASTS>
+  <YEAST>
+    <VERSION>1</VERSION>
+    <AMOUNT>0.125</AMOUNT>
+    <LABORATORY>Wyeast</LABORATORY>
+    <FORM>Liquid</FORM>
+    <MIN_TEMPERATURE>18</MIN_TEMPERATURE>
+    <PRODUCT_ID>1318</PRODUCT_ID>
+    <NAME>London Ale III</NAME>
+    <AMOUNT_IS_WEIGHT>FALSE</AMOUNT_IS_WEIGHT>
+    <TYPE>Ale</TYPE>
+    <MAX_TEMPERATURE>23</MAX_TEMPERATURE>
+    <ATTENUATION>73</ATTENUATION>
+  </YEAST>
+</YEASTS>
+<MISCS>
+  <MISC>
+    <VERSION>1</VERSION>
+    <TYPE>Other</TYPE>
+    <AMOUNT>0.02834952</AMOUNT>
+    <TIME>15</TIME>
+    <USE>Boil</USE>
+    <NAME>Yeast nutrient</NAME>
+  </MISC>
+  <MISC>
+    <VERSION>1</VERSION>
+    <TYPE>Fining</TYPE>
+    <AMOUNT>0.02834952</AMOUNT>
+    <TIME>15</TIME>
+    <USE>Boil</USE>
+    <NAME>Irish moss</NAME>
+  </MISC>
+</MISCS>
+<MASH>
+<VERSION>1</VERSION>
+<NAME>Batch/Fly</NAME>
+<GRAIN_TEMP>21.111111</GRAIN_TEMP>
+<MASH_THICKNESS>4.172702</MASH_THICKNESS>
+<SPARGE_TEMP>76.666664</SPARGE_TEMP>
+<MASH_STEPS>
+  <MASH_STEP>
+    <VERSION>1</VERSION>
+    <INFUSE_AMOUNT>11.35624</INFUSE_AMOUNT>
+    <STEP_TEMP>67.22222</STEP_TEMP>
+    <STEP_TIME>60</STEP_TIME>
+    <TYPE>Infusion</TYPE>
+    <NAME>Strike</NAME>
+  </MASH_STEP>
+</MASH_STEPS>
+</MASH>
+<WATERS>
+</WATERS>
+<EQUIPMENT>
+    <VERSION>1</VERSION>
+    <BOIL_SIZE>23.25189</BOIL_SIZE>
+    <BOIL_TIME>60</BOIL_TIME>
+    <BATCH_SIZE>18.92706</BATCH_SIZE>
+    <TOP_UP_KETTLE>1.907349e-06</TOP_UP_KETTLE>
+    <TOP_UP_WATER>0</TOP_UP_WATER>
+    <EVAP_RATE>17</EVAP_RATE>
+    <TRUB_CHILLER_LOSS>0.946353</TRUB_CHILLER_LOSS>
+</EQUIPMENT>
+<STYLES>
+  <STYLE>
+    <VERSION>1</VERSION>
+    <COLOR_MIN>6.0</COLOR_MIN>
+    <COLOR_MAX>18.0</COLOR_MAX>
+    <STYLE_LETTER>C</STYLE_LETTER>
+    <ABV_MIN>4.6</ABV_MIN>
+    <NAME>Extra Special/Strong Bitter (English Pale Ale)</NAME>
+    <IS_SELECTED>1</IS_SELECTED>
+    <TYPE>beer</TYPE>
+    <FG_MIN>1.010</FG_MIN>
+    <OG_MIN>1.048</OG_MIN>
+    <EXAMPLES>Examples: Fullers ESB, Adnams Broadside, Shepherd Neame Bishop's Finger, Young's Ram Rod, Samuel Smith's Old Brewery Pale Ale, Bass Ale, Whitbread Pale Ale, Shepherd Neame Spitfire, Marston's Pedigree, Black Sheep Ale, Vintage Henley, Mordue Workie Ticket, Morland Old Speckled Hen, Greene King Abbot Ale, Bateman's  XXXB, Gale's Hordean Special Bitter (HSB), Ushers 1824 Particular Ale, Hopback Summer Lightning, Great Lakes Moondog Ale, Shipyard Old Thumper, Alaskan ESB, Geary's Pale Ale, Cooperstown Old Slugger, Anderson Valley Boont ESB, Avery 14'er ESB, Redhook ESB</EXAMPLES>
+    <IBU_MAX>50</IBU_MAX>
+    <MATCH_QUALITY>Very good match</MATCH_QUALITY>
+    <STYLE_GUIDE>BJCP</STYLE_GUIDE>
+    <INGREDIENTS>Pale ale, amber, and/or crystal malts, may use a touch of black malt for color adjustment.  May use sugar adjuncts, corn or wheat.  English hops most typical, although American and European varieties are becoming more common (particularly in the paler examples).  Characterful English yeast.  "Burton" versions use medium to high sulfate water.</INGREDIENTS>
+    <FG_MAX>1.016</FG_MAX>
+    <ABV_MAX>6.2</ABV_MAX>
+    <PROFILE>Aroma:
+Hop aroma moderately-high to moderately-low, and can use any variety of hops although UK hops are most traditional.  Medium to medium-high malt aroma, often with a low to moderately strong caramel component (although this character will be more subtle in paler versions). Medium-low to medium-high fruity esters.  Generally no diacetyl, although very low levels are allowed.   May have light, secondary notes of sulfur and/or alcohol in some examples (optional).
+Appearance:
+Golden to deep copper.  Good to brilliant clarity.  Low to moderate white to off-white head.  A low head is acceptable when carbonation is also low.
+Flavor:
+Medium-high to medium bitterness with supporting malt flavors evident.  Normally has a moderately low to somewhat strong caramelly malt sweetness.  Hop flavor moderate to moderately high (any variety, although earthy, resiny, and/or floral UK hops are most traditional).  Hop bitterness and flavor should be noticeable, but should not totally dominate malt flavors.  May have low levels of secondary malt flavors (e.g., nutty, biscuity) adding complexity.  Moderately-low to high fruity esters.  Optionally may have low amounts of alcohol, and up to a moderate minerally/sulfury flavor.  Medium-dry to dry finish (particularly if sulfate water is used).  Generally no diacetyl, although very low levels are allowed.
+Mouthfeel:
+Medium-light to medium-full body.  Low to moderate carbonation, although bottled commercial versions will be higher.  Stronger versions may have a slight alcohol warmth but this character should not be too high.
+Impression:
+An average-strength to moderately-strong English ale. The balance may be fairly even between malt and hops to somewhat bitter.  Drinkability is a critical component of the style; emphasis is still on the bittering hop addition as opposed to the aggressive middle and late hopping seen in American ales.  A rather broad style that allows for considerable interpretation by the brewer.</PROFILE>
+    <OG_MAX>1.060</OG_MAX>
+    <CARB_MIN>1.5</CARB_MIN>
+    <CATEGORY>English Pale Ale</CATEGORY>
+    <IBU_MIN>30</IBU_MIN>
+    <CARB_MAX>2.3</CARB_MAX>
+    <CATEGORY_NUMBER>8</CATEGORY_NUMBER>
+    <NOTES>History:
+Strong bitters can be seen as a higher-gravity version of best bitters (although not necessarily "more premium" since best bitters are traditionally the brewer's finest product).  Since beer is sold by strength in the UK, these beers often have some alcohol flavor (perhaps to let the consumer know they are getting their due).  In England today, "ESB" is a brand unique to Fullers; in America, the name has been co-opted to describe a malty, bitter, reddish, standard-strength (for the US) English-type ale.  Hopping can be English or a combination of English and American.
+Comments:
+More evident malt and hop flavors than in a special or best bitter.  Stronger versions may overlap somewhat with old ales, although strong bitters will tend to be paler and more bitter.  Fuller's ESB is a unique beer with a very large, complex malt profile not found in other examples; most strong bitters are fruitier and hoppier. Judges should not judge all beers in this style as if they were Fuller's ESB clones.  Some modern English variants are brewed exclusively with pale malt and are known as golden or summer bitters. Most bottled or kegged versions of UK-produced bitters are higher-alcohol versions of their cask (draught) products produced specifically for export.  The IBU levels are often not adjusted, so the versions available in the US often do not directly correspond to their style subcategories in Britain.  English pale ales are generally considered a premium, export-strength pale, bitter beer that roughly approximates a strong bitter, although reformulated for bottling (including containing higher carbonation).</NOTES>
+  </STYLE>
+</STYLES>
+</RECIPE></beerxml><data>
+  <ppg>358.799517925649</ppg>
+  <ppg>26.3062158155122</ppg>
+  <ppg>16.5599814012653</ppg>
+</data></recipe><results>
+	<mash type="infusion" duration="60">
+		<infusion>
+			<strike volume="" temp=""/>
+		</infusion>
+		<measurement temp="67.7778"/>
+		<measurement temp="66.1111"/>
+	</mash>
+	<boil volume="24.6052" sg="1.045" time="60" end_volume="19.87341"/>
+	<gravity volume="18.9271" og="1.060" fg="1.005"/>
+</results><log><tumblr version="1.0"><tumblelog name="geekbrewing" timezone="US/Pacific" title="Brew Log"/><posts start="0" total="13"><post id="31569523388" url="http://geekbrewing.tumblr.com/post/31569523388" url-with-slug="http://geekbrewing.tumblr.com/post/31569523388/the-wy1968-version-has-no-cascade-hop-aroma-i" type="regular" date-gmt="2012-09-15 04:48:52 GMT" date="Fri, 14 Sep 2012 21:48:52" unix-timestamp="1347684532" format="html" reblog-key="CcbgRn77" slug="the-wy1968-version-has-no-cascade-hop-aroma-i"><regular-body>&lt;p&gt;The WY1968 version has no cascade hop aroma. I should&amp;#8217;ve added more dry hopping.&lt;/p&gt;</regular-body><tag>010</tag></post><post id="31563277180" url="http://geekbrewing.tumblr.com/post/31563277180" url-with-slug="http://geekbrewing.tumblr.com/post/31563277180/the-wy1318-version-has-a-lemon-y-flavor-and-an" type="regular" date-gmt="2012-09-15 02:58:58 GMT" date="Fri, 14 Sep 2012 19:58:58" unix-timestamp="1347677938" format="html" reblog-key="tjokNDLh" slug="the-wy1318-version-has-a-lemon-y-flavor-and-an"><regular-body>&lt;p&gt;The WY1318 version has a lemon-y flavor and an slight pumpkin beer aroma.&lt;/p&gt;</regular-body><tag>010</tag><tag>pumpkin</tag><tag>wy1318</tag><tag>lemon</tag></post><post id="31320124234" url="http://geekbrewing.tumblr.com/post/31320124234" url-with-slug="http://geekbrewing.tumblr.com/post/31320124234/the-left-is-the-wy1318-version-and-the-right-is" type="photo" date-gmt="2012-09-11 04:30:25 GMT" date="Mon, 10 Sep 2012 21:30:25" unix-timestamp="1347337825" format="html" reblog-key="IJWATXie" slug="the-left-is-the-wy1318-version-and-the-right-is" width="1280" height="960"><photo-caption>&lt;p&gt;The left is the WY1318 version and the right is the normal Fuller&amp;#8217;s ESB. Both were dry-hopped with a small amount of Cascade hops. &lt;/p&gt;
+
+&lt;p&gt;The WY1318 is cloudier and lighter in color. The hop aroma is very slight in both. The taste is a little fruitier than the normal Fuller&amp;#8217;s which makes it a very different beer.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_ma64ipnpyU1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://24.media.tumblr.com/tumblr_ma64ipnpyU1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_ma64ipnpyU1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://25.media.tumblr.com/tumblr_ma64ipnpyU1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://25.media.tumblr.com/tumblr_ma64ipnpyU1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://25.media.tumblr.com/tumblr_ma64ipnpyU1qcxyego1_75sq.jpg</photo-url><tag>010</tag></post><post id="31088111747" url="http://geekbrewing.tumblr.com/post/31088111747" url-with-slug="http://geekbrewing.tumblr.com/post/31088111747/its-not-yet-carbonated-but-the-left-is-the" type="photo" date-gmt="2012-09-08 00:21:04 GMT" date="Fri, 07 Sep 2012 17:21:04" unix-timestamp="1347063664" format="html" reblog-key="pRgoINKM" slug="its-not-yet-carbonated-but-the-left-is-the" width="1280" height="960"><photo-caption>&lt;p&gt;It&amp;#8217;s not yet carbonated, but the left is the normal Fuller&amp;#8217;s yeast, WY1968, and the other is WY1318.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://24.media.tumblr.com/tumblr_ma08z4cKO81qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://24.media.tumblr.com/tumblr_ma08z4cKO81qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://24.media.tumblr.com/tumblr_ma08z4cKO81qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://24.media.tumblr.com/tumblr_ma08z4cKO81qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://25.media.tumblr.com/tumblr_ma08z4cKO81qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://24.media.tumblr.com/tumblr_ma08z4cKO81qcxyego1_75sq.jpg</photo-url><tag>010</tag></post><post id="31020355544" url="http://geekbrewing.tumblr.com/post/31020355544" url-with-slug="http://geekbrewing.tumblr.com/post/31020355544/kegged-both-half-batches-and-chilling-them-in-the" type="regular" date-gmt="2012-09-06 23:07:06 GMT" date="Thu, 06 Sep 2012 16:07:06" unix-timestamp="1346972826" format="html" reblog-key="Zj1mQROS" slug="kegged-both-half-batches-and-chilling-them-in-the"><regular-body>&lt;p&gt;Kegged both half-batches and chilling them in the fridge.&lt;/p&gt;</regular-body><tag>010</tag></post><post id="30141143771" url="http://geekbrewing.tumblr.com/post/30141143771" url-with-slug="http://geekbrewing.tumblr.com/post/30141143771/dry-hopped-with-1-8oz-of-cascade-hops-in-each" type="regular" date-gmt="2012-08-25 01:50:17 GMT" date="Fri, 24 Aug 2012 18:50:17" unix-timestamp="1345859417" format="html" reblog-key="Wqs2CLfu" slug="dry-hopped-with-1-8oz-of-cascade-hops-in-each"><regular-body>&lt;p&gt;Dry-hopped with 1/8oz of cascade hops in each fermenter.&lt;/p&gt;</regular-body><tag>010</tag></post><post id="30090583322" url="http://geekbrewing.tumblr.com/post/30090583322" url-with-slug="http://geekbrewing.tumblr.com/post/30090583322/still-airlock-bubbles-every-60s-or-so-on-both-a" type="regular" date-gmt="2012-08-24 06:56:14 GMT" date="Thu, 23 Aug 2012 23:56:14" unix-timestamp="1345791374" format="html" reblog-key="gwV6tjSi" slug="still-airlock-bubbles-every-60s-or-so-on-both-a"><regular-body>&lt;p&gt;Still airlock bubbles every 60s or so on both A and B.&lt;/p&gt;</regular-body><tag>010</tag></post><post id="29781821590" url="http://geekbrewing.tumblr.com/post/29781821590" url-with-slug="http://geekbrewing.tumblr.com/post/29781821590/the-difference-in-color-is-surprising" type="photo" date-gmt="2012-08-19 21:37:27 GMT" date="Sun, 19 Aug 2012 14:37:27" unix-timestamp="1345412247" format="html" reblog-key="4GLXY1IX" slug="the-difference-in-color-is-surprising" width="1280" height="960"><photo-caption>&lt;p&gt;The difference in color is surprising.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_m90uqfJvqh1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://24.media.tumblr.com/tumblr_m90uqfJvqh1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_m90uqfJvqh1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://25.media.tumblr.com/tumblr_m90uqfJvqh1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://25.media.tumblr.com/tumblr_m90uqfJvqh1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://24.media.tumblr.com/tumblr_m90uqfJvqh1qcxyego1_75sq.jpg</photo-url><tag>010</tag></post><post id="29720280478" url="http://geekbrewing.tumblr.com/post/29720280478" url-with-slug="http://geekbrewing.tumblr.com/post/29720280478/replaced-airlock-on-wy1318-one-needs-a-blow-off" type="photo" date-gmt="2012-08-18 23:41:29 GMT" date="Sat, 18 Aug 2012 16:41:29" unix-timestamp="1345333289" format="html" reblog-key="5rSyIaqf" slug="replaced-airlock-on-wy1318-one-needs-a-blow-off" width="1280" height="960"><photo-caption>&lt;p&gt;Replaced airlock on WY1318 one. Needs a blow-off tube!&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_m8z5t5yPMp1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://24.media.tumblr.com/tumblr_m8z5t5yPMp1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_m8z5t5yPMp1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://25.media.tumblr.com/tumblr_m8z5t5yPMp1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://25.media.tumblr.com/tumblr_m8z5t5yPMp1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://24.media.tumblr.com/tumblr_m8z5t5yPMp1qcxyego1_75sq.jpg</photo-url><tag>010</tag></post><post id="29653641117" url="http://geekbrewing.tumblr.com/post/29653641117" url-with-slug="http://geekbrewing.tumblr.com/post/29653641117/hit-1-065-with-2-25-gallons-in-each-fermenter" type="regular" date-gmt="2012-08-18 00:05:10 GMT" date="Fri, 17 Aug 2012 17:05:10" unix-timestamp="1345248310" format="html" reblog-key="yGj1apaE" slug="hit-1-065-with-2-25-gallons-in-each-fermenter"><regular-body>&lt;p&gt;Hit 1.065 with 2.25 gallons in each fermenter (4.5g total). So topped off with .25 gallons of distilled water. That should give me ~1.060 with 5 gallons. Aerated both and pitched the yeast, WY1968 in one, WY1318 in the other. Will dry-hop with Cascade hops in a week. &lt;/p&gt;</regular-body><tag>010</tag></post><post id="29638906076" url="http://geekbrewing.tumblr.com/post/29638906076" url-with-slug="http://geekbrewing.tumblr.com/post/29638906076/bringing-6-5-gallons-to-a-boil-sg-1-053" type="regular" date-gmt="2012-08-17 20:10:34 GMT" date="Fri, 17 Aug 2012 13:10:34" unix-timestamp="1345234234" format="html" reblog-key="BQpnJeLA" slug="bringing-6-5-gallons-to-a-boil-sg-1-053"><regular-body>&lt;p&gt;Bringing 6.5 gallons to a boil. SG=1.053.&lt;/p&gt;</regular-body><tag>010</tag></post><post id="29634170176" url="http://geekbrewing.tumblr.com/post/29634170176" url-with-slug="http://geekbrewing.tumblr.com/post/29634170176/heated-strike-water-to-165-dough-in-at-161" type="regular" date-gmt="2012-08-17 18:47:50 GMT" date="Fri, 17 Aug 2012 11:47:50" unix-timestamp="1345229270" format="html" reblog-key="EbOtcHek" slug="heated-strike-water-to-165-dough-in-at-161"><regular-body>&lt;p&gt;Heated strike water to 165°, dough-in at 161°, mashed at 154°-151°. Took yeast out of fridge to warm up.&lt;/p&gt;</regular-body><tag>010</tag></post><post id="29519080160" url="http://geekbrewing.tumblr.com/post/29519080160" url-with-slug="http://geekbrewing.tumblr.com/post/29519080160/put-both-1l-yeast-starters-on-stir-plates-one-is" type="regular" date-gmt="2012-08-17 16:30:06 GMT" date="Fri, 17 Aug 2012 09:30:06" unix-timestamp="1345221006" format="html" reblog-key="MqqgXtNV" slug="put-both-1l-yeast-starters-on-stir-plates-one-is"><regular-body>&lt;p&gt;Put both 1L yeast starters on stir plates. One is WY1968 and the other is WY1318. I split the nutrient pack that came in the WY1318 in both flasks.&lt;/p&gt;</regular-body><tag>010</tag></post></posts></tumblr></log></batch>

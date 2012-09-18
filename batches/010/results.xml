@@ -1,0 +1,12 @@
+<results>
+	<mash type="infusion" duration="60">
+		<infusion>
+			<strike volume="" temp=""/>
+		</infusion>
+		<measurement temp="67.7778"/>
+		<measurement temp="66.1111"/>
+	</mash>
+	<boil volume="24.6052" sg="1.045" time="60" end_volume="19.87341"/>
+	<gravity volume="18.9271" og="1.060" fg="1.005"/>
+</results>
+

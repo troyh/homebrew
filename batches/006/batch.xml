@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<batch id="006"><recipe><beerxml recipefile="Surly Furious.xml" commit_sha="395b439e0483e81c1b31ee274e632a2649cf7878"><RECIPE>
+<VERSION>1</VERSION>
+<NAME>Surly Furious</NAME>
+<TYPE>All Grain</TYPE>
+<BREWER>BrewPal</BREWER>
+<BATCH_SIZE>18.927099</BATCH_SIZE>
+<BOIL_SIZE>21.198351</BOIL_SIZE>
+<BOIL_TIME>60</BOIL_TIME>
+<EFFICIENCY>70</EFFICIENCY>
+<OG>1.066000</OG>
+<FG>1.016000</FG>
+<FERMENTATION_STAGES>2</FERMENTATION_STAGES>
+<PRIMARY_AGE>14</PRIMARY_AGE>
+<PRIMARY_TEMP>20.559999</PRIMARY_TEMP>
+<SECONDARY_AGE>21</SECONDARY_AGE>
+<SECONDARY_TEMP>22.219999</SECONDARY_TEMP>
+<CARBONATION>1.900000</CARBONATION>
+<FORCED_CARBONATION>1</FORCED_CARBONATION>
+<CARBONATION_TEMP>22.222221</CARBONATION_TEMP>
+<PRIMING_SUGAR_NAME/>
+<PRIMING_SUGAR_EQUIV>0.000000</PRIMING_SUGAR_EQUIV>
+<NOTES>See full Northern Brewer recipe instructions.</NOTES>
+<FERMENTABLES>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>3</COLOR>
+    <AMOUNT>3.401943</AMOUNT>
+    <NAME>Pale Ale</NAME>
+    <YIELD>78</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <YIELD>74</YIELD>
+    <COLOR>1.5</COLOR>
+    <TYPE>Grain</TYPE>
+    <POTENTIAL>1.034</POTENTIAL>
+    <NAME>Simpsons Golden Promise</NAME>
+    <AMOUNT>1.4742</AMOUNT>
+    <ORIGIN>UK</ORIGIN>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <YIELD>76</YIELD>
+    <COLOR>55</COLOR>
+    <TYPE>Grain</TYPE>
+    <POTENTIAL>1.035</POTENTIAL>
+    <NAME>Simpsons Medium</NAME>
+    <AMOUNT>0.3992</AMOUNT>
+    <ORIGIN>UK</ORIGIN>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <YIELD>78</YIELD>
+    <COLOR>26</COLOR>
+    <TYPE>Grain</TYPE>
+    <POTENTIAL>1.036</POTENTIAL>
+    <NAME>Aromatic Malt</NAME>
+    <AMOUNT>0.2858</AMOUNT>
+    <ORIGIN>Belgium</ORIGIN>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <YIELD>54</YIELD>
+    <COLOR>300</COLOR>
+    <TYPE>Grain</TYPE>
+    <POTENTIAL>1.025</POTENTIAL>
+    <NAME>Roasted Barley</NAME>
+    <AMOUNT>0.0544</AMOUNT>
+    <ORIGIN>US</ORIGIN>
+  </FERMENTABLE>
+</FERMENTABLES>
+<HOPS>
+  <HOP>
+    <VERSION>1</VERSION>
+    <AMOUNT>0.0142</AMOUNT>
+    <TIME>060</TIME>
+    <FORM>Pellet</FORM>
+    <TYPE>Aroma</TYPE>
+    <ALPHA>8.50</ALPHA>
+    <NAME>Amarillo Gold</NAME>
+    <HSI>25</HSI>
+    <BETA>6.00</BETA>
+    <ORIGIN>US</ORIGIN>
+    <USE>Boil</USE>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <AMOUNT>0.0496</AMOUNT>
+    <TIME>060</TIME>
+    <FORM>Pellet</FORM>
+    <TYPE>Both</TYPE>
+    <ALPHA>15.00</ALPHA>
+    <NAME>Warrior</NAME>
+    <HSI>20</HSI>
+    <BETA>6.00</BETA>
+    <ORIGIN>US</ORIGIN>
+    <USE>Boil</USE>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <AMOUNT>0.0567</AMOUNT>
+    <TIME>000</TIME>
+    <FORM>Pellet</FORM>
+    <TYPE>Aroma</TYPE>
+    <ALPHA>8.50</ALPHA>
+    <NAME>Amarillo Gold</NAME>
+    <HSI>25</HSI>
+    <BETA>6.00</BETA>
+    <ORIGIN>US</ORIGIN>
+    <USE>Boil</USE>
+  </HOP>
+</HOPS>
+<YEASTS>
+  <YEAST>
+    <VERSION>1</VERSION>
+    <MAX_TEMPERATURE>75.0</MAX_TEMPERATURE>
+    <LABORATORY>Wyeast</LABORATORY>
+    <FORM>Liquid</FORM>
+    <TYPE>Ale</TYPE>
+    <PRODUCT_ID>1335</PRODUCT_ID>
+    <FLOCCULATION>High</FLOCCULATION>
+    <NAME>British Ale II</NAME>
+    <MIN_TEMPERATURE>63.0</MIN_TEMPERATURE>
+    <AMOUNT>1</AMOUNT>
+    <ATTENUATION>75</ATTENUATION>
+  </YEAST>
+</YEASTS>
+<MISCS>
+</MISCS>
+<MASH>
+<VERSION>1</VERSION>
+<NAME>Unknown</NAME>
+<GRAIN_TEMP>21.111111</GRAIN_TEMP>
+<MASH_THICKNESS>3.129527</MASH_THICKNESS>
+<SPARGE_TEMP>76.666664</SPARGE_TEMP>
+<MASH_STEPS>
+  <MASH_STEP>
+    <VERSION>1</VERSION>
+    <INFUSE_AMOUNT>17.57</INFUSE_AMOUNT>
+    <STEP_TEMP>67.2</STEP_TEMP>
+    <TYPE>INFUSION</TYPE>
+    <RAMP_TIME>0</RAMP_TIME>
+    <NAME>Sacch&amp;#39; Rest</NAME>
+    <STEP_TIME>60</STEP_TIME>
+    <INFUSE_TEMP>75.9</INFUSE_TEMP>
+  </MASH_STEP>
+  <MASH_STEP>
+    <VERSION>1</VERSION>
+    <INFUSE_AMOUNT>0.00</INFUSE_AMOUNT>
+    <STEP_TEMP>75.6</STEP_TEMP>
+    <TYPE>TEMPERATURE</TYPE>
+    <RAMP_TIME>2</RAMP_TIME>
+    <NAME>Mashout</NAME>
+    <STEP_TIME>10</STEP_TIME>
+  </MASH_STEP>
+</MASH_STEPS>
+</MASH>
+<WATERS>
+</WATERS>
+<EQUIPMENT>
+    <VERSION>1</VERSION>
+    <TRUB_CHILLER_LOSS>0</TRUB_CHILLER_LOSS>
+    <BOIL_SIZE>21.19835</BOIL_SIZE>
+    <TOP_UP_KETTLE>1.907349e-06</TOP_UP_KETTLE>
+    <EVAP_RATE>12</EVAP_RATE>
+</EQUIPMENT>
+<STYLES>
+  <STYLE>
+    <VERSION>1</VERSION>
+    <COLOR_MAX>15.0</COLOR_MAX>
+    <CARB_MIN>1.50</CARB_MIN>
+    <CATEGORY>India Pale Ale (IPA)</CATEGORY>
+    <ABV_MAX>10.00</ABV_MAX>
+    <TYPE>Ale</TYPE>
+    <CARB_MAX>2.30</CARB_MAX>
+    <IBU_MIN>60.00</IBU_MIN>
+    <NAME>Imperial IPA</NAME>
+    <STYLE_LETTER>C</STYLE_LETTER>
+    <CATEGORY_NUMBER>14</CATEGORY_NUMBER>
+    <COLOR_MIN>8.0</COLOR_MIN>
+    <ABV_MIN>7.50</ABV_MIN>
+    <STYLE_GUIDE>BJCP</STYLE_GUIDE>
+    <OG_MAX>1.090</OG_MAX>
+    <FG_MAX>1.020</FG_MAX>
+    <IBU_MAX>120.00</IBU_MAX>
+    <FG_MIN>1.010</FG_MIN>
+    <OG_MIN>1.075</OG_MIN>
+  </STYLE>
+</STYLES>
+</RECIPE></beerxml><data>
+  <ppg>269.099697770561</ppg>
+  <ppg>110.63172936816</ppg>
+  <ppg>30.76774726784</ppg>
+  <ppg>22.60728460848</ppg>
+  <ppg>2.97909418752</ppg>
+</data></recipe><results>
+  <mash type="" duration="">
+    <infusion>
+      <strike volume="" temp=""/>
+    </infusion>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+  </mash>
+  <boil volume="24.60516" sg="1.052" time="60" end_volume="19.87340"/>
+  <gravity volume="19.87340" og="1.064" fg="1.018"/>
+</results><log><tumblr version="1.0"><tumblelog name="geekbrewing" timezone="US/Pacific" title="Brew Log"/><posts start="0" total="23"><post id="31367864793" url="http://geekbrewing.tumblr.com/post/31367864793" url-with-slug="http://geekbrewing.tumblr.com/post/31367864793/surly-furious-is-at-its-best-right-now-6-7-weeks" type="regular" date-gmt="2012-09-12 00:28:55 GMT" date="Tue, 11 Sep 2012 17:28:55" unix-timestamp="1347409735" format="html" reblog-key="GyMhOJDd" slug="surly-furious-is-at-its-best-right-now-6-7-weeks"><regular-body>&lt;p&gt;Surly Furious is at its best right now (6-7 weeks after brewing). The piney-ness and grapefruit have mellowed leaving a malty and slightly sweet chocolate and I get a really nice bitterness at the end. It&amp;#8217;s also pretty clear now. For the first time I can say I like it. Too bad it’s almost empty.&lt;/p&gt;</regular-body><tag>006</tag></post><post id="30766108381" url="http://geekbrewing.tumblr.com/post/30766108381" url-with-slug="http://geekbrewing.tumblr.com/post/30766108381/still-too-piney-for-me-but-its-slowly-mellowing" type="regular" date-gmt="2012-09-03 01:11:26 GMT" date="Sun, 02 Sep 2012 18:11:26" unix-timestamp="1346634686" format="html" reblog-key="94KCoH9G" slug="still-too-piney-for-me-but-its-slowly-mellowing"><regular-body>&lt;p&gt;Still too piney for me but it&amp;#8217;s slowly mellowing out. Gay likes it better than I do. Haven&amp;#8217;t been able to carbonate it properly since I don&amp;#8217;t have more CO2 taps.&lt;/p&gt;</regular-body><tag>006</tag></post><post id="30480911519" url="http://geekbrewing.tumblr.com/post/30480911519" url-with-slug="http://geekbrewing.tumblr.com/post/30480911519/its-definitely-more-clear-although-not-super" type="photo" date-gmt="2012-08-29 23:01:19 GMT" date="Wed, 29 Aug 2012 16:01:19" unix-timestamp="1346281279" format="html" reblog-key="Sdgiu7G9" slug="its-definitely-more-clear-although-not-super" width="720" height="960"><photo-caption>&lt;p&gt;It&amp;#8217;s definitely more clear although not super clear. And there&amp;#8217;s still some hop leaf bits floating around in it.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://24.media.tumblr.com/tumblr_m9jha7JUcq1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://25.media.tumblr.com/tumblr_m9jha7JUcq1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_m9jha7JUcq1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://24.media.tumblr.com/tumblr_m9jha7JUcq1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://24.media.tumblr.com/tumblr_m9jha7JUcq1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://25.media.tumblr.com/tumblr_m9jha7JUcq1qcxyego1_75sq.jpg</photo-url><tag>006</tag></post><post id="30345072264" url="http://geekbrewing.tumblr.com/post/30345072264" url-with-slug="http://geekbrewing.tumblr.com/post/30345072264/og-1-064-fg-1-018-abv-6-03" type="regular" date-gmt="2012-08-27 23:03:30 GMT" date="Mon, 27 Aug 2012 16:03:30" unix-timestamp="1346108610" format="html" reblog-key="nBGNdyqs" slug="og-1-064-fg-1-018-abv-6-03"><regular-body>&lt;p&gt;OG=1.064 FG=1.018 ABV=6.03%&lt;/p&gt;</regular-body><tag>006</tag></post><post id="30298700983" url="http://geekbrewing.tumblr.com/post/30298700983" url-with-slug="http://geekbrewing.tumblr.com/post/30298700983/adding-gelatin-to-keg-to-clear-it-up-photo-is" type="photo" date-gmt="2012-08-27 05:02:01 GMT" date="Sun, 26 Aug 2012 22:02:01" unix-timestamp="1346043721" format="html" reblog-key="TcqT73OQ" slug="adding-gelatin-to-keg-to-clear-it-up-photo-is" width="720" height="960"><photo-caption>&lt;p&gt;Adding gelatin to keg to clear it up. Photo is before gelatin.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://24.media.tumblr.com/tumblr_m9edzdBARQ1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://25.media.tumblr.com/tumblr_m9edzdBARQ1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://24.media.tumblr.com/tumblr_m9edzdBARQ1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://24.media.tumblr.com/tumblr_m9edzdBARQ1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://25.media.tumblr.com/tumblr_m9edzdBARQ1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://24.media.tumblr.com/tumblr_m9edzdBARQ1qcxyego1_75sq.jpg</photo-url><tag>006</tag></post><post id="30141089361" url="http://geekbrewing.tumblr.com/post/30141089361" url-with-slug="http://geekbrewing.tumblr.com/post/30141089361/kegging" type="photo" date-gmt="2012-08-25 01:49:16 GMT" date="Fri, 24 Aug 2012 18:49:16" unix-timestamp="1345859356" format="html" reblog-key="QAJ7d1kI" slug="kegging" width="720" height="960"><photo-caption>&lt;p&gt;Kegging.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_m9afq4mBnt1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://25.media.tumblr.com/tumblr_m9afq4mBnt1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_m9afq4mBnt1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://24.media.tumblr.com/tumblr_m9afq4mBnt1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://24.media.tumblr.com/tumblr_m9afq4mBnt1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://25.media.tumblr.com/tumblr_m9afq4mBnt1qcxyego1_75sq.jpg</photo-url><tag>006</tag></post><post id="29267403717" url="http://geekbrewing.tumblr.com/post/29267403717" url-with-slug="http://geekbrewing.tumblr.com/post/29267403717/still-has-active-airlock-activity-constant-small" type="video" date-gmt="2012-08-12 15:47:39 GMT" date="Sun, 12 Aug 2012 08:47:39" unix-timestamp="1344786459" format="html" reblog-key="4MyHHUzL" slug="still-has-active-airlock-activity-constant-small" direct-video="true"><video-source><content-type>video/mp4</content-type><extension>mp4</extension><width>360</width><height>480</height><duration>8</duration><revision>0</revision></video-source><video-caption>&lt;p&gt;Still has active airlock activity, constant small bubbling. Did shaking it rouse the yeast?&lt;/p&gt;</video-caption><video-player>&lt;iframe src="//www.tumblr.com/video/geekbrewing/29267403717/400" id="tumblr_video_iframe_29267403717" class="tumblr_video_iframe" width="400" height="533" style="display:block;background-color:transparent;overflow:hidden;" allowTransparency="true" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</video-player><video-player max-width="500">&lt;iframe src="//www.tumblr.com/video/geekbrewing/29267403717/500" id="tumblr_video_iframe_29267403717" class="tumblr_video_iframe" width="500" height="667" style="display:block;background-color:transparent;overflow:hidden;" allowTransparency="true" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</video-player><video-player max-width="250">&lt;iframe src="//www.tumblr.com/video/geekbrewing/29267403717/250" id="tumblr_video_iframe_29267403717" class="tumblr_video_iframe" width="250" height="333" style="display:block;background-color:transparent;overflow:hidden;" allowTransparency="true" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</video-player><tag>006</tag></post><post id="29145634810" url="http://geekbrewing.tumblr.com/post/29145634810" url-with-slug="http://geekbrewing.tumblr.com/post/29145634810/i-gave-in-a-little-bit-of-a-shake-to-wet-the-dry" type="photo" date-gmt="2012-08-10 21:04:40 GMT" date="Fri, 10 Aug 2012 14:04:40" unix-timestamp="1344632680" format="html" reblog-key="BQk3nZI5" slug="i-gave-in-a-little-bit-of-a-shake-to-wet-the-dry" width="720" height="960"><photo-caption>&lt;p&gt;I gave in a little bit of a shake to wet the dry hops that were sitting on top and distribute them throughout the fermenter. I figure I didn&amp;#8217;t aerate it because there is still slow activity on the airlock so hopefully by now CO2 has purged any air.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_m8k57sT6vs1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://24.media.tumblr.com/tumblr_m8k57sT6vs1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_m8k57sT6vs1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://25.media.tumblr.com/tumblr_m8k57sT6vs1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://24.media.tumblr.com/tumblr_m8k57sT6vs1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://24.media.tumblr.com/tumblr_m8k57sT6vs1qcxyego1_75sq.jpg</photo-url><tag>006</tag></post><post id="29016473580" url="http://geekbrewing.tumblr.com/post/29016473580" url-with-slug="http://geekbrewing.tumblr.com/post/29016473580/racking-surly-furious-and-dry-hopping" type="photo" date-gmt="2012-08-09 00:28:16 GMT" date="Wed, 08 Aug 2012 17:28:16" unix-timestamp="1344472096" format="html" reblog-key="9YNrRiQ4" slug="racking-surly-furious-and-dry-hopping" width="1280" height="960"><photo-caption>&lt;p&gt;Racking surly furious and dry hopping.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://24.media.tumblr.com/tumblr_m8gpb4GGRN1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://25.media.tumblr.com/tumblr_m8gpb4GGRN1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://24.media.tumblr.com/tumblr_m8gpb4GGRN1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://25.media.tumblr.com/tumblr_m8gpb4GGRN1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://25.media.tumblr.com/tumblr_m8gpb4GGRN1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://24.media.tumblr.com/tumblr_m8gpb4GGRN1qcxyego1_75sq.jpg</photo-url><tag>006</tag></post><post id="28895218625" url="http://geekbrewing.tumblr.com/post/28895218625" url-with-slug="http://geekbrewing.tumblr.com/post/28895218625/its-still-bubbling-onto-the-airlock-wtf" type="photo" date-gmt="2012-08-07 06:43:37 GMT" date="Mon, 06 Aug 2012 23:43:37" unix-timestamp="1344321817" format="html" reblog-key="0TtcDH5H" slug="its-still-bubbling-onto-the-airlock-wtf" width="720" height="960"><photo-caption>&lt;p&gt;It&amp;#8217;s still bubbling onto the airlock. WTF?!&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://24.media.tumblr.com/tumblr_m8dhcphLvw1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://25.media.tumblr.com/tumblr_m8dhcphLvw1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://24.media.tumblr.com/tumblr_m8dhcphLvw1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://24.media.tumblr.com/tumblr_m8dhcphLvw1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://24.media.tumblr.com/tumblr_m8dhcphLvw1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://24.media.tumblr.com/tumblr_m8dhcphLvw1qcxyego1_75sq.jpg</photo-url><tag>006</tag></post><post id="28125774411" url="http://geekbrewing.tumblr.com/post/28125774411" url-with-slug="http://geekbrewing.tumblr.com/post/28125774411/the-airlock-was-overflowing-so-we-cleaned-it-and" type="photo" date-gmt="2012-07-27 14:08:49 GMT" date="Fri, 27 Jul 2012 07:08:49" unix-timestamp="1343398129" format="html" reblog-key="doZJPCW5" slug="the-airlock-was-overflowing-so-we-cleaned-it-and" width="720" height="960"><photo-caption>&lt;p&gt;The airlock was overflowing so we cleaned it and replaced it last night. Still constant bubbling.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://24.media.tumblr.com/tumblr_m7tompmzPr1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://25.media.tumblr.com/tumblr_m7tompmzPr1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://24.media.tumblr.com/tumblr_m7tompmzPr1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://24.media.tumblr.com/tumblr_m7tompmzPr1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://24.media.tumblr.com/tumblr_m7tompmzPr1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://25.media.tumblr.com/tumblr_m7tompmzPr1qcxyego1_75sq.jpg</photo-url><tag>006</tag></post><post id="28051798033" url="http://geekbrewing.tumblr.com/post/28051798033" url-with-slug="http://geekbrewing.tumblr.com/post/28051798033/bubbling-every-10-15s-not-going-crazy-after-12" type="photo" date-gmt="2012-07-26 13:19:48 GMT" date="Thu, 26 Jul 2012 06:19:48" unix-timestamp="1343308788" format="html" reblog-key="TKUWYPb7" slug="bubbling-every-10-15s-not-going-crazy-after-12" width="720" height="960"><photo-caption>&lt;p&gt;Bubbling every 10-15s. Not going crazy after 12 hours like the others were.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_m7rrp08sVW1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://24.media.tumblr.com/tumblr_m7rrp08sVW1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_m7rrp08sVW1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://25.media.tumblr.com/tumblr_m7rrp08sVW1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://24.media.tumblr.com/tumblr_m7rrp08sVW1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://25.media.tumblr.com/tumblr_m7rrp08sVW1qcxyego1_75sq.jpg</photo-url><tag>006</tag></post><post id="28010173489" url="http://geekbrewing.tumblr.com/post/28010173489" url-with-slug="http://geekbrewing.tumblr.com/post/28010173489/bv-6-5-bg-1-052-bt-60-ev-5-25-fv-5-25-1-068-og" type="photo" date-gmt="2012-07-26 00:22:00 GMT" date="Wed, 25 Jul 2012 17:22:00" unix-timestamp="1343262120" format="html" reblog-key="VoVhqLaM" slug="bv-6-5-bg-1-052-bt-60-ev-5-25-fv-5-25-1-068-og" width="720" height="960"><photo-caption>&lt;p&gt;BV=6.5 BG=1.052 BT=60 EV=5.25 FV=5.25 &lt;/p&gt;
+&lt;p&gt;1.068 OG before topping off with about 1/4 gallon of water. Probably didn&amp;#8217;t mix well enough but 1.064 after topping-off. 86% efficiency!&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://24.media.tumblr.com/tumblr_m7qmzaNiqn1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://24.media.tumblr.com/tumblr_m7qmzaNiqn1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://24.media.tumblr.com/tumblr_m7qmzaNiqn1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://25.media.tumblr.com/tumblr_m7qmzaNiqn1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://25.media.tumblr.com/tumblr_m7qmzaNiqn1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://25.media.tumblr.com/tumblr_m7qmzaNiqn1qcxyego1_75sq.jpg</photo-url><tag>006</tag></post><post id="28016110499" url="http://geekbrewing.tumblr.com/post/28016110499" url-with-slug="http://geekbrewing.tumblr.com/post/28016110499/pitched-the-yeast-i-pitched-the-entire-starter" type="photo" date-gmt="2012-07-26 00:18:34 GMT" date="Wed, 25 Jul 2012 17:18:34" unix-timestamp="1343261914" format="html" reblog-key="rt8SPvdS" slug="pitched-the-yeast-i-pitched-the-entire-starter" width="720" height="960"><photo-caption>&lt;p&gt;Pitched the yeast. I pitched the entire starter because it had been shaken up and hadn’t settled yet. It was 900 mL.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_m7qr6pS2K41qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://25.media.tumblr.com/tumblr_m7qr6pS2K41qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_m7qr6pS2K41qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://24.media.tumblr.com/tumblr_m7qr6pS2K41qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://24.media.tumblr.com/tumblr_m7qr6pS2K41qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://24.media.tumblr.com/tumblr_m7qr6pS2K41qcxyego1_75sq.jpg</photo-url><tag>006</tag></post><post id="28015699748" url="http://geekbrewing.tumblr.com/post/28015699748" url-with-slug="http://geekbrewing.tumblr.com/post/28015699748/pitched-the-yeast-i-pitched-the-entire-starter" type="photo" date-gmt="2012-07-26 00:04:51 GMT" date="Wed, 25 Jul 2012 17:04:51" unix-timestamp="1343261091" format="html" reblog-key="ujVrsYLa" slug="pitched-the-yeast-i-pitched-the-entire-starter" width="720" height="960"><photo-caption>&lt;p&gt;Pitched the yeast. I pitched the entire starter because it been shaken up and hadn&amp;#8217;t settled yet. It was 900&amp;#160;mL.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://24.media.tumblr.com/tumblr_m7qqw3zs7A1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://25.media.tumblr.com/tumblr_m7qqw3zs7A1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_m7qqw3zs7A1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://24.media.tumblr.com/tumblr_m7qqw3zs7A1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://25.media.tumblr.com/tumblr_m7qqw3zs7A1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://25.media.tumblr.com/tumblr_m7qqw3zs7A1qcxyego1_75sq.jpg</photo-url><tag>006</tag></post><post id="28015450576" url="http://geekbrewing.tumblr.com/post/28015450576" url-with-slug="http://geekbrewing.tumblr.com/post/28015450576/1-068-og-before-topping-off-with-about-1-4-gallon" type="photo" date-gmt="2012-07-26 00:01:05 GMT" date="Wed, 25 Jul 2012 17:01:05" unix-timestamp="1343260865" format="html" reblog-key="kaNI2fPE" slug="1-068-og-before-topping-off-with-about-1-4-gallon" width="720" height="960"><photo-caption>&lt;p&gt;1.068 OG before topping off with about 1/4 gallon of water. 1.064 after topping-off. 86% efficiency!&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://24.media.tumblr.com/tumblr_m7qqpt5qs51qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://25.media.tumblr.com/tumblr_m7qqpt5qs51qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_m7qqpt5qs51qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://24.media.tumblr.com/tumblr_m7qqpt5qs51qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://25.media.tumblr.com/tumblr_m7qqpt5qs51qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://24.media.tumblr.com/tumblr_m7qqpt5qs51qcxyego1_75sq.jpg</photo-url><tag>006</tag></post><post id="28005666500" url="http://geekbrewing.tumblr.com/post/28005666500" url-with-slug="http://geekbrewing.tumblr.com/post/28005666500/hops-added-1tsp-of-irish-moss-at-15m-remaining" type="photo" date-gmt="2012-07-25 21:34:08 GMT" date="Wed, 25 Jul 2012 14:34:08" unix-timestamp="1343252048" format="html" reblog-key="ihgcwHuj" slug="hops-added-1tsp-of-irish-moss-at-15m-remaining" width="1280" height="960"><photo-caption>&lt;p&gt;Hops. Added 1tsp of Irish Moss at 15m remaining.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_m7qjvtC6y01qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://25.media.tumblr.com/tumblr_m7qjvtC6y01qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_m7qjvtC6y01qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://25.media.tumblr.com/tumblr_m7qjvtC6y01qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://24.media.tumblr.com/tumblr_m7qjvtC6y01qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://24.media.tumblr.com/tumblr_m7qjvtC6y01qcxyego1_75sq.jpg</photo-url><tag>006</tag></post><post id="27999541614" url="http://geekbrewing.tumblr.com/post/27999541614" url-with-slug="http://geekbrewing.tumblr.com/post/27999541614/sparged-and-lautered-for-30-minutes-into-kettle" type="regular" date-gmt="2012-07-25 20:00:07 GMT" date="Wed, 25 Jul 2012 13:00:07" unix-timestamp="1343246407" format="html" reblog-key="59qSc6yU" slug="sparged-and-lautered-for-30-minutes-into-kettle"><regular-body>&lt;p&gt;Sparged and lautered for 30 minutes into kettle. Pre-boil OG 1.052, just under expected 1.053.&lt;/p&gt;</regular-body><tag>006</tag></post><post id="27997987847" url="http://geekbrewing.tumblr.com/post/27997987847" url-with-slug="http://geekbrewing.tumblr.com/post/27997987847/added-first-wort-hops-0-50oz-amarillo" type="photo" date-gmt="2012-07-25 19:35:22 GMT" date="Wed, 25 Jul 2012 12:35:22" unix-timestamp="1343244922" format="html" reblog-key="mmZzRowb" slug="added-first-wort-hops-0-50oz-amarillo" width="720" height="960"><photo-caption>&lt;p&gt;Added first wort hops, 0.50oz Amarillo.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_m7qeeyqfct1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://24.media.tumblr.com/tumblr_m7qeeyqfct1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_m7qeeyqfct1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://25.media.tumblr.com/tumblr_m7qeeyqfct1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://25.media.tumblr.com/tumblr_m7qeeyqfct1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://25.media.tumblr.com/tumblr_m7qeeyqfct1qcxyego1_75sq.jpg</photo-url><tag>006</tag></post><post id="27992838344" url="http://geekbrewing.tumblr.com/post/27992838344" url-with-slug="http://geekbrewing.tumblr.com/post/27992838344/grist-grind" type="photo" date-gmt="2012-07-25 18:11:09 GMT" date="Wed, 25 Jul 2012 11:11:09" unix-timestamp="1343239869" format="html" reblog-key="68ErNZv6" slug="grist-grind" width="720" height="960"><photo-caption>&lt;p&gt;Grist grind.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://24.media.tumblr.com/tumblr_m7qailxGMC1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://25.media.tumblr.com/tumblr_m7qailxGMC1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_m7qailxGMC1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://25.media.tumblr.com/tumblr_m7qailxGMC1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://25.media.tumblr.com/tumblr_m7qailxGMC1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://25.media.tumblr.com/tumblr_m7qailxGMC1qcxyego1_75sq.jpg</photo-url><tag>006</tag></post></posts></tumblr></log></batch>

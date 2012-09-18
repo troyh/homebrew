@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<results>
+  <mash type="" duration="">
+    <infusion>
+      <strike volume="" temp=""/>
+    </infusion>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+  </mash>
+  <boil volume="24.60516" sg="1.065" time="60" end_volume=""/>
+  <gravity volume="18.92705" og="1.074" fg="1.012"/>
+</results>

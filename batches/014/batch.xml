@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<batch id="014"><recipe><beerxml recipefile="The Czar's Revenge.xml" commit_sha="6c1f653b61c76c6bd9720b1f9452d82c784b3803"><RECIPE>
+<VERSION>1</VERSION>
+<NAME>The Czar's Revenge</NAME>
+<TYPE>All Grain</TYPE>
+<BREWER>BrewPal</BREWER>
+<BATCH_SIZE>18.9271</BATCH_SIZE>
+<BOIL_SIZE>23.251892</BOIL_SIZE>
+<BOIL_TIME>60</BOIL_TIME>
+<EFFICIENCY>75</EFFICIENCY>
+<OG>0.000000</OG>
+<FG>0.000000</FG>
+<FERMENTATION_STAGES>1</FERMENTATION_STAGES>
+<PRIMARY_AGE>14</PRIMARY_AGE>
+<PRIMARY_TEMP>19.444445</PRIMARY_TEMP>
+<SECONDARY_AGE>0</SECONDARY_AGE>
+<SECONDARY_TEMP>21.000000</SECONDARY_TEMP>
+<CARBONATION>2.250000</CARBONATION>
+<FORCED_CARBONATION>1</FORCED_CARBONATION>
+<CARBONATION_TEMP>21.111111</CARBONATION_TEMP>
+<PRIMING_SUGAR_NAME>(null)</PRIMING_SUGAR_NAME>
+<PRIMING_SUGAR_EQUIV>0.000000</PRIMING_SUGAR_EQUIV>
+<NOTES/>
+<FERMENTABLES>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>3.000000</COLOR>
+    <NAME>2 Row Base</NAME>
+    <AMOUNT>6.803885</AMOUNT>
+    <YIELD>78.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>500.000000</COLOR>
+    <NAME>Barley (Roasted)</NAME>
+    <AMOUNT>0.453592</AMOUNT>
+    <YIELD>59.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>350.000000</COLOR>
+    <NAME>Chocolate</NAME>
+    <AMOUNT>0.453592</AMOUNT>
+    <YIELD>61.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>120.000000</COLOR>
+    <AMOUNT>0.453592</AMOUNT>
+    <NAME>Special B</NAME>
+    <YIELD>63.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>60.000000</COLOR>
+    <AMOUNT>0.226796</AMOUNT>
+    <NAME>CaraMunich</NAME>
+    <YIELD>72.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+</FERMENTABLES>
+<HOPS>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Boil</USE>
+    <ALPHA>13.000000</ALPHA>
+    <SUBSTITUTES>Horizon, Newport</SUBSTITUTES>
+    <FORM>Pellet</FORM>
+    <NAME>Magnum</NAME>
+    <AMOUNT>0.042524</AMOUNT>
+    <TIME>60.000000</TIME>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>10.000000</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Fuggle, Progress, First Gold</SUBSTITUTES>
+    <ALPHA>5.000000</ALPHA>
+    <NAME>Goldings (Kent)</NAME>
+    <AMOUNT>0.056699</AMOUNT>
+    <USE>Boil</USE>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>0</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Fuggle, Progress, First Gold</SUBSTITUTES>
+    <ALPHA>5.000000</ALPHA>
+    <NAME>Goldings (Kent)</NAME>
+    <AMOUNT>0.056699</AMOUNT>
+    <USE>Aroma</USE>
+  </HOP>
+</HOPS>
+<YEASTS>
+  <YEAST>
+    <VERSION>1</VERSION>
+    <AMOUNT>0.500000</AMOUNT>
+    <LABORATORY>Wyeast</LABORATORY>
+    <FORM>Liquid</FORM>
+    <MIN_TEMPERATURE>16</MIN_TEMPERATURE>
+    <PRODUCT_ID>1056</PRODUCT_ID>
+    <NAME>American Ale</NAME>
+    <AMOUNT_IS_WEIGHT>FALSE</AMOUNT_IS_WEIGHT>
+    <TYPE>Ale</TYPE>
+    <MAX_TEMPERATURE>22</MAX_TEMPERATURE>
+    <ATTENUATION>75</ATTENUATION>
+  </YEAST>
+</YEASTS>
+<MISCS>
+</MISCS>
+<MASH>
+<VERSION>1</VERSION>
+<NAME>Batch/Fly</NAME>
+<GRAIN_TEMP>21.111111</GRAIN_TEMP>
+<MASH_THICKNESS>3.129527</MASH_THICKNESS>
+<SPARGE_TEMP>76.666664</SPARGE_TEMP>
+<MASH_STEPS>
+  <MASH_STEP>
+    <VERSION>1</VERSION>
+    <STEP_TEMP>67.77778</STEP_TEMP>
+    <TYPE>Infusion</TYPE>
+    <STEP_TIME>60</STEP_TIME>
+    <INFUSE_AMOUNT>11.35624</INFUSE_AMOUNT>
+    <NAME>Strike</NAME>
+  </MASH_STEP>
+</MASH_STEPS>
+</MASH>
+<WATERS>
+</WATERS>
+<EQUIPMENT>
+    <VERSION>1</VERSION>
+    <BOIL_SIZE>23.25189</BOIL_SIZE>
+    <BOIL_TIME>60</BOIL_TIME>
+    <BATCH_SIZE>18.92706</BATCH_SIZE>
+    <TOP_UP_KETTLE>0</TOP_UP_KETTLE>
+    <EVAP_RATE>17</EVAP_RATE>
+    <TRUB_CHILLER_LOSS>0.946353</TRUB_CHILLER_LOSS>
+</EQUIPMENT>
+<STYLES>
+  <STYLE>
+    <VERSION>1</VERSION>
+    <COLOR_MIN>30.0</COLOR_MIN>
+    <COLOR_MAX>40.0</COLOR_MAX>
+    <STYLE_LETTER>F</STYLE_LETTER>
+    <ABV_MIN>8.0</ABV_MIN>
+    <NAME>Imperial Stout</NAME>
+    <IS_SELECTED>0.000000</IS_SELECTED>
+    <TYPE>beer</TYPE>
+    <FG_MIN>1.018</FG_MIN>
+    <OG_MIN>1.075</OG_MIN>
+    <IBU_MAX>90</IBU_MAX>
+    <EXAMPLES>Three Floyd's Dark Lord, Bell's Expedition Stout, North Coast Old Rasputin Imperial Stout, Stone Imperial Stout, Samuel Smith Imperial Stout, Scotch Irish Tsarina Katarina Imperial Stout, Thirsty Dog Siberian Night, Deschutes The Abyss, Great Divide Yeti, Southampton Russian Imperial Stout, Rogue Imperial Stout, Bear Republic Big Bear Black Stout, Great Lakes Blackout Stout, Avery The Czar, Founders Imperial Stout, Victory Storm King, Brooklyn Black Chocolate Stout</EXAMPLES>
+    <MATCH_QUALITY>Okay match</MATCH_QUALITY>
+    <STYLE_GUIDE>BJCP</STYLE_GUIDE>
+    <INGREDIENTS>Well-modified pale malt, with generous quantities of roasted malts and/or grain.  May have a complex grain bill using virtually any variety of malt.  Any type of hops may be used.  Alkaline water balances the abundance of acidic roasted grain in the grist.  American or English ale yeast.</INGREDIENTS>
+    <FG_MAX>1.030</FG_MAX>
+    <OG_MAX>1.115</OG_MAX>
+    <ABV_MAX>12.0</ABV_MAX>
+    <PROFILE>Aroma:
+Rich and complex, with variable amounts of roasted grains, maltiness, fruity esters, hops, and alcohol.  The roasted malt character can take on coffee, dark chocolate, or slightly burnt tones and can be light to moderately strong.  The malt aroma can be subtle to rich and barleywine-like, depending on the gravity and grain bill.  May optionally show a slight specialty malt character (e.g., caramel), but this should only add complexity and not dominate.  Fruity esters may be low to moderately strong, and may take on a complex, dark fruit (e.g., plums, prunes, raisins) character.  Hop aroma can be very low to quite aggressive, and may contain any hop variety.  An alcohol character may be present, but shouldn't be sharp, hot or solventy.  Aged versions may have a slight vinous or port-like quality, but shouldn't be sour.  No diacetyl.  The balance can vary with any of the aroma elements taking center stage.  Not all possible aromas described need be present; many interpretations are possible.  Aging affects the intensity, balance and smoothness of aromatics.
+Appearance:
+Color may range from very dark reddish-brown to jet black. Opaque.  Deep tan to dark brown head.  Generally has a well-formed head, although head retention may be low to moderate.  High alcohol and viscosity may be visible in "legs" when beer is swirled in a glass.
+Flavor:
+Rich, deep, complex and frequently quite intense, with variable amounts of roasted malt/grains, maltiness, fruity esters, hop bitterness and flavor, and alcohol.  Medium to aggressively high bitterness.  Medium-low to high hop flavor (any variety).  Moderate to aggressively high roasted malt/grain flavors can suggest bittersweet or unsweetened chocolate, cocoa, and/or strong coffee.  A slightly burnt grain, burnt currant or tarry character may be evident.  Fruity esters may be low to intense, and can take on a dark fruit character (raisins, plums, or prunes).  Malt backbone can be balanced and supportive to rich and barleywine-like, and may optionally show some supporting caramel, bready or toasty flavors.  Alcohol strength should be evident, but not hot, sharp, or solventy.  No diacetyl.  The palate and finish can vary from relatively dry to moderately sweet, usually with some lingering roastiness, hop bitterness and warming character.  The balance and intensity of flavors can be affected by aging, with some flavors becoming more subdued over time and some aged, vinous or port-like qualities developing.
+Mouthfeel:
+Full to very full-bodied and chewy, with a velvety, luscious texture (although the body may decline with long conditioning).  Gentle smooth warmth from alcohol should be present and noticeable.  Should not be syrupy and under-attenuated.  Carbonation may be low to moderate, depending on age and conditioning.
+Impression:
+An intensely flavored, big, dark ale. Roasty, fruity, and bittersweet, with a noticeable alcohol presence. Dark fruit flavors meld with roasty, burnt, or almost tar-like sensations.  Like a black barleywine with every dimension of flavor coming into play.</PROFILE>
+    <CARB_MIN>1.5</CARB_MIN>
+    <CATEGORY>Stout</CATEGORY>
+    <IBU_MIN>50</IBU_MIN>
+    <CARB_MAX>2.3</CARB_MAX>
+    <CATEGORY_NUMBER>13</CATEGORY_NUMBER>
+    <NOTES>History:
+Brewed to high gravity and hopping level in England for export to the Baltic States and Russia.  Said to be popular with the Russian Imperial Court.  Today is even more popular with American craft brewers, who have extended the style with unique American characteristics.
+Comments:
+Variations exist, with English and American interpretations (predictably, the American versions have more bitterness, roasted character, and finishing hops, while the English varieties reflect a more complex specialty malt character and a more forward ester profile).  The wide range of allowable characteristics allow for maximum brewer creativity.</NOTES>
+  </STYLE>
+</STYLES>
+</RECIPE></beerxml><data>
+  <ppg>538.199316439356</ppg>
+  <ppg>27.1399455853856</ppg>
+  <ppg>28.0599437408224</ppg>
+  <ppg>28.9799418962592</ppg>
+  <ppg>16.5599667978624</ppg>
+</data></recipe><results>
+  <mash type="" duration="60">
+    <infusion>
+      <strike volume="26.49787" temp="73"/>
+    </infusion>
+    <measurement temp="67.5"/>
+    <measurement temp="67.2222"/>
+    <measurement temp="65.5556"/>
+    <measurement temp="65.5556"/>
+  </mash>
+  <sparge duration="37"/>
+  <boil volume="26.87641" sg="1.073" time="90" end_volume="20.81975"/>
+  <gravity volume="18.45387" og="1.096" fg=""/>
+</results><log><tumblr version="1.0"><tumblelog name="geekbrewing" timezone="US/Pacific" title="Brew Log"/><posts start="0" total="5"><post id="31463178173" url="http://geekbrewing.tumblr.com/post/31463178173" url-with-slug="http://geekbrewing.tumblr.com/post/31463178173/good-thing-i-put-a-blow-off-tube-on" type="photo" date-gmt="2012-09-13 15:13:29 GMT" date="Thu, 13 Sep 2012 08:13:29" unix-timestamp="1347549209" format="html" reblog-key="S4VkKMKD" slug="good-thing-i-put-a-blow-off-tube-on" width="1280" height="960"><photo-caption>&lt;p&gt;Good thing I put a blow-off tube on!&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_maanmhrKf01qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://24.media.tumblr.com/tumblr_maanmhrKf01qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_maanmhrKf01qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://24.media.tumblr.com/tumblr_maanmhrKf01qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://24.media.tumblr.com/tumblr_maanmhrKf01qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://25.media.tumblr.com/tumblr_maanmhrKf01qcxyego1_75sq.jpg</photo-url><tag>014</tag></post><post id="31448783760" url="http://geekbrewing.tumblr.com/post/31448783760" url-with-slug="http://geekbrewing.tumblr.com/post/31448783760/fermentation-activity-was-visible-before-9pm-so" type="regular" date-gmt="2012-09-13 05:18:53 GMT" date="Wed, 12 Sep 2012 22:18:53" unix-timestamp="1347513533" format="html" reblog-key="juJvNI59" slug="fermentation-activity-was-visible-before-9pm-so"><regular-body>&lt;p&gt;Fermentation activity was visible before 9pm, so that’s just a 3-hour lag time! &lt;/p&gt;
+
+&lt;p&gt;I realized that I could just top-off the fermenter with 800ml to bring the OG down to 1.092. Duh! I threw in tap water, which homebrewtalk.com people said is fine. And it’s better to do now than after fermentation is complete because the oxygen in the water is beneficial for fermentation and afterwards it is bad. I did sanitize the flask before filling it with water, though.&lt;/p&gt;</regular-body><tag>014</tag></post><post id="31434391465" url="http://geekbrewing.tumblr.com/post/31434391465" url-with-slug="http://geekbrewing.tumblr.com/post/31434391465/pitched-yeast-st-165-sv-7-bg-1-073-og-1-096" type="regular" date-gmt="2012-09-13 01:08:00 GMT" date="Wed, 12 Sep 2012 18:08:00" unix-timestamp="1347498480" format="html" reblog-key="Os0mGZKE" slug="pitched-yeast-st-165-sv-7-bg-1-073-og-1-096"><regular-body>&lt;p&gt;Pitched yeast.&lt;/p&gt;
+&lt;p&gt;ST=165 SV=7 BG=1.073 OG=1.096 FV=4.875 BV=7.1 EV=5.5 BT=90 &lt;/p&gt;</regular-body><tag>014</tag></post><post id="31370949332" url="http://geekbrewing.tumblr.com/post/31370949332" url-with-slug="http://geekbrewing.tumblr.com/post/31370949332/cold-crashing-starter" type="regular" date-gmt="2012-09-12 01:02:44 GMT" date="Tue, 11 Sep 2012 18:02:44" unix-timestamp="1347411764" format="html" reblog-key="IVmDhN5U" slug="cold-crashing-starter"><regular-body>&lt;p&gt;Cold-crashing starter.&lt;/p&gt;</regular-body><tag>014</tag></post><post id="31322629828" url="http://geekbrewing.tumblr.com/post/31322629828" url-with-slug="http://geekbrewing.tumblr.com/post/31322629828/big-starter-made-and-on-the-stir-plate-for-a-big" type="photo" date-gmt="2012-09-11 05:33:56 GMT" date="Mon, 10 Sep 2012 22:33:56" unix-timestamp="1347341636" format="html" reblog-key="zic2AFVR" slug="big-starter-made-and-on-the-stir-plate-for-a-big" width="720" height="960"><photo-caption>&lt;p&gt;Big starter made and on the stir plate for a big Imperial Stout! I used most of a pack of WY1056 and saved some for use in another batch.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_ma67gkCxb41qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://24.media.tumblr.com/tumblr_ma67gkCxb41qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://24.media.tumblr.com/tumblr_ma67gkCxb41qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://24.media.tumblr.com/tumblr_ma67gkCxb41qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://25.media.tumblr.com/tumblr_ma67gkCxb41qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://24.media.tumblr.com/tumblr_ma67gkCxb41qcxyego1_75sq.jpg</photo-url><tag>014</tag></post></posts></tumblr></log></batch>

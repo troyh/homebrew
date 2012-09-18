@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<batch id="015"><recipe><beerxml recipefile="American Pale Ale with Caramel.xml" commit_sha="ad5224174f0f7c194e62fcbeabaad4e3eac99f3e"><RECIPE>
+<VERSION>1</VERSION>
+<NAME>American Pale Ale with Caramel</NAME>
+<TYPE>All Grain</TYPE>
+<BREWER>BrewPal</BREWER>
+<BATCH_SIZE>20.819765</BATCH_SIZE>
+<BOIL_SIZE>24.283417</BOIL_SIZE>
+<BOIL_TIME>60</BOIL_TIME>
+<EFFICIENCY>75</EFFICIENCY>
+<OG>0.000000</OG>
+<FG>0.000000</FG>
+<FERMENTATION_STAGES>1</FERMENTATION_STAGES>
+<PRIMARY_AGE>14</PRIMARY_AGE>
+<PRIMARY_TEMP>19.444445</PRIMARY_TEMP>
+<SECONDARY_AGE>0</SECONDARY_AGE>
+<SECONDARY_TEMP>21.000000</SECONDARY_TEMP>
+<CARBONATION>2.250000</CARBONATION>
+<FORCED_CARBONATION>1</FORCED_CARBONATION>
+<CARBONATION_TEMP>4.444445</CARBONATION_TEMP>
+<PRIMING_SUGAR_NAME>(null)</PRIMING_SUGAR_NAME>
+<PRIMING_SUGAR_EQUIV>0.000000</PRIMING_SUGAR_EQUIV>
+<NOTES>From "Brewing Classic Styles", p.136</NOTES>
+<FERMENTABLES>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Grain</TYPE>
+    <AMOUNT>4.195729</AMOUNT>
+    <COLOR>1.500000</COLOR>
+    <YIELD>78.000000</YIELD>
+    <NAME>2 Row Base</NAME>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Grain</TYPE>
+    <AMOUNT>0.340194</AMOUNT>
+    <COLOR>40.000000</COLOR>
+    <YIELD>72.000000</YIELD>
+    <NAME>Crystal 40L</NAME>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>9.000000</COLOR>
+    <AMOUNT>0.340194</AMOUNT>
+    <NAME>Munich (Dark)</NAME>
+    <YIELD>72.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+</FERMENTABLES>
+<HOPS>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Boil</USE>
+    <ALPHA>13.800000</ALPHA>
+    <SUBSTITUTES>Horizon, Newport</SUBSTITUTES>
+    <FORM>Pellet</FORM>
+    <NAME>Magnum</NAME>
+    <AMOUNT>0.018711</AMOUNT>
+    <TIME>60.000000</TIME>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Boil</USE>
+    <ALPHA>10.900000</ALPHA>
+    <SUBSTITUTES>Amarillo, Cascade, Columbus, Summit</SUBSTITUTES>
+    <FORM>Leaf</FORM>
+    <NAME>Centennial</NAME>
+    <AMOUNT>0.007087</AMOUNT>
+    <TIME>10.000000</TIME>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Boil</USE>
+    <ALPHA>8.600000</ALPHA>
+    <SUBSTITUTES>Nugget, Chinook, Columbus, Bullion, Perle, Styrian Aurora</SUBSTITUTES>
+    <FORM>Pellet</FORM>
+    <NAME>Northern Brewer</NAME>
+    <AMOUNT>0.012000</AMOUNT>
+    <TIME>10.000000</TIME>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Aroma</USE>
+    <ALPHA>10.900000</ALPHA>
+    <SUBSTITUTES>Amarillo, Cascade, Columbus, Summit</SUBSTITUTES>
+    <FORM>Leaf</FORM>
+    <NAME>Centennial</NAME>
+    <AMOUNT>0.014175</AMOUNT>
+    <TIME>0</TIME>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Aroma</USE>
+    <ALPHA>8.600000</ALPHA>
+    <SUBSTITUTES>Nugget, Chinook, Columbus, Bullion, Perle, Styrian Aurora</SUBSTITUTES>
+    <FORM>Pellet</FORM>
+    <NAME>Northern Brewer</NAME>
+    <AMOUNT>0.023000</AMOUNT>
+    <TIME>0</TIME>
+  </HOP>
+</HOPS>
+<YEASTS>
+  <YEAST>
+    <VERSION>1</VERSION>
+    <LABORATORY>Fermentis</LABORATORY>
+    <FORM>Dry</FORM>
+    <MIN_TEMPERATURE>15</MIN_TEMPERATURE>
+    <PRODUCT_ID>US-05</PRODUCT_ID>
+    <NAME>Safale US-05</NAME>
+    <TYPE>Ale</TYPE>
+    <MAX_TEMPERATURE>24</MAX_TEMPERATURE>
+    <ATTENUATION>78</ATTENUATION>
+    <AMOUNT>0.010000</AMOUNT>
+  </YEAST>
+</YEASTS>
+<MISCS>
+</MISCS>
+<MASH>
+<VERSION>1</VERSION>
+<NAME>Batch/Fly</NAME>
+<GRAIN_TEMP>21.111111</GRAIN_TEMP>
+<MASH_THICKNESS>3.129527</MASH_THICKNESS>
+<SPARGE_TEMP>76.666664</SPARGE_TEMP>
+<MASH_STEPS>
+  <MASH_STEP>
+    <VERSION>1</VERSION>
+    <TYPE>Infusion</TYPE>
+    <NAME>Strike</NAME>
+    <STEP_TIME>60</STEP_TIME>
+    <INFUSE_AMOUNT>11.35624</INFUSE_AMOUNT>
+    <STEP_TEMP>67.77778</STEP_TEMP>
+  </MASH_STEP>
+</MASH_STEPS>
+</MASH>
+<WATERS>
+</WATERS>
+<EQUIPMENT>
+    <VERSION>1</VERSION>
+    <BOIL_SIZE>24.28342</BOIL_SIZE>
+    <BOIL_TIME>60</BOIL_TIME>
+    <BATCH_SIZE>18.92706</BATCH_SIZE>
+    <TOP_UP_KETTLE>0</TOP_UP_KETTLE>
+    <TOP_UP_WATER>1.01106</TOP_UP_WATER>
+    <EVAP_RATE>17</EVAP_RATE>
+    <TRUB_CHILLER_LOSS>0.946353</TRUB_CHILLER_LOSS>
+</EQUIPMENT>
+<STYLES>
+  <STYLE>
+    <VERSION>1</VERSION>
+    <COLOR_MIN>5.0</COLOR_MIN>
+    <COLOR_MAX>14.0</COLOR_MAX>
+    <STYLE_LETTER>A</STYLE_LETTER>
+    <ABV_MIN>4.5</ABV_MIN>
+    <NAME>American Pale Ale</NAME>
+    <IS_SELECTED>0.000000</IS_SELECTED>
+    <TYPE>beer</TYPE>
+    <FG_MIN>1.010</FG_MIN>
+    <OG_MIN>1.045</OG_MIN>
+    <EXAMPLES>Sierra Nevada Pale Ale, Stone Pale Ale, Great Lakes Burning River Pale Ale, Bear Republic XP Pale Ale, Anderson Valley Poleeko Gold Pale Ale, Deschutes Mirror Pond, Full Sail Pale Ale, Three Floyds X-Tra Pale Ale, Firestone Pale Ale, Left Hand Brewing Jackman's Pale Ale</EXAMPLES>
+    <IBU_MAX>45</IBU_MAX>
+    <MATCH_QUALITY>Exact match</MATCH_QUALITY>
+    <STYLE_GUIDE>BJCP</STYLE_GUIDE>
+    <INGREDIENTS>Pale ale malt, typically American two-row.  American hops, often but not always ones with a citrusy character.  American ale yeast.  Water can vary in sulfate content, but carbonate content should be relatively low.  Specialty grains may add character and complexity, but generally make up a relatively small portion of the grist.  Grains that add malt flavor and richness, light sweetness, and toasty or bready notes are often used (along with late hops) to differentiate brands.</INGREDIENTS>
+    <FG_MAX>1.015</FG_MAX>
+    <ABV_MAX>6.2</ABV_MAX>
+    <PROFILE>Aroma:
+Usually moderate to strong hop aroma from dry hopping or late kettle additions of American hop varieties.  A citrusy hop character is very common, but not required. Low to moderate maltiness supports the hop presentation, and may optionally show small amounts of specialty malt character (bready, toasty, biscuity).  Fruity esters vary from moderate to none.  No diacetyl.  Dry hopping (if used) may add grassy notes, although this character should not be excessive.
+Appearance:
+Pale golden to deep amber.  Moderately large white to off-white head with good retention.  Generally quite clear, although dry-hopped versions may be slightly hazy.
+Flavor:
+Usually a moderate to high hop flavor, often showing a citrusy American hop character (although other hop varieties may be used).  Low to moderately high clean malt character supports the hop presentation, and may optionally show small amounts of specialty malt character (bready, toasty, biscuity).  The balance is typically towards the late hops and bitterness, but the malt presence can be substantial.  Caramel flavors are usually restrained or absent.  Fruity esters can be moderate to none.  Moderate to high hop bitterness with a medium to dry finish.  Hop flavor and bitterness often lingers into the finish.  No diacetyl. Dry hopping (if used) may add grassy notes, although this character should not be excessive.
+Mouthfeel:
+Medium-light to medium body.  Carbonation moderate to high.  Overall smooth finish without astringency often associated with high hopping rates.
+Impression:
+Refreshing and hoppy, yet with sufficient supporting malt.</PROFILE>
+    <OG_MAX>1.060</OG_MAX>
+    <CARB_MIN>2.2</CARB_MIN>
+    <CATEGORY>American Ale</CATEGORY>
+    <IBU_MIN>30</IBU_MIN>
+    <CARB_MAX>2.8</CARB_MAX>
+    <CATEGORY_NUMBER>10</CATEGORY_NUMBER>
+    <NOTES>History:
+An American adaptation of English pale ale, reflecting indigenous ingredients (hops, malt, yeast, and water).  Often lighter in color, cleaner in fermentation by-products, and having less caramel flavors than English counterparts.
+Comments:
+There is some overlap in color between American pale ale and American amber ale.  The American pale ale will generally be cleaner, have a less caramelly malt profile, less body, and often more finishing hops.</NOTES>
+  </STYLE>
+</STYLES>
+</RECIPE></beerxml><data>
+  <ppg>331.889571879122</ppg>
+  <ppg>24.8399501967936</ppg>
+  <ppg>24.8399501967936</ppg>
+</data></recipe><results>
+  <mash type="" duration="60">
+    <infusion>
+      <strike volume="15.14164" temp="70"/>
+    </infusion>
+    <measurement temp="65"/>
+    <measurement temp="65"/>
+    <measurement temp="63.055556"/>
+  </mash>
+  <sparge duration="27"/>
+  <boil volume="27.44422" sg="1.048" time="60" end_volume="23.09100"/>
+  <gravity volume="25.74078" og="1.052" fg=""/>
+</results><log><tumblr version="1.0"><tumblelog name="geekbrewing" timezone="US/Pacific" title="Brew Log"/><posts start="0" total="5"><post id="31589820710" url="http://geekbrewing.tumblr.com/post/31589820710" url-with-slug="http://geekbrewing.tumblr.com/post/31589820710/another-good-use-of-the-blow-off-tube" type="photo" date-gmt="2012-09-15 15:27:22 GMT" date="Sat, 15 Sep 2012 08:27:22" unix-timestamp="1347722842" format="html" reblog-key="RkYgeaAR" slug="another-good-use-of-the-blow-off-tube" width="720" height="960"><photo-caption>&lt;p&gt;Another good use of the blow-off tube.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_maedlmzM4u1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://24.media.tumblr.com/tumblr_maedlmzM4u1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://24.media.tumblr.com/tumblr_maedlmzM4u1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://24.media.tumblr.com/tumblr_maedlmzM4u1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://25.media.tumblr.com/tumblr_maedlmzM4u1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://25.media.tumblr.com/tumblr_maedlmzM4u1qcxyego1_75sq.jpg</photo-url><tag>015</tag></post><post id="31569342150" url="http://geekbrewing.tumblr.com/post/31569342150" url-with-slug="http://geekbrewing.tumblr.com/post/31569342150/aerated-for-a-minute-and-put-a-blow-off-hose-on" type="regular" date-gmt="2012-09-15 04:45:48 GMT" date="Fri, 14 Sep 2012 21:45:48" unix-timestamp="1347684348" format="html" reblog-key="YlzDNaMD" slug="aerated-for-a-minute-and-put-a-blow-off-hose-on"><regular-body>&lt;p&gt;Aerated for a minute and put a blow-off hose on. Fermentation had begun with some krausen beginning to form. &lt;/p&gt;</regular-body><tag>015</tag></post><post id="31551012113" url="http://geekbrewing.tumblr.com/post/31551012113" url-with-slug="http://geekbrewing.tumblr.com/post/31551012113/mashed-at-too-low-of-a-temperature-my-printout" type="regular" date-gmt="2012-09-14 23:47:00 GMT" date="Fri, 14 Sep 2012 16:47:00" unix-timestamp="1347666420" format="html" reblog-key="oLCEmlLN" slug="mashed-at-too-low-of-a-temperature-my-printout"><regular-body>&lt;p&gt;Mashed at too low of a temperature. My printout said 148ºF for the mash temp but while mashing, I checked the Brewing Classic Styles book and it was supposed to be 154º. I must&amp;#8217;ve been editing the recipe on my iPhone in Brew Pal and forgot to put it back to 154º. D&amp;#8217;oh! I guess the yeast is going to bring the FG way down.&lt;/p&gt;
+&lt;p&gt;Easy brew, but my gravity was way high at the end of the boil, 1.057. So I topped-off the boil kettle with water up to 6.8G, which should have given me a gravity of 1.052, which was my target. I only put 6G into the fermenter.&lt;/p&gt;
+&lt;p&gt;Pitched the yeast. Didn&amp;#8217;t aerate it because the carboy is so full, but maybe I&amp;#8217;ll do it later tonight.&lt;/p&gt;
+&lt;p&gt;ST=159 SV=4 LT=27 BV=7.25 BG=1.048 BT=60 EV=6.1 FV=6.8 OG=1.052&lt;/p&gt;</regular-body><tag>015</tag></post><post id="31434410989" url="http://geekbrewing.tumblr.com/post/31434410989" url-with-slug="http://geekbrewing.tumblr.com/post/31434410989/cold-crashing-starter" type="regular" date-gmt="2012-09-13 01:09:12 GMT" date="Wed, 12 Sep 2012 18:09:12" unix-timestamp="1347498552" format="html" reblog-key="t1qtWNL3" slug="cold-crashing-starter"><regular-body>&lt;p&gt;Cold-crashing starter.&lt;/p&gt;</regular-body><tag>015</tag></post><post id="31362435221" url="http://geekbrewing.tumblr.com/post/31362435221" url-with-slug="http://geekbrewing.tumblr.com/post/31362435221/starter-on-stir-plate-pitched-30ml-of-yeast" type="photo" date-gmt="2012-09-11 23:11:02 GMT" date="Tue, 11 Sep 2012 16:11:02" unix-timestamp="1347405062" format="html" reblog-key="XYqiVZsr" slug="starter-on-stir-plate-pitched-30ml-of-yeast" width="720" height="960"><photo-caption>&lt;p&gt;Starter on stir plate. Pitched ~30ml of yeast slurry from batch 007, washed on 8/29/12.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_ma7kcnS2PA1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://25.media.tumblr.com/tumblr_ma7kcnS2PA1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_ma7kcnS2PA1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://24.media.tumblr.com/tumblr_ma7kcnS2PA1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://24.media.tumblr.com/tumblr_ma7kcnS2PA1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://25.media.tumblr.com/tumblr_ma7kcnS2PA1qcxyego1_75sq.jpg</photo-url><tag>015</tag></post></posts></tumblr></log></batch>

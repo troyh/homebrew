@@ -1,0 +1,8 @@
+<batch>
+	<recipe>
+		<filename>Fuller's ESB.xml</filename>
+		<commit_sha>cb7e8c7789772b4f33e2751cfa92154a4c4ee0cc</commit_sha>
+	</recipe>
+	<description>A Fuller's ESB with Maris Otter instead of Optic malt. I also use the Blichmann HopRocket to add the "dry hop" hops.</description>
+	<log></log>
+</batch>

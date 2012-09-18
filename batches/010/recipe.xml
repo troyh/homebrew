@@ -1,0 +1,8 @@
+<batch>
+	<recipe>
+		<filename>Fuller's ESB.xml</filename>
+		<commit_sha>cffcbbfa4563e86af9f6b5d2daa08f2fb4066f0a</commit_sha>
+	</recipe>
+	<description>A variation of Fuller's ESB that uses Cascade hops as the dry-hop hops and two different yeasts were tried.</description>
+	<log></log>
+</batch>
