@@ -11,7 +11,9 @@
 <recipe filename="recipes/My IPA.xml"><NAME>Special B IPA</NAME></recipe>
 <recipe filename="recipes/Oatmeal Raisin Stout.xml"><NAME>Oatmeal Raisin Stout</NAME></recipe>
 <recipe filename="recipes/Old Rasputin.xml"><NAME>Old Rasputin</NAME></recipe>
+<recipe filename="recipes/Oostmalle Tripel.xml"><NAME>Oostmalle Tripel</NAME></recipe>
 <recipe filename="recipes/Punkin' Ale.xml"><NAME>Punkin' Ale</NAME></recipe>
+<recipe filename="recipes/Southern Tier Pumking.xml"><NAME>Southern Tier Pumking</NAME></recipe>
 <recipe filename="recipes/Surly Furious.xml"><NAME>Surly Furious</NAME></recipe>
 <recipe filename="recipes/The Czar's Revenge.xml"><NAME>The Czar's Revenge</NAME></recipe>
 </recipes>
