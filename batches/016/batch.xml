@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<batch id="016"><recipe><beerxml recipefile="Jolly Roger Christmas Ale.xml" commit_sha="fd4ff58b382c2f2b4b964f661ba13415b06f6fe9"><RECIPE>
+<batch id="016"><recipe><beerxml recipefile="Jolly Roger Christmas Ale.xml" commit_sha="27b4f069e7331f21407c772e88e0360166d49e8d"><RECIPE>
 <VERSION>1</VERSION>
 <NAME>Jolly Roger Christmas Ale</NAME>
 <TYPE>All Grain</TYPE>
@@ -7,9 +7,9 @@
 <BATCH_SIZE>20.819765</BATCH_SIZE>
 <BOIL_SIZE>29.762886</BOIL_SIZE>
 <BOIL_TIME>90</BOIL_TIME>
-<EFFICIENCY>75</EFFICIENCY>
-<OG>1.076000</OG>
-<FG>1.019000</FG>
+<EFFICIENCY>80</EFFICIENCY>
+<OG>0.000000</OG>
+<FG>0.000000</FG>
 <FERMENTATION_STAGES>2</FERMENTATION_STAGES>
 <PRIMARY_AGE>42</PRIMARY_AGE>
 <PRIMARY_TEMP>20.000000</PRIMARY_TEMP>
@@ -20,118 +20,122 @@
 <CARBONATION_TEMP>0.000000</CARBONATION_TEMP>
 <PRIMING_SUGAR_NAME>(null)</PRIMING_SUGAR_NAME>
 <PRIMING_SUGAR_EQUIV>0.000000</PRIMING_SUGAR_EQUIV>
-<NOTES>http://www.homebrewtalk.com/f78/jolly-roger-christmas-ale-150217/</NOTES>
+<NOTES>OG should be 1.085, according to recipe. 
+
+http://www.homebrewtalk.com/f78/jolly-roger-christmas-ale-150217/:
+
+This beer is modeled after the Maritime Pacific Jolly Roger Christmas Ale which is a seasonal beer made in Seattle. 9% ABV it is not for the weak, tasting at 8 weeks there was no alcohol warmth and it tasting really nice. I was planning on bottling the whole batch of this because I didn't think it was going to be drinkable until next winter buy quite the contrary, this stuff is great! I hopped it up more that initially planned in prep to store it and still have hop character but so far I like it the way it is.</NOTES>
 <FERMENTABLES>
   <FERMENTABLE>
     <VERSION>1</VERSION>
-    <TYPE>Grain</TYPE>
     <COLOR>1.500000</COLOR>
     <AMOUNT>6.395653</AMOUNT>
-    <YIELD>78.000000</YIELD>
     <NAME>2 Row Base</NAME>
+    <YIELD>78.000000</YIELD>
+    <TYPE>Grain</TYPE>
   </FERMENTABLE>
   <FERMENTABLE>
     <VERSION>1</VERSION>
-    <TYPE>Grain</TYPE>
     <COLOR>50.000000</COLOR>
     <AMOUNT>0.362874</AMOUNT>
-    <YIELD>72.000000</YIELD>
     <NAME>CaraMunich</NAME>
+    <YIELD>72.000000</YIELD>
+    <TYPE>Grain</TYPE>
   </FERMENTABLE>
   <FERMENTABLE>
     <VERSION>1</VERSION>
-    <TYPE>Grain</TYPE>
     <COLOR>75.000000</COLOR>
     <AMOUNT>0.362874</AMOUNT>
-    <YIELD>72.000000</YIELD>
     <NAME>Crystal 75L</NAME>
+    <YIELD>72.000000</YIELD>
+    <TYPE>Grain</TYPE>
   </FERMENTABLE>
 </FERMENTABLES>
 <HOPS>
   <HOP>
     <VERSION>1</VERSION>
-    <USE>Dry Hop</USE>
-    <ALPHA>5.500000</ALPHA>
-    <SUBSTITUTES>Amarillo, Centennial, Summit</SUBSTITUTES>
+    <TIME>0</TIME>
     <FORM>Pellet</FORM>
+    <SUBSTITUTES>Amarillo, Centennial, Summit</SUBSTITUTES>
+    <ALPHA>6.500000</ALPHA>
     <NAME>Cascade</NAME>
     <AMOUNT>0.028350</AMOUNT>
-    <TIME>20160.000000</TIME>
+    <USE>Aroma</USE>
   </HOP>
   <HOP>
     <VERSION>1</VERSION>
-    <USE>Dry Hop</USE>
-    <ALPHA>13.000000</ALPHA>
-    <SUBSTITUTES>Brewers Gold, Columbus, Galena, Nugget, Northern Brewer, Eroica</SUBSTITUTES>
+    <TIME>0</TIME>
     <FORM>Pellet</FORM>
+    <SUBSTITUTES>Brewers Gold, Columbus, Galena, Nugget, Northern Brewer, Eroica</SUBSTITUTES>
+    <ALPHA>11.500000</ALPHA>
     <NAME>Chinook</NAME>
     <AMOUNT>0.028350</AMOUNT>
-    <TIME>20160.000000</TIME>
+    <USE>Aroma</USE>
   </HOP>
   <HOP>
     <VERSION>1</VERSION>
-    <USE>Boil</USE>
-    <ALPHA>11.500000</ALPHA>
-    <SUBSTITUTES>Brewers Gold, Columbus, Galena, Nugget, Northern Brewer, Eroica</SUBSTITUTES>
+    <TIME>20160.000000</TIME>
     <FORM>Pellet</FORM>
+    <SUBSTITUTES>Amarillo, Centennial, Summit</SUBSTITUTES>
+    <ALPHA>5.500000</ALPHA>
+    <NAME>Cascade</NAME>
+    <AMOUNT>0.028350</AMOUNT>
+    <USE>Dry Hop</USE>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>20160.000000</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Brewers Gold, Columbus, Galena, Nugget, Northern Brewer, Eroica</SUBSTITUTES>
+    <ALPHA>13.000000</ALPHA>
+    <NAME>Chinook</NAME>
+    <AMOUNT>0.028350</AMOUNT>
+    <USE>Dry Hop</USE>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>90.000000</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Brewers Gold, Columbus, Galena, Nugget, Northern Brewer, Eroica</SUBSTITUTES>
+    <ALPHA>11.500000</ALPHA>
     <NAME>Chinook</NAME>
     <AMOUNT>0.049612</AMOUNT>
-    <TIME>90.000000</TIME>
+    <USE>Boil</USE>
   </HOP>
   <HOP>
     <VERSION>1</VERSION>
-    <USE>Boil</USE>
-    <ALPHA>6.500000</ALPHA>
-    <SUBSTITUTES>Amarillo, Centennial, Summit</SUBSTITUTES>
+    <TIME>30.000000</TIME>
     <FORM>Pellet</FORM>
+    <SUBSTITUTES>Amarillo, Centennial, Summit</SUBSTITUTES>
+    <ALPHA>6.500000</ALPHA>
     <NAME>Cascade</NAME>
     <AMOUNT>0.028350</AMOUNT>
-    <TIME>30.000000</TIME>
+    <USE>Boil</USE>
   </HOP>
   <HOP>
     <VERSION>1</VERSION>
-    <USE>Boil</USE>
-    <ALPHA>11.500000</ALPHA>
-    <SUBSTITUTES>Brewers Gold, Columbus, Galena, Nugget, Northern Brewer, Eroica</SUBSTITUTES>
+    <TIME>30.000000</TIME>
     <FORM>Pellet</FORM>
+    <SUBSTITUTES>Brewers Gold, Columbus, Galena, Nugget, Northern Brewer, Eroica</SUBSTITUTES>
+    <ALPHA>11.500000</ALPHA>
     <NAME>Chinook</NAME>
     <AMOUNT>0.022680</AMOUNT>
-    <TIME>30.000000</TIME>
-  </HOP>
-  <HOP>
-    <VERSION>1</VERSION>
-    <USE>Aroma</USE>
-    <ALPHA>6.500000</ALPHA>
-    <SUBSTITUTES>Amarillo, Centennial, Summit</SUBSTITUTES>
-    <FORM>Pellet</FORM>
-    <NAME>Cascade</NAME>
-    <AMOUNT>0.028350</AMOUNT>
-    <TIME>0</TIME>
-  </HOP>
-  <HOP>
-    <VERSION>1</VERSION>
-    <USE>Aroma</USE>
-    <ALPHA>11.500000</ALPHA>
-    <SUBSTITUTES>Brewers Gold, Columbus, Galena, Nugget, Northern Brewer, Eroica</SUBSTITUTES>
-    <FORM>Pellet</FORM>
-    <NAME>Chinook</NAME>
-    <AMOUNT>0.028350</AMOUNT>
-    <TIME>0</TIME>
+    <USE>Boil</USE>
   </HOP>
 </HOPS>
 <YEASTS>
   <YEAST>
     <VERSION>1</VERSION>
-    <AMOUNT_IS_WEIGHT>FALSE</AMOUNT_IS_WEIGHT>
+    <AMOUNT>0.116000</AMOUNT>
     <LABORATORY>White Labs</LABORATORY>
     <FORM>Liquid</FORM>
     <MIN_TEMPERATURE>18</MIN_TEMPERATURE>
     <PRODUCT_ID>WLP007</PRODUCT_ID>
     <NAME>Dry English Ale</NAME>
+    <AMOUNT_IS_WEIGHT>FALSE</AMOUNT_IS_WEIGHT>
     <TYPE>Ale</TYPE>
     <MAX_TEMPERATURE>21</MAX_TEMPERATURE>
     <ATTENUATION>75</ATTENUATION>
-    <AMOUNT>0.116000</AMOUNT>
   </YEAST>
 </YEASTS>
 <MISCS>
@@ -139,17 +143,17 @@
 <MASH>
 <VERSION>1</VERSION>
 <NAME>Batch/Fly</NAME>
-<GRAIN_TEMP>0.000000</GRAIN_TEMP>
+<GRAIN_TEMP>21.111111</GRAIN_TEMP>
 <MASH_THICKNESS>3.129527</MASH_THICKNESS>
 <SPARGE_TEMP>76.666664</SPARGE_TEMP>
 <MASH_STEPS>
   <MASH_STEP>
     <VERSION>1</VERSION>
     <INFUSE_AMOUNT>11.35624</INFUSE_AMOUNT>
-    <TYPE>Infusion</TYPE>
-    <STEP_TIME>60</STEP_TIME>
     <NAME>Strike</NAME>
+    <STEP_TIME>60</STEP_TIME>
     <STEP_TEMP>66.66666</STEP_TEMP>
+    <TYPE>Infusion</TYPE>
   </MASH_STEP>
 </MASH_STEPS>
 </MASH>
