@@ -1,44 +1,93 @@
 {
-  "OG": 1.076,
-  "batch_size": 20.819765,
-  "FG": 1.019,
-  "type": "All Grain",
-  "yeast_starter_slurry": 159,
-  "ADF": 75,
+  "ABV": 7.49,
   "ingredients": {
+    "fermentables": {
+      "total_weight": 7.121401,
+      "list": [
+        {
+          "amount": 6.395653,
+          "name": "2 Row Base",
+          "srm": 2,
+          "yield": 78.0,
+          "pct": 89.81
+        },
+        {
+          "amount": 0.362874,
+          "name": "CaraMunich",
+          "srm": 50,
+          "yield": 72.0,
+          "pct": 5.1
+        },
+        {
+          "amount": 0.362874,
+          "name": "Crystal 75L",
+          "srm": 75,
+          "yield": 72.0,
+          "pct": 5.1
+        }
+      ]
+    },
+    "yeast": [
+      {
+        "temperature_hi": 21,
+        "name": "Dry English Ale",
+        "prod_id": "WLP007",
+        "temperature_lo": 18,
+        "attenuation": 75,
+        "lab": "White Labs"
+      }
+    ],
     "hops": {
+      "first_wort": [
+
+      ],
+      "total_weight": 0.214042,
+      "dry_hop": [
+        {
+          "amount": 0.02835,
+          "form": "Pellet",
+          "alpha": 5.5,
+          "name": "Cascade"
+        },
+        {
+          "amount": 0.02835,
+          "form": "Pellet",
+          "alpha": 13,
+          "name": "Chinook"
+        }
+      ],
       "aroma": [
         {
-          "form": "Pellet",
           "amount": 0.02835,
+          "form": "Pellet",
           "alpha": 6.5,
           "name": "Cascade"
         },
         {
-          "form": "Pellet",
           "amount": 0.02835,
+          "form": "Pellet",
           "alpha": 11.5,
           "name": "Chinook"
         }
       ],
       "boil": [
         {
-          "form": "Pellet",
           "amount": 0.049612,
+          "form": "Pellet",
           "alpha": 11.5,
           "name": "Chinook",
           "time": 90
         },
         {
-          "form": "Pellet",
           "amount": 0.02835,
+          "form": "Pellet",
           "alpha": 6.5,
           "name": "Cascade",
           "time": 30
         },
         {
-          "form": "Pellet",
           "amount": 0.02268,
+          "form": "Pellet",
           "alpha": 11.5,
           "name": "Chinook",
           "time": 30
@@ -46,66 +95,24 @@
       ],
       "mash": [
 
-      ],
-      "dry_hop": [
-        {
-          "form": "Pellet",
-          "amount": 0.02835,
-          "alpha": 5.5,
-          "name": "Cascade"
-        },
-        {
-          "form": "Pellet",
-          "amount": 0.02835,
-          "alpha": 13,
-          "name": "Chinook"
-        }
-      ],
-      "first_wort": [
-
-      ],
-      "total_weight": 0.214042
+      ]
     },
-    "yeast": [
-      {
-        "attenuation": 75,
-        "temperature_lo": 18,
-        "temperature_hi": 21,
-        "name": "Dry English Ale",
-        "prod_id": "WLP007",
-        "lab": "White Labs"
-      }
-    ],
-    "fermentables": {
-      "list": [
-        {
-          "srm": 2,
-          "amount": 6.395653,
-          "name": "2 Row Base",
-          "pct": 89.81
-        },
-        {
-          "srm": 50,
-          "amount": 0.362874,
-          "name": "CaraMunich",
-          "pct": 5.1
-        },
-        {
-          "srm": 75,
-          "amount": 0.362874,
-          "name": "Crystal 75L",
-          "pct": 5.1
-        }
-      ],
-      "total_weight": 7.121401
-    }
+    "miscellaneous": [
+
+    ]
   },
   "yeast_starter_cells": 298,
-  "total_ppg": 558.899396631708,
-  "notes": "http://www.homebrewtalk.com/f78/jolly-roger-christmas-ale-150217/",
+  "FG": 1.019,
+  "ADF": 75,
   "styles": [
 
   ],
   "name": "Jolly Roger Christmas Ale",
-  "ABV": 7.49
+  "batch_size": 20.819765,
+  "efficiency": 75,
+  "type": "All Grain",
+  "yeast_starter_slurry": 159,
+  "total_ppg": 558.899396631708,
+  "notes": "http://www.homebrewtalk.com/f78/jolly-roger-christmas-ale-150217/",
+  "OG": 1.076
 }

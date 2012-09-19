@@ -1,0 +1,141 @@
+{
+  "notes": "http://www.homebrewtalk.com/f12/southern-tier-pumking-clone-191381/index20.html",
+  "efficiency": 80,
+  "name": "Southern Tier Pumking",
+  "total_ppg": 615.939170715018,
+  "FG": 1.02,
+  "yeast_starter_cells": 350,
+  "styles": [
+    {
+      "name": "Spice, Herb, or Vegetable Beer",
+      "letter": "A",
+      "category": 21
+    }
+  ],
+  "ingredients": {
+    "hops": {
+      "mash": [
+
+      ],
+      "total_weight": 0.028349,
+      "aroma": [
+
+      ],
+      "boil": [
+        {
+          "name": "Magnum",
+          "form": "Pellet",
+          "alpha": 14,
+          "amount": 0.021262,
+          "time": 60
+        },
+        {
+          "name": "Sterling",
+          "form": "Pellet",
+          "alpha": 4,
+          "amount": 0.007087,
+          "time": 15
+        }
+      ],
+      "dry_hop": [
+
+      ],
+      "first_wort": [
+
+      ]
+    },
+    "fermentables": {
+      "total_weight": 8.618254,
+      "list": [
+        {
+          "name": "Pumpkin puree",
+          "amount": 0.907185,
+          "srm": 0,
+          "pct": 10.53,
+          "yield": 0.0
+        },
+        {
+          "name": "Sugar - Cane",
+          "amount": 0.340194,
+          "srm": 35,
+          "pct": 3.95,
+          "yield": 67.0
+        },
+        {
+          "name": "Sugar - Brown",
+          "amount": 0.113398,
+          "srm": 35,
+          "pct": 1.32,
+          "yield": 67.0
+        },
+        {
+          "name": "Pale Ale",
+          "amount": 6.803885,
+          "srm": 3,
+          "pct": 78.95,
+          "yield": 80.0
+        },
+        {
+          "name": "Crystal 80L",
+          "amount": 0.453592,
+          "srm": 80,
+          "pct": 5.26,
+          "yield": 72.0
+        }
+      ]
+    },
+    "yeast": [
+      {
+        "attenuation": 78,
+        "prod_id": "US-05",
+        "name": "Safale US-05",
+        "temperature_hi": 24,
+        "lab": "Fermentis",
+        "temperature_lo": 15
+      }
+    ],
+    "miscellaneous": [
+      {
+        "name": "Whirlfloc",
+        "amount": 0.002835,
+        "time": 15.0
+      },
+      {
+        "name": "Cinnamon",
+        "amount": 0.085049,
+        "time": 15.0
+      },
+      {
+        "name": "Allspice",
+        "amount": 0.002835,
+        "time": 5.0
+      },
+      {
+        "name": "Ginger",
+        "amount": 0.002835,
+        "time": 5.0
+      },
+      {
+        "name": "Nutmeg",
+        "amount": 0.002835,
+        "time": 5.0
+      },
+      {
+        "name": "Whole cloves",
+        "amount": 0.002835,
+        "time": 5.0
+      },
+      {
+        "name": "Lactose",
+        "amount": 0.056699,
+        "time": 15.0
+      }
+    ]
+  },
+  "ABV": 10.33,
+  "OG": 1.099,
+  "batch_size": 18.927059,
+  "type": "All Grain",
+  "yeast_starter_slurry": 187,
+  "ADF": 80
+}

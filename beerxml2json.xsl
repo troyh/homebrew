@@ -44,6 +44,8 @@ xmlns:exslt="http://exslt.org/common">
 	</xsl:text>
 	<xsl:text>&#09;"total_ppg":</xsl:text><xsl:value-of select="$totppg"/><xsl:text>,
 	</xsl:text>
+	<xsl:text>&#09;"efficiency":</xsl:text><xsl:value-of select="EFFICIENCY"/><xsl:text>,
+	</xsl:text>
 	<xsl:text>&#09;"OG":</xsl:text><xsl:value-of select="format-number($CALC_OG_GU div 1000 + 1,&quot;#.000&quot;)"/><xsl:text>,
 	</xsl:text>
 	<xsl:text>&#09;"FG":</xsl:text><xsl:value-of select="format-number($CALC_FG_GU div 1000 + 1,&quot;#.000&quot;)"/><xsl:text>,
@@ -72,6 +74,8 @@ xmlns:exslt="http://exslt.org/common">
 </xsl:text>
 		<xsl:text>&#09;&#09;"hops":</xsl:text><xsl:apply-templates select="HOPS"/><xsl:text>,
 </xsl:text>
+		<xsl:text>&#09;&#09;"miscellaneous":[</xsl:text><xsl:apply-templates select="MISCS"/><xsl:text>],
+</xsl:text>
 		<xsl:text>&#09;&#09;"yeast":</xsl:text><xsl:apply-templates select="YEASTS"/><xsl:text>
 	},
 </xsl:text>
@@ -94,6 +98,7 @@ xmlns:exslt="http://exslt.org/common">
 <xsl:template match="FERMENTABLE">
 	<xsl:text>{
 			"amount":</xsl:text><xsl:value-of select="AMOUNT"/><xsl:text>,
+			"yield":</xsl:text><xsl:value-of select="YIELD"/><xsl:text>,
 			"pct":</xsl:text><xsl:value-of select="format-number(AMOUNT div sum(../FERMENTABLE/AMOUNT) * 100,&quot;#.##&quot;)"/>,<xsl:text>
 			"name":"</xsl:text><xsl:value-of select="NAME"/><xsl:text>",
 			"srm":</xsl:text><xsl:value-of select="format-number(COLOR,&quot;#&quot;)"/><xsl:text>
@@ -134,6 +139,22 @@ xmlns:exslt="http://exslt.org/common">
 		</xsl:if>
 		<xsl:text>&#09;&#09;"form":"</xsl:text><xsl:value-of select="FORM"/><xsl:text>"
      }</xsl:text>
+</xsl:template>
+
+<xsl:template match="MISCS">
+	<xsl:for-each select="MISC">
+		<xsl:apply-templates select="."/>
+		<xsl:if test="position()!=last()">,</xsl:if>
+	</xsl:for-each>
+</xsl:template>
+
+<xsl:template match="MISC">
+	<xsl:text>{"amount":</xsl:text><xsl:value-of select="AMOUNT"/><xsl:text>,
+</xsl:text>
+	<xsl:text>"name":"</xsl:text><xsl:value-of select="NAME"/><xsl:text>",
+</xsl:text>
+	<xsl:text>"time":</xsl:text><xsl:value-of select="TIME"/><xsl:text>}
+</xsl:text>
 </xsl:template>
 
 <xsl:template match="YEASTS">
