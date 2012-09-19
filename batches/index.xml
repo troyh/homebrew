@@ -296,4 +296,23 @@
   <sparge duration="27"/>
   <boil volume="27.44422" sg="1.048" time="60" end_volume="23.09100"/>
   <gravity volume="25.74078" og="1.052" fg=""/>
+</results></batch><batch id="016"><name>Jolly Roger Christmas Ale</name><type>All Grain</type><styles>
+</styles><yeasts>
+  <yeast><lab>White Labs</lab><prodid>WLP007</prodid><name>Dry English Ale</name></yeast>
+</yeasts><data>
+  <ppg>505.907444464937</ppg>
+  <ppg>26.4959760833856</ppg>
+  <ppg>26.4959760833856</ppg>
+</data><results>
+	<mash type="" duration="">
+		<infusion>
+			<strike volume="" temp=""/>
+		</infusion>
+		<measurement temp=""/>
+		<measurement temp=""/>
+		<measurement temp=""/>
+		<measurement temp=""/>
+	</mash>
+	<boil volume="" sg="" time="" end_volume=""/>
+	<gravity volume="" og="" fg=""/>
 </results></batch></batches>

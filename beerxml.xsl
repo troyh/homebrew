@@ -129,7 +129,7 @@ xmlns:exslt="http://exslt.org/common">
 			<!-- Total weight should be in decimal format -->
 			<xsl:call-template name="format-weight">
 				<xsl:with-param name="decimal_only" select="1"/>
-				<xsl:with-param name="kgs" select="sum(FERMENTABLE/AMOUNT)"/>
+				<xsl:with-param name="kgs" select="sum(FERMENTABLE[YIELD &gt; 0]/AMOUNT)"/>
 			</xsl:call-template>
 		</div>
 		<table>

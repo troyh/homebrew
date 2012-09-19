@@ -57,7 +57,9 @@ xmlns:math="http://exslt.org/math">
 				</div>
 					
 				<!-- Calculate total grain weight (in kg) -->
-				<xsl:variable name="total_grain" select="sum(recipe/beerxml/RECIPE/FERMENTABLES/FERMENTABLE/AMOUNT)"/>
+				<xsl:variable name="total_grain" select="sum(recipe/beerxml/RECIPE/FERMENTABLES/FERMENTABLE[YIELD &gt; 0]/AMOUNT)"/>
+				<!-- Calculate total hops weight (in kg) -->
+				<xsl:variable name="total_hops" select="sum(recipe/beerxml/RECIPE/HOPS/HOP/AMOUNT)"/>
 				<!--
 					Mash volume:
 					1.5 quarts (1.41953 liters) per 1 lb (0.453592kg) of grain 
@@ -69,12 +71,16 @@ xmlns:math="http://exslt.org/math">
 				    4.54249L of water per 4.53592kg grain
 				-->
 				<xsl:variable name="absorption_loss_vol" select="4.54249 * ($total_grain div 4.53592)"/>
+				<!-- Hop absorption loss calc: http://www.homebrewtalk.com/f12/leaf-hop-absorption-measured-241469/ 
+					138.3ml (0.1383L) per oz of hops
+				-->
+				<xsl:variable name="hop_absorption_loss_vol" select="($total_hops * 28.3495) * 0.1383"/>
 				<xsl:variable name="boil_hours" select="recipe/beerxml/RECIPE/BOIL_TIME div 60"/>
-				<xsl:variable name="boil_vol" select="recipe/beerxml/RECIPE/BATCH_SIZE div math:power(1 - $evaporation_rate,$boil_hours)"/>
-				<xsl:variable name="evaporation_loss_vol" select="math:power($boil_vol * $evaporation_rate,$boil_hours)"/>
-				<xsl:variable name="sparge_vol" select="$boil_vol - ($mashvol - $absorption_loss_vol - $mashtun_loss)"/>
+				<xsl:variable name="boil_vol" select="recipe/beerxml/RECIPE/BATCH_SIZE div (math:power(1 - $evaporation_rate,$boil_hours))"/>
+				<xsl:variable name="evaporation_loss_vol" select="$boil_vol * (1 - math:power(1 - $evaporation_rate,$boil_hours))"/>
+				<xsl:variable name="sparge_vol" select="$boil_vol - ($mashvol - $absorption_loss_vol - $hop_absorption_loss_vol - $mashtun_loss)"/>
 				
-				<div>
+				<div id="expected">
 					<span class="headerkey"><xsl:text>Strike:</xsl:text></span>
 					<span class="headerval">
 						<xsl:call-template name="format-volume">
@@ -123,6 +129,9 @@ xmlns:math="http://exslt.org/math">
 						<xsl:call-template name="format-volume">
 							<xsl:with-param name="liters" select="$boil_vol - $evaporation_loss_vol"/>
 							<xsl:with-param name="gravity" select="$expected_gu div (($boil_vol - $evaporation_loss_vol) * 0.264172) div 1000 + 1"/>
+						</xsl:call-template> &#8594;
+						<xsl:call-template name="format-volume">
+							<xsl:with-param name="liters" select="$boil_vol - $evaporation_loss_vol - $hop_absorption_loss_vol"/>
 						</xsl:call-template>
 					</span>
 				</div>

@@ -68,7 +68,7 @@ xmlns:exslt="http://exslt.org/common">
 
 <xsl:template match="recipe">
 	<li><a>
-		<xsl:attribute name="href"><xsl:value-of select="substring(@filename,1,string-length(@filename)-4)"/>.html</xsl:attribute>
+		<xsl:attribute name="href">recipe.html?name=<xsl:value-of select="substring(substring(@filename,1,string-length(@filename)-4),9)"/></xsl:attribute>
 		<xsl:value-of select="NAME" disable-output-escaping="yes"/></a></li>
 </xsl:template>
 
