@@ -225,6 +225,9 @@ xmlns:exslt="http://exslt.org/common">
 			<xsl:if test="USE = 'Boil'">
 				<xsl:value-of select="format-number(TIME,&quot;#&quot;)"/> min
 			</xsl:if>
+			<xsl:if test="USE = 'Dry Hop'">
+				<xsl:value-of select="format-number(TIME div (60 * 24),&quot;#&quot;)"/> days
+			</xsl:if>
 		</td>
 	</tr>
 </xsl:template>

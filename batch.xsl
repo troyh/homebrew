@@ -125,7 +125,7 @@ xmlns:math="http://exslt.org/math">
 							<xsl:with-param name="gravity" select="$expected_gu div ($boil_vol * 0.264172) div 1000 + 1"/>
 						</xsl:call-template> 
 						for 
-						<xsl:value-of select="recipe/beerxml/RECIPE/BOIL_TIME"/> minutes &#8594;
+						<xsl:value-of select="recipe/beerxml/RECIPE/BOIL_TIME"/> mins &#8594;
 						<xsl:call-template name="format-volume">
 							<xsl:with-param name="liters" select="$boil_vol - $evaporation_loss_vol"/>
 							<xsl:with-param name="gravity" select="$expected_gu div (($boil_vol - $evaporation_loss_vol) * 0.264172) div 1000 + 1"/>
@@ -169,7 +169,7 @@ xmlns:math="http://exslt.org/math">
 		<div>
 			<span class="headerkey"><xsl:text>Mash:</xsl:text></span>
 			<span class="headerval">
-				<xsl:value-of select="mash/@duration"/> minutes at
+				<xsl:value-of select="mash/@duration"/> mins at
 				<xsl:call-template name="format-temperature">
 					<xsl:with-param name="celsius" select="mash/measurement/@temp[1]"/>
 				</xsl:call-template>
@@ -185,7 +185,7 @@ xmlns:math="http://exslt.org/math">
 				<span class="headercode"><xsl:text>LT</xsl:text></span>
 			</span>
 			<span class="headerval">
-				<xsl:value-of select="sparge/@duration"/> minutes
+				<xsl:value-of select="sparge/@duration"/> mins
 				(<xsl:value-of select="format-number(sparge/@duration div (boil/@volume * 0.264172),&quot;#&quot;)"/> min/G)
 			</span>
 		</div>
@@ -204,7 +204,7 @@ xmlns:math="http://exslt.org/math">
 				for 
 				<xsl:if test="string-length(boil/@time) = 0">____</xsl:if>
 				<xsl:value-of select="boil/@time"/> 
-				minutes &#8594; 
+				mins &#8594; 
 				<xsl:call-template name="format-volume">
 					<xsl:with-param name="liters" select="boil/@end_volume"/>
 					<xsl:with-param name="gravity" select="(boil/@sg - 1) * 1000 * boil/@volume div boil/@end_volume div 1000 + 1"/>
@@ -212,10 +212,12 @@ xmlns:math="http://exslt.org/math">
 				<xsl:call-template name="format-volume">
 					<xsl:with-param name="liters" select="(boil/@volume - boil/@end_volume) div (boil/@time div 60)"/>
 				</xsl:call-template>
+				<xsl:if test="string-length(boil/@end_volume)">
 				(<xsl:call-template name="format-percent">
 					<xsl:with-param name="value" 
 						select="(boil/@volume - boil/@end_volume) div boil/@volume div (boil/@time div 60)"/>
 				</xsl:call-template>) per hour
+				</xsl:if>
 			</span>
 		</div>
 		<div>

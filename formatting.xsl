@@ -50,7 +50,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:choose>
 		<xsl:when test="string($liters) = 'NaN' or string-length($liters) = 0">
 			<span class="english">____ gallons</span>
-			<span class="metric">(____L)</span>
+			<!-- <span class="metric">(____L)</span> -->
 		</xsl:when>
 		<xsl:otherwise>
 			<span class="volume">
@@ -69,7 +69,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		<xsl:choose>
 			<xsl:when test="string($celsius) = 'NaN' or string-length($celsius) = 0">
 				<span class="fahrenheit">____</span>
-				<span class="celsius">____</span>
+				<!-- <span class="celsius">____</span> -->
 			</xsl:when>
 			<xsl:otherwise>
 				<span class="fahrenheit"><xsl:value-of select="format-number(($celsius * 9) div 5 + 32,&quot;#&quot;)"/></span>
