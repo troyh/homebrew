@@ -227,7 +227,7 @@ xmlns:math="http://exslt.org/math">
 			<span class="headerval">
 				<xsl:call-template name="format-volume">
 					<xsl:with-param name="liters" select="gravity/@volume"/>
-					<xsl:with-param name="gravity" select="(boil/@sg - 1) * 1000 * boil/@volume div gravity/@volume div 1000 + 1"/>
+					<!-- <xsl:with-param name="gravity" select="(boil/@sg - 1) * 1000 * boil/@volume div gravity/@volume div 1000 + 1"/> -->
 				</xsl:call-template>
 			</span>
 		</div>
