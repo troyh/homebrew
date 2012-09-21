@@ -32,7 +32,10 @@ body {
 	margin-bottom:0em;
 }
 
-#notes { font-size:75%; }
+#notes { 
+/*	font-size:75%; */
+	margin:0 2em 2em 2em;
+}
 #notes h1 { display:none;}
 #styles {
 	font-size:.9em;
@@ -46,7 +49,8 @@ body {
 	margin-left:.3em;
 }
 
-.volume .metric {
+.volume .metric,
+.volumewithgravity .metric {
 	color:gray;
 	margin-left:.3em;
 }
@@ -74,65 +78,105 @@ body {
 }
 
 .headerkey { 
-	text-align:left;
 	float:left;
-	position:relative;
-/*	left:-100px;*/
-	width:11em;
+	width:140px;
 }
 
 .headercode {
+	display:none;
 	color:#555;
 	font-size: .6em;
-/*	float:left;*/
 	padding:1px;
 	position:relative;
-/*	left:-130px;*/
 	top:3px;
 }
 
 .headerval {
-/*	float:left;*/
-/*	position:relative;*/
-/*	left:12em;*/
-/*	width:11em;*/
-/*	float:none;*/
-/*	border:1px solid red;*/
+	display:inline;
 }
 
+.headerkey,.headerval {
+	margin:1px 0 1px 0;
+}
 #expected {
 	font-size:90%;
-/*	width:65%;*/
+	width:45%;
+	float:left;
+}
+
+#expected .headerkey {
+	width:100px;
 }
 
 #results {
 	float:right;
-	position:absolute;
-	top:325px;
+/*	position:relative;*/
+	top:-325px;
 	right:0;
 	width:50%;
 	font-size:90%;
-	border:3px dashed #ccc;
+/*	border:3px dashed #ccc;*/
 	padding:5px;
 }
 
-.volume .gravity {
-/*	float:right;*/
+/*#results h2 {
+	margin:0;
+	padding:0;
+}
+*/
+.volume,.volumewithgravity {
 	position:relative;
-	font-size:.6em;
-	top:1em;
-	left:-8em;
-/*	right:0%;*/
-/*	width:100%;*/
-/*	color:#333;*/
+	display:inline;
+}
+
+.volumewithgravity {
+	text-align:center;
+	font-size:75%;
+	padding:7px 0 7px 0;
+/*	margin:7px 0 7px 0;*/
 /*	border:1px solid red;*/
-/*	display:inline-block;*/
-/*	width:50%;*/
-/*	margin:0px auto;*/
+/*	top:1px;*/
+}
+
+.volumewithgravity .english,
+.volumewithgravity .metric {
+	position:relative;
+	top:-.75em;
+}
+.volume .metric,
+.volume .english,
+.volumewithgravity .metric,
+.volumewithgravity .english { 
+	display: inline; 
+}
+
+.volume .metric,
+.volumewithgravity .metric {
+	position:relative;
+	left:-.4em;
+}
+
+.volume .metric:before,
+.volumewithgravity .metric:before { 
+	content: "/"; 
+}
+/*.volume .metric:after,
+.volumewithgravity .metric:after { 
+	content: ")"; 
+}
+*/
+.volumewithgravity .gravity {
+	display:inline;
+	position:absolute;
+	top:1.1em;
+/*	right:.2em;*/
+	right:5%;
+	width:100%;
+	border-top:2px solid #777;
 }
 
 .gravity:before {
-	content: "@";
+/*	content: "@";*/
 }
 
 #brewlog { margin-top:2em; }

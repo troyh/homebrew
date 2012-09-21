@@ -8,18 +8,21 @@
 			<span class="temperature"><span class="fahrenheit">{{for assumptions.mashtemp tmpl="#temperatureTemplate"/}}</span></span>, grain @
 			<span class="temperature"><span class="fahrenheit">{{for assumptions.graintemp tmpl="#temperatureTemplate"/}}</span></span>
 		</span>
+		<div style="clear: both;"></div>
 
 	</div>
 
 	<div>
-		<span class="headerkey">Total gravity points:</span>
+		<span class="headerkey">Gravity points:</span>
 		<span class="headerval">{{:total_gu.toFixed(0)}} ({{:expected_gu.toFixed(0)}} required)</span>
+		<div style="clear: both;"></div>
 	</div>
 					
 	<div>
 		<span class="headerkey">Strike:</span>
 		<span class="headerval">{{for mashvol tmpl="#volumeTemplate"/}} @ {{for ((0.2 / assumptions.mashthickness) * (assumptions.mashtemp - assumptions.graintemp)) + assumptions.mashtemp tmpl="#temperatureTemplate"/}}
 		</span>
+		<div style="clear: both;"></div>
 	</div>
 
 	<!-- <div>
@@ -27,20 +30,23 @@
 		<span class="headerval">
 			{{:absorption_loss_vol + mashtun_loss}} in loss leaving {{:mashvol - absorption_loss_vol - mashtun_loss}}
 		</span>
+		<div style="clear: both;"></div>
 	</div> -->
 				
 	<div>
 		<span class="headerkey">Sparge:</span>
 		<span class="headerval">{{for sparge_vol tmpl="#volumeTemplate"/}}</span>
+		<div style="clear: both;"></div>
 	</div>
 				
 	<div>
-		<span class="headerkey">Boil:</span>
-		<span class="headerval">{{for boil_vol ~gravity=expected_gu / (boil_vol * 0.264172) / 1000 + 1 tmpl="#volumeTemplate"/}}
+		<div class="headerkey">Boil:</div>
+		<div class="headerval">{{for boil_vol ~gravity=expected_gu / (boil_vol * 0.264172) / 1000 + 1 tmpl="#volumeTemplate"/}}
 			for {{:boil_hours * 60}} mins &#8594;
 			{{for boil_vol - evaporation_loss_vol ~gravity=expected_gu / ((boil_vol - evaporation_loss_vol) * 0.264172) / 1000 + 1 tmpl="#volumeTemplate"/}} &#8594;
 			{{for boil_vol - evaporation_loss_vol - hop_absorption_loss_vol tmpl="#volumeTemplate"/}}
-		</span>
+			<div style="clear: both;"></div>
+		</div>
 	</div>
 </script>
 
@@ -69,12 +75,14 @@ $.views.helpers({
 				@
 				{{for results.mash.strike.temp tmpl="#temperatureTemplate"/}} 
 			</span>
+			<div style="clear: both;"></div>
 		</div>
 		<div>
 			<span class="headerkey">Mash:</span>
 			<span class="headerval">
 				{{:results.mash.duration}} mins averaging {{for ~averageTemps(results.mash.measurements) tmpl="#temperatureTemplate"/}}
 			</span>
+			<div style="clear: both;"></div>
 		</div>
 		<div>
 			<span class="headerkey">Lauter:
@@ -84,25 +92,33 @@ $.views.helpers({
 				{{:results.sparge.duration}} mins
 				({{:(results.sparge.duration / (results.boil.volume * 0.264172)).toFixed(0)}} min/G)
 			</span>
+			<div style="clear: both;"></div>
 		</div>
 		<div>
-			<span class="headerkey">Boil:
-				<span class="headercode">BV</span>
-				<span class="headercode">BG</span>
-				<span class="headercode">BT</span>
-				<span class="headercode">EV</span>
-			</span>
-			<span class="headerval">
+			<div class="headerkey">Boil:
+				<div class="headercode">BV</div>
+				<div class="headercode">BG</div>
+				<div class="headercode">BT</div>
+				<div class="headercode">EV</div>
+			</div>
+			<div class="headerval">
 				{{for results.boil.volume ~gravity=results.boil.sg tmpl="#volumeTemplate"/}}
 				for 
 				{{if results.boil.time == 0}}____{{else}}{{:results.boil.time}}{{/if}}
 				mins &#8594; 
-				{{for results.boil.end_volume ~gravity=(results.boil.sg - 1) * 1000 * results.boil.volume / results.boil.end_volume / 1000 + 1 tmpl="#volumeTemplate"/}},
-				{{for (results.boil.volume - results.boil.end_volume) / (results.boil.time / 60) tmpl="#volumeTemplate"/}}
+				{{for results.boil.end_volume ~gravity=(results.boil.sg - 1) * 1000 * results.boil.volume / results.boil.end_volume / 1000 + 1 tmpl="#volumeTemplate"/}}
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+		<div>
+			<div class="headerkey">Evaporation rate:</div>
+			<div class="headerval">
 				{{if results.boil.end_volume!=0}}
-					({{:((results.boil.volume - results.boil.end_volume) / results.boil.volume / (results.boil.time / 60) * 100).toFixed(0)}}% per hour)
+					{{for (results.boil.volume - results.boil.end_volume) / (results.boil.time / 60) tmpl="#volumeTemplate"/}}
+					({{:((results.boil.volume - results.boil.end_volume) / results.boil.volume / (results.boil.time / 60) * 100).toFixed(0)}}%)/hour
 				{{/if}}
-			</span>
+			</div>
+			<div style="clear: both;"></div>
 		</div>
 		<div>
 			<span class="headerkey">Final Volume:
@@ -111,48 +127,62 @@ $.views.helpers({
 			<span class="headerval">
 				{{for results.gravity.volume tmpl="#volumeTemplate"/}}
 			</span>
+			<div style="clear: both;"></div>
 		</div>
 		<div>
 			<span class="headerkey">OG:
 				<span class="headercode">OG</span>
 			</span>
 			<span class="headerval">
-				{{if results.gravity.og}}&#160;{{/if}}
+				{{if results.gravity.og==0}}&#160;{{/if}}
 				{{:results.gravity.og}}
 			</span>
+			<div style="clear: both;"></div>
 		</div>
 		<div>
-		<span class="headerkey">FG:
-			<span class="headercode">FG</span>
-		</span>
-		<span class="headerval">
-			{{if results.gravity.fg}}&#160;{{/if}}
-			{{:results.gravity.fg}}
-		</span>
+			<span class="headerkey">FG:
+				<span class="headercode">FG</span>
+			</span>
+			<span class="headerval">
+				{{if !results.gravity.fg}}&#160;{{/if}}
+				{{:results.gravity.fg}}
+			</span>
+			<div style="clear: both;"></div>
 		</div>
 		<div>
 			<span class="headerkey">ABV:</span> 
 			<span class="headerval">
+				{{if !results.gravity.fg}}&#160;
+				{{else}}
 				{{:((((results.gravity.og - 1) * 1000) - ((results.gravity.fg - 1) * 1000)) * 131 / 1000).toFixed(2)}}%
+				{{/if}}
 			</span>
+			<div style="clear: both;"></div>
 		</div>
 		<div>
-			<span class="headerkey"><xsl:text>Mash efficiency:</xsl:text></span>
+			<span class="headerkey">Mash efficiency:</span>
 			<span class="headerval">
 				{{:((((results.boil.sg - 1) * 1000) * (results.boil.volume * 0.264172)) / recipe.total_ppg * 100).toFixed(0)}}%
 			</span>
+			<div style="clear: both;"></div>
 		</div>
 		<div>
-			<span class="headerkey"><xsl:text>Brewhouse efficiency:</xsl:text></span>
-			<span class="headerval">			
+			<span class="headerkey">Brewhouse efficiency:</span>
+			<span class="headerval">
 			{{:(((((results.gravity.og - 1) * 1000) * (results.gravity.volume * 0.264172)) / recipe.total_ppg) * 100).toFixed(0)}}%
 			</span>
+			<div style="clear: both;"></div>
 		</div>
 		<div>
-			<span class="headerkey"><xsl:text>Apparent Attenuation:</xsl:text></span>
+			<span class="headerkey">ADF:</span>
 			<span class="headerval">
+			{{if results.gravity.og!=0 && results.gravity.fg!=0}}
+				&#160;
+			{{else}}
 				{{:((((results.gravity.og - results.gravity.fg) * 1000)) / ((results.gravity.og - 1) * 1000) * 100).toFixed(0)}}%
+			{{/if}}
 			</span>
+			<div style="clear: both;"></div>
 		</div>
 	</div>
 </script>

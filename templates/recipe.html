@@ -1,13 +1,13 @@
 	<script id="volumeTemplate" type="text/x-jsrender">
 		{{if #data.isNumber == false or #data.length == 0}}
-			<span class="english">____ gallons</span>
-			<span class="metric">(____L)</span>
+			<div class="english">____G</div>
+			<div class="metric">(____L)</div>
 		{{else}}
-			<span class="volume">
-				<span class="english">{{:(#data * 0.264172).toFixed(2)}} gallons</span>
-				<span class="metric">({{:(#data).toFixed(1)}}L)</span>
-				{{if ~gravity}}<span class="gravity">{{:~gravity.toFixed(3)}}</span>{{/if}}
-			</span>
+			<div class={{if ~gravity}}"volumewithgravity"{{else}}"volume"{{/if}}>
+				<div class="english">{{:(#data * 0.264172).toFixed(2)}}G</div>
+				<div class="metric">{{:(#data).toFixed(1)}}L</div>
+				{{if ~gravity}}<div class="gravity">{{:~gravity.toFixed(3)}}</div>{{/if}}
+			</div>
 		{{/if}}
 	</script>
 	
@@ -79,30 +79,42 @@
 		<div class="style">{{>name}}<span class="styleid">({{>category}}{{>letter}})</span></div>
 	{{/for}}
 	</div>
+	<div id="notes">
+		<h1>Notes</h1>
+		<div class="note">{{:notes}}</div>
+	</div>	
 	<div>
-		<span class="headerkey">Type: </span>
-		<span class="headerval">{{>type}}</span>
+		<div class="headerkey">Type: </div>
+		<div class="headerval">{{>type}}</div>
+		<div style="clear: both;"></div>
 	</div>
 	<div>
-		<span class="headerkey">Batch size:</span>
-		<span class="headerval">{{for batch_size tmpl='#volumeTemplate'/}}</span>
+		<div class="headerkey">Batch size:</div>
+		<div class="headerval">{{for batch_size tmpl='#volumeTemplate'/}}</div>
+		<div style="clear: both;"></div>
 	</div>
 	<div>
-		<span class="headerkey">OG:</span><span class="headerval">{{:~format_gravity(calc_og)}}</span>
+		<div class="headerkey">OG:</div>
+		<div class="headerval">{{:~format_gravity(calc_og)}}</div>
+		<div style="clear: both;"></div>
 	</div>
 	<div>
 		<span class="headerkey">FG:</span><span class="headerval">{{:~format_gravity(calc_fg)}}</span>
+		<div style="clear: both;"></div>
 	</div>
 	<div>
-	<span class="headerkey">ABV:</span><span class="headerval">{{:((calc_og - calc_fg) * 131).toFixed(1)}}%</span>
+		<span class="headerkey">ABV:</span><span class="headerval">{{:((calc_og - calc_fg) * 131).toFixed(1)}}%</span>
+		<div style="clear: both;"></div>
 	</div>
 	<div>
-	<span class="headerkey">ADF:</span><span class="headerval">{{:((1 - ((calc_fg-1) / (calc_og-1))) * 100).toFixed(1))}}%</span>
+		<span class="headerkey">ADF:</span><span class="headerval">{{:((1 - ((calc_fg-1) / (calc_og-1))) * 100).toFixed(1))}}%</span>
+		<div style="clear: both;"></div>
 	</div>
 	<div>
 		<span class="headerkey">Yeast starter:</span>
 		<span class="headerval">{{:yeast_starter.ml_reqd.toFixed(0)}}ml (assuming {{:yeast_starter.viability_pct}}% viability) of yeast slurry, {{:yeast_starter.cells_reqd.toFixed(0)}}B cells
 		</span>
+		<div style="clear: both;"></div>
 	</div>
 	</div>
 	<div id="ingredients">
@@ -165,8 +177,4 @@
 		</div>
 	</div>
 	
-	<div id="notes">
-		<h1>Notes</h1>
-		<div class="note">{{:notes}}</div>
-	</div>	
 	</script>
