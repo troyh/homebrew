@@ -7,12 +7,8 @@
 	<!-- <script src="js/batch.js"></script> -->
 	<script src="js/tumblr.js"></script>
 	<script type="text/javascript">
-	function fahrenheitToCelsius(f) {
-		return (f - 32) * 5 / 9;
-	}
-	function celsiusToFahrenheit(c) {
-		return 9 / 5 * (c + 32);
-	}
+	function fahrenheitToCelsius(f) {return (f - 32) * 5 / 9;}
+	function celsiusToFahrenheit(c) {return 9 / 5 * (c + 32);}
 	function getURLParameter(name) {
 	    return decodeURI(
 	        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
@@ -20,68 +16,82 @@
 	}
 	function renderBatch(batchId) {
 		$('#topnav').append(" &gt; Batch " + batchId);
+		
 		// Create a place to put the templates we're going to include
-		$(document.body).append('<div id="recipeTemplates"></div>')
-		$('#recipeTemplates').load("templates/recipe.html",
+		$(document.body).append('<div id="batchTemplates"></div>');
+
+		// Create a place to put the templates we're going to include
+		$(document.body).append('<div id="recipeTemplates"></div>');
+				
+		$('#batchTemplates').load("templates/batch.html",
 			null,
 			function(data,textStatus,xhr) {
-				// Get the recipe Id from the batch
-				$.getJSON("batches/" + batchId + "/batch.json",
+				$('#recipeTemplates').load("templates/recipe.html",
 					null,
-					function(batchData,textStatus,xhr) {
-						displayRecipe(batchData.recipe.id,$('#recipe'),$('#recipeTemplate'),function(recipe) {
-							//
-							// Display the actual results data
-							//
-							$.getJSON('batches/' + batchId + '/batch.json',
-								null,
-								function(actual,textStatus,xhr) {
-									$('#actual').html($('#actualTemplate').render(actual));
-								}
-							);
+					function(data,textStatus,xhr) {
+						// Get the recipe Id from the batch
+						$.getJSON("batches/" + batchId + "/batch.json",
+							null,
+							function(batchData,textStatus,xhr) {
+								displayRecipe(batchData.recipe.id,$('#recipe'),$('#recipeTemplate'),function(recipe) {
+									//
+									// Compute the expected data
+									//
+									// Assumptions:
+									var expected={
+										assumptions: {
+											graintemp:fahrenheitToCelsius(70),
+											mashtemp:fahrenheitToCelsius(152),
+											mashthickness:1.5,
+											mashtun_loss:0.946353,
+											evaporation_rate:.17
+										},
+										total_gu: recipe.total_ppg,
+										expected_gu: recipe.total_ppg * recipe.efficiency / 100,
+										/*
+											Mash volume:
+											1.5 quarts (1.41953 liters) per 1 lb (0.453592kg) of grain 
+										*/
+										mashvol: recipe.ingredients.fermentables.total_weight / 0.453592 * 1.41953,
+										/*
+											Absorption loss:
+											1.2 gallons of water per 10lbs grain
+										    4.54249L of water per 4.53592kg grain
+										*/
+										absorption_loss_vol: 4.54249 * (recipe.ingredients.fermentables.total_weight / 4.53592),
+										/* Hop absorption loss calc: http://www.homebrewtalk.com/f12/leaf-hop-absorption-measured-241469/ 
+											138.3ml (0.1383L) per oz of hops
+										*/
+										hop_absorption_loss_vol: (recipe.ingredients.hops.total_weight * 28.3495) * 0.1383,
+										boil_hours: recipe.boil_time / 60
+									}
 							
-							//
-							// Compute the expected data
-							//
-							// Assumptions:
-							var expected={
-								assumptions: {
-									graintemp:fahrenheitToCelsius(70),
-									mashtemp:fahrenheitToCelsius(152),
-									mashthickness:1.5,
-									mashtun_loss:0.946353,
-									evaporation_rate:.17
-								},
-								total_gu: recipe.total_ppg,
-								expected_gu: recipe.total_ppg * recipe.efficiency / 100,
-								/*
-									Mash volume:
-									1.5 quarts (1.41953 liters) per 1 lb (0.453592kg) of grain 
-								*/
-								mashvol: recipe.ingredients.fermentables.total_weight / 0.453592 * 1.41953,
-								/*
-									Absorption loss:
-									1.2 gallons of water per 10lbs grain
-								    4.54249L of water per 4.53592kg grain
-								*/
-								absorption_loss_vol: 4.54249 * (recipe.ingredients.fermentables.total_weight / 4.53592),
-								/* Hop absorption loss calc: http://www.homebrewtalk.com/f12/leaf-hop-absorption-measured-241469/ 
-									138.3ml (0.1383L) per oz of hops
-								*/
-								hop_absorption_loss_vol: (recipe.ingredients.hops.total_weight * 28.3495) * 0.1383,
-								boil_hours: recipe.boil_time / 60
+									expected.boil_vol= recipe.batch_size / (Math.pow(1 - expected.assumptions.evaporation_rate,expected.boil_hours));
+									expected.evaporation_loss_vol=expected.boil_vol * (1 - Math.pow(1 - expected.assumptions.evaporation_rate,expected.boil_hours)),
+									expected.sparge_vol=expected.boil_vol - (expected.mashvol - expected.absorption_loss_vol - expected.hop_absorption_loss_vol - expected.assumptions.mashtun_loss);
+							
+									$('#expected').html($('#expectedTemplate').render(expected));
+
+									//
+									// Display the actual results data
+									//
+									$.getJSON('batches/' + batchId + '/batch.json',
+										null,
+										function(actual,textStatus,xhr) {
+											$('#actual').html($('#actualTemplate').render({
+												recipe: recipe,
+												expected: expected,
+												results: actual.results
+											}));
+										}
+									);
+								});
 							}
-							
-							expected.boil_vol= recipe.batch_size / (Math.pow(1 - expected.assumptions.evaporation_rate,expected.boil_hours));
-							expected.evaporation_loss_vol=expected.boil_vol * (1 - Math.pow(1 - expected.assumptions.evaporation_rate,expected.boil_hours)),
-							expected.sparge_vol=expected.boil_vol - (expected.mashvol - expected.absorption_loss_vol - expected.hop_absorption_loss_vol - expected.assumptions.mashtun_loss);
-							
-							$('#expected').html($('#expectedTemplate').render(expected));
-						});
+						)
 					}
 				)
 			}
-		);
+		)
 	}
 	</script>
 </head>
@@ -93,184 +103,5 @@
 	<div id="expected"></div>
 	<div id="actual"></div>
 
-	<script type="text/javascript" id="expectedTemplate">
-		<h2>Expected</h2>
-
-		<div>
-			<span class="headerkey">Assumptions:</span>
-			<span class="headerval">
-				{{:assumptions.mashthickness}}qt/lb @
-				<span class="temperature"><span class="fahrenheit">{{for assumptions.mashtemp tmpl="#temperatureTemplate"/}}</span></span>, grain @
-				<span class="temperature"><span class="fahrenheit">{{for assumptions.graintemp tmpl="#temperatureTemplate"/}}</span></span>
-			</span>
-
-		</div>
-
-		<div>
-			<span class="headerkey">Total gravity points:</span>
-			<span class="headerval">{{:total_gu.toFixed(0)}} ({{:expected_gu.toFixed(0)}} required)</span>
-		</div>
-					
-		<div>
-			<span class="headerkey">Strike:</span>
-			<span class="headerval">{{for mashvol tmpl="#volumeTemplate"/}} @ {{for ((0.2 / assumptions.mashthickness) * (assumptions.mashtemp - assumptions.graintemp)) + assumptions.mashtemp tmpl="#temperatureTemplate"/}}
-			</span>
-		</div>
-
-		<!-- <div>
-			<span class="headerkey">Mash:</span>
-			<span class="headerval">
-				{{:absorption_loss_vol + mashtun_loss}} in loss leaving {{:mashvol - absorption_loss_vol - mashtun_loss}}
-			</span>
-		</div> -->
-				
-		<div>
-			<span class="headerkey">Sparge:</span>
-			<span class="headerval">{{for sparge_vol tmpl="#volumeTemplate"/}}</span>
-		</div>
-				
-		<div>
-			<span class="headerkey">Boil:</span>
-			<span class="headerval">{{for boil_vol ~gravity=expected_gu / (boil_vol * 0.264172) / 1000 + 1 tmpl="#volumeTemplate"/}}
-				for {{:boil_hours * 60}} mins &#8594;
-				{{for boil_vol - evaporation_loss_vol ~gravity=expected_gu / ((boil_vol - evaporation_loss_vol) * 0.264172) / 1000 + 1 tmpl="#volumeTemplate"/}} &#8594;
-				{{for boil_vol - evaporation_loss_vol - hop_absorption_loss_vol tmpl="#volumeTemplate"/}}
-			</span>
-		</div>
-	</script>
-			
-	<script type="text/javascript" id="actualTemplate">
-		<div id="results">
-			<h2>Actual</h2>
-			<div>
-				<span class="headerkey">Strike:
-					<span class="headercode"ST</xsl:text></span>
-					<span class="headercode">SV</span>
-				</span>
-				<span class="headerval">
-					{{for results.mash.strike.volume tmpl="#volumeTemplate"/}} 
-					@
-					{{for results.mash.strike.temp tmpl="#temperatureTemplate"/}} 
-				</span>
-			</div>
-			<div>
-				<span class="headerkey">Mash:</span>
-				<span class="headerval">
-					<xsl:value-of select="mash/@duration"/> mins at
-					<xsl:call-template name="format-temperature">
-						<xsl:with-param name="celsius" select="mash/measurement/@temp[1]"/>
-					</xsl:call-template>
-					<xsl:text>, average of </xsl:text>
-					<xsl:call-template name="format-temperature">
-						<xsl:with-param name="celsius" 
-							select="sum(mash/measurement/@temp) div count(mash/measurement/@temp)"/>
-					</xsl:call-template>
-				</span>
-			</div>
-			<div>
-				<span class="headerkey"><xsl:text>Lauter:</xsl:text>
-					<span class="headercode"><xsl:text>LT</xsl:text></span>
-				</span>
-				<span class="headerval">
-					<xsl:value-of select="sparge/@duration"/> mins
-					(<xsl:value-of select="format-number(sparge/@duration div (boil/@volume * 0.264172),&quot;#&quot;)"/> min/G)
-				</span>
-			</div>
-			<div>
-				<span class="headerkey"><xsl:text>Boil:</xsl:text>
-					<span class="headercode"><xsl:text>BV</xsl:text></span>
-					<span class="headercode"><xsl:text>BG</xsl:text></span>
-					<span class="headercode"><xsl:text>BT</xsl:text></span>
-					<span class="headercode"><xsl:text>EV</xsl:text></span>
-				</span>
-				<span class="headerval">
-					<xsl:call-template name="format-volume">
-						<xsl:with-param name="liters" select="boil/@volume"/>
-						<xsl:with-param name="gravity" select="boil/@sg"/>
-					</xsl:call-template>
-					for 
-					<xsl:if test="string-length(boil/@time) = 0">____</xsl:if>
-					<xsl:value-of select="boil/@time"/> 
-					mins &#8594; 
-					<xsl:call-template name="format-volume">
-						<xsl:with-param name="liters" select="boil/@end_volume"/>
-						<xsl:with-param name="gravity" select="(boil/@sg - 1) * 1000 * boil/@volume div boil/@end_volume div 1000 + 1"/>
-					</xsl:call-template>,
-					<xsl:call-template name="format-volume">
-						<xsl:with-param name="liters" select="(boil/@volume - boil/@end_volume) div (boil/@time div 60)"/>
-					</xsl:call-template>
-					<xsl:if test="string-length(boil/@end_volume)">
-					(<xsl:call-template name="format-percent">
-						<xsl:with-param name="value" 
-							select="(boil/@volume - boil/@end_volume) div boil/@volume div (boil/@time div 60)"/>
-					</xsl:call-template>) per hour
-					</xsl:if>
-				</span>
-			</div>
-			<div>
-				<span class="headerkey"><xsl:text>Final Volume:</xsl:text>
-					<span class="headercode"><xsl:text>FV</xsl:text></span>
-				</span>
-				<span class="headerval">
-					<xsl:call-template name="format-volume">
-						<xsl:with-param name="liters" select="gravity/@volume"/>
-						<!-- <xsl:with-param name="gravity" select="(boil/@sg - 1) * 1000 * boil/@volume div gravity/@volume div 1000 + 1"/> -->
-					</xsl:call-template>
-				</span>
-			</div>
-			<div>
-				<span class="headerkey"><xsl:text>OG:</xsl:text>
-					<span class="headercode"><xsl:text>OG</xsl:text></span>
-				</span>
-				<span class="headerval">
-					<xsl:if test="string-length(gravity/@og) = 0">&#160;</xsl:if>
-					<xsl:value-of select="gravity/@og"/>
-				</span>
-			</div>
-			<div>
-				<span class="headerkey"><xsl:text>FG:</xsl:text>
-					<span class="headercode"><xsl:text>FG</xsl:text></span>
-				</span>
-				<span class="headerval">
-					<xsl:if test="string-length(gravity/@fg) = 0">&#160;</xsl:if>
-					<xsl:value-of select="gravity/@fg"/>
-				</span>
-			</div>
-			<div>
-				<span class="headerkey"><xsl:text>ABV:</xsl:text></span> 
-				<span class="headerval">
-					<xsl:call-template name="format-percent">
-						<xsl:with-param name="value" select="(((gravity/@og - 1) * 1000) - ((gravity/@fg - 1) * 1000)) * 131 div 100000"/>
-						<xsl:with-param name="precision" select="2"/>
-					</xsl:call-template>
-				</span>
-			</div>
-			<div>
-				<span class="headerkey"><xsl:text>Mash efficiency:</xsl:text></span>
-				<span class="headerval">
-					<xsl:call-template name="format-percent">
-						<xsl:with-param name="value" select="(((boil/@sg - 1) * 1000) * (boil/@volume * 0.264172)) div sum(../recipe/data/ppg)"/>
-					</xsl:call-template>
-				</span>
-			</div>
-			<div>
-				<span class="headerkey"><xsl:text>Brewhouse efficiency:</xsl:text></span>
-				<span class="headerval">			
-					<xsl:call-template name="format-percent">
-						<xsl:with-param name="value" select="(((gravity/@og - 1) * 1000) * (gravity/@volume * 0.264172)) div sum(../recipe/data/ppg)"/>
-					</xsl:call-template>
-				</span>
-			</div>
-			<div>
-				<span class="headerkey"><xsl:text>Apparent Attenuation:</xsl:text></span>
-				<span class="headerval">
-					<xsl:call-template name="format-percent">
-						<xsl:with-param name="value" select="(((gravity/@og - 1) * 1000) - ((gravity/@fg - 1) * 1000)) div ((gravity/@og - 1) * 1000)"/>
-					</xsl:call-template>
-				</span>
-			</div>
-		</div>
-	</script>
-	
 </body>
 </html>

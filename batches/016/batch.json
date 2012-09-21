@@ -17,16 +17,18 @@
 				{"temp": 65.833333}
 			]
 		},
+		"sparge": {
+			"duration": 55
+		},
 		"boil": {
-			"volume": 27.25495,
-			"sg":1.052,
-			"time": 60,
-			"end_volume":22.71246
+			"volume": 28.39057,
+			"sg":1.072,
+			"time": 90,
+			"end_volume":21.76610
 		},
 		"gravity": {
 			"volume":20.81975,
-			"og":1.062,
-			"fg":1.018
+			"og":1.087
 		} 
 	}
 }
