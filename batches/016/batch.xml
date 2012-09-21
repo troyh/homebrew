@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<batch id="016"><recipe><beerxml recipefile="Jolly Roger Christmas Ale.xml" commit_sha="27b4f069e7331f21407c772e88e0360166d49e8d"><RECIPE>
+<VERSION>1</VERSION>
+<NAME>Jolly Roger Christmas Ale</NAME>
+<TYPE>All Grain</TYPE>
+<BREWER>BrewPal</BREWER>
+<BATCH_SIZE>20.819765</BATCH_SIZE>
+<BOIL_SIZE>29.762886</BOIL_SIZE>
+<BOIL_TIME>90</BOIL_TIME>
+<EFFICIENCY>80</EFFICIENCY>
+<OG>0.000000</OG>
+<FG>0.000000</FG>
+<FERMENTATION_STAGES>2</FERMENTATION_STAGES>
+<PRIMARY_AGE>42</PRIMARY_AGE>
+<PRIMARY_TEMP>20.000000</PRIMARY_TEMP>
+<SECONDARY_AGE>14</SECONDARY_AGE>
+<SECONDARY_TEMP>18.333334</SECONDARY_TEMP>
+<CARBONATION>-1.000000</CARBONATION>
+<FORCED_CARBONATION>0</FORCED_CARBONATION>
+<CARBONATION_TEMP>0.000000</CARBONATION_TEMP>
+<PRIMING_SUGAR_NAME>(null)</PRIMING_SUGAR_NAME>
+<PRIMING_SUGAR_EQUIV>0.000000</PRIMING_SUGAR_EQUIV>
+<NOTES>OG should be 1.085, according to recipe. 
+
+http://www.homebrewtalk.com/f78/jolly-roger-christmas-ale-150217/:
+
+This beer is modeled after the Maritime Pacific Jolly Roger Christmas Ale which is a seasonal beer made in Seattle. 9% ABV it is not for the weak, tasting at 8 weeks there was no alcohol warmth and it tasting really nice. I was planning on bottling the whole batch of this because I didn't think it was going to be drinkable until next winter buy quite the contrary, this stuff is great! I hopped it up more that initially planned in prep to store it and still have hop character but so far I like it the way it is.</NOTES>
+<FERMENTABLES>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>1.500000</COLOR>
+    <AMOUNT>6.395653</AMOUNT>
+    <NAME>2 Row Base</NAME>
+    <YIELD>78.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>50.000000</COLOR>
+    <AMOUNT>0.362874</AMOUNT>
+    <NAME>CaraMunich</NAME>
+    <YIELD>72.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>75.000000</COLOR>
+    <AMOUNT>0.362874</AMOUNT>
+    <NAME>Crystal 75L</NAME>
+    <YIELD>72.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+</FERMENTABLES>
+<HOPS>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>0</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Amarillo, Centennial, Summit</SUBSTITUTES>
+    <ALPHA>6.500000</ALPHA>
+    <NAME>Cascade</NAME>
+    <AMOUNT>0.028350</AMOUNT>
+    <USE>Aroma</USE>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>0</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Brewers Gold, Columbus, Galena, Nugget, Northern Brewer, Eroica</SUBSTITUTES>
+    <ALPHA>11.500000</ALPHA>
+    <NAME>Chinook</NAME>
+    <AMOUNT>0.028350</AMOUNT>
+    <USE>Aroma</USE>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>20160.000000</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Amarillo, Centennial, Summit</SUBSTITUTES>
+    <ALPHA>5.500000</ALPHA>
+    <NAME>Cascade</NAME>
+    <AMOUNT>0.028350</AMOUNT>
+    <USE>Dry Hop</USE>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>20160.000000</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Brewers Gold, Columbus, Galena, Nugget, Northern Brewer, Eroica</SUBSTITUTES>
+    <ALPHA>13.000000</ALPHA>
+    <NAME>Chinook</NAME>
+    <AMOUNT>0.028350</AMOUNT>
+    <USE>Dry Hop</USE>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>90.000000</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Brewers Gold, Columbus, Galena, Nugget, Northern Brewer, Eroica</SUBSTITUTES>
+    <ALPHA>11.500000</ALPHA>
+    <NAME>Chinook</NAME>
+    <AMOUNT>0.049612</AMOUNT>
+    <USE>Boil</USE>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>30.000000</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Amarillo, Centennial, Summit</SUBSTITUTES>
+    <ALPHA>6.500000</ALPHA>
+    <NAME>Cascade</NAME>
+    <AMOUNT>0.028350</AMOUNT>
+    <USE>Boil</USE>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>30.000000</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Brewers Gold, Columbus, Galena, Nugget, Northern Brewer, Eroica</SUBSTITUTES>
+    <ALPHA>11.500000</ALPHA>
+    <NAME>Chinook</NAME>
+    <AMOUNT>0.022680</AMOUNT>
+    <USE>Boil</USE>
+  </HOP>
+</HOPS>
+<YEASTS>
+  <YEAST>
+    <VERSION>1</VERSION>
+    <AMOUNT>0.116000</AMOUNT>
+    <LABORATORY>White Labs</LABORATORY>
+    <FORM>Liquid</FORM>
+    <MIN_TEMPERATURE>18</MIN_TEMPERATURE>
+    <PRODUCT_ID>WLP007</PRODUCT_ID>
+    <NAME>Dry English Ale</NAME>
+    <AMOUNT_IS_WEIGHT>FALSE</AMOUNT_IS_WEIGHT>
+    <TYPE>Ale</TYPE>
+    <MAX_TEMPERATURE>21</MAX_TEMPERATURE>
+    <ATTENUATION>75</ATTENUATION>
+  </YEAST>
+</YEASTS>
+<MISCS>
+</MISCS>
+<MASH>
+<VERSION>1</VERSION>
+<NAME>Batch/Fly</NAME>
+<GRAIN_TEMP>21.111111</GRAIN_TEMP>
+<MASH_THICKNESS>3.129527</MASH_THICKNESS>
+<SPARGE_TEMP>76.666664</SPARGE_TEMP>
+<MASH_STEPS>
+  <MASH_STEP>
+    <VERSION>1</VERSION>
+    <INFUSE_AMOUNT>11.35624</INFUSE_AMOUNT>
+    <NAME>Strike</NAME>
+    <STEP_TIME>60</STEP_TIME>
+    <STEP_TEMP>66.66666</STEP_TEMP>
+    <TYPE>Infusion</TYPE>
+  </MASH_STEP>
+</MASH_STEPS>
+</MASH>
+<WATERS>
+</WATERS>
+<EQUIPMENT>
+    <VERSION>1</VERSION>
+    <BOIL_SIZE>29.76289</BOIL_SIZE>
+    <BOIL_TIME>90</BOIL_TIME>
+    <BATCH_SIZE>18.92706</BATCH_SIZE>
+    <TOP_UP_KETTLE>0</TOP_UP_KETTLE>
+    <TOP_UP_WATER>-1.949327</TOP_UP_WATER>
+    <EVAP_RATE>17</EVAP_RATE>
+    <TRUB_CHILLER_LOSS>0.946353</TRUB_CHILLER_LOSS>
+</EQUIPMENT>
+<STYLES>
+</STYLES>
+</RECIPE></beerxml><data>
+  <ppg>505.907444464937</ppg>
+  <ppg>26.4959760833856</ppg>
+  <ppg>26.4959760833856</ppg>
+</data></recipe><results>
+  <mash type="" duration="">
+    <infusion>
+      <strike volume="22.33391" temp="72"/>
+    </infusion>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+    <measurement temp=""/>
+  </mash>
+  <sparge duration="55"/>
+  <boil volume="28.39057" sg="1.072" time="90" end_volume="21.76610"/>
+  <gravity volume="20.81975" og="1.087" fg=""/>
+</results><log><tumblr version="1.0"><tumblelog name="geekbrewing" timezone="US/Pacific" title="Brew Log"/><posts start="0" total="4"><post id="31924272633" url="http://geekbrewing.tumblr.com/post/31924272633" url-with-slug="http://geekbrewing.tumblr.com/post/31924272633/fermentation-got-active-last-night-when-will-i" type="photo" date-gmt="2012-09-20 15:31:07 GMT" date="Thu, 20 Sep 2012 08:31:07" unix-timestamp="1348155067" format="html" reblog-key="GdeaSmcA" slug="fermentation-got-active-last-night-when-will-i" width="720" height="960"><photo-caption>&lt;p&gt;Fermentation got active last night. When will I learn to use a blow-off tube?&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://24.media.tumblr.com/tumblr_mann3vDwfD1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://25.media.tumblr.com/tumblr_mann3vDwfD1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_mann3vDwfD1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://25.media.tumblr.com/tumblr_mann3vDwfD1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://25.media.tumblr.com/tumblr_mann3vDwfD1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://24.media.tumblr.com/tumblr_mann3vDwfD1qcxyego1_75sq.jpg</photo-url><tag>016</tag></post><post id="31912562066" url="http://geekbrewing.tumblr.com/post/31912562066" url-with-slug="http://geekbrewing.tumblr.com/post/31912562066/5-hours-and-fermentation-has-only-slightly" type="regular" date-gmt="2012-09-20 07:10:05 GMT" date="Thu, 20 Sep 2012 00:10:05" unix-timestamp="1348125005" format="html" reblog-key="EusbbiVg" slug="5-hours-and-fermentation-has-only-slightly"><regular-body>&lt;p&gt;5 hours and fermentation has only slightly started. Slow.&lt;/p&gt;</regular-body><tag>016</tag></post><post id="31897372016" url="http://geekbrewing.tumblr.com/post/31897372016" url-with-slug="http://geekbrewing.tumblr.com/post/31897372016/pitched-yeast-and-aerating-when-chilling-into" type="photo" date-gmt="2012-09-20 02:55:00 GMT" date="Wed, 19 Sep 2012 19:55:00" unix-timestamp="1348109700" format="html" reblog-key="nk80Ddmk" slug="pitched-yeast-and-aerating-when-chilling-into" width="720" height="960"><photo-caption>&lt;p&gt;Pitched yeast and aerating.&lt;/p&gt;
+&lt;p&gt;When chilling into the fermenter, I stupidly put the hoprocket on the cold side of the Therminator. We&amp;#8217;ll see if it still gives a hop aroma.&lt;/p&gt;
+&lt;p&gt;ST=163 SV=5.9 LT=55 BV=7.5 BG=1.072 BT=90 EV=5.75 OG=1.087 FV=5.5&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_mamkxpqmGH1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://25.media.tumblr.com/tumblr_mamkxpqmGH1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://25.media.tumblr.com/tumblr_mamkxpqmGH1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://24.media.tumblr.com/tumblr_mamkxpqmGH1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://25.media.tumblr.com/tumblr_mamkxpqmGH1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://24.media.tumblr.com/tumblr_mamkxpqmGH1qcxyego1_75sq.jpg</photo-url><tag>016</tag></post><post id="31838243220" url="http://geekbrewing.tumblr.com/post/31838243220" url-with-slug="http://geekbrewing.tumblr.com/post/31838243220/made-starter" type="photo" date-gmt="2012-09-19 02:29:32 GMT" date="Tue, 18 Sep 2012 19:29:32" unix-timestamp="1348021772" format="html" reblog-key="BspdTm5L" slug="made-starter" width="720" height="960"><photo-caption>&lt;p&gt;Made starter.&lt;/p&gt;</photo-caption><photo-url max-width="1280">http://25.media.tumblr.com/tumblr_maks98yF8j1qcxyego1_1280.jpg</photo-url><photo-url max-width="500">http://25.media.tumblr.com/tumblr_maks98yF8j1qcxyego1_500.jpg</photo-url><photo-url max-width="400">http://24.media.tumblr.com/tumblr_maks98yF8j1qcxyego1_400.jpg</photo-url><photo-url max-width="250">http://25.media.tumblr.com/tumblr_maks98yF8j1qcxyego1_250.jpg</photo-url><photo-url max-width="100">http://24.media.tumblr.com/tumblr_maks98yF8j1qcxyego1_100.jpg</photo-url><photo-url max-width="75">http://25.media.tumblr.com/tumblr_maks98yF8j1qcxyego1_75sq.jpg</photo-url><tag>016</tag></post></posts></tumblr></log></batch>
