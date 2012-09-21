@@ -28,10 +28,11 @@ body {
 }
 
 #header {
-	font-size:11pt;
+	font-size:.8em;
 	margin-bottom:0em;
 }
 
+#notes { font-size:75%; }
 #notes h1 { display:none;}
 #styles {
 	font-size:.9em;
@@ -100,21 +101,30 @@ body {
 }
 
 #expected {
-	font-size:.9em;
+	font-size:90%;
+/*	width:65%;*/
 }
 
 #results {
-	font-size:.9em;
+	float:right;
+	position:absolute;
+	top:325px;
+	right:0;
+	width:50%;
+	font-size:90%;
+	border:3px dashed #ccc;
+	padding:5px;
 }
 
 .volume .gravity {
 /*	float:right;*/
 	position:relative;
 	font-size:.6em;
-	top:.7em;
+	top:1em;
+	left:-8em;
 /*	right:0%;*/
 /*	width:100%;*/
-	color:#777;
+/*	color:#333;*/
 /*	border:1px solid red;*/
 /*	display:inline-block;*/
 /*	width:50%;*/
@@ -164,7 +174,7 @@ body {
 div#fermentables {
 /*	position:relative;*/
 /*	left:1.5em;*/
-	margin:0 0 0 2em;
+	margin:-20 0 0 2em;
 }
 div#fermentables .total_weight:before {
 /*	content: "Grain bill: ";*/
@@ -210,7 +220,7 @@ tr.fermentable td:nth-child(1) .metric {
 
 tr.fermentable td:nth-child(2) {
 	color:silver;
-	font-size: .8em;
+/*	font-size: .8em;*/
 	text-align:right;
 }
 
@@ -229,7 +239,7 @@ tr.fermentable td:nth-child(3) {
 }
 
 #hops {
-	margin:0 0 0 2em;
+	margin:-20 0 0 2em;
 }
 
 div#hops .total_weight { 
@@ -282,8 +292,6 @@ tr.hop td:nth-child(4) { /* hop form */
 
 tr.hop td:nth-child(5) { /* hop boil minutes */
 	float:right;
-	position:relative;
-	left:5em;
 }
 
 tr.hop td:nth-child(5):after { /* hop boil minutes */
@@ -295,7 +303,7 @@ tr.hop td:nth-child(5):after { /* hop boil minutes */
 }
 
 #yeasts {
-	margin: 2em;
+	margin: 1em 1em 1em 2em;
 }
 
 .yeast .temperaturerange {

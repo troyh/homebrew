@@ -1,111 +1,121 @@
 {
-  "OG": 1.076,
-  "batch_size": 20.819765,
-  "FG": 1.019,
-  "type": "All Grain",
-  "yeast_starter_slurry": 159,
-  "ADF": 75,
+  "yeast_starter_cells": 317,
+  "styles": [
+
+  ],
+  "ADF": 80,
+  "notes": "OG should be 1.085, according to recipe. \n\nhttp://www.homebrewtalk.com/f78/jolly-roger-christmas-ale-150217/:\n\nThis beer is modeled after the Maritime Pacific Jolly Roger Christmas Ale which is a seasonal beer made in Seattle. 9% ABV it is not for the weak, tasting at 8 weeks there was no alcohol warmth and it tasting really nice. I was planning on bottling the whole batch of this because I didn't think it was going to be drinkable until next winter buy quite the contrary, this stuff is great! I hopped it up more that initially planned in prep to store it and still have hop character but so far I like it the way it is.",
   "ingredients": {
+    "yeast": [
+      {
+        "temperature_hi": 21,
+        "prod_id": "WLP007",
+        "attenuation": 75,
+        "lab": "White Labs",
+        "temperature_lo": 18,
+        "name": "Dry English Ale"
+      }
+    ],
     "hops": {
+      "dry_hop": [
+        {
+          "time": 20160,
+          "amount": 0.02835,
+          "form": "Pellet",
+          "alpha": 5.5,
+          "name": "Cascade"
+        },
+        {
+          "time": 20160,
+          "amount": 0.02835,
+          "form": "Pellet",
+          "alpha": 13,
+          "name": "Chinook"
+        }
+      ],
+      "mash": [
+
+      ],
+      "total_weight": 0.214042,
+      "first_wort": [
+
+      ],
       "aroma": [
         {
-          "form": "Pellet",
           "amount": 0.02835,
+          "form": "Pellet",
           "alpha": 6.5,
           "name": "Cascade"
         },
         {
-          "form": "Pellet",
           "amount": 0.02835,
+          "form": "Pellet",
           "alpha": 11.5,
           "name": "Chinook"
         }
       ],
       "boil": [
         {
-          "form": "Pellet",
+          "time": 90,
           "amount": 0.049612,
+          "form": "Pellet",
           "alpha": 11.5,
-          "name": "Chinook",
-          "time": 90
+          "name": "Chinook"
         },
         {
-          "form": "Pellet",
+          "time": 30,
           "amount": 0.02835,
+          "form": "Pellet",
           "alpha": 6.5,
-          "name": "Cascade",
-          "time": 30
-        },
-        {
-          "form": "Pellet",
-          "amount": 0.02268,
-          "alpha": 11.5,
-          "name": "Chinook",
-          "time": 30
-        }
-      ],
-      "mash": [
-
-      ],
-      "dry_hop": [
-        {
-          "form": "Pellet",
-          "amount": 0.02835,
-          "alpha": 5.5,
           "name": "Cascade"
         },
         {
+          "time": 30,
+          "amount": 0.02268,
           "form": "Pellet",
-          "amount": 0.02835,
-          "alpha": 13,
+          "alpha": 11.5,
           "name": "Chinook"
         }
-      ],
-      "first_wort": [
-
-      ],
-      "total_weight": 0.214042
+      ]
     },
-    "yeast": [
-      {
-        "attenuation": 75,
-        "temperature_lo": 18,
-        "temperature_hi": 21,
-        "name": "Dry English Ale",
-        "prod_id": "WLP007",
-        "lab": "White Labs"
-      }
+    "miscellaneous": [
+
     ],
     "fermentables": {
       "list": [
         {
-          "srm": 2,
           "amount": 6.395653,
-          "name": "2 Row Base",
-          "pct": 89.81
+          "srm": 2,
+          "pct": 89.81,
+          "yield": 78.0,
+          "name": "2 Row Base"
         },
         {
+          "amount": 0.362874,
           "srm": 50,
-          "amount": 0.362874,
-          "name": "CaraMunich",
-          "pct": 5.1
+          "pct": 5.1,
+          "yield": 72.0,
+          "name": "CaraMunich"
         },
         {
-          "srm": 75,
           "amount": 0.362874,
-          "name": "Crystal 75L",
-          "pct": 5.1
+          "srm": 75,
+          "pct": 5.1,
+          "yield": 72.0,
+          "name": "Crystal 75L"
         }
       ],
       "total_weight": 7.121401
     }
   },
-  "yeast_starter_cells": 298,
+  "OG": 1.081,
+  "type": "All Grain",
+  "efficiency": 80,
+  "boil_time": 90,
+  "yeast_starter_slurry": 169,
+  "ABV": 8.52,
+  "FG": 1.016,
+  "batch_size": 20.819765,
   "total_ppg": 558.899396631708,
-  "notes": "http://www.homebrewtalk.com/f78/jolly-roger-christmas-ale-150217/",
-  "styles": [
-
-  ],
-  "name": "Jolly Roger Christmas Ale",
-  "ABV": 7.49
+  "name": "Jolly Roger Christmas Ale"
 }

@@ -1,0 +1,33 @@
+{
+	"recipe":{
+		"id":"Jolly Roger Christmas Ale",
+		"commit_sha":"27b4f069e7331f21407c772e88e0360166d49e8d"
+	},
+	"results": {
+		"mash":{
+			"type": "",
+			"duration":60,
+			"strike": {
+				"volume":17.03434,
+				"temp":73
+			},
+			"measurements": [
+				{"temp": 67.2222},
+				{"temp": 67.2222},
+				{"temp": 65.833333}
+			]
+		},
+		"boil": {
+			"volume": 27.25495,
+			"sg":1.052,
+			"time": 60,
+			"end_volume":22.71246
+		},
+		"gravity": {
+			"volume":20.81975,
+			"og":1.062,
+			"fg":1.018
+		} 
+	}
+}
+

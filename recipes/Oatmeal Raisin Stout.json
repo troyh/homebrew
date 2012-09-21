@@ -1,51 +1,63 @@
 {
-  "type": "All Grain",
+  "ADF": 75,
   "notes": "Adapted from \"Brewing Better Beer\", p.207.",
-  "FG": 1.016,
-  "styles": [
-    {
-      "name": "Oatmeal Stout",
-      "letter": "C",
-      "category": 13
-    }
-  ],
-  "name": "Oatmeal Raisin Stout",
-  "ABV": 6.11,
-  "total_ppg": 414.459412414326,
+  "yeast_starter_slurry": 118,
   "ingredients": {
+    "yeast": [
+      {
+        "temperature_lo": 17,
+        "prod_id": "1335",
+        "lab": "Wyeast",
+        "temperature_hi": 24,
+        "name": "British Ale II",
+        "attenuation": 75
+      }
+    ],
+    "miscellaneous": [
+      {
+        "time": 15.0,
+        "name": "Yeast nutrient",
+        "amount": 0.007
+      },
+      {
+        "time": 15.0,
+        "name": "Whirlfloc",
+        "amount": 0.007087
+      }
+    ],
     "hops": {
-      "first_wort": [
+      "aroma": [
+
+      ],
+      "boil": [
         {
+          "time": 60,
+          "form": "Pellet",
           "name": "Goldings (Kent)",
-          "alpha": 5.8,
-          "amount": 0.014175,
-          "form": "Pellet"
+          "amount": 0.021262,
+          "alpha": 5.8
+        },
+        {
+          "time": 30,
+          "form": "Pellet",
+          "name": "Goldings (Kent)",
+          "amount": 0.01701,
+          "alpha": 5.8
         }
       ],
-      "dry_hop": [
-
+      "first_wort": [
+        {
+          "form": "Pellet",
+          "name": "Goldings (Kent)",
+          "amount": 0.014175,
+          "alpha": 5.8
+        }
       ],
       "mash": [
 
       ],
       "total_weight": 0.052447,
-      "boil": [
-        {
-          "name": "Goldings (Kent)",
-          "alpha": 5.8,
-          "time": 60,
-          "amount": 0.021262,
-          "form": "Pellet"
-        },
-        {
-          "name": "Goldings (Kent)",
-          "alpha": 5.8,
-          "time": 30,
-          "amount": 0.01701,
-          "form": "Pellet"
-        }
-      ],
-      "aroma": [
+      "dry_hop": [
 
       ]
     },
@@ -55,61 +67,69 @@
         {
           "srm": 4,
           "name": "Maris Otter",
+          "amount": 3.628739,
           "pct": 68.09,
-          "amount": 3.628739
+          "yield": 80
         },
         {
           "srm": 3,
           "name": "Oats (Flaked)",
+          "amount": 0.56699,
           "pct": 10.64,
-          "amount": 0.56699
+          "yield": 78.0
         },
         {
           "srm": 80,
           "name": "Crystal 80L",
+          "amount": 0.340194,
           "pct": 6.38,
-          "amount": 0.340194
+          "yield": 72.0
         },
         {
           "srm": 500,
           "name": "Barley (Roasted)",
+          "amount": 0.226796,
           "pct": 4.26,
-          "amount": 0.226796
+          "yield": 59.0
         },
         {
           "srm": 350,
           "name": "Chocolate",
+          "amount": 0.226796,
           "pct": 4.26,
-          "amount": 0.226796
+          "yield": 61.0
         },
         {
           "srm": 140,
           "name": "Special B",
+          "amount": 0.226796,
           "pct": 4.26,
-          "amount": 0.226796
+          "yield": 63.0
         },
         {
           "srm": 40,
           "name": "Crystal 40L",
+          "amount": 0.113398,
           "pct": 2.13,
-          "amount": 0.113398
+          "yield": 72
         }
       ]
-    },
-    "yeast": [
-      {
-        "attenuation": 75,
-        "lab": "Wyeast",
-        "prod_id": "1335",
-        "name": "British Ale II",
-        "temperature_hi": 24,
-        "temperature_lo": 17
-      }
-    ]
+    }
   },
-  "yeast_starter_cells": 221,
-  "ADF": 75,
-  "OG": 1.062,
+  "total_ppg": 414.459412414326,
   "batch_size": 18.927059,
-  "yeast_starter_slurry": 118
+  "styles": [
+    {
+      "letter": "C",
+      "category": 13,
+      "name": "Oatmeal Stout"
+    }
+  ],
+  "FG": 1.016,
+  "type": "All Grain",
+  "name": "Oatmeal Raisin Stout",
+  "yeast_starter_cells": 221,
+  "efficiency": 75,
+  "ABV": 6.11,
+  "OG": 1.062
 }

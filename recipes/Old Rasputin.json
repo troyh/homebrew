@@ -1,97 +1,106 @@
 {
-  "ABV": 8.81,
   "ADF": 75,
-  "total_ppg": 597.654142471698,
   "yeast_starter_cells": 318,
+  "FG": 1.022,
+  "notes": "http://www.homebrewtalk.com/f12/old-rasputin-clone-recipe-328790/",
+  "type": "All Grain",
+  "OG": 1.09,
+  "total_ppg": 597.654142471698,
+  "ABV": 8.81,
+  "efficiency": 75,
   "ingredients": {
+    "miscellaneous": [
+
+    ],
     "hops": {
-      "boil": [
-        {
-          "time": 60,
-          "alpha": 10,
-          "name": "Centennial",
-          "amount": 0.085049,
-          "form": "Pellet"
-        },
-        {
-          "time": 5,
-          "alpha": 10,
-          "name": "Centennial",
-          "amount": 0.02835,
-          "form": "Pellet"
-        },
-        {
-          "time": 5,
-          "alpha": 8.5,
-          "name": "Northern Brewer",
-          "amount": 0.02835,
-          "form": "Pellet"
-        }
-      ],
-      "first_wort": [
+      "aroma": [
 
       ],
-      "aroma": [
+      "dry_hop": [
+
+      ],
+      "first_wort": [
 
       ],
       "mash": [
 
       ],
       "total_weight": 0.141749,
-      "dry_hop": [
-
+      "boil": [
+        {
+          "form": "Pellet",
+          "time": 60,
+          "alpha": 10,
+          "amount": 0.085049,
+          "name": "Centennial"
+        },
+        {
+          "form": "Pellet",
+          "time": 5,
+          "alpha": 10,
+          "amount": 0.02835,
+          "name": "Centennial"
+        },
+        {
+          "form": "Pellet",
+          "time": 5,
+          "alpha": 8.5,
+          "amount": 0.02835,
+          "name": "Northern Brewer"
+        }
       ]
     },
+    "yeast": [
+      {
+        "temperature_lo": 20,
+        "lab": "White Labs",
+        "temperature_hi": 23,
+        "prod_id": "WLP001",
+        "attenuation": 77,
+        "name": "California Ale"
+      }
+    ],
     "fermentables": {
       "list": [
         {
           "srm": 3,
-          "name": "Pale Ale",
+          "yield": 80.0,
+          "pct": 79.29,
           "amount": 6.078137,
-          "pct": 79.29
+          "name": "Pale Ale"
         },
         {
           "srm": 30,
-          "name": "Carastan (Dark)",
+          "yield": 59.0,
+          "pct": 5.92,
           "amount": 0.453592,
-          "pct": 5.92
+          "name": "Carastan (Dark)"
         },
         {
           "srm": 120,
-          "name": "Crystal 120L",
+          "yield": 70.0,
+          "pct": 5.92,
           "amount": 0.453592,
-          "pct": 5.92
+          "name": "Crystal 120L"
         },
         {
           "srm": 500,
-          "name": "Barley (Roasted)",
+          "yield": 59.0,
+          "pct": 4.44,
           "amount": 0.340194,
-          "pct": 4.44
+          "name": "Barley (Roasted)"
         },
         {
           "srm": 50,
-          "name": "Chocolate",
+          "yield": 72.0,
+          "pct": 4.44,
           "amount": 0.340194,
-          "pct": 4.44
+          "name": "Chocolate"
         }
       ],
       "total_weight": 7.665709
-    },
-    "yeast": [
-      {
-        "temperature_hi": 23,
-        "prod_id": "WLP001",
-        "lab": "White Labs",
-        "attenuation": 77,
-        "temperature_lo": 20,
-        "name": "California Ale"
-      }
-    ]
+    }
   },
-  "notes": "http://www.homebrewtalk.com/f12/old-rasputin-clone-recipe-328790/",
-  "OG": 1.09,
-  "batch_size": 18.927059,
-  "type": "All Grain",
   "styles": [
     {
       "letter": "F",
@@ -101,5 +110,5 @@
   ],
   "name": "Old Rasputin",
   "yeast_starter_slurry": 170,
-  "FG": 1.022
+  "batch_size": 18.927059
 }

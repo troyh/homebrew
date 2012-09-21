@@ -1,0 +1,172 @@
+	<script id="volumeTemplate" type="text/x-jsrender">
+		{{if #data.isNumber == false or #data.length == 0}}
+			<span class="english">____ gallons</span>
+			<span class="metric">(____L)</span>
+		{{else}}
+			<span class="volume">
+				<span class="english">{{:(#data * 0.264172).toFixed(2)}} gallons</span>
+				<span class="metric">({{:(#data).toFixed(1)}}L)</span>
+				{{if ~gravity}}<span class="gravity">{{:~gravity.toFixed(3)}}</span>{{/if}}
+			</span>
+		{{/if}}
+	</script>
+	
+	<script id="weightTemplate" type="text/x-jsrender">
+		<div class="weight">
+			<div class="english">
+			{{if #data < 0.453592}} <!-- less than 1 pound? -->
+				{{:((#data * 2.20462 * 16) % 16).toFixed(2)}} oz
+			{{else}}
+				{{if ~decimalOnly }}
+					{{:(#data * 2.20462).toFixed(2)}} lbs
+				{{else}}
+					{{:(#data * 2.20462).toFixed(0)}} lbs
+					{{if (#data * 2.20462 * 16).toFixed(0) % 16 > 0}}
+						{{:(#data * 2.20462 * 16 % 16).toFixed(2)}} oz
+					{{/if}}
+				{{/if}}
+			{{/if}}
+			</div>
+			{{if #data < 1.0}}
+				<div class="metric">({{:(#data * 1000).toFixed(0)}}g)</div>
+			{{else}}
+				<div class="metric">({{:#data.toFixed(2)}}kg)</div>
+			{{/if}}
+		</div>
+	</script>	
+	
+	<script id="hopTemplate" type="text/x-jsrender">
+		{{if #index == 0}}<tr><th>{{:~use}}</th></tr>{{/if}}
+		<tr class="hop">
+			<td>
+				{{for amount tmpl="#weightTemplate"/}}
+			</td>
+			<td>{{:name}}</td>
+			<td>{{:alpha}}%&#945;</td>
+			<td>{{:form}}</td>
+			<td>
+				{{if ~use == 'Boil'}}{{:time}} min{{/if}}
+				{{if ~use == 'Dry Hop'}}{{:time / (60 * 24)}} days{{/if}}
+			</td>
+		</tr>
+	</script>
+
+	<script id="miscTemplate" type="text/x-jsrender">
+		{{if #index == 0}}<tr><th>{{:~use}}</th></tr>{{/if}}
+		<tr class="hop">
+			<td>
+				{{for amount tmpl="#weightTemplate"/}}
+			</td>
+			<td>{{:name}}</td>
+			<td>{{:time}} min</td>
+		</tr>
+	</script>
+	
+	<script id="temperatureTemplate" type="text/x-jsrender">
+		<span class="temperature">
+			<span class="fahrenheit">{{:(#data * 9 / 5 + 32).toFixed(0)}}</span>
+			<span class="celsius">{{:#data.toFixed(0)}}</span>
+		</span>
+	</script>
+	
+	
+	<script id="recipeTemplate" type="text/x-jsrender">
+	<div id="header">
+
+	<h1>{{>name}}</h1>
+	<div id="styles">
+	{{for styles}}
+		<div class="style">{{>name}}<span class="styleid">({{>category}}{{>letter}})</span></div>
+	{{/for}}
+	</div>
+	<div>
+		<span class="headerkey">Type: </span>
+		<span class="headerval">{{>type}}</span>
+	</div>
+	<div>
+		<span class="headerkey">Batch size:</span>
+		<span class="headerval">{{for batch_size tmpl='#volumeTemplate'/}}</span>
+	</div>
+	<div>
+		<span class="headerkey">OG:</span><span class="headerval">{{:~format_gravity(calc_og)}}</span>
+	</div>
+	<div>
+		<span class="headerkey">FG:</span><span class="headerval">{{:~format_gravity(calc_fg)}}</span>
+	</div>
+	<div>
+	<span class="headerkey">ABV:</span><span class="headerval">{{:((calc_og - calc_fg) * 131).toFixed(1)}}%</span>
+	</div>
+	<div>
+	<span class="headerkey">ADF:</span><span class="headerval">{{:((1 - ((calc_fg-1) / (calc_og-1))) * 100).toFixed(1))}}%</span>
+	</div>
+	<div>
+		<span class="headerkey">Yeast starter:</span>
+		<span class="headerval">{{:yeast_starter.ml_reqd.toFixed(0)}}ml (assuming {{:yeast_starter.viability_pct}}% viability) of yeast slurry, {{:yeast_starter.cells_reqd.toFixed(0)}}B cells
+		</span>
+	</div>
+	</div>
+	<div id="ingredients">
+		<div id="fermentables">
+			
+			<div class="total_weight">
+				{{for ingredients.fermentables.total_weight ~decimalOnly=true tmpl="#weightTemplate"/}}
+			</div>
+			
+			<table>
+				{{for ingredients.fermentables.list}}
+				<tr class="fermentable">
+					<td>
+						<div class="amount">
+							{{for amount tmpl="#weightTemplate"/}}
+						</div>
+					</td>
+					<td>
+						<div class="pct">{{:pct}}%</div>
+					</td>
+					<td>
+						<div class="name">{{:name}}</div>
+						<div class="srm">{{:srm}}</div>
+					</td>
+				</tr>
+				{{/for}}
+			</table>
+		</div>
+	</div>
+	
+	<div id="hops">
+		<div class="total_weight">
+			{{for ingredients.hops.total_weight tmpl="#weightTemplate"/}}
+		</div>
+		
+		<table>
+			{{for ingredients.hops.mash       ~use="Mash"       tmpl="#hopTemplate"/}}
+			{{for ingredients.hops.first_wort ~use="First Wort" tmpl="#hopTemplate"/}}
+			{{for ingredients.hops.boil       ~use="Boil"       tmpl="#hopTemplate"/}}
+			{{for ingredients.hops.aroma      ~use="Aroma"      tmpl="#hopTemplate"/}}
+			{{for ingredients.hops.dry_hop    ~use="Dry Hop"    tmpl="#hopTemplate"/}}
+		</table>
+	</div>
+	
+	<table id="miscellaneous">
+		{{for ingredients.miscellaneous tmpl="#miscTemplate"/}}
+	</table>
+
+	<div id="yeasts">
+		<div class="yeast">
+			{{for ingredients.yeast}}
+				{{:lab}} {{:prod_id}} ({{:name}})
+				<div class="temperaturerange">
+					{{for temperature_lo tmpl="#temperatureTemplate"/}}
+					- 
+					{{for temperature_hi tmpl="#temperatureTemplate"/}}
+				</div>
+				<div class="attenuation">{{:attenuation}}%</div>
+			{{/for}}
+		</div>
+	</div>
+	
+	<div id="notes">
+		<h1>Notes</h1>
+		<div class="note">{{:notes}}</div>
+	</div>	
+	</script>

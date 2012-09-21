@@ -1,0 +1,79 @@
+{
+  "total_ppg": 476.513393670385,
+  "type": "All Grain",
+  "styles": [
+    {
+      "letter": "C",
+      "category": 18,
+      "name": "Belgian Tripel"
+    }
+  ],
+  "OG": 1.069,
+  "efficiency": 80,
+  "yeast_starter_slurry": 144,
+  "ADF": 80,
+  "ingredients": {
+    "fermentables": {
+      "total_weight": 6.327613,
+      "list": [
+        {
+          "amount": 1.224699,
+          "pct": 19.35,
+          "srm": 35,
+          "name": "Sugar - Cane",
+          "yield": 67.0
+        },
+        {
+          "amount": 5.102914,
+          "pct": 80.65,
+          "srm": 1,
+          "name": "Pilsen",
+          "yield": 76.0
+        }
+      ]
+    },
+    "yeast": [
+      {
+        "lab": "White Labs",
+        "temperature_lo": 19,
+        "temperature_hi": 22,
+        "prod_id": "WLP530",
+        "attenuation": 78,
+        "name": "Abbey Ale"
+      }
+    ],
+    "miscellaneous": [
+
+    ],
+    "hops": {
+      "total_weight": 0.063786,
+      "mash": [
+
+      ],
+      "first_wort": [
+
+      ],
+      "boil": [
+        {
+          "amount": 0.063786,
+          "alpha": 4.5,
+          "time": 60,
+          "form": "Pellet",
+          "name": "Tettnanger"
+        }
+      ],
+      "dry_hop": [
+
+      ],
+      "aroma": [
+
+      ]
+    }
+  },
+  "ABV": 7.26,
+  "batch_size": 20.819765,
+  "FG": 1.014,
+  "notes": "",
+  "yeast_starter_cells": 271,
+  "name": "Oostmalle Tripel"
+}
