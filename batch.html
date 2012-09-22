@@ -9,6 +9,9 @@
 	<script type="text/javascript">
 	function fahrenheitToCelsius(f) {return (f - 32) * 5 / 9;}
 	function celsiusToFahrenheit(c) {return 9 / 5 * (c + 32);}
+	function kg2lbs(kg) { return kg * 2.20462; }
+	function liters2gallons(l) { return l * 0.264172; }
+	function gu2sg(gu) { return gu / 1000 + 1; }
 	function getURLParameter(name) {
 	    return decodeURI(
 	        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
@@ -37,8 +40,21 @@
 									//
 									// Compute the expected data
 									//
-									// Assumptions:
+									
+									// For recipes with adjuncts, the PPG may be lower than the total_ppg. We just want
+									// to calculate the GU for the grains because that's what is mashed. Adjuncts
+									// are added to the boil kettle and shouldn't be included in the lautered gravity.
+									recipe.total_grain_ppg=0;
+									recipe.total_adjunct_ppg=0;
+									for (var i=0; i< recipe.ingredients.fermentables.list.length; ++i) {
+										if (recipe.ingredients.fermentables.list[i].type=="Grain")
+											recipe.total_grain_ppg+=recipe.ingredients.fermentables.list[i].yield / 100 * 46 * kg2lbs(recipe.ingredients.fermentables.list[i].amount);
+										else
+											recipe.total_adjunct_ppg+=recipe.ingredients.fermentables.list[i].yield / 100 * 46 * kg2lbs(recipe.ingredients.fermentables.list[i].amount);
+									}
+									
 									var expected={
+										// Assumptions:
 										assumptions: {
 											graintemp:fahrenheitToCelsius(70),
 											mashtemp:fahrenheitToCelsius(152),
@@ -69,6 +85,8 @@
 									expected.boil_vol= recipe.batch_size / (Math.pow(1 - expected.assumptions.evaporation_rate,expected.boil_hours));
 									expected.evaporation_loss_vol=expected.boil_vol * (1 - Math.pow(1 - expected.assumptions.evaporation_rate,expected.boil_hours)),
 									expected.sparge_vol=expected.boil_vol - (expected.mashvol - expected.absorption_loss_vol - expected.hop_absorption_loss_vol - expected.assumptions.mashtun_loss);
+									expected.lauter_gravity=gu2sg((recipe.total_grain_ppg * recipe.efficiency / 100) / liters2gallons(expected.boil_vol)); 
+									expected.adjunct_gu=recipe.total_adjunct_ppg / liters2gallons(expected.boil_vol);
 							
 									$('#expected').html($('#expectedTemplate').render(expected));
 

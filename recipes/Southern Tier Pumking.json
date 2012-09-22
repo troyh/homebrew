@@ -1,142 +1,147 @@
 {
-  "notes": "http://www.homebrewtalk.com/f12/southern-tier-pumking-clone-191381/index20.html",
-  "efficiency": 80,
   "boil_time": 60,
-  "name": "Southern Tier Pumking",
-  "total_ppg": 615.939170715018,
   "FG": 1.02,
-  "yeast_starter_cells": 350,
+  "total_ppg": 615.939170715018,
   "styles": [
     {
-      "name": "Spice, Herb, or Vegetable Beer",
       "letter": "A",
+      "name": "Spice, Herb, or Vegetable Beer",
       "category": 21
     }
   ],
+  "name": "Southern Tier Pumking",
+  "notes": "http://www.homebrewtalk.com/f12/southern-tier-pumking-clone-191381/index20.html",
+  "yeast_starter_cells": 350,
+  "yeast_starter_slurry": 187,
+  "OG": 1.099,
+  "efficiency": 80,
   "ingredients": {
+    "miscellaneous": [
+      {
+        "name": "Whirlfloc",
+        "time": 15.0,
+        "amount": 0.002835
+      },
+      {
+        "name": "Cinnamon",
+        "time": 15.0,
+        "amount": 0.085049
+      },
+      {
+        "name": "Allspice",
+        "time": 5.0,
+        "amount": 0.002835
+      },
+      {
+        "name": "Ginger",
+        "time": 5.0,
+        "amount": 0.002835
+      },
+      {
+        "name": "Nutmeg",
+        "time": 5.0,
+        "amount": 0.002835
+      },
+      {
+        "name": "Whole cloves",
+        "time": 5.0,
+        "amount": 0.002835
+      },
+      {
+        "name": "Lactose",
+        "time": 15.0,
+        "amount": 0.056699
+      }
+    ],
+    "yeast": [
+      {
+        "temperature_lo": 15,
+        "name": "Safale US-05",
+        "lab": "Fermentis",
+        "temperature_hi": 24,
+        "attenuation": 78,
+        "prod_id": "US-05"
+      }
+    ],
+    "fermentables": {
+      "total_weight": 7.257477,
+      "list": [
+        {
+          "name": "Pumpkin puree",
+          "yield": 0.0,
+          "pct": 10.53,
+          "amount": 0.907185,
+          "type": "Adjunct",
+          "srm": 0
+        },
+        {
+          "name": "Sugar - Cane",
+          "yield": 67.0,
+          "pct": 3.95,
+          "amount": 0.340194,
+          "type": "Sugar",
+          "srm": 35
+        },
+        {
+          "name": "Sugar - Brown",
+          "yield": 67.0,
+          "pct": 1.32,
+          "amount": 0.113398,
+          "type": "Sugar",
+          "srm": 35
+        },
+        {
+          "name": "Pale Ale",
+          "yield": 80.0,
+          "pct": 78.95,
+          "amount": 6.803885,
+          "type": "Grain",
+          "srm": 3
+        },
+        {
+          "name": "Crystal 80L",
+          "yield": 72.0,
+          "pct": 5.26,
+          "amount": 0.453592,
+          "type": "Grain",
+          "srm": 80
+        }
+      ]
+    },
     "hops": {
-      "mash": [
-
-      ],
       "total_weight": 0.028349,
-      "aroma": [
-
-      ],
       "boil": [
         {
           "name": "Magnum",
-          "form": "Pellet",
+          "time": 60,
           "alpha": 14,
           "amount": 0.021262,
-          "time": 60
+          "form": "Pellet"
         },
         {
           "name": "Sterling",
-          "form": "Pellet",
+          "time": 15,
           "alpha": 4,
           "amount": 0.007087,
-          "time": 15
+          "form": "Pellet"
         }
       ],
       "dry_hop": [
 
       ],
+      "aroma": [
+
+      ],
       "first_wort": [
 
+      ],
+      "mash": [
+
       ]
-    },
-    "fermentables": {
-      "total_weight": 8.618254,
-      "list": [
-        {
-          "name": "Pumpkin puree",
-          "amount": 0.907185,
-          "srm": 0,
-          "pct": 10.53,
-          "yield": 0.0
-        },
-        {
-          "name": "Sugar - Cane",
-          "amount": 0.340194,
-          "srm": 35,
-          "pct": 3.95,
-          "yield": 67.0
-        },
-        {
-          "name": "Sugar - Brown",
-          "amount": 0.113398,
-          "srm": 35,
-          "pct": 1.32,
-          "yield": 67.0
-        },
-        {
-          "name": "Pale Ale",
-          "amount": 6.803885,
-          "srm": 3,
-          "pct": 78.95,
-          "yield": 80.0
-        },
-        {
-          "name": "Crystal 80L",
-          "amount": 0.453592,
-          "srm": 80,
-          "pct": 5.26,
-          "yield": 72.0
-        }
-      ]
-    },
-    "yeast": [
-      {
-        "attenuation": 78,
-        "prod_id": "US-05",
-        "name": "Safale US-05",
-        "temperature_hi": 24,
-        "lab": "Fermentis",
-        "temperature_lo": 15
-      }
-    ],
-    "miscellaneous": [
-      {
-        "name": "Whirlfloc",
-        "amount": 0.002835,
-        "time": 15.0
-      },
-      {
-        "name": "Cinnamon",
-        "amount": 0.085049,
-        "time": 15.0
-      },
-      {
-        "name": "Allspice",
-        "amount": 0.002835,
-        "time": 5.0
-      },
-      {
-        "name": "Ginger",
-        "amount": 0.002835,
-        "time": 5.0
-      },
-      {
-        "name": "Nutmeg",
-        "amount": 0.002835,
-        "time": 5.0
-      },
-      {
-        "name": "Whole cloves",
-        "amount": 0.002835,
-        "time": 5.0
-      },
-      {
-        "name": "Lactose",
-        "amount": 0.056699,
-        "time": 15.0
-      }
-    ]
+    }
   },
   "ABV": 10.33,
-  "OG": 1.099,
-  "batch_size": 20.8198,
   "type": "All Grain",
-  "yeast_starter_slurry": 187,
+  "batch_size": 20.8198,
   "ADF": 80
 }

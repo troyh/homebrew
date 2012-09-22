@@ -35,7 +35,18 @@
 				
 	<div>
 		<span class="headerkey">Sparge:</span>
-		<span class="headerval">{{for sparge_vol tmpl="#volumeTemplate"/}}</span>
+		<span class="headerval">
+			{{for sparge_vol tmpl="#volumeTemplate"/}}&#8594;
+			{{for boil_vol ~gravity=lauter_gravity tmpl="#volumeTemplate"/}}
+		</span>
+		<div style="clear: both;"></div>
+	</div>
+				
+	<div>
+		<span class="headerkey">Adjuncts:</span>
+		<span class="headerval">
+			{{:adjunct_gu.toFixed(1)}} GU&#8594;{{:(lauter_gravity + (adjunct_gu/1000)).toFixed(3)}}
+		</span>
 		<div style="clear: both;"></div>
 	</div>
 				

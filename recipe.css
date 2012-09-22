@@ -280,14 +280,24 @@ tr.fermentable td:nth-child(3) {
 	width:15em;
 }
 
+.fermentable .ppg:after {
+	content:"ppg";
+}
+
 .fermentable .srm:after {
 	content:" SRM";
 }
+.fermentable .ppg {
+/*	position:relative;*/
+	font-size:70%;
+	color:silver;
+}
 .fermentable .srm {
-	float:right;
-	position:relative;
-	left:3em;
-	color:gray;
+/*	float:right;*/
+/*	position:relative;*/
+/*	left:3em;*/
+	font-size:70%;
+	color:silver;
 }
 
 #hops {
