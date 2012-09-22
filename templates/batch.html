@@ -5,8 +5,8 @@
 		<span class="headerkey">Assumptions:</span>
 		<span class="headerval">
 			{{:assumptions.mashthickness}}qt/lb @
-			<span class="temperature"><span class="fahrenheit">{{for assumptions.mashtemp tmpl="#temperatureTemplate"/}}</span></span>, grain @
-			<span class="temperature"><span class="fahrenheit">{{for assumptions.graintemp tmpl="#temperatureTemplate"/}}</span></span>
+			<span class="temperature fahrenheit">{{for assumptions.mashtemp tmpl="#temperatureTemplate"/}}</span>, grain @
+			<span class="temperature fahrenheit">{{for assumptions.graintemp tmpl="#temperatureTemplate"/}}</span>
 		</span>
 		<div style="clear: both;"></div>
 
@@ -67,7 +67,7 @@ $.views.helpers({
 		<h2>Actual</h2>
 		<div>
 			<span class="headerkey">Strike:
-				<span class="headercode"ST</xsl:text></span>
+				<span class="headercode"ST</span>
 				<span class="headercode">SV</span>
 			</span>
 			<span class="headerval">

@@ -1,0 +1,33 @@
+{
+	"recipe":{
+		"id":"Southern Tier Pumking",
+		"commit_sha":"573e526ec960f84c9f983a59debd44a5d15d81d4"
+		},
+	"results": {
+		"mash":{
+			"type": "",
+			"duration":0,
+			"strike": {
+				"volume":0,
+				"temp":0
+			},
+			"measurements": [
+				{"temp": 0}
+			]
+		},
+		"sparge": {
+			"duration": 0
+		},
+		"boil": {
+			"volume": 0,
+			"sg":0,
+			"time": 0,
+			"end_volume":0
+		},
+		"gravity": {
+			"volume":0,
+			"og":0
+		} 
+	}
+}
+

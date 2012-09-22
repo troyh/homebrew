@@ -25,10 +25,10 @@
 
 body {
 	font-family: Signika, Helvetica;
+	font-size:.9em;
 }
 
 #header {
-	font-size:.8em;
 	margin-bottom:0em;
 }
 
@@ -104,6 +104,10 @@ body {
 	float:left;
 }
 
+#expected h2,
+#results h2 {
+	margin:0;
+}
 #expected .headerkey {
 	width:100px;
 }
@@ -233,7 +237,7 @@ div#fermentables .total_weight {
 	left:-4em;
 	top:3.5em;
 	text-align:center;
-	font-size:.9em;
+/*	font-size:.9em;*/
 /*	bottom:15em;*/
 	width:5em;
 	color:gray;
@@ -246,6 +250,10 @@ div#fermentables .total_weight {
 
 div#fermentables .total_weight * { 
 	display:inline;
+}
+
+table {
+	font-size:inherit;
 }
 
 tr.fermentable {
@@ -291,7 +299,7 @@ div#hops .total_weight {
 	left:-4em;
 	top:3.5em;
 	text-align:center;
-	font-size:.9em;
+/*	font-size:.9em;*/
 /*	bottom:15em;*/
 	width:5em;
 	color:gray;
@@ -351,13 +359,13 @@ tr.hop td:nth-child(5):after { /* hop boil minutes */
 }
 
 .yeast .temperaturerange {
-	font-size:.8em;
+	font-size:80%;
 	position:relative;
 	left:1em;
 }
 
 .yeast .attenuation {
-	font-size:.8em;
+	font-size:80%;
 	position:relative;
 	left:-55em;
 	top:-1.2em;

@@ -1,6 +1,7 @@
 {
   "notes": "http://www.homebrewtalk.com/f12/southern-tier-pumking-clone-191381/index20.html",
   "efficiency": 80,
+  "boil_time": 60,
   "name": "Southern Tier Pumking",
   "total_ppg": 615.939170715018,
   "FG": 1.02,
@@ -134,7 +135,7 @@
   },
   "ABV": 10.33,
   "OG": 1.099,
-  "batch_size": 18.927059,
+  "batch_size": 20.8198,
   "type": "All Grain",
   "yeast_starter_slurry": 187,
   "ADF": 80
