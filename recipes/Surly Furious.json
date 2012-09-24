@@ -1,114 +1,120 @@
 {
-  "ADF": 70,
-  "batch_size": 18.927099,
   "OG": 1.061,
-  "yeast_starter_slurry": 116,
-  "efficiency": 70,
-  "FG": 1.018,
+  "name": "Surly Furious",
   "notes": "See full Northern Brewer recipe instructions.",
-  "yeast_starter_cells": 217,
+  "ADF": 70,
   "total_ppg": 436.085553202561,
+  "FG": 1.018,
+  "batch_size": 18.927099,
   "styles": [
     {
-      "letter": "C",
+      "name": "Imperial IPA",
       "category": 14,
-      "name": "Imperial IPA"
+      "letter": "C"
     }
   ],
-  "ABV": 5.6,
-  "name": "Surly Furious",
+  "yeast_starter_slurry": 116,
   "ingredients": {
-    "fermentables": {
-      "total_weight": 5.615543,
-      "list": [
-        {
-          "amount": 3.401943,
-          "yield": 78,
-          "srm": 3,
-          "name": "Pale Ale",
-          "pct": 60.58
-        },
-        {
-          "amount": 1.4742,
-          "yield": 74,
-          "srm": 2,
-          "name": "Simpsons Golden Promise",
-          "pct": 26.25
-        },
-        {
-          "amount": 0.3992,
-          "yield": 76,
-          "srm": 55,
-          "name": "Simpsons Medium",
-          "pct": 7.11
-        },
-        {
-          "amount": 0.2858,
-          "yield": 78,
-          "srm": 26,
-          "name": "Aromatic Malt",
-          "pct": 5.09
-        },
-        {
-          "amount": 0.0544,
-          "yield": 54,
-          "srm": 300,
-          "name": "Roasted Barley",
-          "pct": 0.97
-        }
-      ]
-    },
-    "yeast": [
-      {
-        "temperature_lo": 63,
-        "lab": "Wyeast",
-        "temperature_hi": 75,
-        "prod_id": "1335",
-        "name": "British Ale II",
-        "attenuation": 75
-      }
-    ],
-    "miscellaneous": [
-
-    ],
     "hops": {
-      "aroma": [
-
+      "total_weight": 0.1205,
+      "boil": [
+        {
+          "name": "Amarillo Gold",
+          "form": "Pellet",
+          "alpha": 8.5,
+          "time": 60,
+          "amount": 0.0142
+        },
+        {
+          "name": "Warrior",
+          "form": "Pellet",
+          "alpha": 15,
+          "time": 60,
+          "amount": 0.0496
+        },
+        {
+          "name": "Amarillo Gold",
+          "form": "Pellet",
+          "alpha": 8.5,
+          "time": 0,
+          "amount": 0.0567
+        }
       ],
       "mash": [
 
       ],
-      "first_wort": [
-
-      ],
-      "boil": [
-        {
-          "amount": 0.0142,
-          "alpha": 8.5,
-          "form": "Pellet",
-          "time": 60,
-          "name": "Amarillo Gold"
-        },
-        {
-          "amount": 0.0496,
-          "alpha": 15,
-          "form": "Pellet",
-          "time": 60,
-          "name": "Warrior"
-        },
-        {
-          "amount": 0.0567,
-          "alpha": 8.5,
-          "form": "Pellet",
-          "time": 0,
-          "name": "Amarillo Gold"
-        }
-      ],
-      "total_weight": 0.1205,
       "dry_hop": [
 
+      ],
+      "aroma": [
+
+      ],
+      "first_wort": [
+
       ]
-    }
+    },
+    "fermentables": {
+      "total_weight": 5.615543,
+      "list": [
+        {
+          "srm": 3,
+          "name": "Pale Ale",
+          "yield": 78,
+          "pct": 60.58,
+          "amount": 3.401943,
+          "type": "Grain"
+        },
+        {
+          "srm": 2,
+          "name": "Simpsons Golden Promise",
+          "yield": 74,
+          "pct": 26.25,
+          "amount": 1.4742,
+          "type": "Grain"
+        },
+        {
+          "srm": 55,
+          "name": "Simpsons Medium",
+          "yield": 76,
+          "pct": 7.11,
+          "amount": 0.3992,
+          "type": "Grain"
+        },
+        {
+          "srm": 26,
+          "name": "Aromatic Malt",
+          "yield": 78,
+          "pct": 5.09,
+          "amount": 0.2858,
+          "type": "Grain"
+        },
+        {
+          "srm": 300,
+          "name": "Roasted Barley",
+          "yield": 54,
+          "pct": 0.97,
+          "amount": 0.0544,
+          "type": "Grain"
+        }
+      ]
+    },
+    "miscellaneous": [
+
+    ],
+    "yeast": [
+      {
+        "name": "British Ale II",
+        "attenuation": 75,
+        "prod_id": "1335",
+        "temperature_lo": 63,
+        "lab": "Wyeast",
+        "temperature_hi": 75
+      }
+    ]
   },
+  "ABV": 5.6,
+  "boil_time": 60,
+  "yeast_starter_cells": 217,
+  "efficiency": 70,
   "type": "All Grain"
 }

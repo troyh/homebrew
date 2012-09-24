@@ -1,112 +1,118 @@
 {
   "yeast_starter_cells": 340,
-  "ABV": 9.42,
-  "FG": 1.024,
-  "efficiency": 75,
+  "yeast_starter_slurry": 181,
+  "boil_time": 60,
+  "OG": 1.096,
+  "notes": "",
+  "type": "All Grain",
   "styles": [
     {
-      "category": 13,
       "letter": "F",
-      "name": "Imperial Stout"
+      "name": "Imperial Stout",
+      "category": 13
     }
   ],
-  "total_ppg": 638.939114459686,
-  "type": "All Grain",
-  "ADF": 75,
-  "yeast_starter_slurry": 181,
-  "OG": 1.096,
-  "batch_size": 18.9271,
-  "name": "The Czar's Revenge",
-  "notes": "",
+  "ABV": 9.42,
+  "FG": 1.024,
   "ingredients": {
-    "hops": {
-      "aroma": [
-        {
-          "name": "Goldings (Kent)",
-          "form": "Pellet",
-          "alpha": 5,
-          "amount": 0.056699
-        }
-      ],
-      "boil": [
-        {
-          "time": 60,
-          "name": "Magnum",
-          "form": "Pellet",
-          "alpha": 13,
-          "amount": 0.042524
-        },
-        {
-          "time": 10,
-          "name": "Goldings (Kent)",
-          "form": "Pellet",
-          "alpha": 5,
-          "amount": 0.056699
-        }
-      ],
-      "mash": [
-
-      ],
-      "first_wort": [
-
-      ],
-      "dry_hop": [
-
-      ],
-      "total_weight": 0.155922
-    },
-    "miscellaneous": [
-
-    ],
     "yeast": [
       {
+        "temperature_hi": 22,
+        "attenuation": 75,
         "temperature_lo": 16,
         "prod_id": "1056",
-        "attenuation": 75,
-        "temperature_hi": 22,
         "name": "American Ale",
         "lab": "Wyeast"
       }
     ],
-    "fermentables": {
-      "list": [
+    "hops": {
+      "first_wort": [
+
+      ],
+      "boil": [
         {
-          "pct": 81.08,
-          "srm": 3,
-          "yield": 78.0,
-          "name": "2 Row Base",
-          "amount": 6.803885
+          "time": 60,
+          "amount": 0.042524,
+          "alpha": 13,
+          "name": "Magnum",
+          "form": "Pellet"
         },
         {
-          "pct": 5.41,
-          "srm": 500,
-          "yield": 59.0,
-          "name": "Barley (Roasted)",
-          "amount": 0.453592
-        },
-        {
-          "pct": 5.41,
-          "srm": 350,
-          "yield": 61.0,
-          "name": "Chocolate",
-          "amount": 0.453592
-        },
-        {
-          "pct": 5.41,
-          "srm": 120,
-          "yield": 63.0,
-          "name": "Special B",
-          "amount": 0.453592
-        },
-        {
-          "pct": 2.7,
-          "srm": 60,
-          "yield": 72.0,
-          "name": "CaraMunich",
-          "amount": 0.226796
+          "time": 10,
+          "amount": 0.056699,
+          "alpha": 5,
+          "name": "Goldings (Kent)",
+          "form": "Pellet"
         }
       ],
-      "total_weight": 8.391457
-    }
-  }
+      "aroma": [
+        {
+          "amount": 0.056699,
+          "alpha": 5,
+          "name": "Goldings (Kent)",
+          "form": "Pellet"
+        }
+      ],
+      "total_weight": 0.155922,
+      "dry_hop": [
+
+      ],
+      "mash": [
+
+      ]
+    },
+    "fermentables": {
+      "total_weight": 8.391457,
+      "list": [
+        {
+          "srm": 3,
+          "type": "Grain",
+          "pct": 81.08,
+          "amount": 6.803885,
+          "name": "2 Row Base",
+          "yield": 78.0
+        },
+        {
+          "srm": 500,
+          "type": "Grain",
+          "pct": 5.41,
+          "amount": 0.453592,
+          "name": "Barley (Roasted)",
+          "yield": 59.0
+        },
+        {
+          "srm": 350,
+          "type": "Grain",
+          "pct": 5.41,
+          "amount": 0.453592,
+          "name": "Chocolate",
+          "yield": 61.0
+        },
+        {
+          "srm": 120,
+          "type": "Grain",
+          "pct": 5.41,
+          "amount": 0.453592,
+          "name": "Special B",
+          "yield": 63.0
+        },
+        {
+          "srm": 60,
+          "type": "Grain",
+          "pct": 2.7,
+          "amount": 0.226796,
+          "name": "CaraMunich",
+          "yield": 72.0
+        }
+      ]
+    },
+    "miscellaneous": [
+
+    ]
+  },
+  "ADF": 75,
+  "efficiency": 75,
+  "total_ppg": 638.939114459686,
+  "batch_size": 18.9271,
+  "name": "The Czar's Revenge"
 }

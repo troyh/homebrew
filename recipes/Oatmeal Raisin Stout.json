@@ -1,135 +1,143 @@
 {
-  "ADF": 75,
-  "notes": "Adapted from \"Brewing Better Beer\", p.207.",
-  "yeast_starter_slurry": 118,
+  "batch_size": 18.927059,
   "ingredients": {
     "yeast": [
       {
-        "temperature_lo": 17,
-        "prod_id": "1335",
         "lab": "Wyeast",
         "temperature_hi": 24,
+        "prod_id": "1335",
+        "temperature_lo": 17,
         "name": "British Ale II",
         "attenuation": 75
       }
     ],
-    "miscellaneous": [
-      {
-        "time": 15.0,
-        "name": "Yeast nutrient",
-        "amount": 0.007
-      },
-      {
-        "time": 15.0,
-        "name": "Whirlfloc",
-        "amount": 0.007087
-      }
-    ],
     "hops": {
-      "aroma": [
+      "mash": [
+
+      ],
+      "dry_hop": [
 
       ],
       "boil": [
         {
-          "time": 60,
-          "form": "Pellet",
+          "alpha": 5.8,
           "name": "Goldings (Kent)",
+          "form": "Pellet",
           "amount": 0.021262,
-          "alpha": 5.8
+          "time": 60
         },
         {
-          "time": 30,
-          "form": "Pellet",
+          "alpha": 5.8,
           "name": "Goldings (Kent)",
+          "form": "Pellet",
           "amount": 0.01701,
-          "alpha": 5.8
+          "time": 30
         }
+      ],
+      "total_weight": 0.052447,
+      "aroma": [
+
       ],
       "first_wort": [
         {
-          "form": "Pellet",
+          "alpha": 5.8,
           "name": "Goldings (Kent)",
-          "amount": 0.014175,
-          "alpha": 5.8
+          "form": "Pellet",
+          "amount": 0.014175
         }
-      ],
-      "mash": [
-
-      ],
-      "total_weight": 0.052447,
-      "dry_hop": [
-
       ]
     },
+    "miscellaneous": [
+      {
+        "name": "Yeast nutrient",
+        "amount": 0.007,
+        "time": 15.0
+      },
+      {
+        "name": "Whirlfloc",
+        "amount": 0.007087,
+        "time": 15.0
+      }
+    ],
     "fermentables": {
       "total_weight": 5.329709,
       "list": [
         {
           "srm": 4,
           "name": "Maris Otter",
-          "amount": 3.628739,
           "pct": 68.09,
-          "yield": 80
+          "amount": 3.628739,
+          "yield": 80,
+          "type": "Grain"
         },
         {
           "srm": 3,
           "name": "Oats (Flaked)",
-          "amount": 0.56699,
           "pct": 10.64,
-          "yield": 78.0
+          "amount": 0.56699,
+          "yield": 78.0,
+          "type": "Grain"
         },
         {
           "srm": 80,
           "name": "Crystal 80L",
-          "amount": 0.340194,
           "pct": 6.38,
-          "yield": 72.0
+          "amount": 0.340194,
+          "yield": 72.0,
+          "type": "Grain"
         },
         {
           "srm": 500,
           "name": "Barley (Roasted)",
-          "amount": 0.226796,
           "pct": 4.26,
-          "yield": 59.0
+          "amount": 0.226796,
+          "yield": 59.0,
+          "type": "Grain"
         },
         {
           "srm": 350,
           "name": "Chocolate",
-          "amount": 0.226796,
           "pct": 4.26,
-          "yield": 61.0
+          "amount": 0.226796,
+          "yield": 61.0,
+          "type": "Grain"
         },
         {
           "srm": 140,
           "name": "Special B",
-          "amount": 0.226796,
           "pct": 4.26,
-          "yield": 63.0
+          "amount": 0.226796,
+          "yield": 63.0,
+          "type": "Grain"
         },
         {
           "srm": 40,
           "name": "Crystal 40L",
-          "amount": 0.113398,
           "pct": 2.13,
-          "yield": 72
+          "amount": 0.113398,
+          "yield": 72,
+          "type": "Grain"
         }
       ]
     }
   },
-  "total_ppg": 414.459412414326,
-  "batch_size": 18.927059,
+  "FG": 1.016,
   "styles": [
     {
-      "letter": "C",
       "category": 13,
-      "name": "Oatmeal Stout"
+      "name": "Oatmeal Stout",
+      "letter": "C"
     }
   ],
-  "FG": 1.016,
-  "type": "All Grain",
   "name": "Oatmeal Raisin Stout",
-  "yeast_starter_cells": 221,
-  "efficiency": 75,
   "ABV": 6.11,
-  "OG": 1.062
+  "notes": "Adapted from \"Brewing Better Beer\", p.207.",
+  "ADF": 75,
+  "OG": 1.062,
+  "efficiency": 75,
+  "total_ppg": 414.459412414326,
+  "yeast_starter_cells": 221,
+  "yeast_starter_slurry": 118,
+  "boil_time": 90,
+  "type": "All Grain"
 }

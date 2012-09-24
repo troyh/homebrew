@@ -1,114 +1,120 @@
 {
-  "ADF": 75,
   "yeast_starter_cells": 318,
-  "FG": 1.022,
-  "notes": "http://www.homebrewtalk.com/f12/old-rasputin-clone-recipe-328790/",
-  "type": "All Grain",
-  "OG": 1.09,
-  "total_ppg": 597.654142471698,
   "ABV": 8.81,
   "efficiency": 75,
+  "ADF": 75,
+  "batch_size": 18.927059,
+  "type": "All Grain",
+  "notes": "http://www.homebrewtalk.com/f12/old-rasputin-clone-recipe-328790/",
+  "OG": 1.09,
+  "styles": [
+    {
+      "letter": "F",
+      "name": "Imperial Stout",
+      "category": 13
+    }
+  ],
+  "name": "Old Rasputin",
+  "yeast_starter_slurry": 170,
+  "total_ppg": 597.654142471698,
+  "FG": 1.022,
+  "boil_time": 60,
   "ingredients": {
-    "miscellaneous": [
-
+    "yeast": [
+      {
+        "attenuation": 77,
+        "temperature_lo": 20,
+        "name": "California Ale",
+        "temperature_hi": 23,
+        "lab": "White Labs",
+        "prod_id": "WLP001"
+      }
     ],
     "hops": {
-      "aroma": [
+      "total_weight": 0.141749,
+      "first_wort": [
 
       ],
       "dry_hop": [
 
       ],
-      "first_wort": [
+      "aroma": [
 
       ],
       "mash": [
 
       ],
-      "total_weight": 0.141749,
       "boil": [
         {
           "form": "Pellet",
           "time": 60,
-          "alpha": 10,
+          "name": "Centennial",
           "amount": 0.085049,
-          "name": "Centennial"
+          "alpha": 10
         },
         {
           "form": "Pellet",
           "time": 5,
-          "alpha": 10,
+          "name": "Centennial",
           "amount": 0.02835,
-          "name": "Centennial"
+          "alpha": 10
         },
         {
           "form": "Pellet",
           "time": 5,
-          "alpha": 8.5,
+          "name": "Northern Brewer",
           "amount": 0.02835,
-          "name": "Northern Brewer"
+          "alpha": 8.5
         }
       ]
     },
-    "yeast": [
-      {
-        "temperature_lo": 20,
-        "lab": "White Labs",
-        "temperature_hi": 23,
-        "prod_id": "WLP001",
-        "attenuation": 77,
-        "name": "California Ale"
-      }
+    "miscellaneous": [
+
     ],
     "fermentables": {
+      "total_weight": 7.665709,
       "list": [
         {
-          "srm": 3,
-          "yield": 80.0,
           "pct": 79.29,
-          "amount": 6.078137,
-          "name": "Pale Ale"
+          "srm": 3,
+          "type": "Grain",
+          "name": "Pale Ale",
+          "yield": 80.0,
+          "amount": 6.078137
         },
         {
+          "pct": 5.92,
           "srm": 30,
+          "type": "Grain",
+          "name": "Carastan (Dark)",
           "yield": 59.0,
-          "pct": 5.92,
-          "amount": 0.453592,
-          "name": "Carastan (Dark)"
+          "amount": 0.453592
         },
         {
+          "pct": 5.92,
           "srm": 120,
+          "type": "Grain",
+          "name": "Crystal 120L",
           "yield": 70.0,
-          "pct": 5.92,
-          "amount": 0.453592,
-          "name": "Crystal 120L"
+          "amount": 0.453592
         },
         {
+          "pct": 4.44,
           "srm": 500,
+          "type": "Grain",
+          "name": "Barley (Roasted)",
           "yield": 59.0,
-          "pct": 4.44,
-          "amount": 0.340194,
-          "name": "Barley (Roasted)"
+          "amount": 0.340194
         },
         {
-          "srm": 50,
-          "yield": 72.0,
           "pct": 4.44,
-          "amount": 0.340194,
-          "name": "Chocolate"
+          "srm": 50,
+          "type": "Grain",
+          "name": "Chocolate",
+          "yield": 72.0,
+          "amount": 0.340194
         }
-      ],
-      "total_weight": 7.665709
+      ]
     }
-  },
-  "styles": [
-    {
-      "letter": "F",
-      "category": 13,
-      "name": "Imperial Stout"
-    }
-  ],
-  "name": "Old Rasputin",
-  "yeast_starter_slurry": 170,
-  "batch_size": 18.927059
+  }
 }

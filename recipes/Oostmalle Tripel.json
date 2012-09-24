@@ -1,79 +1,82 @@
 {
-  "total_ppg": 476.513393670385,
-  "type": "All Grain",
-  "styles": [
-    {
-      "letter": "C",
-      "category": 18,
-      "name": "Belgian Tripel"
-    }
-  ],
-  "OG": 1.069,
-  "efficiency": 80,
+  "ABV": 7.26,
+  "boil_time": 60,
   "yeast_starter_slurry": 144,
+  "efficiency": 80,
   "ADF": 80,
+  "FG": 1.014,
+  "type": "All Grain",
+  "name": "Oostmalle Tripel",
+  "notes": "",
+  "yeast_starter_cells": 271,
+  "total_ppg": 476.513393670385,
   "ingredients": {
     "fermentables": {
-      "total_weight": 6.327613,
+      "total_weight": 5.102914,
       "list": [
         {
-          "amount": 1.224699,
           "pct": 19.35,
-          "srm": 35,
+          "yield": 67.0,
+          "type": "Sugar",
           "name": "Sugar - Cane",
-          "yield": 67.0
+          "amount": 1.224699,
+          "srm": 35
         },
         {
-          "amount": 5.102914,
           "pct": 80.65,
-          "srm": 1,
+          "yield": 76.0,
+          "type": "Grain",
           "name": "Pilsen",
-          "yield": 76.0
+          "amount": 5.102914,
+          "srm": 1
         }
       ]
     },
     "yeast": [
       {
-        "lab": "White Labs",
-        "temperature_lo": 19,
+        "attenuation": 78,
         "temperature_hi": 22,
         "prod_id": "WLP530",
-        "attenuation": 78,
-        "name": "Abbey Ale"
+        "name": "Abbey Ale",
+        "lab": "White Labs",
+        "temperature_lo": 19
       }
     ],
-    "miscellaneous": [
-
-    ],
     "hops": {
-      "total_weight": 0.063786,
+      "boil": [
+        {
+          "time": 60,
+          "form": "Pellet",
+          "name": "Tettnanger",
+          "amount": 0.063786,
+          "alpha": 4.5
+        }
+      ],
       "mash": [
+
+      ],
+      "aroma": [
 
       ],
       "first_wort": [
 
       ],
-      "boil": [
-        {
-          "amount": 0.063786,
-          "alpha": 4.5,
-          "time": 60,
-          "form": "Pellet",
-          "name": "Tettnanger"
-        }
-      ],
       "dry_hop": [
 
       ],
-      "aroma": [
+      "total_weight": 0.063786
+    },
+    "miscellaneous": [
 
-      ]
-    }
+    ]
   },
-  "ABV": 7.26,
-  "batch_size": 20.819765,
-  "FG": 1.014,
-  "notes": "",
-  "yeast_starter_cells": 271,
-  "name": "Oostmalle Tripel"
+  "OG": 1.069,
+  "styles": [
+    {
+      "name": "Belgian Tripel",
+      "letter": "C",
+      "category": 18
+    }
+  ],
+  "batch_size": 20.819765
 }
