@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "ABV": 5.11,
   "yeast_starter_cells": 203,
   "FG": 1.013,
@@ -63,11 +64,72 @@
           "name": "Northern Brewer",
           "time": 10,
           "alpha": 8.6
+=======
+  "yeast_starter_cells": 203,
+  "ABV": 5.11,
+  "efficiency": 75,
+  "total_ppg": 381.569472272709,
+  "type": "All Grain",
+  "ADF": 75,
+  "FG": 1.013,
+  "name": "American Pale Ale with Caramel",
+  "ingredients": {
+    "yeast": [
+      {
+        "lab": "Fermentis",
+        "attenuation": 78,
+        "temperature_lo": 15,
+        "name": "Safale US-05",
+        "prod_id": "US-05",
+        "temperature_hi": 24
+      }
+    ],
+    "fermentables": {
+      "list": [
+        {
+          "pct": 86.05,
+          "yield": 78.0,
+          "amount": 4.195729,
+          "name": "2 Row Base",
+          "srm": 2
+        },
+        {
+          "pct": 6.98,
+          "yield": 72.0,
+          "amount": 0.340194,
+          "name": "Crystal 40L",
+          "srm": 40
+        },
+        {
+          "pct": 6.98,
+          "yield": 72.0,
+          "amount": 0.340194,
+          "name": "Munich (Dark)",
+          "srm": 9
+        }
+      ],
+      "total_weight": 4.876117
+    },
+    "hops": {
+      "aroma": [
+        {
+          "alpha": 10.9,
+          "amount": 0.014175,
+          "form": "Leaf",
+          "name": "Centennial"
+        },
+        {
+          "alpha": 8.6,
+          "amount": 0.023,
+          "form": "Pellet",
+          "name": "Northern Brewer"
+>>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
         }
       ],
       "mash": [
 
       ],
+<<<<<<< HEAD
       "dry_hop": [
 
       ],
@@ -104,12 +166,57 @@
         }
       ],
       "total_weight": 4.876117
+=======
+      "total_weight": 0.074973,
+      "first_wort": [
+
+      ],
+      "dry_hop": [
+
+      ],
+      "boil": [
+        {
+          "time": 60,
+          "alpha": 13.8,
+          "amount": 0.018711,
+          "form": "Pellet",
+          "name": "Magnum"
+        },
+        {
+          "time": 10,
+          "alpha": 10.9,
+          "amount": 0.007087,
+          "form": "Leaf",
+          "name": "Centennial"
+        },
+        {
+          "time": 10,
+          "alpha": 8.6,
+          "amount": 0.012,
+          "form": "Pellet",
+          "name": "Northern Brewer"
+        }
+      ]
+>>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
     },
     "miscellaneous": [
 
     ]
   },
   "batch_size": 20.819765,
+<<<<<<< HEAD
   "efficiency": 75,
   "type": "All Grain"
+=======
+  "yeast_starter_slurry": 108,
+  "OG": 1.052,
+  "styles": [
+    {
+      "category": 10,
+      "letter": "A",
+      "name": "American Pale Ale"
+    }
+  ],
+  "notes": "From \"Brewing Classic Styles\", p.136"
+>>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
 }

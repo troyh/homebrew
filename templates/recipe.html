@@ -1,15 +1,22 @@
 	<script id="volumeTemplate" type="text/x-jsrender">
-		{{if #data.isNumber == false or #data.length == 0}}
-			<div class="english">____G</div>
-			<div class="metric">(____L)</div>
-		{{else}}
-			<div class={{if ~gravity}}"volumewithgravity"{{else}}"volume"{{/if}}>
-				<div class="english">{{:(#data * 0.264172).toFixed(2)}}G</div>
-				<div class="metric">{{:(#data).toFixed(1)}}L</div>
-				{{if ~gravity}}<div class="gravity">{{:~gravity.toFixed(3)}}</div>{{/if}}
-			</div>
+		<div class={{if ~gravity}}"volumewithgravity"{{else}}"volume"{{/if}}>
+			{{if #data}}
+			<div class="english">{{:(#data * 0.264172).toFixed(2)}}G</div>
+			<div class="metric">{{:(#data).toFixed(1)}}L</div>
+			{{else}}
+			____
+			{{/if}}
+			{{if ~gravity}}<div class="gravity">{{:~gravity.toFixed(3)}}</div>{{/if}}
+		</div>
+	</script>
+	
+	<script id="evaporationRateTemplate" type="text/x-jsrender">
+		{{if #data && #data.end_volume!=0}}
+			{{for (#data.volume - #data.end_volume) / (#data.time / 60) tmpl="#volumeTemplate"/}}
+			({{:((#data.volume - #data.end_volume) / #data.volume / (#data.time / 60) * 100).toFixed(0)}}%) per hour
 		{{/if}}
 	</script>
+	
 	
 	<script id="weightTemplate" type="text/x-jsrender">
 		<div class="weight">
@@ -64,8 +71,12 @@
 	
 	<script id="temperatureTemplate" type="text/x-jsrender">
 		<span class="temperature">
+			{{if #data}}
 			<span class="fahrenheit">{{:(#data * 9 / 5 + 32).toFixed(0)}}</span>
 			<span class="celsius">{{:#data.toFixed(0)}}</span>
+			{{else}}
+			____
+			{{/if}}
 		</span>
 	</script>
 	
@@ -79,10 +90,6 @@
 		<div class="style">{{>name}}<span class="styleid">({{>category}}{{>letter}})</span></div>
 	{{/for}}
 	</div>
-	<div id="notes">
-		<h1>Notes</h1>
-		<div class="note">{{:notes}}</div>
-	</div>	
 	<div>
 		<div class="headerkey">Type: </div>
 		<div class="headerval">{{>type}}</div>
@@ -177,5 +184,10 @@
 			{{/for}}
 		</div>
 	</div>
+
+	<div id="notes">
+		<h1>Notes</h1>
+		<div class="note">{{:notes}}</div>
+	</div>	
 	
 	</script>

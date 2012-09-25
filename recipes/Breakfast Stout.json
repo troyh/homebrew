@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "ADF": 70,
   "FG": 1.014,
   "boil_time": 60,
@@ -88,4 +89,90 @@
   "ABV": 4.13,
   "OG": 1.045,
   "type": "All Grain"
+=======
+  "type": "All Grain",
+  "batch_size": 18.9271,
+  "ADF": 70,
+  "efficiency": 70,
+  "total_ppg": 322.005033504,
+  "name": "Breakfast Stout",
+  "ingredients": {
+    "fermentables": {
+      "list": [
+        {
+          "yield": 100,
+          "name": "Pale Malt, Maris Otter",
+          "srm": 3,
+          "amount": 1.8144,
+          "pct": 57.14
+        },
+        {
+          "yield": 100,
+          "name": "Oats, Flaked",
+          "srm": 1,
+          "amount": 0.6804,
+          "pct": 21.43
+        },
+        {
+          "yield": 100,
+          "name": "Roasted Barley",
+          "srm": 300,
+          "amount": 0.2268,
+          "pct": 7.14
+        },
+        {
+          "yield": 100,
+          "name": "Lactose",
+          "srm": 0,
+          "amount": 0.4536,
+          "pct": 14.29
+        }
+      ],
+      "total_weight": 3.1752
+    },
+    "yeast": [
+      {
+        "attenuation": 73,
+        "lab": "Wyeast Labs",
+        "temperature_lo": 62,
+        "name": "Irish Ale",
+        "prod_id": "1084",
+        "temperature_hi": 72
+      }
+    ],
+    "miscellaneous": [
+
+    ],
+    "hops": {
+      "mash": [
+
+      ],
+      "boil": [
+        {
+          "form": "Pellet",
+          "name": "Williamette",
+          "amount": 0.0283,
+          "time": 60,
+          "alpha": 5.5
+        }
+      ],
+      "first_wort": [
+
+      ],
+      "dry_hop": [
+
+      ],
+      "aroma": [
+
+      ],
+      "total_weight": 0.0283
+    }
+  },
+  "yeast_starter_cells": 160,
+  "OG": 1.045,
+  "notes": "See full Northern Brewer recipe instructions.",
+  "yeast_starter_slurry": 85,
+  "FG": 1.014,
+  "ABV": 4.13
+>>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
 }

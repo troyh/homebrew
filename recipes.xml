@@ -2323,6 +2323,137 @@ Variations exist, with English and American interpretations (predictably, the Am
 </RECIPE>
 <RECIPE>
 <VERSION>1</VERSION>
+<NAME>Oostmalle Tripel</NAME>
+<TYPE>All Grain</TYPE>
+<BREWER>BrewPal</BREWER>
+<BATCH_SIZE>20.819765</BATCH_SIZE>
+<BOIL_SIZE>25.466356</BOIL_SIZE>
+<BOIL_TIME>60</BOIL_TIME>
+<EFFICIENCY>80</EFFICIENCY>
+<OG>0.000000</OG>
+<FG>0.000000</FG>
+<FERMENTATION_STAGES>1</FERMENTATION_STAGES>
+<PRIMARY_AGE>14</PRIMARY_AGE>
+<PRIMARY_TEMP>21.000000</PRIMARY_TEMP>
+<SECONDARY_AGE>0</SECONDARY_AGE>
+<SECONDARY_TEMP>21.000000</SECONDARY_TEMP>
+<CARBONATION>-1.000000</CARBONATION>
+<FORCED_CARBONATION>0</FORCED_CARBONATION>
+<CARBONATION_TEMP>0.000000</CARBONATION_TEMP>
+<PRIMING_SUGAR_NAME>(null)</PRIMING_SUGAR_NAME>
+<PRIMING_SUGAR_EQUIV>0.000000</PRIMING_SUGAR_EQUIV>
+<NOTES/>
+<FERMENTABLES>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>35.000000</COLOR>
+    <NAME>Sugar - Cane</NAME>
+    <AMOUNT>1.224699</AMOUNT>
+    <YIELD>67.000000</YIELD>
+    <TYPE>Sugar</TYPE>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>1.000000</COLOR>
+    <NAME>Pilsen</NAME>
+    <AMOUNT>5.102914</AMOUNT>
+    <YIELD>76.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+</FERMENTABLES>
+<HOPS>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Boil</USE>
+    <ALPHA>4.500000</ALPHA>
+    <SUBSTITUTES>Hallertau, Liberty, Fuggle</SUBSTITUTES>
+    <FORM>Pellet</FORM>
+    <NAME>Tettnanger</NAME>
+    <AMOUNT>0.063786</AMOUNT>
+    <TIME>60.000000</TIME>
+  </HOP>
+</HOPS>
+<YEASTS>
+  <YEAST>
+    <VERSION>1</VERSION>
+    <AMOUNT_IS_WEIGHT>FALSE</AMOUNT_IS_WEIGHT>
+    <LABORATORY>White Labs</LABORATORY>
+    <FORM>Liquid</FORM>
+    <MIN_TEMPERATURE>19</MIN_TEMPERATURE>
+    <PRODUCT_ID>WLP530</PRODUCT_ID>
+    <NAME>Abbey Ale</NAME>
+    <TYPE>Ale</TYPE>
+    <MAX_TEMPERATURE>22</MAX_TEMPERATURE>
+    <ATTENUATION>78</ATTENUATION>
+    <AMOUNT>0.040000</AMOUNT>
+  </YEAST>
+</YEASTS>
+<MISCS>
+</MISCS>
+<MASH>
+<VERSION>1</VERSION>
+<NAME>Unknown</NAME>
+<GRAIN_TEMP>21.111111</GRAIN_TEMP>
+<MASH_THICKNESS>3.129527</MASH_THICKNESS>
+<SPARGE_TEMP>0.000000</SPARGE_TEMP>
+<MASH_STEPS>
+</MASH_STEPS>
+</MASH>
+<WATERS>
+</WATERS>
+<EQUIPMENT>
+    <VERSION>1</VERSION>
+    <EVAP_RATE>17</EVAP_RATE>
+    <BOIL_SIZE>25.46636</BOIL_SIZE>
+    <BATCH_SIZE>20.81977</BATCH_SIZE>
+    <TOP_UP_KETTLE>1.907349e-06</TOP_UP_KETTLE>
+    <TRUB_CHILLER_LOSS>0.946353</TRUB_CHILLER_LOSS>
+    <BOIL_TIME>60</BOIL_TIME>
+</EQUIPMENT>
+<STYLES>
+  <STYLE>
+    <VERSION>1</VERSION>
+    <COLOR_MIN>4.5</COLOR_MIN>
+    <COLOR_MAX>7.0</COLOR_MAX>
+    <STYLE_LETTER>C</STYLE_LETTER>
+    <ABV_MIN>7.5</ABV_MIN>
+    <NAME>Belgian Tripel</NAME>
+    <IS_SELECTED>0.000000</IS_SELECTED>
+    <TYPE>beer</TYPE>
+    <FG_MIN>1.008</FG_MIN>
+    <OG_MIN>1.075</OG_MIN>
+    <IBU_MAX>40</IBU_MAX>
+    <EXAMPLES>Westmalle Tripel, La Rulles Tripel, St. Bernardus Tripel, Chimay Cinq Cents (White), Watou Tripel, Val-Dieu Triple, Affligem Tripel, Grimbergen Tripel, La Trappe Tripel, Witkap Pater Tripel, Corsendonk Abbey Pale Ale, St. Feuillien Tripel, Bink Tripel, Tripel Karmeliet, New Belgium Trippel, Unibroue La Fin du Monde, Dragonmead Final Absolution, Allagash Tripel Reserve, Victory Golden Monkey</EXAMPLES>
+    <MATCH_QUALITY>Okay match</MATCH_QUALITY>
+    <STYLE_GUIDE>BJCP</STYLE_GUIDE>
+    <INGREDIENTS>The light color and relatively light body for a beer of this strength are the result of using Pilsner malt and up to 20% white sugar.  Noble hops or Styrian Goldings are commonly used.  Belgian yeast strains are used – those that produce fruity esters, spicy phenolics and higher alcohols  often aided by slightly warmer fermentation temperatures.  Spice additions are generally not traditional, and if used, should not be recognizable as such.  Fairly soft water.</INGREDIENTS>
+    <FG_MAX>1.014</FG_MAX>
+    <OG_MAX>1.085</OG_MAX>
+    <ABV_MAX>9.5</ABV_MAX>
+    <PROFILE>Aroma:
+Complex with moderate to significant spiciness, moderate fruity esters and low alcohol and hop aromas.  Generous spicy, peppery, sometimes clove-like phenols.  Esters are often reminiscent of citrus fruits such as oranges, but may sometimes have a slight banana character.  A low yet distinctive spicy, floral, sometimes perfumy hop character is usually found.  Alcohols are soft, spicy and low in intensity.  No hot alcohol or solventy aromas.  The malt character is light.  No diacetyl.
+Appearance:
+Deep yellow to deep gold in color.  Good clarity.  Effervescent.  Long-lasting, creamy, rocky, white head resulting in characteristic "Belgian lace" on the glass as it fades.
+Flavor:
+Marriage of spicy, fruity and alcohol flavors supported by a soft malt character.  Low to moderate phenols are peppery in character.  Esters are reminiscent of citrus fruit such as orange or sometimes lemon.  A low to moderate spicy hop character is usually found.  Alcohols are soft, spicy, often a bit sweet and low in intensity.  Bitterness is typically medium to high from a combination of hop bitterness and yeast-produced phenolics.  Substantial carbonation and bitterness lends a dry finish with a moderately bitter aftertaste.  No diacetyl.
+Mouthfeel:
+Medium-light to medium body, although lighter than the substantial gravity would suggest (thanks to sugar and high carbonation).  High alcohol content adds a pleasant creaminess but little to no obvious warming sensation.  No hot alcohol or solventy character.  Always effervescent.  Never astringent.
+Impression:
+Strongly resembles a Strong Golden Ale but slightly darker and somewhat fuller-bodied.  Usually has a more rounded malt flavor but should not be sweet.</PROFILE>
+    <CARB_MIN>1.9</CARB_MIN>
+    <CATEGORY>Belgian Strong Ale</CATEGORY>
+    <IBU_MIN>20</IBU_MIN>
+    <CARB_MAX>2.4</CARB_MAX>
+    <CATEGORY_NUMBER>18</CATEGORY_NUMBER>
+    <NOTES>History:
+Originally popularized by the Trappist monastery at Westmalle.
+Comments:
+High in alcohol but does not taste strongly of alcohol.  The best examples are sneaky, not obvious.  High carbonation and attenuation helps to bring out the many flavors and to increase the perception of a dry finish.  Most Trappist versions have at least 30 IBUs and are very dry. Traditionally bottle-conditioned ("refermented in the bottle").</NOTES>
+  </STYLE>
+</STYLES>
+</RECIPE>
+<RECIPE>
+<VERSION>1</VERSION>
 <NAME>Punkin' Ale</NAME>
 <TYPE>All Grain</TYPE>
 <BREWER>BrewPal</BREWER>
@@ -2499,6 +2630,227 @@ Mouthfeel may vary depending on the base beer selected and as appropriate to tha
 Impression:
 A harmonious marriage of spices, herbs and/or vegetables and beer.  The key attributes of the underlying style will be different with the addition of spices, herbs and/or vegetables; do not expect the base beer to taste the same as the unadulterated version.  Judge the beer based on the pleasantness and balance of the resulting combination.</PROFILE>
     <IS_SELECTED>1</IS_SELECTED>
+    <TYPE>beer</TYPE>
+  </STYLE>
+</STYLES>
+</RECIPE>
+<RECIPE>
+<VERSION>1</VERSION>
+<NAME>Southern Tier Pumking</NAME>
+<TYPE>All Grain</TYPE>
+<BREWER>BrewPal</BREWER>
+<BATCH_SIZE>18.927059</BATCH_SIZE>
+<BOIL_SIZE>23.251892</BOIL_SIZE>
+<BOIL_TIME>60</BOIL_TIME>
+<EFFICIENCY>80</EFFICIENCY>
+<OG>0.000000</OG>
+<FG>0.000000</FG>
+<FERMENTATION_STAGES>1</FERMENTATION_STAGES>
+<PRIMARY_AGE>14</PRIMARY_AGE>
+<PRIMARY_TEMP>21.000000</PRIMARY_TEMP>
+<SECONDARY_AGE>0</SECONDARY_AGE>
+<SECONDARY_TEMP>21.000000</SECONDARY_TEMP>
+<CARBONATION>-1.000000</CARBONATION>
+<FORCED_CARBONATION>0</FORCED_CARBONATION>
+<CARBONATION_TEMP>0.000000</CARBONATION_TEMP>
+<PRIMING_SUGAR_NAME>(null)</PRIMING_SUGAR_NAME>
+<PRIMING_SUGAR_EQUIV>0.000000</PRIMING_SUGAR_EQUIV>
+<NOTES>http://www.homebrewtalk.com/f12/southern-tier-pumking-clone-191381/index20.html</NOTES>
+<FERMENTABLES>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Adjunct</TYPE>
+    <AMOUNT>0.907185</AMOUNT>
+    <COLOR>0.000000</COLOR>
+    <YIELD>0.000000</YIELD>
+    <NAME>Pumpkin puree</NAME>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <NAME>Sugar - Cane</NAME>
+    <AMOUNT>0.340194</AMOUNT>
+    <TYPE>Sugar</TYPE>
+    <YIELD>67.000000</YIELD>
+    <COLOR>35.000000</COLOR>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <NAME>Sugar - Brown</NAME>
+    <AMOUNT>0.113398</AMOUNT>
+    <TYPE>Sugar</TYPE>
+    <YIELD>67.000000</YIELD>
+    <COLOR>35.000000</COLOR>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>3.000000</COLOR>
+    <NAME>Pale Ale</NAME>
+    <AMOUNT>6.803885</AMOUNT>
+    <YIELD>80.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <COLOR>80.000000</COLOR>
+    <NAME>Crystal 80L</NAME>
+    <AMOUNT>0.453592</AMOUNT>
+    <YIELD>72.000000</YIELD>
+    <TYPE>Grain</TYPE>
+  </FERMENTABLE>
+</FERMENTABLES>
+<HOPS>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Boil</USE>
+    <ALPHA>14.000000</ALPHA>
+    <SUBSTITUTES>Horizon, Newport</SUBSTITUTES>
+    <FORM>Pellet</FORM>
+    <NAME>Magnum</NAME>
+    <AMOUNT>0.021262</AMOUNT>
+    <TIME>60.000000</TIME>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <USE>Boil</USE>
+    <ALPHA>4.000000</ALPHA>
+    <SUBSTITUTES>Saaz, Lublin</SUBSTITUTES>
+    <FORM>Pellet</FORM>
+    <NAME>Sterling</NAME>
+    <AMOUNT>0.007087</AMOUNT>
+    <TIME>15.000000</TIME>
+  </HOP>
+</HOPS>
+<YEASTS>
+  <YEAST>
+    <VERSION>1</VERSION>
+    <ATTENUATION>78</ATTENUATION>
+    <LABORATORY>Fermentis</LABORATORY>
+    <FORM>Dry</FORM>
+    <MIN_TEMPERATURE>15</MIN_TEMPERATURE>
+    <PRODUCT_ID>US-05</PRODUCT_ID>
+    <NAME>Safale US-05</NAME>
+    <AMOUNT_IS_WEIGHT>TRUE</AMOUNT_IS_WEIGHT>
+    <AMOUNT>0.005000</AMOUNT>
+    <TYPE>Ale</TYPE>
+    <MAX_TEMPERATURE>24</MAX_TEMPERATURE>
+  </YEAST>
+</YEASTS>
+<MISCS>
+  <MISC>
+    <VERSION>1</VERSION>
+    <TIME>15.000000</TIME>
+    <AMOUNT>0.002835</AMOUNT>
+    <NAME>Whirlfloc</NAME>
+    <USE>Boil</USE>
+    <TYPE>Fining</TYPE>
+  </MISC>
+  <MISC>
+    <VERSION>1</VERSION>
+    <TIME>15.000000</TIME>
+    <AMOUNT>0.085049</AMOUNT>
+    <NAME>Cinnamon</NAME>
+    <USE>Boil</USE>
+    <TYPE>Spice</TYPE>
+  </MISC>
+  <MISC>
+    <VERSION>1</VERSION>
+    <TIME>5.000000</TIME>
+    <AMOUNT>0.002835</AMOUNT>
+    <NAME>Allspice</NAME>
+    <USE>Boil</USE>
+    <TYPE>Spice</TYPE>
+  </MISC>
+  <MISC>
+    <VERSION>1</VERSION>
+    <NAME>Ginger</NAME>
+    <AMOUNT>0.002835</AMOUNT>
+    <TYPE>Spice</TYPE>
+    <USE>Boil</USE>
+    <TIME>5.000000</TIME>
+  </MISC>
+  <MISC>
+    <VERSION>1</VERSION>
+    <TIME>5.000000</TIME>
+    <AMOUNT>0.002835</AMOUNT>
+    <NAME>Nutmeg</NAME>
+    <USE>Boil</USE>
+    <TYPE>Spice</TYPE>
+  </MISC>
+  <MISC>
+    <VERSION>1</VERSION>
+    <TIME>5.000000</TIME>
+    <AMOUNT>0.002835</AMOUNT>
+    <NAME>Whole cloves</NAME>
+    <USE>Boil</USE>
+    <TYPE>Spice</TYPE>
+  </MISC>
+  <MISC>
+    <VERSION>1</VERSION>
+    <TYPE>Flavor</TYPE>
+    <AMOUNT>0.056699</AMOUNT>
+    <TIME>15.000000</TIME>
+    <USE>Boil</USE>
+    <NAME>Lactose</NAME>
+  </MISC>
+</MISCS>
+<MASH>
+<VERSION>1</VERSION>
+<NAME>Batch/Fly</NAME>
+<GRAIN_TEMP>0.000000</GRAIN_TEMP>
+<MASH_THICKNESS>3.129527</MASH_THICKNESS>
+<SPARGE_TEMP>76.666664</SPARGE_TEMP>
+<MASH_STEPS>
+  <MASH_STEP>
+    <VERSION>1</VERSION>
+    <NAME>Strike</NAME>
+    <STEP_TIME>90</STEP_TIME>
+    <INFUSE_AMOUNT>11.35624</INFUSE_AMOUNT>
+    <TYPE>Infusion</TYPE>
+    <STEP_TEMP>70</STEP_TEMP>
+  </MASH_STEP>
+</MASH_STEPS>
+</MASH>
+<WATERS>
+</WATERS>
+<EQUIPMENT>
+    <VERSION>1</VERSION>
+    <BOIL_SIZE>23.25189</BOIL_SIZE>
+    <BOIL_TIME>60</BOIL_TIME>
+    <BATCH_SIZE>18.92706</BATCH_SIZE>
+    <TOP_UP_KETTLE>0</TOP_UP_KETTLE>
+    <EVAP_RATE>17</EVAP_RATE>
+    <TRUB_CHILLER_LOSS>0.946353</TRUB_CHILLER_LOSS>
+</EQUIPMENT>
+<STYLES>
+  <STYLE>
+    <VERSION>1</VERSION>
+    <CATEGORY>Spice/Herb/Vegetable Beer</CATEGORY>
+    <NOTES>Comments:
+Overall balance is the key to presenting a well-made spice, herb or vegetable (SHV) beer.  The SHV(s) should complement the original style and not overwhelm it. The brewer should recognize that some combinations of base beer styles and SHV(s) work well together while others do not make for harmonious combinations.  THE ENTRANT MUST SPECIFY THE UNDERLYING BEER STYLE AS WELL AS THE TYPE OF SPICES, HERBS, OR VEGETABLES USED. IF THIS BEER IS BASED ON A CLASSIC STYLE (E.G., BLONDE ALE) THEN THE SPECIFIC STYLE MUST BE SPECIFIED.  CLASSIC STYLES DO NOT HAVE TO BE CITED (E.G., "PORTER" OR "WHEAT ALE" IS ACCEPTABLE).  THE TYPE OF SPICES, HERBS, OR VEGETABLES MUST ALWAYS BE SPECIFIED.  If the base beer is a classic style, the original style should come through in aroma and flavor. The individual character of SHV(s) may not always be identifiable when used in combination.  This category may also be used for chile pepper, coffee-, chocolate-, or nut-based beers (including combinations of these items).  Note that many spice-based Belgian specialties may be entered in Category 16E.  Beers that only have additional fermentables (honey, maple syrup, molasses, sugars, treacle, etc.) should be entered in the Specialty Beer category.</NOTES>
+    <NAME>Spice, Herb, or Vegetable Beer</NAME>
+    <MATCH_QUALITY>No match</MATCH_QUALITY>
+    <STYLE_LETTER>A</STYLE_LETTER>
+    <CATEGORY_NUMBER>21</CATEGORY_NUMBER>
+    <EXAMPLES>Alesmith Speedway Stout, Founders Breakfast Stout, Traquair Jacobite Ale, Rogue Chipotle Ale, Young's Double Chocolate Stout, Bell's Java Stout, Fraoch Heather Ale, Southampton Pumpkin Ale, Rogue Hazelnut Nectar, Hitachino Nest Real Ginger Ale, Breckenridge Vanilla Porter, Left Hand JuJu Ginger Beer, Dogfish Head Punkin Ale, Dogfish Head Midas Touch, Redhook Double Black Stout, Buffalo Bill's Pumpkin Ale,  BluCreek Herbal Ale, Christian Moerlein Honey Almond,  Rogue Chocolate Stout, Birrificio Baladin Nora, Cave Creek Chili Beer</EXAMPLES>
+    <STYLE_GUIDE>BJCP</STYLE_GUIDE>
+    <EXCEPTIONS>OG, FG, IBUs, SRM and ABV will vary depending on the underlying base beer.</EXCEPTIONS>
+    <PROFILE>Aroma:
+The character of the particular spices, herbs and/or vegetables (SHV) should be noticeable in the aroma; however, note that some SHV (e.g., ginger, cinnamon) have stronger aromas and are more distinctive than others (e.g., some vegetables) – allow for a range of SHV character and intensity from subtle to aggressive.  The individual character of the SHV(s) may not always be identifiable when used in combination.  The SHV character should be pleasant and supportive, not artificial and overpowering.  As with all specialty beers, a prope
+Aroma:
+r SHV beer should be a harmonious balance of the featured SHV(s) with the underlying beer style.  Aroma hops, yeast by-products and malt components of the underlying beer may not be as noticeable when SHV are present.  These components (especially hops) may also be intentionally subdued to allow the
+Aroma:
+SHV character to come through in the final presentation.  If the base beer is an ale then a non-specific fruitiness and/or other fermentation by-products such as diacetyl may be present as appropriate for warmer fermentations.  If the base beer is a lager, then overall less fermentation byproducts
+Aroma:
+would be appropriate.  Some malt aroma is preferable, especially in dark styles.  Hop aroma may be absent or balanced with SHV, depending on the style.  The SHV(s) should add an extra complexity to the beer, but not be so prominent as to unbalance the resulting presentation.
+Appearance:
+Appearance should be appropriate to the base beer being presented and will vary depending on the base beer.  For lighter-colored beers with spices, herbs or vegetables that exhibit distinctive colors, the colors may be noticeable in the beer and possibly the head.  May have some haze or be clear.  Head formation may be adversely affected by some ingredients, such as chocolate.
+Flavor:
+As with aroma, the distinctive flavor character associated with the particular SHV(s) should be noticeable, and may range in intensity from subtle to aggressive.  The individual character of the SHV(s) may not always be identifiable when used in combination.  The balance of SHV with the underlying beer is vital, and the SHV character should not be so artificial and/or overpowering as to overwhelm the beer.  Hop bitterness, flavor, malt flavors, alcohol content, and fermentation by-products, such as esters or diacetyl, should be appropriate to the base beer and be harmonious and balanced with the distinctive SHV flavors present.  Note that these components (especially hops) may be intentionally subdued to allow the SHV character to come through in the final presentation.  Some SHV(s) are inherently bitter and may result in a beer more bitter than the declared base style.
+Mouthfeel:
+Mouthfeel may vary depending on the base beer selected and as appropriate to that base beer.  Body and carbonation levels should be appropriate to the base beer style being presented.  Some SHV(s) may add additional body and/or slickness, although fermentable additions may thin out the beer.  Some SHV(s) may add a bit of astringency, although a "raw" spice character is undesirable.
+Impression:
+A harmonious marriage of spices, herbs and/or vegetables and beer.  The key attributes of the underlying style will be different with the addition of spices, herbs and/or vegetables; do not expect the base beer to taste the same as the unadulterated version.  Judge the beer based on the pleasantness and balance of the resulting combination.</PROFILE>
+    <IS_SELECTED>0.000000</IS_SELECTED>
     <TYPE>beer</TYPE>
   </STYLE>
 </STYLES>

@@ -11,12 +11,70 @@
 	function celsiusToFahrenheit(c) {return 9 / 5 * (c + 32);}
 	function kg2lbs(kg) { return kg * 2.20462; }
 	function liters2gallons(l) { return l * 0.264172; }
+	function gallons2liters(g) { return g / 0.264172; }
 	function gu2sg(gu) { return gu / 1000 + 1; }
+	function sg2gu(sg) { return (sg - 1) * 1000; }
 	function getURLParameter(name) {
 	    return decodeURI(
 	        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
 	    );
 	}
+	function updateActualResults(evt){
+		// Get values from form
+		return {
+			"boil": {
+				"volume":	 gallons2liters($('#boil_volume').val().trim()),
+				"sg":		 $('#boil_sg').val().trim(),
+				"time":		 $('#boil_time').val().trim(),
+				"end_volume":gallons2liters($('#boil_end_volume').val().trim())
+			},
+			"gravity": {
+				"volume": gallons2liters($('#final_volume').val().trim().length ? $('#final_volume').val().trim() : $('#boil_end_volume').val().trim()),
+				"og": $('#actual_og').val().trim(),
+				"fg": $('#actual_fg').val().trim()
+			}
+		};
+	}
+										
+	function updateActualResultsUI(evt,expected) {
+		var results=updateActualResults();
+
+		// Update evaporation rate
+		$('#evaporation_rate').html($('#evaporationRateTemplate').render(results.boil));
+
+		// Update boil end gravity
+		if (results.boil.sg && results.boil.volume && results.boil.end_volume)
+			$('#boil_end_gravity').html(((results.boil.sg - 1) * 1000 * liters2gallons(results.boil.volume) / liters2gallons(results.boil.end_volume) / 1000 + 1).toFixed(3));
+
+		// Update final volume			
+		console.log("rgv="+results.gravity.volume);
+		$('#final_volume').val(liters2gallons(results.gravity.volume));
+
+		// Update mash efficiency
+		if (results && results.boil && results.boil.sg && results.boil.volume && expected.total_gu)
+			$('#mash_efficiency').html(((((results.boil.sg - 1) * 1000) * liters2gallons(results.boil.volume)) / expected.total_gu * 100).toFixed(0) + "%");
+		else
+			$('#mash_efficiency').html("");
+
+		// Update brewhouse efficiency
+		if (results.gravity.volume && results.gravity.og)
+			$('#brewhouse_efficiency').html((liters2gallons(results.gravity.volume) * sg2gu(results.gravity.og) / expected.total_gu * 100).toFixed(0) + "%");
+		else
+			$('#brewhouse_efficiency').html("");
+			
+		// Update ABV
+		if (results.gravity.og && results.gravity.fg)
+			$('#actual_abv').html(((sg2gu(results.gravity.og) - sg2gu(results.gravity.fg)) * 131 / 1000).toFixed(2) + "%");
+		else
+			$('#actual_abv').html("");
+		
+		// Update ADF
+		if (results.gravity.og && results.gravity.fg)
+			$('#actual_adf').html(((1 - (sg2gu(results.gravity.fg) / sg2gu(results.gravity.og))) * 100).toFixed(0) + "%");
+		else
+			$('#actual_adf').html("");
+	}
+	
 	function renderBatch(batchId) {
 		$('#topnav').append(" &gt; Batch " + batchId);
 		
@@ -36,7 +94,7 @@
 						$.getJSON("batches/" + batchId + "/batch.json",
 							null,
 							function(batchData,textStatus,xhr) {
-								displayRecipe(batchData.recipe.id,$('#recipe'),$('#recipeTemplate'),function(recipe) {
+								displayRecipe(batchData.recipe.url,$('#recipe'),$('#recipeTemplate'),function(recipe) {
 									//
 									// Compute the expected data
 									//
@@ -85,24 +143,37 @@
 									expected.boil_vol= recipe.batch_size / (Math.pow(1 - expected.assumptions.evaporation_rate,expected.boil_hours));
 									expected.evaporation_loss_vol=expected.boil_vol * (1 - Math.pow(1 - expected.assumptions.evaporation_rate,expected.boil_hours)),
 									expected.sparge_vol=expected.boil_vol - (expected.mashvol - expected.absorption_loss_vol - expected.hop_absorption_loss_vol - expected.assumptions.mashtun_loss);
+									//expected.sparge_vol=expected.boil_vol - (expected.mashvol - expected.absorption_loss_vol - expected.hop_absorption_loss_vol - expected.assumptions.mashtun_loss);
 									expected.lauter_gravity=gu2sg((recipe.total_grain_ppg * recipe.efficiency / 100) / liters2gallons(expected.boil_vol)); 
 									expected.adjunct_gu=recipe.total_adjunct_ppg / liters2gallons(expected.boil_vol);
-							
+
 									$('#expected').html($('#expectedTemplate').render(expected));
 
 									//
 									// Display the actual results data
 									//
-									$.getJSON('batches/' + batchId + '/batch.json',
-										null,
-										function(actual,textStatus,xhr) {
-											$('#actual').html($('#actualTemplate').render({
-												recipe: recipe,
-												expected: expected,
-												results: actual.results
-											}));
-										}
-									);
+									$('#actual').html($('#actualTemplate').render({
+										recipe: recipe,
+										expected: expected,
+										results: batchData.results
+									}));
+									
+									// Setup javsacript triggers
+									$('#lauter_time').change(function(evt) {
+										if ($.isNumeric($('#boil_volume').val()))
+											$('#lauter_rate').html(($('#lauter_time').val() / $('#boil_volume').val()).toFixed(0));
+										else
+											$('#lauter_rate').html("");
+									});
+									
+									$('#boil_volume').change(function(evt){updateActualResultsUI(evt,expected);});
+									$('#boil_sg').change(function(evt){updateActualResultsUI(evt,expected);});
+									$('#boil_time').change(function(evt){updateActualResultsUI(evt,expected);});
+									$('#boil_end_volume').change(function(evt){updateActualResultsUI(evt,expected);});
+
+									$('#final_volume').change(function(evt) { updateActualResultsUI(evt, expected); });
+									$('#actual_og').change(function(evt) { updateActualResultsUI(evt, expected); });
+									$('#actual_fg').change(function(evt) { updateActualResultsUI(evt, expected); });
 								});
 							}
 						)

@@ -35,6 +35,10 @@ body {
 #notes { 
 /*	font-size:75%; */
 	margin:0 2em 2em 2em;
+	position:absolute;
+	right:5em;
+	top:5em;
+	width:30%;
 }
 #notes h1 { display:none;}
 #styles {

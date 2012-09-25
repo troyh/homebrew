@@ -110,6 +110,7 @@ xmlns:exslt="http://exslt.org/common">
 	      <div id="ingredients">
 			  <xsl:apply-templates select="FERMENTABLES"/>
 			  <xsl:apply-templates select="HOPS"/>
+			  <xsl:apply-templates select="MISCS"/>
 			  <xsl:apply-templates select="YEASTS"/>
 		  </div>
 		  
@@ -128,7 +129,7 @@ xmlns:exslt="http://exslt.org/common">
 			<!-- Total weight should be in decimal format -->
 			<xsl:call-template name="format-weight">
 				<xsl:with-param name="decimal_only" select="1"/>
-				<xsl:with-param name="kgs" select="sum(FERMENTABLE/AMOUNT)"/>
+				<xsl:with-param name="kgs" select="sum(FERMENTABLE[YIELD &gt; 0]/AMOUNT)"/>
 			</xsl:call-template>
 		</div>
 		<table>
@@ -154,6 +155,24 @@ xmlns:exslt="http://exslt.org/common">
 			<div class="name"><xsl:value-of select="NAME"/></div>
 			<div class="srm"><xsl:value-of select="format-number(COLOR,&quot;#&quot;)"/></div>
 		</td>
+	</tr>
+</xsl:template>
+
+<xsl:template match="MISCS">
+	<table id="miscellaneous">
+		<xsl:apply-templates select="MISC"/>
+	</table>
+</xsl:template>
+
+<xsl:template match="MISC">
+	<tr>
+		<td>
+			<xsl:call-template name="format-weight">
+				<xsl:with-param name="kgs" select="AMOUNT"/>
+			</xsl:call-template>
+		</td>
+		<td><xsl:value-of select="NAME"/></td>
+		<td><xsl:value-of select="format-number(TIME,&quot;#&quot;)"/> min</td>
 	</tr>
 </xsl:template>
 	
@@ -205,6 +224,9 @@ xmlns:exslt="http://exslt.org/common">
 		<td>
 			<xsl:if test="USE = 'Boil'">
 				<xsl:value-of select="format-number(TIME,&quot;#&quot;)"/> min
+			</xsl:if>
+			<xsl:if test="USE = 'Dry Hop'">
+				<xsl:value-of select="format-number(TIME div (60 * 24),&quot;#&quot;)"/> days
 			</xsl:if>
 		</td>
 	</tr>

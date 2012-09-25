@@ -25,5 +25,6 @@
   <yeast id="US-05">
     <batch id="012"/>
     <batch id="015"/>
+    <batch id="016"/>
   </yeast>
 </yeasts>

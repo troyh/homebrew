@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "type": "All Grain",
   "yeast_starter_cells": 281,
   "FG": 1.024,
@@ -84,10 +85,53 @@
           "amount": 0.2267962,
           "yield": 70,
           "srm": 120
+=======
+  "yeast_starter_cells": 281,
+  "ADF": 70,
+  "total_ppg": 565.339308268851,
+  "styles": [
+    {
+      "category": 19,
+      "letter": "B",
+      "name": "English Barleywine"
+    }
+  ],
+  "OG": 1.079,
+  "notes": "See full Northern Brewer recipe instructions.",
+  "yeast_starter_slurry": 150,
+  "FG": 1.024,
+  "type": "All Grain",
+  "ABV": 7.26,
+  "batch_size": 18.927059,
+  "ingredients": {
+    "fermentables": {
+      "list": [
+        {
+          "yield": 80,
+          "pct": 91.94,
+          "amount": 6.463691,
+          "srm": 4,
+          "name": "Maris Otter"
+        },
+        {
+          "yield": 72,
+          "pct": 4.84,
+          "amount": 0.3401943,
+          "srm": 80,
+          "name": "Crystal 80L"
+        },
+        {
+          "yield": 70,
+          "pct": 3.23,
+          "amount": 0.2267962,
+          "srm": 120,
+          "name": "Crystal 120L"
+>>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
         }
       ],
       "total_weight": 7.0306815
     },
+<<<<<<< HEAD
     "miscellaneous": [
       {
         "name": "Irish moss",
@@ -98,4 +142,57 @@
   },
   "notes": "See full Northern Brewer recipe instructions.",
   "yeast_starter_slurry": 150
+=======
+    "yeast": [
+      {
+        "attenuation": 75,
+        "temperature_hi": 22,
+        "lab": "Wyeast",
+        "prod_id": "1056",
+        "temperature_lo": 16,
+        "name": "American Ale"
+      }
+    ],
+    "miscellaneous": [
+      {
+        "time": 15,
+        "amount": 0.005,
+        "name": "Irish moss"
+      }
+    ],
+    "hops": {
+      "aroma": [
+
+      ],
+      "mash": [
+
+      ],
+      "boil": [
+        {
+          "time": 60,
+          "form": "Pellet",
+          "amount": 0.02834952,
+          "alpha": 11.8,
+          "name": "Chinook"
+        },
+        {
+          "time": 15,
+          "form": "Pellet",
+          "amount": 0.02834952,
+          "alpha": 4.9,
+          "name": "Willamette"
+        }
+      ],
+      "dry_hop": [
+
+      ],
+      "first_wort": [
+
+      ],
+      "total_weight": 0.05669904
+    }
+  },
+  "efficiency": 70,
+  "name": "Barley Wine"
+>>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
 }

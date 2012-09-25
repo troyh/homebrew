@@ -1,9 +1,17 @@
 {
+<<<<<<< HEAD
   "total_ppg": 398.474438378861,
   "name": "Special B IPA",
   "ABV": 5.87,
   "boil_time": 60,
   "batch_size": 18.927059,
+=======
+  "name": "Special B IPA",
+  "OG": 1.06,
+  "efficiency": 75,
+  "batch_size": 18.927059,
+  "type": "All Grain",
+>>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
   "styles": [
     {
       "name": "American IPA",
@@ -11,6 +19,7 @@
       "letter": "B"
     }
   ],
+<<<<<<< HEAD
   "yeast_starter_slurry": 113,
   "ingredients": {
     "fermentables": {
@@ -51,6 +60,36 @@
       "total_weight": 5.102913
     },
     "hops": {
+=======
+  "total_ppg": 398.474438378861,
+  "yeast_starter_slurry": 113,
+  "notes": "",
+  "ADF": 75,
+  "ABV": 5.87,
+  "FG": 1.015,
+  "ingredients": {
+    "miscellaneous": [
+      {
+        "name": "Yeast nutrient",
+        "time": 15.0,
+        "amount": 0.002835
+      },
+      {
+        "name": "Whirlfloc",
+        "time": 15.0,
+        "amount": 0.002835
+      }
+    ],
+    "hops": {
+      "dry_hop": [
+        {
+          "name": "Cascade",
+          "form": "Leaf",
+          "amount": 0.056699,
+          "alpha": 5.7
+        }
+      ],
+>>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
       "aroma": [
         {
           "name": "Cascade",
@@ -59,9 +98,13 @@
           "alpha": 5.7
         }
       ],
+<<<<<<< HEAD
       "mash": [
 
       ],
+=======
+      "total_weight": 0.163011,
+>>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
       "boil": [
         {
           "name": "Centennial",
@@ -85,6 +128,7 @@
           "alpha": 6.1
         }
       ],
+<<<<<<< HEAD
       "dry_hop": [
         {
           "name": "Cascade",
@@ -94,6 +138,8 @@
           "alpha": 5.7
         }
       ],
+=======
+>>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
       "first_wort": [
         {
           "name": "Warrior",
@@ -102,6 +148,7 @@
           "alpha": 16
         }
       ],
+<<<<<<< HEAD
       "total_weight": 0.163011
     },
     "miscellaneous": [
@@ -134,4 +181,55 @@
   "type": "All Grain",
   "notes": "",
   "FG": 1.015
+=======
+      "mash": [
+
+      ]
+    },
+    "fermentables": {
+      "total_weight": 5.102913,
+      "list": [
+        {
+          "name": "2 Row Base",
+          "yield": 78.0,
+          "amount": 4.535923,
+          "pct": 88.89,
+          "srm": 2
+        },
+        {
+          "name": "Crystal 60L",
+          "yield": 67.0,
+          "amount": 0.226796,
+          "pct": 4.44,
+          "srm": 50
+        },
+        {
+          "name": "Victory",
+          "yield": 74.0,
+          "amount": 0.226796,
+          "pct": 4.44,
+          "srm": 25
+        },
+        {
+          "name": "Special B",
+          "yield": 63.0,
+          "amount": 0.113398,
+          "pct": 2.22,
+          "srm": 140
+        }
+      ]
+    },
+    "yeast": [
+      {
+        "temperature_lo": 15,
+        "name": "Safale US-05",
+        "lab": "Fermentis",
+        "temperature_hi": 24,
+        "prod_id": "US-05",
+        "attenuation": 78
+      }
+    ]
+  },
+  "yeast_starter_cells": 212
+>>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
 }
