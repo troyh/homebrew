@@ -84,9 +84,9 @@ $.views.helpers({
 				<span class="headercode">SV</span>
 			</div>
 			<div class="headerval">
-			<input type="text" name="mash.strike.volume" 
+			<input type="text" id="mash_strike_volume" name="mash.strike.volume" 
 				value="{{if results && results.mash && results.mash.strike}}{{:results.mash.strike.volume}}{{/if}}" /> @
-			<input type="text" name="mash.strike.temp" 
+			<input type="text" id="mash_strike_temp" name="mash.strike.temp" 
 				value="{{if results && results.mash && results.mash.temp}}{{:results.mash.strike.temp}}{{/if}}" />
 			</div>
 			<div style="clear: both;"></div>
@@ -94,7 +94,7 @@ $.views.helpers({
 		<div>
 			<div class="headerkey">Mash:</div>
 			<div class="headerval">
-				<input type="text" name="mash.strike.duration" 
+				<input type="text" id="mash_duration" name="mash.duration" 
 					value="{{if results && results.mash && results.mash.duration}}{{:results.mash.duration}}{{/if}}" /> mins
 				{{if results && results.mash && results.mash.measurements}}
 					{{for results.mash.measurements}}
@@ -209,5 +209,10 @@ $.views.helpers({
 			</span>
 			<div style="clear: both;"></div>
 		</div>
+		
+		<input type="button" id="saveButton" value="Save" />
+		
+		<div id="json_data"></div>
+		
 	</div>
 </script>

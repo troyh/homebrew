@@ -22,6 +22,20 @@
 	function updateActualResults(evt){
 		// Get values from form
 		return {
+			"mash":{
+				"type": "",
+				"duration":$('#mash_duration').val().trim(),
+				"strike": {
+					"volume":gallons2liters($('#mash_strike_volume').val().trim()),
+					"temp":fahrenheitToCelsius($('#mash_strike_temp').val().trim())
+				},
+				"measurements": [
+					{"temp": 0}
+				]
+			},
+			"sparge": {
+				"duration": $('#lauter_time').val().trim()
+			},
 			"boil": {
 				"volume":	 gallons2liters($('#boil_volume').val().trim()),
 				"sg":		 $('#boil_sg').val().trim(),
@@ -47,7 +61,6 @@
 			$('#boil_end_gravity').html(((results.boil.sg - 1) * 1000 * liters2gallons(results.boil.volume) / liters2gallons(results.boil.end_volume) / 1000 + 1).toFixed(3));
 
 		// Update final volume			
-		console.log("rgv="+results.gravity.volume);
 		$('#final_volume').val(liters2gallons(results.gravity.volume));
 
 		// Update mash efficiency
@@ -181,6 +194,13 @@
 									$('#final_volume').change(function(evt) { updateActualResultsUI(evt, expected); });
 									$('#actual_og').change(function(evt) { updateActualResultsUI(evt, expected); });
 									$('#actual_fg').change(function(evt) { updateActualResultsUI(evt, expected); });
+									
+									$('#saveButton').click(function(evt) {
+										var results=updateActualResults();
+										batchData.results=results;
+										// console.log(batchData);
+										$('#json_data').html(JSON.stringify(batchData));
+									});
 								});
 							}
 						)
