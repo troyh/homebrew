@@ -203,6 +203,14 @@
 										// console.log(batchData);
 										$('#json_data').html(JSON.stringify(batchData));
 									});
+									
+									// Add Tumblr log
+									$.getScript("http://geekbrewing.tumblr.com/api/read/json?tagged=" + batchId,
+										function(ignore,textStatus,xhr) {
+											console.log(tumblr_api_read);
+											$('#brewlog').html($('#brewlogTemplate').render(tumblr_api_read));
+										}
+									);
 								});
 							}
 						)
@@ -220,6 +228,10 @@
 	<div id="recipe"></div>
 	<div id="expected"></div>
 	<div id="actual"></div>
+
+	<div id="brewlog">
+		<h1>Brew log</h1>
+	</div>
 
 </body>
 </html>

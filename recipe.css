@@ -187,11 +187,15 @@ body {
 /*	content: "@";*/
 }
 
-#brewlog { margin-top:2em; }
+#brewlog { 
+	margin-top:2em; 
+}
 #brewlog h1 { display:none; }
 .post {
+/*	position:relative;*/
 	margin-left:1em;
 	margin-bottom:1em;
+	clear:both;
 }
 .posttext {
 	margin-left:1em;
@@ -200,9 +204,9 @@ body {
 	margin:1em 1em 0 1em;
 }
 .photosizeoptions {
-	position:relative;
-	left:-220px;
-	top:160px;
+		position:relative;
+	left:-275px;
+	bottom:-210px;
 	text-align:right;
 	font-size:.75em;
 /*	bottom:15em;*/
