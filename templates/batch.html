@@ -85,9 +85,9 @@ $.views.helpers({
 			</div>
 			<div class="headerval">
 			<input type="text" id="mash_strike_volume" name="mash.strike.volume" 
-				value="{{if results && results.mash && results.mash.strike}}{{:results.mash.strike.volume}}{{/if}}" /> @
+				value="{{if results && results.mash && results.mash.strike}}{{:~liters2gallons(results.mash.strike.volume).toFixed(2)}}{{/if}}" /> @
 			<input type="text" id="mash_strike_temp" name="mash.strike.temp" 
-				value="{{if results && results.mash && results.mash.temp}}{{:results.mash.strike.temp}}{{/if}}" />
+				value="{{if results && results.mash && results.mash.strike && results.mash.strike.temp}}{{:~celsius2fahrenheit(results.mash.strike.temp).toFixed(0)}}{{/if}}" />
 			</div>
 			<div style="clear: both;"></div>
 		</div>
@@ -144,7 +144,7 @@ $.views.helpers({
 				<span class="headercode">FV</span>
 			</span>
 			<span class="headerval">
-				<input type="text" id="final_volume" name="results.gravity.volume" value="{{if results && results.gravity}}{{:results.gravity.volume}}{{/if}}" />
+				<input type="text" id="final_volume" name="results.gravity.volume" value="{{if results && results.gravity}}{{:~liters2gallons(results.gravity.volume).toFixed(2)}}{{/if}}" />
 			</span>
 			<div style="clear: both;"></div>
 		</div>
