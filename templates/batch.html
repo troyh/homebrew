@@ -95,10 +95,10 @@ $.views.helpers({
 			<div class="headerkey">Mash:</div>
 			<div class="headerval">
 				<input type="text" name="mash.strike.duration" 
-					value="{{if results && results.mash && results.mash.duration}}{{:results.mash.strike.duration}}{{/if}}" /> mins
+					value="{{if results && results.mash && results.mash.duration}}{{:results.mash.duration}}{{/if}}" /> mins
 				{{if results && results.mash && results.mash.measurements}}
 					{{for results.mash.measurements}}
-						<div><input type="text" name="mash_temp[]" value="{{#data}}" /></div>
+						<div><input type="text" name="mash_temp[]" value="{{:temp}}" /></div>
 					{{/for}}
 				{{else}}
 					<div><input type="text" name="mash_temp[]" value="" /></div>
@@ -124,10 +124,10 @@ $.views.helpers({
 				<div class="headercode">EV</div>
 			</div>
 			<div class="headerval">
-			<input type="text" id="boil_volume" name="boil.volume" value="{{if results && results.boil}}{{:results.boil.volume}}{{/if}}" />G @
+			<input type="text" id="boil_volume" name="boil.volume" value="{{if results && results.boil}}{{:~liters2gallons(results.boil.volume).toFixed(2)}}{{/if}}" />G @
 			<input type="text" id="boil_sg" name="boil.sg" value="{{if results && results.boil}}{{:results.boil.sg}}{{/if}}" /> for
 			<input type="text" id="boil_time" name="boil.time" value="{{if results && results.boil}}{{:results.boil.time}}{{/if}}" /> mins &#8594; 
-			<input type="text" id="boil_end_volume" name="boil.end_volume" value="{{if results && results.boil}}{{:results.boil.end_volume}}{{/if}}" />
+			<input type="text" id="boil_end_volume" name="boil.end_volume" value="{{if results && results.boil}}{{:~liters2gallons(results.boil.end_volume).toFixed(2)}}{{/if}}" />
 			</div> @
 			<div id="boil_end_gravity"></div>
 			<div style="clear: both;"></div>
@@ -135,7 +135,7 @@ $.views.helpers({
 		<div>
 			<div class="headerkey">Evaporation rate:</div>
 			<div class="headerval" id="evaporation_rate">
-				{{if results && results.boil}}{{for results.boil tmpl="evaporationRateTemplate"/}}{{/if}}
+				{{if results && results.boil}}{{for results.boil tmpl="#evaporationRateTemplate"/}}{{/if}}
 			</div>
 			<div style="clear: both;"></div>
 		</div>

@@ -76,6 +76,12 @@
 	}
 	
 	function renderBatch(batchId) {
+		
+		$.views.helpers({
+			liters2gallons: liters2gallons,
+			gallons2liters: gallons2liters
+		})
+		
 		$('#topnav').append(" &gt; Batch " + batchId);
 		
 		// Create a place to put the templates we're going to include
@@ -157,6 +163,7 @@
 										expected: expected,
 										results: batchData.results
 									}));
+									updateActualResultsUI(null,expected);
 									
 									// Setup javsacript triggers
 									$('#lauter_time').change(function(evt) {
