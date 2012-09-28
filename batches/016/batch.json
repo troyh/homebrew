@@ -1,7 +1,6 @@
 {
 	"recipe":{
-		"id":"Jolly Roger Christmas Ale",
-		"commit_sha":"27b4f069e7331f21407c772e88e0360166d49e8d"
+		"url":"https://api.github.com/repos/troyh/homebrew/git/blobs/ab55d611a1ede6ff1f745bfc7f77338c0b94af5f"
 	},
 	"results": {
 		"mash":{

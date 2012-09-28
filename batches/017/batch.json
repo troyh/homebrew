@@ -1,7 +1,6 @@
 {
 	"recipe":{
-		"id":"Southern Tier Pumking",
-		"commit_sha":"573e526ec960f84c9f983a59debd44a5d15d81d4"
+		"url":"https://api.github.com/repos/troyh/homebrew/git/blobs/c93053723172b61a8d61ed30ad0d2c3eee2af6d1"
 		},
 	"results": {
 		"mash":{

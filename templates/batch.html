@@ -98,7 +98,7 @@ $.views.helpers({
 					value="{{if results && results.mash && results.mash.duration}}{{:results.mash.duration}}{{/if}}" /> mins
 				{{if results && results.mash && results.mash.measurements}}
 					{{for results.mash.measurements}}
-						<div><input type="text" name="mash_temp[]" value="{{:temp}}" /></div>
+						<div><input type="text" name="mash_temp[]" value="{{:~celsius2fahrenheit(temp).toFixed(1)}}" /></div>
 					{{/for}}
 				{{else}}
 					<div><input type="text" name="mash_temp[]" value="" /></div>
