@@ -204,7 +204,7 @@ body {
 	margin:1em 1em 0 1em;
 }
 .photosizeoptions {
-		position:relative;
+	position:relative;
 	left:-275px;
 	bottom:-210px;
 	text-align:right;
@@ -450,4 +450,8 @@ table#batches tr td:nth-child(4) {
 
 table#batches tr td:nth-child(5) {
 	text-align: center;
+}
+
+.percent:after {
+	content:"%";
 }

@@ -134,3 +134,10 @@ function displayRecipe(url,renderElem,templateElem,callback) {
 	)
 }
 
+function fahrenheitToCelsius(f) {return (f - 32) * 5 / 9;}
+function celsiusToFahrenheit(c) {return (9 / 5 * c) + 32;}
+function kg2lbs(kg) { return kg * 2.20462; }
+function liters2gallons(l) { return l * 0.264172; }
+function gallons2liters(g) { return g / 0.264172; }
+function gu2sg(gu) { return gu / 1000 + 1; }
+function sg2gu(sg) { return (sg - 1) * 1000; }

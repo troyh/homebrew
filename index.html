@@ -3,9 +3,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Homebrewing</title>
 <link rel="stylesheet" type="text/css" href="recipe.css">
-</head>
-<body>
-<h1>Homebrewing</h1>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script src="https://raw.github.com/BorisMoore/jsrender/master/jsrender.js" type="text/javascript"></script>
+<script src="js/recipe.js"></script>
+
+<script type="text/x-jsrender" id="batchIndexTemplate">
 <h2>Batches</h2>
 <table id="batches">
 <tr>
@@ -13,124 +16,81 @@
 <th>Name</th>
 <th>Mash efficiency</th>
 <th>Brewhouse efficiency</th>
-<th>Apparent Attenuation</th>
+<th>Mash temp</th>
+<th>OG</th>
+<th>FG</th>
+<th>ADF</th>
+<th>Vol</th>
 </tr>
+{{for batches}}
 <tr>
-<td>002</td>
-<td><a href="batch/002.html">Jamil&#39;s Evil Twin (R)</a></td>
-<td><span class="percent"> </span></td>
-<td><span class="percent"> </span></td>
-<td><span class="percent">81%</span></td>
+	<td>{{:id}}</td>
+	<td><a href="batch.html?id={{:id}}">{{:recipe.name}}</a></td>
+	<td>{{if results && results.efficiency.mash}}<span class="percent">{{:results.efficiency.mash.toFixed(0)}}</span>{{/if}}</td>
+	<td>{{if results && results.efficiency.brewhouse}}<span class="percent">{{:results.efficiency.brewhouse.toFixed(0)}}</span>{{/if}}</td>
+	<td>{{if results && results.mash && results.mash.avg_temp}}<span class="temperature"><span class="fahrenheit">{{:~celsius2fahrenheit(results.mash.avg_temp).toFixed(0)}}</span></span>{{/if}}</td>
+	<td>{{if results && results.gravity && results.gravity.og}}{{:results.gravity.og}}{{/if}}</td>
+	<td>{{if results && results.gravity && results.gravity.fg}}{{:results.gravity.fg}}{{/if}}</td>
+	<td>{{if results && results.gravity && results.gravity.adf}}<span class="percent">{{:results.gravity.adf.toFixed(0)}}</span>{{/if}}</td>
+	<td>{{if results && results.gravity && results.gravity.volume}}{{:~liters2gallons(results.gravity.volume).toFixed(2)}}G{{/if}}</td>
 </tr>
-<tr>
-<td>003</td>
-<td><a href="batch/003.html">Breakfast Stout</a></td>
-<td><span class="percent"> </span></td>
-<td><span class="percent"> </span></td>
-<td><span class="percent">66%</span></td>
-</tr>
-<tr>
-<td>004</td>
-<td><a href="batch/004.html">115th Dream Hopbursted Imperial IPA</a></td>
-<td><span class="percent"> </span></td>
-<td><span class="percent"> </span></td>
-<td><span class="percent">92%</span></td>
-</tr>
-<tr>
-<td>005</td>
-<td><a href="batch/005.html">Imperial Stout</a></td>
-<td><span class="percent">45%</span></td>
-<td><span class="percent">39%</span></td>
-<td><span class="percent">84%</span></td>
-</tr>
-<tr>
-<td>006</td>
-<td><a href="batch/006.html">Surly Furious</a></td>
-<td><span class="percent">78%</span></td>
-<td><span class="percent">77%</span></td>
-<td><span class="percent">72%</span></td>
-</tr>
-<tr>
-<td>007</td>
-<td><a href="batch/007.html">Barley Wine</a></td>
-<td><span class="percent">80%</span></td>
-<td><span class="percent">65%</span></td>
-<td><span class="percent">77%</span></td>
-</tr>
-<tr>
-<td>008</td>
-<td><a href="batch/008.html">Fuller's ESB</a></td>
-<td><span class="percent">77%</span></td>
-<td><span class="percent">73%</span></td>
-<td><span class="percent">73%</span></td>
-</tr>
-<tr>
-<td>009</td>
-<td><a href="batch/009.html">Punkin' Ale</a></td>
-<td><span class="percent">87%</span></td>
-<td><span class="percent">67%</span></td>
-<td><span class="percent">96%</span></td>
-</tr>
-<tr>
-<td>010</td>
-<td><a href="batch/010.html">Fooler's C3SB</a></td>
-<td><span class="percent">73%</span></td>
-<td><span class="percent">75%</span></td>
-<td><span class="percent">92%</span></td>
-</tr>
-<tr>
-<td>011</td>
-<td><a href="batch/011.html">Old Fuller's ESB</a></td>
-<td><span class="percent">86%</span></td>
-<td><span class="percent">76%</span></td>
-<td><span class="percent">82%</span></td>
-</tr>
-<tr>
-<td>012</td>
-<td><a href="batch/012.html">Special B IPA</a></td>
-<td><span class="percent">83%</span></td>
-<td><span class="percent">72%</span></td>
-<td><span class="percent">88%</span></td>
-</tr>
-<tr>
-<td>013</td>
-<td><a href="batch/013.html">Oatmeal Raisin Stout</a></td>
-<td><span class="percent">90%</span></td>
-<td><span class="percent">82%</span></td>
-<td><span class="percent"> </span></td>
-</tr>
-<tr>
-<td>014</td>
-<td><a href="batch/014.html">The Czar's Revenge</a></td>
-<td><span class="percent">81%</span></td>
-<td><span class="percent">73%</span></td>
-<td><span class="percent"> </span></td>
-</tr>
-<tr>
-<td>015</td>
-<td><a href="batch/015.html">American Pale Ale with Caramel</a></td>
-<td><span class="percent">91%</span></td>
-<td><span class="percent">93%</span></td>
-<td><span class="percent"> </span></td>
-</tr>
-<tr>
-<td>016</td>
-<td><a href="batch/016.html">Jolly Roger Christmas Ale</a></td>
-<td><span class="percent"> </span></td>
-<td><span class="percent"> </span></td>
-<td><span class="percent"> </span></td>
-</tr>
-<tr>
+{{/for}}
 <th></th>
 <th>Average</th>
-<th>79%
-			</th>
-<th>72%
-			</th>
-<th>82%
-			</th>
+<th></th>
+<th></th>
+<th></th>
 </tr>
 </table>
+</script>
+
+<script type="text/javascript">
+function renderPage() {
+	$.views.helpers({
+		liters2gallons: liters2gallons,
+		gallons2liters: gallons2liters,
+		celsius2fahrenheit: celsiusToFahrenheit,
+		fahrenheit2celsius: fahrenheitToCelsius,
+		sg2gu: sg2gu,
+		gu2sg: gu2sg
+	})
+	
+	$.getJSON("batches/index.json",null,function(data,textStatus,xhr){
+		for (var i=0; i < data.batches.length; ++i) {
+			// Calculate efficiencies and attenuations
+			if (data.batches[i].results) {
+				data.batches[i].results.efficiency=new Object;
+				if (data.batches[i].results.boil.sg && data.batches[i].results.boil.volume)
+					data.batches[i].results.efficiency.mash=(sg2gu(data.batches[i].results.boil.sg) * liters2gallons(data.batches[i].results.boil.volume)) / data.batches[i].recipe.total_ppg * 100;
+				if (data.batches[i].results.gravity.og && data.batches[i].results.gravity.volume)
+					data.batches[i].results.brewhouse=(sg2gu(data.batches[i].results.gravity.og) * liters2gallons(data.batches[i].results.gravity.volume)) / data.batches[i].recipe.total_ppg * 100;
+
+				if (data.batches[i].results.gravity && data.batches[i].results.gravity.og && data.batches[i].results.gravity.fg)
+					data.batches[i].results.gravity.adf=(sg2gu(data.batches[i].results.gravity.og) - sg2gu(data.batches[i].results.gravity.fg)) / sg2gu(data.batches[i].results.gravity.og);
+					
+				if (data.batches[i].results.mash && data.batches[i].results.mash.measurements) {
+					// Calculate average mash temp
+					var total=0;
+					for (var j=0; j < data.batches[i].results.mash.measurements.length; ++j) {
+						total+=data.batches[i].results.mash.measurements[j].temp;
+					}
+					data.batches[i].results.mash.avg_temp=total / data.batches[i].results.mash.measurements.length;
+				}
+			}
+			
+		}
+
+		$('#batches').html($('#batchIndexTemplate').render(data));
+	})
+}
+</script>
+
+</head>
+<body onLoad="renderPage();">
+<h1>Homebrewing</h1>
+
+<div id="batches"></div>
+
 <h2>Recipes</h2>
 <ol>
 <li><a href="recipe.html?name=115th%20Dream%20Hopbursted%20IPA">115th Dream Hopbursted Imperial IPA</a></li>

@@ -1,0 +1,167 @@
+{
+  "batches": [
+    {
+      "id": "008",
+      "recipe": {
+        "total_ppg": 401.66571514243,
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/c302682c7ee3dba6ca1441f53778f67648fe4b65",
+        "name": "Fuller's ESB"
+      }
+    },
+    {
+      "id": "011",
+      "recipe": {
+        "total_ppg": 410.86570278155,
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/535e06bbb5618d1b4b603f81130014fa838856d8",
+        "name": "Old Fuller's ESB"
+      }
+    },
+    {
+      "id": "012",
+      "recipe": {
+        "total_ppg": 398.47443837886,
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/91ec2038d6af04c5f658188fb0c2639b54b14641",
+        "name": "Special B IPA"
+      }
+    },
+    {
+      "id": "013",
+      "recipe": {
+        "total_ppg": 414.45941241433,
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/47573e4756bb2d3a88ec4b18886e9b33b620c44c",
+        "name": "Oatmeal Raisin Stout"
+      }
+    },
+    {
+      "id": "014",
+      "recipe": {
+        "total_ppg": 638.93911445969,
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/0edc9ec9fba485034af58a50304c8e2d5366c142",
+        "name": "The Czar's Revenge"
+      }
+    },
+    {
+      "id": "015",
+      "recipe": {
+        "total_ppg": 381.56947227271,
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/171ad059c4250392aaaab9ac6fa9c32c39e1aa95",
+        "name": "American Pale Ale with Caramel"
+      }
+    },
+    {
+      "results": {
+        "boil": {
+          "time": 90,
+          "volume": 28.39057,
+          "sg": 1.072,
+          "end_volume": 21.7661
+        },
+        "mash": {
+          "measurements": [
+            {
+              "temp": 67.2222
+            },
+            {
+              "temp": 67.2222
+            },
+            {
+              "temp": 65.833333
+            }
+          ],
+          "strike": {
+            "volume": 17.03434,
+            "temp": 73
+          },
+          "type": "",
+          "duration": 60
+        },
+        "gravity": {
+          "og": 1.087,
+          "volume": 20.81975
+        },
+        "sparge": {
+          "duration": 55
+        }
+      },
+      "id": "016",
+      "recipe": {
+        "total_ppg": 558.89939663171,
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/ab55d611a1ede6ff1f745bfc7f77338c0b94af5f",
+        "name": "Jolly Roger Christmas Ale"
+      }
+    },
+    {
+      "results": {
+        "boil": {
+          "time": 0,
+          "volume": 0,
+          "sg": 0,
+          "end_volume": 0
+        },
+        "mash": {
+          "measurements": [
+            {
+              "temp": 0
+            }
+          ],
+          "strike": {
+            "volume": 0,
+            "temp": 0
+          },
+          "type": "",
+          "duration": 0
+        },
+        "gravity": {
+          "og": 0,
+          "volume": 0
+        },
+        "sparge": {
+          "duration": 0
+        }
+      },
+      "id": "017",
+      "recipe": {
+        "total_ppg": 615.93917071502,
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/c93053723172b61a8d61ed30ad0d2c3eee2af6d1",
+        "name": "Southern Tier Pumking"
+      }
+    },
+    {
+      "results": {
+        "boil": {
+          "time": "75",
+          "volume": 26.11934648638,
+          "sg": "1.072",
+          "end_volume": 20.819768938419
+        },
+        "mash": {
+          "measurements": [
+            {
+              "temp": 0
+            }
+          ],
+          "strike": {
+            "volume": 23.961661341853,
+            "temp": 74.444444444444
+          },
+          "type": "",
+          "duration": "60"
+        },
+        "gravity": {
+          "og": "1.086",
+          "fg": "",
+          "volume": 18.92706267129
+        },
+        "sparge": {
+          "duration": "37"
+        }
+      },
+      "id": "018",
+      "recipe": {
+        "total_ppg": 597.6541424717,
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/9ea97f62b1fc254b81872acdb2025701b34ed4de",
+        "name": "Old Rasputin"
+      }
+    }
+  ]
+}
