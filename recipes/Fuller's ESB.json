@@ -1,13 +1,4 @@
 {
-<<<<<<< HEAD
-  "ingredients": {
-    "yeast": [
-      {
-        "name": "London ESB Ale",
-        "prod_id": "1968",
-        "attenuation": 69,
-        "temperature_lo": 18,
-=======
   "efficiency": 75,
   "ingredients": {
     "yeast": [
@@ -16,88 +7,12 @@
         "temperature_lo": 18,
         "attenuation": 69,
         "name": "London ESB Ale",
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
         "lab": "Wyeast",
         "temperature_hi": 22
       }
     ],
     "miscellaneous": [
       {
-<<<<<<< HEAD
-        "amount": 0.02834952,
-        "name": "Gypsum",
-        "time": 60
-      },
-      {
-        "amount": 0.02834952,
-        "name": "Yeast nutrient",
-        "time": 15
-      },
-      {
-        "amount": 0.02834952,
-        "name": "Irish moss",
-        "time": 15
-      }
-    ],
-    "fermentables": {
-      "total_weight": 5.187962,
-      "list": [
-        {
-          "amount": 4.535923,
-          "name": "Maris Otter",
-          "srm": 4,
-          "yield": 80,
-          "type": "Grain",
-          "pct": 87.43
-        },
-        {
-          "amount": 0.4252428,
-          "name": "Crystal 80L",
-          "srm": 80,
-          "yield": 61,
-          "type": "Grain",
-          "pct": 8.2
-        },
-        {
-          "amount": 0.2267962,
-          "name": "Crystal 60L",
-          "srm": 60,
-          "yield": 72,
-          "type": "Grain",
-          "pct": 4.37
-        }
-      ]
-    },
-    "hops": {
-      "first_wort": [
-
-      ],
-      "boil": [
-        {
-          "amount": 0.021262,
-          "alpha": 10.7,
-          "name": "Target",
-          "time": 60,
-          "form": "Pellet"
-        },
-        {
-          "amount": 0.009355343,
-          "alpha": 5.8,
-          "name": "Goldings (Kent)",
-          "time": 15,
-          "form": "Pellet"
-        },
-        {
-          "amount": 0.003401943,
-          "alpha": 7.2,
-          "name": "Northdown",
-          "time": 15,
-          "form": "Pellet"
-        }
-      ],
-      "total_weight": 0.076543286,
-      "dry_hop": [
-=======
         "time": 60,
         "name": "Gypsum",
         "amount": 0.02834952
@@ -138,43 +53,9 @@
         }
       ],
       "mash": [
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
-
       ],
       "aroma": [
         {
-<<<<<<< HEAD
-          "amount": 0.042524,
-          "alpha": 5.7,
-          "name": "Cascade",
-          "form": "Leaf"
-        }
-      ],
-      "mash": [
-
-      ]
-    }
-  },
-  "yeast_starter_slurry": 117,
-  "ABV": 6.06,
-  "boil_time": 60,
-  "name": "Old Fuller's ESB",
-  "ADF": 75,
-  "batch_size": 18.927059,
-  "OG": 1.062,
-  "styles": [
-    {
-      "name": "Extra Special/Strong Bitter (English Pale Ale)",
-      "letter": "C",
-      "category": 8
-    }
-  ],
-  "efficiency": 75,
-  "type": "All Grain",
-  "total_ppg": 410.865702781546,
-  "FG": 1.015,
-  "notes": "<p><a href=\"http://www.homebrewtalk.com/f12/fullers-esb-clone-229179/\">Homebrewtalk discussion</a></p>\n\n<p>According to http://www.byo.com/component/resource/article/2398-fuller-s-the-pride-of-london, ESB is 5.9% ABV, 35 IBUs, an SRM of 15, an OG of 1.060 and an FG of 1.014.</p>\n\n<p>I put the 1.5oz of dry-hop hops in the Blichmann HopRocket which was put inline between the brew kettle and the chiller to see how that affects the hop aroma.</p>\n\n<p>I pitched a 1.2L starter because I didn't have enough time to cold-crash and decant. Not ideal. The yeast was also a 2nd generation from a previous batch of Fuller's ESB.</p>\n\n<p>Dough-in at 161F.</p>\n<p>Strike temp: 161F</p>\n<p>Mash @ 154.5F > 153F > 151.4F > 151F</p>\n<p>Boil volume was 6.8G @ 1.052</p>\n<p>End of boil was 5.75G @ 1.060. Was supposed to be 1.062! >:-(</p>\n",
-=======
           "form": "Leaf",
           "alpha": 5.7,
           "name": "Cascade",
@@ -233,6 +114,5 @@
   "yeast_starter_slurry": 117,
   "type": "All Grain",
   "name": "Old Fuller's ESB",
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
   "yeast_starter_cells": 219
 }
