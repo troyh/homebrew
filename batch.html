@@ -207,6 +207,9 @@
 									// Add Tumblr log
 									$.getScript("http://geekbrewing.tumblr.com/api/read/json?tagged=" + batchId,
 										function(ignore,textStatus,xhr) {
+											tumblr_api_read.posts.sort(function(a,b){
+												return a['unix-timestamp'] - b['unix-timestamp'];
+											})
 											console.log(tumblr_api_read);
 											$('#brewlog').html($('#brewlogTemplate').render(tumblr_api_read));
 										}
