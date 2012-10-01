@@ -1,14 +1,4 @@
 {
-<<<<<<< HEAD
-  "batch_size": 18.927059,
-  "ingredients": {
-    "yeast": [
-      {
-        "lab": "Wyeast",
-        "temperature_hi": 24,
-        "prod_id": "1335",
-        "temperature_lo": 17,
-=======
   "ADF": 75,
   "notes": "Adapted from \"Brewing Better Beer\", p.207.",
   "yeast_starter_slurry": 118,
@@ -19,18 +9,10 @@
         "prod_id": "1335",
         "lab": "Wyeast",
         "temperature_hi": 24,
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
         "name": "British Ale II",
         "attenuation": 75
       }
     ],
-<<<<<<< HEAD
-    "hops": {
-      "mash": [
-
-      ],
-      "dry_hop": [
-=======
     "miscellaneous": [
       {
         "time": 15.0,
@@ -45,52 +27,10 @@
     ],
     "hops": {
       "aroma": [
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
 
       ],
       "boil": [
         {
-<<<<<<< HEAD
-          "alpha": 5.8,
-          "name": "Goldings (Kent)",
-          "form": "Pellet",
-          "amount": 0.021262,
-          "time": 60
-        },
-        {
-          "alpha": 5.8,
-          "name": "Goldings (Kent)",
-          "form": "Pellet",
-          "amount": 0.01701,
-          "time": 30
-        }
-      ],
-      "total_weight": 0.052447,
-      "aroma": [
-
-      ],
-      "first_wort": [
-        {
-          "alpha": 5.8,
-          "name": "Goldings (Kent)",
-          "form": "Pellet",
-          "amount": 0.014175
-        }
-      ]
-    },
-    "miscellaneous": [
-      {
-        "name": "Yeast nutrient",
-        "amount": 0.007,
-        "time": 15.0
-      },
-      {
-        "name": "Whirlfloc",
-        "amount": 0.007087,
-        "time": 15.0
-      }
-    ],
-=======
           "time": 60,
           "form": "Pellet",
           "name": "Goldings (Kent)",
@@ -121,132 +61,61 @@
 
       ]
     },
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
     "fermentables": {
       "total_weight": 5.329709,
       "list": [
         {
           "srm": 4,
           "name": "Maris Otter",
-<<<<<<< HEAD
-          "pct": 68.09,
-          "amount": 3.628739,
-          "yield": 80,
-          "type": "Grain"
-=======
           "amount": 3.628739,
           "pct": 68.09,
           "yield": 80
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
         },
         {
           "srm": 3,
           "name": "Oats (Flaked)",
-<<<<<<< HEAD
-          "pct": 10.64,
-          "amount": 0.56699,
-          "yield": 78.0,
-          "type": "Grain"
-=======
           "amount": 0.56699,
           "pct": 10.64,
           "yield": 78.0
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
         },
         {
           "srm": 80,
           "name": "Crystal 80L",
-<<<<<<< HEAD
-          "pct": 6.38,
-          "amount": 0.340194,
-          "yield": 72.0,
-          "type": "Grain"
-=======
           "amount": 0.340194,
           "pct": 6.38,
           "yield": 72.0
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
         },
         {
           "srm": 500,
           "name": "Barley (Roasted)",
-<<<<<<< HEAD
-          "pct": 4.26,
-          "amount": 0.226796,
-          "yield": 59.0,
-          "type": "Grain"
-=======
           "amount": 0.226796,
           "pct": 4.26,
           "yield": 59.0
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
         },
         {
           "srm": 350,
           "name": "Chocolate",
-<<<<<<< HEAD
-          "pct": 4.26,
-          "amount": 0.226796,
-          "yield": 61.0,
-          "type": "Grain"
-=======
           "amount": 0.226796,
           "pct": 4.26,
           "yield": 61.0
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
         },
         {
           "srm": 140,
           "name": "Special B",
-<<<<<<< HEAD
-          "pct": 4.26,
-          "amount": 0.226796,
-          "yield": 63.0,
-          "type": "Grain"
-=======
           "amount": 0.226796,
           "pct": 4.26,
           "yield": 63.0
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
         },
         {
           "srm": 40,
           "name": "Crystal 40L",
-<<<<<<< HEAD
-          "pct": 2.13,
-          "amount": 0.113398,
-          "yield": 72,
-          "type": "Grain"
-=======
           "amount": 0.113398,
           "pct": 2.13,
           "yield": 72
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
         }
       ]
     }
   },
-<<<<<<< HEAD
-  "FG": 1.016,
-  "styles": [
-    {
-      "category": 13,
-      "name": "Oatmeal Stout",
-      "letter": "C"
-    }
-  ],
-  "name": "Oatmeal Raisin Stout",
-  "ABV": 6.11,
-  "notes": "Adapted from \"Brewing Better Beer\", p.207.",
-  "ADF": 75,
-  "OG": 1.062,
-  "efficiency": 75,
-  "total_ppg": 414.459412414326,
-  "yeast_starter_cells": 221,
-  "yeast_starter_slurry": 118,
-  "boil_time": 90,
-  "type": "All Grain"
-=======
   "total_ppg": 414.459412414326,
   "batch_size": 18.927059,
   "styles": [
@@ -263,5 +132,4 @@
   "efficiency": 75,
   "ABV": 6.11,
   "OG": 1.062
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
 }
