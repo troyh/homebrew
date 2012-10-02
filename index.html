@@ -51,7 +51,7 @@ find  batches -type f -name batch.json | while read B; do cat $B | php  -r '$bat
 	<td>{{if results && results.gravity && results.gravity.og}}{{:results.gravity.og}}{{/if}}</td>
 	<td>{{if results && results.gravity && results.gravity.fg}}{{:results.gravity.fg}}{{/if}}</td>
 	<td>{{if results && results.gravity && results.gravity.adf}}<span class="percent">{{:results.gravity.adf.toFixed(0)}}</span>{{/if}}</td>
-	<td>{{for recipe.yeast}}{{if lab == "Wyeast"}}WY{{/if}}{{:prod_id}}{{/for}}</td>
+	<td>{{for recipe.yeast}}{{if lab.substring(0,6) == "Wyeast"}}WY{{/if}}{{:prod_id}}{{/for}}</td>
 	<td></td>
 	<td>{{if results && results.gravity && results.gravity.volume}}{{:~liters2gallons(results.gravity.volume).toFixed(2)}}G{{/if}}</td>
 </tr>

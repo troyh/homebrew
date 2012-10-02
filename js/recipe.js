@@ -100,12 +100,10 @@ function displayRecipe(url,renderElem,templateElem,callback) {
 		}
 	})
 	// TODO: use commit_sha to get the git version of the recipe for this batch
-	console.log("fetching recipe");
 	$.getJSON(url,
 		null,
 		function(data,textStatus,xhr) {
 			var recipe=$.parseJSON(decode64(data.content));
-			console.log(recipe);
 			recipe.calc_og=calc_og_gu(recipe) / 1000 + 1;
 			recipe.calc_fg=calc_fg_gu(recipe) / 1000 + 1;
 			recipe.total_ppg=total_ppg(recipe);

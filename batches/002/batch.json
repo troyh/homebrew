@@ -1,7 +1,1 @@
-{
-  "id": "002",
-  "recipe": {
-    "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/1677eab06b410a942c60c3f12e1ebe200bb806bf"
-  }
-}
-
+{"id":"002","recipe":{"url":"https://api.github.com/repos/troyh/homebrew/git/blobs/1677eab06b410a942c60c3f12e1ebe200bb806bf"},"results":{"mash":{"type":"","duration":"","strike":{"volume":0,"temp":-17.77777777777778},"measurements":[{"temp":0}]},"sparge":{"duration":""},"boil":{"volume":0,"sg":"","time":"","end_volume":0},"gravity":{"volume":0,"og":"1.063","fg":"1.012"}}}

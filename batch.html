@@ -108,8 +108,6 @@
 						$.getJSON("batches/" + batchId + "/batch.json",
 							null,
 							function(batchData,textStatus,xhr) {
-								console.log("got batch.json:");
-								console.log(batchData);
 								displayRecipe(batchData.recipe.url,$('#recipe'),$('#recipeTemplate'),function(recipe) {
 									//
 									// Compute the expected data
@@ -196,7 +194,6 @@
 										var results=updateActualResults();
 										batchData.results=results;
 										batchData.id=batchId;
-										// console.log(batchData);
 										$('#json_data').html(JSON.stringify(batchData));
 									});
 									
