@@ -84,11 +84,13 @@
 	<script id="recipeTemplate" type="text/x-jsrender">
 	<div id="header">
 
-	<h1>{{>name}}</h1>
+	<h1>{{:name}}</h1>
 	<div id="styles">
-	{{for styles}}
-		<div class="style">{{>name}}<span class="styleid">({{>category}}{{>letter}})</span></div>
-	{{/for}}
+	{{if styles}}
+		{{for styles}}
+		<div class="style">{{:name}}<span class="styleid">({{:category}}{{:letter}})</span></div>
+		{{/for}}
+	{{/if}}
 	</div>
 	<div>
 		<div class="headerkey">Type: </div>

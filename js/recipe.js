@@ -100,10 +100,12 @@ function displayRecipe(url,renderElem,templateElem,callback) {
 		}
 	})
 	// TODO: use commit_sha to get the git version of the recipe for this batch
+	console.log("fetching recipe");
 	$.getJSON(url,
 		null,
 		function(data,textStatus,xhr) {
 			var recipe=$.parseJSON(decode64(data.content));
+			console.log(recipe);
 			recipe.calc_og=calc_og_gu(recipe) / 1000 + 1;
 			recipe.calc_fg=calc_fg_gu(recipe) / 1000 + 1;
 			recipe.total_ppg=total_ppg(recipe);
@@ -119,7 +121,7 @@ function displayRecipe(url,renderElem,templateElem,callback) {
 			recipe.yeast_starter.cells_reqd=0.75 * (recipe.batch_size * 1000) * (calc_og_gu(recipe) / 4) / 1000;
 			// Twice as much for lagers, if we know this is a lager beer, double it. Ideally, we'd
 			// check the yeast, but there's no signifier of ale/lager for the yeast in the beer XML doc.
-			if (recipe.styles.length && (recipe.styles[0].category < 6))
+			if (recipe.styles && recipe.styles.length && (recipe.styles[0].category < 6))
 				recipe.yeast_starter.cells_reqd *= 2;
 			
 			recipe.yeast_starter.ml_reqd=recipe.yeast_starter.cells_reqd / 2.5 * (1 / (recipe.yeast_starter.viability_pct/100));
