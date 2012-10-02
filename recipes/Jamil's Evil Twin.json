@@ -1,69 +1,4 @@
 {
-<<<<<<< HEAD
-  "ingredients": {
-    "yeast": [
-      {
-        "lab": "Wyeast Labs",
-        "temperature_lo": 60,
-        "attenuation": 75,
-        "prod_id": "1056",
-        "temperature_hi": 72,
-        "name": "American Ale"
-      }
-    ],
-    "miscellaneous": [
-
-    ],
-    "fermentables": {
-      "list": [
-        {
-          "srm": 3,
-          "type": "Grain",
-          "pct": 78.43,
-          "amount": 4.5359,
-          "yield": 100,
-          "name": "Pale Malt (2 Row) UK"
-        },
-        {
-          "srm": 9,
-          "type": "Grain",
-          "pct": 7.84,
-          "amount": 0.4536,
-          "yield": 100,
-          "name": "Munich Malt"
-        },
-        {
-          "srm": 40,
-          "type": "Grain",
-          "pct": 5.88,
-          "amount": 0.3402,
-          "yield": 100,
-          "name": "Briess Caramel 40L"
-        },
-        {
-          "srm": 25,
-          "type": "Grain",
-          "pct": 2.98,
-          "amount": 0.1724,
-          "yield": 100,
-          "name": "Victory Malt"
-        },
-        {
-          "srm": 120,
-          "type": "Grain",
-          "pct": 2.9,
-          "amount": 0.1678,
-          "yield": 100,
-          "name": "Briess Caramel 120L"
-        },
-        {
-          "srm": 215,
-          "type": "Grain",
-          "pct": 1.96,
-          "amount": 0.1134,
-          "yield": 100,
-          "name": "Fawcett Pale Chocolate"
-=======
   "OG": 1.082,
   "efficiency": 70,
   "total_ppg": 586.499026916,
@@ -116,14 +51,11 @@
           "srm": 215,
           "name": "Fawcett Pale Chocolate",
           "amount": 0.1134
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
         }
       ],
       "total_weight": 5.7833
     },
     "hops": {
-<<<<<<< HEAD
-=======
       "aroma": [
 
       ],
@@ -137,111 +69,45 @@
 
       ],
       "total_weight": 0.1205,
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
       "boil": [
         {
           "time": 60,
           "alpha": 14,
-<<<<<<< HEAD
-          "amount": 0.0071,
-          "form": "Pellet",
-          "name": "Columbus (Tomahawk)"
-=======
           "name": "Columbus (Tomahawk)",
           "amount": 0.0071,
           "form": "Pellet"
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
         },
         {
           "time": 20,
           "alpha": 14,
-<<<<<<< HEAD
-          "amount": 0.0142,
-          "form": "Pellet",
-          "name": "Columbus (Tomahawk)"
-=======
           "name": "Columbus (Tomahawk)",
           "amount": 0.0142,
           "form": "Pellet"
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
         },
         {
           "time": 10,
           "alpha": 5.5,
-<<<<<<< HEAD
-          "amount": 0.0213,
-          "form": "Pellet",
-          "name": "Cascade"
-=======
           "name": "Cascade",
           "amount": 0.0213,
           "form": "Pellet"
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
         },
         {
           "time": 10,
           "alpha": 10,
-<<<<<<< HEAD
-          "amount": 0.0213,
-          "form": "Pellet",
-          "name": "Centennial"
-=======
           "name": "Centennial",
           "amount": 0.0213,
           "form": "Pellet"
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
         },
         {
           "time": 0,
           "alpha": 5.5,
-<<<<<<< HEAD
-          "amount": 0.0283,
-          "form": "Pellet",
-          "name": "Cascade"
-=======
           "name": "Cascade",
           "amount": 0.0283,
           "form": "Pellet"
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
         },
         {
           "time": 0,
           "alpha": 10,
-<<<<<<< HEAD
-          "amount": 0.0283,
-          "form": "Pellet",
-          "name": "Centennial"
-        }
-      ],
-      "first_wort": [
-
-      ],
-      "mash": [
-
-      ],
-      "dry_hop": [
-
-      ],
-      "total_weight": 0.1205,
-      "aroma": [
-
-      ]
-    }
-  },
-  "FG": 1.025,
-  "yeast_starter_slurry": 155,
-  "efficiency": 70,
-  "type": "All Grain",
-  "boil_time": 60,
-  "ABV": 7.53,
-  "batch_size": 18.9271,
-  "yeast_starter_cells": 291,
-  "ADF": 70,
-  "total_ppg": 586.499026916,
-  "notes": "See full Northern Brewer recipe instructions.",
-  "OG": 1.082,
-  "name": "Jamil&#39;s Evil Twin (R)"
-=======
           "name": "Centennial",
           "amount": 0.0283,
           "form": "Pellet"
@@ -266,5 +132,4 @@
   "type": "All Grain",
   "name": "Jamil&#39;s Evil Twin (R)",
   "batch_size": 18.9271
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
 }

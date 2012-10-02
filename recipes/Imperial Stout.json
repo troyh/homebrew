@@ -1,152 +1,4 @@
 {
-<<<<<<< HEAD
-  "yeast_starter_slurry": 250,
-  "FG": 1.04,
-  "boil_time": 60,
-  "yeast_starter_cells": 469,
-  "ABV": 12.11,
-  "batch_size": 18.9271,
-  "name": "Imperial Stout",
-  "ADF": 70,
-  "type": "All Grain",
-  "efficiency": 70,
-  "notes": "",
-  "ingredients": {
-    "yeast": [
-      {
-        "temperature_lo": 60,
-        "name": "American Ale",
-        "prod_id": "1056",
-        "temperature_hi": 72,
-        "attenuation": 75,
-        "lab": "Wyeast Labs"
-      }
-    ],
-    "miscellaneous": [
-
-    ],
-    "fermentables": {
-      "list": [
-        {
-          "pct": 4.88,
-          "srm": 23,
-          "name": "Biscuit Malt",
-          "amount": 0.4536,
-          "type": "Grain",
-          "yield": 100
-        },
-        {
-          "pct": 3.66,
-          "srm": 500,
-          "name": "Black (Patent) Malt",
-          "amount": 0.3402,
-          "type": "Grain",
-          "yield": 100
-        },
-        {
-          "pct": 29.27,
-          "srm": 2,
-          "name": "Cara-Pils/Dextrine",
-          "amount": 2.7216,
-          "type": "Grain",
-          "yield": 100
-        },
-        {
-          "pct": 4.88,
-          "srm": 60,
-          "name": "Caramel/Crystal Malt - 60L",
-          "amount": 0.4536,
-          "type": "Grain",
-          "yield": 100
-        },
-        {
-          "pct": 3.66,
-          "srm": 350,
-          "name": "Chocolate Malt",
-          "amount": 0.3402,
-          "type": "Grain",
-          "yield": 100
-        },
-        {
-          "pct": 26.83,
-          "srm": 3,
-          "name": "Pale Malt (2 Row) Bel",
-          "amount": 2.4948,
-          "type": "Grain",
-          "yield": 100
-        },
-        {
-          "pct": 2.44,
-          "srm": 300,
-          "name": "Roasted Barley",
-          "amount": 0.2268,
-          "type": "Grain",
-          "yield": 100
-        },
-        {
-          "pct": 9.76,
-          "srm": 180,
-          "name": "Special B Malt",
-          "amount": 0.9072,
-          "type": "Grain",
-          "yield": 100
-        },
-        {
-          "pct": 4.88,
-          "srm": 2,
-          "name": "Wheat Malt, Bel",
-          "amount": 0.4536,
-          "type": "Grain",
-          "yield": 100
-        },
-        {
-          "pct": 9.76,
-          "srm": 50,
-          "name": "Brown Sugar, Dark",
-          "amount": 0.9072,
-          "type": "Sugar",
-          "yield": 100
-        }
-      ],
-      "total_weight": 8.3916
-    },
-    "hops": {
-      "boil": [
-        {
-          "form": "Pellet",
-          "time": 60,
-          "name": "Fuggles",
-          "alpha": 4.5,
-          "amount": 0.0283
-        },
-        {
-          "form": "Pellet",
-          "time": 60,
-          "name": "Goldings, East Kent",
-          "alpha": 5,
-          "amount": 0.0283
-        },
-        {
-          "form": "Pellet",
-          "time": 60,
-          "name": "Bullion",
-          "alpha": 8,
-          "amount": 0.0283
-        },
-        {
-          "form": "Pellet",
-          "time": 60,
-          "name": "Cascade",
-          "alpha": 5.5,
-          "amount": 0.0283
-        },
-        {
-          "form": "Pellet",
-          "time": 60,
-          "name": "Mt. Hood",
-          "alpha": 6,
-          "amount": 0.0283
-=======
   "type": "All Grain",
   "name": "Imperial Stout",
   "total_ppg": 943.014740976,
@@ -276,28 +128,11 @@
           "amount": 0.0283,
           "alpha": 6,
           "time": 60
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
         }
       ],
       "first_wort": [
 
       ],
-<<<<<<< HEAD
-      "mash": [
-
-      ],
-      "dry_hop": [
-
-      ],
-      "total_weight": 0.1415,
-      "aroma": [
-
-      ]
-    }
-  },
-  "OG": 1.132,
-  "total_ppg": 943.014740976
-=======
       "dry_hop": [
 
       ],
@@ -318,5 +153,4 @@
   "notes": "",
   "yeast_starter_cells": 469,
   "ADF": 70
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
 }

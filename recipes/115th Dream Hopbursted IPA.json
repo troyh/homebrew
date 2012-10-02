@@ -1,48 +1,6 @@
 {
   "FG": 1.038,
   "efficiency": 70,
-<<<<<<< HEAD
-  "ABV": 11.52,
-  "type": "All Grain",
-  "ingredients": {
-    "fermentables": {
-      "list": [
-        {
-          "pct": 84.62,
-          "yield": 100,
-          "type": "Grain",
-          "amount": 7.4843,
-          "srm": 2,
-          "name": "Rahr 2-Row"
-        },
-        {
-          "pct": 5.13,
-          "yield": 100,
-          "type": "Grain",
-          "amount": 0.4536,
-          "srm": 60,
-          "name": "Briess Caramel 60L"
-        },
-        {
-          "pct": 10.26,
-          "yield": 100,
-          "type": "Sugar",
-          "amount": 0.9072,
-          "srm": 0,
-          "name": "Corn Sugar (Dextrose)"
-        }
-      ],
-      "total_weight": 7.9379
-    },
-    "miscellaneous": [
-
-    ],
-    "yeast": [
-      {
-        "prod_id": "1056",
-        "attenuation": 75,
-        "temperature_lo": 60,
-=======
   "type": "All Grain",
   "ADF": 70,
   "ingredients": {
@@ -51,19 +9,11 @@
         "temperature_lo": 60,
         "attenuation": 75,
         "prod_id": "1056",
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
         "name": "American Ale",
         "lab": "Wyeast Labs",
         "temperature_hi": 72
       }
     ],
-<<<<<<< HEAD
-    "hops": {
-      "first_wort": [
-
-      ],
-      "mash": [
-=======
     "miscellaneous": [
 
     ],
@@ -72,56 +22,11 @@
 
       ],
       "first_wort": [
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
 
       ],
       "dry_hop": [
 
       ],
-<<<<<<< HEAD
-      "boil": [
-        {
-          "alpha": 7,
-          "time": 60,
-          "amount": 0.0567,
-          "form": "Pellet",
-          "name": "Cluster"
-        },
-        {
-          "alpha": 7,
-          "time": 30,
-          "amount": 0.0567,
-          "form": "Pellet",
-          "name": "Cluster"
-        },
-        {
-          "alpha": 8.25,
-          "time": 15,
-          "amount": 0.085,
-          "form": "Pellet",
-          "name": "Hop Burst Hop Blend"
-        },
-        {
-          "alpha": 8.25,
-          "time": 10,
-          "amount": 0.085,
-          "form": "Pellet",
-          "name": "Hop Burst Hop Blend"
-        },
-        {
-          "alpha": 8.25,
-          "time": 5,
-          "amount": 0.085,
-          "form": "Pellet",
-          "name": "Hop Burst Hop Blend"
-        },
-        {
-          "alpha": 8.25,
-          "time": 0,
-          "amount": 0.085,
-          "form": "Pellet",
-          "name": "Hop Burst Hop Blend"
-=======
       "total_weight": 0.4534,
       "boil": [
         {
@@ -165,26 +70,10 @@
           "alpha": 8.25,
           "time": 0,
           "amount": 0.085
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
         }
       ],
       "aroma": [
 
-<<<<<<< HEAD
-      ],
-      "total_weight": 0.4534
-    }
-  },
-  "notes": "See full Northern Brewer recipe instructions.",
-  "ADF": 70,
-  "total_ppg": 897.003880652,
-  "yeast_starter_cells": 446,
-  "boil_time": 60,
-  "OG": 1.126,
-  "name": "115th Dream Hopbursted Imperial IPA",
-  "yeast_starter_slurry": 238,
-  "batch_size": 18.9271
-=======
       ]
     },
     "fermentables": {
@@ -222,5 +111,4 @@
   "notes": "See full Northern Brewer recipe instructions.",
   "yeast_starter_slurry": 238,
   "ABV": 11.52
->>>>>>> ec2a40ffd37f1478345698002446ff303e3aa60a
 }

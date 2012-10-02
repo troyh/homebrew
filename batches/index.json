@@ -2,117 +2,152 @@
   "batches": [
     {
       "recipe": {
-        "name": null,
-        "total_ppg": null,
         "yeast": null,
-        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/c9a2f2db7008b7ec65263416e2971543dda2eb74"
+        "name": null,
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/b62a1630abde88dee0ba4583aae5edca406a5239",
+        "total_ppg": null
+      },
+      "id": "002"
+    },
+    {
+      "recipe": {
+        "yeast": null,
+        "name": null,
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/7b39cbce7b168b1ca3c1a240457f1970a977a612",
+        "total_ppg": null
+      },
+      "id": "003"
+    },
+    {
+      "recipe": {
+        "yeast": null,
+        "name": null,
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/8200d69bcb5a809daa62188d4e1ea61f1c7bc7f1",
+        "total_ppg": null
+      },
+      "id": "004"
+    },
+    {
+      "recipe": {
+        "yeast": null,
+        "name": null,
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/4beb2c1d213a9f0c66e418a9bbfc9e12ebec7f4e",
+        "total_ppg": null
+      },
+      "id": "005"
+    },
+    {
+      "recipe": {
+        "yeast": [
+          {
+            "temperature_lo": 63,
+            "temperature_hi": 75,
+            "lab": "Wyeast",
+            "prod_id": "1335",
+            "attenuation": 75,
+            "name": "British Ale II"
+          }
+        ],
+        "name": "Surly Furious",
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/8a43d584e7a1478f5c8b086f35430a7bf2d7caed",
+        "total_ppg": 436.08555320256
+      },
+      "id": "006"
+    },
+    {
+      "recipe": {
+        "yeast": [
+          {
+            "temperature_lo": 16,
+            "temperature_hi": 22,
+            "prod_id": "1056",
+            "lab": "Wyeast",
+            "attenuation": 75,
+            "name": "American Ale"
+          }
+        ],
+        "name": "Barley Wine",
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/99704c59be1878d2749a72cce74d6838722e6131",
+        "total_ppg": 565.33930826885
       },
       "id": "007"
     },
     {
-      "recipe": {
-        "name": "Fuller's ESB",
-        "total_ppg": 401.66571514243,
-        "yeast": [
-          {
-            "name": "London ESB Ale",
-            "attenuation": 69,
-            "temperature_hi": 22,
-            "lab": "Wyeast",
-            "prod_id": "1968",
-            "temperature_lo": 18
-          }
-        ],
-        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/c302682c7ee3dba6ca1441f53778f67648fe4b65"
-      },
       "results": {
-        "gravity": {
-          "volume": 19.87341,
-          "fg": "1.015",
-          "og": "1.056"
-        },
-        "boil": {
-          "end_volume": 20.8198,
-          "volume": 24.9837,
-          "sg": "1.047",
-          "time": "60"
-        },
         "sparge": {
           "duration": ""
         },
         "mash": {
-          "type": "",
-          "strike": {
-            "volume": 21.65256,
-            "temp": 73.3333
-          },
-          "duration": "60",
           "measurements": [
             {
               "temp": 66.6667
             }
-          ]
+          ],
+          "type": "",
+          "duration": "60",
+          "strike": {
+            "temp": 73.3333,
+            "volume": 21.65256
+          }
+        },
+        "gravity": {
+          "fg": "1.015",
+          "volume": 19.87341,
+          "og": "1.056"
+        },
+        "boil": {
+          "time": "60",
+          "sg": "1.047",
+          "volume": 24.9837,
+          "end_volume": 20.8198
         }
+      },
+      "recipe": {
+        "yeast": [
+          {
+            "temperature_lo": 18,
+            "temperature_hi": 22,
+            "prod_id": "1968",
+            "lab": "Wyeast",
+            "attenuation": 69,
+            "name": "London ESB Ale"
+          }
+        ],
+        "name": "Fuller's ESB",
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/c302682c7ee3dba6ca1441f53778f67648fe4b65",
+        "total_ppg": 401.66571514243
       },
       "id": "008"
     },
     {
       "recipe": {
-        "name": "Punkin' Ale",
-        "total_ppg": 466.89939651724,
         "yeast": [
           {
-            "name": "American Ale",
-            "attenuation": 75,
+            "temperature_lo": 16,
             "temperature_hi": 22,
             "lab": "Wyeast",
             "prod_id": "1056",
-            "temperature_lo": 16
+            "attenuation": 75,
+            "name": "American Ale"
           }
         ],
-        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/a749c916ba9af7efab886804809e32fe88c4a5b1"
+        "name": "Punkin' Ale",
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/a749c916ba9af7efab886804809e32fe88c4a5b1",
+        "total_ppg": 466.89939651724
       },
       "id": "009"
     },
     {
-      "recipe": {
-        "name": "Old Fuller's ESB",
-        "total_ppg": 410.86570278155,
-        "yeast": [
-          {
-            "name": "London ESB Ale",
-            "attenuation": 69,
-            "temperature_hi": 22,
-            "lab": "Wyeast",
-            "prod_id": "1968",
-            "temperature_lo": 18
-          }
-        ],
-        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/535e06bbb5618d1b4b603f81130014fa838856d8"
-      },
-      "id": "011",
       "results": {
-        "gravity": {
-          "volume": 20.819768938419,
-          "fg": "1.015",
-          "og": "1.060"
-        },
-        "boil": {
-          "end_volume": 21.766122071983,
-          "volume": 25.740805232954,
-          "sg": "1.052",
-          "time": "60"
-        },
         "sparge": {
           "duration": ""
         },
+        "gravity": {
+          "fg": "1.015",
+          "volume": 20.819768938419,
+          "og": "1.060"
+        },
         "mash": {
-          "type": "",
-          "strike": {
-            "volume": 21.766122071983,
-            "temp": 71.666666666667
-          },
-          "duration": "60",
           "measurements": [
             {
               "temp": 68.055556
@@ -126,49 +161,49 @@
             {
               "temp": 66.1111
             }
-          ]
-        }
-      }
-    },
-    {
-      "recipe": {
-        "name": "Special B IPA",
-        "total_ppg": 398.47443837886,
-        "yeast": [
-          {
-            "name": "Safale US-05",
-            "attenuation": 78,
-            "temperature_hi": 24,
-            "lab": "Fermentis",
-            "prod_id": "US-05",
-            "temperature_lo": 15
+          ],
+          "type": "",
+          "duration": "60",
+          "strike": {
+            "temp": 71.666666666667,
+            "volume": 21.766122071983
           }
-        ],
-        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/91ec2038d6af04c5f658188fb0c2639b54b14641"
-      },
-      "id": "012",
-      "results": {
-        "gravity": {
-          "volume": 17.980709537725,
-          "fg": "1.008",
-          "og": "1.060"
         },
         "boil": {
-          "end_volume": 20.819768938419,
-          "volume": 24.983722726103,
-          "sg": "1.050",
-          "time": "60"
-        },
+          "time": "60",
+          "sg": "1.052",
+          "volume": 25.740805232954,
+          "end_volume": 21.766122071983
+        }
+      },
+      "recipe": {
+        "yeast": [
+          {
+            "temperature_lo": 18,
+            "temperature_hi": 22,
+            "lab": "Wyeast",
+            "prod_id": "1968",
+            "attenuation": 69,
+            "name": "London ESB Ale"
+          }
+        ],
+        "name": "Old Fuller's ESB",
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/535e06bbb5618d1b4b603f81130014fa838856d8",
+        "total_ppg": 410.86570278155
+      },
+      "id": "011"
+    },
+    {
+      "results": {
         "sparge": {
           "duration": ""
         },
+        "gravity": {
+          "fg": "1.008",
+          "volume": 17.980709537725,
+          "og": "1.060"
+        },
         "mash": {
-          "type": "",
-          "strike": {
-            "volume": 16.088003270596,
-            "temp": 66.666666666667
-          },
-          "duration": "60",
           "measurements": [
             {
               "temp": 66.6667
@@ -182,49 +217,44 @@
             {
               "temp": 65
             }
-          ]
-        }
-      }
-    },
-    {
-      "recipe": {
-        "name": "Oatmeal Raisin Stout",
-        "total_ppg": 414.45941241433,
-        "yeast": [
-          {
-            "name": "British Ale II",
-            "attenuation": 75,
-            "temperature_hi": 24,
-            "lab": "Wyeast",
-            "prod_id": "1335",
-            "temperature_lo": 17
+          ],
+          "type": "",
+          "duration": "60",
+          "strike": {
+            "temp": 66.666666666667,
+            "volume": 16.088003270596
           }
-        ],
-        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/47573e4756bb2d3a88ec4b18886e9b33b620c44c"
-      },
-      "id": "013",
-      "results": {
-        "gravity": {
-          "volume": 20.819768938419,
-          "fg": "1.011",
-          "og": "1.062"
         },
         "boil": {
-          "end_volume": 22.712475205548,
-          "volume": 27.254970246657,
-          "sg": "1.052",
-          "time": "60"
-        },
+          "time": "60",
+          "sg": "1.050",
+          "volume": 24.983722726103,
+          "end_volume": 20.819768938419
+        }
+      },
+      "recipe": {
+        "yeast": [
+          {
+            "temperature_lo": 15,
+            "temperature_hi": 24,
+            "prod_id": "US-05",
+            "lab": "Fermentis",
+            "attenuation": 78,
+            "name": "Safale US-05"
+          }
+        ],
+        "name": "Special B IPA",
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/91ec2038d6af04c5f658188fb0c2639b54b14641",
+        "total_ppg": 398.47443837886
+      },
+      "id": "012"
+    },
+    {
+      "results": {
         "sparge": {
           "duration": ""
         },
         "mash": {
-          "type": "",
-          "strike": {
-            "volume": 17.034356404161,
-            "temp": 73.333333333333
-          },
-          "duration": "60",
           "measurements": [
             {
               "temp": 67.7778
@@ -238,143 +268,148 @@
             {
               "temp": 65.833333
             }
-          ]
-        }
-      }
-    },
-    {
-      "recipe": {
-        "name": "The Czar's Revenge",
-        "total_ppg": 638.93911445969,
-        "yeast": [
-          {
-            "name": "American Ale",
-            "attenuation": 75,
-            "lab": "Wyeast",
-            "temperature_hi": 22,
-            "prod_id": "1056",
-            "temperature_lo": 16
+          ],
+          "type": "",
+          "duration": "60",
+          "strike": {
+            "temp": 73.333333333333,
+            "volume": 17.034356404161
           }
-        ],
-        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/0edc9ec9fba485034af58a50304c8e2d5366c142"
-      },
-      "id": "014",
-      "results": {
+        },
         "gravity": {
-          "volume": 18.453886104508,
-          "fg": "1.020",
-          "og": "1.096"
+          "fg": "1.011",
+          "volume": 20.819768938419,
+          "og": "1.062"
         },
         "boil": {
-          "end_volume": 20.819768938419,
-          "volume": 26.876428993232,
-          "sg": "1.073",
-          "time": "90"
-        },
+          "time": "60",
+          "sg": "1.052",
+          "volume": 27.254970246657,
+          "end_volume": 22.712475205548
+        }
+      },
+      "recipe": {
+        "yeast": [
+          {
+            "temperature_lo": 17,
+            "temperature_hi": 24,
+            "lab": "Wyeast",
+            "prod_id": "1335",
+            "attenuation": 75,
+            "name": "British Ale II"
+          }
+        ],
+        "name": "Oatmeal Raisin Stout",
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/47573e4756bb2d3a88ec4b18886e9b33b620c44c",
+        "total_ppg": 414.45941241433
+      },
+      "id": "013"
+    },
+    {
+      "results": {
         "sparge": {
           "duration": ""
         },
+        "gravity": {
+          "fg": "1.020",
+          "volume": 18.453886104508,
+          "og": "1.096"
+        },
         "mash": {
-          "type": "",
-          "strike": {
-            "volume": 26.497887739806,
-            "temp": 73.888888888889
-          },
-          "duration": "",
           "measurements": [
             {
               "temp": 0
             }
-          ]
-        }
-      }
-    },
-    {
-      "recipe": {
-        "name": "American Pale Ale with Caramel",
-        "total_ppg": 381.56947227271,
-        "yeast": [
-          {
-            "name": "Safale US-05",
-            "attenuation": 78,
-            "lab": "Fermentis",
-            "temperature_hi": 24,
-            "prod_id": "US-05",
-            "temperature_lo": 15
+          ],
+          "type": "",
+          "duration": "",
+          "strike": {
+            "temp": 73.888888888889,
+            "volume": 26.497887739806
           }
-        ],
-        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/171ad059c4250392aaaab9ac6fa9c32c39e1aa95"
-      },
-      "id": "015",
-      "results": {
-        "gravity": {
-          "volume": 25.740805232954,
-          "fg": "1.003",
-          "og": "1.052"
         },
         "boil": {
-          "end_volume": 23.091016458974,
-          "volume": 27.44424087337,
-          "sg": "1.048",
-          "time": "60"
-        },
+          "time": "90",
+          "sg": "1.073",
+          "volume": 26.876428993232,
+          "end_volume": 20.819768938419
+        }
+      },
+      "recipe": {
+        "yeast": [
+          {
+            "temperature_lo": 16,
+            "temperature_hi": 22,
+            "lab": "Wyeast",
+            "prod_id": "1056",
+            "attenuation": 75,
+            "name": "American Ale"
+          }
+        ],
+        "name": "The Czar's Revenge",
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/0edc9ec9fba485034af58a50304c8e2d5366c142",
+        "total_ppg": 638.93911445969
+      },
+      "id": "014"
+    },
+    {
+      "results": {
         "sparge": {
           "duration": "27"
         },
+        "gravity": {
+          "fg": "1.003",
+          "volume": 25.740805232954,
+          "og": "1.052"
+        },
         "mash": {
-          "type": "",
-          "strike": {
-            "volume": 15.141650137032,
-            "temp": 70.555555555556
-          },
-          "duration": "",
           "measurements": [
             {
               "temp": 0
             }
-          ]
-        }
-      }
-    },
-    {
-      "recipe": {
-        "name": "Jolly Roger Christmas Ale",
-        "total_ppg": 558.89939663171,
-        "yeast": [
-          {
-            "name": "Dry English Ale",
-            "attenuation": 75,
-            "lab": "White Labs",
-            "temperature_hi": 21,
-            "prod_id": "WLP007",
-            "temperature_lo": 18
+          ],
+          "type": "",
+          "duration": "",
+          "strike": {
+            "temp": 70.555555555556,
+            "volume": 15.141650137032
           }
-        ],
-        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/ab55d611a1ede6ff1f745bfc7f77338c0b94af5f"
-      },
-      "id": "016",
-      "results": {
-        "gravity": {
-          "volume": 20.81975,
-          "fg": 1.02,
-          "og": 1.087
         },
         "boil": {
-          "end_volume": 21.7661,
-          "volume": 28.39057,
-          "sg": 1.072,
-          "time": 90
-        },
+          "time": "60",
+          "sg": "1.048",
+          "volume": 27.44424087337,
+          "end_volume": 23.091016458974
+        }
+      },
+      "recipe": {
+        "yeast": [
+          {
+            "temperature_lo": 15,
+            "temperature_hi": 24,
+            "lab": "Fermentis",
+            "prod_id": "US-05",
+            "attenuation": 78,
+            "name": "Safale US-05"
+          }
+        ],
+        "name": "American Pale Ale with Caramel",
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/171ad059c4250392aaaab9ac6fa9c32c39e1aa95",
+        "total_ppg": 381.56947227271
+      },
+      "id": "015"
+    },
+    {
+      "results": {
         "sparge": {
           "duration": 55
         },
+        "gravity": {
+          "fg": 1.02,
+          "volume": 20.81975,
+          "og": 1.087
+        },
         "mash": {
-          "type": "",
-          "strike": {
-            "volume": 17.03434,
-            "temp": 73
-          },
-          "duration": 60,
           "measurements": [
             {
               "temp": 67.2222
@@ -385,103 +420,131 @@
             {
               "temp": 65.833333
             }
-          ]
-        }
-      }
-    },
-    {
-      "recipe": {
-        "name": "Southern Tier Pumking",
-        "total_ppg": 615.93917071502,
-        "yeast": [
-          {
-            "name": "Safale US-05",
-            "attenuation": 78,
-            "temperature_hi": 24,
-            "lab": "Fermentis",
-            "prod_id": "US-05",
-            "temperature_lo": 15
+          ],
+          "type": "",
+          "duration": 60,
+          "strike": {
+            "temp": 73,
+            "volume": 17.03434
           }
-        ],
-        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/c93053723172b61a8d61ed30ad0d2c3eee2af6d1"
-      },
-      "id": "017",
-      "results": {
-        "gravity": {
-          "volume": 0,
-          "fg": "",
-          "og": "1.083"
         },
         "boil": {
-          "end_volume": 0,
-          "volume": 0,
-          "sg": "0",
-          "time": "0"
-        },
+          "time": 90,
+          "sg": 1.072,
+          "volume": 28.39057,
+          "end_volume": 21.7661
+        }
+      },
+      "recipe": {
+        "yeast": [
+          {
+            "temperature_lo": 18,
+            "temperature_hi": 21,
+            "lab": "White Labs",
+            "prod_id": "WLP007",
+            "attenuation": 75,
+            "name": "Dry English Ale"
+          }
+        ],
+        "name": "Jolly Roger Christmas Ale",
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/ab55d611a1ede6ff1f745bfc7f77338c0b94af5f",
+        "total_ppg": 558.89939663171
+      },
+      "id": "016"
+    },
+    {
+      "results": {
         "sparge": {
           "duration": "0"
         },
+        "gravity": {
+          "fg": "",
+          "volume": 0,
+          "og": "1.083"
+        },
         "mash": {
-          "type": "",
-          "strike": {
-            "volume": 0,
-            "temp": -17.777777777778
-          },
-          "duration": "",
           "measurements": [
             {
               "temp": 0
             }
-          ]
-        }
-      }
-    },
-    {
-      "recipe": {
-        "name": "Old Rasputin",
-        "total_ppg": 597.6541424717,
-        "yeast": [
-          {
-            "name": "California Ale",
-            "attenuation": 77,
-            "lab": "White Labs",
-            "temperature_hi": 23,
-            "prod_id": "WLP001",
-            "temperature_lo": 20
+          ],
+          "type": "",
+          "duration": "",
+          "strike": {
+            "temp": -17.777777777778,
+            "volume": 0
           }
-        ],
-        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/9ea97f62b1fc254b81872acdb2025701b34ed4de"
-      },
-      "id": "018",
-      "results": {
-        "gravity": {
-          "volume": 18.92706267129,
-          "fg": "",
-          "og": "1.086"
         },
         "boil": {
-          "end_volume": 20.819768938419,
-          "volume": 26.11934648638,
-          "sg": "1.072",
-          "time": "75"
-        },
+          "time": "0",
+          "sg": "0",
+          "volume": 0,
+          "end_volume": 0
+        }
+      },
+      "recipe": {
+        "yeast": [
+          {
+            "temperature_lo": 15,
+            "temperature_hi": 24,
+            "lab": "Fermentis",
+            "prod_id": "US-05",
+            "attenuation": 78,
+            "name": "Safale US-05"
+          }
+        ],
+        "name": "Southern Tier Pumking",
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/c93053723172b61a8d61ed30ad0d2c3eee2af6d1",
+        "total_ppg": 615.93917071502
+      },
+      "id": "017"
+    },
+    {
+      "results": {
         "sparge": {
           "duration": "37"
         },
+        "gravity": {
+          "fg": "",
+          "volume": 18.92706267129,
+          "og": "1.086"
+        },
         "mash": {
-          "type": "",
-          "strike": {
-            "volume": 23.961661341853,
-            "temp": 74.444444444444
-          },
-          "duration": "60",
           "measurements": [
             {
               "temp": 0
             }
-          ]
+          ],
+          "type": "",
+          "duration": "60",
+          "strike": {
+            "temp": 74.444444444444,
+            "volume": 23.961661341853
+          }
+        },
+        "boil": {
+          "time": "75",
+          "sg": "1.072",
+          "volume": 26.11934648638,
+          "end_volume": 20.819768938419
         }
-      }
+      },
+      "recipe": {
+        "yeast": [
+          {
+            "temperature_lo": 20,
+            "temperature_hi": 23,
+            "prod_id": "WLP001",
+            "lab": "White Labs",
+            "attenuation": 77,
+            "name": "California Ale"
+          }
+        ],
+        "name": "Old Rasputin",
+        "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/9ea97f62b1fc254b81872acdb2025701b34ed4de",
+        "total_ppg": 597.6541424717
+      },
+      "id": "018"
     }
   ]
 }
