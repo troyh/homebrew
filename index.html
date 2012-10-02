@@ -8,18 +8,37 @@
 <script src="https://raw.github.com/BorisMoore/jsrender/master/jsrender.js" type="text/javascript"></script>
 <script src="js/recipe.js"></script>
 
+<!--
+Bash script to create batches/index.json:
+
+find  batches -type f -name batch.json | while read B; do cat $B | php  -r '$batch=json_decode(file_get_contents("php://STDIN"));$batch->id="$argv[1]";$blob=json_decode(file_get_contents($batch->recipe->url));$recipe=json_decode(base64_decode($blob->content));$batch->recipe->name=$recipe->name;$batch->recipe->total_ppg=$recipe->total_ppg;$batch->recipe->yeast=$recipe->ingredients->yeast;print json_encode($batch)."\n";' "$(basename $(dirname $B))"; done | sed -e 's/$/,/' -e '$,$s/,$//' -e '1i\
+{"batches":[' -e '$a\
+]}' | jsontidy > batches/index.json
+-->
 <script type="text/x-jsrender" id="batchIndexTemplate">
 <h2>Batches</h2>
 <table id="batches">
 <tr>
+	<th></th>
+	<th></th>
+	<th colspan="2">Efficiency</th>
+	<th></th>
+	<th></th>
+	<th></th>
+	<th></th>
+	<th colspan="2">Fermentation</th>
+</tr>
+<tr>
 <th>#</th>
 <th>Name</th>
-<th>Mash efficiency</th>
-<th>Brewhouse efficiency</th>
+<th>Mash</th>
+<th>Brewhouse</th>
 <th>Mash temp</th>
 <th>OG</th>
 <th>FG</th>
 <th>ADF</th>
+<th>Yeast</th>
+<th>Temp</th>
 <th>Vol</th>
 </tr>
 {{for batches}}
@@ -32,6 +51,8 @@
 	<td>{{if results && results.gravity && results.gravity.og}}{{:results.gravity.og}}{{/if}}</td>
 	<td>{{if results && results.gravity && results.gravity.fg}}{{:results.gravity.fg}}{{/if}}</td>
 	<td>{{if results && results.gravity && results.gravity.adf}}<span class="percent">{{:results.gravity.adf.toFixed(0)}}</span>{{/if}}</td>
+	<td>{{for recipe.yeast}}{{if lab == "Wyeast"}}WY{{/if}}{{:prod_id}}{{/for}}</td>
+	<td></td>
 	<td>{{if results && results.gravity && results.gravity.volume}}{{:~liters2gallons(results.gravity.volume).toFixed(2)}}G{{/if}}</td>
 </tr>
 {{/for}}
@@ -66,7 +87,7 @@ function renderPage() {
 					data.batches[i].results.brewhouse=(sg2gu(data.batches[i].results.gravity.og) * liters2gallons(data.batches[i].results.gravity.volume)) / data.batches[i].recipe.total_ppg * 100;
 
 				if (data.batches[i].results.gravity && data.batches[i].results.gravity.og && data.batches[i].results.gravity.fg)
-					data.batches[i].results.gravity.adf=(sg2gu(data.batches[i].results.gravity.og) - sg2gu(data.batches[i].results.gravity.fg)) / sg2gu(data.batches[i].results.gravity.og);
+					data.batches[i].results.gravity.adf=(sg2gu(data.batches[i].results.gravity.og) - sg2gu(data.batches[i].results.gravity.fg)) / sg2gu(data.batches[i].results.gravity.og) * 100;
 					
 				if (data.batches[i].results.mash && data.batches[i].results.mash.measurements) {
 					// Calculate average mash temp

@@ -1,6 +1,39 @@
 {
-	"recipe":{
-		"url": "https://api.github.com/repos/troyh/homebrew/git/blobs/c302682c7ee3dba6ca1441f53778f67648fe4b65"
-	}
+  "id": "008",
+  "recipe": {
+    "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/c302682c7ee3dba6ca1441f53778f67648fe4b65"
+  },
+  "results": {
+    "gravity": {
+      "fg": "1.015",
+      "volume": 19.87341,
+      "og": "1.056"
+    },
+    "mash": {
+      "type": "",
+      "strike": {
+        "volume":21.65256,
+        "temp": 73.3333
+      },
+      "duration": "60",
+      "measurements": [
+        {
+          "temp": 67.7778,
+          "temp": 67.2222,
+          "temp": 67.2222,
+          "temp": 66.6667
+        }
+      ]
+    },
+    "boil": {
+      "volume": 24.9837,
+      "end_volume": 20.8198,
+      "sg": "1.047",
+      "time": "60"
+    },
+    "sparge": {
+      "duration": ""
+    }
+  }
 }
 

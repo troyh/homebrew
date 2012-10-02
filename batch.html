@@ -193,6 +193,7 @@
 									$('#saveButton').click(function(evt) {
 										var results=updateActualResults();
 										batchData.results=results;
+										batchData.id=batchId;
 										// console.log(batchData);
 										$('#json_data').html(JSON.stringify(batchData));
 									});
@@ -203,7 +204,6 @@
 											tumblr_api_read.posts.sort(function(a,b){
 												return a['unix-timestamp'] - b['unix-timestamp'];
 											})
-											console.log(tumblr_api_read);
 											$('#brewlog').html($('#brewlogTemplate').render(tumblr_api_read));
 										}
 									);
