@@ -1,6 +1,6 @@
 
 {
-	"name":"Fuller's ESB",
+	"name":"Fooler's C3SB",
 	"styles": [{
 			"name":"Extra Special/Strong Bitter (English Pale Ale)",
 			"category":8,
@@ -45,7 +45,7 @@
 		]},
 		"hops":
 	{
-		"total_weight":0.043941758,
+		"total_weight":0.048194187,
 		"mash":[],
 		"first_wort": [],
 	    "boil":[{
@@ -75,18 +75,15 @@
      }],
 		"aroma":[],
 		"dry_hop":[{
-		"amount":0.002834952,
-		"name": "Goldings (Kent)",
-		"alpha": 5,
+		"amount":0.007087381,
+		"name": "Cascade",
+		"alpha": 8,
 		"time":10080,
-		"form":"Pellet"
+		"form":"Leaf"
      }]
 	}
 ,
 		"miscellaneous":[{"amount":0.02834952,
-"name":"Gypsum",
-"time":60}
-,{"amount":0.02834952,
 "name":"Yeast nutrient",
 "time":15}
 ,{"amount":0.02834952,
@@ -97,11 +94,11 @@
 	[
 	{
 		"lab":"Wyeast",
-		"prod_id":"1968",
-		"name": "London ESB Ale",
+		"prod_id":"1318",
+		"name": "London Ale III",
 		"temperature_lo":18,
-		"temperature_hi":22,
-		"attenuation": 69
+		"temperature_hi":23,
+		"attenuation": 73
 	}
 ]
 
