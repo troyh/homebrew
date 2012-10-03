@@ -7,19 +7,19 @@
 			"letter":"C"
 	}
 ],	"type":"All Grain",
-		"batch_size":18.927059,
+		"batch_size":20.819765,
 		"boil_time":90,
-		"total_ppg":480.34040098,
+		"total_ppg":412.792496851337,
 		"efficiency":80,
-		"OG":1.077,
-		"FG":1.015,
-		"ABV":8.05,
+		"OG":1.060,
+		"FG":1.012,
+		"ABV":6.29,
 		"ADF":80,
-		"yeast_starter_slurry":145,
-	"yeast_starter_cells":273,
+		"yeast_starter_slurry":125,
+	"yeast_starter_cells":234,
 	"ingredients":{
-		"fermentables":{"total_weight":6.14,		"list":[{
-			"amount":5.830000,
+		"fermentables":{"total_weight":5.276562,		"list":[{
+			"amount":5.010156,
 			"yield":78.000000,
 			"pct":94.95,
 			"name":"Optic",
@@ -27,7 +27,7 @@
 			"srm":3
 		}
 		,{
-			"amount":0.310000,
+			"amount":0.266406,
 			"yield":61.000000,
 			"pct":5.05,
 			"name":"Crystal 80L",
@@ -37,51 +37,51 @@
 		]},
 		"hops":
 	{
-		"total_weight":0.073,
+		"total_weight":0.062735,
 		"mash":[],
 		"first_wort": [],
 	    "boil":[{
-		"amount":0.019000,
+		"amount":0.016328,
 		"name": "Target",
-		"alpha": 10.7,
+		"alpha": 11,
 		"time":60,
 		"form":"Pellet"
      },{
-		"amount":0.015000,
+		"amount":0.012891,
 		"name": "Challenger",
-		"alpha": 5.3,
+		"alpha": 7.5,
 		"time":3,
 		"form":"Pellet"
      },{
-		"amount":0.003000,
+		"amount":0.002578,
 		"name": "Goldings (Kent)",
-		"alpha": 5.8,
+		"alpha": 4.7,
 		"time":3,
 		"form":"Pellet"
      },{
-		"amount":0.015000,
+		"amount":0.012891,
 		"name": "Northdown",
-		"alpha": 7.2,
+		"alpha": 8.5,
 		"time":3,
 		"form":"Pellet"
      }],
 		"aroma":[],
 		"dry_hop":[{
-		"amount":0.021000,
+		"amount":0.018047,
 		"name": "Goldings (Kent)",
-		"alpha": 5,
+		"alpha": 4.7,
 		"time":10080,
 		"form":"Pellet"
      }]
 	}
 ,
-		"miscellaneous":[{"amount":0.02834952,
+		"miscellaneous":[{"amount":0.024363,
 "name":"Gypsum",
 "time":60}
-,{"amount":0.02834952,
+,{"amount":0.024363,
 "name":"Yeast nutrient",
 "time":15}
-,{"amount":0.02834952,
+,{"amount":0.024363,
 "name":"Irish moss",
 "time":15}
 ],
