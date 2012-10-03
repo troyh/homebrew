@@ -1,6 +1,6 @@
 
 {
-	"name":"Fooler's C3SB",
+	"name":"Fuller's ESB",
 	"styles": [{
 			"name":"Extra Special/Strong Bitter (English Pale Ale)",
 			"category":8,
@@ -8,82 +8,77 @@
 	}
 ],	"type":"All Grain",
 		"batch_size":18.927059,
-		"boil_time":60,
-		"total_ppg":401.665715142427,
-		"efficiency":75,
-		"OG":1.060,
+		"boil_time":90,
+		"total_ppg":480.34040098,
+		"efficiency":80,
+		"OG":1.077,
 		"FG":1.015,
-		"ABV":5.92,
-		"ADF":75,
-		"yeast_starter_slurry":114,
-	"yeast_starter_cells":214,
+		"ABV":8.05,
+		"ADF":80,
+		"yeast_starter_slurry":145,
+	"yeast_starter_cells":273,
 	"ingredients":{
-		"fermentables":{"total_weight":5.187962000000001,		"list":[{
-			"amount":4.535923,
-			"yield":78,
-			"pct":87.43,
+		"fermentables":{"total_weight":6.14,		"list":[{
+			"amount":5.830000,
+			"yield":78.000000,
+			"pct":94.95,
 			"name":"Optic",
 			"type":"Grain",
 			"srm":3
 		}
 		,{
-			"amount":0.4252428,
-			"yield":61,
-			"pct":8.2,
+			"amount":0.310000,
+			"yield":61.000000,
+			"pct":5.05,
 			"name":"Crystal 80L",
 			"type":"Grain",
 			"srm":80
 		}
-		,{
-			"amount":0.2267962,
-			"yield":72,
-			"pct":4.37,
-			"name":"Crystal 60L",
-			"type":"Grain",
-			"srm":60
-		}
 		]},
 		"hops":
 	{
-		"total_weight":0.048194187,
+		"total_weight":0.073,
 		"mash":[],
 		"first_wort": [],
 	    "boil":[{
-		"amount":0.01417476,
-		"name": "Challenger",
-		"alpha": 5.3,
-		"time":60,
-		"form":"Pellet"
-     },{
-		"amount":0.01417476,
+		"amount":0.019000,
 		"name": "Target",
 		"alpha": 10.7,
 		"time":60,
 		"form":"Pellet"
      },{
-		"amount":0.009355343,
-		"name": "Goldings (Kent)",
-		"alpha": 5.8,
-		"time":15,
+		"amount":0.015000,
+		"name": "Challenger",
+		"alpha": 5.3,
+		"time":3,
 		"form":"Pellet"
      },{
-		"amount":0.003401943,
+		"amount":0.003000,
+		"name": "Goldings (Kent)",
+		"alpha": 5.8,
+		"time":3,
+		"form":"Pellet"
+     },{
+		"amount":0.015000,
 		"name": "Northdown",
 		"alpha": 7.2,
-		"time":15,
+		"time":3,
 		"form":"Pellet"
      }],
 		"aroma":[],
 		"dry_hop":[{
-		"amount":0.007087381,
-		"name": "Cascade",
-		"alpha": 8,
+		"amount":0.021000,
+		"name": "Goldings (Kent)",
+		"alpha": 5,
 		"time":10080,
-		"form":"Leaf"
+		"form":"Pellet"
      }]
 	}
 ,
 		"miscellaneous":[{"amount":0.02834952,
+"name":"Gypsum",
+"time":60}
+,{"amount":0.02834952,
 "name":"Yeast nutrient",
 "time":15}
 ,{"amount":0.02834952,
@@ -94,15 +89,15 @@
 	[
 	{
 		"lab":"Wyeast",
-		"prod_id":"1318",
-		"name": "London Ale III",
+		"prod_id":"1968",
+		"name": "London ESB Ale",
 		"temperature_lo":18,
-		"temperature_hi":23,
-		"attenuation": 73
+		"temperature_hi":22,
+		"attenuation": 69
 	}
 ]
 
 	},
-"notes": "http://www.homebrewtalk.com/f12/fullers-esb-clone-229179/\n\nAccording to http://www.byo.com/component/resource/article/2398-fuller-s-the-pride-of-london, ESB is 5.9% ABV, 35 IBUs, an SRM of 15, an OG of 1.060 and an FG of 1.014."
+"notes": "Can You Brew It: http://www.homebrewtalk.com/f12/can-you-brew-recipe-fullers-esb-178991/\n\nhttp://www.homebrewtalk.com/f12/fullers-esb-clone-229179/\n\nAccording to http://www.byo.com/component/resource/article/2398-fuller-s-the-pride-of-london, ESB is 5.9% ABV, 35 IBUs, an SRM of 15, an OG of 1.060 and an FG of 1.014."
 }
 
