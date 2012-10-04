@@ -93,17 +93,50 @@ function calc_og_gu(recipe) {
 function calc_fg_gu(recipe) {
 	return calc_og_gu(recipe) - ((recipe.efficiency / 100) * calc_og_gu(recipe));
 }
-function displayRecipe(url,renderElem,templateElem,callback) {
+function displayRecipe(recipe_info,renderElem,templateElem,callback) {
 	$.views.helpers({
 		format_gravity: function(val) {
 			return val.toFixed(3);
 		}
 	})
 	// TODO: use commit_sha to get the git version of the recipe for this batch
-	$.getJSON(url,
+	$.getJSON(recipe_info.url,
 		null,
 		function(data,textStatus,xhr) {
 			var recipe=$.parseJSON(decode64(data.content));
+			
+			// Scale recipe, if specified
+			var scale_factor=1;
+			if (recipe_info.batch_size) {
+				scale_factor=recipe_info.batch_size / recipe.batch_size;
+			}
+			
+			recipe.batch_size *= scale_factor;
+			
+			// Scale fermentables
+			recipe.ingredients.fermentables.total_weight *= scale_factor;
+			for (var i=0; i < recipe.ingredients.fermentables.list.length; ++i) {
+				recipe.ingredients.fermentables.list[i].amount *= scale_factor;
+			}
+			// Scale hops
+			recipe.ingredients.hops.total_weight *= scale_factor;
+			for (var i=0; i < recipe.ingredients.hops.first_wort.length; ++i) {
+				recipe.ingredients.hops.first_wort[i].amount *= scale_factor;
+			}
+			for (var i=0; i < recipe.ingredients.hops.boil.length; ++i) {
+				recipe.ingredients.hops.boil[i].amount *= scale_factor;
+			}
+			for (var i=0; i < recipe.ingredients.hops.aroma.length; ++i) {
+				recipe.ingredients.hops.aroma[i].amount *= scale_factor;
+			}
+			for (var i=0; i < recipe.ingredients.hops.dry_hop.length; ++i) {
+				recipe.ingredients.hops.dry_hop[i].amount *= scale_factor;
+			}
+			// Scale miscellaneous
+			for (var i=0; i < recipe.ingredients.miscellaneous.length; ++i) {
+				recipe.ingredients.miscellaneous[i].amount *= scale_factor;
+			}
+			
 			recipe.calc_og=calc_og_gu(recipe) / 1000 + 1;
 			recipe.calc_fg=calc_fg_gu(recipe) / 1000 + 1;
 			recipe.total_ppg=total_ppg(recipe);

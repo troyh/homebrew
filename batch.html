@@ -108,7 +108,7 @@
 						$.getJSON("batches/" + batchId + "/batch.json",
 							null,
 							function(batchData,textStatus,xhr) {
-								displayRecipe(batchData.recipe.url,$('#recipe'),$('#recipeTemplate'),function(recipe) {
+								displayRecipe(batchData.recipe,$('#recipe'),$('#recipeTemplate'),function(recipe) {
 									//
 									// Compute the expected data
 									//
