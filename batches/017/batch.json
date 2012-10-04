@@ -1,1 +1,37 @@
-{"recipe":{"url":"https://api.github.com/repos/troyh/homebrew/git/blobs/c93053723172b61a8d61ed30ad0d2c3eee2af6d1"},"results":{"mash":{"type":"","duration":"","strike":{"volume":0,"temp":-17.77777777777778},"measurements":[{"temp":0}]},"sparge":{"duration":"0"},"boil":{"volume":0,"sg":"0","time":"0","end_volume":0},"gravity":{"volume":0,"og":"1.083","fg":""}}}
+{
+  "recipe": {
+    "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/c93053723172b61a8d61ed30ad0d2c3eee2af6d1"
+  },
+  "id": "017",
+  "results": {
+    "sparge": {
+      "duration": "50"
+    },
+    "boil": {
+      "end_volume": 20.8197689384189,
+      "sg": "1.068",
+      "time": "60",
+      "volume": 25.3622639795285
+    },
+    "gravity": {
+      "og": "1.083",
+      "volume": 17.9807095377254,
+      "fg": ""
+    },
+    "mash": {
+      "measurements": [
+        { "temp": 68.8889},
+        { "temp": 67.7778},
+        { "temp": 66.6667},
+        { "temp": 66.1111},
+        { "temp": 63.3333}
+      ],
+      "duration": "60",
+      "strike": {
+        "temp": 75,
+        "volume": 22.7124752055479
+      },
+      "type": ""
+    }
+  }
+}
