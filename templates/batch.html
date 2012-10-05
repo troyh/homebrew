@@ -4,9 +4,9 @@
 	<div>
 		<span class="headerkey">Assumptions:</span>
 		<span class="headerval">
-			{{:assumptions.mashthickness}}qt/lb @
-			<span class="temperature fahrenheit">{{for assumptions.mashtemp tmpl="#temperatureTemplate"/}}</span>, grain @
-			<span class="temperature fahrenheit">{{for assumptions.graintemp tmpl="#temperatureTemplate"/}}</span>
+			<input type="edit" size="3" id="assumption_mashthickness" value="{{:assumptions.mashthickness}}"/>qt/lb @
+			<input type="edit" size="3" id="assumption_mashtemp" value="{{:~celsius2fahrenheit(assumptions.mashtemp)}}" />&deg;F,
+			grain @ <input type="edit" size="3" id="assumption_graintemp" value="{{:~celsius2fahrenheit(assumptions.graintemp)}}" />&deg;F
 		</span>
 		<div style="clear: both;"></div>
 
@@ -20,7 +20,7 @@
 					
 	<div>
 		<span class="headerkey">Strike:</span>
-		<span class="headerval">{{for mashvol tmpl="#volumeTemplate"/}} @ {{for ((0.2 / assumptions.mashthickness) * (assumptions.mashtemp - assumptions.graintemp)) + assumptions.mashtemp tmpl="#temperatureTemplate"/}}
+		<span class="headerval"><span id="expected_strike_vol"></span> @ <span id="expected_strike_temp"></span>
 		</span>
 		<div style="clear: both;"></div>
 	</div>
@@ -36,8 +36,8 @@
 	<div>
 		<span class="headerkey">Sparge:</span>
 		<span class="headerval">
-			{{for sparge_vol tmpl="#volumeTemplate"/}}&#8594;
-			{{for boil_vol ~gravity=lauter_gravity tmpl="#volumeTemplate"/}}
+			<span id="expected_sparge_vol"></span>&#8594;
+			<span id="expected_boil_vol"></span>
 		</span>
 		<div style="clear: both;"></div>
 	</div>

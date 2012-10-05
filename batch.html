@@ -12,6 +12,70 @@
 	        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
 	    );
 	}
+	
+	function updateAssumptions(evt) {
+		return {
+			graintemp:fahrenheitToCelsius(parseFloat($('#assumption_graintemp').val().trim())),
+			mashtemp:fahrenheitToCelsius(parseFloat($('#assumption_mashtemp').val().trim())),
+			mashthickness:parseFloat($('#assumption_mashthickness').val().trim()),
+			mashtun_loss:0.946353,
+			evaporation_rate:.17
+		};
+	}
+	
+	function updateExpectedResultsUI(evt,expected,recipe) {
+		if (evt==null) // Default assumptions:
+			expected.assumptions={
+				graintemp:fahrenheitToCelsius(70),
+				mashtemp:fahrenheitToCelsius(152),
+				mashthickness:1.5,
+				mashtun_loss:0.946353,
+				evaporation_rate:.17
+			}
+		else
+			expected.assumptions=updateAssumptions(evt);
+
+		expected.total_gu=recipe.total_ppg;
+		expected.expected_gu=recipe.total_ppg * recipe.efficiency / 100;
+		/*
+			Mash volume:
+			1.5 quarts (1.41953 liters) per 1 lb (0.453592kg) of grain 
+		*/
+		expected.mashvol=recipe.ingredients.fermentables.total_weight / 0.453592 * gallons2liters(expected.assumptions.mashthickness/4);
+		/*
+			Absorption loss:
+			1.2 gallons of water per 10lbs grain
+		    4.54249L of water per 4.53592kg grain
+		*/
+		expected.absorption_loss_vol=4.54249 * (recipe.ingredients.fermentables.total_weight / 4.53592);
+		/* Hop absorption loss calc: http://www.homebrewtalk.com/f12/leaf-hop-absorption-measured-241469/ 
+			138.3ml (0.1383L) per oz of hops
+		*/
+		expected.hop_absorption_loss_vol=(recipe.ingredients.hops.total_weight * 28.3495) * 0.1383;
+		expected.boil_hours=recipe.boil_time / 60;
+		
+		expected.mashtemp=((0.2 / expected.assumptions.mashthickness) * (expected.assumptions.mashtemp - expected.assumptions.graintemp)) + expected.assumptions.mashtemp;
+		expected.boil_vol= recipe.batch_size / (Math.pow(1 - expected.assumptions.evaporation_rate,expected.boil_hours));
+		expected.evaporation_loss_vol=expected.boil_vol * (1 - Math.pow(1 - expected.assumptions.evaporation_rate,expected.boil_hours)),
+		expected.sparge_vol=expected.boil_vol - (expected.mashvol - expected.absorption_loss_vol - expected.hop_absorption_loss_vol - expected.assumptions.mashtun_loss);
+		expected.lauter_gravity=gu2sg((recipe.total_grain_ppg * recipe.efficiency / 100) / liters2gallons(expected.boil_vol)); 
+		expected.adjunct_gu=recipe.total_adjunct_ppg / liters2gallons(expected.boil_vol);
+
+		if (evt==null) // We have to render the entire template the first time
+			$('#expected').html($('#expectedTemplate').render(expected));
+
+		$('#expected_strike_vol').html($('#volumeTemplate').render(expected.mashvol));
+		$('#expected_strike_temp').html($('#temperatureTemplate').render(((0.2 / expected.assumptions.mashthickness) * (expected.assumptions.mashtemp - expected.assumptions.graintemp)) + expected.assumptions.mashtemp));
+		$('#expected_sparge_vol').html($('#volumeTemplate').render(expected.sparge_vol));
+		$('#expected_boil_vol').html($('#volumeTemplate').render({
+			'#data':expected.boil_vol,
+			gravity:expected.lauter_gravity
+		}));
+		// $('#').html($('#Template').render();
+		// {{for boil_vol ~gravity=lauter_gravity tmpl="#volumeTemplate"/}}
+		
+	}
+	
 	function updateActualResults(evt){
 		// Get values from form
 		return {
@@ -68,9 +132,13 @@
 		else
 			$('#brewhouse_efficiency').html("");
 			
-		// Update ABV
+		/* Update ABV
+		From http://www.brewersfriend.com/2011/06/16/alcohol-by-volume-calculator-updated/:
+		ABV =(76.08 * (og-fg) / (1.775-og)) * (fg / 0.794)
+		*/
 		if (results.gravity.og && results.gravity.fg)
-			$('#actual_abv').html(((sg2gu(results.gravity.og) - sg2gu(results.gravity.fg)) * 131 / 1000).toFixed(2) + "%");
+			$('#actual_abv').html(
+				(76.08 * ((results.gravity.og - results.gravity.fg) / (1.775 - results.gravity.og)) * (results.gravity.fg / 0.794)).toFixed(2) + "%");
 		else
 			$('#actual_abv').html("");
 		
@@ -124,45 +192,9 @@
 										else
 											recipe.total_adjunct_ppg+=recipe.ingredients.fermentables.list[i].yield / 100 * 46 * kg2lbs(recipe.ingredients.fermentables.list[i].amount);
 									}
-									
-									var expected={
-										// Assumptions:
-										assumptions: {
-											graintemp:fahrenheitToCelsius(70),
-											mashtemp:fahrenheitToCelsius(152),
-											mashthickness:1.5,
-											mashtun_loss:0.946353,
-											evaporation_rate:.17
-										},
-										total_gu: recipe.total_ppg,
-										expected_gu: recipe.total_ppg * recipe.efficiency / 100,
-										/*
-											Mash volume:
-											1.5 quarts (1.41953 liters) per 1 lb (0.453592kg) of grain 
-										*/
-										mashvol: recipe.ingredients.fermentables.total_weight / 0.453592 * 1.41953,
-										/*
-											Absorption loss:
-											1.2 gallons of water per 10lbs grain
-										    4.54249L of water per 4.53592kg grain
-										*/
-										absorption_loss_vol: 4.54249 * (recipe.ingredients.fermentables.total_weight / 4.53592),
-										/* Hop absorption loss calc: http://www.homebrewtalk.com/f12/leaf-hop-absorption-measured-241469/ 
-											138.3ml (0.1383L) per oz of hops
-										*/
-										hop_absorption_loss_vol: (recipe.ingredients.hops.total_weight * 28.3495) * 0.1383,
-										boil_hours: recipe.boil_time / 60
-									}
-							
-									expected.boil_vol= recipe.batch_size / (Math.pow(1 - expected.assumptions.evaporation_rate,expected.boil_hours));
-									expected.evaporation_loss_vol=expected.boil_vol * (1 - Math.pow(1 - expected.assumptions.evaporation_rate,expected.boil_hours)),
-									expected.sparge_vol=expected.boil_vol - (expected.mashvol - expected.absorption_loss_vol - expected.hop_absorption_loss_vol - expected.assumptions.mashtun_loss);
-									//expected.sparge_vol=expected.boil_vol - (expected.mashvol - expected.absorption_loss_vol - expected.hop_absorption_loss_vol - expected.assumptions.mashtun_loss);
-									expected.lauter_gravity=gu2sg((recipe.total_grain_ppg * recipe.efficiency / 100) / liters2gallons(expected.boil_vol)); 
-									expected.adjunct_gu=recipe.total_adjunct_ppg / liters2gallons(expected.boil_vol);
 
-									$('#expected').html($('#expectedTemplate').render(expected));
-
+									var expected=new Object;
+									updateExpectedResultsUI(null,expected,recipe);
 									//
 									// Display the actual results data
 									//
@@ -180,6 +212,11 @@
 										else
 											$('#lauter_rate').html("");
 									});
+									
+									$('#assumption_mashthickness').change(function(evt){updateExpectedResultsUI(evt,expected,recipe);})
+									$('#assumption_mashtemp').change(function(evt){updateExpectedResultsUI(evt,expected,recipe);})
+									$('#assumption_graintemp').change(function(evt){updateExpectedResultsUI(evt,expected,recipe);})
+		
 									
 									$('#boil_volume').change(function(evt){updateActualResultsUI(evt,expected);});
 									$('#boil_sg').change(function(evt){updateActualResultsUI(evt,expected);});
