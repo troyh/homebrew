@@ -11,9 +11,19 @@
 	        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
 	    );
 	}
+	function display() {
+		console.log('display()');
+		var obj={
+			'recipe': {
+				'url':'recipes/'+getURLParameter('name')+'.json'
+			}
+		};
+		console.log(obj);
+		displayRecipe(obj,$('#recipe'),$('#recipeTemplate'));
+	}
 	</script>
 </head>
-<body onLoad="displayRecipe(getURLParameter('name'),$('#recipe'),$('#recipeTemplate'))">
+<body onLoad="display()">
 	
 	<div id="recipe" />
 	

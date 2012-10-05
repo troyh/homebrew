@@ -67,10 +67,7 @@
 		$('#expected_strike_vol').html($('#volumeTemplate').render(expected.mashvol));
 		$('#expected_strike_temp').html($('#temperatureTemplate').render(((0.2 / expected.assumptions.mashthickness) * (expected.assumptions.mashtemp - expected.assumptions.graintemp)) + expected.assumptions.mashtemp));
 		$('#expected_sparge_vol').html($('#volumeTemplate').render(expected.sparge_vol));
-		$('#expected_boil_vol').html($('#volumeTemplate').render({
-			'#data':expected.boil_vol,
-			gravity:expected.lauter_gravity
-		}));
+		$('#expected_boil_vol').html($('#volumeTemplate').render(expected.boil_vol,{gravity:expected.lauter_gravity}));
 		// $('#').html($('#Template').render();
 		// {{for boil_vol ~gravity=lauter_gravity tmpl="#volumeTemplate"/}}
 		
