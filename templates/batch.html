@@ -84,9 +84,9 @@ $.views.helpers({
 				<span class="headercode">SV</span>
 			</div>
 			<div class="headerval">
-			<input type="text" id="mash_strike_volume" name="mash.strike.volume" 
+			<input size="3" type="text" id="mash_strike_volume" name="mash.strike.volume" 
 				value="{{if results && results.mash && results.mash.strike}}{{:~liters2gallons(results.mash.strike.volume).toFixed(2)}}{{/if}}" /> @
-			<input type="text" id="mash_strike_temp" name="mash.strike.temp" 
+			<input size="3" type="text" id="mash_strike_temp" name="mash.strike.temp" 
 				value="{{if results && results.mash && results.mash.strike && results.mash.strike.temp}}{{:~celsius2fahrenheit(results.mash.strike.temp).toFixed(0)}}{{/if}}" />
 			</div>
 			<div style="clear: both;"></div>
@@ -94,14 +94,26 @@ $.views.helpers({
 		<div>
 			<div class="headerkey">Mash:</div>
 			<div class="headerval">
-				<input type="text" id="mash_duration" name="mash.duration" 
+				<input size="3" type="text" id="mash_duration" name="mash.duration" 
 					value="{{if results && results.mash && results.mash.duration}}{{:results.mash.duration}}{{/if}}" /> mins
 				{{if results && results.mash && results.mash.measurements}}
-					{{for results.mash.measurements}}
-						<div><input type="text" name="mash_temp[]" value="{{:~celsius2fahrenheit(temp).toFixed(1)}}" /></div>
-					{{/for}}
+					<div id="mash_temp_measurements">
+						{{for results.mash.measurements}}
+							<div>
+								<input size="3" type="text" value="{{:~celsius2fahrenheit(temp).toFixed(1)}}" />
+								<button size="3" onclick="delMashTemp(this)">-</button>
+								{{if #index+1 == #parent.data.length}}<button onclick="addMashTemp(this)">+</button>{{/if}}
+							</div>
+						{{/for}}
+					</div>
 				{{else}}
-					<div><input type="text" name="mash_temp[]" value="" /></div>
+					<div id="mash_temp_measurements">
+						<div>
+							<input size="3" type="text" value="" />
+							<button size="3" onclick="delMashTemp(this)">-</button>
+							<button onclick="addMashTemp(this)">+</button>
+						</div>
+					</div>
 				{{/if}}
 			</div>
 			<div style="clear: both;"></div>
@@ -111,7 +123,7 @@ $.views.helpers({
 				<span class="headercode">LT</span>
 			</div>
 			<div class="headerval">
-			<input type="text" id="lauter_time" name="sparge.duration" value="{{if results && results.sparge}}{{:results.sparge.duration}}{{/if}}" /> mins
+			<input size="3" type="text" id="lauter_time" name="sparge.duration" value="{{if results && results.sparge}}{{:results.sparge.duration}}{{/if}}" /> mins
 				(<span id="lauter_rate"></span> min/G)
 			</div>
 			<div style="clear: both;"></div>
@@ -124,10 +136,10 @@ $.views.helpers({
 				<div class="headercode">EV</div>
 			</div>
 			<div class="headerval">
-			<input type="text" id="boil_volume" name="boil.volume" value="{{if results && results.boil}}{{:~liters2gallons(results.boil.volume).toFixed(2)}}{{/if}}" />G @
-			<input type="text" id="boil_sg" name="boil.sg" value="{{if results && results.boil}}{{:results.boil.sg}}{{/if}}" /> for
-			<input type="text" id="boil_time" name="boil.time" value="{{if results && results.boil}}{{:results.boil.time}}{{/if}}" /> mins &#8594; 
-			<input type="text" id="boil_end_volume" name="boil.end_volume" value="{{if results && results.boil}}{{:~liters2gallons(results.boil.end_volume).toFixed(2)}}{{/if}}" />
+			<input size="3" type="text" id="boil_volume" name="boil.volume" value="{{if results && results.boil}}{{:~liters2gallons(results.boil.volume).toFixed(2)}}{{/if}}" />G @
+			<input size="3" type="text" id="boil_sg" name="boil.sg" value="{{if results && results.boil}}{{:results.boil.sg}}{{/if}}" /> for
+			<input size="3" type="text" id="boil_time" name="boil.time" value="{{if results && results.boil}}{{:results.boil.time}}{{/if}}" /> mins &#8594; 
+			<input size="3" type="text" id="boil_end_volume" name="boil.end_volume" value="{{if results && results.boil}}{{:~liters2gallons(results.boil.end_volume).toFixed(2)}}{{/if}}" />
 			</div> @
 			<div id="boil_end_gravity"></div>
 			<div style="clear: both;"></div>
@@ -144,7 +156,7 @@ $.views.helpers({
 				<span class="headercode">FV</span>
 			</span>
 			<span class="headerval">
-				<input type="text" id="final_volume" name="results.gravity.volume" value="{{if results && results.gravity}}{{:~liters2gallons(results.gravity.volume).toFixed(2)}}{{/if}}" />
+				<input size="3" type="text" id="final_volume" name="results.gravity.volume" value="{{if results && results.gravity}}{{:~liters2gallons(results.gravity.volume).toFixed(2)}}{{/if}}" />
 			</span>
 			<div style="clear: both;"></div>
 		</div>
@@ -153,7 +165,7 @@ $.views.helpers({
 				<span class="headercode">OG</span>
 			</span>
 			<span class="headerval">
-				<input type="text" id="actual_og" name="results.gravity.og" value="{{if results && results.gravity}}{{:results.gravity.og}}{{/if}}" />
+				<input size="3" type="text" id="actual_og" name="results.gravity.og" value="{{if results && results.gravity}}{{:results.gravity.og}}{{/if}}" />
 			</span>
 			<div style="clear: both;"></div>
 		</div>
@@ -162,7 +174,7 @@ $.views.helpers({
 				<span class="headercode">FG</span>
 			</span>
 			<span class="headerval">
-				<input type="text" id="actual_fg" name="results.gravity.fg" value="{{if results && results.gravity}}{{:results.gravity.fg}}{{/if}}" />
+				<input size="3" type="text" id="actual_fg" name="results.gravity.fg" value="{{if results && results.gravity}}{{:results.gravity.fg}}{{/if}}" />
 			</span>
 			<div style="clear: both;"></div>
 		</div>

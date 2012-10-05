@@ -13,6 +13,18 @@
 	    );
 	}
 	
+	function addMashTemp(elem) {
+		var newElem=$(elem).parent().clone(true);
+		$(newElem).children('input').val(""); // Clear it's value
+		$(elem).parent().after(newElem);
+		$(elem).remove(); // Remove the + button
+	}
+	
+	function delMashTemp(elem) {
+		// Delete the idx-th input element under #mash_temp_measurements
+		$($(elem).parent()).remove();
+	}
+	
 	function updateAssumptions(evt) {
 		return {
 			graintemp:fahrenheitToCelsius(parseFloat($('#assumption_graintemp').val().trim())),
@@ -73,6 +85,17 @@
 		
 	}
 	
+	function get_mash_temp_measurements() {
+		// return [{
+		// 	"temp": 42
+		// }]
+		var vals=new Array;
+		$('#mash_temp_measurements :text').each(function(i) {
+			vals.push({"temp":fahrenheitToCelsius(parseFloat($(this).val()))})
+		});
+		return vals;
+	}
+	
 	function updateActualResults(evt){
 		// Get values from form
 		return {
@@ -83,9 +106,7 @@
 					"volume":gallons2liters($('#mash_strike_volume').val().trim()),
 					"temp":fahrenheitToCelsius($('#mash_strike_temp').val().trim())
 				},
-				"measurements": [
-					{"temp": 0}
-				]
+				"measurements": get_mash_temp_measurements()
 			},
 			"sparge": {
 				"duration": $('#lauter_time').val().trim()
