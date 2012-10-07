@@ -1,0 +1,84 @@
+
+{
+	"name":"Strict Observance Tripel",
+	"styles": [{
+			"name":"Belgian Tripel",
+			"category":18,
+			"letter":"C"
+	}
+],	"type":"All Grain",
+		"batch_size":20.819765,
+		"boil_time":90,
+		"total_ppg":600.529271586091,
+		"efficiency":80,
+		"OG":1.087,
+		"FG":1.017,
+		"ABV":9.15,
+		"ADF":80,
+		"yeast_starter_slurry":182,
+	"yeast_starter_cells":341,
+	"ingredients":{
+		"fermentables":{"total_weight":6.463691,		"list":[{
+			"amount":1.133981,
+			"yield":89.000000,
+			"pct":14.93,
+			"name":"Sugar - Cane",
+			"type":"Sugar",
+			"srm":0
+		}
+		,{
+			"amount":6.350293,
+			"yield":76.000000,
+			"pct":83.58,
+			"name":"Pilsen",
+			"type":"Grain",
+			"srm":1
+		}
+		,{
+			"amount":0.113398,
+			"yield":76.000000,
+			"pct":1.49,
+			"name":"Aromatic",
+			"type":"Grain",
+			"srm":26
+		}
+		]},
+		"hops":
+	{
+		"total_weight":0.079,
+		"mash":[],
+		"first_wort": [],
+	    "boil":[{
+		"amount":0.014000,
+		"name": "Saaz",
+		"alpha": 4,
+		"time":600,
+		"form":"Pellet"
+     },{
+		"amount":0.065000,
+		"name": "Tettnanger",
+		"alpha": 4,
+		"time":60,
+		"form":"Pellet"
+     }],
+		"aroma":[],
+		"dry_hop":[]
+	}
+,
+		"miscellaneous":[],
+		"yeast":
+	[
+	{
+		"lab":"White Labs",
+		"prod_id":"WLP530",
+		"name": "Abbey Ale",
+		"temperature_lo":19,
+		"temperature_hi":22,
+		"attenuation": 78
+	}
+]
+
+	},
+"notes": "From \"Brewing Classic Styles\""
+}
+

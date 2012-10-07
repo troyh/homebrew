@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RECIPES>
+<RECIPE>
+<VERSION>1</VERSION>
+<NAME>Strict Observance Tripel</NAME>
+<TYPE>All Grain</TYPE>
+<BREWER>BrewPal</BREWER>
+<BATCH_SIZE>20.819765</BATCH_SIZE>
+<BOIL_SIZE>27.316477</BOIL_SIZE>
+<BOIL_TIME>90</BOIL_TIME>
+<EFFICIENCY>80</EFFICIENCY>
+<OG>0.000000</OG>
+<FG>0.000000</FG>
+<FERMENTATION_STAGES>1</FERMENTATION_STAGES>
+<PRIMARY_AGE>14</PRIMARY_AGE>
+<PRIMARY_TEMP>21.000000</PRIMARY_TEMP>
+<SECONDARY_AGE>0</SECONDARY_AGE>
+<SECONDARY_TEMP>21.000000</SECONDARY_TEMP>
+<CARBONATION>-1.000000</CARBONATION>
+<FORCED_CARBONATION>0</FORCED_CARBONATION>
+<CARBONATION_TEMP>0.000000</CARBONATION_TEMP>
+<PRIMING_SUGAR_NAME>(null)</PRIMING_SUGAR_NAME>
+<PRIMING_SUGAR_EQUIV>0.000000</PRIMING_SUGAR_EQUIV>
+<NOTES>From "Brewing Classic Styles"</NOTES>
+<FERMENTABLES>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Sugar</TYPE>
+    <AMOUNT>1.133981</AMOUNT>
+    <YIELD>89.000000</YIELD>
+    <COLOR>0.000000</COLOR>
+    <NAME>Sugar - Cane</NAME>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Grain</TYPE>
+    <AMOUNT>6.350293</AMOUNT>
+    <YIELD>76.000000</YIELD>
+    <COLOR>1.000000</COLOR>
+    <NAME>Pilsen</NAME>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Grain</TYPE>
+    <AMOUNT>0.113398</AMOUNT>
+    <YIELD>76.000000</YIELD>
+    <COLOR>26.000000</COLOR>
+    <NAME>Aromatic</NAME>
+  </FERMENTABLE>
+</FERMENTABLES>
+<HOPS>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>600.000000</TIME>
+    <FORM>Pellet</FORM>
+    <ALPHA>4.000000</ALPHA>
+    <SUBSTITUTES>Sladek, Lublin, Sterling, Ultra, Vangaurd</SUBSTITUTES>
+    <NAME>Saaz</NAME>
+    <AMOUNT>0.014000</AMOUNT>
+    <USE>Boil</USE>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>60.000000</TIME>
+    <FORM>Pellet</FORM>
+    <ALPHA>4.000000</ALPHA>
+    <SUBSTITUTES>Hallertau, Liberty, Fuggle</SUBSTITUTES>
+    <NAME>Tettnanger</NAME>
+    <AMOUNT>0.065000</AMOUNT>
+    <USE>Boil</USE>
+  </HOP>
+</HOPS>
+<YEASTS>
+  <YEAST>
+    <VERSION>1</VERSION>
+    <AMOUNT>0.040000</AMOUNT>
+    <LABORATORY>White Labs</LABORATORY>
+    <FORM>Liquid</FORM>
+    <MIN_TEMPERATURE>19</MIN_TEMPERATURE>
+    <PRODUCT_ID>WLP530</PRODUCT_ID>
+    <NAME>Abbey Ale</NAME>
+    <AMOUNT_IS_WEIGHT>FALSE</AMOUNT_IS_WEIGHT>
+    <TYPE>Ale</TYPE>
+    <MAX_TEMPERATURE>22</MAX_TEMPERATURE>
+    <ATTENUATION>78</ATTENUATION>
+  </YEAST>
+</YEASTS>
+<MISCS>
+</MISCS>
+<MASH>
+<VERSION>1</VERSION>
+<NAME>Batch/Fly</NAME>
+<GRAIN_TEMP>0.000000</GRAIN_TEMP>
+<MASH_THICKNESS>3.129527</MASH_THICKNESS>
+<SPARGE_TEMP>76.666664</SPARGE_TEMP>
+<MASH_STEPS>
+  <MASH_STEP>
+    <VERSION>1</VERSION>
+    <INFUSE_AMOUNT>11.35624</INFUSE_AMOUNT>
+    <NAME>Strike</NAME>
+    <STEP_TIME>60</STEP_TIME>
+    <STEP_TEMP>65</STEP_TEMP>
+    <TYPE>Infusion</TYPE>
+  </MASH_STEP>
+</MASH_STEPS>
+</MASH>
+<WATERS>
+</WATERS>
+<EQUIPMENT>
+    <VERSION>1</VERSION>
+    <BOIL_SIZE>27.31648</BOIL_SIZE>
+    <BOIL_TIME>90</BOIL_TIME>
+    <BATCH_SIZE>20.81977</BATCH_SIZE>
+    <TOP_UP_KETTLE>1.907349e-06</TOP_UP_KETTLE>
+    <TOP_UP_WATER>0</TOP_UP_WATER>
+    <EVAP_RATE>17</EVAP_RATE>
+    <TRUB_CHILLER_LOSS>0.946353</TRUB_CHILLER_LOSS>
+</EQUIPMENT>
+<STYLES>
+  <STYLE>
+    <VERSION>1</VERSION>
+    <COLOR_MIN>4.5</COLOR_MIN>
+    <COLOR_MAX>7.0</COLOR_MAX>
+    <STYLE_LETTER>C</STYLE_LETTER>
+    <ABV_MIN>7.5</ABV_MIN>
+    <NAME>Belgian Tripel</NAME>
+    <IS_SELECTED>0.000000</IS_SELECTED>
+    <TYPE>beer</TYPE>
+    <FG_MIN>1.008</FG_MIN>
+    <OG_MIN>1.075</OG_MIN>
+    <IBU_MAX>40</IBU_MAX>
+    <EXAMPLES>Westmalle Tripel, La Rulles Tripel, St. Bernardus Tripel, Chimay Cinq Cents (White), Watou Tripel, Val-Dieu Triple, Affligem Tripel, Grimbergen Tripel, La Trappe Tripel, Witkap Pater Tripel, Corsendonk Abbey Pale Ale, St. Feuillien Tripel, Bink Tripel, Tripel Karmeliet, New Belgium Trippel, Unibroue La Fin du Monde, Dragonmead Final Absolution, Allagash Tripel Reserve, Victory Golden Monkey</EXAMPLES>
+    <MATCH_QUALITY>Poor match</MATCH_QUALITY>
+    <STYLE_GUIDE>BJCP</STYLE_GUIDE>
+    <INGREDIENTS>The light color and relatively light body for a beer of this strength are the result of using Pilsner malt and up to 20% white sugar.  Noble hops or Styrian Goldings are commonly used.  Belgian yeast strains are used – those that produce fruity esters, spicy phenolics and higher alcohols  often aided by slightly warmer fermentation temperatures.  Spice additions are generally not traditional, and if used, should not be recognizable as such.  Fairly soft water.</INGREDIENTS>
+    <FG_MAX>1.014</FG_MAX>
+    <ABV_MAX>9.5</ABV_MAX>
+    <OG_MAX>1.085</OG_MAX>
+    <PROFILE>Aroma:
+Complex with moderate to significant spiciness, moderate fruity esters and low alcohol and hop aromas.  Generous spicy, peppery, sometimes clove-like phenols.  Esters are often reminiscent of citrus fruits such as oranges, but may sometimes have a slight banana character.  A low yet distinctive spicy, floral, sometimes perfumy hop character is usually found.  Alcohols are soft, spicy and low in intensity.  No hot alcohol or solventy aromas.  The malt character is light.  No diacetyl.
+Appearance:
+Deep yellow to deep gold in color.  Good clarity.  Effervescent.  Long-lasting, creamy, rocky, white head resulting in characteristic "Belgian lace" on the glass as it fades.
+Flavor:
+Marriage of spicy, fruity and alcohol flavors supported by a soft malt character.  Low to moderate phenols are peppery in character.  Esters are reminiscent of citrus fruit such as orange or sometimes lemon.  A low to moderate spicy hop character is usually found.  Alcohols are soft, spicy, often a bit sweet and low in intensity.  Bitterness is typically medium to high from a combination of hop bitterness and yeast-produced phenolics.  Substantial carbonation and bitterness lends a dry finish with a moderately bitter aftertaste.  No diacetyl.
+Mouthfeel:
+Medium-light to medium body, although lighter than the substantial gravity would suggest (thanks to sugar and high carbonation).  High alcohol content adds a pleasant creaminess but little to no obvious warming sensation.  No hot alcohol or solventy character.  Always effervescent.  Never astringent.
+Impression:
+Strongly resembles a Strong Golden Ale but slightly darker and somewhat fuller-bodied.  Usually has a more rounded malt flavor but should not be sweet.</PROFILE>
+    <CARB_MIN>1.9</CARB_MIN>
+    <CATEGORY>Belgian Strong Ale</CATEGORY>
+    <IBU_MIN>20</IBU_MIN>
+    <CARB_MAX>2.4</CARB_MAX>
+    <CATEGORY_NUMBER>18</CATEGORY_NUMBER>
+    <NOTES>History:
+Originally popularized by the Trappist monastery at Westmalle.
+Comments:
+High in alcohol but does not taste strongly of alcohol.  The best examples are sneaky, not obvious.  High carbonation and attenuation helps to bring out the many flavors and to increase the perception of a dry finish.  Most Trappist versions have at least 30 IBUs and are very dry. Traditionally bottle-conditioned ("refermented in the bottle").</NOTES>
+  </STYLE>
+</STYLES>
+</RECIPE>
+</RECIPES>
