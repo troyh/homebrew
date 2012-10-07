@@ -80,9 +80,15 @@ function renderPage() {
 		for (var i=0; i < data.batches.length; ++i) {
 			// Calculate efficiencies and attenuations
 			if (data.batches[i].results) {
+				
+				// Scale it
+				var scale_factor=1;
+				if (data.batches[i].recipe.batch_size)
+					scale_factor=data.batches[i].recipe.orig_batch_size / data.batches[i].recipe.batch_size;
+				
 				data.batches[i].results.efficiency=new Object;
 				if (data.batches[i].results.boil.sg && data.batches[i].results.boil.volume)
-					data.batches[i].results.efficiency.mash=(sg2gu(data.batches[i].results.boil.sg) * liters2gallons(data.batches[i].results.boil.volume)) / data.batches[i].recipe.total_ppg * 100;
+					data.batches[i].results.efficiency.mash=(sg2gu(data.batches[i].results.boil.sg) * liters2gallons(data.batches[i].results.boil.volume)) / (data.batches[i].recipe.total_ppg / scale_factor) * 100;
 				if (data.batches[i].results.gravity.og && data.batches[i].results.gravity.volume)
 					data.batches[i].results.brewhouse=(sg2gu(data.batches[i].results.gravity.og) * liters2gallons(data.batches[i].results.gravity.volume)) / data.batches[i].recipe.total_ppg * 100;
 
