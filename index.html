@@ -58,9 +58,15 @@ find  batches -type f -name batch.json | while read B; do cat $B | php  -r '$bat
 {{/for}}
 <th></th>
 <th>Average</th>
+<th>{{:averages.efficiency.mash.toFixed(0)}}%</th>
+<th>{{:averages.efficiency.brewhouse.toFixed(0)}}%</th>
 <th></th>
 <th></th>
 <th></th>
+<th>{{:averages.adf.toFixed(0)}}%</th>
+<th></th>
+<th></th>
+<th>{{:(~liters2gallons(totals.vol) / 31).toFixed(0)}}bbl</th>
 </tr>
 </table>
 </script>
@@ -77,23 +83,49 @@ function renderPage() {
 	})
 	
 	$.getJSON("batches/index.json",null,function(data,textStatus,xhr){
+
+		data.totals={
+			efficiency: {
+				mash: 0,
+				mash_count: 0,
+				brewhouse: 0,
+				brewhouse_count: 0
+			},
+			adf: 0,
+			adf_count: 0,
+			vol: 0,
+			vol_count: 0
+		}
+		
 		for (var i=0; i < data.batches.length; ++i) {
 			// Calculate efficiencies and attenuations
 			if (data.batches[i].results) {
-				
 				// Scale it
 				var scale_factor=1;
 				if (data.batches[i].recipe.batch_size)
 					scale_factor=data.batches[i].recipe.orig_batch_size / data.batches[i].recipe.batch_size;
 				
 				data.batches[i].results.efficiency=new Object;
-				if (data.batches[i].results.boil.sg && data.batches[i].results.boil.volume)
+				if (data.batches[i].results.boil.sg && data.batches[i].results.boil.volume) {
 					data.batches[i].results.efficiency.mash=(sg2gu(data.batches[i].results.boil.sg) * liters2gallons(data.batches[i].results.boil.volume)) / (data.batches[i].recipe.total_ppg / scale_factor) * 100;
-				if (data.batches[i].results.gravity.og && data.batches[i].results.gravity.volume)
-					data.batches[i].results.brewhouse=(sg2gu(data.batches[i].results.gravity.og) * liters2gallons(data.batches[i].results.gravity.volume)) / data.batches[i].recipe.total_ppg * 100;
+					data.totals.efficiency.mash+=data.batches[i].results.efficiency.mash;
+					data.totals.efficiency.mash_count++;
+				}
+				if (data.batches[i].results.gravity.og && data.batches[i].results.gravity.volume) {
+					data.batches[i].results.efficiency.brewhouse=(sg2gu(data.batches[i].results.gravity.og) * liters2gallons(data.batches[i].results.gravity.volume)) / (data.batches[i].recipe.total_ppg / scale_factor) * 100;
+					data.totals.efficiency.brewhouse+=data.batches[i].results.efficiency.brewhouse;
+					data.totals.efficiency.brewhouse_count++;
+				}
 
-				if (data.batches[i].results.gravity && data.batches[i].results.gravity.og && data.batches[i].results.gravity.fg)
+				if (data.batches[i].results.gravity && data.batches[i].results.gravity.og && data.batches[i].results.gravity.fg) {
 					data.batches[i].results.gravity.adf=(sg2gu(data.batches[i].results.gravity.og) - sg2gu(data.batches[i].results.gravity.fg)) / sg2gu(data.batches[i].results.gravity.og) * 100;
+					data.totals.adf+=data.batches[i].results.gravity.adf;
+					data.totals.adf_count++;
+				}
+				if (data.batches[i].results.gravity.volume) {
+					data.totals.vol+=data.batches[i].results.gravity.volume;
+					data.totals.vol_count++;
+				}
 					
 				if (data.batches[i].results.mash && data.batches[i].results.mash.measurements) {
 					// Calculate average mash temp
@@ -103,10 +135,19 @@ function renderPage() {
 					}
 					data.batches[i].results.mash.avg_temp=total / data.batches[i].results.mash.measurements.length;
 				}
-			}
-			
-		}
 
+			}
+		}
+		// Calculate averages
+		data.averages={
+			efficiency: {
+				mash: data.totals.efficiency.mash / data.totals.efficiency.mash_count,
+				brewhouse: data.totals.efficiency.brewhouse / data.totals.efficiency.brewhouse_count
+			},
+			adf: data.totals.adf / data.totals.adf_count,
+			vol: data.totals.vol / data.totals.vol_count
+		}
+		console.log(data);
 		$('#batches').html($('#batchIndexTemplate').render(data));
 	})
 }
