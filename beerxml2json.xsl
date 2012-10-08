@@ -42,6 +42,8 @@ xmlns:exslt="http://exslt.org/common">
 	</xsl:text>
 	<xsl:text>&#09;"batch_size":</xsl:text><xsl:value-of select="BATCH_SIZE"/><xsl:text>,
 	</xsl:text>
+	<xsl:text>&#09;"boil_time":</xsl:text><xsl:value-of select="format-number(BOIL_TIME,&quot;#&quot;)"/><xsl:text>,
+	</xsl:text>
 	<xsl:text>&#09;"total_ppg":</xsl:text><xsl:value-of select="$totppg"/><xsl:text>,
 	</xsl:text>
 	<xsl:text>&#09;"efficiency":</xsl:text><xsl:value-of select="EFFICIENCY"/><xsl:text>,
@@ -85,7 +87,7 @@ xmlns:exslt="http://exslt.org/common">
 
 
 <xsl:template match="FERMENTABLES">
-	<xsl:text>{"total_weight":</xsl:text><xsl:value-of select="sum(FERMENTABLE/AMOUNT)"/><xsl:text>,</xsl:text>
+	<xsl:text>{"total_weight":</xsl:text><xsl:value-of select="sum(FERMENTABLE[TYPE=&quot;Grain&quot;]/AMOUNT)"/><xsl:text>,</xsl:text>
 	<xsl:text>&#09;&#09;"list":[</xsl:text>
 		<xsl:for-each select="FERMENTABLE">
 			<xsl:apply-templates select="."/>
@@ -101,6 +103,7 @@ xmlns:exslt="http://exslt.org/common">
 			"yield":</xsl:text><xsl:value-of select="YIELD"/><xsl:text>,
 			"pct":</xsl:text><xsl:value-of select="format-number(AMOUNT div sum(../FERMENTABLE/AMOUNT) * 100,&quot;#.##&quot;)"/>,<xsl:text>
 			"name":"</xsl:text><xsl:value-of select="NAME"/><xsl:text>",
+			"type":"</xsl:text><xsl:value-of select="TYPE"/><xsl:text>",
 			"srm":</xsl:text><xsl:value-of select="format-number(COLOR,&quot;#&quot;)"/><xsl:text>
 		}
 		</xsl:text>
@@ -133,7 +136,7 @@ xmlns:exslt="http://exslt.org/common">
 		"name": "</xsl:text><xsl:value-of select="NAME"/><xsl:text>",
 		"alpha": </xsl:text><xsl:value-of select="format-number(ALPHA,&quot;#.##&quot;)"/><xsl:text>,
 </xsl:text>
-		<xsl:if test="USE = 'Boil'">
+		<xsl:if test="USE = 'Boil' or USE = 'Dry Hop'">
 			<xsl:text>&#09;&#09;"time":</xsl:text><xsl:value-of select="format-number(TIME,&quot;#&quot;)"/><xsl:text>,
 </xsl:text>
 		</xsl:if>
