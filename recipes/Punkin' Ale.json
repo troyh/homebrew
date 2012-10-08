@@ -1,0 +1,122 @@
+{
+  "ABV": 6.55,
+  "boil_time": 60,
+  "total_ppg": 466.899396517242,
+  "batch_size": 19.873411,
+  "FG": 1.017,
+  "ingredients": {
+    "yeast": [
+      {
+        "prod_id": "1056",
+        "temperature_lo": 16,
+        "lab": "Wyeast",
+        "attenuation": 75,
+        "temperature_hi": 22,
+        "name": "American Ale"
+      }
+    ],
+    "miscellaneous": [
+      {
+        "time": 15,
+        "name": "Irish moss",
+        "amount": 0.01
+      },
+      {
+        "time": 10,
+        "name": "Pumpkin Pie spice",
+        "amount": 0.015
+      }
+    ],
+    "hops": {
+      "dry_hop": [
+
+      ],
+      "boil": [
+        {
+          "form": "Pellet",
+          "time": 60,
+          "alpha": 5,
+          "name": "Hallertauer",
+          "amount": 0.02834952
+        },
+        {
+          "form": "Pellet",
+          "time": 5,
+          "alpha": 5,
+          "name": "Hallertauer",
+          "amount": 0.02834952
+        }
+      ],
+      "mash": [
+
+      ],
+      "total_weight": 0.05669904,
+      "aroma": [
+
+      ],
+      "first_wort": [
+
+      ]
+    },
+    "fermentables": {
+      "total_weight": 5.4431078,
+      "list": [
+        {
+          "pct": 60.15,
+          "yield": 78,
+          "srm": 2,
+          "type": "Grain",
+          "name": "2 Row Base",
+          "amount": 4.535923
+        },
+        {
+          "pct": 6.02,
+          "yield": 72,
+          "srm": 60,
+          "type": "Grain",
+          "name": "Crystal 60L",
+          "amount": 0.4535924
+        },
+        {
+          "pct": 6.02,
+          "yield": 74,
+          "srm": 25,
+          "type": "Grain",
+          "name": "Victory",
+          "amount": 0.4535924
+        },
+        {
+          "pct": 21.8,
+          "yield": 0,
+          "srm": 0,
+          "type": "Adjunct",
+          "name": "Pumpkin puree",
+          "amount": 1.644272
+        },
+        {
+          "pct": 6.02,
+          "yield": 89,
+          "srm": 40,
+          "type": "Sugar",
+          "name": "Sugar - Brown",
+          "amount": 0.4535924
+        }
+      ]
+    }
+  },
+  "yeast_starter_cells": 249,
+  "yeast_starter_slurry": 133,
+  "ADF": 75,
+  "notes": "From Reno_eNVy on homebrewtalk.com",
+  "type": "All Grain",
+  "styles": [
+    {
+      "category": 21,
+      "letter": "A",
+      "name": "Spice, Herb, or Vegetable Beer"
+    }
+  ],
+  "name": "Punkin' Ale",
+  "efficiency": 75,
+  "OG": 1.067
+}

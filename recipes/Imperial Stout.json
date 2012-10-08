@@ -1,0 +1,156 @@
+{
+  "type": "All Grain",
+  "name": "Imperial Stout",
+  "total_ppg": 943.014740976,
+  "ingredients": {
+    "fermentables": {
+      "total_weight": 9.2988,
+      "list": [
+        {
+          "name": "Biscuit Malt",
+          "srm": 23,
+          "pct": 4.88,
+          "amount": 0.4536,
+          "yield": 100
+        },
+        {
+          "name": "Black (Patent) Malt",
+          "srm": 500,
+          "pct": 3.66,
+          "amount": 0.3402,
+          "yield": 100
+        },
+        {
+          "name": "Cara-Pils/Dextrine",
+          "srm": 2,
+          "pct": 29.27,
+          "amount": 2.7216,
+          "yield": 100
+        },
+        {
+          "name": "Caramel/Crystal Malt - 60L",
+          "srm": 60,
+          "pct": 4.88,
+          "amount": 0.4536,
+          "yield": 100
+        },
+        {
+          "name": "Chocolate Malt",
+          "srm": 350,
+          "pct": 3.66,
+          "amount": 0.3402,
+          "yield": 100
+        },
+        {
+          "name": "Pale Malt (2 Row) Bel",
+          "srm": 3,
+          "pct": 26.83,
+          "amount": 2.4948,
+          "yield": 100
+        },
+        {
+          "name": "Roasted Barley",
+          "srm": 300,
+          "pct": 2.44,
+          "amount": 0.2268,
+          "yield": 100
+        },
+        {
+          "name": "Special B Malt",
+          "srm": 180,
+          "pct": 9.76,
+          "amount": 0.9072,
+          "yield": 100
+        },
+        {
+          "name": "Wheat Malt, Bel",
+          "srm": 2,
+          "pct": 4.88,
+          "amount": 0.4536,
+          "yield": 100
+        },
+        {
+          "name": "Brown Sugar, Dark",
+          "srm": 50,
+          "pct": 9.76,
+          "amount": 0.9072,
+          "yield": 100
+        }
+      ]
+    },
+    "yeast": [
+      {
+        "name": "American Ale",
+        "lab": "Wyeast Labs",
+        "temperature_lo": 60,
+        "temperature_hi": 72,
+        "attenuation": 75,
+        "prod_id": "1056"
+      }
+    ],
+    "hops": {
+      "total_weight": 0.1415,
+      "aroma": [
+
+      ],
+      "boil": [
+        {
+          "name": "Fuggles",
+          "form": "Pellet",
+          "amount": 0.0283,
+          "alpha": 4.5,
+          "time": 60
+        },
+        {
+          "name": "Goldings, East Kent",
+          "form": "Pellet",
+          "amount": 0.0283,
+          "alpha": 5,
+          "time": 60
+        },
+        {
+          "name": "Bullion",
+          "form": "Pellet",
+          "amount": 0.0283,
+          "alpha": 8,
+          "time": 60
+        },
+        {
+          "name": "Cascade",
+          "form": "Pellet",
+          "amount": 0.0283,
+          "alpha": 5.5,
+          "time": 60
+        },
+        {
+          "name": "Mt. Hood",
+          "form": "Pellet",
+          "amount": 0.0283,
+          "alpha": 6,
+          "time": 60
+        }
+      ],
+      "first_wort": [
+
+      ],
+      "dry_hop": [
+
+      ],
+      "mash": [
+
+      ]
+    },
+    "miscellaneous": [
+
+    ]
+  },
+  "yeast_starter_slurry": 250,
+  "efficiency": 70,
+  "batch_size": 18.9271,
+  "OG": 1.132,
+  "ABV": 12.11,
+  "FG": 1.04,
+  "notes": "",
+  "yeast_starter_cells": 469,
+  "ADF": 70
+}

@@ -1,0 +1,135 @@
+{
+  "OG": 1.082,
+  "efficiency": 70,
+  "total_ppg": 586.499026916,
+  "yeast_starter_cells": 291,
+  "ABV": 7.53,
+  "FG": 1.025,
+  "yeast_starter_slurry": 155,
+  "notes": "See full Northern Brewer recipe instructions.",
+  "ingredients": {
+    "fermentables": {
+      "list": [
+        {
+          "yield": 100,
+          "pct": 78.43,
+          "srm": 3,
+          "name": "Pale Malt (2 Row) UK",
+          "amount": 4.5359
+        },
+        {
+          "yield": 100,
+          "pct": 7.84,
+          "srm": 9,
+          "name": "Munich Malt",
+          "amount": 0.4536
+        },
+        {
+          "yield": 100,
+          "pct": 5.88,
+          "srm": 40,
+          "name": "Briess Caramel 40L",
+          "amount": 0.3402
+        },
+        {
+          "yield": 100,
+          "pct": 2.98,
+          "srm": 25,
+          "name": "Victory Malt",
+          "amount": 0.1724
+        },
+        {
+          "yield": 100,
+          "pct": 2.9,
+          "srm": 120,
+          "name": "Briess Caramel 120L",
+          "amount": 0.1678
+        },
+        {
+          "yield": 100,
+          "pct": 1.96,
+          "srm": 215,
+          "name": "Fawcett Pale Chocolate",
+          "amount": 0.1134
+        }
+      ],
+      "total_weight": 5.7833
+    },
+    "hops": {
+      "aroma": [
+
+      ],
+      "first_wort": [
+
+      ],
+      "dry_hop": [
+
+      ],
+      "mash": [
+
+      ],
+      "total_weight": 0.1205,
+      "boil": [
+        {
+          "time": 60,
+          "alpha": 14,
+          "name": "Columbus (Tomahawk)",
+          "amount": 0.0071,
+          "form": "Pellet"
+        },
+        {
+          "time": 20,
+          "alpha": 14,
+          "name": "Columbus (Tomahawk)",
+          "amount": 0.0142,
+          "form": "Pellet"
+        },
+        {
+          "time": 10,
+          "alpha": 5.5,
+          "name": "Cascade",
+          "amount": 0.0213,
+          "form": "Pellet"
+        },
+        {
+          "time": 10,
+          "alpha": 10,
+          "name": "Centennial",
+          "amount": 0.0213,
+          "form": "Pellet"
+        },
+        {
+          "time": 0,
+          "alpha": 5.5,
+          "name": "Cascade",
+          "amount": 0.0283,
+          "form": "Pellet"
+        },
+        {
+          "time": 0,
+          "alpha": 10,
+          "name": "Centennial",
+          "amount": 0.0283,
+          "form": "Pellet"
+        }
+      ]
+    },
+    "miscellaneous": [
+
+    ],
+    "yeast": [
+      {
+        "lab": "Wyeast Labs",
+        "attenuation": 75,
+        "temperature_lo": 60,
+        "prod_id": "1056",
+        "temperature_hi": 72,
+        "name": "American Ale"
+      }
+    ]
+  },
+  "ADF": 70,
+  "type": "All Grain",
+  "name": "Jamil&#39;s Evil Twin (R)",
+  "batch_size": 18.9271
+}

@@ -1,0 +1,147 @@
+{
+  "ADF": 80,
+  "ingredients": {
+    "yeast": [
+      {
+        "temperature_lo": 15,
+        "prod_id": "US-05",
+        "lab": "Fermentis",
+        "attenuation": 78,
+        "temperature_hi": 24,
+        "name": "Safale US-05"
+      }
+    ],
+    "miscellaneous": [
+      {
+        "time": 15.0,
+        "amount": 0.002835,
+        "name": "Whirlfloc"
+      },
+      {
+        "time": 15.0,
+        "amount": 0.085049,
+        "name": "Cinnamon"
+      },
+      {
+        "time": 5.0,
+        "amount": 0.002835,
+        "name": "Allspice"
+      },
+      {
+        "time": 5.0,
+        "amount": 0.002835,
+        "name": "Ginger"
+      },
+      {
+        "time": 5.0,
+        "amount": 0.002835,
+        "name": "Nutmeg"
+      },
+      {
+        "time": 5.0,
+        "amount": 0.002835,
+        "name": "Whole cloves"
+      },
+      {
+        "time": 15.0,
+        "amount": 0.056699,
+        "name": "Lactose"
+      }
+    ],
+    "fermentables": {
+      "total_weight": 7.257477,
+      "list": [
+        {
+          "srm": 0,
+          "amount": 0.907185,
+          "type": "Adjunct",
+          "name": "Pumpkin puree",
+          "pct": 10.53,
+          "yield": 0.0
+        },
+        {
+          "srm": 35,
+          "amount": 0.340194,
+          "type": "Sugar",
+          "name": "Sugar - Cane",
+          "pct": 3.95,
+          "yield": 67.0
+        },
+        {
+          "srm": 35,
+          "amount": 0.113398,
+          "type": "Sugar",
+          "name": "Sugar - Brown",
+          "pct": 1.32,
+          "yield": 67.0
+        },
+        {
+          "srm": 3,
+          "amount": 6.803885,
+          "type": "Grain",
+          "name": "Pale Ale",
+          "pct": 78.95,
+          "yield": 80.0
+        },
+        {
+          "srm": 80,
+          "amount": 0.453592,
+          "type": "Grain",
+          "name": "Crystal 80L",
+          "pct": 5.26,
+          "yield": 72.0
+        }
+      ]
+    },
+    "hops": {
+      "total_weight": 0.028349,
+      "mash": [
+
+      ],
+      "aroma": [
+
+      ],
+      "first_wort": [
+
+      ],
+      "dry_hop": [
+
+      ],
+      "boil": [
+        {
+          "time": 60,
+          "alpha": 14,
+          "amount": 0.021262,
+          "name": "Magnum",
+          "form": "Pellet"
+        },
+        {
+          "time": 15,
+          "alpha": 4,
+          "amount": 0.007087,
+          "name": "Sterling",
+          "form": "Pellet"
+        }
+      ]
+    }
+  },
+  "efficiency": 80,
+  "yeast_starter_cells": 350,
+  "yeast_starter_slurry": 187,
+  "FG": 1.02,
+  "total_ppg": 615.939170715018,
+  "type": "All Grain",
+  "name": "Southern Tier Pumking",
+  "notes": "http://www.homebrewtalk.com/f12/southern-tier-pumking-clone-191381/index20.html",
+  "batch_size": 18.927059,
+  "boil_time": 60,
+  "styles": [
+    {
+      "name": "Spice, Herb, or Vegetable Beer",
+      "category": 21,
+      "letter": "A"
+    }
+  ],
+  "ABV": 10.33,
+  "OG": 1.099
+}

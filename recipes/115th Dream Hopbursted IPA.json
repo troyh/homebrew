@@ -1,0 +1,114 @@
+{
+  "FG": 1.038,
+  "efficiency": 70,
+  "type": "All Grain",
+  "ADF": 70,
+  "ingredients": {
+    "yeast": [
+      {
+        "temperature_lo": 60,
+        "attenuation": 75,
+        "prod_id": "1056",
+        "name": "American Ale",
+        "lab": "Wyeast Labs",
+        "temperature_hi": 72
+      }
+    ],
+    "miscellaneous": [
+
+    ],
+    "hops": {
+      "mash": [
+
+      ],
+      "first_wort": [
+
+      ],
+      "dry_hop": [
+
+      ],
+      "total_weight": 0.4534,
+      "boil": [
+        {
+          "name": "Cluster",
+          "form": "Pellet",
+          "alpha": 7,
+          "time": 60,
+          "amount": 0.0567
+        },
+        {
+          "name": "Cluster",
+          "form": "Pellet",
+          "alpha": 7,
+          "time": 30,
+          "amount": 0.0567
+        },
+        {
+          "name": "Hop Burst Hop Blend",
+          "form": "Pellet",
+          "alpha": 8.25,
+          "time": 15,
+          "amount": 0.085
+        },
+        {
+          "name": "Hop Burst Hop Blend",
+          "form": "Pellet",
+          "alpha": 8.25,
+          "time": 10,
+          "amount": 0.085
+        },
+        {
+          "name": "Hop Burst Hop Blend",
+          "form": "Pellet",
+          "alpha": 8.25,
+          "time": 5,
+          "amount": 0.085
+        },
+        {
+          "name": "Hop Burst Hop Blend",
+          "form": "Pellet",
+          "alpha": 8.25,
+          "time": 0,
+          "amount": 0.085
+        }
+      ],
+      "aroma": [
+
+      ]
+    },
+    "fermentables": {
+      "list": [
+        {
+          "name": "Rahr 2-Row",
+          "srm": 2,
+          "pct": 84.62,
+          "yield": 100,
+          "amount": 7.4843
+        },
+        {
+          "name": "Briess Caramel 60L",
+          "srm": 60,
+          "pct": 5.13,
+          "yield": 100,
+          "amount": 0.4536
+        },
+        {
+          "name": "Corn Sugar (Dextrose)",
+          "srm": 0,
+          "pct": 10.26,
+          "yield": 100,
+          "amount": 0.9072
+        }
+      ],
+      "total_weight": 8.8451
+    }
+  },
+  "yeast_starter_cells": 446,
+  "OG": 1.126,
+  "total_ppg": 897.003880652,
+  "batch_size": 18.9271,
+  "name": "115th Dream Hopbursted Imperial IPA",
+  "notes": "See full Northern Brewer recipe instructions.",
+  "yeast_starter_slurry": 238,
+  "ABV": 11.52
+}

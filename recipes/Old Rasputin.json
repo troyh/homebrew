@@ -1,0 +1,120 @@
+{
+  "yeast_starter_cells": 318,
+  "ABV": 8.81,
+  "efficiency": 75,
+  "ADF": 75,
+  "batch_size": 18.927059,
+  "type": "All Grain",
+  "notes": "From BYO (http://forums.morebeer.com/viewtopic.php?f=2&t=14824) and Hopville (http://hopville.com/recipe/580175)",
+  "OG": 1.09,
+  "styles": [
+    {
+      "letter": "F",
+      "name": "Imperial Stout",
+      "category": 13
+    }
+  ],
+  "name": "Old Rasputin",
+  "yeast_starter_slurry": 170,
+  "total_ppg": 597.654142471698,
+  "FG": 1.022,
+  "boil_time": 60,
+  "ingredients": {
+    "yeast": [
+      {
+        "attenuation": 77,
+        "temperature_lo": 20,
+        "name": "California Ale",
+        "temperature_hi": 23,
+        "lab": "White Labs",
+        "prod_id": "WLP001"
+      }
+    ],
+    "hops": {
+      "total_weight": 0.141749,
+      "first_wort": [
+
+      ],
+      "dry_hop": [
+
+      ],
+      "aroma": [
+
+      ],
+      "mash": [
+
+      ],
+      "boil": [
+        {
+          "form": "Pellet",
+          "time": 60,
+          "name": "Centennial",
+          "amount": 0.085049,
+          "alpha": 10
+        },
+        {
+          "form": "Pellet",
+          "time": 5,
+          "name": "Centennial",
+          "amount": 0.02835,
+          "alpha": 10
+        },
+        {
+          "form": "Pellet",
+          "time": 5,
+          "name": "Northern Brewer",
+          "amount": 0.02835,
+          "alpha": 8.5
+        }
+      ]
+    },
+    "miscellaneous": [
+
+    ],
+    "fermentables": {
+      "total_weight": 7.665709,
+      "list": [
+        {
+          "pct": 79.29,
+          "srm": 3,
+          "type": "Grain",
+          "name": "Pale Ale",
+          "yield": 80.0,
+          "amount": 6.078137
+        },
+        {
+          "pct": 5.92,
+          "srm": 30,
+          "type": "Grain",
+          "name": "Carastan (Dark)",
+          "yield": 59.0,
+          "amount": 0.453592
+        },
+        {
+          "pct": 5.92,
+          "srm": 120,
+          "type": "Grain",
+          "name": "Crystal 120L",
+          "yield": 70.0,
+          "amount": 0.453592
+        },
+        {
+          "pct": 4.44,
+          "srm": 500,
+          "type": "Grain",
+          "name": "Barley (Roasted)",
+          "yield": 59.0,
+          "amount": 0.340194
+        },
+        {
+          "pct": 4.44,
+          "srm": 50,
+          "type": "Grain",
+          "name": "Chocolate",
+          "yield": 72.0,
+          "amount": 0.340194
+        }
+      ]
+    }
+  }
+}

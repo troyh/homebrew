@@ -1,0 +1,36 @@
+{
+  "results": {
+    "gravity": {
+      "fg": "1.012",
+      "volume": 18.92705,
+      "og": "1.074"
+    },
+    "boil": {
+      "time": "60",
+      "sg": "1.065",
+      "volume": 24.60516,
+      "end_volume": 20.819768938418907
+    },
+    "sparge": {
+      "duration": ""
+    },
+    "mash": {
+      "type": "",
+      "duration": "",
+      "measurements": [
+        {
+          "temp": 0
+        }
+      ],
+      "strike": {
+        "volume": 0,
+        "temp": -17.7777777777778
+      }
+    }
+  },
+  "id": "005",
+  "recipe": {
+    "url": "https://api.github.com/repos/troyh/homebrew/git/blobs/7487a5270fcc27c2517f58fec57617ebccb65865"
+  }
+}
+
