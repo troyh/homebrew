@@ -12,13 +12,11 @@
 	    );
 	}
 	function display() {
-		console.log('display()');
 		var obj={
 			'recipe': {
 				'url':'recipes/'+getURLParameter('name')+'.json'
 			}
 		};
-		console.log(obj);
 		displayRecipe(obj,$('#recipe'),$('#recipeTemplate'));
 	}
 	</script>

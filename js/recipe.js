@@ -137,6 +137,14 @@ function displayRecipe(recipe_info,renderElem,templateElem,callback) {
 				recipe.ingredients.miscellaneous[i].amount *= scale_factor;
 			}
 			
+			// Sort
+			recipe.ingredients.fermentables.list.sort(function(a,b) {return b.amount - a.amount;});
+			recipe.ingredients.hops.first_wort.sort(function(a,b) {return b.amount - a.amount;});
+			recipe.ingredients.hops.boil.sort(function(a,b) {return b.amount - a.amount;});
+			recipe.ingredients.hops.aroma.sort(function(a,b) {return b.amount - a.amount;});
+			recipe.ingredients.hops.dry_hop.sort(function(a,b) {return b.amount - a.amount;});
+			recipe.ingredients.miscellaneous.sort(function(a,b) {return b.amount - a.amount;});
+			
 			recipe.calc_og=calc_og_gu(recipe) / 1000 + 1;
 			recipe.calc_fg=calc_fg_gu(recipe) / 1000 + 1;
 			recipe.total_ppg=total_ppg(recipe);
