@@ -4,6 +4,7 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
     <script src="https://raw.github.com/BorisMoore/jsrender/master/jsrender.js" type="text/javascript"></script>
 	<script src="js/recipe.js"></script>
+	<script src="js/github.js"></script>
 	<!-- <script src="js/batch.js"></script> -->
 	<script src="js/tumblr.js"></script>
 	<script type="text/javascript">
@@ -250,6 +251,18 @@
 										batchData.results=results;
 										batchData.id=batchId;
 										$('#json_data').html(JSON.stringify(batchData));
+										
+										// Post it to Github
+										github_commit({
+											"user": "troyh",
+											"repo":"homebrew",
+											"branch":"data"
+										},[{
+											"filepath": "batches/"+batchId+"/batch.json",
+											"content": JSON.stringify(batchData)
+										}],
+										"Updated Actual Results"
+										);
 									});
 									
 									// Add Tumblr log
