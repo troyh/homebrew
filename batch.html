@@ -191,8 +191,13 @@
 				$('#recipeTemplates').load("templates/recipe.html",
 					null,
 					function(data,textStatus,xhr) {
+						var repo={
+							user: "troyh",
+							repo:"homebrew",
+							branch:"data"
+						}
 						// Get the recipe Id from the batch
-						$.getJSON("batches/" + batchId + "/batch.json",
+						$.getJSON("http://raw.github.com/" + repo.user + "/" + repo.repo + "/data/batches/" + batchId + "/batch.json",
 							null,
 							function(batchData,textStatus,xhr) {
 								displayRecipe(batchData.recipe,$('#recipe'),$('#recipeTemplate'),function(recipe) {
@@ -253,11 +258,7 @@
 										$('#json_data').html(JSON.stringify(batchData));
 										
 										// Post it to Github
-										github_commit({
-											"user": "troyh",
-											"repo":"homebrew",
-											"branch":"data"
-										},[{
+										github_commit(repo,[{
 											"filepath": "batches/"+batchId+"/batch.json",
 											"content": JSON.stringify(batchData)
 										}],
