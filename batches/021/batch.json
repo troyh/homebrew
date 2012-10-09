@@ -1,6 +1,36 @@
 {
-  "id": "021",
   "recipe": {
-	"blob": "2626b85f0bf8cd1b8483df00b142bf29e4e8a3da"
-  }
+    "blob": "2626b85f0bf8cd1b8483df00b142bf29e4e8a3da"
+  },
+  "results": {
+    "sparge": {
+      "duration": ""
+    },
+    "boil": {
+      "end_volume": 0,
+      "volume": 0,
+      "time": "",
+      "sg": ""
+    },
+    "gravity": {
+      "fg": "",
+      "volume": 0,
+      "og": ""
+    },
+    "mash": {
+      "measurements": [
+        {
+          "temp": 0
+        }
+      ],
+      "type": "",
+      "duration": "60",
+      "strike": {
+        "temp": 71.1111111111111,
+        "volume": 18.9270626712899
+      }
+    }
+  },
+  "id": "021"
 }
+
