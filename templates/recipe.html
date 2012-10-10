@@ -17,28 +17,10 @@
 	{{/if}}
 </script>
 		
-		
 <script id="weightTemplate" type="text/x-jsrender">
 	<div class="weight">
-		<div class="english">
-		{{if #data < 0.453592}} <!-- less than 1 pound? -->
-			{{:((#data * 2.20462 * 16) % 16).toFixed(2)}} oz
-		{{else}}
-			{{if ~decimalOnly }}
-				{{:(#data * 2.20462).toFixed(2)}} lbs
-			{{else}}
-				{{:(#data * 2.20462).toFixed(0)}} lbs
-				{{if (#data * 2.20462 * 16).toFixed(0) % 16 > 0}}
-					{{:(#data * 2.20462 * 16 % 16).toFixed(2)}} oz
-				{{/if}}
-			{{/if}}
-		{{/if}}
-		</div>
-		{{if #data < 1.0}}
-			<div class="metric">({{:(#data * 1000).toFixed(0)}}g)</div>
-		{{else}}
-			<div class="metric">({{:#data.toFixed(2)}}kg)</div>
-		{{/if}}
+		<div class="english">{{:~usFormat(#data * 1000)}}</div>
+		<div class="metric">({{:~metricFormat(#data * 1000)}})</div>
 	</div>
 </script>	
 		

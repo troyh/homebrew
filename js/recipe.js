@@ -198,6 +198,7 @@ function displayRecipe(repo,recipe_info,renderElem,templateElem,callback) {
 					else
 						amount_g+=qty;
 				}
+				
 				if ($(this).hasClass("metric")) {
 					$(this).val(metricFormat(amount_g));
 					$(this).prev(':text').val(usFormat(amount_g));
@@ -205,6 +206,17 @@ function displayRecipe(repo,recipe_info,renderElem,templateElem,callback) {
 				else {
 					$(this).val(usFormat(amount_g));
 					$(this).next(':text.metric').val(metricFormat(amount_g));
+				}
+
+				if ($(this).parents('#hops').size()) {
+					// Change the total weight
+					console.log('changed a hops amount');
+				}
+					
+				if ($(this).parents('#fermentables').size()) {
+					// Change the total weight
+					// Change the percentage column too
+					console.log('changed a fermentable amount');
 				}
 			});
 			
