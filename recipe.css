@@ -344,7 +344,12 @@ tr.hop {
 }
 
 tr.hop td:nth-child(1) { /* hop amount */
-	text-align:right;
+	text-align:left;
+	width:10em;
+}
+
+tr.hop td:nth-child(1) .metric { /* hop amount in metric */
+	float:right;
 }
 
 tr.hop td:nth-child(3) { /* hop AAU */
@@ -454,4 +459,20 @@ table#batches tr td:nth-child(5) {
 
 .percent:after {
 	content:"%";
+}
+
+.edit_version {
+/*	display:none;*/
+}
+
+input[type=text] {
+	width:4em;
+	padding:0;
+	border:none;
+	font-family: Signika, Helvetica;
+	font-size:100%;
+}
+
+input[type=text].metric {
+	color:gray;
 }

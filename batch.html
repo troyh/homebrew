@@ -1,7 +1,12 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="recipe.css" />
+	<!-- As of 10/9/2012, Google APIs is not yet hosting jQuery UI 1.9.0, so using code.jquery.com site for now -->
+	<!--<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/themes/base/jquery-ui.css">-->
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script> -->
+	<script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
     <script src="https://raw.github.com/BorisMoore/jsrender/master/jsrender.js" type="text/javascript"></script>
 	<script src="js/recipe.js"></script>
 	<script src="js/github.js"></script>
@@ -171,10 +176,16 @@
 	function renderBatch(batchId) {
 		
 		$.views.helpers({
+			g2oz: g2oz,
+			oz2g: oz2g,
+			kg2lbs: kg2lbs,
+			lbs2kg: lbs2kg,
 			liters2gallons: liters2gallons,
 			gallons2liters: gallons2liters,
 			celsius2fahrenheit: celsiusToFahrenheit,
-			fahrenheit2celsius: fahrenheitToCelsius
+			fahrenheit2celsius: fahrenheitToCelsius,
+			metricFormat: metricFormat,
+			usFormat: usFormat
 		})
 		
 		$('#topnav').append(" &gt; Batch " + batchId);
@@ -200,7 +211,7 @@
 						$.getJSON("http://raw.github.com/" + repo.user + "/" + repo.repo + "/data/batches/" + batchId + "/batch.json",
 							null,
 							function(batchData,textStatus,xhr) {
-								displayRecipe(batchData.recipe,$('#recipe'),$('#recipeTemplate'),function(recipe) {
+								displayRecipe(repo,batchData.recipe,$('#recipe'),$('#recipeTemplate'),function(recipe) {
 									//
 									// Compute the expected data
 									//
@@ -255,7 +266,6 @@
 										var results=updateActualResults();
 										batchData.results=results;
 										batchData.id=batchId;
-										$('#json_data').html(JSON.stringify(batchData));
 										
 										// Post it to Github
 										github_commit(repo,[{

@@ -13,7 +13,11 @@ jQuery.extend({
      });
    }
  });
- 
+
+function github_blob_url(repo,blob_sha)  {
+	return "https://api.github.com/repos/"+repo.user+"/"+repo.repo+"/git/blobs/"+blob_sha;
+}
+
 function github_commit(repo,files,message) {
 
 	// console.log(files);
