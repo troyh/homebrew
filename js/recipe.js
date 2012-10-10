@@ -183,21 +183,7 @@ function displayRecipe(repo,recipe_info,renderElem,templateElem,callback) {
 			);
 			
 			$('.weightField').change(function(evt) {
-				// Parse the amount
-				var re=/(\d+(?:\.\d+)?)\s*(lbs?|ozs?|g|kg)/gi;
-				var matches;
-				var amount_g=0;
-				while ((matches=re.exec($(this).val())) != null) {
-					var qty=parseFloat(matches[1])
-					if (matches[2]=="kg") 
-						amount_g+=qty * 1000;
-					else if (matches[2]=="lbs" || matches[2]=="lb") 
-						amount_g+=lbs2kg(qty) * 1000;
-					else if (matches[2]=="ozs" || matches[2]=="oz") 
-						amount_g+=oz2g(qty);
-					else
-						amount_g+=qty;
-				}
+				var amount_g=parseAmount($(this).val());
 				
 				if ($(this).hasClass("metric")) {
 					$(this).val(metricFormat(amount_g));
@@ -217,6 +203,13 @@ function displayRecipe(repo,recipe_info,renderElem,templateElem,callback) {
 					// Change the total weight
 					// Change the percentage column too
 					console.log('changed a fermentable amount');
+					var sum=0;
+					$('#fermentables .weightField').not('.metric').each(function(){
+						sum+=parseAmount($(this).val());
+					});
+					$('#fermentables .total_weight').html(
+						usFormat(sum,true) + " (" + metricFormat(sum) + ")"
+					);
 				}
 			});
 			
@@ -240,7 +233,7 @@ function sg2gu(sg) { return (sg - 1) * 1000; }
 function metricFormat(g) {
 	if (g < 1000)
 		return g.toFixed(0) + "g";
-	return (g / 1000).toFixed(2) + "kg";
+	return (g / 1000).toFixed(2).replace(/\.?0+$/,'') + "kg";
 }
 function usFormat(g,decimalOnly) {
 	var decimal=false;
@@ -254,4 +247,23 @@ function usFormat(g,decimalOnly) {
 	else if (g2oz(g).toFixed(0) % 16 > 0)
 		return g2lb(g).toFixed(0) + " lbs " + (g2oz(g) % 16).toFixed(0) + " oz";
 	return g2lb(g).toFixed(0) + " lbs";
+}
+
+// Parse the amount as written in "human format", i.e., 3.2oz, 14kg, etc.
+function parseAmount(string) {
+	var re=/(\d+(?:\.\d+)?)\s*(lbs?|ozs?|g|kg)/gi;
+	var matches;
+	var amount_g=0;
+	while ((matches=re.exec(string)) != null) {
+		var qty=parseFloat(matches[1])
+		if (matches[2]=="kg") 
+			amount_g+=qty * 1000;
+		else if (matches[2]=="lbs" || matches[2]=="lb") 
+			amount_g+=lbs2kg(qty) * 1000;
+		else if (matches[2]=="ozs" || matches[2]=="oz") 
+			amount_g+=oz2g(qty);
+		else
+			amount_g+=qty;
+	}
+	return amount_g;
 }

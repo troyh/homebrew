@@ -113,9 +113,10 @@
 	<div id="fermentables">
 				
 		<div class="total_weight">
-			{{for ingredients.fermentables.total_weight ~decimalOnly=true tmpl="#weightTemplate"/}}
+			{{:~usFormat(ingredients.fermentables.total_weight * 1000,true)}}
+			({{:~metricFormat(ingredients.fermentables.total_weight * 1000)}})
 		</div>
-				
+
 		<table>
 			{{for ingredients.fermentables.list}}
 			<tr class="fermentable">
@@ -136,10 +137,11 @@
 		</table>
 	</div>
 </div>
-		
+
 <div id="hops">
 	<div class="total_weight">
-		{{for ingredients.hops.total_weight tmpl="#weightTemplate"/}}
+		{{:~usFormat(ingredients.hops.total_weight * 1000,true)}}
+		({{:~metricFormat(ingredients.hops.total_weight * 1000)}})
 	</div>
 			
 	<table>
