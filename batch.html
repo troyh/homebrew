@@ -208,7 +208,7 @@
 							branch:"data"
 						}
 						// Get the recipe Id from the batch
-						$.getJSON("http://raw.github.com/" + repo.user + "/" + repo.repo + "/data/batches/" + batchId + "/batch.json",
+						$.getJSON("https://raw.github.com/" + repo.user + "/" + repo.repo + "/data/batches/" + batchId + "/batch.json",
 							null,
 							function(batchData,textStatus,xhr) {
 								displayRecipe(repo,batchData.recipe,$('#recipe'),$('#recipeTemplate'),function(recipe) {
