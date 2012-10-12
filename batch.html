@@ -207,10 +207,11 @@
 							repo:"homebrew",
 							branch:"data"
 						}
+						
 						// Get the recipe Id from the batch
-						$.getJSON("https://raw.github.com/" + repo.user + "/" + repo.repo + "/data/batches/" + batchId + "/batch.json",
-							null,
-							function(batchData,textStatus,xhr) {
+						github_get_latest_version(repo,
+							"batches/" + batchId + "/batch.json",
+							function(batchData) {
 								displayRecipe(repo,batchData.recipe,$('#recipe'),$('#recipeTemplate'),function(recipe) {
 									//
 									// Compute the expected data
