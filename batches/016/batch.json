@@ -1,6 +1,6 @@
 {
 	"recipe":{
-		"url":"https://api.github.com/repos/troyh/homebrew/git/blobs/e6762254b845e74dc5997aee047f4929c7ac0648"
+		"blob":"e6762254b845e74dc5997aee047f4929c7ac0648"
 	},
 	"results": {
 		"mash":{

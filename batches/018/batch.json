@@ -30,6 +30,6 @@
 			}
 		},
 		"recipe":{
-			"url":"https://api.github.com/repos/troyh/homebrew/git/blobs/9ea97f62b1fc254b81872acdb2025701b34ed4de"
+			"blob":"9ea97f62b1fc254b81872acdb2025701b34ed4de"
 		}
 }

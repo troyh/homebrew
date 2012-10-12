@@ -1,4 +1,4 @@
-{"recipe":{"url":"https://api.github.com/repos/troyh/homebrew/git/blobs/535e06bbb5618d1b4b603f81130014fa838856d8"},"results":{"mash":{"type":"","duration":"60","strike":{"volume":21.766122071983403,"temp":71.66666666666667},"measurements":[
+{"recipe":{"blob":"535e06bbb5618d1b4b603f81130014fa838856d8"},"results":{"mash":{"type":"","duration":"60","strike":{"volume":21.766122071983403,"temp":71.66666666666667},"measurements":[
 {"temp":68.055556},
 {"temp":67.2222},
 {"temp":66.333333},
