@@ -12,14 +12,13 @@ function calc_og_gu(recipe) {
 function calc_fg_gu(recipe) {
 	return calc_og_gu(recipe) - ((recipe.efficiency / 100) * calc_og_gu(recipe));
 }
-function displayRecipe(repo,recipe_info,renderElem,templateElem,callback) {
+function displayRecipe(recipe_info,renderElem,templateElem,callback) {
 	$.views.helpers({
 		format_gravity: function(val) {
 			return val.toFixed(3);
 		}
 	})
-	// TODO: use commit_sha to get the git version of the recipe for this batch
-	$.getJSON(github_blob_url(repo,recipe_info.blob),
+	$.getJSON(github_blob_url(recipe_info.blob),
 		null,
 		function(data,textStatus,xhr) {
 			var recipe=$.parseJSON(decode64(data.content));

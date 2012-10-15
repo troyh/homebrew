@@ -7,6 +7,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 <script src="https://raw.github.com/BorisMoore/jsrender/master/jsrender.js" type="text/javascript"></script>
 <script src="js/recipe.js"></script>
+<script src="js/github.js"></script>
 
 <!--
 Bash script to create batches/index.json:
@@ -73,6 +74,7 @@ find  batches -type f -name batch.json | while read B; do cat $B | php  -r '$bat
 
 <script type="text/javascript">
 function renderPage() {
+	
 	$.views.helpers({
 		liters2gallons: liters2gallons,
 		gallons2liters: gallons2liters,
@@ -82,7 +84,7 @@ function renderPage() {
 		gu2sg: gu2sg
 	})
 	
-	$.getJSON("batches/index.json",null,function(data,textStatus,xhr){
+	github_get_latest_version("batches/index.json",function(data){
 
 		data.totals={
 			efficiency: {
@@ -147,7 +149,6 @@ function renderPage() {
 			adf: data.totals.adf / data.totals.adf_count,
 			vol: data.totals.vol / data.totals.vol_count
 		}
-		console.log(data);
 		$('#batches').html($('#batchIndexTemplate').render(data));
 	})
 }

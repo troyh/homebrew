@@ -216,17 +216,10 @@
 				$('#recipeTemplates').load("templates/recipe.html",
 					null,
 					function(data,textStatus,xhr) {
-						var repo={
-							user: "troyh",
-							repo:"homebrew",
-							branch:"data"
-						}
-						
 						// Get the recipe Id from the batch
-						github_get_latest_version(repo,
-							"batches/" + batchId + "/batch.json",
+						github_get_latest_version("batches/" + batchId + "/batch.json",
 							function(batchData) {
-								displayRecipe(repo,batchData.recipe,$('#recipe'),$('#recipeTemplate'),function(recipe) {
+								displayRecipe(batchData.recipe,$('#recipe'),$('#recipeTemplate'),function(recipe) {
 									//
 									// Compute the expected data
 									//
@@ -283,12 +276,42 @@
 										batchData.id=batchId;
 										
 										// Post it to Github
-										github_commit(repo,[{
+										github_commit([{
 											"filepath": "batches/"+batchId+"/batch.json",
 											"content": JSON.stringify(batchData)
 										}],
 										"Updated Actual Results for batch " + batchId
 										);
+										
+										// Update batches/index.json
+										github_get_latest_version("batches/index.json",function(index){
+											
+											// Add more info for index.json
+											batchData.recipe.name=recipe.name;
+											batchData.recipe.total_ppg=recipe.total_ppg;
+											batchData.recipe.yeast=recipe.ingredients.yeast;
+											batchData.recipe.orig_batch_size=recipe.batch_size;
+											
+											// Find this batch in the list of batches
+											var found=false;
+											for (var i=0; i < index.batches.length; ++i) {
+												if (index.batches[i].id==batchId) {
+													index.batches[i]=batchData;
+													break;
+												}
+											}
+											if (!found) {
+												index.batches.push(batchData);
+											}
+											// Commit the updated index.json
+											github_commit(
+												[{
+													"filepath": "batches/index.json",
+													"content": JSON.stringify(index)
+												}],
+												"Updated with batch " + batchId
+											);
+										});
 									});
 									
 									// Add Tumblr log

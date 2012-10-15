@@ -23,12 +23,28 @@ jQuery.extend({
    }
  });
 
-function github_blob_url(repo,blob_sha)  {
-	return "https://api.github.com/repos/"+repo.user+"/"+repo.repo+"/git/blobs/"+blob_sha;
+var repo={
+	user: (localStorage.getItem('github_repo_user') || location.host),
+	repo: (localStorage.getItem('github_repo_name') || location.pathname.split('/')[0]),
+	branch:"data"
 }
 
-function github_get_latest_version(repo,filepath,callback) {
-	$.getJSON("https://api.github.com/repos/"+repo.user+"/"+repo.repo+"/git/refs/heads/"+repo.branch,
+function github_api_url() {
+	return "https://api.github.com/repos/"+repo.user+"/"+repo.repo + "/git";
+}
+function github_blob_url(blob_sha)  {
+	return github_api_url() + "/blobs/"+blob_sha;
+}
+
+function github_files_tree(callback) {
+	$.getJSON(github_api_url() + "/refs/heads/data",null,function(data,textStatus,xhr){
+		$.getJSON(github_api_url() + "/trees/" + data.object.sha + "?recursive=1",null,function(data,textStatus,xhr){
+			callback(data.tree);
+		})
+	});
+}
+function github_get_latest_version(filepath,callback) {
+	$.getJSON(github_api_url()+"/refs/heads/"+repo.branch,
 		null,
 		function(data,textStatus,xhr) {
 			$.getJSON(data.object.url,
@@ -54,7 +70,7 @@ function github_get_latest_version(repo,filepath,callback) {
 	);
 }
 
-function github_commit(repo,files,message) {
+function github_commit(files,message) {
 
 	// console.log(files);
 	var files_tree=[];
