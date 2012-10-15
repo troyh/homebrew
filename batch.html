@@ -104,7 +104,7 @@
 	
 	function updateActualResults(evt){
 		// Get values from form
-		return {
+		var results={
 			"mash":{
 				"type": "",
 				"duration":$('#mash_duration').val().trim(),
@@ -129,6 +129,20 @@
 				"fg": $('#actual_fg').val().trim()
 			}
 		};
+
+		/* 
+			If the FG measurement is in Brix, convert to specific gravity:
+			SG=1.001843-0.002318474(OB)-0.000007775(OB^2)-0.000000034(OB^3)+0.00574(AB) +0.00003344(AB^2)+0.000000086(AB^3)
+		*/
+		var m=results.gravity.fg.match(/(\d+\.\d{1,2})\s*%/);
+		if (m) { // Looks like a Brix value
+			results.gravity.fg=parseFloat(m[1]);
+			var brix=sg2brix(results.gravity.og);
+			results.gravity.fg=1.001843 - (0.002318474 * brix) - (0.000007775 * Math.pow(brix,2)) - (0.000000034 * Math.pow(brix,3)) + (0.00574 * results.gravity.fg) + (0.00003344 * Math.pow(results.gravity.fg,2)) + (0.000000086 * Math.pow(results.gravity.fg,3));
+			$('#actual_fg').val(results.gravity.fg.toFixed(3));
+		}
+
+		return results;
 	}
 										
 	function updateActualResultsUI(evt,expected) {
@@ -155,7 +169,7 @@
 			$('#brewhouse_efficiency').html((liters2gallons(results.gravity.volume) * sg2gu(results.gravity.og) / expected.total_gu * 100).toFixed(0) + "%");
 		else
 			$('#brewhouse_efficiency').html("");
-			
+		
 		/* Update ABV
 		From http://www.brewersfriend.com/2011/06/16/alcohol-by-volume-calculator-updated/:
 		ABV =(76.08 * (og-fg) / (1.775-og)) * (fg / 0.794)

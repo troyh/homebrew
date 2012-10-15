@@ -149,6 +149,14 @@ function liters2gallons(l) { return l * 0.264172; }
 function gallons2liters(g) { return g / 0.264172; }
 function gu2sg(gu) { return gu / 1000 + 1; }
 function sg2gu(sg) { return (sg - 1) * 1000; }
+function sg2brix(sg) {
+	// From http://en.wikipedia.org/wiki/Brix
+	return (((182.4601 * sg - 775.6821) * sg + 1262.7794) * sg - 669.5622);
+}
+function brix2sg(brix) {
+	// From http://www.byo.com/stories/article/indices/54-specific-gravity/1344-refractometers-and-mash-outs-mr-wizard
+	return (brix / (258.6-((brix / 258.2)*227.1))) + 1;
+}
 function metricFormat(g) {
 	if (g < 1000)
 		return g.toFixed(0) + "g";

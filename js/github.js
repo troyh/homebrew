@@ -1,5 +1,14 @@
 var access_token="5b718b4156cce4d7929c4309980d273a1f7f69bc";
 
+$.ajaxSetup({
+	beforeSend: function(jqXHR,settings) {
+		// console.log("AJAX:" + settings.url);
+	},
+	headers: {
+		"Authorization": "token " + access_token
+	}
+})
+
 jQuery.extend({
    postJSON: function(url, data, callback) {
      return jQuery.ajax({
@@ -58,15 +67,6 @@ function github_commit(repo,files,message) {
 		});
 	}
 	
-	$.ajaxSetup({
-		beforeSend: function(jqXHR,settings) {
-			// console.log("AJAX:" + settings.url);
-		},
-		headers: {
-			"Authorization": "token " + access_token
-		}
-	})
-
 	$.getJSON("https://api.github.com/repos/"+repo.user+"/"+repo.repo+"/git/refs/heads/"+repo.branch,null,function(ref) {
 		// console.log("refs response:");
 		// console.log(ref);
