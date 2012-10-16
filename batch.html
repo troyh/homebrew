@@ -297,12 +297,14 @@
 											for (var i=0; i < index.batches.length; ++i) {
 												if (index.batches[i].id==batchId) {
 													index.batches[i]=batchData;
+													found=true;
 													break;
 												}
 											}
 											if (!found) {
 												index.batches.push(batchData);
 											}
+											// console.log(batchData);
 											// Commit the updated index.json
 											github_commit(
 												[{

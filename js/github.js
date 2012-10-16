@@ -83,6 +83,7 @@ function github_commit(files,message) {
 		});
 	}
 	
+	// console.log('Committing...');
 	$.getJSON("https://api.github.com/repos/"+repo.user+"/"+repo.repo+"/git/refs/heads/"+repo.branch,null,function(ref) {
 		// console.log("refs response:");
 		// console.log(ref);
@@ -104,7 +105,7 @@ function github_commit(files,message) {
 						{
 							message: message,
 							tree: new_tree.sha,
-							parents: [ ref.object.sha ]
+							parents: [ tree.sha ]
 						},
 						function(commit) {
 							// console.log("Commit response:");
