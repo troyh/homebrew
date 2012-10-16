@@ -210,6 +210,7 @@
 		// Create a place to put the templates we're going to include
 		$(document.body).append('<div id="recipeTemplates"></div>');
 				
+		$('#recipe').addClass('loading');
 		$('#batchTemplates').load("templates/batch.html",
 			null,
 			function(data,textStatus,xhr) {
@@ -339,7 +340,7 @@
 	
 	<div id="topnav"><a href="index.html">Home</a></div>
 	
-	<div id="recipe"></div>
+	<div id="recipe"><div class="modal"></div></div>
 	<div id="expected"></div>
 	<div id="actual"></div>
 

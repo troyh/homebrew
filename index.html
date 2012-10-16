@@ -82,8 +82,9 @@ function renderPage() {
 		fahrenheit2celsius: fahrenheitToCelsius,
 		sg2gu: sg2gu,
 		gu2sg: gu2sg
-	})
-	
+	});
+
+	$('#batches').addClass("loading");
 	github_get_latest_version("batches/index.json",function(data){
 
 		data.totals={
@@ -158,7 +159,9 @@ function renderPage() {
 <body onLoad="renderPage();">
 <h1>Homebrewing</h1>
 
-<div id="batches"></div>
+<div id="batches">
+	<div class="modal"></div>
+</div>
 
 <h2>Recipes</h2>
 <ol>
@@ -196,5 +199,6 @@ function renderPage() {
 <li>Wyeast 1056</li>
 <li>Fermentis US-05</li>
 <li>White Labs WLP007</li>
+
 </body>
 </html>
