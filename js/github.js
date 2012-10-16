@@ -24,8 +24,8 @@ jQuery.extend({
  });
 
 var repo={
-	user: (localStorage.getItem('github_repo_user') || location.host),
-	repo: (localStorage.getItem('github_repo_name') || location.pathname.split('/')[0]),
+	user: (localStorage.getItem('github_repo_user') || (location.host.split('.'))[0] || null),
+	repo: (localStorage.getItem('github_repo_name') || (location.pathname.split('/'))[0] || null),
 	branch:"data"
 }
 
