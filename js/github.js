@@ -30,6 +30,8 @@ var repo={
 }
 
 function github_api_url() {
+	console.log(location);
+	console.log(repo);
 	return "https://api.github.com/repos/"+repo.user+"/"+repo.repo + "/git";
 }
 function github_blob_url(blob_sha)  {
