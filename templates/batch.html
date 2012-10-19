@@ -231,7 +231,7 @@ $.views.helpers({
 	{{for posts}}
 	<div class="post">
 		<div class="postbody">
-			<div class="logdate">{{:date}}</div>
+			<div class="logdate"><div class="dayssince">&nbsp;</div><div class="datestring">{{:date}}</div></div>
 			{{if type=='regular'}}<div class="posttext">{{:#data['regular-body']}}</div>{{/if}}
 			{{if type=='photo'}}
 			<div class="posttext">{{:#data['photo-caption']}}</div>

@@ -218,6 +218,23 @@ body {
 	-moz-transform:rotate(270deg);
 	-o-transform: rotate(270deg);
 }
+
+.logdate .dayssince {
+	font-size:300%;
+	font-weight:bold;
+	color:#fff;
+	position:relative;
+	top:-10px;
+}
+
+.logdate .datestring {
+	position:relative;
+	bottom:50px;
+	font-size:50%;
+	color:#777;
+	text-align:right;
+}
+
 .logdate {
 /*	border-bottom: 1px solid gray;*/
 	float:left;
@@ -476,7 +493,7 @@ table#batches tr td:nth-child(5) {
 }
 
 input[type=text] {
-	width:4em;
+	width:3em;
 	padding:0;
 	border:none;
 	font-family: Signika, Helvetica;

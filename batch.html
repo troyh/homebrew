@@ -142,6 +142,8 @@
 			results.gravity.fg=1.001843 - (0.002318474 * brix) - (0.000007775 * Math.pow(brix,2)) - (0.000000034 * Math.pow(brix,3)) + (0.00574 * results.gravity.fg) + (0.00003344 * Math.pow(results.gravity.fg,2)) + (0.000000086 * Math.pow(results.gravity.fg,3));
 			$('#actual_fg').val(results.gravity.fg.toFixed(3));
 		}
+		
+		$('#lauter_rate').html((results.sparge.duration / liters2gallons(results.boil.volume)).toFixed(0));
 
 		return results;
 	}
@@ -222,6 +224,7 @@
 						github_get_latest_version("batches/" + batchId + "/batch.json",
 							function(batchData) {
 								displayRecipe(batchData.recipe,$('#recipe'),$('#recipeTemplate'),function(recipe) {
+									document.title=batchId + ': ' + recipe.name;
 									//
 									// Compute the expected data
 									//
@@ -274,7 +277,6 @@
 									
 									$('#saveButton').click(function(evt) {
 										$('#saveButton').parent().addClass('loading');
-										// TODO: Title on batch page
 										// TODO: recipe editing
 										// TODO: save assumptions in batch.json
 										// TODO: Fix viewport on iPhone
@@ -339,6 +341,34 @@
 												return a['unix-timestamp'] - b['unix-timestamp'];
 											})
 											$('#brewlog').html($('#brewlogTemplate').render(tumblr_api_read));
+											// Reformat date strings
+											var dayStrings=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+											var monthStrings=["Jan","Feb","Mar","Apr","May","Jun",
+											"Jul","Aug","Sep","Oct","Nov","Dec"];
+											
+											var firstDate=null;
+											$('#brewlog .post .logdate .datestring').each(function(i,e){
+												var d=new Date(Date.parse($(e).text()));
+												if (i==0) {
+													firstDate=d;
+													$(e).html(
+														'<div>' + (dayStrings[d.getDay()+1]) + '</div>' +
+														'<div>' + (monthStrings[d.getMonth()+1]) + ' ' + d.getDate() + ' ' +
+														(d.getFullYear()) + '</div>' +
+														(d.getHours().toPrecision(2)) + ':' +
+														(d.getMinutes().toPrecision(2))
+													);
+												}
+												else {
+													$(e).prev('.dayssince').html(((d - firstDate) / (1000 * 60 * 60 * 24)).toFixed(0));
+													$(e).html(
+														'<div>' + (dayStrings[d.getDay()+1]) + '</div>' +
+														'<div>' + (monthStrings[d.getMonth()+1]) + ' ' + d.getDate() + ' ' + '</div>' +
+														(d.getHours().toPrecision(2)) + ':' +
+														(d.getMinutes().toPrecision(2))
+													);
+												}
+											});
 										}
 									);
 								});
