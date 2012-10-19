@@ -105,8 +105,9 @@ function github_get_latest_version(filepath,callback) {
 	}
 }
 
-function github_commit(files,message) {
+function github_commit(files,message,callback) {
 
+	// console.log('committing to github...')
 	// console.log(files);
 	var files_tree=[];
 	for (var i=0; i< files.length; ++i) {
@@ -140,17 +141,19 @@ function github_commit(files,message) {
 						{
 							message: message,
 							tree: new_tree.sha,
-							parents: [ tree.sha ]
+							parents: [ ref.object.sha ]
 						},
 						function(commit) {
 							// console.log("Commit response:");
 							// console.log(commit);
 							$.postJSON("https://api.github.com/repos/"+repo.user+"/"+repo.repo+"/git/refs/heads/"+repo.branch,
 								{
-										sha: commit.sha
+										sha: commit.sha,
+										force: true
 								},
-								function(ref) {
-										// console.log(ref);
+								function(newref) {
+									// console.log(newref);
+									callback(newref);
 								}
 							)
 						},

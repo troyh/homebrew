@@ -273,8 +273,7 @@
 									$('#actual_fg').change(function(evt) { updateActualResultsUI(evt, expected); });
 									
 									$('#saveButton').click(function(evt) {
-										// TODO: Fix fast-forward problem on save
-										// TODO: save button animation
+										$('#saveButton').parent().addClass('loading');
 										// TODO: Title on batch page
 										// TODO: recipe editing
 										// TODO: save assumptions in batch.json
@@ -288,40 +287,49 @@
 											"filepath": "batches/"+batchId+"/batch.json",
 											"content": JSON.stringify(batchData)
 										}],
-										"Updated Actual Results for batch " + batchId
-										);
-										
-										// Update batches/index.json
-										github_get_latest_version("batches/index.json",function(index){
+										"Updated Actual Results for batch " + batchId,
+										function(ref) {
+											localStorage.removeItem('batches/'+batchId+'/batch.json');
 											
-											// Add more info for index.json
-											batchData.recipe.name=recipe.name;
-											batchData.recipe.total_ppg=recipe.total_ppg;
-											batchData.recipe.yeast=recipe.ingredients.yeast;
-											batchData.recipe.orig_batch_size=recipe.batch_size;
+											// Update batches/index.json
+											github_get_latest_version("batches/index.json",function(index){
 											
-											// Find this batch in the list of batches
-											var found=false;
-											for (var i=0; i < index.batches.length; ++i) {
-												if (index.batches[i].id==batchId) {
-													index.batches[i]=batchData;
-													found=true;
-													break;
+												// Add more info for index.json
+												batchData.recipe.name=recipe.name;
+												batchData.recipe.total_ppg=recipe.total_ppg;
+												batchData.recipe.yeast=recipe.ingredients.yeast;
+												batchData.recipe.orig_batch_size=recipe.batch_size;
+											
+												// Find this batch in the list of batches
+												var found=false;
+												for (var i=0; i < index.batches.length; ++i) {
+													if (index.batches[i].id==batchId) {
+														index.batches[i]=batchData;
+														found=true;
+														break;
+													}
 												}
-											}
-											if (!found) {
-												index.batches.push(batchData);
-											}
-											// console.log(batchData);
-											// Commit the updated index.json
-											github_commit(
-												[{
-													"filepath": "batches/index.json",
-													"content": JSON.stringify(index)
-												}],
-												"Updated with batch " + batchId
-											);
-										});
+												if (!found) {
+													index.batches.push(batchData);
+												}
+												// console.log(batchData);
+												// Commit the updated index.json
+												github_commit(
+													[{
+														"filepath": "batches/index.json",
+														"content": JSON.stringify(index)
+													}],
+													"Updated with batch " + batchId,
+													function(ref) {
+														// console.log('Committed batches/index.json');
+														$('#saveButton').parent().removeClass('loading');
+														// Uncache batches/index.json
+														localStorage.removeItem('batches/index.json');
+													}
+												);
+											});
+										}
+										);
 									});
 									
 									// Add Tumblr log
