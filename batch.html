@@ -273,6 +273,12 @@
 									$('#actual_fg').change(function(evt) { updateActualResultsUI(evt, expected); });
 									
 									$('#saveButton').click(function(evt) {
+										// TODO: Fix fast-forward problem on save
+										// TODO: save button animation
+										// TODO: Title on batch page
+										// TODO: recipe editing
+										// TODO: save assumptions in batch.json
+										// TODO: Fix viewport on iPhone
 										var results=updateActualResults();
 										batchData.results=results;
 										batchData.id=batchId;

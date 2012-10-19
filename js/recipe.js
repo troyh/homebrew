@@ -87,19 +87,6 @@ function displayRecipe(recipe_info,renderElem,templateElem,callback) {
 				
 			renderElem.html(templateElem.render(recipe));
 			
-			$('#edit_button').toggle(
-				function(evt) {
-					$('.nonedit_version').toggle("fade","linear",400,function(){
-						$(this).next('.edit_version').toggle("fade","linear",400);
-					})
-				},
-				function(evt) {
-					$('.edit_version').toggle("fade","linear",400,function(){
-						$(this).prev('.nonedit_version').toggle("fade","linear",400);
-					})
-				}
-			);
-			
 			$('.weightField').change(function(evt) {
 				var amount_g=parseAmount($(this).val());
 				

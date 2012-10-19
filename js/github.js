@@ -43,31 +43,66 @@ function github_files_tree(callback) {
 		})
 	});
 }
+
+function cache_get(key) {
+	// console.log('cache_get');
+	var item=localStorage.getItem(key);
+	if (item!=null) {
+		stored=$.parseJSON(item);
+		var now=new Date();
+		if (stored.timestamp > (now.getTime() - (60*60*1000))) { // It's there and its younger than 1 hour
+			// console.log("Using cached data. Age:" + ((now.getTime() - stored.timestamp) / 1000 / 60) + " minutes");
+			return stored.content;
+		}
+	}
+	return null;
+}
+
+function cache_set(key,string) {
+	var data={
+		timestamp: new Date().getTime(),
+		content: string
+	};
+	localStorage.setItem(key,JSON.stringify(data));
+	// console.log("Cached: " + key);
+}
+
 function github_get_latest_version(filepath,callback) {
-	$.getJSON(github_api_url()+"/refs/heads/"+repo.branch,
-		null,
-		function(data,textStatus,xhr) {
-			$.getJSON(data.object.url,
-				null,
-				function (data,textStatus,xhr) {
-					$.getJSON(data.tree.url+"?recursive=1",
-						null,
-						function(data,textStatus,xhr){
-							// Iterate tree looking for filepath
-							for (var i=0; i < data.tree.length; ++i) {
-								if (data.tree[i].type=="blob" && data.tree[i].path==filepath) {
-									$.getJSON(data.tree[i].url,null,function(data,textStatus,xhr){
-										callback($.parseJSON(decode64(data.content)));
-									});
-									break;
+	var content=cache_get(filepath);
+	if (content) {
+		callback($.parseJSON(content));
+	}
+	else {
+		console.log(filepath + ' not cached');
+		$.getJSON(github_api_url()+"/refs/heads/"+repo.branch,
+			null,
+			function(data,textStatus,xhr) {
+				$.getJSON(data.object.url,
+					null,
+					function (data,textStatus,xhr) {
+						$.getJSON(data.tree.url+"?recursive=1",
+							null,
+							function(data,textStatus,xhr){
+								// Iterate tree looking for filepath
+								for (var i=0; i < data.tree.length; ++i) {
+									if (data.tree[i].type=="blob" && data.tree[i].path==filepath) {
+										$.getJSON(data.tree[i].url,null,function(data,textStatus,xhr){
+											var content=decode64(data.content);
+											// Cache it in LocalStorage
+											cache_set(filepath,content);
+											
+											callback($.parseJSON(content));
+										});
+										break;
+									}
 								}
 							}
-						}
-					);
-				}
-			);
-		}
-	);
+						);
+					}
+				);
+			}
+		);
+	}
 }
 
 function github_commit(files,message) {
