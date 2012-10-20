@@ -118,6 +118,29 @@ function displayRecipe(recipe_info,renderElem,templateElem,callback) {
 				}
 			});
 			
+			$('.fermentableField').autocomplete({
+				source: function(request,response) {
+					var s=request.term.toLowerCase();
+					var suggestions=new Array;
+					$(fermentables).each(function(i,e){
+						if (e.acname.indexOf(s) != -1)
+							suggestions.push(e.name);
+					});
+					response(suggestions);
+				}
+			});
+			
+			$('.hopsNameField').autocomplete({
+				source: function(request,response) {
+					var s=request.term.toLowerCase();
+					var suggestions=new Array;
+					$(hops).each(function(i,e){
+						if (e.acname.indexOf(s) != -1)
+							suggestions.push(e.name);
+					});
+					response(suggestions);
+				}
+			});
 			if (callback)
 				callback(recipe);
 		}
@@ -181,7 +204,7 @@ function parseAmount(string) {
 	return amount_g;
 }
 
-var malts=[
+var fermentables=[
   {
     "yield": 77.9,
     "name": "2-Row Malt",
@@ -538,3 +561,6 @@ var hops=[
 	{"name":"Warrior", "origin": "US", "alpha": "15-17%", "beta": "4-6%", "notes": "High alpha hop from Yakima Chief Ranches. Good bittering potential and has citrus like qualities", "usage": "Bittering"},
 	{"name":"Williamette", "origin": "US", "alpha": "3-6%", "beta": "3-4.5%", "notes": "Delicate dark fruity flavours and grassy quality that make it similar to Fuggles. Excellent as an aroma hop and widley used as a replacement to Fuggle in America", "usage": "Aroma"}
 ];
+
+$(fermentables).each(function(i,e){e.acname=e.name.toLowerCase();});
+$(hops).each(function(i,e){e.acname=e.name.toLowerCase();});

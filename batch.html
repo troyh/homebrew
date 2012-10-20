@@ -280,6 +280,12 @@
 										// TODO: recipe editing
 										// TODO: save assumptions in batch.json
 										// TODO: Fix viewport on iPhone
+										// TODO: Set brew date (by clicking on brew log date)
+										// TODO: Record fermentation temperatures
+										// TODO: specify my efficiency
+										// TODO: scale recipe ingredients by changing batch size
+										// TODO: show how close a match it is to the specified style
+										// TODO: calculate IBUs
 										var results=updateActualResults();
 										batchData.results=results;
 										batchData.id=batchId;
@@ -352,8 +358,8 @@
 												if (i==0) {
 													firstDate=d;
 													$(e).html(
-														'<div>' + (dayStrings[d.getDay()+1]) + '</div>' +
-														'<div>' + (monthStrings[d.getMonth()+1]) + ' ' + d.getDate() + ' ' +
+														'<div>' + (dayStrings[d.getDay()]) + '</div>' +
+														'<div>' + (monthStrings[d.getMonth()]) + ' ' + d.getDate() + ' ' +
 														(d.getFullYear()) + '</div>' +
 														(d.getHours().toPrecision(2)) + ':' +
 														(d.getMinutes().toPrecision(2))
@@ -362,8 +368,8 @@
 												else {
 													$(e).prev('.dayssince').html(((d - firstDate) / (1000 * 60 * 60 * 24)).toFixed(0));
 													$(e).html(
-														'<div>' + (dayStrings[d.getDay()+1]) + '</div>' +
-														'<div>' + (monthStrings[d.getMonth()+1]) + ' ' + d.getDate() + ' ' + '</div>' +
+														'<div>' + (dayStrings[d.getDay()]) + '</div>' +
+														'<div>' + (monthStrings[d.getMonth()]) + ' ' + d.getDate() + ' ' + '</div>' +
 														(d.getHours().toPrecision(2)) + ':' +
 														(d.getMinutes().toPrecision(2))
 													);

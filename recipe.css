@@ -423,7 +423,7 @@ tr.hop td:nth-child(5):after { /* hop boil minutes */
 }
 
 .yeast .attenuation:before {
-	content: "Att: ~";
+	content: "Attenuation: ~";
 }
 
 .fermentable * {

@@ -31,12 +31,12 @@
 			<input class="weightField" type="text" size="3" value="{{:~usFormat(amount*1000)}}" />
 			<input class="weightField metric" type="text" size="3" value="{{:~metricFormat(amount*1000)}}" />
 		</td>
-		<td>{{:name}}</td>
+		<td><input class="hopsNameField" type="text" value="{{:name}}" /></td>
 		<td>{{:alpha}}%&#945;</td>
 		<td>{{:form}}</td>
 		<td>
-			{{if ~use == 'Boil'}}{{:time}} min{{/if}}
-			{{if ~use == 'Dry Hop'}}{{:time / (60 * 24)}} days{{/if}}
+			{{if ~use == 'Boil'}}<input type="text" value="{{:time}} min" /> {{/if}}
+			{{if ~use == 'Dry Hop'}}<input type="text" value="{{:time / (60 * 24)}} days" />{{/if}}
 		</td>
 	</tr>
 </script>
@@ -128,9 +128,9 @@
 					<div class="pct">{{:pct}}%</div>
 				</td>
 				<td>
-					<div class="name">{{:name}}</div>
-					<div class="ppg">{{:(yield / 100 * 46).toFixed(0)}}</div>
-					<div class="srm">{{:srm}}</div>
+					<input class="fermentableField" name="name" type="text" value="{{:name}}" />
+					<div name="ppg">{{:(yield / 100 * 46).toFixed(0)}}</div>
+					<div name="srm">{{:srm}}</div>
 				</td>
 			</tr>
 			{{/for}}
@@ -160,7 +160,7 @@
 <div id="yeasts">
 	<div class="yeast">
 		{{for ingredients.yeast}}
-			{{:lab}} {{:prod_id}} ({{:name}})
+			<input type="text" size="" style="width:100%;" value="{{:lab}} {{:prod_id}} ({{:name}})" />
 			<div class="temperaturerange">
 				{{for temperature_lo tmpl="#temperatureTemplate"/}}
 				- 
