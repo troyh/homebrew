@@ -1,0 +1,60 @@
+
+{
+	"name":"Saison SMaSH",
+	"styles": [{
+			"name":"Saison",
+			"category":16,
+			"letter":"C"
+	}
+],	"type":"All Grain",
+		"batch_size":20.819765,
+		"total_ppg":441.599520259744,
+		"efficiency":80,
+		"OG":1.064,
+		"FG":1.013,
+		"ABV":6.73,
+		"ADF":80,
+		"yeast_starter_slurry":134,
+	"yeast_starter_cells":251,
+	"ingredients":{
+		"fermentables":{"total_weight":5.443109,		"list":[{
+			"amount":5.443109,
+			"yield":80.000000,
+			"pct":100,
+			"name":"Maris Otter",
+			"srm":4
+		}
+		]},
+		"hops":
+	{
+		"total_weight":0.034019,
+		"mash":[],
+		"first_wort": [],
+	    "boil":[{
+		"amount":0.034019,
+		"name": "Centennial",
+		"alpha": 10,
+		"time":60,
+		"form":"Pellet"
+     }],
+		"aroma":[],
+		"dry_hop":[]
+	}
+,
+		"miscellaneous":[],
+		"yeast":
+	[
+	{
+		"lab":"White Labs",
+		"prod_id":"WLP565",
+		"name": "Belgian Saison I Ale",
+		"temperature_lo":20,
+		"temperature_hi":24,
+		"attenuation": 70
+	}
+]
+
+	},
+"notes": ""
+}
+
