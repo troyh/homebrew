@@ -88,7 +88,7 @@ function displayRecipe(recipe_info,renderElem,templateElem,callback) {
 			renderElem.html(templateElem.render(recipe));
 			
 			$('.weightField').change(function(evt) {
-				var amount_g=parseAmount($(this).val());
+				var amount_g=parseWeightAmount($(this).val());
 				
 				if ($(this).hasClass("metric")) {
 					$(this).val(metricFormat(amount_g));
@@ -110,12 +110,16 @@ function displayRecipe(recipe_info,renderElem,templateElem,callback) {
 					console.log('changed a fermentable amount');
 					var sum=0;
 					$('#fermentables .weightField').not('.metric').each(function(){
-						sum+=parseAmount($(this).val());
+						sum+=parseWeightAmount($(this).val());
 					});
 					$('#fermentables .total_weight').html(
 						usFormat(sum,true) + " (" + metricFormat(sum) + ")"
 					);
 				}
+			});
+			
+			$('.timeField').change(function(evt) {
+				parseTimeAmount($(this).val());
 			});
 			
 			$('.fermentableField').autocomplete({
@@ -186,7 +190,7 @@ function usFormat(g,decimalOnly) {
 }
 
 // Parse the amount as written in "human format", i.e., 3.2oz, 14kg, etc.
-function parseAmount(string) {
+function parseWeightAmount(string) {
 	var re=/(\d+(?:\.\d+)?)\s*(lbs?|ozs?|g|kg)/gi;
 	var matches;
 	var amount_g=0;
@@ -202,6 +206,27 @@ function parseAmount(string) {
 			amount_g+=qty;
 	}
 	return amount_g;
+}
+
+function parseTimeAmount(string) {
+	var re=/(\d+)\s*(m|mins?|h|hrs?|hours?|d|days?)?/gi;
+	var matches;
+	var qty=0;
+	if ((matches=re.exec(string)) != null) {
+		var qty=parseFloat(matches[1])
+		switch (matches[2].substring(1,1)) {
+			case 'm':
+				break;
+			case 'h':
+				qty *= 60;
+				break;
+			case 'd':
+				qty *= 60 * 24;
+				break;
+		}
+	}
+	console.log('parseTimeAmount=' + qty + ' mins');
+	return qty;
 }
 
 var fermentables=[

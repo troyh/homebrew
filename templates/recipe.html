@@ -35,8 +35,8 @@
 		<td>{{:alpha}}%&#945;</td>
 		<td>{{:form}}</td>
 		<td>
-			{{if ~use == 'Boil'}}<input type="text" value="{{:time}} min" /> {{/if}}
-			{{if ~use == 'Dry Hop'}}<input type="text" value="{{:time / (60 * 24)}} days" />{{/if}}
+			{{if ~use == 'Boil'}}<input class="timeField" type="text" value="{{:time}} min" /> {{/if}}
+			{{if ~use == 'Dry Hop'}}<input class="timeField" type="text" value="{{:time / (60 * 24)}} days" />{{/if}}
 		</td>
 	</tr>
 </script>
@@ -129,8 +129,8 @@
 				</td>
 				<td>
 					<input class="fermentableField" name="name" type="text" value="{{:name}}" />
-					<div name="ppg">{{:(yield / 100 * 46).toFixed(0)}}</div>
-					<div name="srm">{{:srm}}</div>
+					<div class="ppg">{{:(yield / 100 * 46).toFixed(0)}}</div>
+					<div class="srm">{{:srm}}</div>
 				</td>
 			</tr>
 			{{/for}}
