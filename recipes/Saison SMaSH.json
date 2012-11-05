@@ -8,6 +8,7 @@
 	}
 ],	"type":"All Grain",
 		"batch_size":20.819765,
+		"boil_time":60,
 		"total_ppg":441.599520259744,
 		"efficiency":80,
 		"OG":1.064,
@@ -22,6 +23,7 @@
 			"yield":80.000000,
 			"pct":100,
 			"name":"Maris Otter",
+			"type":"Grain",
 			"srm":4
 		}
 		]},
