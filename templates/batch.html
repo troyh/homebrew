@@ -7,6 +7,7 @@
 			<input type="edit" size="3" id="assumption_mashthickness" value="{{:assumptions.mashthickness}}"/>qt/lb @
 			<input type="edit" size="3" id="assumption_mashtemp" value="{{:~celsius2fahrenheit(assumptions.mashtemp)}}" />&deg;F,
 			grain @ <input type="edit" size="3" id="assumption_graintemp" value="{{:~celsius2fahrenheit(assumptions.graintemp)}}" />&deg;F
+			Boil for <input type="edit" size="3" id="assumption_boil_time" value="{{:boil_time||assumptions.boil_time}}" /> minutes
 		</span>
 		<div style="clear: both;"></div>
 
@@ -53,7 +54,7 @@
 	<div>
 		<div class="headerkey">Boil:</div>
 		<div class="headerval">{{for boil_vol ~gravity=expected_gu / (boil_vol * 0.264172) / 1000 + 1 tmpl="#volumeTemplate"/}}
-			for {{:boil_hours * 60}} mins &#8594;
+			for <span id="expected_boil_time">{{:boil_hours * 60}}</span> mins &#8594;
 			{{for boil_vol - evaporation_loss_vol ~gravity=expected_gu / ((boil_vol - evaporation_loss_vol) * 0.264172) / 1000 + 1 tmpl="#volumeTemplate"/}} &#8594;
 			{{for boil_vol - evaporation_loss_vol - hop_absorption_loss_vol tmpl="#volumeTemplate"/}}
 			<div style="clear: both;"></div>

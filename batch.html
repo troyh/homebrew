@@ -25,11 +25,19 @@
 		$(newElem).children('input').val(""); // Clear it's value
 		$(elem).parent().after(newElem);
 		$(elem).remove(); // Remove the + button
+		$(newElem).children('input').focus();
 	}
 	
 	function delMashTemp(elem) {
+		$(elem).parent().prev().children('input').focus();
 		// Delete the idx-th input element under #mash_temp_measurements
-		$($(elem).parent()).remove();
+		$(elem).parent().remove();
+		// If deleting the item with the + button, put the + button on the last mash temp measurement
+		if ($(elem).next('button').length) {
+			console.log('there is a + button next to me');
+			// $('#mash_temp_measurements > div:last-child').append('hello');
+			$('#mash_temp_measurements > div:last-child').append($(elem).next('button').clone(true));
+		}
 	}
 	
 	function updateAssumptions(evt) {
@@ -38,7 +46,8 @@
 			mashtemp:fahrenheitToCelsius(parseFloat($('#assumption_mashtemp').val().trim())),
 			mashthickness:parseFloat($('#assumption_mashthickness').val().trim()),
 			mashtun_loss:0.946353,
-			evaporation_rate:.17
+			evaporation_rate:.17,
+			boil_time:parseTimeAmount($('#assumption_boil_time').val().trim())
 		};
 	}
 	
@@ -49,7 +58,8 @@
 				mashtemp:fahrenheitToCelsius(152),
 				mashthickness:1.5,
 				mashtun_loss:0.946353,
-				evaporation_rate:.17
+				evaporation_rate:.17,
+				boil_time:recipe.boil_time||60
 			}
 		else
 			expected.assumptions=updateAssumptions(evt);
@@ -71,7 +81,7 @@
 			138.3ml (0.1383L) per oz of hops
 		*/
 		expected.hop_absorption_loss_vol=(recipe.ingredients.hops.total_weight * 28.3495) * 0.1383;
-		expected.boil_hours=recipe.boil_time / 60;
+		expected.boil_hours=expected.assumptions.boil_time / 60;
 		
 		expected.mashtemp=((0.2 / expected.assumptions.mashthickness) * (expected.assumptions.mashtemp - expected.assumptions.graintemp)) + expected.assumptions.mashtemp;
 		expected.boil_vol= recipe.batch_size / (Math.pow(1 - expected.assumptions.evaporation_rate,expected.boil_hours));
@@ -87,6 +97,8 @@
 		$('#expected_strike_temp').html($('#temperatureTemplate').render(((0.2 / expected.assumptions.mashthickness) * (expected.assumptions.mashtemp - expected.assumptions.graintemp)) + expected.assumptions.mashtemp));
 		$('#expected_sparge_vol').html($('#volumeTemplate').render(expected.sparge_vol));
 		$('#expected_boil_vol').html($('#volumeTemplate').render(expected.boil_vol,{gravity:expected.lauter_gravity}));
+		$('#expected_boil_time').html(expected.boil_hours * 60);
+		$('#assumption_boil_time').val(expected.boil_hours * 60)
 		// $('#').html($('#Template').render();
 		// {{for boil_vol ~gravity=lauter_gravity tmpl="#volumeTemplate"/}}
 		
@@ -223,6 +235,7 @@
 						// Get the recipe Id from the batch
 						github_get_latest_version("batches/" + batchId + "/batch.json",
 							function(batchData) {
+								console.log('got batch.json');
 								displayRecipe(batchData.recipe,$('#recipe'),$('#recipeTemplate'),function(recipe) {
 									document.title=batchId + ': ' + recipe.name;
 									//
@@ -235,6 +248,8 @@
 									recipe.total_grain_ppg=0;
 									recipe.total_adjunct_ppg=0;
 									for (var i=0; i< recipe.ingredients.fermentables.list.length; ++i) {
+										console.log('fermentable=');
+										console.log(recipe.ingredients.fermentables.list[i]);
 										if (recipe.ingredients.fermentables.list[i].type=="Grain")
 											recipe.total_grain_ppg+=recipe.ingredients.fermentables.list[i].yield / 100 * 46 * kg2lbs(recipe.ingredients.fermentables.list[i].amount);
 										else
@@ -264,6 +279,7 @@
 									$('#assumption_mashthickness').change(function(evt){updateExpectedResultsUI(evt,expected,recipe);})
 									$('#assumption_mashtemp').change(function(evt){updateExpectedResultsUI(evt,expected,recipe);})
 									$('#assumption_graintemp').change(function(evt){updateExpectedResultsUI(evt,expected,recipe);})
+									$('#assumption_boil_time').change(function(evt){updateExpectedResultsUI(evt,expected,recipe);});
 		
 									
 									$('#boil_volume').change(function(evt){updateActualResultsUI(evt,expected);});

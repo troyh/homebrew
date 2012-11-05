@@ -18,9 +18,12 @@ function displayRecipe(recipe_info,renderElem,templateElem,callback) {
 			return val.toFixed(3);
 		}
 	})
+	console.log('getting blob:');
+	console.log(recipe_info);
 	$.getJSON(github_blob_url(recipe_info.blob),
 		null,
 		function(data,textStatus,xhr) {
+			console.log('got recipe');
 			var recipe=$.parseJSON(decode64(data.content));
 			
 			// Scale recipe, if specified
@@ -209,12 +212,14 @@ function parseWeightAmount(string) {
 }
 
 function parseTimeAmount(string) {
-	var re=/(\d+)\s*(m|mins?|h|hrs?|hours?|d|days?)?/gi;
+	var re=/(\d+(?:\.\d+)?)\s*(m|mins?|h|hrs?|hours?|d|days?)?/gi;
 	var matches;
 	var qty=0;
 	if ((matches=re.exec(string)) != null) {
 		var qty=parseFloat(matches[1])
-		switch (matches[2].substring(1,1)) {
+		if (typeof(matches[2])==='undefined')
+			matches[2]='m';
+		switch (matches[2].substring(0,1)) {
 			case 'm':
 				break;
 			case 'h':
@@ -225,7 +230,6 @@ function parseTimeAmount(string) {
 				break;
 		}
 	}
-	console.log('parseTimeAmount=' + qty + ' mins');
 	return qty;
 }
 
