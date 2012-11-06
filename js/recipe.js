@@ -125,29 +125,60 @@ function displayRecipe(recipe_info,renderElem,templateElem,callback) {
 				parseTimeAmount($(this).val());
 			});
 			
-			$('.fermentableField').autocomplete({
-				source: function(request,response) {
-					var s=request.term.toLowerCase();
-					var suggestions=new Array;
-					$(fermentables).each(function(i,e){
-						if (e.acname.indexOf(s) != -1)
-							suggestions.push(e.name);
-					});
-					response(suggestions);
-				}
+			$('.fermentableField').each(function() {
+				var autoCompleteElement=this;
+				$(this).autocomplete({
+					source: function(request,response) {
+						var s=request.term.toLowerCase();
+						var suggestions=new Array;
+						$(fermentables).each(function(i,e){
+							if (e.acname.indexOf(s) != -1)
+								suggestions.push({
+									label: e.name,
+									value: e
+								});
+						});
+						response(suggestions);
+					},
+					focus: function(evt,ui) {
+						// Update PPG and SRM values
+						$(autoCompleteElement).nextAll('div.ppg').html((ui.item.value.yield * 46 / 100).toFixed(0));
+						$(autoCompleteElement).nextAll('div.srm').html(ui.item.value.srm);
+						return false;
+					},
+					select: function(evt,ui) {
+						$(autoCompleteElement).val(ui.item.value.name);
+						return false;
+					}
+				})
+			});
+
+			$('.hopsNameField').each(function() {
+				var autoCompleteElement=this;
+				$(this).autocomplete({
+					source: function(request,response) {
+						var s=request.term.toLowerCase();
+						var suggestions=new Array;
+						$(hops).each(function(i,e){
+							if (e.acname.indexOf(s) != -1)
+								suggestions.push({
+									label: e.name,
+									value: e
+								});
+						});
+						response(suggestions);
+					},
+					focus: function(evt,ui) {
+						$(autoCompleteElement).parent().next('td').html(ui.item.value.alpha);
+						return false;
+					},
+					select: function(evt,ui) {
+						$(autoCompleteElement).val(ui.item.value.name);
+						return false;
+					}
+				})
 			});
 			
-			$('.hopsNameField').autocomplete({
-				source: function(request,response) {
-					var s=request.term.toLowerCase();
-					var suggestions=new Array;
-					$(hops).each(function(i,e){
-						if (e.acname.indexOf(s) != -1)
-							suggestions.push(e.name);
-					});
-					response(suggestions);
-				}
-			});
 			if (callback)
 				callback(recipe);
 		}
@@ -593,3 +624,65 @@ var hops=[
 
 $(fermentables).each(function(i,e){e.acname=e.name.toLowerCase();});
 $(hops).each(function(i,e){e.acname=e.name.toLowerCase();});
+
+(function($){
+
+    $.fn.autoGrowInput = function(o) {
+
+        o = $.extend({
+            maxWidth: 1000,
+            minWidth: 0,
+            comfortZone: 70
+        }, o);
+
+        this.filter('input:text').each(function(){
+
+            var minWidth = o.minWidth || $(this).width(),
+                val = '',
+                input = $(this),
+                testSubject = $('<tester/>').css({
+                    position: 'absolute',
+                    top: -9999,
+                    left: -9999,
+                    width: 'auto',
+                    fontSize: input.css('fontSize'),
+                    fontFamily: input.css('fontFamily'),
+                    fontWeight: input.css('fontWeight'),
+                    letterSpacing: input.css('letterSpacing'),
+                    whiteSpace: 'nowrap'
+                }),
+                check = function() {
+
+                    if (val === (val = input.val())) {return;}
+
+                    // Enter new content into testSubject
+                    var escaped = val.replace(/&/g, '&amp;').replace(/\s/g,'&nbsp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                    testSubject.html(escaped);
+
+                    // Calculate new width + whether to change
+                    var testerWidth = testSubject.width(),
+                        newWidth = (testerWidth + o.comfortZone) >= minWidth ? testerWidth + o.comfortZone : minWidth,
+                        currentWidth = input.width(),
+                        isValidWidthChange = (newWidth < currentWidth && newWidth >= minWidth)
+                                             || (newWidth > minWidth && newWidth < o.maxWidth);
+
+                    // Animate width
+                    if (isValidWidthChange) {
+                        input.width(newWidth);
+                    }
+
+                };
+
+            testSubject.insertAfter(input);
+
+            $(this).bind('keyup keydown blur update', check);
+
+        });
+
+        return this;
+
+    };
+
+})(jQuery);
+
+									

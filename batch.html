@@ -147,7 +147,7 @@
 			If the FG measurement is in Brix, convert to specific gravity:
 			SG=1.001843-0.002318474(OB)-0.000007775(OB^2)-0.000000034(OB^3)+0.00574(AB) +0.00003344(AB^2)+0.000000086(AB^3)
 		*/
-		var m=results.gravity.fg.match(/(\d+\.\d{1,2})\s*%/);
+		var m=results.gravity.fg.match(/(\d+(\.\d{1,2})?)\s*%/);
 		if (m) { // Looks like a Brix value
 			results.gravity.fg=parseFloat(m[1]);
 			var brix=sg2brix(results.gravity.og);
@@ -248,8 +248,6 @@
 									recipe.total_grain_ppg=0;
 									recipe.total_adjunct_ppg=0;
 									for (var i=0; i< recipe.ingredients.fermentables.list.length; ++i) {
-										console.log('fermentable=');
-										console.log(recipe.ingredients.fermentables.list[i]);
 										if (recipe.ingredients.fermentables.list[i].type=="Grain")
 											recipe.total_grain_ppg+=recipe.ingredients.fermentables.list[i].yield / 100 * 46 * kg2lbs(recipe.ingredients.fermentables.list[i].amount);
 										else
@@ -290,6 +288,11 @@
 									$('#final_volume').change(function(evt) { updateActualResultsUI(evt, expected); });
 									$('#actual_og').change(function(evt) { updateActualResultsUI(evt, expected); });
 									$('#actual_fg').change(function(evt) { updateActualResultsUI(evt, expected); });
+
+									$('.fermentableField').autoGrowInput({comfortZone: 10});
+									$('.fermentableField').trigger('blur');
+									$('.hopsNameField').autoGrowInput({comfortZone: 10});
+									$('.hopsNameField').trigger('blur');
 									
 									$('#saveButton').click(function(evt) {
 										$('#saveButton').parent().addClass('loading');
@@ -298,7 +301,7 @@
 										// TODO: Fix viewport on iPhone
 										// TODO: Set brew date (by clicking on brew log date)
 										// TODO: Record fermentation temperatures
-										// TODO: specify my efficiency
+										// TODO: specify my efficiency in expected results
 										// TODO: scale recipe ingredients by changing batch size
 										// TODO: show how close a match it is to the specified style
 										// TODO: calculate IBUs
