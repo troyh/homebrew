@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RECIPES>
+<RECIPE>
+<VERSION>1</VERSION>
+<NAME>Harold-Is-Weizen</NAME>
+<TYPE>All Grain</TYPE>
+<BREWER>BrewPal</BREWER>
+<BATCH_SIZE>20.819765</BATCH_SIZE>
+<BOIL_SIZE>27.316477</BOIL_SIZE>
+<BOIL_TIME>90</BOIL_TIME>
+<EFFICIENCY>80</EFFICIENCY>
+<OG>0.000000</OG>
+<FG>0.000000</FG>
+<FERMENTATION_STAGES>1</FERMENTATION_STAGES>
+<PRIMARY_AGE>14</PRIMARY_AGE>
+<PRIMARY_TEMP>21.000000</PRIMARY_TEMP>
+<SECONDARY_AGE>0</SECONDARY_AGE>
+<SECONDARY_TEMP>21.000000</SECONDARY_TEMP>
+<CARBONATION>3.000000</CARBONATION>
+<FORCED_CARBONATION>1</FORCED_CARBONATION>
+<CARBONATION_TEMP>3.333333</CARBONATION_TEMP>
+<PRIMING_SUGAR_NAME></PRIMING_SUGAR_NAME>
+<PRIMING_SUGAR_EQUIV>0.000000</PRIMING_SUGAR_EQUIV>
+<NOTES>From "Brewing Classic Styles", p.192. </NOTES>
+<FERMENTABLES>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Grain</TYPE>
+    <AMOUNT>2.267962</AMOUNT>
+    <YIELD>76.000000</YIELD>
+    <COLOR>1.000000</COLOR>
+    <NAME>Pilsen</NAME>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Grain</TYPE>
+    <AMOUNT>2.267962</AMOUNT>
+    <YIELD>80.000000</YIELD>
+    <COLOR>2.000000</COLOR>
+    <NAME>Wheat</NAME>
+  </FERMENTABLE>
+</FERMENTABLES>
+<HOPS>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>60.000000</TIME>
+    <FORM>Pellet</FORM>
+    <SUBSTITUTES>Liberty, Tettnanger, Mt. Hood, Vangaurd, Tradition</SUBSTITUTES>
+    <ALPHA>4.000000</ALPHA>
+    <NAME>Hallertauer</NAME>
+    <AMOUNT>0.022680</AMOUNT>
+    <USE>Boil</USE>
+  </HOP>
+</HOPS>
+<YEASTS>
+  <YEAST>
+    <VERSION>1</VERSION>
+    <ATTENUATION>74</ATTENUATION>
+    <LABORATORY>White Labs</LABORATORY>
+    <FORM>Liquid</FORM>
+    <TYPE>Ale</TYPE>
+    <MIN_TEMPERATURE>20</MIN_TEMPERATURE>
+    <PRODUCT_ID>WLP300</PRODUCT_ID>
+    <NAME>Hefeweizen Ale</NAME>
+    <AMOUNT_IS_WEIGHT>FALSE</AMOUNT_IS_WEIGHT>
+    <MAX_TEMPERATURE>22</MAX_TEMPERATURE>
+    <AMOUNT>0.040000</AMOUNT>
+  </YEAST>
+</YEASTS>
+<MISCS>
+</MISCS>
+<MASH>
+<VERSION>1</VERSION>
+<NAME>Unknown</NAME>
+<GRAIN_TEMP>21.111111</GRAIN_TEMP>
+<MASH_THICKNESS>3.129527</MASH_THICKNESS>
+<SPARGE_TEMP>76.666664</SPARGE_TEMP>
+<MASH_STEPS>
+</MASH_STEPS>
+</MASH>
+<WATERS>
+</WATERS>
+<EQUIPMENT>
+    <VERSION>1</VERSION>
+    <BOIL_SIZE>27.31648</BOIL_SIZE>
+    <BOIL_TIME>90</BOIL_TIME>
+    <BATCH_SIZE>20.81977</BATCH_SIZE>
+    <TOP_UP_KETTLE>-1.907349e-06</TOP_UP_KETTLE>
+    <TOP_UP_WATER>0</TOP_UP_WATER>
+    <EVAP_RATE>17</EVAP_RATE>
+    <TRUB_CHILLER_LOSS>0.946353</TRUB_CHILLER_LOSS>
+</EQUIPMENT>
+<STYLES>
+  <STYLE>
+    <VERSION>1</VERSION>
+    <COLOR_MIN>2.0</COLOR_MIN>
+    <COLOR_MAX>8.0</COLOR_MAX>
+    <STYLE_LETTER>A</STYLE_LETTER>
+    <ABV_MIN>4.3</ABV_MIN>
+    <NAME>Weizen/Weissbier</NAME>
+    <IS_SELECTED>0.000000</IS_SELECTED>
+    <TYPE>beer</TYPE>
+    <FG_MIN>1.010</FG_MIN>
+    <OG_MIN>1.044</OG_MIN>
+    <EXAMPLES>Weihenstephaner Hefeweissbier, Schneider Weisse Weizenhell, Paulaner Hefe-Weizen, Hacker-Pschorr Weisse, Plank Bavarian Hefeweizen, Ayinger Bräu Weisse, Ettaler Weissbier Hell, Franziskaner Hefe-Weisse, Andechser Weissbier Hefetrüb, Kapuziner Weissbier, Erdinger Weissbier, Penn Weizen, Barrelhouse Hocking Hills HefeWeizen, Eisenbahn Weizenbier</EXAMPLES>
+    <IBU_MAX>15</IBU_MAX>
+    <MATCH_QUALITY>Good match</MATCH_QUALITY>
+    <STYLE_GUIDE>BJCP</STYLE_GUIDE>
+    <INGREDIENTS>By German law, at least 50% of the grist must be malted wheat, although some versions use up to 70%; the remainder is Pilsner malt.  A traditional decoction mash gives the appropriate body without cloying sweetness.  Weizen ale yeasts produce the typical spicy and fruity character, although extreme fermentation temperatures can affect the balance and produce off-flavors.  A small amount of noble hops are used only for bitterness.</INGREDIENTS>
+    <FG_MAX>1.014</FG_MAX>
+    <OG_MAX>1.052</OG_MAX>
+    <ABV_MAX>5.6</ABV_MAX>
+    <PROFILE>Aroma:
+Moderate to strong phenols (usually clove) and fruity esters (usually banana).  The balance and intensity of the phenol and ester components can vary but the best examples are reasonably balanced and fairly prominent.  Noble hop character ranges from low to none.  A light to moderate wheat aroma (which might be perceived as bready or grainy) may be present but other malt characteristics should not.  No diacetyl or DMS.  Optional, but acceptable, aromatics can include a light, citrusy tartness, a light to moderate vanilla character, and/or a low bubblegum aroma.  None of these optional characteristics should be high or dominant, but often can add to the complexity and balance.
+Appearance:
+Pale straw to very dark gold in color.  A very thick, moussy, long-lasting white head is characteristic.  The high protein content of wheat impairs clarity in an unfiltered beer, although the level of haze is somewhat variable.  A beer "mit hefe" is also cloudy from suspended yeast sediment (which should be roused before drinking).  The filtered Krystal version has no yeast and is brilliantly clear.
+Flavor:
+Low to moderately strong banana and clove flavor.  The balance and intensity of the phenol and ester components can vary but the best examples are reasonably balanced and fairly prominent.  Optionally, a very light to moderate vanilla character and/or low bubblegum notes can accentuate the banana flavor, sweetness and roundness; neither should be dominant if present.  The soft, somewhat bready or grainy flavor of wheat is complementary, as is a slightly sweet Pils malt character.  Hop flavor is very low to none, and hop bitterness is very low to moderately low.  A tart, citrusy character from yeast and high carbonation is often present.  Well rounded, flavorful palate with a relatively dry finish.  No diacetyl or DMS.
+Mouthfeel:
+Medium-light to medium body; never heavy.  Suspended yeast may increase the perception of body.  The texture of wheat imparts the sensation of a fluffy, creamy fullness that may progress to a light, spritzy finish aided by high carbonation.  Always effervescent.
+Impression:
+A pale, spicy, fruity, refreshing wheat-based ale.</PROFILE>
+    <CARB_MIN>3.6</CARB_MIN>
+    <CATEGORY>German Wheat and Rye Beer</CATEGORY>
+    <IBU_MIN>8</IBU_MIN>
+    <CARB_MAX>4.5</CARB_MAX>
+    <CATEGORY_NUMBER>15</CATEGORY_NUMBER>
+    <NOTES>History:
+A traditional wheat-based ale originating in Southern Germany that is a specialty for summer consumption, but generally produced year-round.
+Comments:
+These are refreshing, fast-maturing beers that are lightly hopped and show a unique banana-and-clove yeast character. These beers often don't age well and are best enjoyed while young and fresh.  The version "mit hefe" is served with yeast sediment stirred in; the krystal version is filtered for excellent clarity.  Bottles with yeast are traditionally swirled or gently rolled prior to serving.  The character of a krystal weizen is generally fruitier and less phenolic than that of the hefe-weizen.</NOTES>
+  </STYLE>
+</STYLES>
+</RECIPE>
+</RECIPES>

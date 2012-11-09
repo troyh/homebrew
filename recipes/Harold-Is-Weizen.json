@@ -1,0 +1,70 @@
+
+{
+	"name":"Harold-Is-Weizen",
+	"styles": [{
+			"name":"Weizen/Weissbier",
+			"category":15,
+			"letter":"A"
+	}
+],	"type":"All Grain",
+		"batch_size":20.819765,
+		"boil_time":90,
+		"total_ppg":358.799597027414,
+		"efficiency":80,
+		"OG":1.052,
+		"FG":1.010,
+		"ABV":5.47,
+		"ADF":80,
+		"yeast_starter_slurry":109,
+	"yeast_starter_cells":204,
+	"ingredients":{
+		"fermentables":{"total_weight":4.535924,		"list":[{
+			"amount":2.267962,
+			"yield":76.000000,
+			"pct":50,
+			"name":"Pilsen",
+			"type":"Grain",
+			"srm":1
+		}
+		,{
+			"amount":2.267962,
+			"yield":80.000000,
+			"pct":50,
+			"name":"Wheat",
+			"type":"Grain",
+			"srm":2
+		}
+		]},
+		"hops":
+	{
+		"total_weight":0.02268,
+		"mash":[],
+		"first_wort": [],
+	    "boil":[{
+		"amount":0.022680,
+		"name": "Hallertauer",
+		"alpha": 4,
+		"time":60,
+		"form":"Pellet"
+     }],
+		"aroma":[],
+		"dry_hop":[]
+	}
+,
+		"miscellaneous":[],
+		"yeast":
+	[
+	{
+		"lab":"White Labs",
+		"prod_id":"WLP300",
+		"name": "Hefeweizen Ale",
+		"temperature_lo":20,
+		"temperature_hi":22,
+		"attenuation": 74
+	}
+]
+
+	},
+"notes": "From \"Brewing Classic Styles\", p.192. "
+}
+
