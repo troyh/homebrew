@@ -88,12 +88,12 @@
 		"yeast":
 	[
 	{
-		"lab":"Wyeast",
-		"prod_id":"1968",
-		"name": "London ESB Ale",
+		"lab":"White Labs",
+		"prod_id":"WLP002",
+		"name": "English Ale Yeast",
 		"temperature_lo":18,
-		"temperature_hi":22,
-		"attenuation": 69
+		"temperature_hi":20,
+		"attenuation": 67
 	}
 ]
 
