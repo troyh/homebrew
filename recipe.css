@@ -466,10 +466,10 @@ table#batches tr:nth-child(even) {
 	background: #eee;
 }
 
-table#batches tr:nth-child(1) {
-	background: none;
+/*table#batches tr:nth-child(1) {
+	background: red;
 }
-
+*/
 table#batches tr:last-child {
 	background: none;
 }

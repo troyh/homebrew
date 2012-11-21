@@ -46,7 +46,7 @@
 			mashtemp:fahrenheitToCelsius(parseFloat($('#assumption_mashtemp').val().trim())),
 			mashthickness:parseFloat($('#assumption_mashthickness').val().trim()),
 			mashtun_loss:0.946353,
-			evaporation_rate:.17,
+			evaporation_rate:.15,
 			boil_time:parseTimeAmount($('#assumption_boil_time').val().trim())
 		};
 	}
@@ -58,7 +58,7 @@
 				mashtemp:fahrenheitToCelsius(152),
 				mashthickness:1.5,
 				mashtun_loss:0.946353,
-				evaporation_rate:.17,
+				evaporation_rate:.15,
 				boil_time:recipe.boil_time||60
 			}
 		else
@@ -380,7 +380,7 @@
 														'<div>' + (dayStrings[d.getDay()]) + '</div>' +
 														'<div>' + (monthStrings[d.getMonth()]) + ' ' + d.getDate() + ' ' +
 														(d.getFullYear()) + '</div>' +
-														(d.getHours().toPrecision(2)) + ':' +
+														(d.getHours()) + ':' +
 														(d.getMinutes().toPrecision(2))
 													);
 												}
@@ -389,7 +389,7 @@
 													$(e).html(
 														'<div>' + (dayStrings[d.getDay()]) + '</div>' +
 														'<div>' + (monthStrings[d.getMonth()]) + ' ' + d.getDate() + ' ' + '</div>' +
-														(d.getHours().toPrecision(2)) + ':' +
+														(d.getHours()) + ':' +
 														(d.getMinutes().toPrecision(2))
 													);
 												}

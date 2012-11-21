@@ -17,32 +17,13 @@ find  batches -type f -name batch.json | while read B; do cat $B | php  -r '$bat
 {"batches":[' -e '$a\
 ]}' | jsontidy > batches/index.json
 -->
+<script type="text/x-jsrender" id="yeastIndexTemplate">
+{{fields #data}}
+<li>{{:lab}} {{:~key}} {{:name}}</li>
+{{/fields}}
+</script>
+
 <script type="text/x-jsrender" id="batchIndexTemplate">
-<h2>Batches</h2>
-<table id="batches">
-<tr>
-	<th></th>
-	<th></th>
-	<th colspan="2">Efficiency</th>
-	<th></th>
-	<th></th>
-	<th></th>
-	<th></th>
-	<th colspan="2">Fermentation</th>
-</tr>
-<tr>
-<th>#</th>
-<th>Name</th>
-<th>Mash</th>
-<th>Brewhouse</th>
-<th>Mash temp</th>
-<th>OG</th>
-<th>FG</th>
-<th>ADF</th>
-<th>Yeast</th>
-<th>Temp</th>
-<th>Vol</th>
-</tr>
 {{for batches}}
 <tr>
 	<td>{{:id}}</td>
@@ -52,26 +33,32 @@ find  batches -type f -name batch.json | while read B; do cat $B | php  -r '$bat
 	<td>{{if results && results.mash && results.mash.avg_temp}}<span class="temperature"><span class="fahrenheit">{{:~celsius2fahrenheit(results.mash.avg_temp).toFixed(0)}}</span></span>{{/if}}</td>
 	<td>{{if results && results.gravity && results.gravity.og}}{{:results.gravity.og}}{{/if}}</td>
 	<td>{{if results && results.gravity && results.gravity.fg}}{{:results.gravity.fg}}{{/if}}</td>
+	<td>{{if results && results.gravity && results.gravity.og &&  results.gravity.fg}}{{:~calcABV(results.gravity.og,results.gravity.fg).toFixed(1)}}%{{/if}}</td>
 	<td>{{if results && results.gravity && results.gravity.adf}}<span class="percent">{{:results.gravity.adf.toFixed(0)}}</span>{{/if}}</td>
 	<td>{{for recipe.yeast}}{{if lab.substring(0,6) == "Wyeast"}}WY{{/if}}{{:prod_id}}{{/for}}</td>
 	<td></td>
 	<td>{{if results && results.gravity && results.gravity.volume}}{{:~liters2gallons(results.gravity.volume).toFixed(2)}}G{{/if}}</td>
 </tr>
 {{/for}}
-<th></th>
-<th>Average</th>
-<th>{{:averages.efficiency.mash.toFixed(0)}}%</th>
-<th>{{:averages.efficiency.brewhouse.toFixed(0)}}%</th>
-<th></th>
-<th></th>
-<th></th>
-<th>{{:averages.adf.toFixed(0)}}%</th>
-<th></th>
-<th></th>
-<th>{{:(~liters2gallons(totals.vol) / 31).toFixed(0)}}bbl</th>
-</tr>
-</table>
 </script>
+
+<script type="text/x-jsrender" id="batchIndexSummaryRowTemplate">
+<tr>
+	<th></th>
+	<th>Average</th>
+	<th>{{:averages.efficiency.mash.toFixed(0)}}%</th>
+	<th>{{:averages.efficiency.brewhouse.toFixed(0)}}%</th>
+	<th></th>
+	<th></th>
+	<th></th>
+	<th>{{:averages.abv.toFixed(1)}}%</th>
+	<th>{{:averages.adf.toFixed(0)}}%</th>
+	<th></th>
+	<th></th>
+	<th>{{:(~liters2gallons(totals.vol) / 31).toFixed(0)}}bbl</th>
+</tr>
+</script>
+
 
 <script type="text/javascript">
 function renderPage() {
@@ -82,11 +69,24 @@ function renderPage() {
 		celsius2fahrenheit: celsiusToFahrenheit,
 		fahrenheit2celsius: fahrenheitToCelsius,
 		sg2gu: sg2gu,
-		gu2sg: gu2sg
+		gu2sg: gu2sg,
+		calcABV: calcABV
+	});
+	
+	$.views.tags({
+		fields: function(obj) {
+			var ret="";
+			for (var f in obj) {
+				ret += this.renderContent(obj[f],{key:f});
+			}
+			return ret;
+		}
 	});
 
 	$('#batches').addClass("loading");
 	github_get_latest_version("batches/index.json",function(data){
+		
+		var yeasts=new Object;
 
 		data.totals={
 			efficiency: {
@@ -95,6 +95,8 @@ function renderPage() {
 				brewhouse: 0,
 				brewhouse_count: 0
 			},
+			abv: 0,
+			abv_count: 0,
 			adf: 0,
 			adf_count: 0,
 			vol: 0,
@@ -123,6 +125,10 @@ function renderPage() {
 
 				if (data.batches[i].results.gravity && data.batches[i].results.gravity.og && data.batches[i].results.gravity.fg) {
 					data.batches[i].results.gravity.adf=(sg2gu(data.batches[i].results.gravity.og) - sg2gu(data.batches[i].results.gravity.fg)) / sg2gu(data.batches[i].results.gravity.og) * 100;
+					
+					data.batches[i].results.abv=calcABV(data.batches[i].results.gravity.og,data.batches[i].results.gravity.fg);
+					data.totals.abv+=data.batches[i].results.abv;
+					data.totals.abv_count++;
 					data.totals.adf+=data.batches[i].results.gravity.adf;
 					data.totals.adf_count++;
 				}
@@ -141,6 +147,12 @@ function renderPage() {
 				}
 
 			}
+			
+			for (var y=0; y < data.batches[i].recipe.yeast.length; ++y) {
+				var hash=data.batches[i].recipe.yeast[y].prod_id;
+				if (typeof(yeasts[hash])==='undefined')
+					yeasts[hash]=data.batches[i].recipe.yeast[y];
+			}
 		}
 		// Calculate averages
 		data.averages={
@@ -148,10 +160,60 @@ function renderPage() {
 				mash: data.totals.efficiency.mash / data.totals.efficiency.mash_count,
 				brewhouse: data.totals.efficiency.brewhouse / data.totals.efficiency.brewhouse_count
 			},
+			abv: data.totals.abv / data.totals.abv_count,
 			adf: data.totals.adf / data.totals.adf_count,
 			vol: data.totals.vol / data.totals.vol_count
 		}
-		$('#batches').html($('#batchIndexTemplate').render(data));
+		
+		// Sort by batch ID
+		data.batches.sort(function(a,b) {return a.id - b.id;});
+		
+		$('table#batches tr:nth-child(2)').after($('#batchIndexTemplate').render(data));
+		$('table#batches').append($('#batchIndexSummaryRowTemplate').render(data));
+		
+		$('#yeasts').html($('#yeastIndexTemplate').render(yeasts));
+		
+		$('#batches th').click(function(evt){
+			switch ($(this).prevAll().length) {
+			case 0:
+				data.batches.sort(function(a,b) {return a.id - b.id;});
+				break;
+			case 1: // Name
+				data.batches.sort(function(a,b) { return a.recipe.name.localeCompare(b.recipe.name); });
+				break;
+			case 2: // Mash efficiency
+				data.batches.sort(function(a,b) {return a.results.efficiency.mash - b.results.efficiency.mash;});
+				break;
+			case 3: // Brewhouse efficiency
+				data.batches.sort(function(a,b) {return a.results.efficiency.brewhouse - b.results.efficiency.brewhouse;});
+				break;
+			case 4: // Mash temp
+				data.batches.sort(function(a,b) {return a.results.mash.avg_temp - b.results.mash.avg_temp;});
+				break;
+			case 5: // OG
+				data.batches.sort(function(a,b) {return a.results.gravity.og - b.results.gravity.og;});
+				break;
+			case 6: // FG
+				data.batches.sort(function(a,b) {return a.results.gravity.fg - b.results.gravity.fg;});
+				break;
+			case 7: // ABV
+				data.batches.sort(function(a,b) {return a.results.abv - b.results.abv;});
+				break;
+			case 8: // ADF
+				data.batches.sort(function(a,b) {return a.results.gravity.adf - b.results.gravity.adf;});
+				break;
+			case 9: // Yeast
+				data.batches.sort(function(a,b) {return a.recipe.yeast[0].prod_id.localeCompare(b.recipe.yeast[0].prod_id);});
+				break;
+			case 11: // Volume
+				data.batches.sort(function(a,b) {return a.results.gravity.volume - b.results.gravity.volume;});
+				break;
+			}
+			// $('table#batches tr').slice(2,24).remove();
+			$('table#batches td').remove();
+			$('table#batches tr:empty').remove();
+			$('table#batches tr:last').before($('#batchIndexTemplate').render(data));
+		});
 	})
 }
 </script>
@@ -160,46 +222,43 @@ function renderPage() {
 <body onLoad="renderPage();">
 <h1>Homebrewing</h1>
 
-<div id="batches">
+<div>
+	<h2>Batches</h2>
+	<table id="batches">
+		<tr>
+			<th></th>
+			<th></th>
+			<th colspan="2">Efficiency</th>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th colspan="2">Fermentation</th>
+		</tr>
+		<tr>
+			<th>#</th>
+			<th>Name</th>
+			<th>Mash</th>
+			<th>Brewhouse</th>
+			<th>Mash temp</th>
+			<th>OG</th>
+			<th>FG</th>
+			<th>ABV</th>
+			<th>ADF</th>
+			<th>Yeast</th>
+			<th>Temp</th>
+			<th>Vol</th>
+		</tr>
+	</table>
 	<div class="modal"></div>
 </div>
 
 <h2>Recipes</h2>
 <ol>
-<li><a href="recipe.html?name=115th%20Dream%20Hopbursted%20IPA">115th Dream Hopbursted Imperial IPA</a></li>
-<li><a href="recipe.html?name=American%20Pale%20Ale%20with%20Caramel">American Pale Ale with Caramel</a></li>
-<li><a href="recipe.html?name=Barley%20Wine">Barley Wine</a></li>
-<li><a href="recipe.html?name=Breakfast%20Stout">Breakfast Stout</a></li>
-<li><a href="recipe.html?name=Fuller's%20ESB">Old Fuller's ESB</a></li>
-<li><a href="recipe.html?name=Imperial%20Stout">Imperial Stout</a></li>
-<li><a href="recipe.html?name=Jamil's%20Evil%20Twin">Jamil&#39;s Evil Twin (R)</a></li>
-<li><a href="recipe.html?name=Janet's%20Brown%20Ale">Janet&#39;s Brown Ale</a></li>
-<li><a href="recipe.html?name=Jolly%20Roger%20Christmas%20Ale">Jolly Roger Christmas Ale</a></li>
-<li><a href="recipe.html?name=My%20IPA">Special B IPA</a></li>
-<li><a href="recipe.html?name=Oatmeal%20Raisin%20Stout">Oatmeal Raisin Stout</a></li>
-<li><a href="recipe.html?name=Old%20Rasputin">Old Rasputin</a></li>
-<li><a href="recipe.html?name=Oostmalle%20Tripel">Oostmalle Tripel</a></li>
-<li><a href="recipe.html?name=Punkin'%20Ale">Punkin' Ale</a></li>
-<li><a href="recipe.html?name=Southern%20Tier%20Pumking">Southern Tier Pumking</a></li>
-<li><a href="recipe.html?name=Surly%20Furious">Surly Furious</a></li>
-<li><a href="recipe.html?name=The%20Czar's%20Revenge">The Czar's Revenge</a></li>
 </ol>
+
 <h2>Yeasts</h2>
-<li>Wyeast Labs 1056</li>
-<li>Wyeast Labs 1084</li>
-<li>Wyeast Labs 1056</li>
-<li>Wyeast Labs 1056</li>
-<li>Wyeast 1335</li>
-<li>Wyeast 1056</li>
-<li>Wyeast 1968</li>
-<li>Wyeast 1056</li>
-<li>Wyeast 1318</li>
-<li>Wyeast 1968</li>
-<li>Fermentis US-05</li>
-<li>Wyeast 1335</li>
-<li>Wyeast 1056</li>
-<li>Fermentis US-05</li>
-<li>White Labs WLP007</li>
+<ol id="yeasts"></ol>
 
 </body>
 </html>

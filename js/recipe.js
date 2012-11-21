@@ -194,6 +194,7 @@ function g2lb(g) { return g2oz(g) / 16; }
 function oz2g(oz) { return oz / 0.035274; }
 function liters2gallons(l) { return l * 0.264172; }
 function gallons2liters(g) { return g / 0.264172; }
+function calcABV(og,fg) { return (sg2gu(og) - sg2gu(fg)) * 131 / 1000; }
 function gu2sg(gu) { return gu / 1000 + 1; }
 function sg2gu(sg) { return (sg - 1) * 1000; }
 function sg2brix(sg) {
