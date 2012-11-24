@@ -93,16 +93,16 @@
 		"yeast":
 	[
 	{
-		"lab":"White Labs",
-		"prod_id":"WLP001",
-		"name": "California Ale",
-		"temperature_lo":20,
-		"temperature_hi":23,
-		"attenuation": 77
+		"lab":"Wyeast",
+		"prod_id":"1332",
+		"name": "Northwest Ale",
+		"temperature_lo":18,
+		"temperature_hi":24,
+		"attenuation": 69
 	}
 ]
 
 	},
-"notes": "From \"Brewing Classic Styles\". P.134"
+"notes": "Adapted from \"Brewing Classic Styles\". P.134"
 }
 
