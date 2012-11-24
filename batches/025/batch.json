@@ -1,1 +1,1 @@
-{"id":"025","recipe":{"blob":"17eec82f7ef30d32ad21a93339838d9c115ff2ed"}}
+{"id":"025","recipe":{"blob":"17eec82f7ef30d32ad21a93339838d9c115ff2ed"},"results":{"mash":{"type":"","duration":"60","strike":{"volume":15.141650137031933,"temp":73.88888888888889},"measurements":[{"temp":67.05555555555556},{"temp":66.16666666666667},{"temp":65},{"temp":64.72222222222223}]},"sparge":{"duration":"30"},"boil":{"volume":24.60518147267689,"sg":"1.048","time":"60","end_volume":21.198310191844705},"gravity":{"volume":19.400239238072164,"og":"","fg":""}}}
