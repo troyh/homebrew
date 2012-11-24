@@ -1,0 +1,108 @@
+
+{
+	"name":"American Pale Ale",
+	"styles": [{
+			"name":"American Pale Ale",
+			"category":10,
+			"letter":"A"
+	}
+],	"type":"All Grain",
+		"batch_size":20.819765,
+		"boil_time":60,
+		"total_ppg":376.509482417807,
+		"efficiency":80,
+		"OG":1.055,
+		"FG":1.011,
+		"ABV":5.74,
+		"ADF":80,
+		"yeast_starter_slurry":114,
+	"yeast_starter_cells":214,
+	"ingredients":{
+		"fermentables":{"total_weight":4.819418000000001,		"list":[{
+			"amount":3.628739,
+			"yield":78.000000,
+			"pct":75.29,
+			"name":"2 Row Base",
+			"type":"Grain",
+			"srm":2
+		}
+		,{
+			"amount":0.566990,
+			"yield":74.000000,
+			"pct":11.76,
+			"name":"Victory",
+			"type":"Grain",
+			"srm":25
+		}
+		,{
+			"amount":0.453592,
+			"yield":72.000000,
+			"pct":9.41,
+			"name":"Munich (Dark)",
+			"type":"Grain",
+			"srm":20
+		}
+		,{
+			"amount":0.170097,
+			"yield":80.000000,
+			"pct":3.53,
+			"name":"Wheat",
+			"type":"Grain",
+			"srm":2
+		}
+		]},
+		"hops":
+	{
+		"total_weight":0.061524,
+		"mash":[],
+		"first_wort": [],
+	    "boil":[{
+		"amount":0.019000,
+		"name": "Magnum",
+		"alpha": 14,
+		"time":60,
+		"form":"Pellet"
+     },{
+		"amount":0.007087,
+		"name": "Cascade",
+		"alpha": 6,
+		"time":10,
+		"form":"Pellet"
+     },{
+		"amount":0.007087,
+		"name": "Centennial",
+		"alpha": 9,
+		"time":10,
+		"form":"Pellet"
+     }],
+		"aroma":[{
+		"amount":0.014175,
+		"name": "Cascade",
+		"alpha": 6,
+		"form":"Pellet"
+     },{
+		"amount":0.014175,
+		"name": "Centennial",
+		"alpha": 9,
+		"form":"Pellet"
+     }],
+		"dry_hop":[]
+	}
+,
+		"miscellaneous":[],
+		"yeast":
+	[
+	{
+		"lab":"White Labs",
+		"prod_id":"WLP001",
+		"name": "California Ale",
+		"temperature_lo":20,
+		"temperature_hi":23,
+		"attenuation": 77
+	}
+]
+
+	},
+"notes": "From \"Brewing Classic Styles\". P.134"
+}
+
