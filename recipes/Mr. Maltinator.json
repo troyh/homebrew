@@ -1,0 +1,84 @@
+
+{
+	"name":"Mr. Maltinator",
+	"styles": [{
+			"name":"Doppelbock",
+			"category":5,
+			"letter":"C"
+	}
+],	"type":"All Grain",
+		"batch_size":20.819765,
+		"boil_time":90,
+		"total_ppg":708.399125285694,
+		"efficiency":80,
+		"OG":1.103,
+		"FG":1.021,
+		"ABV":10.8,
+		"ADF":80,
+		"yeast_starter_slurry":429,
+	"yeast_starter_cells":804,
+	"ingredients":{
+		"fermentables":{"total_weight":9.071847,		"list":[{
+			"amount":6.350293,
+			"yield":78.000000,
+			"pct":70,
+			"name":"Munich (Light)",
+			"type":"Grain",
+			"srm":9
+		}
+		,{
+			"amount":1.814369,
+			"yield":76.000000,
+			"pct":20,
+			"name":"Pilsen",
+			"type":"Grain",
+			"srm":3
+		}
+		,{
+			"amount":0.907185,
+			"yield":72.000000,
+			"pct":10,
+			"name":"CaraMunich",
+			"type":"Grain",
+			"srm":60
+		}
+		]},
+		"hops":
+	{
+		"total_weight":0.056699,
+		"mash":[],
+		"first_wort": [],
+	    "boil":[{
+		"amount":0.042524,
+		"name": "Hallertauer",
+		"alpha": 4,
+		"time":60,
+		"form":"Pellet"
+     },{
+		"amount":0.014175,
+		"name": "Hallertauer",
+		"alpha": 4,
+		"time":30,
+		"form":"Pellet"
+     }],
+		"aroma":[],
+		"dry_hop":[]
+	}
+,
+		"miscellaneous":[],
+		"yeast":
+	[
+	{
+		"lab":"White Labs",
+		"prod_id":"WLP833",
+		"name": "German Bock Lager",
+		"temperature_lo":9,
+		"temperature_hi":13,
+		"attenuation": 73
+	}
+]
+
+	},
+"notes": "From \"Brewing Classic Styles\", p.89. "
+}
+

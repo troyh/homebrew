@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RECIPES>
+<RECIPE>
+<VERSION>1</VERSION>
+<NAME>Mr. Maltinator</NAME>
+<TYPE>All Grain</TYPE>
+<BREWER>BrewPal</BREWER>
+<BATCH_SIZE>20.819765</BATCH_SIZE>
+<BOIL_SIZE>0.000001</BOIL_SIZE>
+<BOIL_TIME>90</BOIL_TIME>
+<EFFICIENCY>80</EFFICIENCY>
+<OG>0.000000</OG>
+<FG>0.000000</FG>
+<FERMENTATION_STAGES>1</FERMENTATION_STAGES>
+<PRIMARY_AGE>14</PRIMARY_AGE>
+<PRIMARY_TEMP>21.000000</PRIMARY_TEMP>
+<SECONDARY_AGE>0</SECONDARY_AGE>
+<SECONDARY_TEMP>21.000000</SECONDARY_TEMP>
+<CARBONATION>2.500000</CARBONATION>
+<FORCED_CARBONATION>1</FORCED_CARBONATION>
+<CARBONATION_TEMP>21.111111</CARBONATION_TEMP>
+<PRIMING_SUGAR_NAME></PRIMING_SUGAR_NAME>
+<PRIMING_SUGAR_EQUIV>0.000000</PRIMING_SUGAR_EQUIV>
+<NOTES>From "Brewing Classic Styles", p.89. </NOTES>
+<FERMENTABLES>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Grain</TYPE>
+    <AMOUNT>6.350293</AMOUNT>
+    <YIELD>78.000000</YIELD>
+    <COLOR>9.000000</COLOR>
+    <NAME>Munich (Light)</NAME>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Grain</TYPE>
+    <AMOUNT>1.814369</AMOUNT>
+    <YIELD>76.000000</YIELD>
+    <COLOR>2.500000</COLOR>
+    <NAME>Pilsen</NAME>
+  </FERMENTABLE>
+  <FERMENTABLE>
+    <VERSION>1</VERSION>
+    <TYPE>Grain</TYPE>
+    <AMOUNT>0.907185</AMOUNT>
+    <YIELD>72.000000</YIELD>
+    <COLOR>60.000000</COLOR>
+    <NAME>CaraMunich</NAME>
+  </FERMENTABLE>
+</FERMENTABLES>
+<HOPS>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>60.000000</TIME>
+    <FORM>Pellet</FORM>
+    <ALPHA>4.000000</ALPHA>
+    <SUBSTITUTES>Liberty, Tettnanger, Mt. Hood, Vangaurd, Tradition</SUBSTITUTES>
+    <NAME>Hallertauer</NAME>
+    <AMOUNT>0.042524</AMOUNT>
+    <USE>Boil</USE>
+  </HOP>
+  <HOP>
+    <VERSION>1</VERSION>
+    <TIME>30.000000</TIME>
+    <FORM>Pellet</FORM>
+    <ALPHA>4.000000</ALPHA>
+    <SUBSTITUTES>Liberty, Tettnanger, Mt. Hood, Vangaurd, Tradition</SUBSTITUTES>
+    <NAME>Hallertauer</NAME>
+    <AMOUNT>0.014175</AMOUNT>
+    <USE>Boil</USE>
+  </HOP>
+</HOPS>
+<YEASTS>
+  <YEAST>
+    <VERSION>1</VERSION>
+    <AMOUNT>0.040000</AMOUNT>
+    <LABORATORY>White Labs</LABORATORY>
+    <FORM>Liquid</FORM>
+    <MIN_TEMPERATURE>9</MIN_TEMPERATURE>
+    <PRODUCT_ID>WLP833</PRODUCT_ID>
+    <NAME>German Bock Lager</NAME>
+    <AMOUNT_IS_WEIGHT>FALSE</AMOUNT_IS_WEIGHT>
+    <TYPE>Lager</TYPE>
+    <MAX_TEMPERATURE>13</MAX_TEMPERATURE>
+    <ATTENUATION>73</ATTENUATION>
+  </YEAST>
+</YEASTS>
+<MISCS>
+</MISCS>
+<MASH>
+<VERSION>1</VERSION>
+<NAME>Batch/Fly</NAME>
+<GRAIN_TEMP>0.000000</GRAIN_TEMP>
+<MASH_THICKNESS>2.712256</MASH_THICKNESS>
+<SPARGE_TEMP>76.666664</SPARGE_TEMP>
+<MASH_STEPS>
+  <MASH_STEP>
+    <VERSION>1</VERSION>
+    <INFUSE_AMOUNT>11.35624</INFUSE_AMOUNT>
+    <TYPE>Infusion</TYPE>
+    <STEP_TIME>60</STEP_TIME>
+    <STEP_TEMP>68.33334</STEP_TEMP>
+    <NAME>Strike</NAME>
+  </MASH_STEP>
+</MASH_STEPS>
+</MASH>
+<WATERS>
+</WATERS>
+<EQUIPMENT>
+    <VERSION>1</VERSION>
+    <BOIL_SIZE>1.196861e-06</BOIL_SIZE>
+    <BOIL_TIME>90</BOIL_TIME>
+    <BATCH_SIZE>20.81977</BATCH_SIZE>
+    <TOP_UP_KETTLE>2.431869e-07</TOP_UP_KETTLE>
+    <TOP_UP_WATER>21.76612</TOP_UP_WATER>
+    <EVAP_RATE>17</EVAP_RATE>
+    <TRUB_CHILLER_LOSS>0.946353</TRUB_CHILLER_LOSS>
+</EQUIPMENT>
+<STYLES>
+  <STYLE>
+    <VERSION>1</VERSION>
+    <COLOR_MIN>6.0</COLOR_MIN>
+    <COLOR_MAX>25.0</COLOR_MAX>
+    <STYLE_LETTER>C</STYLE_LETTER>
+    <ABV_MIN>7.0</ABV_MIN>
+    <NAME>Doppelbock</NAME>
+    <IS_SELECTED>0.000000</IS_SELECTED>
+    <TYPE>beer</TYPE>
+    <FG_MIN>1.016</FG_MIN>
+    <OG_MIN>1.072</OG_MIN>
+    <IBU_MAX>26</IBU_MAX>
+    <EXAMPLES>Paulaner Salvator, Ayinger Celebrator, Weihenstephaner Korbinian, Andechser Doppelbock Dunkel, Spaten Optimator, Tucher Bajuvator, Weltenburger Kloster Asam-Bock, Capital Autumnal Fire, EKU 28, Eggenberg Urbock 23°, Bell's Consecrator, Moretti La Rossa, Samuel Adams Double Bock</EXAMPLES>
+    <MATCH_QUALITY>Okay match</MATCH_QUALITY>
+    <STYLE_GUIDE>BJCP</STYLE_GUIDE>
+    <INGREDIENTS>Pils and/or Vienna malt for pale versions (with some Munich), Munich and Vienna malts for darker ones and occasionally a tiny bit of darker color malts (such as Carafa).  Noble hops.  Water hardness varies from soft to moderately carbonate.  Clean lager yeast.  Decoction mashing is traditional.</INGREDIENTS>
+    <FG_MAX>1.024</FG_MAX>
+    <ABV_MAX>10.0</ABV_MAX>
+    <OG_MAX>1.112</OG_MAX>
+    <PROFILE>Aroma:
+Very strong maltiness.  Darker versions will have significant melanoidins and often some toasty aromas.  A light caramel flavor from a long boil is acceptable.  Lighter versions will have a strong malt presence with some melanoidins and toasty notes.  Virtually no hop aroma, although a light noble hop aroma is acceptable in pale versions.  No diacetyl.  A moderately low fruity aspect to the aroma often described as prune, plum or grape may be present (but is optional) in dark versions due to reactions between malt, the boil, and aging.  A very slight chocolate-like aroma may be present in darker versions, but no roasted or burned aromatics should ever be present.  Moderate alcohol aroma may be present.
+Appearance:
+Deep gold to dark brown in color.  Darker versions often have ruby highlights.  Lagering should provide good clarity.  Large, creamy, persistent head (color varies with base style: white for pale versions, off-white for dark varieties).  Stronger versions might have impaired head retention, and can display noticeable legs.
+Flavor:
+Very rich and malty.  Darker versions will have significant melanoidins and often some toasty flavors.  Lighter versions will a strong malt flavor with some melanoidins and toasty notes.  A very slight chocolate flavor is optional in darker versions, but should never be perceived as roasty or burnt.  Clean lager flavor with no diacetyl.  Some fruitiness (prune, plum or grape) is optional in darker versions.   Invariably there will be an impression of alcoholic strength, but this should be smooth and warming rather than harsh or burning.  Presence of higher alcohols (fusels) should be very low to none.  Little to no hop flavor (more is acceptable in pale versions).  Hop bitterness varies from moderate to moderately low but always allows malt to dominate the flavor.  Most versions are fairly sweet, but should have an impression of attenuation.  The sweetness comes from low hopping, not from incomplete fermentation.  Paler versions generally have a drier finish.
+Mouthfeel:
+Medium-full to full body.  Moderate to moderately-low carbonation.  Very smooth without harshness or astringency.
+Impression:
+A very strong and rich lager.  A bigger version of either a traditional bock or a helles bock.</PROFILE>
+    <CARB_MIN>2.3</CARB_MIN>
+    <CATEGORY>Bock</CATEGORY>
+    <IBU_MIN>16</IBU_MIN>
+    <CARB_MAX>2.6</CARB_MAX>
+    <CATEGORY_NUMBER>5</CATEGORY_NUMBER>
+    <NOTES>History:
+A Bavarian specialty first brewed in Munich by the monks of St. Francis of Paula.  Historical versions were less well attenuated than modern interpretations, with consequently higher sweetness and lower alcohol levels (and hence was considered "liquid bread" by the monks).  The term "doppel (double) bock" was coined by Munich consumers.  Many doppelbocks have names ending in "-ator," either as a tribute to the prototypical Salvator or to take advantage of the beer's popularity.
+Comments:
+Most versions are dark colored and may display the caramelizing and melanoidin effect of decoction mashing, but excellent pale versions also exist.  The pale versions will not have the same richness and darker malt flavors of the dark versions, and may be a bit drier, hoppier and more bitter.  While most traditional examples are in the ranges cited, the style can be considered to have no upper limit for gravity, alcohol and bitterness (thus providing a home for very strong lagers). Any fruitiness is due to Munich and other specialty malts, not yeast-derived esters developed during fermentation.</NOTES>
+  </STYLE>
+</STYLES>
+</RECIPE>
+</RECIPES>
