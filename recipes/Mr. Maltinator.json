@@ -9,35 +9,35 @@
 ],	"type":"All Grain",
 		"batch_size":20.819765,
 		"boil_time":90,
-		"total_ppg":566.360524637899,
+		"total_ppg":590.087308139411,
 		"efficiency":80,
-		"OG":1.082,
-		"FG":1.016,
-		"ABV":8.63,
+		"OG":1.086,
+		"FG":1.017,
+		"ABV":9,
 		"ADF":80,
-		"yeast_starter_slurry":343,
-	"yeast_starter_cells":643,
+		"yeast_starter_slurry":357,
+	"yeast_starter_cells":670,
 	"ingredients":{
-		"fermentables":{"total_weight":7.252942,		"list":[{
-			"amount":5.075698,
+		"fermentables":{"total_weight":7.556849000000001,		"list":[{
+			"amount":5.288887,
 			"yield":78.000000,
-			"pct":69.98,
+			"pct":69.99,
 			"name":"Munich (Light)",
 			"type":"Grain",
 			"srm":9
 		}
 		,{
-			"amount":1.451496,
+			"amount":1.510463,
 			"yield":76.000000,
-			"pct":20.01,
+			"pct":19.99,
 			"name":"Pilsen",
 			"type":"Grain",
 			"srm":3
 		}
 		,{
-			"amount":0.725748,
+			"amount":0.757499,
 			"yield":72.000000,
-			"pct":10.01,
+			"pct":10.02,
 			"name":"CaraMunich",
 			"type":"Grain",
 			"srm":60
